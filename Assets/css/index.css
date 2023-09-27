@@ -3,15 +3,20 @@
 
 
 /* ---------- Media queries ---------- */
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 200px) {
+	html {
+		min-height: 100vh;
+		position: relative;
+	}
+
 	body {
 		font-family: 'Barlow', sans-serif;
 	}
 
 	main {
 		padding: 0 16px;
+		padding-bottom: 64px;
 		position: relative;
-  	min-height: 100vh;
 	}
 
 	.main-section {
