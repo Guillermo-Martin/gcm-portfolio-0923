@@ -5,6 +5,7 @@
 /* ---------- Media queries ---------- */
 @media only screen and (min-width: 320px) {
 	body {
+		font-family: 'Barlow', sans-serif;
 		padding: 0 16px;
 	}
 
@@ -16,7 +17,8 @@
 	/* Image container  */
 	.image-container {
 		width: 100%;
-		border: 3px solid red;
+		border: 1px solid black;
+		margin-bottom: 32px;
 	}
 
 	.image-container img {
@@ -26,6 +28,25 @@
 	/* Text container */
 	.text-container {
 		width: 100%;
-		border: 3px solid blue;
+		/* border: 3px solid blue; */
+	}
+
+	.text-container h1 {
+		font-size: 30px;
+		margin-bottom: 32px;
+	}
+
+	.text-container p {
+		font-size: 16px;
+		margin-bottom: 32px;
+		line-height: 1.3;
+	}
+
+	/* Links */
+	.text-container-links ul {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		text-align: center;
 	}
 }
