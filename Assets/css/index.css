@@ -14,6 +14,13 @@
 		flex-direction: column;
 	}
 
+	h2 {
+		font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+	}
+
 	/* Image container  */
 	.image-container {
 		width: 100%;
@@ -44,11 +51,8 @@
 	}
 
 	/* Links */
-	.text-container-links h2 {
-		font-size: 20px;
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 600;
+	.text-container-links {
+		margin-bottom: 32px;
 	}
 
 	.text-container-links ul {
@@ -56,5 +60,11 @@
 		flex-direction: column;
 		gap: 24px;
 		text-align: center;
+	}
+
+	.contact-links ul {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
 	}
 }
