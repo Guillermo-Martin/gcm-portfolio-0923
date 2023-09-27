@@ -1,6 +1,31 @@
+/* variables */
+
+
+
 /* ---------- Media queries ---------- */
-/* @media only screen and (min-width: 320px) {
-	.main-section {
-		background-color: red;
+@media only screen and (min-width: 320px) {
+	body {
+		padding: 0 16px;
 	}
-} */
+
+	.main-section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Image container  */
+	.image-container {
+		width: 100%;
+		border: 3px solid red;
+	}
+
+	.image-container img {
+		width: 100%;
+	}
+
+	/* Text container */
+	.text-container {
+		width: 100%;
+		border: 3px solid blue;
+	}
+}
