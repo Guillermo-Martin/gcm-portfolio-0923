@@ -10,11 +10,14 @@
 
 	main {
 		padding: 0 16px;
+		position: relative;
+  	min-height: 100vh;
 	}
 
 	.main-section {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 60px;
 	}
 
 	h2 {
@@ -77,5 +80,8 @@
     width: 100%;
     text-align: center;
     padding: 24px 0;
+
+		position: absolute;
+		bottom: 0;
 	}
 }
