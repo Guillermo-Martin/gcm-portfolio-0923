@@ -13,9 +13,22 @@
 		font-family: 'Barlow', sans-serif;
 	}
 
+	/* Mobile navbar */
+	.mobile-nav {
+		background-color: orange;
+		padding: 24px 0;
+		width: 100%;
+		position: fixed;
+		/* top: 0; */
+		z-index: 1;
+		display: flex;
+    align-items: center;
+    justify-content: end;
+	}
+
 	main {
-		padding: 0 16px;
-		padding-bottom: 64px;
+		padding: 64px 16px;
+		/* padding-bottom: 64px; */
 		position: relative;
 	}
 
