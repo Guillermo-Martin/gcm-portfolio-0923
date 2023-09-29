@@ -35,13 +35,16 @@
 		margin-right: 16px;
 	}
 
-	.mobile-nav-menu {
+	.mobile-nav ul {
 		position: absolute;
-    height: 100%;
     width: 100%;
-    z-index: 2;
-    top: 0;
-		background-color: red;
+    background-color: pink;
+    top: 100%;
+		display: none;
+	}
+
+	.mobile-nav ul.show {
+		display: block;
 	}
 
 	main {
