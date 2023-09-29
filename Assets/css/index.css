@@ -87,6 +87,11 @@
 		margin-bottom: 32px;
 	}
 
+	.text-container-links h2, .contact-links h2 {
+		border-bottom: 1px solid lightgrey;
+    padding-bottom: 16px;
+	}
+
 	.text-container-links ul {
 		display: flex;
 		flex-direction: column;
@@ -111,6 +116,10 @@
 	.contact-links li svg {
 		width: 10%;
 		margin-right: 20px;
+	}
+
+	.contact-links .resume-icon {
+		width: 8%;
 	}
 
 	.contact-links li a {
