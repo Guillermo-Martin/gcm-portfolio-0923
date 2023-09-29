@@ -35,6 +35,15 @@
 		margin-right: 16px;
 	}
 
+	.mobile-nav-menu {
+		position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+		background-color: red;
+	}
+
 	main {
 		padding: 64px 16px;
 		padding-top: 128px;
