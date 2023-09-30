@@ -35,6 +35,27 @@
 		margin-right: 16px;
 	}
 
+	.mobile-nav-icon svg {
+		width: 100%;
+	}
+
+	/* hamburger icon */
+	#hamburger-icon.hide {
+		display: none;
+	}
+
+	/* close icon */
+	#close-icon {
+		position: relative;
+		bottom: 3px;
+		display: none;
+	}
+
+	#close-icon.show {
+		display: block;
+	}
+
+
 	.mobile-nav ul {
 		position: absolute;
     width: 100%;
