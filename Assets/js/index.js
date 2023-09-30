@@ -1,6 +1,7 @@
 let body = document.querySelector("body");
 let mobileNavMenu = document.getElementById("mobile-nav-menu");
 
+console.log(mobileNavMenu);
 
 // hamburger menu functionality
 // 1. target the hamburger icon

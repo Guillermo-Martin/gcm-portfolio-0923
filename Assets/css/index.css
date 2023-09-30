@@ -56,15 +56,26 @@
 	}
 
 
-	.mobile-nav ul {
+	/* mobile nav menu */
+	/* .mobile-nav ul {
 		position: absolute;
     width: 100%;
     background-color: pink;
     top: 100%;
 		display: none;
+		height: 100vh;
+	} */
+
+	.mobile-nav-menu {
+		position: absolute;
+    width: 100%;
+    background-color: pink;
+    top: 100%;
+		display: none;
+		height: 100vh;
 	}
 
-	.mobile-nav ul.show {
+	#mobile-nav-menu.show {
 		display: block;
 	}
 
