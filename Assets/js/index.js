@@ -1,23 +1,16 @@
+// targeted elements
 let body = document.querySelector("body");
 let mobileNavMenu = document.getElementById("mobile-nav-menu");
-
-console.log(mobileNavMenu);
-
-// hamburger menu functionality
-// 1. target the hamburger icon
 let hamburgerIcon = document.getElementById("hamburger-icon");
 let closeIcon = document.getElementById("close-icon");
-let mobileNavClose = document.createElement("p");
 
-// 2. add a click listener
+// ---------- Mobile hamburger menu functionality ----------
 hamburgerIcon.addEventListener("click", () => {
   // show menu
   mobileNavMenu.classList.add("show");
 
-  // hide hamburger icon
+  // hide hamburger icon, show close icon
   hamburgerIcon.classList.add("hide");
-
-  // show close icon
   closeIcon.classList.add("show");
 });
 
@@ -25,10 +18,9 @@ closeIcon.addEventListener("click", () => {
   // hide menu
   mobileNavMenu.classList.remove("show");
 
-  // hide the close icon
+  // hide close icon, show hamburger icon
   closeIcon.classList.remove("show");
-
-  // show the hamburger icon
   hamburgerIcon.classList.remove("hide");
 });
 
+// PREVENT SCROLLING OF BODY WHEN MOBILE NAV IS DISPLAYING
