@@ -12,6 +12,9 @@ hamburgerIcon.addEventListener("click", () => {
   // hide hamburger icon, show close icon
   hamburgerIcon.classList.add("hide");
   closeIcon.classList.add("show");
+
+  // prevent user from scrolling when the menu is up
+  body.style.overflow = "hidden";
 });
 
 closeIcon.addEventListener("click", () => {
@@ -21,6 +24,7 @@ closeIcon.addEventListener("click", () => {
   // hide close icon, show hamburger icon
   closeIcon.classList.remove("show");
   hamburgerIcon.classList.remove("hide");
-});
 
-// PREVENT SCROLLING OF BODY WHEN MOBILE NAV IS DISPLAYING
+  // resume scrolling when menu is hidden
+  body.style.overflow = "scroll";
+});
