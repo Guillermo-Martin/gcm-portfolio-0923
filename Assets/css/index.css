@@ -137,12 +137,19 @@
 	}
 
 	/* Links */
+	.links-container {
+		width: 75%;
+		margin: 0 auto;
+	}
+
 	.text-container-links {
 		margin-bottom: 64px;
 	}
 
 	.text-container-links h2, .contact-links h2 {
 		border-bottom: 1px solid lightgrey;
+		margin: 0 auto;
+		margin-bottom: 32px;
     padding-bottom: 16px;
 	}
 
@@ -157,8 +164,9 @@
 		align-items: center;
 		display: flex;
 		flex-direction: column;
-		gap: 16px;
+		gap: 24px;
 		justify-content: space-evenly;
+		text-align: center;
 	}
 
 	.contact-links li {
@@ -205,12 +213,6 @@
 
 	.text-container {
 		text-align: center;
-	}
-
-	.text-container-links h2, .contact-links h2 {
-		margin: 0 auto;
-		margin-bottom: 32px;
-		width: 50%;
 	}
 
 	.contact-links ul {
