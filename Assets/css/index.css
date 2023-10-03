@@ -297,11 +297,18 @@
 
 	.links-container-links {
 		margin-bottom: 0;
+		width: 100%;
 	}
 
 	.links-container-links h2 {
 		padding: 0;
 		margin: 0;
+		text-align: left;
+	}
+
+	.links-container-links ul {
+		flex-direction: unset;
+		gap: 32px;
 	}
 }
 
