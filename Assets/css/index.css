@@ -1,7 +1,6 @@
 /* variables */
 
 
-
 /* ---------- Media queries ---------- */
 @media only screen and (min-width: 200px) {
 	html {
@@ -166,11 +165,14 @@
 		align-items: center;
 		display: flex;
     justify-content: center;
+		width: 100%;
 	}
 
 	.contact-links li svg {
 		margin-right: 20px;
 		width: 10%;
+		max-width: 30px;
+		max-height: 30px;
 	}
 
 	.contact-links .resume-icon {
@@ -191,3 +193,49 @@
 		width: 100%;
 	}
 }
+
+
+@media only screen and (min-width: 576px) {
+	.image-container {
+		/* border: 3px solid red; */
+		width: 60%;
+		margin: 0 auto;
+		margin-bottom: 32px;
+	}
+
+	.text-container {
+		text-align: center;
+	}
+
+	.text-container-links h2, .contact-links h2 {
+		margin: 0 auto;
+		margin-bottom: 32px;
+		width: 50%;
+	}
+
+	.contact-links ul {
+    margin: 0 auto;
+		width: 50%;
+	}
+
+	.contact-links li {
+		text-align: left;
+	}
+}
+
+
+/* .image-container {
+	base styles
+	border: 3px solid red;
+
+	@media {
+
+	}
+
+	img {
+		base styles
+		@media {
+
+		}
+	}
+} */
