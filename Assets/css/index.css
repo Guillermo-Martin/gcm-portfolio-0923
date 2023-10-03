@@ -125,7 +125,8 @@
 	}
 
 	h1 {
-		font-size: 32px;
+		/* font-size: 32px; */
+		font-size: var(--fs-h1);
 		font-weight: 700;
 		margin-bottom: 32px;
 	}
@@ -336,6 +337,10 @@
 		font-size: 80px;
 	}
 
+	.links-container h2 {
+		font-size: 48px;
+	}
+
 	.section-container {
 		max-width: 1200px;
 		margin: 0 auto;
@@ -345,6 +350,8 @@
 		margin-bottom: 64px;
 	}
 }
+
+/* NEXT STEPS: CREATE VARIABLES FOR FONT SIZES */
 
 
 /* .image-container {
