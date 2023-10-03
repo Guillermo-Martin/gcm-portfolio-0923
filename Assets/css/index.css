@@ -248,6 +248,21 @@
 	} */
 }
 
+@media only screen and (min-width: 992px) {
+	main {
+		/* flex-direction: unset; */
+		margin-bottom: 0;
+		position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	}
+
+	.main-section {
+		flex-direction: unset;
+	}
+}
 
 /* .image-container {
 	base styles
