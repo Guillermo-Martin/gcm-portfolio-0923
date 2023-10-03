@@ -1,0 +1,47 @@
+:root {
+  /* Typography variables */
+  --fs-h1: 32px;
+  --fs-h2: 24px
+
+}
+
+/* Typography styles */
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+h2 {
+	font-size: var(--fs-h2);
+	font-weight: 600;
+	margin-bottom: 32px;
+}
+
+
+@media only screen and (min-width: 767px) {
+  :root {
+    --fs-h1: 40px;
+    --fs-h2: 32px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  :root {
+    --fs-h1: 60px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  :root {
+    --fs-h1: 80px;
+    --fs-h2: 48px;
+  }
+}
+
+
+/* @media only screen and (min-width: 1400px) {
+  :root {
+    --fs-h1: 80px;
+  }
+} */
