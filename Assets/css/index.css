@@ -226,13 +226,17 @@
 		justify-content: center;
 	}
 
-	.project-links {
+	.links-container-links {
+		width: 50%;
+	}
+
+	/* .project-links {
 		margin-bottom: 0;
 	}
 
 	.project-links, .contact-links {
 		width: 50%;
-	}
+	} */
 
 	.contact-links ul {
     margin: 0 auto;
