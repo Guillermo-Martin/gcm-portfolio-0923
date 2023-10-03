@@ -249,6 +249,7 @@
 }
 
 @media only screen and (min-width: 992px) {
+	/* main container */
 	main {
 		/* flex-direction: unset; */
 		margin-bottom: 0;
@@ -266,6 +267,7 @@
 		padding: 0 32px;
 	}
 
+	/* image container */
 	.image-container {
 		margin-bottom: 0;
 		display: flex;
@@ -273,10 +275,38 @@
     justify-content: center;
 	}
 
+	/* text container */
 	.text-container {
 		text-align: left;
 	}
+
+	.text-container-text {
+		margin-bottom: 0;
+	}
+
+	/* links container */
+	.links-container {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.links-container ul {
+		gap: 0;
+		text-align: left;
+	}
+
+	.links-container-links {
+		margin-bottom: 0;
+	}
+
+	.links-container-links h2 {
+		padding: 0;
+		margin: 0;
+	}
 }
+
+
+
 
 /* .image-container {
 	base styles
