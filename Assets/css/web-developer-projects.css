@@ -1,5 +1,9 @@
+/* Main section */
+.main-section {
+  margin-top: 64px;
+}
+
 .web-developer-projects-card {
-  /* border: 3px solid red; */
   margin-bottom: 64px;
 }
 
@@ -15,8 +19,7 @@
 
 /* Text container */
 .project-description {
-  /* border: 3px solid red; */
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .technology {
@@ -26,5 +29,6 @@
 .project-links {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: start;
+  gap: 32px;
 }

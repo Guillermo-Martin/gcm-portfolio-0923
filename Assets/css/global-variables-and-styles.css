@@ -127,7 +127,7 @@ main {
 .footer {
 	bottom: 0;
 	padding: 24px 0;
-	position: fixed;
+	position: absolute;
 	text-align: center;
 	width: 100%;
 	border-top: 1px solid black;
@@ -135,6 +135,8 @@ main {
 	justify-content: center;
 	align-items: center;
 	gap: 16px;
+  /* z-index: 1;
+	background-color: #fff; */
 }
 
 .footer p {
@@ -179,17 +181,6 @@ main {
 @media only screen and (min-width: 992px) {
   :root {
     --fs-h1: 60px;
-  }
-
-  /* Main element */
-  main {
-    margin-bottom: 0;
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 0;
   }
 
   /* Section container */
