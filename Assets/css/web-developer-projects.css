@@ -1,3 +1,14 @@
-.web-developer-projects {
-  background-color: red;
+.web-developer-projects-card {
+  /* border: 3px solid red; */
+  margin-bottom: 64px;
+}
+
+/* Image container  */
+.image-container {
+	margin-bottom: 32px;
+	width: 100%;
+}
+
+.image-container img {
+	width: 100%;
 }
