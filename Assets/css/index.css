@@ -1,12 +1,4 @@
-
-
 /* ---------- Main content ---------- */
-/* main {
-	padding: 64px 16px;
-	padding-top: 69px;
-	position: relative;
-} */
-
 .main-section {
 	display: flex;
 	flex-direction: column;
@@ -118,21 +110,6 @@
 }
 
 @media only screen and (min-width: 992px) {
-	/* main container */
-	/* main {
-		margin-bottom: 0;
-		position: absolute;
-    left: 50%;
-    width: 100%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-		padding: 0;
-	} */
-
-	.section-container {
-		padding: 0 32px;
-	}
-
 	.main-section {
 		flex-direction: unset;
 		margin-bottom: 32px;
@@ -193,12 +170,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-
-	.section-container {
-		max-width: 1200px;
-		margin: 0 auto;
-	}
-
 	.main-section {
 		margin-bottom: 64px;
 	}

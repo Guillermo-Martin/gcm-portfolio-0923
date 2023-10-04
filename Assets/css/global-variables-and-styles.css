@@ -181,6 +181,7 @@ main {
     --fs-h1: 60px;
   }
 
+  /* Main element */
   main {
     margin-bottom: 0;
     position: absolute;
@@ -191,6 +192,10 @@ main {
     padding: 0;
   }
 
+  /* Section container */
+  .section-container {
+		padding: 0 32px;
+	}
   
 }
 
@@ -199,6 +204,11 @@ main {
     --fs-h1: 80px;
     --fs-h2: 48px;
   }
+
+  .section-container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
 }
 
 
