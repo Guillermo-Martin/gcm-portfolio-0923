@@ -54,3 +54,39 @@
   }
 }
 
+@media only screen and (min-width: 767px) {
+  h1 {
+    /* border: 3px solid red; */
+    margin-bottom: 64px;
+  }
+
+  .web-developer-projects-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 32px;
+  }
+
+  .projects-cards-container {
+    margin-bottom: 80px;
+  }
+
+  .image-container {
+    width: 40%;
+    margin: 0;
+  }
+
+  .text-container {
+    width: 55%;
+  }
+
+  h2, .technology {
+    text-align: left;
+  }
+
+  .project-links {
+    justify-content: start;
+  }
+
+
+}
