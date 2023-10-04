@@ -32,3 +32,25 @@
   justify-content: start;
   gap: 32px;
 }
+
+/* ---------- Media Queries ---------- */
+@media only screen and (min-width: 576px) {
+  h1, h2, .technology {
+    text-align: center;
+  }
+
+  hr {
+    margin-bottom: 16px;
+  }
+
+  .image-container {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+}
+
