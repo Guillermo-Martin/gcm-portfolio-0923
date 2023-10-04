@@ -7,21 +7,22 @@ body {
 	font-family: 'Barlow', sans-serif;
 }
 
-
-/* ---------- Mobile navbar ---------- */
-.mobile-nav {
-	align-items: center;
-	background-color: #fff;
-	border-bottom: 1px solid black;
-	display: flex;
-	justify-content: end;
-	padding: 20px 0;
-	position: fixed;
+/* ---------- Top navbar ---------- */
+.top-navbar {
 	width: 100%;
+	position: fixed;
 	z-index: 1;
+	background-color: #fff;
 }
 
-/* Mobile nav icon container */
+.top-navbar-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 16px;
+	border-bottom: 1px solid black;
+}
+
 .mobile-nav-icon {
 	cursor: pointer;
 	height: 28px;
@@ -180,6 +181,17 @@ main {
 }
 
 @media only screen and (min-width: 992px) {
+	.image-container {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	/* .mobile-nav {
+		padding-left: 32px;
+		padding-right: 32px;
+	} */
+	
 	/* main container */
 	main {
 		margin-bottom: 0;

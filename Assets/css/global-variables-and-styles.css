@@ -1,8 +1,8 @@
 :root {
   /* Typography variables */
   --fs-h1: 32px;
-  --fs-h2: 24px
-
+  --fs-h2: 24px;
+  --fs-body: 16px;
 }
 
 /* Typography styles */
@@ -16,6 +16,16 @@ h2 {
 	font-size: var(--fs-h2);
 	font-weight: 600;
 	margin-bottom: 32px;
+}
+
+p {
+  font-size: var(--fs-body);
+}
+
+a {
+  /* border: 3px solid red; */
+  /* color: #375293; */
+  /* text-decoration: none; */
 }
 
 
