@@ -183,6 +183,12 @@ main {
     --fs-h1: 60px;
   }
 
+	/* Top navbar */
+	.top-navbar-container {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
   /* Section container */
   .section-container {
 		padding: 0 32px;
