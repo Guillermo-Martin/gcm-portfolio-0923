@@ -87,6 +87,17 @@
   .project-links {
     justify-content: start;
   }
+}
 
+@media only screen and (min-width: 992px) {
+  main {
+    /* border: 3px solid red; */
+    padding-left: 0;
+    padding-right: 0;
+  }
 
+  .projects-cards-container {
+    max-width: 928px;
+    margin: 0 auto;
+  }
 }
