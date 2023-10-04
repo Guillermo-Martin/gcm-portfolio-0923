@@ -5,6 +5,16 @@
   --fs-body: 16px;
 }
 
+/* Body styles */
+html {
+	min-height: 100vh;
+	position: relative;
+}
+
+body {
+	font-family: 'Barlow', sans-serif;
+}
+
 /* Typography styles */
 h1 {
   font-size: var(--fs-h1);
@@ -28,6 +38,90 @@ a {
   /* text-decoration: none; */
 }
 
+/* Top nav style */
+.top-navbar {
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	background-color: #fff;
+}
+
+.top-navbar-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 16px;
+	border-bottom: 1px solid black;
+}
+
+.mobile-nav-icon {
+	cursor: pointer;
+	height: 28px;
+	width: 28px;
+}
+
+/* Mobile icon */
+.mobile-nav-icon svg {
+	width: 100%;
+}
+
+/* Hamburger icon (hide icon) */
+#hamburger-icon.hide {
+	display: none;
+}
+
+/* Close icon */
+#close-icon {
+	bottom: 3px;
+	display: none;
+	position: relative;
+}
+
+/* Show close icon */
+#close-icon.show {
+	display: block;
+}
+
+/* Mobile nav menu (hide menu) */
+.mobile-nav-menu {
+	background-color: white;
+	display: none;
+	height: 100vh;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+
+/* Show mobile nav menu */
+#mobile-nav-menu.show {
+	display: block;
+}
+
+/* Mobile nav links container */
+.mobile-nav-links {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* Nav links */
+.mobile-nav-links li {
+	margin-bottom: 30px;
+}
+
+/* Desktop nav menu (hide at mobile sizes) */
+.desktop-nav-menu {
+	display: none;
+}
+
+
+/* Main element */
+main {
+	padding: 64px 16px;
+	padding-top: 69px;
+	position: relative;
+}
 
 /* Footer */
 .footer {
@@ -86,6 +180,18 @@ a {
   :root {
     --fs-h1: 60px;
   }
+
+  main {
+    margin-bottom: 0;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+  }
+
+  
 }
 
 @media only screen and (min-width: 1200px) {
