@@ -12,3 +12,19 @@
 .image-container img {
 	width: 100%;
 }
+
+/* Text container */
+.project-description {
+  /* border: 3px solid red; */
+  margin-bottom: 32px;
+}
+
+.technology {
+  margin-bottom: 32px;
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
