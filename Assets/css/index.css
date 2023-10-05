@@ -23,7 +23,7 @@
 /* Description */
 .text-container p {
 	font-size: 16px;
-	line-height: 1.5;
+	/* line-height: 1.5; */
 	margin-bottom: 32px;
 }
 
@@ -83,27 +83,6 @@
 }
 
 @media only screen and (min-width: 767px) {
-	/* hide hamburger icon */
-	.mobile-nav-icon {
-		display: none;
-	}
-
-	.desktop-nav-menu {
-		display: block;
-		width: 65%;
-	}
-
-	.desktop-nav-links {
-		display: flex;
-		width: 100%;
-		align-items: center;
-		justify-content: end;
-	}
-
-	.desktop-nav-links li {
-		margin-left: 32px;
-	}
-
 	.image-container {
 		width: 50%;
 	}

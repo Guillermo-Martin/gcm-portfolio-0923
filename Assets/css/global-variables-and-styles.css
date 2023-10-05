@@ -30,6 +30,7 @@ h2 {
 
 p {
   font-size: var(--fs-body);
+	line-height: 1.5;
 }
 
 a {
@@ -176,6 +177,33 @@ main {
     --fs-h1: 40px;
     --fs-h2: 32px;
   }
+
+	/* hide hamburger icon */
+	.mobile-nav-icon {
+		display: none;
+	}
+
+	.top-navbar-container a {
+		height: 28px;
+		display: flex;
+		align-items: center;
+	}
+
+	.desktop-nav-menu {
+		display: block;
+		width: 65%;
+	}
+
+	.desktop-nav-links {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: end;
+	}
+
+	.desktop-nav-links li {
+		margin-left: 32px;
+	}
 }
 
 @media only screen and (min-width: 992px) {
@@ -188,6 +216,8 @@ main {
 		padding-left: 32px;
 		padding-right: 32px;
 	}
+
+	
 
   /* Section container */
   .section-container {
