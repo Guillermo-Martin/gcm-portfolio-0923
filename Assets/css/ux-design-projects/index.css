@@ -22,21 +22,7 @@
   margin-bottom: 24px;
 }
 
-button {
-  width: 100%;
-  padding: 12px 20px;
-  font-family: inherit;
-  font-size: 16px;
-  border-radius: 10px;
-  border: 1px solid black;
-  max-width: 288px;
-}
 
-.text-container-text .case-study-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 /* ---------- Media Queries ---------- */
