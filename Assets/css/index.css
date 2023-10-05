@@ -89,6 +89,11 @@
 }
 
 @media only screen and (min-width: 992px) {
+	/* Hide the top nav */
+	.top-navbar {
+		display: none;
+	}
+
 	/* Main element */
   main {
     margin-bottom: 0;
@@ -156,6 +161,11 @@
 	.links-container-links ul {
 		flex-direction: unset;
 		gap: 32px;
+	}
+
+	/* Footer */
+	.footer {
+		border-top: none;
 	}
 }
 

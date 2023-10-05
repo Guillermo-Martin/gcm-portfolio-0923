@@ -3,6 +3,14 @@
   --fs-h1: 32px;
   --fs-h2: 24px;
   --fs-body: 16px;
+
+	/* breakpoints */
+	/* --sm-mobile: 320px;
+	--lg-mobile: 576px;
+	--sm-tablet: 767px;
+	--lg-tablet: 992px;
+	--sm-desktop: 1200px;
+	--lg-desktop: 1400px; */
 }
 
 /* Body styles */
