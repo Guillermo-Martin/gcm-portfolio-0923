@@ -22,16 +22,15 @@
   margin-bottom: 24px;
 }
 
-.technology {
-  margin-bottom: 32px;
+button {
+  width: 100%;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
-.project-links {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 32px;
-}
 
 /* ---------- Media Queries ---------- */
 @media only screen and (min-width: 576px) {
@@ -47,10 +46,6 @@
     width: 60%;
     margin: 0 auto;
     margin-bottom: 32px;
-  }
-
-  .project-links {
-    justify-content: center;
   }
 }
 
@@ -80,13 +75,12 @@
     width: 55%;
   }
 
-  h2, .technology {
+  h2 {
     text-align: left;
   }
 
-  .project-links {
-    justify-content: start;
-  }
+
+  
 }
 
 @media only screen and (min-width: 992px) {
