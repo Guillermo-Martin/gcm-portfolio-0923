@@ -6,6 +6,7 @@
 .section-container {
   padding-left: 16px;
   padding-right: 16px;
+  margin-bottom: 64px;
 }
 
 /* hero section */
@@ -28,8 +29,16 @@ h1 {
   width: 100%;
 }
 
+h2 {
+  margin-bottom: 20px; 
+}
+
+hr {
+  margin-bottom: 32px;
+}
+
 /* project subsection */
 .project-subsection {
-  border: 3px solid black;
+  /* border: 3px solid black; */
   margin-bottom: 32px;
 }
