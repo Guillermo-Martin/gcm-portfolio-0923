@@ -27,3 +27,9 @@ h1 {
 .image-container img {
   width: 100%;
 }
+
+/* project subsection */
+.project-subsection {
+  border: 3px solid black;
+  margin-bottom: 32px;
+}
