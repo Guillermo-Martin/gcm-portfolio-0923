@@ -99,6 +99,7 @@ a {
 	position: absolute;
 	top: 100%;
 	width: 100%;
+	left: 0;
 }
 
 /* Show mobile nav menu */
@@ -139,7 +140,7 @@ main {
 	position: absolute;
 	text-align: center;
 	width: 100%;
-	border-top: 1px solid black;
+	/* border-top: 1px solid black; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -193,6 +194,7 @@ main {
 	.top-navbar-container {
 		max-width: 1200px;
 		border-bottom: none;
+		margin: 0 auto;
 	}
 
 	.top-navbar-container a {
@@ -201,7 +203,7 @@ main {
 		align-items: center;
 	}
 
-	.desktop-nav-menu {
+	/* .desktop-nav-menu {
 		display: block;
 		width: 65%;
 	}
@@ -211,7 +213,7 @@ main {
 		width: 100%;
 		align-items: center;
 		justify-content: end;
-	}
+	} */
 
 	.desktop-nav-links li {
 		margin-left: 32px;
