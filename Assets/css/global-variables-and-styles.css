@@ -187,8 +187,12 @@ main {
   }
 
 	/* hide hamburger icon */
-	.mobile-nav-icon {
+	/* .mobile-nav-icon {
 		display: none;
+	} */
+	.top-navbar-container {
+		max-width: 1200px;
+		border-bottom: none;
 	}
 
 	.top-navbar-container a {
