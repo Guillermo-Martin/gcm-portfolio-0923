@@ -78,6 +78,9 @@
     text-align: left;
   }
 
+  .text-container-text a {
+    justify-content: start;
+  }
 
   
 }
