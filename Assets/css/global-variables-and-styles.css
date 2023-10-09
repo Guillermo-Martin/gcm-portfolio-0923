@@ -187,6 +187,7 @@ main {
   :root {
     --fs-h1: 40px;
     --fs-h2: 32px;
+		--fs-h3: 28px;
   }
 
 	.top-navbar-container {

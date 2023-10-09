@@ -51,10 +51,31 @@ hr {
 }
 
 @media only screen and (min-width: 767px) {
+  
+  
+
+  .section-container {
+    margin-bottom: 128px;
+  }
+
+  .section-container hr {
+    margin-bottom: 100px;
+    /* border: 3px solid red; */
+  }
+
   .image-container {
     width: 75%;
     margin: 0 auto;
     margin-bottom: 32px;
+  }
+
+
+  .hero-section {
+    margin-bottom: 0;
+  }
+
+  .hero-section p {
+    text-align: center;
   }
 }
 
@@ -68,7 +89,11 @@ hr {
     margin-bottom: 0;
   }
 
-  /* Project overview */
+  /* ---------- Project overview section ---------- */
+  h3 {
+    font-size: var(--fs-h3);
+  }
+
   .project-overview-container {
     /* border: 3px solid red; */
     display: grid;
@@ -80,8 +105,11 @@ hr {
     margin-bottom: 0;
   }
 
+  .project-subsections-container h3 {
+    text-align: left;
+  }
+
   .product-subsection, .problem-subsection, .goal-subsection {
-    /* border: 3px solid red; */
     grid-column-start: 1;
     grid-column-end: 4;
     display: flex;
@@ -90,8 +118,22 @@ hr {
     gap: 32px;
   }
 
-  .duration-subsection .image-container, .role-subsection .image-container, .responsibilities-subsection .image-container {
-    /* border: 3px solid blue; */
+  .problem-subsection {
+    flex-direction: row-reverse;
+  }
+
+
+  /* Duration, role, responsibilities row */
+  .duration-subsection .image-container, 
+  .role-subsection .image-container, 
+  .responsibilities-subsection .image-container {
     width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .duration-subsection h3, 
+  .role-subsection h3, 
+  .responsibilities-subsection h3 {
+    text-align: center;
   }
 }
