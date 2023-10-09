@@ -52,6 +52,13 @@ a {
   /* border: 3px solid red; */
   /* color: #375293; */
   /* text-decoration: none; */
+	color: #334789;
+	transition: all 0.2s;
+}
+
+a:hover {
+	/* secondary color */
+	color: #7E3036;
 }
 
 /* Top nav style */
@@ -231,3 +238,14 @@ main {
 		margin: 0 auto;
 	}
 }
+
+
+/* ---------- Colors ---------- */
+/* Primary */
+/* color: #334789; */
+
+/* secondary color */
+/* color: #7E3036; */
+	
+/* color: #A14143; secondary compliment */
+/* color: #5897D7; primary compliment */
