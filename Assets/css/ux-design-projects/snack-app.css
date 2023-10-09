@@ -72,13 +72,19 @@ hr {
     margin-bottom: 32px;
   }
 
-
+  /* ----- Hero section ----- */
   .hero-section {
     margin-bottom: 0;
   }
 
   .hero-section p {
     text-align: center;
+  }
+
+  /* ----- Project subsections ----- */
+  .project-subsection p {
+    text-align: center;
+    /* border: 3px solid red; */
   }
 }
 
@@ -121,10 +127,21 @@ hr {
     gap: 32px;
   }
 
+  /* project overview subsections */
   .problem-subsection {
     flex-direction: row-reverse;
   }
 
+  .product-subsection p, .problem-subsection p, .goal-subsection p {
+    /* border: 3px solid red; */
+    text-align: left;
+  }
+
+  /* Goal subsection */
+  .goal-subsection {
+    /* border: 3px solid red; */
+    margin-bottom: 32px;
+  }
 
   /* Duration, role, responsibilities row */
   .duration-subsection .image-container, 
@@ -138,5 +155,14 @@ hr {
   .role-subsection h3, 
   .responsibilities-subsection h3 {
     text-align: center;
+  }
+
+  /* ---------- Unstanding the user section ---------- */
+  .understanding-the-user-section .project-subsection,
+  .starting-the-design-section .project-subsection,
+  .refining-the-design-section .project-subsection,
+  .going-forward-section .project-subsection {
+    /* border: 3px solid red; */
+    margin-bottom: 32px;
   }
 }
