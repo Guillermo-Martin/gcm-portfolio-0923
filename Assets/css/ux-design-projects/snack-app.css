@@ -9,15 +9,13 @@
   margin-bottom: 64px;
 }
 
-/* hero section */
-/* h1 {
-  margin-bottom: 0;
-} */
+h4 {
+  font-weight: 600;
+}
 
+/* ---------- Hero section ---------- */
 .hero-section {
-  /* background-color: red; */
-  padding-top: 128px;
-  padding-bottom: 128px;
+  margin-top: 64px;
 }
 
 .image-container {
@@ -37,10 +35,29 @@ hr {
   margin-bottom: 32px;
 }
 
-/* project subsection */
+/* project subsections */
 .project-subsection {
-  /* border: 3px solid black; */
+  margin-bottom: 40px;
+}
+
+/* ---------- Understanding the user ---------- */
+.user-research {
   margin-bottom: 32px;
+}
+
+.user-research p:nth-child(2) {
+  /* border: 3px solid red; */
+  margin-bottom: 16px;
+}
+
+.pain-points > div {
+  /* border: 3px solid red; */
+  margin-bottom: 32px;
+}
+
+.pain-points h4 {
+  /* border: 3px solid red; */
+  margin-bottom: 8px;
 }
 
 /* media queries */
