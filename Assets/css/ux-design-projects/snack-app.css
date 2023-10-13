@@ -101,12 +101,35 @@ hr {
 }
 
 /* user journey tables */
-/* .user-journey-table {
-  border: 3px solid red;
-} */
-
 .user-journey-table table, th, td {
   border: 1px solid black;
+}
+
+th, td {
+  padding: 30px;
+}
+
+th {
+  text-align: center;
+}
+
+td {
+  text-align: left;
+}
+
+/* headers and first column */
+th:first-child, td:first-child, th {
+  background-color: red;
+  vertical-align: middle;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+td ul {
+  /* background-color: pink; */
+  list-style-type: disc;
+  padding-left: 12px;
 }
 
 
