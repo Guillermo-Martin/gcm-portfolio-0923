@@ -69,6 +69,32 @@ hr {
   margin-bottom: 20px;
 }
 
+/* list items */
+.persona-details li {
+  margin-bottom: 8px;
+}
+
+.persona-details span {
+  /* border: 3px solid red; */
+  font-weight: 600;
+}
+
+.persona-quote {
+  font-style: italic;
+  font-size: 24px;
+}
+
+.goals ul, .frustrations ul {
+  /* border: 3px solid red; */
+  list-style: disc;
+  padding-left: 28px;
+}
+
+.goals li, .frustrations li {
+  margin-bottom: 8px;
+}
+
+
 /* media queries */
 @media only screen and (min-width: 576px) {
   h1, h2, h3 {
