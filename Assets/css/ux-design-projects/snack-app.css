@@ -85,7 +85,6 @@ hr {
 }
 
 .goals ul, .frustrations ul {
-  /* border: 3px solid red; */
   list-style: disc;
   padding-left: 28px;
 }
@@ -96,17 +95,23 @@ hr {
 
 /* problem statements */
 .charlie-henderson-problem {
-  /* border: 3px solid red; */
   margin-bottom: 32px;
 }
 
 /* ----- user journey tables ----- */
+.persona-user-journey p {
+  margin-bottom: 16px;
+}
+
+.user-journey-cta {
+  font-style: italic;
+}
+
 .user-journey-table table, th, td {
   border: 1px solid black;
 }
 
 .user-journey-table {
-  /* border: 3px solid red; */
   overflow-x: scroll;
 }
 
