@@ -46,17 +46,14 @@ hr {
 }
 
 .user-research p:nth-child(2) {
-  /* border: 3px solid red; */
   margin-bottom: 16px;
 }
 
 .pain-points > div {
-  /* border: 3px solid red; */
   margin-bottom: 32px;
 }
 
 .pain-points h4 {
-  /* border: 3px solid red; */
   margin-bottom: 8px;
 }
 
@@ -75,7 +72,6 @@ hr {
 }
 
 .persona-details span {
-  /* border: 3px solid red; */
   font-weight: 600;
 }
 
@@ -121,7 +117,6 @@ hr {
 }
 
 .user-journey-table.charlie-henderson-user-journey {
-  /* border: 3px solid red; */
   margin-bottom: 64px;
 }
 
@@ -141,7 +136,6 @@ th {
 
 /* headers and first column */
 th:first-child, td:first-child, th {
-/* th:first-child, th { */
   background-color: skyblue;
   vertical-align: middle;
   font-size: 20px;
@@ -154,21 +148,18 @@ td:first-child, thead th:first-child {
 }
 
 td ul {
-  /* background-color: pink; */
   list-style-type: disc;
   padding-left: 12px;
 }
 
 td li {
-  /* border: 3px solid red; */
   margin-bottom: 8px;
   line-height: 1.2;
 }
 
 /* ---------- Starting the design section ---------- */
-/* paper wireframes (mobile) */
-.paper-wireframes .image-container {
-  /* border: 3px solid red; */
+/* paper wireframes and digital wireframes (mobile) */
+.paper-wireframes .image-container, .digital-wireframes .image-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,13 +167,10 @@ td li {
 }
 
 img.mobile-wireframes {
-  /* border: 3px solid red; */
   width: 90%;
-  /* margin: 0 auto; */
 }
 
 img.mobile-wireframes:first-child {
-  /* border: 3px solid red; */
   margin-bottom: 32px;
 }
 
@@ -277,13 +265,11 @@ img.mobile-wireframes:first-child {
   }
 
   .product-subsection p, .problem-subsection p, .goal-subsection p {
-    /* border: 3px solid red; */
     text-align: left;
   }
 
   /* Goal subsection */
   .goal-subsection {
-    /* border: 3px solid red; */
     margin-bottom: 32px;
   }
 
@@ -306,7 +292,6 @@ img.mobile-wireframes:first-child {
   .starting-the-design-section .project-subsection,
   .refining-the-design-section .project-subsection,
   .going-forward-section .project-subsection {
-    /* border: 3px solid red; */
     margin-bottom: 32px;
   }
 }
