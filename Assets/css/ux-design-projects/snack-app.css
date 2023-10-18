@@ -109,6 +109,7 @@ hr {
 
 .user-journey-cta {
   font-style: italic;
+  text-align: right;
 }
 
 .user-journey-table table, th, td {
@@ -177,10 +178,8 @@ td li {
 }
 
 @media only screen and (min-width: 767px) {
-  
   h2 {
     margin-bottom: 32px;
-    /* border: 3px solid red; */
   }
 
   .section-container {
@@ -189,7 +188,6 @@ td li {
 
   .section-container hr {
     margin-bottom: 100px;
-    /* border: 3px solid red; */
   }
 
   .image-container {
@@ -210,7 +208,10 @@ td li {
   /* ----- Project subsections ----- */
   .project-subsection p {
     text-align: center;
-    /* border: 3px solid red; */
+  }
+
+  p.user-journey-cta {
+    text-align: right;
   }
 }
 
@@ -283,12 +284,23 @@ td li {
     text-align: center;
   }
 
-  /* ---------- Unstanding the user section ---------- */
+  /* ---------- Understanding the user section ---------- */
   .understanding-the-user-section .project-subsection,
   .starting-the-design-section .project-subsection,
   .refining-the-design-section .project-subsection,
   .going-forward-section .project-subsection {
     /* border: 3px solid red; */
     margin-bottom: 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* ---------- User journey maps ---------- */
+  .user-journey-cta {
+    display: none;
+  }
+
+  .user-journey-table table {
+    min-width: unset;
   }
 }
