@@ -176,10 +176,49 @@ img.mobile-wireframes:first-child {
 
 /* low-fidelity prototype */
 .low-fidelity-prototype p:nth-child(3) {
-  /* border: 3px solid blue; */
   margin-bottom: 16px;
 }
 
+/* usability study */
+.usability-study p {
+  margin-bottom: 16px;
+}
+
+.usability-study h4 {
+  margin-bottom: 20px;
+}
+
+.usability-study ul {
+  list-style: disc;
+  padding-left: 28px;
+}
+
+.usability-study li {
+  margin-bottom: 8px;
+}
+
+/* ---------- Refining the design section ---------- */
+.refined-mockups-1 .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.refined-mockups-1 .mockups {
+  /* border: 3px solid red; */
+  width: 90%;
+}
+
+img.mockups:first-child {
+  margin-bottom: 32px;
+}
+
+/* down arrow */
+.down-arrow {
+  font-size: 100px;
+  margin-bottom: 32px;
+}
 
 /* media queries */
 @media only screen and (min-width: 576px) {
