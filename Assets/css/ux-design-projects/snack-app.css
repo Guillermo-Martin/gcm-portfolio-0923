@@ -205,6 +205,7 @@ img.mobile-wireframes:first-child {
   flex-direction: column;
 }
 
+/* mockups */
 .refined-mockups-1 .mockups {
   /* border: 3px solid red; */
   width: 90%;
@@ -220,8 +221,27 @@ img.mockups:first-child {
   margin-bottom: 32px;
 }
 
+/* high-fidelity prototype 1 */
 .hifi-prototype-1 p:nth-child(3) {
   margin-bottom: 16px;
+}
+
+/* usability study 2 */
+.usability-study-2 h4 {
+  margin-bottom: 20px;
+}
+
+.usability-study-2 p {
+  margin-bottom: 16px;
+}
+
+.usability-study-2 ul {
+  list-style: disc;
+   padding-left: 28px;
+}
+
+.usability-study-2 li {
+  margin-bottom: 8px;
 }
 
 /* media queries */
