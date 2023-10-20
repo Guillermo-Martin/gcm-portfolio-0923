@@ -220,6 +220,10 @@ img.mockups:first-child {
   margin-bottom: 32px;
 }
 
+.hifi-prototype-1 p:nth-child(3) {
+  margin-bottom: 16px;
+}
+
 /* media queries */
 @media only screen and (min-width: 576px) {
   h1, h2, h3 {
