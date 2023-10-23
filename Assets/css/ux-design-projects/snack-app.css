@@ -262,6 +262,20 @@ img.mockups:first-child {
   width: 90%;
 }
 
+/* final mockups */
+.final-mockups .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.final-mockups img {
+  /* border: 3px solid red; */
+  width: 90%;
+  margin-bottom: 32px;
+}
+
 /* media queries */
 @media only screen and (min-width: 576px) {
   h1, h2, h3 {
