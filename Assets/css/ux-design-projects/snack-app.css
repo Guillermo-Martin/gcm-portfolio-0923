@@ -244,6 +244,24 @@ img.mockups:first-child {
   margin-bottom: 8px;
 }
 
+/* mockups 2 */
+.refined-mockups-2 .image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.refined-mockups-2 img:first-child {
+  /* border: 3px solid red; */
+  margin-bottom: 32px;
+}
+
+.refined-mockups-2 .mockups-2 {
+  /* border: 3px solid red; */
+  width: 90%;
+}
+
 /* media queries */
 @media only screen and (min-width: 576px) {
   h1, h2, h3 {
