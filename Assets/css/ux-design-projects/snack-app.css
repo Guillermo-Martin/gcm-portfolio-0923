@@ -349,7 +349,7 @@ img.mockups:first-child {
     margin: 0 auto;
   }
 
-  /* ----- Hero section ----- */
+  /* ---------- Hero section ---------- */
   .hero-section {
     margin-bottom: 64px;
   }
@@ -360,7 +360,37 @@ img.mockups:first-child {
     margin: 0 auto;
   }
 
-  
+  /* ---------- Understanding the user section ---------- */
+  .understanding-the-user-section h4 {
+    border: 3px solid blue;
+    text-align: center;
+  }
+
+  /* ----- Persona details ----- */
+  .persona-details {
+    border: 3px solid orange;
+    text-align: center;
+  }
+
+  p.persona-bio {
+    /* background-color: red; */
+    margin-bottom: 20px;
+  }
+
+  p.persona-quote {
+    margin-bottom: 20px;
+  }
+
+  /* ----- Goals and frustrations ----- */
+  .goals, .frustrations {
+    border: 3px solid green;
+    text-align: center;
+  }
+
+  .goals ul, .frustrations ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
 
   p.user-journey-cta {
     text-align: right;
