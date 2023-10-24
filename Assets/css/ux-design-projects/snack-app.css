@@ -292,8 +292,23 @@ img.mockups:first-child {
 }
 
 /* ---------- Takeaways ---------- */
+.takeaways h4 {
+  margin-bottom: 20px;
+}
+
 .takeaways .impact {
   margin-bottom: 32px;
+}
+
+/* ---------- Next steps ---------- */
+.next-steps p {
+  /* border: 3px solid red; */
+  margin-bottom: 16px;
+}
+
+.next-steps p:last-child {
+  /* border: 3px solid red; */
+  margin-bottom: 0;
 }
 
 /* media queries */
