@@ -331,28 +331,36 @@ img.mockups:first-child {
   }
 
   .section-container hr {
-    margin-bottom: 100px;
+    margin-bottom: 48px;
   }
 
+  /* ----- Image container for all sections ----- */
   .image-container {
     width: 75%;
     margin: 0 auto;
     margin-bottom: 32px;
   }
 
+  /* ----- Project subsections for all sections ----- */
+  .project-subsection p {
+    text-align: center;
+    border: 3px solid red;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   /* ----- Hero section ----- */
   .hero-section {
-    margin-bottom: 0;
+    margin-bottom: 64px;
   }
 
   .hero-section p {
     text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
-  /* ----- Project subsections ----- */
-  .project-subsection p {
-    text-align: center;
-  }
+  
 
   p.user-journey-cta {
     text-align: right;
