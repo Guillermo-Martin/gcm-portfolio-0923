@@ -268,11 +268,31 @@ img.mockups:first-child {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 0;
 }
 
 .final-mockups img {
   /* border: 3px solid red; */
   width: 90%;
+  margin-bottom: 32px;
+}
+
+/* ---------- Accessibility ---------- */
+.accessibility span {
+  font-weight: 600;
+}
+
+.accessibility p {
+  /* border: 3px solid red; */
+  margin-bottom: 16px;
+}
+
+.accessibility p:nth-child(5) {
+  margin-bottom: 0;
+}
+
+/* ---------- Takeaways ---------- */
+.takeaways .impact {
   margin-bottom: 32px;
 }
 
