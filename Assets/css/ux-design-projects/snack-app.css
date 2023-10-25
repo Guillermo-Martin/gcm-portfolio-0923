@@ -65,6 +65,12 @@ h4 {
   margin-bottom: 64px;
 }
 
+.persona-image {
+  max-width: 440px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
 .persona-text h4, .persona-details, .persona-bio, .persona-quote, .goals {
   margin-bottom: 20px;
 }
