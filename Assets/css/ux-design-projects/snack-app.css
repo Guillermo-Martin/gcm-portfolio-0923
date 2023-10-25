@@ -455,6 +455,23 @@ img.mockups:first-child {
     /* border: 3px solid pink; */
     margin-bottom: 20px;
   }
+
+  /* ---------- Going forward ---------- */
+  /* ----- Takeaways ----- */
+  .takeaways h4 {
+    text-align: center;
+  }
+
+  .impact p:nth-child(2) {
+    /* border: 3px solid blue; */
+    margin-bottom: 20px;
+  }
+
+  /* ----- Next steps ----- */
+  .next-steps p:nth-child(2), .next-steps p:nth-child(3) {
+    border: 3px solid blue;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
