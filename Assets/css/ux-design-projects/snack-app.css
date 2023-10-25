@@ -76,9 +76,9 @@ hr {
 }
 
 /* Persona details */
-.persona-details li {
+/* .persona-details li {
   margin-bottom: 8px;
-}
+} */
 
 .persona-details span {
   font-weight: 600;
@@ -95,9 +95,10 @@ hr {
   padding-left: 28px;
 }
 
-.goals li, .frustrations li {
+/* .goals li, .frustrations li {
   margin-bottom: 8px;
-}
+  line-height: 1.2;
+} */
 
 /* problem statements */
 .charlie-henderson-problem {
@@ -170,7 +171,7 @@ td ul {
 td li {
   /* margin-bottom: 8px; */
   margin-bottom: 4px;
-  line-height: 1.2;
+  /* line-height: 1.2; */
   /* background-color: red; */
 }
 
@@ -216,9 +217,10 @@ img.mobile-wireframes:first-child {
   padding-left: 28px;
 }
 
-.usability-study li {
+/* .usability-study li {
+  line-height: 1.2;
   margin-bottom: 8px;
-}
+} */
 
 /* ---------- Refining the design section ---------- */
 .refined-mockups-1 .image-container {
@@ -263,9 +265,10 @@ img.mockups:first-child {
   padding-left: 28px;
 }
 
-.usability-study-2 li {
+/* .usability-study-2 li {
+  line-height: 1.2;
   margin-bottom: 8px;
-}
+} */
 
 /* ----- Mockups 2 ----- */
 .refined-mockups-2 .image-container {

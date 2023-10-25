@@ -160,6 +160,13 @@ main {
 	position: relative;
 }
 
+/* other elements */
+li {
+	/* border: 3px solid green !important; */
+	line-height: 1.2;
+  margin-bottom: 8px;
+}
+
 /* Footer */
 .footer {
 	bottom: 0;
