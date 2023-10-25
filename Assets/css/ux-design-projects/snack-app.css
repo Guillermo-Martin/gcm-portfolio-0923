@@ -143,7 +143,8 @@ td {
 }
 
 th {
-  padding: 32px 20px;
+  /* padding: 32px 20px; */
+  padding: 20px;
   text-align: center;
 }
 
@@ -151,7 +152,8 @@ th {
 th:first-child, td:first-child, th {
   background-color: skyblue;
   vertical-align: middle;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
@@ -166,8 +168,15 @@ td ul {
 }
 
 td li {
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
+  margin-bottom: 4px;
   line-height: 1.2;
+  /* background-color: red; */
+}
+
+td li:last-child {
+  /* background-color: red; */
+  margin-bottom: 0;
 }
 
 /* ---------- Starting the design section ---------- */
