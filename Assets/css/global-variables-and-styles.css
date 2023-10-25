@@ -209,6 +209,13 @@ li {
 
 /* ---------- Media Queries ---------- */
 @media only screen and (min-width: 576px) {
+	:root {
+		--fs-h1: 44px;
+		--fs-h2: 36px;
+		--fs-h3: 28px;
+		--fs-h4: 24px;
+	}
+
   .footer-social-nav {
     display: flex;
   }
@@ -216,7 +223,8 @@ li {
 
 @media only screen and (min-width: 767px) {
   :root {
-    --fs-h1: 40px;
+    /* --fs-h1: 40px; */
+    --fs-h1: 60px;
     --fs-h2: 32px;
 		--fs-h3: 28px;
   }

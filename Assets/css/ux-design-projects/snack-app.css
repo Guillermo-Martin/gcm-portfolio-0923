@@ -328,7 +328,7 @@ img.mockups:first-child {
   /* ----- Project subsections for all sections ----- */
   .project-subsection p {
     text-align: center;
-    border: 3px solid red;
+    /* border: 3px solid red; */
     max-width: 600px;
     margin: 0 auto;
   }
