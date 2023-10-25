@@ -367,8 +367,15 @@ img.mockups:first-child {
   }
 
   .goals ul, .frustrations ul {
-    list-style-type: none;
-    padding-left: 0;
+    /* list-style-type: none;
+    padding-left: 0; */
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  .goals li, .frustrations li {
+    text-align: left;
   }
 
   /* ----- Problem statements ----- */
