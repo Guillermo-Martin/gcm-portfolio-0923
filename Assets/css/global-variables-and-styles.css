@@ -6,6 +6,11 @@
 	--fs-h4: 20px;
   --fs-body: 16px;
 
+	/* Block spacers */
+	--block-lg: 64px;
+	--block-md: 40px;
+	--block-sm: 32px;
+
 	/* breakpoints */
 	/* --sm-mobile: 320px;
 	--lg-mobile: 576px;

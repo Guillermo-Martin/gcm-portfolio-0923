@@ -6,7 +6,7 @@
 .section-container {
   padding-left: 16px;
   padding-right: 16px;
-  margin-bottom: 64px;
+  margin-bottom: var(--block-lg);
 }
 
 /* project subsections */
@@ -28,7 +28,7 @@ hr {
 
 /* ---------- Hero section ---------- */
 .hero-section {
-  margin-top: 64px;
+  margin-top: var(--block-lg);
 }
 
 /* ----- Image container ----- */
@@ -62,7 +62,7 @@ hr {
 
 /* ----- Personas ----- */
 .persona {
-  margin-bottom: 64px;
+  margin-bottom: var(--block-lg);
 }
 
 .persona-image {
@@ -130,7 +130,7 @@ hr {
 }
 
 .user-journey-table.charlie-henderson-user-journey {
-  margin-bottom: 64px;
+  margin-bottom: var(--block-lg);
 }
 
 .user-journey-table table {
@@ -335,9 +335,9 @@ img.mockups:first-child {
   }
 
   /* ---------- Hero section ---------- */
-  .hero-section {
+  /* .hero-section {
     margin-bottom: 64px;
-  }
+  } */
 
   .hero-section p {
     text-align: center;
