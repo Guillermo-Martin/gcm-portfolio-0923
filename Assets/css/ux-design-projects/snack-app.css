@@ -22,9 +22,9 @@ hr {
   margin-bottom: 32px;
 }
 
-h4 {
+/* h4 {
   font-weight: 600;
-}
+} */
 
 /* ---------- Hero section ---------- */
 .hero-section {
@@ -48,7 +48,7 @@ h4 {
 }
 
 .user-research p:nth-child(2) {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 /* ----- Pain points ----- */
@@ -56,9 +56,9 @@ h4 {
   margin-bottom: 32px;
 }
 
-.pain-points h4 {
+/* .pain-points h4 {
   margin-bottom: 8px;
-}
+} */
 
 /* ----- Personas ----- */
 .persona {
@@ -106,7 +106,7 @@ h4 {
 
 /* ---------- User journey maps ---------- */
 .persona-user-journey p {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .persona-user-journey span {
@@ -189,12 +189,12 @@ img.mobile-wireframes:first-child {
 
 /* ----- Low-fidelity prototype ----- */
 .low-fidelity-prototype p:nth-child(3) {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 /* ----- Usability study ----- */
 .usability-study p {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .usability-study h4 {
@@ -236,7 +236,7 @@ img.mockups:first-child {
 
 /* ----- High-fidelity prototype #1 ----- */
 .hifi-prototype-1 p:nth-child(3) {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 /* ----- Usability study 2 ----- */
@@ -245,7 +245,7 @@ img.mockups:first-child {
 }
 
 .usability-study-2 p {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 /* Findings */
@@ -294,7 +294,7 @@ img.mockups:first-child {
 }
 
 .accessibility p {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .accessibility p:nth-child(5) {
@@ -303,9 +303,9 @@ img.mockups:first-child {
 
 /* ---------- Going forward section ---------- */
 /* ----- Takeaways ----- */
-.takeaways h4 {
+/* .takeaways h4 {
   margin-bottom: 20px;
-}
+} */
 
 .takeaways .impact {
   margin-bottom: 32px;
@@ -313,7 +313,7 @@ img.mockups:first-child {
 
 /* ----- Next steps ----- */
 .next-steps p {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .next-steps p:last-child {
