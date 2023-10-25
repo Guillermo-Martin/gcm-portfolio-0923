@@ -322,29 +322,8 @@ img.mockups:first-child {
 
 /* ---------- Media queries ---------- */
 @media only screen and (min-width: 576px) {
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     text-align: center;
-  }
-}
-
-@media only screen and (min-width: 767px) {
-  h2 {
-    margin-bottom: 32px;
-  }
-
-  .section-container {
-    margin-bottom: 128px;
-  }
-
-  .section-container hr {
-    margin-bottom: 48px;
-  }
-
-  /* ----- Image container for all sections ----- */
-  .image-container {
-    width: 75%;
-    margin: 0 auto;
-    margin-bottom: 32px;
   }
 
   /* ----- Project subsections for all sections ----- */
@@ -367,11 +346,6 @@ img.mockups:first-child {
   }
 
   /* ---------- Understanding the user section ---------- */
-  .understanding-the-user-section h4 {
-    /* border: 3px solid blue; */
-    text-align: center;
-  }
-
   /* ----- Persona details ----- */
   .persona-details {
     /* border: 3px solid orange; */
@@ -477,6 +451,30 @@ img.mockups:first-child {
   .next-steps p:nth-child(2), .next-steps p:nth-child(3) {
     border: 3px solid blue;
     margin-bottom: 20px;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 767px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  .section-container {
+    margin-bottom: 128px;
+  }
+
+  .section-container hr {
+    margin-bottom: 48px;
+  }
+
+  /* ----- Image container for all sections ----- */
+  .image-container {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 32px;
   }
 }
 
