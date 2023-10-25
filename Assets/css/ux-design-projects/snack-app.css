@@ -183,6 +183,7 @@ td li:last-child {
 }
 
 img.mobile-wireframes {
+  max-width: 300px;
   width: 90%;
 }
 
@@ -220,6 +221,7 @@ img.mobile-wireframes:first-child {
 
 /* ----- Mockups ----- */
 .refined-mockups-1 .mockups {
+  max-width: 300px;
   width: 90%;
 }
 
@@ -266,6 +268,7 @@ img.mockups:first-child {
 }
 
 .refined-mockups-2 .mockups-2 {
+  max-width: 300px;
   width: 90%;
 }
 
@@ -279,6 +282,7 @@ img.mockups:first-child {
 }
 
 .final-mockups img {
+  max-width: 300px;
   width: 90%;
   margin-bottom: 32px;
 }
