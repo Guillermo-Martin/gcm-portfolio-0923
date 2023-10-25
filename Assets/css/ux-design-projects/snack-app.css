@@ -362,13 +362,13 @@ img.mockups:first-child {
 
   /* ---------- Understanding the user section ---------- */
   .understanding-the-user-section h4 {
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     text-align: center;
   }
 
   /* ----- Persona details ----- */
   .persona-details {
-    border: 3px solid orange;
+    /* border: 3px solid orange; */
     text-align: center;
   }
 
@@ -383,7 +383,7 @@ img.mockups:first-child {
 
   /* ----- Goals and frustrations ----- */
   .goals, .frustrations {
-    border: 3px solid green;
+    /* border: 3px solid green; */
     text-align: center;
   }
 
@@ -392,8 +392,26 @@ img.mockups:first-child {
     padding-left: 0;
   }
 
+  /* ----- Problem statements ----- */
+  p.charlie-henderson-problem {
+    /* border: 3px solid green !important; */
+    margin-bottom: 20px;
+  }
+
+  /* ----- User journey maps ----- */
+  .persona-user-journey p:nth-child(1), .persona-user-journey p:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
   p.user-journey-cta {
+    max-width: unset;
     text-align: right;
+  }
+
+  /* ---------- Starting the design ---------- */
+  .digital-wireframes > p:nth-child(3) {
+    /* background-color: green; */
+    margin-bottom: 20px;
   }
 }
 
