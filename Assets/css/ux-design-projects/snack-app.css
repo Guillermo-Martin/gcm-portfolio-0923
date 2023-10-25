@@ -432,6 +432,23 @@ img.mockups:first-child {
     padding-left: 0;
     list-style-type: none;
   }
+
+  /* ----- Usability study #2 ----- */
+  .usability-study-2 h4 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .usability-study-2 p {
+    margin-bottom: 20px;
+  }
+  
+  .usability-study-2 ul {
+    border: 3px solid green;
+    text-align: center;
+    padding-left: 0;
+    list-style-type: none;
+  }
 }
 
 @media only screen and (min-width: 992px) {
