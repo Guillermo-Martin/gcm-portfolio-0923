@@ -95,11 +95,6 @@ hr {
   padding-left: 28px;
 }
 
-/* .goals li, .frustrations li {
-  margin-bottom: 8px;
-  line-height: 1.2;
-} */
-
 /* problem statements */
 .charlie-henderson-problem {
   margin-bottom: 32px;
@@ -169,9 +164,7 @@ td ul {
 }
 
 td li {
-  /* margin-bottom: 8px; */
   margin-bottom: 4px;
-  /* line-height: 1.2; */
   /* background-color: red; */
 }
 
@@ -217,11 +210,6 @@ img.mobile-wireframes:first-child {
   padding-left: 28px;
 }
 
-/* .usability-study li {
-  line-height: 1.2;
-  margin-bottom: 8px;
-} */
-
 /* ---------- Refining the design section ---------- */
 .refined-mockups-1 .image-container {
   display: flex;
@@ -264,11 +252,6 @@ img.mockups:first-child {
   list-style: disc;
   padding-left: 28px;
 }
-
-/* .usability-study-2 li {
-  line-height: 1.2;
-  margin-bottom: 8px;
-} */
 
 /* ----- Mockups 2 ----- */
 .refined-mockups-2 .image-container {
