@@ -548,6 +548,7 @@ img.mockups:first-child {
   }
 
   /* ---------- Refining the design ---------- */
+  /* Refined mockups */
   .refined-mockups-1 .image-container, .refined-mockups-2 .image-container {
     /* border: 3px solid blue; */
     flex-direction: row;
@@ -572,6 +573,20 @@ img.mockups:first-child {
   .right-arrow {
     display: block;
     font-size: 100px;
+  }
+
+  /* ----- Final Mockups ----- */
+  .final-mockups .image-container {
+    /* border: 3px solid blue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    grid-row-gap: 32px;
+  }
+
+  .final-mockups img {
+    margin-bottom: 0;
   }
 }
 
