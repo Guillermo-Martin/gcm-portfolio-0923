@@ -325,6 +325,11 @@ img.mockups:first-child {
     text-align: center;
   }
 
+  .section-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   /* ----- Project subsections for all sections ----- */
   .project-subsection p {
     text-align: center;
