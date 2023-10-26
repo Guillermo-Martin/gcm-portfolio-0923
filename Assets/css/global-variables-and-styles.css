@@ -225,8 +225,11 @@ li {
   :root {
     /* --fs-h1: 40px; */
     --fs-h1: 60px;
-    --fs-h2: 32px;
-		--fs-h3: 28px;
+    /* --fs-h2: 32px; */
+    --fs-h2: 48px;
+		/* --fs-h3: 28px; */
+		--fs-h3: 32px;
+		/* --fs-h4: 28px; */
   }
 
 	.top-navbar-container {
