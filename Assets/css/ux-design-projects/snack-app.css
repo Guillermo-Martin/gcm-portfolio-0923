@@ -529,6 +529,18 @@ img.mockups:first-child {
     grid-column-start: 1;
     grid-column-end: 3;
   }
+
+  /* Paper and digital wireframes */
+  .paper-wireframes .image-container, .digital-wireframes .image-container {
+    flex-direction: row;
+    align-items: unset;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  img.mobile-wireframes:first-child {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 992px) {
