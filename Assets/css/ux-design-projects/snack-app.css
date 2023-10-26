@@ -494,6 +494,36 @@ img.mockups:first-child {
     margin: 0 auto;
     margin-bottom: 32px;
   }
+
+  /* ---------- Project Overview ---------- */
+  .project-overview-container {
+    /* border: 3px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+    grid-column-gap: 60px;
+    padding: 0 60px;
+  }
+
+  .project-overview-section .project-subsection {
+    /* background-color: green; */
+    margin-bottom: 0;
+  } 
+
+  .product-subsection {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .problem-subsection {
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+  }
+
+  .responsibilities-subsection {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 @media only screen and (min-width: 992px) {
