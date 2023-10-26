@@ -553,7 +553,7 @@ img.mockups:first-child {
     /* border: 3px solid blue; */
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   img.mockups:first-child {
@@ -584,6 +584,7 @@ img.mockups:first-child {
     justify-items: center;
     grid-row-gap: 32px;
     margin-bottom: 32px;
+    max-width: 704px;
   }
 
   .final-mockups img {
@@ -608,8 +609,8 @@ img.mockups:first-child {
 
   .project-overview-container {
     /* border: 3px solid red; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
     gap: 32px;
   }
 
@@ -617,26 +618,31 @@ img.mockups:first-child {
     margin-bottom: 0;
   }
 
+  .project-subsection p {
+    max-width: unset;
+  }
+
   .project-subsections-container h3 {
     text-align: left;
   }
 
   .product-subsection, .problem-subsection, .goal-subsection {
-    grid-column-start: 1;
+    /* grid-column-start: 1;
     grid-column-end: 4;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 32px; */
   }
 
   /* project overview subsections */
   .problem-subsection {
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
   }
 
   .product-subsection p, .problem-subsection p, .goal-subsection p {
     text-align: left;
+    max-width: unset;
   }
 
   /* Goal subsection */
@@ -652,10 +658,10 @@ img.mockups:first-child {
     margin-bottom: 32px;
   }
 
-  .duration-subsection h3, 
-  .role-subsection h3, 
-  .responsibilities-subsection h3 {
-    text-align: center;
+  .duration-subsection p, 
+  .role-subsection p, 
+  .responsibilities-subsection p {
+    text-align: left;
   }
 
   /* ---------- Understanding the user section ---------- */
