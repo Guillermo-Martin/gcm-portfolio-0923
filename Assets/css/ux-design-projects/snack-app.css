@@ -748,6 +748,20 @@ img.mockups:first-child {
   .goals {
     margin-bottom: 0;
   }
+
+  /* ----- Problem statements ----- */
+  .problem-statements p {
+    /* border: 3px solid red; */
+    text-align: left;
+  }
+
+  /* ---------- Starting the design ---------- */
+  /* ----- Paper and digital wireframes ----- */
+  .paper-wireframes .image-container, .digital-wireframes .image-container {
+    max-width: 872px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
