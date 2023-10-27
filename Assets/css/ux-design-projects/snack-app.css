@@ -762,6 +762,19 @@ img.mockups:first-child {
     margin: 0 auto;
     margin-bottom: 32px;
   }
+
+  .paper-wireframes p, .digital-wireframes p {
+    text-align: left;
+  }
+
+  /* ----- Low-fidelity prototype ----- */
+  .low-fidelity-prototype .image-container {
+    width: 100%;
+  }
+
+  .low-fidelity-prototype p {
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
