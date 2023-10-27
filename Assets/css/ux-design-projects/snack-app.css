@@ -680,9 +680,30 @@ img.mockups:first-child {
   /* personas */
 
   .persona {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     display: grid;
     grid-template-columns: 1fr 1fr;
+    /* align-items: center; */
+    grid-gap: 32px;
+  }
+
+  .persona-image {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .persona h4 {
+    text-align: left;
+  }
+
+  .persona-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .persona-details {
+    text-align: left;
   }
   
   .persona-bio, .persona-quote {
@@ -690,7 +711,18 @@ img.mockups:first-child {
     grid-column-end: 3;
   }
 
+  p.persona-bio {
+    text-align: left;
+    margin-bottom: 0;
+  }
 
+  p.persona-quote {
+    margin-bottom: 0;
+  }
+
+  .goals {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
