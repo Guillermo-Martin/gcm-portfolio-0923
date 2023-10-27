@@ -594,12 +594,15 @@ img.mockups:first-child {
 
 @media only screen and (min-width: 992px) {
   .section-container {
-    padding-left: 32px;
-    padding-right: 32px;
+    /* padding-left: 32px; */
+    padding-left: 60px;
+    /* padding-right: 32px; */
+    padding-right: 60px;
   }
 
   .project-subsection {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
+    /* margin-bottom: 32px; */
   }
 
   /* ---------- Project overview section ---------- */
@@ -612,6 +615,8 @@ img.mockups:first-child {
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr; */
     gap: 32px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .project-overview-container .image-container {
@@ -665,12 +670,12 @@ img.mockups:first-child {
   }
 
   /* ---------- Understanding the user section ---------- */
-  .understanding-the-user-section .project-subsection,
+  /* .understanding-the-user-section .project-subsection,
   .starting-the-design-section .project-subsection,
   .refining-the-design-section .project-subsection,
   .going-forward-section .project-subsection {
     margin-bottom: 32px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1200px) {
