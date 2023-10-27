@@ -676,6 +676,21 @@ img.mockups:first-child {
   .going-forward-section .project-subsection {
     margin-bottom: 32px;
   } */
+
+  /* personas */
+
+  .persona {
+    border: 3px solid red;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .persona-bio, .persona-quote {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+
 }
 
 @media only screen and (min-width: 1200px) {
