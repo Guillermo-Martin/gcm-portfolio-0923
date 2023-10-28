@@ -293,16 +293,21 @@ img.mockups:first-child {
 }
 
 /* ----- Accessibility ----- */
-.accessibility span {
+/* .accessibility span {
   font-weight: 600;
-}
+} */
 
-.accessibility p {
+/* .accessibility p {
   margin-bottom: 20px;
 }
 
 .accessibility p:nth-child(5) {
   margin-bottom: 0;
+} */
+
+.accessibility .text-container > div {
+  /* border: 3px solid red; */
+  margin-bottom: 32px;
 }
 
 /* ---------- Going forward section ---------- */
@@ -459,9 +464,18 @@ img.mockups:first-child {
   } */
 
   /* ----- Accessibility ----- */
-  .accessibility > p:nth-child(3), .accessibility > p:nth-child(4) {
-    /* border: 3px solid pink; */
+  /* .accessibility > p:nth-child(3), .accessibility > p:nth-child(4) {
+    border: 3px solid pink;
     margin-bottom: 20px;
+  } */
+  .accessibility .text-container p {
+    /* border: 3px solid red; */
+    margin-bottom: 20px;
+  }
+
+  .accessibility .text-container p:last-child {
+    /* border: 3px solid blue; */
+    margin-bottom: 0;
   }
 
   /* ---------- Going forward ---------- */
@@ -773,6 +787,68 @@ img.mockups:first-child {
   }
 
   .low-fidelity-prototype p {
+    text-align: left;
+  }
+
+  /* ----- Usability study #1 ----- */
+  .usability-study ul {
+    /* border: 3px solid red; */
+    max-width: 424px;
+  }
+
+  /* ---------- Refining the design ---------- */
+  /* ----- Mockups ----- */
+  .refined-mockups-1 .image-container {
+    max-width: 872px;
+  }
+
+  .refined-mockups-1 p {
+    /* border: 3px solid red; */
+    text-align: left;
+  }
+
+  /* ----- High fidelity prototype ----- */
+  .hifi-prototype-1 p {
+    text-align: left;
+  }
+
+  /* ----- Refined mockups #2 ----- */
+  .refined-mockups-2 p {
+    text-align: left;
+  }
+
+  /* ----- High fidelity prototype #2 ----- */
+  .hifi-prototype-2 p {
+    text-align: left;
+  }
+
+  /* ----- Final mockups ----- */
+  .final-mockups p {
+    text-align: left;
+  }
+
+  /* ----- Accessibility ----- */
+  .accessibility .text-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 32px;
+  }
+
+  .accessibility h3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  /* .accessibility span {
+    display: block;
+    font-size: var(--fs-h4);
+  } */
+
+  .accessibility h4 {
+    text-align: left;
+  }
+
+  .accessibility p {
     text-align: left;
   }
 }
