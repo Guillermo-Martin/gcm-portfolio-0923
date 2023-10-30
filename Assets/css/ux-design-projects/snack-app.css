@@ -851,6 +851,11 @@ img.mockups:first-child {
   .accessibility p {
     text-align: left;
   }
+
+  /* ---------- Going forward ---------- */
+  .takeaways p, .next-steps p {
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
