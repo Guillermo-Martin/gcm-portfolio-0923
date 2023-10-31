@@ -860,6 +860,29 @@ img.mockups:first-child {
 
 @media only screen and (min-width: 1200px) {
   /* ---------- User journey maps ---------- */
+  .project-overview-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* ----- Product subsection ----- */
+  .product-subsection {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  /* ----- Role subsection ----- */
+  .role-subsection {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  /* ----- Responsibilities subsection ----- */
+  .responsibilities-subsection {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  /* ---------- User journey maps ---------- */
   .user-journey-cta {
     display: none;
   }
