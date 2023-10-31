@@ -859,7 +859,7 @@ img.mockups:first-child {
 }
 
 @media only screen and (min-width: 1200px) {
-  /* ---------- User journey maps ---------- */
+  /* ---------- Project overview section ---------- */
   .project-overview-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -881,6 +881,22 @@ img.mockups:first-child {
     grid-column-start: 2;
     grid-column-end: 4;
   }
+
+  /* ---------- Understanding the user ---------- */
+  /* ----- Persona images ----- */
+  .persona-image {
+    /* border: 3px solid red; */
+    /* max-width: unset; */
+  }
+
+  /* ----- Goals and frustrations ----- */
+  .goals ul, .frustrations ul {
+    /* border: 3px solid red; */
+    max-width: unset;
+    width: auto;
+    /* background: red; */
+  }
+
 
   /* ---------- User journey maps ---------- */
   .user-journey-cta {
