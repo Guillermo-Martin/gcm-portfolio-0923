@@ -271,7 +271,9 @@ li {
 @media only screen and (min-width: 1200px) {
   :root {
     --fs-h1: 80px;
-    --fs-h2: 48px;
+    --fs-h2: 68px;
+		--fs-h3: 44px;
+		--fs-h4: 36px;
   }
 
   .section-container {

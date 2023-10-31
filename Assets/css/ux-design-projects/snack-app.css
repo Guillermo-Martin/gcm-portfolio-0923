@@ -908,7 +908,13 @@ img.mockups:first-child {
   }
 
   /* ---------- Refining the design ---------- */
-  .hifi-prototype-1 .image-container {
+  .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
     width: 100%;
+  }
+
+  .final-mockups .image-container {
+    /* border: 3px solid red; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: unset;
   }
 }
