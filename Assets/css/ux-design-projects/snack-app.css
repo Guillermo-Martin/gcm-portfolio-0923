@@ -798,7 +798,7 @@ img.mockups:first-child {
 
   /* ---------- Refining the design ---------- */
   /* ----- Mockups ----- */
-  .refined-mockups-1 .image-container {
+  .refined-mockups-1 .image-container, .refined-mockups-2 .image-container {
     max-width: 872px;
   }
 
@@ -905,5 +905,10 @@ img.mockups:first-child {
 
   .user-journey-table table {
     min-width: unset;
+  }
+
+  /* ---------- Refining the design ---------- */
+  .hifi-prototype-1 .image-container {
+    width: 100%;
   }
 }
