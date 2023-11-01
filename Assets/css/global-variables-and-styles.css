@@ -276,6 +276,15 @@ li {
 		--fs-h4: 36px;
   }
 
+	h3 {
+		/* border: 3px solid red; */
+		margin-bottom: 24px;
+	}
+
+	h4 {
+		margin-bottom: 20px;
+	}
+
   .section-container {
 		max-width: 1200px;
 		margin: 0 auto;
