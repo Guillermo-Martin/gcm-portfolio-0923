@@ -893,6 +893,17 @@ img.mockups:first-child {
     margin-bottom: 48px;
   }
 
+  /* ----- Persona ----- */
+  .persona {
+    row-gap: 60px;
+    margin-bottom: 128px;
+  }
+
+  /* ----- Quote ----- */
+  .persona-quote {
+    font-size:  28px;
+  }
+
   /* ----- Goals and frustrations ----- */
   .goals ul, .frustrations ul {
     /* border: 3px solid red; */
