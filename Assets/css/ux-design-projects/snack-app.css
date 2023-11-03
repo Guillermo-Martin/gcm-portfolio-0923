@@ -72,7 +72,7 @@ hr {
   margin-bottom: 20px;
 }
 
-/* Persona etails */
+/* Persona details */
 .persona-details span {
   font-weight: 600;
 }
@@ -99,9 +99,10 @@ hr {
 }
 
 /* User journey CTA */
-.user-journey-cta {
+p.user-journey-cta {
   font-style: italic;
   text-align: right;
+  margin-bottom: 8px;
 }
 
 /* User journeys table */
