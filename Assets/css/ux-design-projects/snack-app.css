@@ -749,10 +749,22 @@ img.mockups:first-child {
   }
 
   /* ----- Problem statements ----- */
+  .problem-statements {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
   .problem-statements p {
     /* border: 3px solid red; */
     text-align: left;
   }
+
+  /* ----- User journey maps ----- */
+  .persona-user-journey {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
 
   /* ---------- Starting the design ---------- */
   /* ----- Paper and digital wireframes ----- */
