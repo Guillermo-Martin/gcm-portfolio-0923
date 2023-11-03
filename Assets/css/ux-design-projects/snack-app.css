@@ -381,8 +381,10 @@ img.mockups:first-child {
   }
 
   /* ----- User journey maps ----- */
-  .persona-user-journey p:nth-child(1), .persona-user-journey p:nth-child(2) {
+  /* .persona-user-journey p:nth-child(1), .persona-user-journey p:nth-child(2) { */
+  .persona-user-journey .user-journey-thoughts, .persona-user-journey .user-journey-goal {
     margin-bottom: 20px;
+    /* border: 3px solid red; */
   }
 
   p.user-journey-cta {
