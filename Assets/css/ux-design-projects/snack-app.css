@@ -56,10 +56,6 @@ hr {
   margin-bottom: 32px;
 }
 
-/* .pain-points h4 {
-  margin-bottom: 8px;
-} */
-
 /* ----- Personas ----- */
 .persona {
   margin-bottom: var(--block-lg);
@@ -71,19 +67,17 @@ hr {
   margin-bottom: 32px;
 }
 
-.persona h4, .persona-details, .persona-bio, .persona-quote, .goals {
+/* Margins between persona sections */
+.persona h4, .persona-details, .persona-bio, .persona-quote, .goals, .frustrations, .problem-statements {
   margin-bottom: 20px;
 }
 
-/* Persona details */
-/* .persona-details li {
-  margin-bottom: 8px;
-} */
-
+/* Persona etails */
 .persona-details span {
   font-weight: 600;
 }
 
+/* Persona quote */
 .persona-quote {
   font-style: italic;
   font-size: 24px;
@@ -95,12 +89,7 @@ hr {
   padding-left: 28px;
 }
 
-/* problem statements */
-.charlie-henderson-problem {
-  margin-bottom: 32px;
-}
-
-/* ---------- User journey maps ---------- */
+/* ----- User journey maps ----- */
 .persona-user-journey p {
   margin-bottom: 20px;
 }
@@ -109,13 +98,13 @@ hr {
   font-weight: 600;
 }
 
-/* ----- User journey CTA ----- */
+/* User journey CTA */
 .user-journey-cta {
   font-style: italic;
   text-align: right;
 }
 
-/* ----- User journeys table ----- */
+/* User journeys table */
 .user-journey-table table, th, td {
   border: 1px solid black;
 }
@@ -123,10 +112,6 @@ hr {
 /* Horizontal scroll on mobile */
 .user-journey-table {
   overflow-x: scroll;
-}
-
-.user-journey-table.charlie-henderson-user-journey {
-  margin-bottom: var(--block-lg);
 }
 
 .user-journey-table table {
@@ -139,7 +124,6 @@ td {
 }
 
 th {
-  /* padding: 32px 20px; */
   padding: 20px;
   text-align: center;
 }
@@ -148,7 +132,6 @@ th {
 th:first-child, td:first-child, th {
   background-color: skyblue;
   vertical-align: middle;
-  /* font-size: 20px; */
   font-size: 16px;
   font-weight: 600;
   text-align: center;
@@ -165,11 +148,9 @@ td ul {
 
 td li {
   margin-bottom: 4px;
-  /* background-color: red; */
 }
 
 td li:last-child {
-  /* background-color: red; */
   margin-bottom: 0;
 }
 
