@@ -936,6 +936,15 @@ img.mockups:first-child {
     font-size: 20px;
   }
 
+  /* ---------- Starting the design ---------- */
+  .paper-wireframes .image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: unset;
+    align-items: center;
+    justify-items: center;
+  }
+
   /* ---------- Refining the design ---------- */
   .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
     width: 100%;
