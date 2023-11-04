@@ -805,6 +805,10 @@ img.mockups:first-child {
   }
 
   /* ----- High fidelity prototype ----- */
+  .hifi-prototype-1 .image-container {
+    width: 100%;
+  }
+
   .hifi-prototype-1 p {
     text-align: left;
   }
@@ -817,6 +821,10 @@ img.mockups:first-child {
   /* ----- High fidelity prototype #2 ----- */
   .hifi-prototype-2 p {
     text-align: left;
+  }
+
+  .hifi-prototype-2 .image-container {
+    width: 100%;
   }
 
   /* ----- Final mockups ----- */
