@@ -932,6 +932,10 @@ img.mockups:first-child {
     min-width: unset;
   }
 
+  .user-journey-table th:first-child, th, td:first-child {
+    font-size: 20px;
+  }
+
   /* ---------- Refining the design ---------- */
   .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
     width: 100%;
