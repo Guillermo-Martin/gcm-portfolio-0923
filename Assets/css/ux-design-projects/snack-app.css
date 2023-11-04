@@ -765,6 +765,11 @@ img.mockups:first-child {
     grid-column-end: 3;
   }
 
+  .persona-user-journey h4 {
+    /* border: 3px solid red; */
+    text-align: center;
+  }
+
 
   /* ---------- Starting the design ---------- */
   /* ----- Paper and digital wireframes ----- */
