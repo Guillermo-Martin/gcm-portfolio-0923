@@ -308,12 +308,23 @@ img.mockups:first-child {
 }
 
 /* ----- Next steps ----- */
-.next-steps p {
+/* .next-steps p {
   margin-bottom: 20px;
 }
 
 .next-steps p:last-child {
   margin-bottom: 0;
+} */
+
+.next-steps ul {
+  list-style: disc;
+  padding-left: 28px;
+}
+
+.next-steps li {
+  /* border: 3px solid red; */
+  line-height: 1.2;
+  margin-bottom: 8px;
 }
 
 /* ---------- Media queries ---------- */
