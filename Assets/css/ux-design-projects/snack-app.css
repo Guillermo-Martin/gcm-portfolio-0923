@@ -323,7 +323,7 @@ img.mockups:first-child {
 
 .next-steps li {
   /* border: 3px solid red; */
-  line-height: 1.2;
+  /* line-height: 1.5; */
   margin-bottom: 8px;
 }
 
@@ -884,7 +884,7 @@ img.mockups:first-child {
   }
 
   /* ---------- Going forward ---------- */
-  .takeaways p, .next-steps p {
+  .takeaways p {
     text-align: left;
   }
 }
