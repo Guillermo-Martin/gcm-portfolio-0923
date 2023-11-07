@@ -491,9 +491,14 @@ img.mockups:first-child {
   }
 
   /* ----- Next steps ----- */
-  .next-steps p:nth-child(2), .next-steps p:nth-child(3) {
-    /* border: 3px solid blue; */
+  /* .next-steps p:nth-child(2), .next-steps p:nth-child(3) {
+    border: 3px solid blue;
     margin-bottom: 20px;
+  } */
+
+  .next-steps ul {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
