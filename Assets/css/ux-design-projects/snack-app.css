@@ -3,6 +3,24 @@
   padding-right: 0;
 }
 
+/* Subnav */
+.subnav {
+  /* background-color: green; */
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: red;
+  top: 68px;
+}
+
+.subnav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 16px;
+  border-bottom: 1px solid black;
+}
+
 .section-container {
   padding-left: 16px;
   padding-right: 16px;
