@@ -1,5 +1,5 @@
 // targeted elements
-let tableOfContentsBtn = document.getElementById("table-of-contents");
+let tableOfContentsBtn = document.getElementById("table-of-contents-btn");
 let tableOfContents = document.getElementById("mobile-table-of-contents");
 
 // ---------- Table of contents mobile functionality ----------
