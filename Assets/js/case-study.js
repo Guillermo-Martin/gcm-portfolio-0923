@@ -7,6 +7,6 @@ tableOfContentsBtn.addEventListener("click", () => {
   // alert("you clicked on the button!");
 
   // on click, show the menu
-  tableOfContents.classList.add("show");
+  tableOfContents.classList.toggle("show");
 
 });
