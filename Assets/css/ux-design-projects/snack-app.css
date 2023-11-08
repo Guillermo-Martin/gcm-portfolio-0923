@@ -35,6 +35,23 @@
   height: 24px;
 }
 
+#down-arrow {
+  display: block;
+}
+
+#down-arrow.hide {
+  display: none;
+}
+
+#up-arrow {
+  display: none;
+}
+
+#up-arrow.show {
+  /* border: 3px solid red; */
+  display: block;
+}
+
 /* hide the table of contents */
 #mobile-table-of-contents {
   display: none;
