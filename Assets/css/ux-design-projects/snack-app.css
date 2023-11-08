@@ -3,28 +3,33 @@
   padding-right: 0;
 }
 
-/* Subnav */
-.subnav {
-  /* background-color: green; */
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  background-color: red;
-  top: 68px;
-}
-
-.subnav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 16px;
-  border-bottom: 1px solid black;
-}
-
 .section-container {
   padding-left: 16px;
   padding-right: 16px;
   margin-bottom: var(--block-lg);
+}
+
+/* Table of contents */
+.table-of-contents {
+  position: fixed;
+  /* z-index: 100; */
+  right: 5%;
+  top: 8%;
+  z-index: 1;
+  /* padding: 20px; */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.table-of-contents svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* project subsections */
