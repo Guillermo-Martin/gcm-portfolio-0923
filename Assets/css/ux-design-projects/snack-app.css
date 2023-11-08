@@ -23,6 +23,7 @@
   padding: 0;
   border: 1px solid black;
   background-color: white;
+  cursor: pointer;
 }
 
 .table-of-contents svg {
