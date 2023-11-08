@@ -43,6 +43,9 @@
   width: 100%;
   left: 0;
   height: 40vh;
+  padding: 40px;
+  padding-bottom: 0;
+  padding-top: 60px;
 }
 
 /* show table of contents */
@@ -50,14 +53,11 @@
   display: block;
 }
 
-.mobile-table-of-contents-links {
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+/* table of contents container */
+.table-of-contents-container {
+  border: 3px solid red;
 }
 
-/* NEXT STEPS:  FIX TABLE OF CONTENTS BUTTON ZINDEX (LOOK AT STACKING CONTEXT) */
 
 
 /* project subsections */
