@@ -42,10 +42,19 @@
   top: 100%;
   width: 100%;
   left: 0;
+  height: 40vh;
 }
 
+/* show table of contents */
 #mobile-table-of-contents.show {
   display: block;
+}
+
+.mobile-table-of-contents-links {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
