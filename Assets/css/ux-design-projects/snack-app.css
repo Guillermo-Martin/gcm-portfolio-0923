@@ -33,6 +33,18 @@
   transform: translate(-50%, -50%);
 }
 
+/* hide the table of contents */
+#mobile-table-of-contents {
+  display: none;
+}
+
+#mobile-table-of-contents.show {
+  display: block;
+}
+
+
+
+
 /* project subsections */
 .project-subsection {
   margin-bottom: 40px;
