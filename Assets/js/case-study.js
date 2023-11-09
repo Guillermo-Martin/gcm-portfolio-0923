@@ -1,8 +1,10 @@
 // targeted elements
 let tableOfContentsBtn = document.getElementById("table-of-contents-btn");
 let tableOfContents = document.getElementById("mobile-table-of-contents");
+let tableOfContentsLinks = document.querySelectorAll(".mobile-table-of-contents-links li")
 let downArrow = document.getElementById("down-arrow");
 let upArrow = document.getElementById("up-arrow");
+
 
 // ---------- Table of contents mobile functionality ----------
 tableOfContentsBtn.addEventListener("click", () => {
@@ -14,5 +16,17 @@ tableOfContentsBtn.addEventListener("click", () => {
   // hide the down arrow, show the up arrow
   downArrow.classList.toggle("hide");
   upArrow.classList.toggle("show");
-
 });
+
+// ---------- Table of contents link functionality ----------
+console.log(tableOfContentsLinks);
+
+// loop through the table of contents links and add an eventlistern
+for(let i = 0; i < tableOfContentsLinks.length; i++) {
+  tableOfContentsLinks[i].addEventListener("click", () => {
+    // alert('you clicked on a link!');
+
+    // hide the table of contents
+    tableOfContents.classList.remove("show");
+  })
+}

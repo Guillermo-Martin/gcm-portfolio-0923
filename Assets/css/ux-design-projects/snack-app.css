@@ -101,6 +101,7 @@
 
 .mobile-table-of-contents-links li {
   /* border: 3px solid red; */
+  width: fit-content;
   margin-bottom: 20px;
 }
 
