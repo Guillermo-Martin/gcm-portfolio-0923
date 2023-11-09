@@ -34,7 +34,7 @@
   position: fixed;
   /* z-index: 100; */
   right: 5%;
-  top: 8%;
+  top: 9%;
   z-index: 1;
   /* padding: 20px; */
   border-radius: 50%;
@@ -84,6 +84,7 @@
   left: 0;
   height: 40vh;
   padding: 40px;
+  padding-top: 80px;
   /* padding-bottom: 0;
   padding-top: 60px; */
   border-bottom: 1px solid black;
