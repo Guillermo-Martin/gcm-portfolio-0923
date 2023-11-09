@@ -21,7 +21,7 @@ tableOfContentsBtn.addEventListener("click", () => {
 // ---------- Table of contents link functionality ----------
 console.log(tableOfContentsLinks);
 
-// loop through the table of contents links and add an eventlistern
+// loop through the table of contents links and add an eventlistener
 for(let i = 0; i < tableOfContentsLinks.length; i++) {
   tableOfContentsLinks[i].addEventListener("click", () => {
     // alert('you clicked on a link!');
