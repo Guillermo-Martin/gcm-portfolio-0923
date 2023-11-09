@@ -45,6 +45,7 @@
 
 #up-arrow {
   display: none;
+  transform: translate(-50%, -48%);
 }
 
 #up-arrow.show {
