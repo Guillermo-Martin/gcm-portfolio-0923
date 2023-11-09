@@ -28,5 +28,9 @@ for(let i = 0; i < tableOfContentsLinks.length; i++) {
 
     // hide the table of contents
     tableOfContents.classList.remove("show");
+
+    // hide the up arrow, show the down arrow
+    upArrow.classList.remove("show");
+    downArrow.classList.remove("hide");
   })
 }
