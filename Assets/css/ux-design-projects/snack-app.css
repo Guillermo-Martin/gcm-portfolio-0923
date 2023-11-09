@@ -20,6 +20,7 @@
   
 }
 
+/* Offsetting an anchor:  https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
 .section-container .anchor {
   display: block;
   position: relative;
@@ -96,6 +97,11 @@
 /* table of contents container */
 .table-of-contents-container {
   /* border: 3px solid ; */
+}
+
+.mobile-table-of-contents-links li {
+  /* border: 3px solid red; */
+  margin-bottom: 20px;
 }
 
 
