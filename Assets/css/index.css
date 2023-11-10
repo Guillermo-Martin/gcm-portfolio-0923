@@ -22,7 +22,7 @@
 
 /* Description */
 .text-container p {
-	font-size: 16px;
+	font-size: var(--fs-body);
 	/* line-height: 1.5; */
 	margin-bottom: 32px;
 }
