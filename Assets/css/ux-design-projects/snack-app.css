@@ -609,6 +609,10 @@ img.mockups:first-child {
     padding-top: 138px;
   }
 
+  .section-container .anchor {
+    top: -200px;
+  }
+
   /* mobile table of contents */
   #mobile-table-of-contents {
     padding: 0;
