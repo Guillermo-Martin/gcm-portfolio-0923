@@ -432,6 +432,10 @@ img.mockups:first-child {
     text-align: center;
   }
 
+  .table-of-contents-container h2 {
+    text-align: left;
+  }
+
   .section-container {
     padding-left: 32px;
     padding-right: 32px;
