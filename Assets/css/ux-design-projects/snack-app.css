@@ -605,6 +605,36 @@ img.mockups:first-child {
 
 
 @media only screen and (min-width: 767px) {
+  /* mobile table of contents */
+  #mobile-table-of-contents {
+    padding: 0;
+    height: auto;
+    display: block;
+    border-top: 1px solid black;
+  }
+
+  .mobile-table-of-contents-links {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .table-of-contents-container {
+    max-width: 1200px;
+    border-bottom: none;
+    margin: 0 auto;
+    padding: 20px 32px;
+  }
+
+  #table-of-contents-btn, .table-of-contents-container h2 {
+    display: none;
+  }
+
+  .mobile-table-of-contents-links li {
+    margin-bottom: 0;
+  }
+
+
   h2 {
     margin-bottom: 32px;
   }
