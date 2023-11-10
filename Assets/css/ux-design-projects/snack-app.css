@@ -605,6 +605,10 @@ img.mockups:first-child {
 
 
 @media only screen and (min-width: 767px) {
+  .case-study-page {
+    padding-top: 138px;
+  }
+
   /* mobile table of contents */
   #mobile-table-of-contents {
     padding: 0;
@@ -742,6 +746,18 @@ img.mockups:first-child {
 }
 
 @media only screen and (min-width: 992px) {
+  /* table of contents */
+  .table-of-contents-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .mobile-table-of-contents-links {
+    justify-content: space-evenly;
+  }
+
+
+
   .section-container {
     /* padding-left: 32px; */
     padding-left: 60px;
