@@ -202,6 +202,11 @@ li {
 	margin-right: 16px;
 	/* border: 3px solid red; */
 	margin-bottom: 0;
+	/* transition: all 0.1s; */
+}
+
+.footer-social-nav li:hover {
+	fill: #7E3036;
 }
 
 .footer-social-nav li:nth-child(3) {
@@ -212,6 +217,7 @@ li {
 	width: 20px;
 	height: 20px;
 }
+
 
 /* ---------- Media Queries ---------- */
 @media only screen and (min-width: 576px) {
