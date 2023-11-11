@@ -78,17 +78,19 @@
         <!-- Links container -->
         <div class="links-container">
           <!-- Project links -->
-          <div class="links-container-links">
+          <div class="links-container-links project-links">
             <h2>Projects</h2>
             <ul>
-              <li><a href="/web-developer-projects.html">Web Developer Projects</a></li>
-              <li><a href="/ux-design-projects/">UX Design Projects</a></li>
-              <li><a href="">Link 3</a></li>
+              <!-- <li class="project-link"><a href="/web-developer-projects.html">Web Developer Projects</a></li> -->
+              <li class="project-link web-developer" data-project="web-developer">Web Developer Projects</li>
+              <!-- <li class="project-link"><a href="/ux-design-projects/">UX Design Projects</a></li> -->
+              <li class="project-link ux-design">UX Design Projects</li>
+              <li class="project-link link-3">Link 3</li>
             </ul>
           </div>
 
           <!-- Contacts -->
-          <div class="links-container-links">
+          <div class="links-container-links contact-links">
             <h2>Contact</h2>
             <ul>
               <li>
@@ -143,6 +145,13 @@
     </footer>
 
     <!-- ---------- Optional JavaScript ---------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script type="text/javascript" src="./assets/js/index.js"></script>
+
+    <!-- <script>
+      gsap.to(".links-container", { rotation: 27, x: 100, duration: 5 });
+    </script> -->
   </body>
 </html>
