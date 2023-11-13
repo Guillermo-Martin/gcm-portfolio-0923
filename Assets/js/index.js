@@ -49,21 +49,21 @@ closeIcon.addEventListener("click", () => {
 //   })
 // }
 
-console.log(projectLinks);
+// console.log(projectLinks);
 
-projectLinks.addEventListener("click", (event) => {
-  console.log(event.target.dataset.project);
+// projectLinks.addEventListener("click", (event) => {
+//   console.log(event.target.dataset.project);
   
-  switch (event.target.dataset.project) {
-    case "web-developer": 
-      // alert("hello web developer!");
-      gsap.to(".main-section", {opacity: 0, duration: 1});
-      gsap.to(".contact-links", {opacity: 0, duration: 1});
-      gsap.to(".footer", {opacity: 0, duration: 1});
-      gsap.to(".ux-design", {opacity: 0, duration: 1});
-      gsap.to(".link-3", {opacity: 0, duration: 1});
-      gsap.to(".project-links h2", {opacity: 0, duration: 1});
-      // window.location.href = "https://www.google.com"
-      break;
-  }
-})
+//   switch (event.target.dataset.project) {
+//     case "web-developer": 
+//       // alert("hello web developer!");
+//       gsap.to(".main-section", {opacity: 0, duration: 1});
+//       gsap.to(".contact-links", {opacity: 0, duration: 1});
+//       gsap.to(".footer", {opacity: 0, duration: 1});
+//       gsap.to(".ux-design", {opacity: 0, duration: 1});
+//       gsap.to(".link-3", {opacity: 0, duration: 1});
+//       gsap.to(".project-links h2", {opacity: 0, duration: 1});
+//       window.location.href = "/web-developer-projects.html"
+//       break;
+//   }
+// })
