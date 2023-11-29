@@ -275,29 +275,29 @@
         <div class="image-container">
           <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
         </div>
-        <h2>Refining the design</h2>
+        <h2>Challenges</h2>
         <hr>
 
         <!-- ----- Mockups ----- -->
         <div class="project-subsection refined-mockups-1">
           <div class="image-container">
-            <img src="./../assets/images/snack-app/before-usability-study-1.png" alt="" class="mockups">
-            <div class="down-arrow">&darr;</div>
-            <div class="right-arrow">&rarr;</div>
-            <img src="./../assets/images/snack-app/after-usability-study-1.png" alt="" class="mockups">
+            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="" class="mockups">
           </div>
-          <h3>Mockups #1 version 1</h3>
-          <p>Early designs prominently featured a “Featured Snack” and “Menu” sections.  During the usability study, however, most users were confused as to where to start to place an order or change the language.  I revised the home screen design after the study to more clearly layout the ordering and change language options.</p>
+          <h3>Challenge #1</h3>
+          <p>CHALLENGE: determining which options were selected now that checkboxes were used and used an object to keep track of which options were selected</p>
+          <!-- add screenshot of my code showing the solution -->
+          <p>SOLUTION: accomplished by looping through an object</p>
         </div>
         
         <!-- ----- High-fidelity prototype #1 ----- -->
         <div class="project-subsection hifi-prototype-1">
           <div class="image-container">
-            <img src="./../assets/images/snack-app/hifi-prototype-1.png" alt="">
+            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
           </div>
-          <h3>High-fidelity prototype version #1</h3>
-          <p>After conducting the first usability study I refined the designs and created a high-fidelity mockup and prototype, implementing what I learned from the first usability study.</p>
-          <p>View the first high-fidelity prototype <a href="https://www.figma.com/proto/3HnuZDVwh0X5uzk0867uh2/Project-%231---Snack-App?type=design&node-id=701-229&t=cPKXyZizZzF35KjR-1&scaling=scale-down&page-id=701%3A228&starting-point-node-id=701%3A229&mode=design">here</a>.</p>
+          <h3>Challenge #2</h3>
+          <p>CHALLENGE: after switching to checkboxes, and creating a password, the final password length was actually multiplied by however many options were selected</p>
+          <!-- add screenshot of my code showing the solution -->
+          <p>SOLUTION: solved by adjusting the if statement; the if statement was very strict in that if the user’s password length didnt’ match the lenght of the password as it was being generated, then my code would loop creating a very long password.  It’s possible that the as the password was being generated during one of the character checks, the number was not equal, so the function kept adding characters until the count variable in the for loop was greater than the password length.</p>
         </div>
         
 
@@ -306,78 +306,9 @@
           <div class="image-container">
             <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
           </div>
-          <h3>2nd usability study?</h3>
-          <p>The second study used a high-fidelity prototype and helped to determine which aspects of the mockup needed refinement.</p>
-          
-          <!-- Findings -->
-          <h4>Findings</h4>
-          <ul>
-            <li>More accessible colors and font sizes need to be used</li>
-            <li>Use better cues or clearer language to reduce any confusion in ordering</li>
-            <li>Provide important information that will help out the user</li>
-          </ul>
-        </div>
-
-        <!-- ----- 2nd Mockups ----- -->
-        <div class="project-subsection refined-mockups-2">
-          <div class="image-container">
-            <img src="./../assets/images/snack-app/before-usability-study-2.png" alt="" class="mockups-2">
-            <div class="down-arrow">&darr;</div>
-            <div class="right-arrow">&rarr;</div>
-            <img src="./../assets/images/snack-app/after-usability-study-2.png" alt="" class="mockups-2">
-          </div>
-          <h3>Mockups #2 version 2</h3>
-          <p>The second usability study revealed some accessibility issues.  The colors and font sizes made it difficult to read important information.  In order to increase readability, I decided to increase the font size of important information and removed some background colors to increase contrast.</p>
-        </div>
-
-        <!-- ----- High-fidelity prototype #2 ----- -->
-        <div class="project-subsection hifi-prototype-2">
-          <div class="image-container">
-            <img src="./../assets/images/snack-app/hifi-prototype-2.png" alt="">
-          </div>
-          <h3>High-fidelity prototype version #2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-
-        <!-- ----- Final mockups and final prototype ----- -->
-        <div class="project-subsection final-mockups">
-          <div class="image-container">
-            <!-- <img src="./../assets/images/snack-app/hifi-prototype-2.png" alt=""> -->
-            <img src="./../assets/images/snack-app/final-mockups-1.png" alt="" class="final-mockups">
-            <img src="./../assets/images/snack-app/final-mockups-2.png" alt="" class="final-mockups">
-            <img src="./../assets/images/snack-app/final-mockups-3.png" alt="" class="final-mockups">
-            <img src="./../assets/images/snack-app/final-mockups-4.png" alt="" class="final-mockups">
-          </div>
-          <h3>Final mockups and final prototype</h3>
-          <p>The final high-fidelity prototype met user needs for changing the language and adding items to an order and placing an order.  The high-fidelity prototype can be viewed <a href="">here</a>.</p>
-        </div>
-
-        
-        
-        <!-- ----- Accessibility ----- -->
-        <div class="project-subsection accessibility">
-          <div class="image-container">
-            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
-          </div>
-
-          <div class="text-container">
-            <h3>Accessibility</h3>
-
-            <div>
-              <h4>Color combinations</h4>
-              <p>Some background colors were either removed or lightened to increase the contrast with text.</p>
-            </div>
-            
-            <div>
-              <h4>Readability of text</h4>
-              <p>Font sizes, especially of those related to important information, were increased to be more readable on smaller screens.</p>
-            </div>
-            
-            <div>
-              <h4>Use of icons</h4>
-              <p>Icons that could have a potentially universal meaning were used in order to help non-native English speakers navigate more easily.</p>
-            </div>
-          </div>
+          <h3>Challenge #3</h3>
+          <p>CHALLENGE:  PREVENT A USER FROM SELECTING MORE OPTIONS AND CREATING ANOTHER PASSWORD THAT WOULD ADD MORE CHARACTERS TO AN ALREADY CREATED PASSWORD</p>
+          <p>SOLUTION:  to solve this, I disabled the options and removed the “create password” button after a user created a password.  This also improved the user experience and also allows a user to create another password if they so choose to.</p>
         </div>
       </section>
 
