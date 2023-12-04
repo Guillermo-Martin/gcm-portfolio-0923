@@ -314,6 +314,10 @@
           <p>CHALLENGE: determining which options were selected now that checkboxes were used and used an object to keep track of which options were selected</p>
           <!-- add screenshot of my code showing the solution -->
           <p>SOLUTION: accomplished by looping through an object</p>
+          <p>When a user clicks on the create password button, the following should happen: </p>
+          <ul>
+            <li>1. check which of the checkboxes is checked.  In order to do this, I created an object to hold each of the password options.  I also created a variable to keep track of how many options weren't selected.  When a user clicks on the create password button, a for loop checks to see which options were selected, and then updates the passwords options object.  After the password object is updated, I used a "for...in" loop to loop through the object and see which options are false.  If an option is false, then 1 is added to the "optionsFalse" variable (starts off as 0).  If after looping, if optionsFalse variable equals 4, meaning no options were checked, the user is then presented with a warning message.</li>
+          </ul>
         </div>
         
         <!-- ----- Challenge #2 ----- -->
