@@ -308,7 +308,12 @@
           </div>
           <h3>COPY FEATURE</h3>
           <p>Put how I tackled this problem, what I did, and add pictures of my code showing what I did.</p>
-          <p>Put a picture of what this looks like after I made the changes.</p>
+          <p>
+            In order to add the copy feature, I used the Clipboard API.  I added an event listener on the password box, that when clicked, would copy the password box contents to the clipboard.
+            When testing out the application, I found out the event listener was active and a user could copy the contents of the box, even if it was empty.  In order to mitigate this issue, I added
+            an "if" statement to check whether or not the password box was empty.  If it was, then the copy function won't work, preventing a user from copying an empty string.
+            I also added some feedback to let a user know that their password was copied.
+          </p>
         </div>
       </section>
 
