@@ -251,44 +251,41 @@
         <!-- ----- The overall design ----- -->
         <!-- <div class="project-subsection low-fidelity-prototype"> -->
           <div class="project-subsection tackling-the-problem">
-            <div class="image-container">
-              <img src="./../../assets/images/password-generator/wireframe-a.png" alt="">
-              <img src="./../../assets/images/password-generator/wireframe-b.png" alt="">
-              <img src="./../../assets/images/password-generator/wireframe-c.png" alt="">
-              <img src="./../../assets/images/password-generator/wireframe-d.png" alt="">
+            <div class="text-container">
+              <h3>The overall design</h3>
+              <!-- <p>Discuss how changing the overall design helps with the other challenges.</p> -->
+              <p>
+                In coming up with the new design, one of the things I wanted to address was the default Javascript prompts.
+                Thinking about the user and how the prompts didn't allow a user to go backwards, I opted to use checkboxes so a user
+                could select and unselect their options.  The checkboxes informed how I was going to design the rest of the application.
+                With the checkboxes in mind, I created a few wireframes and added stars to the particular sections that I liked.
+              </p>
             </div>
-            <h3>The overall design</h3>
-            <!-- <p>Discuss how changing the overall design helps with the other challenges.</p> -->
-            <p>
-              In coming up with the new design, one of the things I wanted to address was the default Javascript prompts.
-              Thinking about the user and how the prompts didn't allow a user to go backwards, I opted to use checkboxes so a user
-              could select and unselect their options.  The checkboxes informed how I was going to design the rest of the application.
-              With the checkboxes in mind, I created a few wireframes and added stars to the particular sections that I liked.
-            </p>
+
+            <div class="image-container">
+              <img src="./../../assets/images/password-generator/wireframe-a.png" alt="" class="wireframe-a">
+              <img src="./../../assets/images/password-generator/wireframe-b.png" alt="" class="wireframe-b">
+              <img src="./../../assets/images/password-generator/wireframe-c.png" alt="" class="wireframe-c">
+              <img src="./../../assets/images/password-generator/wireframe-d.png" alt="" class="wireframe-d">
+            </div>
           </div>
 
         <!-- ----- Sequential questions ----- -->
         <!-- <div class="project-subsection digital-wireframes"> -->
           <div class="project-subsection tackling-the-problem">
-            <!-- *** TODO *** - ADD SCREENSHOT OF LANGUAGE AND MENU WIREFRAMES -->
-            <div class="image-container">
-              <img src="./../../assets/images/password-generator/checkboxes.png" alt="">
-            </div>
-  
             <div class="text-container">
               <h3>SEQUENTIAL QUESTIONS/UNABLE TO GO BACKWARDS</h3>
               <p>With the checkboxes now part of the UI, a user can freely select their password options without the constraints provided by the Javascript prompts.</p>
+            </div>
+        
+            <div class="image-container">
+              <img src="./../../assets/images/password-generator/checkboxes.png" alt="">
             </div>
           </div>
 
         <!-- ----- Blank password ----- -->
         <!-- <div class="project-subsection paper-wireframes"> -->
         <div class="project-subsection tackling-the-problem">
-          <!-- *** TODO *** - ADD SCREENSHOT OF HOMESCREEN -->
-          <div class="image-container">
-            <img src="./../../assets/images/password-generator/warning-messages.png" alt="">
-          </div>
-
           <div class="text-container">
             <h3>BLANK PASSWORD</h3>
             <p>WORK ON WORDING - I added warning messages for the user and prevented them from making a password until they selected at least one option.</p>
@@ -297,28 +294,28 @@
               If none of the options are selected a warning message appears to the user and a password isn't made.
             </p>
           </div>
+          
+          <div class="image-container">
+            <img src="./../../assets/images/password-generator/warning-messages.png" alt="">
+          </div>
         </div>
         
 
-        
-        
-
-        
-        
-        
         <!-- ----- Copy feature ----- -->
         <div class="project-subsection tackling-the-problem">
+          <div class="text-container">
+            <h3>COPY FEATURE</h3>
+            <p>
+              In order to add the copy feature, I used the Clipboard API.  I added an event listener on the password box, that when clicked, would copy the password box contents to the clipboard.
+              When testing out the application, I found out the event listener was active and a user could copy the contents of the box, even if it was empty.  In order to mitigate this issue, I added
+              an "if" statement to check whether or not the password box was empty.  If it was, then the copy function won't work, preventing a user from copying an empty string.
+              I also added some feedback to let a user know that their password was copied.
+            </p>
+          </div>
+
           <div class="image-container">
             <img src="./../../assets/images/password-generator/copy-function.gif" alt="">
           </div>
-          <h3>COPY FEATURE</h3>
-          <p>Put how I tackled this problem, what I did, and add pictures of my code showing what I did.</p>
-          <p>
-            In order to add the copy feature, I used the Clipboard API.  I added an event listener on the password box, that when clicked, would copy the password box contents to the clipboard.
-            When testing out the application, I found out the event listener was active and a user could copy the contents of the box, even if it was empty.  In order to mitigate this issue, I added
-            an "if" statement to check whether or not the password box was empty.  If it was, then the copy function won't work, preventing a user from copying an empty string.
-            I also added some feedback to let a user know that their password was copied.
-          </p>
         </div>
       </section>
 
