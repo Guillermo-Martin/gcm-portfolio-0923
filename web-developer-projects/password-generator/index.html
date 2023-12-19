@@ -365,14 +365,24 @@
         
         <!-- ----- Challenge #2 ----- -->
         <div class="project-subsection challenge">
+          
+          
+          <h3>Challenge #2 - Incorrect password length</h3>
+          <p>After switching to checkboxes, and creating a password, the final password length was actually multiplied by however many options were selected.  In the GIF, the password length is noted in the console at the end of the password.  In this example, if the password length is 128 characters in length and 4 options are selected, the final password is 512 characters in length; if the password length is 128 and 2 options are selected, the final password is 256 characters in length.</p>
+          <div class="image-container">
+            <img src="./../../assets/images/password-generator/multiplied-password.gif" alt="">
+          </div>
+
+          <!-- add screenshot of my code showing the solution -->
+          <p>The problem was in the "if" statement.  The if statement was very strict in that if the user’s password length didn't match the length of the password as it was being generated, then my code would loop creating a very long password.  It’s possible that the as the password was being generated during one of the character checks, the number was not equal, so the function kept adding characters until the count variable in the for loop was greater than the password length.</p>
           <div class="image-container">
             <img src="./../../assets/images/password-generator/challenge-2-before.png" alt="">
+          </div>
+
+          <p>The conditional was revised so that if the password was greater than the password length, the generator stops adding characters.</p>
+          <div class="image-container">
             <img src="./../../assets/images/password-generator/challenge-2-after.png" alt="">
           </div>
-          <h3>Challenge #2</h3>
-          <p>CHALLENGE: after switching to checkboxes, and creating a password, the final password length was actually multiplied by however many options were selected</p>
-          <!-- add screenshot of my code showing the solution -->
-          <p>SOLUTION: solved by adjusting the if statement; the if statement was very strict in that if the user’s password length didnt’ match the lenght of the password as it was being generated, then my code would loop creating a very long password.  It’s possible that the as the password was being generated during one of the character checks, the number was not equal, so the function kept adding characters until the count variable in the for loop was greater than the password length.</p>
         </div>
       </section>
 
