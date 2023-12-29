@@ -107,7 +107,7 @@
           <div class="project-subsection project-overview-subsection">
             <div class="text-container">
               <h3>Summary</h3>
-              <p>After working for two years as a junior web developer, I wanted to challenge myself and see how much I've grown as a developer.  I decided to revisit one of my earliest projects, an assignment from my bootcamp - a password generator.  In this application, a user can create a password between 8 and 128 characters in length, based on prompts given to a user.</p>
+              <p>Having worked as a Web developer for a few years now, I wanted to challenge myself and see if I could redesign an old bootcamp project - a password generator.</p>
             </div>
           </div>
 
@@ -170,7 +170,7 @@
                   <!-- Text -->
                   <div class="text-container">
                     <h4>An inability to go back if a user changes their mind</h4>
-                    <p>The questions asking what a user wants in their password are asked sequentially.  If a user changes their mind, they're unable to go back to the option they passed on.  The only way they could go back is to finish creating a password and then create another one, or refresh the page and start over.</p>
+                    <p>The questions asking what a user wants in their password are asked sequentially.  If a user changes their mind, they're unable to go back to the option they passed on.  The only way they could go back, is to finish creating a password and then create another one, or refresh the page and start over.</p>
                   </div>
 
                    <!-- Image -->
@@ -232,7 +232,7 @@
           <div class="text-container">
             <h3>The overall design</h3>
             <p>
-              In coming up with the new design, one of the things I wanted to address was the default Javascript prompts.
+              In coming up with the new design, one of the things I wanted to address was the default JavaScript prompts.
               Thinking about the user and how the prompts didn't allow a user to go backwards, I opted to use checkboxes so a user
               could select and unselect their options.  The checkboxes informed how I was going to design the rest of the application.
               With the checkboxes in mind, I created a few wireframes and added stars to the particular sections that I liked.
@@ -253,8 +253,8 @@
         <!-- ----- Sequential questions ----- -->
         <div class="project-subsection tackling-the-problem" id="sequential-questions">
           <div class="text-container">
-            <h3>SEQUENTIAL QUESTIONS/UNABLE TO GO BACKWARDS</h3>
-            <p>With the checkboxes now part of the UI, a user can freely select their password options without the constraints provided by the Javascript prompts.</p>
+            <h3>Addressing how a user selects password options</h3>
+            <p>With the checkboxes now part of the user interface, a user can freely select their password options without the constraints provided by the JavaScript prompts.</p>
           </div>
       
           <div class="image-container">
@@ -268,12 +268,12 @@
         <div class="project-subsection tackling-the-problem" id="blank-password">
           <!-- Text container -->
           <div class="text-container">
-            <h3>BLANK PASSWORD</h3>
-            <p>WORK ON WORDING - I added warning messages for the user and prevented them from making a password until they selected at least one option.</p>
+            <h3>Preventing a blank password from populating</h3>
             <p>
-              To address the blank password problem, I added some "if" statements that check to see if at least one options was selected.
-              If none of the options are selected a warning message appears to the user and a password isn't made.
+              To address the blank password problem, I added some "if" statements to my JavaScript code that checks to see if at least one option was selected.
+              If none of the options are selected, a warning message appears to the user and a password isn't made.
             </p>
+            <p>ADD LINK TO SECTION BELOW FOR THE SOLUTION</p>
           </div>
           
           <!-- Image container -->
@@ -287,9 +287,9 @@
         <!-- ----- Copy feature ----- -->
         <div class="project-subsection tackling-the-problem" id="copy-feature">
           <div class="text-container">
-            <h3>COPY FEATURE</h3>
+            <h3>Adding a copy feature</h3>
             <p>
-              In order to add the copy feature, I used the Clipboard API.  I added an event listener on the password box, that when clicked, would copy the password box contents to the clipboard.
+              In order to add the copy feature, I used the Clipboard API.  I added an event listener on the password box, and when clicked, would copy the password box contents to the clipboard.
               When testing out the application, I found out the event listener was active and a user could copy the contents of the box, even if it was empty.  In order to mitigate this issue, I added
               an "if" statement to check whether or not the password box was empty.  If it was, then the copy function won't work, preventing a user from copying an empty string.
               I also added some feedback to let a user know that their password was copied.
@@ -300,6 +300,8 @@
             <img src="./../../assets/images/password-generator/copy-function.gif" alt="">
           </div>
         </div>
+
+        <p>ADD AN IMAGE OF THE JAVASCRIPT CODE (CLIPBOARD API AND THE 'IF STATEMENT' SOLUTION)</p>
       </section>
 
 
@@ -311,6 +313,7 @@
         </div>
 
         <h2>Challenges</h2>
+        <p>When redesigning this application, I faced a few challenges:  determining which options were selected after switching to checkboxes and creating a password that wasn't the length the user asked for.</p>
         <hr>
 
         <!-- ----- Challenge #1 ----- -->
@@ -324,16 +327,16 @@
           </div>
 
           <!-- My solution -->
-          <p class="solution-list">Now that the generator uses checkboxes, my solution involved the following steps:</p>
+          <p class="solution-list">Now that the generator uses checkboxes, I had to see which options were selected.  My solution involved the following steps:</p>
 
           <div class="project-subsection-section">
             <ol>
-              <li>Check to see which boxes were checked using the ".checked" property</li>
-              <li>Create an object to hold the password options</li>
-              <li>Loop through all of the checkboxes, add the information, key and value, to the object</li>
-              <li>Next, after the passwordOptions object was created, loop through the object using a "for...in" loop to see which options are "false"</li>
-              <li>If an option is "false", add one to a counter (for keeping track) (created a variable)</li>
-              <li>If the counter equals 4, no options were checked so warn the user</li>
+              <li>Create an object to hold the password options, and create a variable to hold the number of options that weren't selected (a counter).</li>
+              <li>Check to see which boxes were selected using the ".checked" property.</li>
+              <li>Loop through all of the checkboxes and get the status of each, and adding the information to the "password options" object.</li>
+              <li>After adding the information to the password options, loop through the object using a "for...in" loop to see which options are "false".</li>
+              <li>If an option is "false", add 1 to the variable that keeps track of the "false" options.</li>
+              <li>If the counter equals 4, no options were selected so warn the user that they need to select at least one option.</li>
             </ol>
 
             <!-- Image of my code solution -->
@@ -341,6 +344,18 @@
               <img src="./../../assets/images/password-generator/challenge-1-image.png" alt="">
             </div>
           </div>
+
+          <div class="project-subsection-section">
+            <p>Here it is in action:</p>
+            <p>ADD GIF SHOWING IT IN ACTION</p>
+
+            <!-- Image of my code solution -->
+            <div class="image-container challenge-1-image-2">
+              <img src="./../../assets/images/password-generator/challenge-1-image.png" alt="">
+            </div>
+          </div>
+
+
         </div>
 
         <hr>
@@ -350,7 +365,7 @@
           <h3>Challenge #2 - Incorrect password length</h3>
 
           <div class="project-subsection-section">
-            <p class="challenge-2-p">After switching to checkboxes, and creating a password, the final password length was actually multiplied by however many options were selected.  In the GIF, the password length is noted in the console at the end of the password.  In this example, if the password length is 128 characters in length and 4 options are selected, the final password is 512 characters in length; if the password length is 128 and 2 options are selected, the final password is 256 characters in length.</p>
+            <p class="challenge-2-p">After switching to checkboxes and creating a password, the final password length was actually multiplied by however many options were selected.  In the GIF provided, the password length is noted in the right dark gray area at the end of the password (the number).  In this example, if the password length is 128 characters in length and 4 options are selected, the final password is 512 characters in length; if the password length is 128 and 2 options are selected, the final password is 256 characters in length.</p>
             <div class="image-container challenge-2-image-1">
               <img src="./../../assets/images/password-generator/multiplied-password.gif" alt="">
             </div>
@@ -358,7 +373,8 @@
          
           <!-- If statement (before) -->
           <div class="project-subsection-section">
-            <p class="challenge-2-p">The problem was in the "if" statement.  The if statement was very strict in that if the user’s password length didn't match the length of the password as it was being generated, then my code would loop creating a very long password.  It’s possible that the as the password was being generated during one of the character checks, the number was not equal, so the function kept adding characters until the count variable in the for loop was greater than the password length.</p>
+            <p class="challenge-2-p">The problem was in code that checks the password length (the "if" statement).  The "if" statement was very strict in that if the user’s password length didn't match the length of the password as it was being generated, then the code would continue to loop, creating a very long password.  As the password was being generated during one of the character checks, the user provided length was not equal to the length of the generated password length, so my code kept adding characters until the count variable in the for loop was greater than the password length.</p>
+            <p>WORK ON THIS WORDING</p>
             <div class="image-container challenge-2-image-2">
               <img src="./../../assets/images/password-generator/challenge-2-before.png" alt="">
             </div>
