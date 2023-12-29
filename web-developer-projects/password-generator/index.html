@@ -9,11 +9,9 @@
 
     <!-- ----- Styles ----- -->
     <!-- Stylesheets -->
-    <!-- <link rel="stylesheet" href="./../assets/css/reset.css"> -->
     <link rel="stylesheet" href="./../../assets/css/reset.css">
     <link rel="stylesheet" href="./../../assets/css/global-variables-and-styles.css">
     <link rel="stylesheet" href="./../../assets/css/web-developer-projects/password-generator.css">
-    <!-- <link rel="stylesheet" href="./../assets/css/ux-design-projects/index.css"> -->
 
      <!-- Google Fonts -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +44,7 @@
         </div>
 
         <!-- Stacking context and Z-index:  https://coder-coder.com/z-index-isnt-working/ -->
-        <!-- ---------- Table of contents button ---------- -->
+        <!-- ----- Table of contents button ----- -->
         <button id="table-of-contents-btn" class="table-of-contents-btn">
           <!-- Down arrow icon -->
           <svg id="down-arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
@@ -84,10 +82,6 @@
         </div>
       </div>
     </nav>
-
-    <!-- ******** NEXT STEPS ******* -->
-
-
     
     <!-- ---------- Main content ---------- -->
     <main class="learn-more-page">
@@ -100,9 +94,7 @@
         <p>A redesigned password generator based off an old bootcamp assignment.</p>
       </section>
 
-     
-
-      <!-- ---------- Why I did this project/Project overview section ---------- -->
+      <!-- ---------- Project overview section ---------- -->
       <section class="section-container project-overview-section">
         <div id="project-overview" class="anchor"></div>
         <!-- Header -->
@@ -112,28 +104,17 @@
 
         <!-- ----- Project overview container ----- -->
         <div class="project-subsections-container project-overview-container">
-          <!-- The product -->
-          <!-- <div class="project-subsection product-subsection"> -->
           <div class="project-subsection project-overview-subsection">
-            <!-- <div class="image-container">
-              <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
-            </div> -->
             <div class="text-container">
               <h3>Summary</h3>
-              <!-- <p>After working for 2 years as a junior web developer, I wanted to challenge myself and see if I can improve upon one of my bootcamp projects.</p> -->
               <p>After working for two years as a junior web developer, I wanted to challenge myself and see how much I've grown as a developer.  I decided to revisit one of my earliest projects, an assignment from my bootcamp - a password generator.  In this application, a user can create a password between 8 and 128 characters in length, based on prompts given to a user.</p>
             </div>
           </div>
 
           <!-- The goal -->
           <div class="project-subsection goal-subsection">
-            <!-- <div class="image-container">
-              <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
-            </div> -->
-
             <div class="text-container">
               <h3>The goal</h3>
-              <!-- <p>My goal in this project was to see if I can change the design and the functionality in order to provide a better user experience.</p> -->
               <p>My goal for this project was to go through the original project, identify opportunities for improvement, and redesign the application and its functionality to provide a better user experience.</p>
             </div>
           </div>
@@ -150,13 +131,12 @@
         <h2>First steps</h2>
         <hr>
 
-        <div class="">
+        <div>
           <div class="project-subsection">
             <div class="image-container">
               <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3570&q=80" alt="">
             </div>
 
-            
             <div class="text-container">
               <!-- ----- Improvement opportunities ----- -->
               <div class="improvement-opportunities">
@@ -235,8 +215,6 @@
           </div>             
       </section>
 
-      <!-- vvvvv START HERE vvvvv -->
-
       <!-- ---------- Tackling the problems section ---------- -->
       <section class="section-container tackling-the-problems-section">
         <div id="tackling-the-problems" class="anchor"></div>
@@ -250,9 +228,9 @@
 
         <!-- ----- The overall design ----- -->
         <div class="project-subsection tackling-the-problem" id="overall-design">
+          <!-- Text container -->
           <div class="text-container">
             <h3>The overall design</h3>
-            <!-- <p>Discuss how changing the overall design helps with the other challenges.</p> -->
             <p>
               In coming up with the new design, one of the things I wanted to address was the default Javascript prompts.
               Thinking about the user and how the prompts didn't allow a user to go backwards, I opted to use checkboxes so a user
@@ -261,6 +239,7 @@
             </p>
           </div>
 
+          <!-- Image container -->
           <div class="image-container">
             <img src="./../../assets/images/password-generator/wireframe-a.png" alt="" class="paper-wireframes wireframe-a">
             <img src="./../../assets/images/password-generator/wireframe-b.png" alt="" class="paper-wireframes wireframe-b">
@@ -287,6 +266,7 @@
 
         <!-- ----- Blank password ----- -->
         <div class="project-subsection tackling-the-problem" id="blank-password">
+          <!-- Text container -->
           <div class="text-container">
             <h3>BLANK PASSWORD</h3>
             <p>WORK ON WORDING - I added warning messages for the user and prevented them from making a password until they selected at least one option.</p>
@@ -296,6 +276,7 @@
             </p>
           </div>
           
+          <!-- Image container -->
           <div class="image-container">
             <img src="./../../assets/images/password-generator/warning-messages.png" alt="">
           </div>
@@ -328,16 +309,14 @@
         <div class="image-container">
           <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
         </div>
+
         <h2>Challenges</h2>
         <hr>
-
-        <!-- **** NEXT STEPS - STYLE CHALLENGE #1 **** -->
 
         <!-- ----- Challenge #1 ----- -->
         <div class="project-subsection challenge challenge-1">
           <!-- Challenge header -->
           <h3>Challenge #1 - Determining which of the checkboxes were selected</h3>
-          <!-- <p>Determining which of the checkboxes were selected</p> -->
           
           <!-- Screenshot of the checkboxes -->
           <div class="image-container challenge-1-image-1">
@@ -356,25 +335,18 @@
               <li>If an option is "false", add one to a counter (for keeping track) (created a variable)</li>
               <li>If the counter equals 4, no options were checked so warn the user</li>
             </ol>
-            
-            
-  
-            <!-- <p class="solution-list">The code runs whenever the "Create password" button is clicked.</p> -->
-  
+
             <!-- Image of my code solution -->
             <div class="image-container challenge-1-image-2">
               <img src="./../../assets/images/password-generator/challenge-1-image.png" alt="">
             </div>
           </div>
-          
         </div>
 
         <hr>
         
         <!-- ----- Challenge #2 ----- -->
         <div class="project-subsection challenge challenge-2">
-          
-          
           <h3>Challenge #2 - Incorrect password length</h3>
 
           <div class="project-subsection-section">
@@ -384,8 +356,7 @@
             </div>
           </div>
          
-
-          <!-- add screenshot of my code showing the solution -->
+          <!-- If statement (before) -->
           <div class="project-subsection-section">
             <p class="challenge-2-p">The problem was in the "if" statement.  The if statement was very strict in that if the user’s password length didn't match the length of the password as it was being generated, then my code would loop creating a very long password.  It’s possible that the as the password was being generated during one of the character checks, the number was not equal, so the function kept adding characters until the count variable in the for loop was greater than the password length.</p>
             <div class="image-container challenge-2-image-2">
@@ -393,7 +364,7 @@
             </div>
           </div>
           
-
+          <!-- If statement (after) -->
           <div class="project-subsection-section">
             <p class="challenge-2-p">The conditional was revised so that if the password was greater than the password length, the generator stops adding characters.</p>
             <div class="image-container challenge-2-image-3">
@@ -403,8 +374,7 @@
         </div>
       </section>
 
-
-      <!-- ---------- Going forward ---------- -->
+      <!-- ---------- Learnings and future ---------- -->
       <section class="section-container learnings-and-future-section">
         <div id="learnings-and-future" class="anchor"></div>
         <div class="image-container">
@@ -415,9 +385,6 @@
 
         <!-- ----- Learnings ----- -->
         <div class="project-subsection learnings">
-          <!-- <div class="image-container">
-            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
-          </div> -->
           <h3>List of things I learned</h3>
 
           <div class="text-container">
@@ -456,7 +423,6 @@
         </div>
       </section>
 
-
       <!-- ---------- Thank you ---------- -->
       <section class="section-container thank-you-section">
         <div class="image-container">
@@ -466,12 +432,6 @@
         <hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </section>
-
-
-      
-
-      <!-- Things to add to the case study -->
-      <!-- https://careerfoundry.com/en/blog/ux-design/ux-case-study/ -->
     </main>
     
     <!-- ---------- Footer ---------- -->
@@ -513,4 +473,3 @@
   </body>
 </html>
 
-<!-- NEXT STEPS:  ADD A SUBNAV TO LIST HELP NAVIGATE THE LONG CASE STUDY -->
