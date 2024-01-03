@@ -371,8 +371,7 @@
          
           <!-- If statement (before) -->
           <div class="project-subsection-section">
-            <p class="challenge-2-p">The problem was in code that checks the password length (the "if" statement).  The "if" statement was very strict in that if the user’s password length didn't match the length of the password as it was being generated, then the code would continue to loop, creating a very long password.  As the password was being generated during one of the character checks, the user provided length was not equal to the length of the generated password length, so my code kept adding characters until the count variable in the for loop was greater than the password length.</p>
-            <p>WORK ON THIS WORDING</p>
+            <p class="challenge-2-p">The problem was in the JavaScript code that checks the password length (the “if” statement).  The condition the code was checking for was very strict in that as the password was being generated, if the user’s password length didn’t exactly match the length of the generated password during one of the length checks, then the code would continue to add characters to the password.</p>
             <div class="image-container challenge-2-image-2">
               <img src="./../../assets/images/password-generator/challenge-2-before.png" alt="">
             </div>
@@ -380,7 +379,7 @@
           
           <!-- If statement (after) -->
           <div class="project-subsection-section">
-            <p class="challenge-2-p">The conditional was revised so that if the password was greater than the password length, the generator stops adding characters.</p>
+            <p class="challenge-2-p">To fix this, the condition was revised so that if the generated password was greater than the user's requested password length, the generator stops adding characters.</p>
             <div class="image-container challenge-2-image-3">
               <img src="./../../assets/images/password-generator/challenge-2-after.png" alt="">
             </div>
