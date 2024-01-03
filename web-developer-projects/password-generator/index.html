@@ -271,9 +271,8 @@
             <h3>Preventing a blank password from populating</h3>
             <p>
               To address the blank password problem, I added some "if" statements to my JavaScript code that checks to see if at least one option was selected.
-              If none of the options are selected, a warning message appears to the user and a password isn't made.
+              If none of the options are selected, a warning message appears to the user and a password isn't made.  To see how I solved this, click <a href="#challenges">here</a>.
             </p>
-            <p>ADD LINK TO SECTION BELOW FOR THE SOLUTION</p>
           </div>
           
           <!-- Image container -->
@@ -290,9 +289,6 @@
             <h3>Adding a copy feature</h3>
             <p>
               In order to add the copy feature, I used the Clipboard API.  I added an event listener on the password box, and when clicked, would copy the password box contents to the clipboard.
-              When testing out the application, I found out the event listener was active and a user could copy the contents of the box, even if it was empty.  In order to mitigate this issue, I added
-              an "if" statement to check whether or not the password box was empty.  If it was, then the copy function won't work, preventing a user from copying an empty string.
-              I also added some feedback to let a user know that their password was copied.
             </p>
           </div>
 
@@ -301,7 +297,12 @@
           </div>
         </div>
 
-        <p>ADD AN IMAGE OF THE JAVASCRIPT CODE (CLIPBOARD API AND THE 'IF STATEMENT' SOLUTION)</p>
+        <!-- TO DO:  NEXT ITERATION -->
+        <!-- <p>When testing out the application, I found out the event listener was active and a user could copy the contents of the box, even if it was empty.  In order to mitigate this issue, I added
+          an "if" statement to check whether or not the password box was empty.  If it was, then the copy function won't work, preventing a user from copying an empty string.
+          I also added some feedback to let a user know that their password was copied.
+        </p> -->
+        <!-- <p>ADD AN IMAGE OF THE JAVASCRIPT CODE (CLIPBOARD API AND THE 'IF STATEMENT' SOLUTION)</p> -->
       </section>
 
 
