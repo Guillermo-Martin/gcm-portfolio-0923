@@ -77,6 +77,10 @@
 		width: 50%;
 	}
 
+	.contact-links h2 {
+		width: 84%;
+	}
+
 	.contact-links ul {
     margin: 0 auto;
 	}
