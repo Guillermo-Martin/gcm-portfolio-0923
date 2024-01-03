@@ -96,11 +96,6 @@ hr {
   margin-bottom: 32px;
 }
 
-/* ---------- Hero section ---------- */
-.hero-section {
-  margin-top: var(--block-lg);
-}
-
 /* ----- Image container ----- */
 .image-container {
   margin-bottom: 32px;
@@ -110,6 +105,18 @@ hr {
 .image-container img {
   width: 100%;
 }
+
+/* ---------- Hero section ---------- */
+.hero-section {
+  margin-top: var(--block-lg);
+}
+
+.hero-section .image-container {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  max-width: 300px;
+}
+
 
 /* ---------- Understanding the user ---------- */
 /* ----- User research ----- */
