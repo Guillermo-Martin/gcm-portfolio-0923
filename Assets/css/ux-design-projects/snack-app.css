@@ -119,6 +119,11 @@ hr {
 
 
 /* ---------- Understanding the user ---------- */
+.disclaimer {
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
 /* ----- User research ----- */
 .user-research {
   margin-bottom: 32px;
