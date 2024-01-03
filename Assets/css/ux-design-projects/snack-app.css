@@ -293,10 +293,6 @@ img.mobile-wireframes:first-child {
   width: 90%;
 }
 
-img.mockups:first-child {
-  margin-bottom: 32px;
-}
-
 /* Down arrow */
 .down-arrow {
   font-size: 100px;
@@ -334,10 +330,6 @@ img.mockups:first-child {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.refined-mockups-2 img:first-child {
-  margin-bottom: 32px;
 }
 
 .refined-mockups-2 .mockups-2 {
