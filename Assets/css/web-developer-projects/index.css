@@ -59,15 +59,22 @@
     margin-bottom: 64px;
   }
 
+  h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
   .web-developer-projects-card {
     display: flex;
     justify-content: space-between;
     align-items: end;
     gap: 32px;
+    /* margin-bottom: 0; */
   }
 
   .projects-cards-container {
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
+    margin-bottom: 0;
   }
 
   .image-container {
