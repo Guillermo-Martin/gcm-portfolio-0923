@@ -284,6 +284,11 @@ img.mobile-wireframes:first-child {
 }
 
 /* ---------- Refining the design section ---------- */
+.refined-mockups-1, .usability-study-2, .refined-mockups-2, .hifi-prototype-2, .final-mockups {
+  /* border: 3px solid red; */
+  margin-bottom: 80px;
+}
+
 .refined-mockups-1 .image-container {
   display: flex;
   align-items: center;
@@ -849,7 +854,7 @@ img.mobile-wireframes:first-child {
 
   /* ----- High fidelity prototype #2 ----- */
   .hifi-prototype-2 p {
-    text-align: left;
+    text-align: center;
   }
 
   .hifi-prototype-2 .image-container {
