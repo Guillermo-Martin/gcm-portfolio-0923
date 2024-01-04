@@ -239,6 +239,10 @@ td li:last-child {
 
 /* ---------- Starting the design section ---------- */
 /* ----- Paper wireframes and digital wireframes (mobile) ----- */
+.paper-wireframes, .digital-wireframes {
+  margin-bottom: 80px;
+}
+
 .paper-wireframes .image-container, .digital-wireframes .image-container {
   display: flex;
   align-items: center;
