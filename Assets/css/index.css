@@ -27,6 +27,10 @@
 	margin-bottom: 32px;
 }
 
+.text-container .short-bio {
+	margin-bottom: 16px;
+}
+
 /* ----- Links section ----- */
 .links-section {
 	margin-bottom: 64px;
