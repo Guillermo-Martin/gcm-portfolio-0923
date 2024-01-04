@@ -1,0 +1,23 @@
+.portfolio-img {
+    height: 350px;
+    width: 100%;
+}
+
+.portfolio-img img {
+    max-height: 350px;
+}
+
+.portfolio-item {
+    margin-bottom: 50px;
+}
+
+.text-box {
+    position: absolute;
+    bottom: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 5%;
+    color: white;
+    /* Text-box's width is 100% of the image's width */
+    width: 100%;
+    display: none;
+}
