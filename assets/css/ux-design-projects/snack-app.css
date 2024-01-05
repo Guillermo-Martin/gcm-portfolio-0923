@@ -21,7 +21,7 @@
 .table-of-contents-btn {
   position: fixed;
   right: 5%;
-  top: 12%;
+  top: 90px;
   z-index: 1;
   border-radius: 50%;
   width: 40px;
