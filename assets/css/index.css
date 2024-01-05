@@ -5,6 +5,10 @@
 	margin-top: 64px;
 }
 
+.top-navbar-container {
+	justify-content: end;
+}
+
 /* Image container  */
 .image-container {
 	margin-bottom: 32px;
