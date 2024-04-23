@@ -175,6 +175,13 @@ main {
 	color: #fff;
 	font-weight: bold;
 	padding: 16px;
+	cursor: pointer;
+	transition: all 0.1s;
+	width: 100%;
+}
+
+.btn-primary:hover {
+	background-color: #d43900;
 }
 
 /* other elements */
