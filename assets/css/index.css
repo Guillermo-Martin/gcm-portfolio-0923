@@ -56,9 +56,9 @@
 	margin-bottom: 64px;
 }
 
-.links-container-links:nth-child(2) {
+/* .links-container-links:nth-child(2) {
 	margin-bottom: 0;
-}
+} */
 
 .links-container-links h2 {
 	border-bottom: 1px solid lightgrey;
@@ -75,6 +75,31 @@
 	gap: 24px;
 	text-align: center;
 }
+
+/* .contact-links {
+	margin-bottom: 64px;
+} */
+
+/* ----- Plant icon ----- */
+.icon-container-mobile {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.icon-container-mobile img {
+	width: 100%;
+	max-width: 70px;
+}
+
+/* attribution */
+/* .icon-container-mobile a { 
+	font-size: 12px;
+	text-align: center;
+	width: 100%;
+} */
 
 /* ---------- Media queries ----------  */
 @media only screen and (min-width: 576px) {
