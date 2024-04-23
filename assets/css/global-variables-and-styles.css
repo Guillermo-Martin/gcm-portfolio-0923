@@ -166,6 +166,17 @@ main {
 	position: relative;
 }
 
+/* Buttons */
+.btn-primary {
+	background-color: #084685;
+	border: none;
+	border-radius: 28px;
+	box-shadow: 2px 2px 3px #c9c9c9;
+	color: #fff;
+	font-weight: bold;
+	padding: 16px;
+}
+
 /* other elements */
 li {
 	/* border: 3px solid green !important; */
