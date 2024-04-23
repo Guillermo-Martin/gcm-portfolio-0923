@@ -24,6 +24,17 @@
 	width: 100%;
 }
 
+.text-container .subheader {
+	font-size: 28px;
+	/* background-color: blue; */
+}
+
+.subheader span {
+	/* border: 3px solid red; */
+	color: #d43900;
+	font-weight: bold;
+}
+
 /* Description */
 .text-container p {
 	font-size: var(--fs-body);
