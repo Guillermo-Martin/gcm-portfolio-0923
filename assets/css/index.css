@@ -207,9 +207,10 @@
 		margin-bottom: 0;
 	}
 
-	/* .learn-more-link {
+	.learn-more-link {
 		background-color: red;
-	} */
+		margin-left: 0;
+	}
 
 	
 
