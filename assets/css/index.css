@@ -153,6 +153,11 @@
 	.image-container {
 		width: 50%;
 	}
+
+	.text-container .subheader {
+		/* border: 3px solid red; */
+		font-size: 36px;
+	}
 }
 
 @media only screen and (min-width: 992px) {
@@ -199,6 +204,8 @@
 	.text-container-text {
 		margin-bottom: 0;
 	}
+
+	
 
 	/* links container */
 	.links-container {
