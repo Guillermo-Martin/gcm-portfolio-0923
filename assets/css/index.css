@@ -124,9 +124,16 @@
 		text-align: center;
 	}
 
+	.subheader {
+		/* border: 3px solid red; */
+		font-size: 24px;
+	}
+
 	.links-container {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
+		margin-bottom: 100px;
 	}
 
 	.links-container-links {
