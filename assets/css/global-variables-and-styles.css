@@ -173,9 +173,10 @@ main {
 	border-radius: 28px;
 	box-shadow: 2px 2px 3px #c9c9c9;
 	color: #fff;
-	font-weight: bold;
-	padding: 16px;
 	cursor: pointer;
+	font-weight: bold;
+	max-width: 240px;
+	padding: 16px;
 	transition: all 0.1s;
 	width: 100%;
 }
