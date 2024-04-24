@@ -108,10 +108,14 @@
 	flex-wrap: wrap;
 }
 
-.footer a {
-	font-size: 12px;
+.attribution {
+	/* font-size: 12px; */
 	text-align: center;
 	width: 100%;
+}
+
+.attribution a {
+	font-size: 12px;
 }
 
 /* ---------- Media queries ----------  */
