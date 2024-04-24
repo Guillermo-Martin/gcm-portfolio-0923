@@ -52,6 +52,8 @@
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	margin: 0 auto;
+	width: fit-content;
 }
 
 /* ----- Links section ----- */
@@ -204,6 +206,10 @@
 	.text-container-text {
 		margin-bottom: 0;
 	}
+
+	/* .learn-more-link {
+		background-color: red;
+	} */
 
 	
 
