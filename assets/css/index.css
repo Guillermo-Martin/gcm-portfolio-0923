@@ -285,4 +285,8 @@
 	.main-section {
 		margin-bottom: 64px;
 	}
+
+	.icon-container-desktop {
+    top: 45px;
+	}
 }
