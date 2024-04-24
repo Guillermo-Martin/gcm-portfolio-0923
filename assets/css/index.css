@@ -260,8 +260,24 @@
 		gap: 32px;
 	}
 
+	.contact-links {
+		position: relative;
+	}
+
 	.icon-container-mobile {
 		display: none;
+	}
+
+	.icon-container-desktop {
+		width: 55px;
+		height: 55px;
+		position: absolute;
+    right: 0;
+    top: 22px;
+	}
+
+	.icon-container-desktop img {
+		width: 100%;
 	}
 }
 
