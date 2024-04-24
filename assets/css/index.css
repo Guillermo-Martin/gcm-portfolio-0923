@@ -184,6 +184,7 @@
 		margin-bottom: 32px;
 		gap: 32px;
 		align-items: end;
+		/* align-items: center; */
 	}
 
 	/* image container */
@@ -192,15 +193,27 @@
 		display: flex;
     align-items: center;
     justify-content: center;
+		width: 40%;
 	}
 
 	/* text container */
 	.text-container {
 		text-align: left;
+		width: 60%;
+	}
+
+	.text-container h1 {
+		/* border: 3px solid red; */
+		margin-bottom: 12px;
+	}
+
+	.text-container .subheader {
+		font-size: 20px;
 	}
 
 	.text-container p {
-		margin-bottom: 0;
+		/* margin-bottom: 0; */
+		margin-bottom: 16px;
 	}
 
 	.text-container-text {
@@ -208,14 +221,13 @@
 	}
 
 	.learn-more-link {
-		background-color: red;
+		/* background-color: red; */
 		margin-left: 0;
 	}
 
-	
-
 	/* links container */
 	.links-container {
+		flex-wrap: unset;
 		width: 100%;
 		gap: 32px;
 	}
@@ -242,6 +254,10 @@
 	.links-container-links ul {
 		flex-direction: unset;
 		gap: 32px;
+	}
+
+	.icon-container-mobile {
+		display: none;
 	}
 }
 
