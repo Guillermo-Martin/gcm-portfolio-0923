@@ -70,7 +70,7 @@
 } */
 
 .links-container-links h2 {
-	border-bottom: 1px solid lightgrey;
+	border-bottom: 1px solid #c4cede;
 	margin: 0 auto;
 	margin-bottom: 32px;
 	padding-bottom: 16px;
@@ -287,6 +287,6 @@
 	}
 
 	.icon-container-desktop {
-    top: 45px;
+    top: 46px;
 	}
 }
