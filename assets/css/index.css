@@ -312,11 +312,15 @@
 }
 
 @media only screen and (min-width: 1256px) {
-	.text-container h1, .text-container .short-bio, .text-container p {
+	.text-container h1, .text-container .short-bio {
 		margin-bottom: 28px;
 	}
 
 	.text-container .subheader {
 		font-size: 28px;
+	}
+
+	.text-container p {
+		margin-bottom: 40px;
 	}
 }
