@@ -310,3 +310,13 @@
     top: 46px;
 	}
 }
+
+@media only screen and (min-width: 1256px) {
+	.text-container h1, .text-container .short-bio, .text-container p {
+		margin-bottom: 28px;
+	}
+
+	.text-container .subheader {
+		font-size: 28px;
+	}
+}
