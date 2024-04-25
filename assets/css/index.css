@@ -285,6 +285,20 @@
 	.icon-container-desktop img {
 		width: 100%;
 	}
+
+	.footer {
+		/* background-color: skyblue; */
+		flex-wrap: nowrap;
+	}
+
+	.attribution {
+		/* border: 3px solid red; */
+		width: fit-content;
+	}
+
+	.attribution a {
+		font-size: var(--fs-body);
+	}
 }
 
 @media only screen and (min-width: 1200px) {
