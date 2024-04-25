@@ -103,6 +103,11 @@
 	max-width: 70px;
 }
 
+/* Desktop plant icon */
+.icon-container-desktop {
+	display: none;
+}
+
 /* Attribution for plant icon */
 .footer {
 	flex-wrap: wrap;
@@ -269,6 +274,7 @@
 	}
 
 	.icon-container-desktop {
+		display: block;
 		width: 55px;
 		height: 55px;
 		position: absolute;
