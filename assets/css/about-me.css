@@ -41,3 +41,8 @@
 	font-weight: bold;
 }
 
+/* ---------- my experience section ---------- */
+.my-experience-section p {
+  /* border: 3px solid red; */
+  margin-bottom: 20px;
+}
