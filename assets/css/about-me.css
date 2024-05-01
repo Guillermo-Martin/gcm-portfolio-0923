@@ -71,11 +71,17 @@ h2 {
   /* border: 3px solid red; */
   margin-bottom: var(--block-md);
 }
-/* ---- Before ---- */
+/* ----- Before ----- */
 .before-section .image-container {
   width: 100%;
 }
 
 .before-section img {
   width: 100%;
+}
+
+/* ----- After ----- */
+.after-section p {
+  /* border: 3px solid red; */
+  margin-bottom: 28px;
 }
