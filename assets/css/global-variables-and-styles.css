@@ -176,6 +176,7 @@ main {
 	color: #fff;
 	cursor: pointer;
 	font-weight: bold;
+	max-width: 240px;
 	min-width: 240px;
 	padding: 16px;
 	transition: all 0.1s;
