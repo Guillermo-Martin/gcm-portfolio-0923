@@ -85,3 +85,14 @@ h2 {
   /* border: 3px solid red; */
   margin-bottom: 28px;
 }
+
+/* ---------- spare time section ---------- */
+.spare-time-section .image-grid {
+  display: grid;
+  grid-template-columns: 1r;
+  grid-row-gap: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+}
