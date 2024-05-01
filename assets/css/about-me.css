@@ -107,3 +107,8 @@ h2 {
 .image-grid img {
   width: 100%;
 }
+
+/* ---------- thanks section ---------- */
+.thanks-section .text-container {
+  margin-bottom: var(--block-lg);
+}
