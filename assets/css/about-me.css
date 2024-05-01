@@ -42,7 +42,7 @@
 }
 
 /* ---------- my experience section ---------- */
-.my-experience-section p {
+.my-experience-section .learn-more-text {
   /* border: 3px solid red; */
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
