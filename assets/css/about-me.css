@@ -65,3 +65,13 @@ h2 {
   /* border: 3px solid red; */
   margin-bottom: 28px;
 }
+
+/* ---------- my experience section ---------- */
+/* ---- Before ---- */
+.before-section .image-container {
+  width: 100%;
+}
+
+.before-section img {
+  width: 100%;
+}
