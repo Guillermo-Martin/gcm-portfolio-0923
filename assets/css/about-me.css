@@ -1,6 +1,7 @@
 /* ---------- hero section ---------- */
 .hero-section {
   /* border: 3px solid red; */
+  margin-top:  var(--block-lg);
 }
 
 .hero-section-content {
@@ -12,6 +13,7 @@
 
 /* ----- image container ----- */
 .hero-section-content .image-container {
+  margin-bottom:  var(--block-sm);
   width: 100%;
 }
 
