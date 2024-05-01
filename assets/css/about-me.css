@@ -1,15 +1,16 @@
 /* ---------- hero section ---------- */
 .hero-section {
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 
 .hero-section-content {
-  background-color: blue;
+  /* background-color: blue; */
   /* display: flex;
   justify-content: center;
   align-items: center; */
 }
 
+/* ----- image container ----- */
 .hero-section-content .image-container {
   width: 100%;
 }
@@ -17,3 +18,15 @@
 .hero-section-content img {
   width: 100%;
 }
+
+/* ----- text container ----- */
+.subheader {
+  border: 3px solid red;
+  font-size: 20px;
+}
+
+.subheader span {
+  color: #d43900;
+	font-weight: bold;
+}
+
