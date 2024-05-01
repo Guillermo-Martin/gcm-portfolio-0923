@@ -2,6 +2,11 @@
   margin-bottom: var(--block-lg);
 }
 
+h2 {
+  border-bottom: 1px solid #c4cede;
+  padding-bottom: 12px;
+}
+
 /* ---------- hero section ---------- */
 .hero-section {
   /* border: 3px solid red; */
