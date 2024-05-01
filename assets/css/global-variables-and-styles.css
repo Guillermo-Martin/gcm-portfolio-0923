@@ -208,6 +208,7 @@ li {
 }
 
 .footer p {
+	margin-bottom: 0;
 	width: fit-content;
 }
 
