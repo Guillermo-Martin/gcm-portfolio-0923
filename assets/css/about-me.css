@@ -7,6 +7,21 @@ h2 {
   padding-bottom: 12px;
 }
 
+/* ----- Plant icons ----- */
+.icon-container-mobile {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+  margin-bottom: var(--block-lg);
+}
+
+.icon-container-mobile img {
+	max-width: 70px;
+	width: 100%;
+}
+
 /* ---------- hero section ---------- */
 .hero-section {
   /* border: 3px solid red; */
@@ -47,20 +62,6 @@ h2 {
 }
 
 /* ---------- my experience section ---------- */
-/* ----- Plant icon ----- */
-.icon-container-mobile {
-	align-items: center;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	width: 100%;
-}
-
-.icon-container-mobile img {
-	max-width: 70px;
-	width: 100%;
-}
-
 .my-experience-section .learn-more-text {
   /* border: 3px solid red; */
   margin-bottom: 28px;
@@ -84,6 +85,16 @@ h2 {
 .after-section p {
   /* border: 3px solid red; */
   margin-bottom: 28px;
+}
+
+/* ----- After ----- */
+.since-then-section p {
+  margin-bottom: 28px;
+}
+
+.since-then-section .text-container {
+  /* border: 3px solid red; */
+  margin-bottom: var(--block-lg);
 }
 
 /* ---------- spare time section ---------- */
