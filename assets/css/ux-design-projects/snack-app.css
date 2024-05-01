@@ -1,11 +1,11 @@
 .case-study-page {
-  padding-left: 0;
-  padding-right: 0;
+  /* padding-left: 0;
+  padding-right: 0; */
 }
 
 .section-container {
-  padding-left: 16px;
-  padding-right: 16px;
+  /* padding-left: 16px;
+  padding-right: 16px; */
   margin-bottom: var(--block-lg);
 }
 

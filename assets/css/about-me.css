@@ -1,3 +1,7 @@
+.section-container {
+  margin-bottom: var(--block-lg);
+}
+
 /* ---------- hero section ---------- */
 .hero-section {
   /* border: 3px solid red; */
@@ -22,9 +26,14 @@
 }
 
 /* ----- text container ----- */
+.text-container {
+  /* margin-bottom: var(--block-sm); */
+}
+
 .subheader {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   font-size: 20px;
+  margin-bottom: var(--block-sm);
 }
 
 .subheader span {
