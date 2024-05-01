@@ -120,3 +120,9 @@ h2 {
 .thanks-section .text-container {
   margin-bottom: var(--block-lg);
 }
+
+.attribution, .attribution a {
+  /* border: 3px solid red; */
+  font-size: 12px;
+  font-style: italic;
+}
