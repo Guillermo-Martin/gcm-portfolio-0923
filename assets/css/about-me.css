@@ -22,6 +22,14 @@ h2 {
 	width: 100%;
 }
 
+/* ----- Button links ----- */
+.button-link {
+  /* border: 3px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* ---------- hero section ---------- */
 .hero-section {
   /* border: 3px solid red; */
