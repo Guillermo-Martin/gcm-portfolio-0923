@@ -160,13 +160,22 @@ h2 {
 @media only screen and (min-width: 992px) {
   /* ----- hero section ----- */
   .hero-section-content {
-    /* border: 3px solid red; */
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
   }
 
   h1, .hero-section-content .text-container {
     text-align: left;
+  }
+
+  .hero-section-content .image-container {
+    margin: 0;
+    width: 40%;
+  }
+
+  .hero-section-content .text-container {
+    width: 60%;
   }
 }
