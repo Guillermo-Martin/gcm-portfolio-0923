@@ -129,7 +129,8 @@ h2 {
 
 /* ---------- Media queries ---------- */
 @media only screen and (min-width: 576px) {
-  .hero-section h1 {
+  /* centers all text */
+  h1, h2, .text-container {
     text-align: center;
   }
 
@@ -138,6 +139,9 @@ h2 {
     margin-bottom: var(--block-sm);
     width: 60%;
   }
+
+  /* ----- Experience section ----- */
+  
 }
 
 @media only screen and (min-width: 767px) {
