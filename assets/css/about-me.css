@@ -17,9 +17,14 @@ h2 {
   margin-bottom: var(--block-lg);
 }
 
-.icon-container-mobile img {
+.icon-container-mobile img, .icon-container-desktop img {
 	max-width: 70px;
 	width: 100%;
+}
+
+/* desktop plant icon */
+.icon-container-desktop {
+  display: none;
 }
 
 /* ----- Button links ----- */
@@ -191,16 +196,9 @@ h2 {
 
   /* desktop plant icon */
   .icon-container-desktop {
+    display: block;
     position: absolute;
     right: 0;
     top: 4px;
   }
-
-  .icon-container-desktop img {
-    max-width: 70px;
-	  width: 100%;
-  }
-  
-
-
 }
