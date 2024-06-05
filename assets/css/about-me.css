@@ -139,13 +139,15 @@ h2 {
     margin-bottom: var(--block-sm);
     width: 60%;
   }
-
-  /* ----- Experience section ----- */
-  
 }
 
 @media only screen and (min-width: 767px) {
   .hero-section .image-container {
     width: 50%;
+  }
+
+  .my-journey-section .image-container, .spare-time-section img {
+    margin: 0 auto;
+    max-width: 800px;
   }
 }
