@@ -139,3 +139,9 @@ h2 {
     width: 60%;
   }
 }
+
+@media only screen and (min-width: 767px) {
+  .hero-section .image-container {
+    width: 50%;
+  }
+}
