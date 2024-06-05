@@ -178,4 +178,29 @@ h2 {
   .hero-section-content .text-container {
     width: 60%;
   }
+
+  /* ----- mobile plant icon ----- */
+  .icon-container-mobile {
+    display: none;
+  }
+
+  /* ----- my experience section ----- */
+  .my-experience-section .text-container {
+    position: relative;
+  }
+
+  /* desktop plant icon */
+  .icon-container-desktop {
+    position: absolute;
+    right: 0;
+    top: 4px;
+  }
+
+  .icon-container-desktop img {
+    max-width: 70px;
+	  width: 100%;
+  }
+  
+
+
 }
