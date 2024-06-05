@@ -171,7 +171,7 @@ h2 {
     justify-content: space-between;
   }
 
-  h1, .hero-section-content .text-container {
+  h1, h2, .text-container {
     text-align: left;
   }
 
