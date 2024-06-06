@@ -212,6 +212,10 @@ h2 {
   }
 
   /* ----- My journey section ----- */
+  .subsection {
+    margin-bottom: var(--block-lg);
+  }
+
   /* before section */
   .before-section {
     align-items: center;
