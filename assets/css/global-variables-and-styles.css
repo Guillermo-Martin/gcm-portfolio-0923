@@ -175,16 +175,19 @@ main {
 	box-shadow: 2px 2px 3px #c9c9c9;
 	color: #fff;
 	cursor: pointer;
-	font-weight: bold;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 700;
 	max-width: 240px;
-	min-width: 240px;
-	padding: 16px;
-	transition: all 0.1s;
+	padding: 16.75px 0px;
+	text-align: center;
+	text-decoration: none;
 	width: 100%;
 }
 
 .btn-primary:hover {
 	background-color: #d43900;
+	color: #fff;
 }
 
 /* other elements */
