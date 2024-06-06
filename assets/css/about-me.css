@@ -252,4 +252,17 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
   }
+
+  /* ----- thanks for visiting section ----- */
+  .thanks-section .text-container {
+    position: relative;
+    padding-bottom: var(--block-lg);
+    margin-bottom: 0;
+  }
+
+  .thanks-section .icon-container-desktop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
