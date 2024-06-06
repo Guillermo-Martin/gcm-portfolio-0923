@@ -163,6 +163,12 @@ h2 {
 }
 
 @media only screen and (min-width: 992px) {
+  /* ----- button links ----- */
+  .button-link {
+    display: block;
+    width: fit-content;
+  }
+
   /* ----- hero section ----- */
   .hero-section-content {
     align-items: center;
