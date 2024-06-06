@@ -256,6 +256,11 @@ li {
   .footer-social-nav {
     display: flex;
   }
+
+	/* Main element */
+	main {
+		padding: 64px 32px;
+	}
 }
 
 @media only screen and (min-width: 767px) {
