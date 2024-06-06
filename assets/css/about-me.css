@@ -299,4 +299,8 @@ h2 {
     right: 0;
     top: 27px;
   }
+
+  .my-experience-section p, .subsection p, .spare-time-section p {
+    max-width: 880px;
+  }
 }
