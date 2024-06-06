@@ -200,6 +200,10 @@ h2 {
     position: relative;
   }
 
+  .my-experience-section p {
+    max-width: 712px;
+  }
+
   /* desktop plant icon (my experience section) */
   .icon-container-desktop {
     display: block;
@@ -214,6 +218,10 @@ h2 {
   /* ----- My journey section ----- */
   .subsection {
     margin-bottom: var(--block-lg);
+  }
+
+  .subsection p {
+    max-width: 712px;
   }
 
   /* before section */
@@ -251,6 +259,10 @@ h2 {
   .spare-time-section .image-grid {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
+  }
+
+  .spare-time-section p {
+    max-width: 712px;
   }
 
   /* ----- thanks for visiting section ----- */
