@@ -212,6 +212,24 @@ h2 {
   }
 
   /* ----- My journey section ----- */
+  /* before section */
+  .before-section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .before-section .text-container {
+    width: 50%;
+  }
+
+  .before-section .image-container {
+    width: 50%;
+    max-width: unset;
+    margin: 0;
+  }
+
+  /* since then section */
   .since-then-section {
     position: relative;
   }
