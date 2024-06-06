@@ -200,11 +200,28 @@ h2 {
     position: relative;
   }
 
-  /* desktop plant icon */
+  /* desktop plant icon (my experience section) */
   .icon-container-desktop {
     display: block;
     position: absolute;
+  }
+
+  .my-experience-section .icon-container-desktop {
     right: 0;
     top: 4px;
+  }
+
+  /* ----- My journey section ----- */
+  .since-then-section {
+    position: relative;
+  }
+
+  .since-then-section .text-container {
+    margin-bottom: 0;
+  }
+
+  .since-then-section .icon-container-desktop {
+    bottom: 0;
+    right: 0;
   }
 }
