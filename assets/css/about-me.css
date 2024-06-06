@@ -113,7 +113,7 @@ h2 {
 /* ---------- spare time section ---------- */
 .spare-time-section .image-grid {
   display: grid;
-  grid-template-columns: 1r;
+  grid-template-columns: 1fr;
   grid-row-gap: 20px;
 }
 
@@ -245,5 +245,11 @@ h2 {
   .since-then-section .icon-container-desktop {
     bottom: 0;
     right: 0;
+  }
+
+  /* ----- Spare time section ----- */
+  .spare-time-section .image-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
   }
 }
