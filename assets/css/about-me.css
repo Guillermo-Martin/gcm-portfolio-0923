@@ -257,8 +257,15 @@ h2 {
 
   /* ----- Spare time section ----- */
   .spare-time-section .image-grid {
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px;
+  }
+
+  .grid-image-2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
   }
 
   .spare-time-section p {
