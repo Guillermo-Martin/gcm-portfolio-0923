@@ -1,5 +1,5 @@
 .section-container {
-  margin-bottom: var(--block-lg);
+  margin-bottom: calc(var(--block-lg) * 2);
 }
 
 h2 {
@@ -266,6 +266,10 @@ h2 {
   }
 
   /* ----- thanks for visiting section ----- */
+  .thanks-section {
+    margin-bottom: var(--block-lg);
+  }
+
   .thanks-section .text-container {
     position: relative;
     padding-bottom: var(--block-lg);
