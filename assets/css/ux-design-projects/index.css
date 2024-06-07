@@ -104,6 +104,7 @@
   }
 
   .text-container {
+    text-align: left;
     width: 55%;
   }
 
@@ -112,7 +113,11 @@
   }
 
   .text-container-text a {
-    justify-content: start;
+    /* justify-content: start; */
+  }
+
+  .case-study-btn {
+    margin: 0;
   }
 }
 
