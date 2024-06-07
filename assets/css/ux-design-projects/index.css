@@ -120,14 +120,22 @@
   } */
 
   .project-3 .image-container-inner-container {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     position: relative;
   }
 
-  .project-3-thumbnail-2 {
+  .project-3-thumbnail-1 {
+    position: relative;
+    right: 26.5%;
+    top: 5px;
+  }
+
+  .project-3 .project-3-thumbnail-2 {
     /* border: 1px solid red; */
-    /* position: absolute;
-    bottom: 0; */
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    right: 0;
   }
 
   .text-container {
