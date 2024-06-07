@@ -37,7 +37,7 @@
   justify-content: center;
 }
 
-.project-3-thumbnail {
+.project-3-thumbnail-2 {
   border: 1px solid #c4cede;
 }
 
@@ -87,7 +87,8 @@
   .ux-design-projects-card {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    /* align-items: end; */
+    align-items: center;
     gap: 32px;
   }
 
@@ -100,7 +101,33 @@
     margin: 0;
     /* for positioning the snack app thumbnail */
     position: relative;
-    top: 10px;
+    /* top: 10px; */
+  }
+
+  /* .project-3-thumbnail-1, .project-3-thumbnail-2 {
+    border: 1px solid red;
+    position: absolute;
+  }
+
+  .project-3-thumbnail-1 {
+    right: 75px;
+  }
+
+  .image-container .project-3-thumbnail-2 {
+    top: -16px;
+    width: 75%;
+    right: 0;
+  } */
+
+  .project-3 .image-container-inner-container {
+    border: 3px solid red;
+    position: relative;
+  }
+
+  .project-3-thumbnail-2 {
+    /* border: 1px solid red; */
+    /* position: absolute;
+    bottom: 0; */
   }
 
   .text-container {
