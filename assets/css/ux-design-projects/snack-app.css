@@ -268,6 +268,12 @@ img.mobile-wireframes:first-child {
   margin-bottom: 20px;
 }
 
+/* Prototype buttons */
+.prototype-button {
+  display: block;
+  margin: 0 auto;
+}
+
 /* ----- Usability study ----- */
 .usability-study p {
   margin-bottom: 20px;
