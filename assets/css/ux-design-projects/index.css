@@ -63,15 +63,15 @@
     max-width: 512px;
   }
 
+  .text-container {
+    text-align: center;
+  }
+
   .text-container-text a {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
-  /* .project-website {
-    border: 3px solid red;
-  } */
 }
 
 @media only screen and (min-width: 767px) {
