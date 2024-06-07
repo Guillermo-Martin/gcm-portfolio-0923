@@ -52,9 +52,9 @@
   }
 
   .image-container {
-    width: 100%;
     margin: 0 auto;
     margin-bottom: 32px;
+    width: 100%;
   }
 
   .image-container img {
@@ -68,8 +68,8 @@
   }
 
   .text-container-text a {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
   }
 }
@@ -85,11 +85,10 @@
   }
 
   .ux-design-projects-card {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: end; */
     align-items: center;
+    display: flex;
     gap: 32px;
+    justify-content: space-between;
   }
 
   .projects-cards-container {
@@ -97,30 +96,14 @@
   }
 
   .image-container {
-    width: 40%;
     margin: 0;
-    /* for positioning the snack app thumbnail */
+    /* for positioning thumbnails */
     position: relative;
-    /* top: 10px; */
+    width: 40%;
   }
 
-  /* .project-3-thumbnail-1, .project-3-thumbnail-2 {
-    border: 1px solid red;
-    position: absolute;
-  }
-
-  .project-3-thumbnail-1 {
-    right: 75px;
-  }
-
-  .image-container .project-3-thumbnail-2 {
-    top: -16px;
-    width: 75%;
-    right: 0;
-  } */
-
+  /* Project #3 thumbnails */
   .project-3 .image-container-inner-container {
-    /* border: 3px solid red; */
     position: relative;
   }
 
@@ -131,11 +114,10 @@
   }
 
   .project-3 .project-3-thumbnail-2 {
-    /* border: 1px solid red; */
-    position: absolute;
     bottom: 0;
-    width: 80%;
+    position: absolute;
     right: 0;
+    width: 80%;
   }
 
   .text-container {
@@ -145,10 +127,6 @@
 
   h2 {
     text-align: left;
-  }
-
-  .text-container-text a {
-    /* justify-content: start; */
   }
 
   .case-study-btn {
@@ -163,8 +141,8 @@
   }
 
   .projects-cards-container {
-    max-width: 936px;
     margin: 0 auto;
+    max-width: 936px;
   }
 
   h2 {
