@@ -22,6 +22,12 @@
   margin-bottom: 24px;
 }
 
+/* Case study buttons */
+.case-study-btn {
+  display: block;
+  margin: 0 auto;
+}
+
 /* ----- Project 3 ----- */
 .project-3 .image-container {
   align-items: center;
