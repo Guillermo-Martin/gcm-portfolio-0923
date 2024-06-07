@@ -1,11 +1,4 @@
-.case-study-page {
-  /* padding-left: 0;
-  padding-right: 0; */
-}
-
 .section-container {
-  /* padding-left: 16px;
-  padding-right: 16px; */
   margin-bottom: var(--block-lg);
 }
 
@@ -19,26 +12,26 @@
 
 /* Table of contents */
 .table-of-contents-btn {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 40px;
+  padding: 0;
   position: fixed;
   right: 5%;
   top: 90px;
-  z-index: 1;
-  border-radius: 50%;
   width: 40px;
-  height: 40px;
-  padding: 0;
-  border: 1px solid black;
-  background-color: white;
-  cursor: pointer;
+  z-index: 1;
 }
 
 .table-of-contents-btn svg {
+  height: 24px;
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -42%);
   width: 24px;
-  height: 24px;
 }
 
 #down-arrow {
@@ -60,16 +53,16 @@
 
 /* hide the table of contents */
 #mobile-table-of-contents {
-  display: none;
-  position: absolute;
   background-color: #fff;
-  width: 100%;
-  top: 100%;
-  left: 0;
+  border-bottom: 1px solid black;
+  display: none;
   height: 40vh;
+  left: 0;
   padding: 40px;
   padding-top: 80px;
-  border-bottom: 1px solid black;
+  position: absolute;
+  top: 100%;
+  width: 100%;
 }
 
 /* show table of contents */
@@ -79,8 +72,8 @@
 
 /* table of contents container */
 .mobile-table-of-contents-links li {
-  width: fit-content;
   margin-bottom: 20px;
+  width: fit-content;
 }
 
 /* project subsections */
@@ -144,9 +137,9 @@ hr {
 }
 
 .persona-image {
-  max-width: 440px;
   margin: 0 auto;
   margin-bottom: 32px;
+  max-width: 440px;
 }
 
 /* Margins between persona sections */
@@ -161,8 +154,8 @@ hr {
 
 /* Persona quote */
 .persona-quote {
-  font-style: italic;
   font-size: 24px;
+  font-style: italic;
 }
 
 /* Persona goals and frustrations */
@@ -183,8 +176,8 @@ hr {
 /* User journey CTA */
 p.user-journey-cta {
   font-style: italic;
-  text-align: right;
   margin-bottom: 8px;
+  text-align: right;
 }
 
 /* User journeys table */
@@ -214,10 +207,10 @@ th {
 /* Headers and first column styles */
 th:first-child, td:first-child, th {
   background-color: skyblue;
-  vertical-align: middle;
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+  vertical-align: middle;
 }
 
 td:first-child, thead th:first-child {
@@ -244,10 +237,10 @@ td li:last-child {
 }
 
 .paper-wireframes .image-container, .digital-wireframes .image-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 img.mobile-wireframes {
@@ -296,10 +289,10 @@ img.mobile-wireframes:first-child {
 }
 
 .refined-mockups-1 .image-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 /* ----- Mockups ----- */
@@ -341,10 +334,10 @@ img.mobile-wireframes:first-child {
 
 /* ----- Mockups 2 ----- */
 .refined-mockups-2 .image-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .refined-mockups-2 .mockups-2 {
@@ -354,17 +347,17 @@ img.mobile-wireframes:first-child {
 
 /* ----- Final mockups and final prototype ----- */
 .final-mockups .image-container {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-bottom: 0;
 }
 
 .final-mockups img {
+  margin-bottom: 32px;
   max-width: 300px;
   width: 90%;
-  margin-bottom: 32px;
 }
 
 /* ----- Accessibility ----- */
@@ -405,16 +398,16 @@ img.mobile-wireframes:first-child {
 
   /* ----- Project subsections for all sections ----- */
   .project-subsection p {
-    text-align: center;
-    max-width: 600px;
     margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
   }
 
   /* ---------- Hero section ---------- */
   .hero-section p {
-    text-align: center;
-    max-width: 600px;
     margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
   }
 
   /* ---------- Understanding the user section ---------- */
@@ -437,9 +430,9 @@ img.mobile-wireframes:first-child {
   }
 
   .goals ul, .frustrations ul {
-    width: 100%;
     margin: 0 auto;
     max-width: 400px;
+    width: 100%;
   }
 
   .goals li, .frustrations li {
@@ -457,9 +450,9 @@ img.mobile-wireframes:first-child {
   }
 
   p.user-journey-cta {
+    margin-bottom: 8px;
     max-width: unset;
     text-align: right;
-    margin-bottom: 8px;
   }
 
   /* ---------- Starting the design ---------- */
@@ -470,8 +463,8 @@ img.mobile-wireframes:first-child {
 
   /* ----- Usability study ----- */
   .usability-study h4 {
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .usability-study p {
@@ -479,10 +472,10 @@ img.mobile-wireframes:first-child {
   }
 
   .usability-study ul {
-    text-align: center;
     list-style-type: disc;
-    max-width: 400px;
     margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
   }
 
   .usability-study li {
@@ -510,8 +503,8 @@ img.mobile-wireframes:first-child {
 
   /* ----- Next steps ----- */
   .next-steps ul {
-    max-width: 400px;
     margin: 0 auto;
+    max-width: 400px;
   }
 
   /* ----- Thank you section ----- */
@@ -531,22 +524,21 @@ img.mobile-wireframes:first-child {
 
   /* mobile table of contents */
   #mobile-table-of-contents {
-    padding: 0;
-    height: auto;
-    display: block;
     border-top: 1px solid black;
+    display: block;
+    height: auto;
+    padding: 0;
   }
 
   .mobile-table-of-contents-links {
     display: flex;
     justify-content: space-between;
-
   }
 
   .table-of-contents-container {
-    max-width: 1200px;
     border-bottom: none;
     margin: 0 auto;
+    max-width: 1200px;
     padding: 20px 32px;
   }
 
@@ -572,17 +564,17 @@ img.mobile-wireframes:first-child {
 
   /* ----- Image container for all sections ----- */
   .image-container {
-    width: 75%;
     margin: 0 auto;
     margin-bottom: 32px;
+    width: 75%;
   }
 
   /* ---------- Project Overview ---------- */
   .project-overview-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
     grid-column-gap: 60px;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
     padding: 0 60px;
   }
 
@@ -591,21 +583,21 @@ img.mobile-wireframes:first-child {
   } 
 
   .product-subsection {
-    grid-column-start: 1;
     grid-column-end: 3;
+    grid-column-start: 1;
   }
 
   .responsibilities-subsection {
-    grid-column-start: 1;
     grid-column-end: 3;
+    grid-column-start: 1;
   }
 
   /* Paper and digital wireframes */
   .paper-wireframes .image-container, .digital-wireframes .image-container {
-    flex-direction: row;
     align-items: unset;
-    width: 100%;
+    flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
   }
 
   img.mobile-wireframes:first-child {
@@ -616,8 +608,8 @@ img.mobile-wireframes:first-child {
   /* Refined mockups */
   .refined-mockups-1 .image-container, .refined-mockups-2 .image-container {
     flex-direction: row;
-    width: 100%;
     justify-content: space-evenly;
+    width: 100%;
   }
 
   img.mockups:first-child {
@@ -640,12 +632,12 @@ img.mobile-wireframes:first-child {
   /* ----- Final Mockups ----- */
   .final-mockups .image-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    justify-items: center;
     grid-row-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     margin-bottom: 32px;
     max-width: 704px;
+    width: 100%;
   }
 
   .final-mockups img {
@@ -707,8 +699,8 @@ img.mobile-wireframes:first-child {
   .duration-subsection .image-container, 
   .role-subsection .image-container, 
   .responsibilities-subsection .image-container {
-    width: 100%;
     margin-bottom: 32px;
+    width: 100%;
   }
 
   .duration-subsection p, 
@@ -726,13 +718,13 @@ img.mobile-wireframes:first-child {
   /* ----- Pain points ----- */
   .pain-points {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap:  32px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .pain-points h3 {
-    grid-column-start: 1;
     grid-column-end: 4;
+    grid-column-start: 1;
   }
 
   .pain-points h4 {
@@ -746,13 +738,13 @@ img.mobile-wireframes:first-child {
   /* ----- personas ----- */
   .persona {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .persona-image {
-    width: 100%;
     margin-bottom: 0;
+    width: 100%;
   }
 
   .persona h4 {
@@ -770,13 +762,13 @@ img.mobile-wireframes:first-child {
   }
   
   .persona-bio, .persona-quote {
-    grid-column-start: 1;
     grid-column-end: 3;
+    grid-column-start: 1;
   }
 
   p.persona-bio {
-    text-align: left;
     margin-bottom: 0;
+    text-align: left;
   }
 
   p.persona-quote {
@@ -789,8 +781,8 @@ img.mobile-wireframes:first-child {
 
   /* ----- Problem statements ----- */
   .problem-statements {
-    grid-column-start: 1;
     grid-column-end: 3;
+    grid-column-start: 1;
   }
 
   .problem-statements p {
@@ -799,8 +791,8 @@ img.mobile-wireframes:first-child {
 
   /* ----- User journey maps ----- */
   .persona-user-journey {
-    grid-column-start: 1;
     grid-column-end: 3;
+    grid-column-start: 1;
   }
 
   .persona-user-journey h4 {
@@ -811,9 +803,9 @@ img.mobile-wireframes:first-child {
   /* ---------- Starting the design ---------- */
   /* ----- Paper and digital wireframes ----- */
   .paper-wireframes .image-container, .digital-wireframes .image-container {
-    max-width: 872px;
     margin: 0 auto;
     margin-bottom: 32px;
+    max-width: 872px;
   }
 
   .paper-wireframes p, .digital-wireframes p {
@@ -875,13 +867,13 @@ img.mobile-wireframes:first-child {
   /* ----- Accessibility ----- */
   .accessibility .text-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .accessibility h3 {
-    grid-column-start: 1;
     grid-column-end: 4;
+    grid-column-start: 1;
   }
 
   .accessibility h4 {
@@ -907,20 +899,20 @@ img.mobile-wireframes:first-child {
 
   /* ----- Product subsection ----- */
   .product-subsection {
-    grid-column-start: 1;
     grid-column-end: 4;
+    grid-column-start: 1;
   }
 
   /* ----- Role subsection ----- */
   .role-subsection {
-    grid-column-start: 1;
     grid-column-end: 2;
+    grid-column-start: 1;
   }
 
   /* ----- Responsibilities subsection ----- */
   .responsibilities-subsection {
-    grid-column-start: 2;
     grid-column-end: 4;
+    grid-column-start: 2;
   }
 
   /* ---------- Understanding the user ---------- */
@@ -931,8 +923,8 @@ img.mobile-wireframes:first-child {
 
   /* ----- Persona ----- */
   .persona {
-    row-gap: 60px;
     margin-bottom: 128px;
+    row-gap: 60px;
   }
 
   /* ----- Quote ----- */
@@ -962,11 +954,11 @@ img.mobile-wireframes:first-child {
 
   /* ---------- Starting the design ---------- */
   .paper-wireframes .image-container {
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: unset;
-    align-items: center;
     justify-items: center;
+    max-width: unset;
   }
 
   .paper-wireframes img {
@@ -987,6 +979,3 @@ img.mobile-wireframes:first-child {
     max-width: unset;
   }
 }
-
-/* NEXT STEPS */
-/* * experiment with adding color to fonts */
