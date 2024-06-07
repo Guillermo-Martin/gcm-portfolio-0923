@@ -4,7 +4,7 @@
 }
 
 .ux-design-projects-card {
-  margin-bottom: 64px;
+  margin-bottom: calc(var(--block-lg) * 1.5);
 }
 
 /* Image container  */
