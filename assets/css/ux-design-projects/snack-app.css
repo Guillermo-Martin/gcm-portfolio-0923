@@ -391,11 +391,6 @@ img.mobile-wireframes:first-child {
     text-align: left;
   }
 
-  .section-container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   /* ----- Project subsections for all sections ----- */
   .project-subsection p {
     margin: 0 auto;
