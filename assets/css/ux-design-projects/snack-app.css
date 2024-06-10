@@ -656,11 +656,6 @@ img.mobile-wireframes:first-child {
     justify-content: space-evenly;
   }
 
-  .section-container {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
   /* ---------- Project overview section ---------- */
   h3 {
     font-size: var(--fs-h3);
