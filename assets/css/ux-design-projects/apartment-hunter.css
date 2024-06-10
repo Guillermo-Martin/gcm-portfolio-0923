@@ -963,10 +963,6 @@ img.mobile-wireframes:first-child {
     max-width: unset;
   }
 
-  .paper-wireframes img {
-    height: 100%;
-  }
-
   .paper-wireframes img:nth-child(2), .paper-wireframes img:nth-child(3) {
     display: block;
   }
