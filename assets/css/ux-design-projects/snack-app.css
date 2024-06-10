@@ -477,6 +477,11 @@ img.mobile-wireframes:first-child {
     text-align: left;
   }
 
+  /* ---------- Refining the design ---------- */
+  .final-mockups p {
+    margin-bottom: 20px;
+  }
+
   /* ----- Accessibility ----- */
   .accessibility .text-container p {
     margin-bottom: 20px;
