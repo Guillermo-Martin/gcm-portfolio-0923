@@ -140,6 +140,10 @@ hr {
   max-width: 440px;
 }
 
+.persona .persona-image p {
+  text-align: left;
+}
+
 /* Margins between persona sections */
 .persona h4, .persona-details, .persona-bio, .persona-quote, .goals, .frustrations, .problem-statements {
   margin-bottom: 20px;
