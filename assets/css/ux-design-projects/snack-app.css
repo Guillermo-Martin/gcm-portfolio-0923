@@ -284,7 +284,6 @@ img.mobile-wireframes:first-child {
 
 /* ---------- Refining the design section ---------- */
 .refined-mockups-1, .usability-study-2, .refined-mockups-2, .hifi-prototype-2, .final-mockups {
-  /* border: 3px solid red; */
   margin-bottom: 80px;
 }
 
@@ -681,8 +680,8 @@ img.mobile-wireframes:first-child {
 
   /* project overview subsections */
   .product-subsection p, .problem-subsection p, .goal-subsection p {
-    text-align: left;
     max-width: unset;
+    text-align: left;
   }
 
   /* Goal subsection */
