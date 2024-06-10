@@ -1,6 +1,6 @@
 .section-container {
   margin-bottom: var(--block-lg);
-  border: 5px solid red;
+  /* border: 5px solid red; */
 }
 
 /* Offsetting an anchor:  https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
@@ -108,7 +108,7 @@ hr {
 .hero-section .image-container {
   margin: 0 auto;
   margin-bottom: 32px;
-  max-width: 300px;
+  max-width: 700px;
 }
 
 
@@ -567,6 +567,12 @@ img.mobile-wireframes:first-child {
     margin: 0 auto;
     margin-bottom: 32px;
     width: 75%;
+  }
+
+  /* ---------- Hero section ---------- */
+  .hero-section .image-container {
+    max-width: 800px;
+    width: 100%;
   }
 
   /* ---------- Project Overview ---------- */
