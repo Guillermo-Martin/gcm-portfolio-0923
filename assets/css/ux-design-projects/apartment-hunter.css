@@ -1,0 +1,976 @@
+.section-container {
+  margin-bottom: var(--block-lg);
+  border: 5px solid red;
+}
+
+/* Offsetting an anchor:  https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
+.section-container .anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+/* Table of contents */
+.table-of-contents-btn {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 40px;
+  padding: 0;
+  position: fixed;
+  right: 5%;
+  top: 90px;
+  width: 40px;
+  z-index: 1;
+}
+
+.table-of-contents-btn svg {
+  height: 24px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -42%);
+  width: 24px;
+}
+
+#down-arrow {
+  display: block;
+}
+
+#down-arrow.hide {
+  display: none;
+}
+
+#up-arrow {
+  display: none;
+  transform: translate(-50%, -48%);
+}
+
+#up-arrow.show {
+  display: block;
+}
+
+/* hide the table of contents */
+#mobile-table-of-contents {
+  background-color: #fff;
+  border-bottom: 1px solid black;
+  display: none;
+  height: 40vh;
+  left: 0;
+  padding: 40px;
+  padding-top: 80px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+/* show table of contents */
+#mobile-table-of-contents.show {
+  display: block;
+}
+
+/* table of contents container */
+.mobile-table-of-contents-links li {
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+/* project subsections */
+.project-subsection {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 20px; 
+}
+
+hr {
+  margin-bottom: 32px;
+}
+
+/* ----- Image container ----- */
+.image-container {
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/* ---------- Hero section ---------- */
+.hero-section {
+  margin-top: var(--block-lg);
+}
+
+.hero-section .image-container {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  max-width: 300px;
+}
+
+
+/* ---------- Understanding the user ---------- */
+.disclaimer {
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+/* ----- User research ----- */
+.user-research {
+  margin-bottom: 32px;
+}
+
+.user-research p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+/* ----- Pain points ----- */
+.pain-points > div {
+  margin-bottom: 32px;
+}
+
+/* ----- Personas ----- */
+.persona {
+  margin-bottom: var(--block-lg);
+}
+
+.persona-image {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  max-width: 440px;
+}
+
+/* Margins between persona sections */
+.persona h4, .persona-details, .persona-bio, .persona-quote, .goals, .frustrations, .problem-statements {
+  margin-bottom: 20px;
+}
+
+/* Persona details */
+.persona-details span {
+  font-weight: 600;
+}
+
+/* Persona quote */
+.persona-quote {
+  font-size: 24px;
+  font-style: italic;
+}
+
+/* Persona goals and frustrations */
+.goals ul, .frustrations ul {
+  list-style: disc;
+  padding-left: 28px;
+}
+
+/* ----- User journey maps ----- */
+.persona-user-journey p {
+  margin-bottom: 20px;
+}
+
+.persona-user-journey span {
+  font-weight: 600;
+}
+
+/* User journey CTA */
+p.user-journey-cta {
+  font-style: italic;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+/* User journeys table */
+.user-journey-table table, th, td {
+  border: 1px solid black;
+}
+
+/* Horizontal scroll on mobile */
+.user-journey-table {
+  overflow-x: scroll;
+}
+
+.user-journey-table table {
+  min-width: 1200px;
+}
+
+td {
+  padding: 20px;
+  text-align: left;
+}
+
+th {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Headers and first column styles */
+th:first-child, td:first-child, th {
+  background-color: skyblue;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td:first-child, thead th:first-child {
+  background-color: gray;
+}
+
+td ul {
+  list-style-type: disc;
+  padding-left: 12px;
+}
+
+td li {
+  margin-bottom: 4px;
+}
+
+td li:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Starting the design section ---------- */
+/* ----- Paper wireframes and digital wireframes (mobile) ----- */
+.paper-wireframes, .digital-wireframes {
+  margin-bottom: 80px;
+}
+
+.paper-wireframes .image-container, .digital-wireframes .image-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img.mobile-wireframes {
+  max-width: 300px;
+  width: 90%;
+}
+
+img.mobile-wireframes:first-child {
+  margin-bottom: 32px;
+}
+
+.paper-wireframes img:nth-child(2), .paper-wireframes img:nth-child(3) {
+  display: none;
+}
+
+/* ----- Low-fidelity prototype ----- */
+.low-fidelity-prototype p:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+/* Prototype buttons */
+.prototype-button {
+  display: block;
+  margin: 0 auto;
+}
+
+/* ----- Usability study ----- */
+.usability-study p {
+  margin-bottom: 20px;
+}
+
+.usability-study h4 {
+  margin-bottom: 20px;
+}
+
+/* Findings */
+.usability-study ul {
+  list-style: disc;
+  padding-left: 28px;
+}
+
+/* ---------- Refining the design section ---------- */
+.refined-mockups-1, .usability-study-2, .refined-mockups-2, .hifi-prototype-2, .final-mockups {
+  margin-bottom: 80px;
+}
+
+.refined-mockups-1 .image-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ----- Mockups ----- */
+.refined-mockups-1 .mockups {
+  max-width: 300px;
+  width: 90%;
+}
+
+/* Down arrow */
+.down-arrow {
+  font-size: 100px;
+  margin-bottom: 32px;
+}
+
+/* Right arrow */
+.right-arrow {
+  display: none;
+}
+
+/* ----- High-fidelity prototype #1 ----- */
+.hifi-prototype-1 p:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+/* ----- Usability study 2 ----- */
+.usability-study-2 h4 {
+  margin-bottom: 20px;
+}
+
+.usability-study-2 p {
+  margin-bottom: 20px;
+}
+
+/* Findings */
+.usability-study-2 ul {
+  list-style: disc;
+  padding-left: 28px;
+}
+
+/* ----- Mockups 2 ----- */
+.refined-mockups-2 .image-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.refined-mockups-2 .mockups-2 {
+  max-width: 300px;
+  width: 90%;
+}
+
+/* ----- Final mockups and final prototype ----- */
+.final-mockups .image-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.final-mockups img {
+  margin-bottom: 32px;
+  max-width: 300px;
+  width: 90%;
+}
+
+/* ----- Accessibility ----- */
+.accessibility .text-container > div {
+  margin-bottom: 32px;
+}
+
+/* ---------- Going forward section ---------- */
+/* ----- Takeaways ----- */
+.takeaways .impact {
+  margin-bottom: 32px;
+}
+
+/* ----- Next steps ----- */
+.next-steps ul {
+  list-style: disc;
+  padding-left: 28px;
+}
+
+.next-steps li {
+  margin-bottom: 8px;
+}
+
+/* ---------- Media queries ---------- */
+@media only screen and (min-width: 576px) {
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+
+  .table-of-contents-container h2 {
+    text-align: left;
+  }
+
+  /* ----- Project subsections for all sections ----- */
+  .project-subsection p {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  /* ---------- Hero section ---------- */
+  .hero-section p {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  /* ---------- Understanding the user section ---------- */
+  /* ----- Persona details ----- */
+  .persona-details {
+    text-align: center;
+  }
+
+  p.persona-bio {
+    margin-bottom: 20px;
+  }
+
+  p.persona-quote {
+    margin-bottom: 20px;
+  }
+
+  /* ----- Goals and frustrations ----- */
+  .goals, .frustrations {
+    text-align: center;
+  }
+
+  .goals ul, .frustrations ul {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .goals li, .frustrations li {
+    text-align: left;
+  }
+
+  /* ----- Problem statements ----- */
+  p.charlie-henderson-problem {
+    margin-bottom: 20px;
+  }
+
+  /* ----- User journey maps ----- */
+  .persona-user-journey .user-journey-thoughts, .persona-user-journey .user-journey-goal {
+    margin-bottom: 20px;
+  }
+
+  p.user-journey-cta {
+    margin-bottom: 8px;
+    max-width: unset;
+    text-align: right;
+  }
+
+  /* ---------- Starting the design ---------- */
+  /* ----- Digital wireframes ----- */
+  .digital-wireframes > p:nth-child(3) {
+    margin-bottom: 20px;
+  }
+
+  /* ----- Usability study ----- */
+  .usability-study h4 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .usability-study p {
+    margin-bottom: 20px;
+  }
+
+  .usability-study ul {
+    list-style-type: disc;
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  .usability-study li {
+    text-align: left;
+  }
+
+  /* ---------- Refining the design ---------- */
+  .final-mockups p {
+    margin-bottom: 20px;
+  }
+
+  /* ----- Accessibility ----- */
+  .accessibility .text-container p {
+    margin-bottom: 20px;
+  }
+
+  .accessibility .text-container p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ---------- Going forward ---------- */
+  /* ----- Takeaways ----- */
+  .takeaways h4 {
+    text-align: center;
+  }
+
+  .impact p:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  /* ----- Next steps ----- */
+  .next-steps ul {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  /* ----- Thank you section ----- */
+  .thank-you-section p {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .case-study-page {
+    padding-top: 138px;
+  }
+
+  .section-container .anchor {
+    top: -200px;
+  }
+
+  /* mobile table of contents */
+  #mobile-table-of-contents {
+    border-top: 1px solid black;
+    display: block;
+    height: auto;
+    padding: 0;
+  }
+
+  .mobile-table-of-contents-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table-of-contents-container {
+    border-bottom: none;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px 32px;
+  }
+
+  #table-of-contents-btn, .table-of-contents-container h2 {
+    display: none;
+  }
+
+  .mobile-table-of-contents-links li {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  .section-container {
+    margin-bottom: 128px;
+  }
+
+  .section-container hr {
+    margin-bottom: 48px;
+  }
+
+  /* ----- Image container for all sections ----- */
+  .image-container {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 75%;
+  }
+
+  /* ---------- Project Overview ---------- */
+  .project-overview-container {
+    display: grid;
+    grid-column-gap: 60px;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
+  }
+
+  .project-overview-section .project-subsection {
+    margin-bottom: 0;
+  } 
+
+  .product-subsection {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  .responsibilities-subsection {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  /* Paper and digital wireframes */
+  .paper-wireframes .image-container, .digital-wireframes .image-container {
+    align-items: unset;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  img.mobile-wireframes:first-child {
+    margin-bottom: 0;
+  }
+
+  /* ---------- Refining the design ---------- */
+  /* Refined mockups */
+  .refined-mockups-1 .image-container, .refined-mockups-2 .image-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  img.mockups:first-child {
+    margin-bottom: 0;
+  }
+
+  .refined-mockups-2 img:first-child {
+    margin-bottom: 0;
+  }
+
+  .down-arrow {
+    display: none;
+  }
+
+  .right-arrow {
+    display: block;
+    font-size: 100px;
+  }
+
+  /* ----- Final Mockups ----- */
+  .final-mockups .image-container {
+    display: grid;
+    grid-row-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 32px;
+    max-width: 704px;
+    width: 100%;
+  }
+
+  .final-mockups img {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* table of contents */
+  .table-of-contents-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .mobile-table-of-contents-links {
+    justify-content: space-evenly;
+  }
+
+  /* ---------- Project overview section ---------- */
+  h3 {
+    font-size: var(--fs-h3);
+  }
+
+  .project-overview-container {
+    gap: 32px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .project-overview-container .image-container {
+    margin-bottom: 0;
+  }
+
+  .project-subsection p {
+    max-width: unset;
+  }
+
+  .project-subsections-container h3 {
+    text-align: left;
+  }
+
+  /* project overview subsections */
+  .product-subsection p, .problem-subsection p, .goal-subsection p {
+    max-width: unset;
+    text-align: left;
+  }
+
+  /* Goal subsection */
+  .goal-subsection {
+    margin-bottom: 32px;
+  }
+
+  /* Duration, role, responsibilities row */
+  .duration-subsection .image-container, 
+  .role-subsection .image-container, 
+  .responsibilities-subsection .image-container {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .duration-subsection p, 
+  .role-subsection p, 
+  .responsibilities-subsection p {
+    text-align: left;
+  }
+
+  /* ---------- Understanding the user section ---------- */
+  /* ----- User Research ----- */
+  .user-research > p {
+    text-align: left;
+  }
+
+  /* ----- Pain points ----- */
+  .pain-points {
+    display: grid;
+    grid-column-gap:  32px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .pain-points h3 {
+    grid-column-end: 4;
+    grid-column-start: 1;
+  }
+
+  .pain-points h4 {
+    text-align: left;
+  }
+
+  .pain-points p {
+    text-align: left;
+  }
+
+  /* ----- personas ----- */
+  .persona {
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .persona-image {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .persona h4 {
+    text-align: left;
+  }
+
+  .persona-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .persona-details {
+    text-align: left;
+  }
+  
+  .persona-bio, .persona-quote {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  p.persona-bio {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  p.persona-quote {
+    margin-bottom: 0;
+  }
+
+  .goals {
+    margin-bottom: 0;
+  }
+
+  /* ----- Problem statements ----- */
+  .problem-statements {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  .problem-statements p {
+    text-align: left;
+  }
+
+  /* ----- User journey maps ----- */
+  .persona-user-journey {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  .persona-user-journey h4 {
+    text-align: center;
+  }
+
+
+  /* ---------- Starting the design ---------- */
+  /* ----- Paper and digital wireframes ----- */
+  .paper-wireframes .image-container, .digital-wireframes .image-container {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    max-width: 872px;
+  }
+
+  .paper-wireframes p, .digital-wireframes p {
+    text-align: left;
+  }
+
+  /* ----- Low-fidelity prototype ----- */
+  .low-fidelity-prototype .image-container {
+    width: 100%;
+  }
+
+  .low-fidelity-prototype p {
+    text-align: left;
+  }
+
+  /* ----- Usability study #1 ----- */
+  .usability-study ul {
+    max-width: 424px;
+  }
+
+  /* ---------- Refining the design ---------- */
+  /* ----- Mockups ----- */
+  .refined-mockups-1 .image-container, .refined-mockups-2 .image-container {
+    max-width: 872px;
+  }
+
+  .refined-mockups-1 p {
+    text-align: left;
+  }
+
+  /* ----- High fidelity prototype ----- */
+  .hifi-prototype-1 .image-container {
+    width: 100%;
+  }
+
+  .hifi-prototype-1 p {
+    text-align: left;
+  }
+
+  /* ----- Refined mockups #2 ----- */
+  .refined-mockups-2 p {
+    text-align: left;
+  }
+
+  /* ----- High fidelity prototype #2 ----- */
+  .hifi-prototype-2 p {
+    text-align: center;
+  }
+
+  .hifi-prototype-2 .image-container {
+    width: 100%;
+  }
+
+  /* ----- Final mockups ----- */
+  .final-mockups p {
+    text-align: left;
+  }
+
+  /* ----- Accessibility ----- */
+  .accessibility .text-container {
+    display: grid;
+    grid-column-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .accessibility h3 {
+    grid-column-end: 4;
+    grid-column-start: 1;
+  }
+
+  .accessibility h4 {
+    text-align: left;
+  }
+
+  .accessibility p {
+    text-align: left;
+  }
+
+  /* ---------- Going forward ---------- */
+  .takeaways p {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* ---------- Project overview section ---------- */
+  .project-overview-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 36px;
+  }
+
+  /* ----- Product subsection ----- */
+  .product-subsection {
+    grid-column-end: 4;
+    grid-column-start: 1;
+  }
+
+  /* ----- Role subsection ----- */
+  .role-subsection {
+    grid-column-end: 2;
+    grid-column-start: 1;
+  }
+
+  /* ----- Responsibilities subsection ----- */
+  .responsibilities-subsection {
+    grid-column-end: 4;
+    grid-column-start: 2;
+  }
+
+  /* ---------- Understanding the user ---------- */
+  /* ----- Personas subsection ----- */
+  .personas-subsection h3 {
+    margin-bottom: 48px;
+  }
+
+  /* ----- Persona ----- */
+  .persona {
+    margin-bottom: 128px;
+    row-gap: 60px;
+  }
+
+  /* ----- Quote ----- */
+  .persona-quote {
+    font-size:  28px;
+  }
+
+  /* ----- Goals and frustrations ----- */
+  .goals ul, .frustrations ul {
+    max-width: unset;
+    width: auto;
+  }
+
+
+  /* ---------- User journey maps ---------- */
+  .user-journey-cta {
+    display: none;
+  }
+
+  .user-journey-table table {
+    min-width: unset;
+  }
+
+  .user-journey-table th:first-child, th, td:first-child {
+    font-size: 20px;
+  }
+
+  /* ---------- Starting the design ---------- */
+  .paper-wireframes .image-container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    max-width: unset;
+  }
+
+  .paper-wireframes img {
+    height: 100%;
+  }
+
+  .paper-wireframes img:nth-child(2), .paper-wireframes img:nth-child(3) {
+    display: block;
+  }
+
+  /* ---------- Refining the design ---------- */
+  .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
+    width: 100%;
+  }
+
+  .final-mockups .image-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: unset;
+  }
+}

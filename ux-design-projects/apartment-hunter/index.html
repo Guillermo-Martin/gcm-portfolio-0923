@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="en">
+  <!-- ---------- Head ---------- -->
+  <head>
+    <!--  Required meta tags  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="referrer" content="no-referrer" />
+
+    <!-- ----- Styles ----- -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./../../assets/css/reset.css">
+    <link rel="stylesheet" href="./../../assets/css/global-variables-and-styles.css">
+    <link rel="stylesheet" href="./../../assets/css/ux-design-projects/apartment-hunter.css">
+
+     <!-- Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway&display=swap" rel="stylesheet">
+
+    <title>Snack app case study</title>
+  </head>
+  
+  <!-- ---------- Body ---------- -->
+  <!-- Icons - Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <body>
+    <!-- ---------- Top navbar ---------- -->
+    <nav class="top-navbar">
+      <div class="top-navbar-container">
+        <a class="top-navbar-home" href="https://guillermo-martin.github.io/gcm-portfolio-0923/">Home</a>
+      
+        <!-- ----- Hamburger icon ----- -->
+        <div class="mobile-nav-icon" id="hamburger-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-icon" viewBox="0 0 448 512">
+            <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+          </svg>
+        </div>
+
+        <!-- ----- Close icon ----- -->
+        <div class="mobile-nav-icon" id="close-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="close-icon" viewBox="0 0 384 512">
+            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+          </svg>
+        </div>
+
+        <!-- Stacking context and Z-index:  https://coder-coder.com/z-index-isnt-working/ -->
+        <!-- ---------- Table of contents button ---------- -->
+        <button id="table-of-contents-btn" class="table-of-contents-btn">
+          <!-- Down arrow icon -->
+          <svg id="down-arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+            <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+          </svg>
+          <!-- Up arrow icon -->
+          <svg id="up-arrow" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+        </button>
+
+        <!-- ----- Link menu ----- -->
+        <div class="mobile-nav-menu" id="mobile-nav-menu">
+          <ul class="mobile-nav-links">
+            <li><a href="../../web-developer-projects">Web developer projects</a></li>
+            <li><a href="../../ux-design-projects">UX design projects</a></li>
+            <li><a href="/about-me.html">About me</a></li>
+            <li><a href="../../assets/documents/guillermo-martin-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li><a href="https://www.linkedin.com/in/guillermo-martin-10441046/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/Guillermo-Martin" target="_blank" rel="noopener noreferrer">Github</a></li>
+            <li><a href="mailto:gscalica@gmail.com">gscalica@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <!-- ----- Mobile table of contents ----- -->
+        <div class="mobile-table-of-contents" id="mobile-table-of-contents">
+          <div class="table-of-contents-container">
+            <h2>Table of contents</h2>
+            <ul class="mobile-table-of-contents-links">
+              <li><a href="#project-overview">Project overview</a></li>
+              <li><a href="#understanding-the-user">Understanding the user</a></li>
+              <li><a href="#starting-the-design">Starting the design</a></li>
+              <li><a href="#refining-the-design">Refining the design</a></li>
+              <li><a href="#going-forward">Going forward</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- ---------- Main content ---------- -->
+    <main class="case-study-page">
+      <!-- ---------- Hero section ---------- -->
+      <section class="section-container hero-section">
+        <div class="image-container">
+          <img src="./../../assets/images/snack-app/snack-app-final.png" alt="iPhone with the Snack App's homepage on the screen">
+        </div>
+        <h1>LOREM IPSUM!!!!!</h1>
+        <p>
+          A mobile app that would allow users to order snacks from an amusement park snack shop.  This is the first project of the Google UX Design Professional Certificate course, and was created over time throughout the first five courses of the certificate.
+        </p>
+      </section>
+
+      <!-- ---------- Project overview section ---------- -->
+      <section class="section-container project-overview-section">
+        <div id="project-overview" class="anchor"></div>
+        <!-- *For potential future designs* -->
+        <!-- <div class="image-container">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3570&q=80" alt="">
+        </div> -->
+        <!-- Header -->
+        <h2>Project Overview</h2>
+        <hr>
+
+        <!-- ----- Project overview container ----- -->
+        <div class="project-subsections-container project-overview-container">
+          <!-- The product -->
+          <div class="project-subsection product-subsection">
+            <!-- *For potential future designs* -->
+            <!-- <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+            </div> -->
+            <div class="text-container">
+              <h3>The product</h3>
+              <p>An app was designed for an amusement park snack shop.  This app would allow amusement park guests, particularly those who would like to make efficient use of their time, to get food from this snack shop delivered to them.</p>
+            </div>
+          </div>
+          
+          <!-- The problem -->
+          <div class="project-subsection problem-subsection">
+            <!-- *For potential future designs* -->
+            <!-- <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+            </div> -->
+            <div class="text-container">
+              <h3>The problem</h3>
+              <p>Can users successfully place an order and change the language of the app?</p>
+            </div>
+          </div>
+          
+          <!-- The goal -->
+          <div class="project-subsection goal-subsection">
+            <!-- *For potential future designs* -->
+            <!-- <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+            </div> -->
+
+            <div class="text-container">
+              <h3>The goal</h3>
+              <p>Design the app so that a user can easily add items to an order and confirm their order, and so that a user can easily change the language of the app.</p>
+            </div>
+          </div>
+          
+          <!-- Project duration -->
+          <div class="project-subsection duration-subsection">
+            <!-- *For potential future designs* -->
+            <!-- <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+            </div> -->
+            <h3>Project duration</h3>
+            <p>June 2022 to July 2023.</p>
+          </div>
+          
+          <!-- My role -->
+          <div class="project-subsection role-subsection">
+            <!-- *For potential future designs* -->
+            <!-- <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+            </div> -->
+            <h3>Role</h3>
+            <p>UX Designer</p>
+          </div>
+          
+          <!-- Responsibilities -->
+          <div class="project-subsection responsibilities-subsection">
+            <!-- *For potential future designs* -->
+            <!-- <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+            </div> -->
+            <h3>Responsibilities</h3>
+            <p>Conducted research, paper and digital wireframing, low- and high-fidelity prototyping, conducted usability studies, created mockups, iterated on designs, and created a design system.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- Understanding the user ---------- -->
+      <section class="section-container understanding-the-user-section">
+        <div id="understanding-the-user" class="anchor"></div>
+        <!-- *For potential future designs* -->
+        <!-- <div class="image-container">
+          <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3731&q=80" alt="">
+        </div> -->
+
+        <!-- Header -->
+        <h2>Understanding the user</h2>
+        <hr>
+
+        <p class="disclaimer">Note: For this part of the course interviewing participants was optional.  Fictional user biographies were provided and were used to inform my research in place of real-life interview participants.  The research presented below is based off these fictional user biographies and is for learning purposes.  However, data presented in the "Usability study" sections were gathered from real-life participants selected for the usability studies.</p>
+  
+        <div class="understanding-the-user-container">
+          <div class="project-subsection">
+            <!-- *For potential future designs* -->
+            <!-- <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3570&q=80" alt="">
+            </div> -->
+
+            <div class="text-container">
+              <!-- ----- User research ----- -->
+              <div class="user-research">
+                <h3>User research</h3>
+                <p>Using the fictional user biographies, I was able to identify two user groups - those who have previously used these types of apps and those who have used these types of apps but haven’t had a great experience using them.</p>
+                <p>Users from both groups confirmed my initial assumption - users generally are concerned with getting wrong orders and inconsistent delivery time.  Further research also revealed that time is a major factor in using such an app, as users tend to have multiple responsibilities.  Another problem included a lack of options (such as a translation feature) that would allow for a more pleasant user experience.</p>
+              </div>
+              
+              <!-- ----- Pain points ----- -->
+              <div class="pain-points">
+                <h3>Pain points</h3>
+                <div>
+                  <h4>Time</h4>
+                  <p>Users often have multiple responsibilities resulting in a lack of time to spend doing other things (like pursuing hobbies and other interests).  Designs could include time-saving features.</p>
+                </div>
+                
+                <div>
+                  <h4>Accuracy</h4>
+                  <p>Users sometimes get the wrong food order or inaccurate food delivery times.  Designs could incorporate some sort of quality control.</p>
+                </div>
+                
+                <div>
+                  <h4>Lack of features</h4>
+                  <p>A lack of features such as a translation or sort feature result in a poor user experience.  These types of features should be included to make the app more equitable.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ----- Personas ----- -->
+          <div class="project-subsection personas-subsection">
+            <!-- *For potential future designs* -->
+            <!-- <div class="image-container">
+              <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+            </div> -->
+            <h3>Personas, problem statements, and user journeys</h3>
+            
+            <!-- Charlie Henderson persona -->
+            <div class="persona">
+              <div class="image-container persona-image">
+                <img src="./../../assets/images/snack-app/charlie-henderson.jpg" alt="Charlie Henderson persona image" />
+                <a href="https://www.freepik.com/free-photo/young-bearded-man-with-striped-shirt_9660042.htm">Image by wayhomestudio</a> on Freepik.
+              </div>
+
+              <div class="persona-details-container">
+                <h4>Charlie Henderson</h4>
+                <!-- Persona details -->
+                <ul class="persona-details">
+                  <li><span>Age:</span> 35</li>
+                  <li><span>Education:</span> Bachelor's Degree</li>
+                  <li><span>Hometown:</span> Belmont, CA</li>
+                  <li><span>Family:</span> Married, two kids</li>
+                  <li><span>Occupation:</span> Real estate broker</li>
+                </ul>
+              </div>
+
+              <!-- Persona bio -->
+              <p class="persona-bio">Charlie is a 35 year old father of two and works as a real estate broker at a very busy real estate firm.  He regularly shows different properties to potential homeowners and regularly schedules back to back meetings.  Because of this, he often relies on a food delivery app to get his food.  He likes using these types of apps because it allows him to use his time wisely and because it frees up time to spend with his husband and two kids.  However, he often gets the wrong order or the delivery times are inconsistent, eventually leading to spending time fixing the order and schedule changes in order to eat.  He would like for his order and delivery times to be accurate.</p>
+
+              <!-- Persona quote -->
+              <p class="persona-quote">"I often have multiple responsibilities and would like to make the most of my free time."</p>
+              
+              <!-- Persona goals -->
+              <div class="goals">
+                <h4>Goals</h4>
+                <ul>
+                  <li>Make the most use of their time</li>
+                  <li>Free up time to spend with family, hobbies, and other interests</li>
+                </ul>
+              </div>
+              
+              <!-- Persona frustrations -->
+              <div class="frustrations">
+                <h4>Frustrations</h4>
+                <ul>
+                  <li>Getting the wrong food orders</li>
+                  <li>Delivery times are inconsistent, which leads to wasted time</li>
+                </ul>
+              </div>
+              
+              <!-- Problem statement -->
+              <div class="problem-statements">
+                <h4>Problem statement</h4>
+                <p class="charlie-henderson-problem">Charlie Henderson is busy father of two who needs to order food and get it delivered to him because he wants to efficiently use the time spent in the amusement park with his family.</p>
+              </div>
+
+              <!-- User Journey -->
+              <div class="persona-user-journey">
+                <h4>User journey map</h4>
+                <p class="user-journey-thoughts"><span>Charlie Henderson:</span> For Charlie, I thought about the basic user flow of placing a snack order.  I considered the actions he would take to place and receive his order.</p>
+                <p class="user-journey-goal"><span>Goal:</span> Order and receive snacks while waiting in line for a ride or attraction.</p>
+                
+                <!-- User journey CTA -->
+                <p class="user-journey-cta">Scroll to see more of Charlie's user journey &rarr;</p>
+                
+                <!-- Charlie Henderson user journey map -->
+                <div class="user-journey-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Action</th>
+                        <th>Look at the snack options on app</th>
+                        <th>Select which snacks to order</th>
+                        <th>Place snack order</th>
+                        <th>Pay for the snack order</th>
+                        <th>Receive snacks</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Task list row -->
+                      <tr>
+                        <td>Task list</td>
+                        <td>
+                          <ul>
+                            <li type="A">Open up the app</li>
+                            <li type="A">Browse selection of snacks</li>
+                            <li type="A">Read descriptions</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li type="A">Add the snack to a shopping cart</li>
+                            <li type="A">Select the amount to order</li>
+                            <li type="A">Go back to snack menu if user wants more</li>
+                            <li type="A">Repeat process</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li type="A">Go to checkout in the app</li>
+                            <li type="A">Review snack order</li>
+                            <li type="A">Place final snack order</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li type="A">Select option to pay with a credit card, cash, or other method</li>
+                            <li type="A">Enter payment information, if applicable</li>
+                            <li type="A">Receive receipt or confirmation</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li type="A">Look for employee delivering snacks</li>
+                            <li type="A">Receive snacks from employee</li>
+                            <li type="A">Confirm order is complete and accurate</li>
+                          </ul>
+                          
+                        </td>
+                      </tr>
+                      <!-- Feeling adjective row -->
+                      <tr>
+                        <td>Feeling Adjective</td>
+                        <td>
+                          <ul>
+                            <li>Excited</li>
+                            <li>Overwhelmed</li>
+                            <li>Hungry</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Focused</li>
+                            <li>Annoyed</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Focused</li>
+                            <li>Stressed</li>
+                            <li>Relief</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Focused</li>
+                            <li>Relieved</li>
+                            <li>Excitement</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Stressed</li>
+                            <li>Happy</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <!-- Improvement opportunities row -->
+                      <tr>
+                        <td>Improvement opportunities</td>
+                        <td>
+                          <ul>
+                            <li>Option to sort snacks</li>
+                            <li>Include pictures of snacks</li>
+                            <li>Options to increase text size, translate text, or read it out loud</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Add a quantity option with each snack</li>
+                            <li>Add a multi-select option</li>
+                            <li>Speech recognition feature for ordering</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Include a location where to deliver snacks</li>
+                            <li>Provide an estimated delivery time</li>
+                            <li>Option to read out final snack order</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Add an option to save payment information</li>
+                            <li>Add universally recognized icons for payment methods</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Have app notify user when the employee is nearby using sounds or vibrations</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- Eileen Rivera persona -->
+            <div class="persona">
+              <div class="image-container persona-image">
+                <img src="./../../assets/images/snack-app/eileen-rivera.jpg" alt="Eileen Rivera persona image" />
+                <figcaption><a href="https://www.freepik.com/free-photo/indoor-shot-beautiful-happy-african-american-woman-smiling-cheerfully-keeping-her-arms-folded-relaxing-indoors-after-morning-lectures-university_9440600.htm">Image by wayhomestudio</a> on Freepik</figcaption>
+              </div>
+              
+              <div class="persona-details-container">
+                <h4>Eileen Rivera</h4>
+                <!-- Persona details -->
+                <ul class="persona-details">
+                  <li><span>Age:</span> 25</li>
+                  <li><span>Education:</span> Enrolled in college</li>
+                  <li><span>Hometown:</span> Bern, Switzerland</li>
+                  <li><span>Family:</span> Lives with cousin</li>
+                  <li><span>Occupation:</span> Student</li>
+                </ul>
+              </div>
+
+              <!-- Persona bio -->
+              <p class="persona-bio">Eileen is 25 years old and recently moved to the United States.  She’s a full-time student learning English and studying to become a graphic designer.  Because she’s so busy with classwork, she likes to order food through a food delivery app in order to save time so she can focus on her studies.  However, she has a difficult time ordering due to no translation options or incorrect translations.  While she thinks it would be good practice for her to learn English, she often relies on her cousin, a native English speaker, to help her order through the app.  Eileen would like for the ordering process to be easier so she can focus more on her studies.</p>
+
+              <!-- Persona quote -->
+              <p class="persona-quote">"I wish ordering food and drinks through an app was a lot easier."</p>
+
+              <!-- Persona goals -->
+              <div class="goals">
+                <h4>Goals</h4>
+                <ul>
+                  <li>To easily order food and drinks in an app</li>
+                  <li>Focus on other things like classwork</li>
+                </ul>
+              </div>
+              
+              <!-- Persona frustrations -->
+              <div class="frustrations">
+                <h4>Frustrations</h4>
+                <ul>
+                  <li>Difficulty ordering because there are no translation options or they’re wrong</li>
+                  <li>Ordering can often take some time if I don’t get help</li>
+                </ul>
+              </div>
+
+              <!-- ----- Problem statement ----- -->
+              <div class="project-subsection problem-statements">
+                <h4>Problem statement</h4>
+                <p class="eileen-rivera-problem">Eileen Rivera is a non-native English speaker who needs an easier way to order snacks through the app because she often has difficulty ordering due to a lack of translation options or incorrect translations.</p>
+              </div>
+
+              <!--  Eileen Rivera user journey -->
+              <div class="persona-user-journey">
+                <h4>User journey map</h4>
+                <p class="user-journey-thoughts"><span>Eileen Rivera:</span> I considered what Eileen might encounter when trying to place an order.  I tried to think of features that would best help Eileen at each of the steps and make her ordering process easier or more pleasant.</p>
+                <p class="user-journey-goal"><span>Goal:</span>  Translate the language to her native language so she can accurately order snacks.</p>
+                
+                <!-- User journey CTA -->
+                <p class="user-journey-cta">Scroll to see more of Eileen's user journey &rarr;</p>
+                
+                <!-- Eileen Rivera user journey map -->
+                <div class="user-journey-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Action</th>
+                        <th>Translate the app’s language</th>
+                        <th>Start ordering snacks</th>
+                        <th>Place snack order</th>
+                        <th>Pay for the snack order</th>
+                        <th>Receive snacks</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Task list row -->
+                      <tr>
+                        <td>Task list</td>
+                        <td>
+                          <ul>
+                            <li type="A">Open up the app</li>
+                            <li type="A">Look for where to change the language</li>
+                            <li type="A">Go to the change language option</li>
+                            <li type="A">Select her native language</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li type="A">Find the menu</li>
+                            <li type="A">Browse the snacks</li>
+                            <li type="A">Read the descriptions</li>
+                            <li type="A">Add items to her order</li>
+                            <li type="A">Go back to the snack menu if she wants more</li>
+                            <li type="A">Repeat process</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li type="A">Go to checkout in the app</li>
+                            <li type="A">Review snack order</li>
+                            <li type="A">Place final snack order</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li type="A">Select option to pay with a credit card, cash, or other method</li>
+                            <li type="A">Enter payment information, if applicable</li>
+                            <li type="A">Receive receipt or confirmation</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li type="A">Look for employee delivering snacks</li>
+                            <li type="A">Receive snacks from employee</li>
+                            <li type="A">Confirm order is complete and accurate</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <!-- Feeling adjective row -->
+                      <tr>
+                        <td>Feeling adjective</td>
+                        <td>
+                          <ul>
+                            <li>Focused</li>
+                            <li>Confused</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Excited</li>
+                            <li>Overwhelmed</li>
+                            <li>Hungry</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Focused</li>
+                            <li>Stressed</li>
+                            <li>Relief</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Focused</li>
+                            <li>Relieved</li>
+                            <li>Excitement</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Stressed</li>
+                            <li>Happy</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <!-- Improvement opportunities row -->
+                      <tr>
+                        <td>Improvement opportunities</td>
+                        <td>
+                          <ul>
+                            <li>Make it easy to find the translation option</li>
+                            <li>Use images for languages</li>
+                            <li>Options to read the language out loud</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Add a quantity option with each snack</li>
+                            <li>Add a multi-select option</li>
+                            <li>Speech recognition feature for ordering</li>
+                            <li>Add pictures of snacks</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Include a location where to deliver snacks</li>
+                            <li>Provide an estimated delivery time</li>
+                            <li>Option to read out final snack order</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Add an option to save payment information</li>
+                            <li>Add universally recognized icons for payment methods</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Have app notify user when the employee is nearby using sounds or vibrations</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- Starting the design ---------- -->
+      <section class="section-container starting-the-design-section">
+        <div id="starting-the-design" class="anchor"></div>
+        <!-- *For potential future designs* -->
+        <!-- <div class="image-container">
+          <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+        </div> -->
+
+        <!-- Header -->
+        <h2>Starting the design</h2>
+        <hr>
+
+        <!-- ----- Paper wireframes ----- -->
+        <div class="project-subsection paper-wireframes">
+          <div class="image-container">
+            <img src="./../../assets/images/snack-app/homescreen-star-wireframe.png" alt="Paper wireframe sketch of a screen and labeled 'Option A'" class="mobile-wireframes">
+            <img src="./../../assets/images/snack-app/homescreen-star-wireframe-2.png" alt="Paper wireframe sketch of a screen and labeled 'Option B'" class="mobile-wireframes">
+            <img src="./../../assets/images/snack-app/homescreen-star-wireframe-3.png" alt="Paper wireframe sketch of a screen and labeled 'Option C'" class="mobile-wireframes">
+            <img src="./../../assets/images/snack-app/homescreen-refined-wireframe.png" alt="Paper wireframe sketch of a screen and labeled 'Refined Ver. 1'" class="mobile-wireframes">
+          </div>
+          <h3>Paper wireframes</h3>
+          <p>One of my goals in creating the wireframes was how to present a lot of information in an organized way, while also keeping the design visually appealing.  I used stars to indicate elements I thought worked well and that I would like to explore further as the design continues to evolve.</p>
+        </div>
+        
+        <!-- ----- Digital wireframes ----- -->
+        <div class="project-subsection digital-wireframes">
+          <div class="image-container">
+            <img src="./../../assets/images/snack-app/language-digital-wireframe.png" alt="Digital wireframe of the 'Choose your language' screen" class="mobile-wireframes">
+            <img src="./../../assets/images/snack-app/menu-digital-wireframe.png" alt="Digital wireframe of the 'Menu' screen" class="mobile-wireframes">
+          </div>
+          <h3>Digital wireframes</h3>
+          <p>Using my paper wireframes as a reference, I created digital wireframes.  As I was creating the digital wireframes, one of my goals was to make it easier for a user to change the language.  I included images (where a country’s flag will go and represented by the grey boxes above) as well as sample text to make it easier for a user to find their language of choice.</p>
+          <p>I wanted to make it easier for users to see what they would be ordering and to easily add items to their order.  I also wanted to present a good amount of information without having the screen look cluttered.</p>
+        </div>
+        
+        <!-- ----- Low-fidelity prototype ----- -->
+        <div class="project-subsection low-fidelity-prototype">
+          <div class="image-container">
+            <img src="./../../assets/images/snack-app/low-fidelity-prototype.png" alt="Screenshot of eight digital wireframes connected to each other by light blue arrows">
+          </div>
+          <h3>Low-fidelity prototype</h3>
+          <p>After creating digital wireframes of all of the screens, I created a low-fidelity prototype.  This low-fidelity prototype connected the primary user flow of placing a snack order.  It also includes a secondary user flow that will allow the user to change languages.</p>
+          
+          <!-- Button -->
+          <a href="https://www.figma.com/proto/3HnuZDVwh0X5uzk0867uh2/Project-%231---Snack-App?node-id=102-215&scaling=min-zoom&page-id=102%3A2&starting-point-node-id=102%3A215&mode=design&t=JTOLzHYdK1kKYPit-1" target="_blank" rel="noopener noreferrer" class="btn-primary prototype-button">View lo-fi prototype</a>
+        </div>
+        
+        <!-- ----- Usability studies ----- -->
+        <div class="project-subsection usability-study">
+          <!-- *For potential future designs* -->
+          <!-- <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+          </div> -->
+          <h3>Usability study #1</h3>
+          <p>The first study used wireframes and the findings were used to create mockups.</p>
+          
+          <!-- Findings -->
+          <h4>Findings</h4>
+          <ul>
+            <li>Users need better cues to change the language more easily</li>
+            <li>Users need better cues to start an order</li>
+            <li>Users need more specific information regarding their orders</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ---------- Refining the design ---------- -->
+      <section class="section-container refining-the-design-section">
+        <div id="refining-the-design" class="anchor"></div>
+        <!-- *For potential future designs* -->
+        <!-- <div class="image-container">
+          <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+        </div> -->
+        <h2>Refining the design</h2>
+        <hr>
+
+        <!-- ----- Mockups ----- -->
+        <div class="project-subsection refined-mockups-1">
+          <div class="image-container">
+            <img src="./../../assets/images/snack-app/before-usability-study-1.png" alt="iPhone showing a low-fidelity wireframe of the homescreen of the Snack App" class="mockups">
+            <div class="down-arrow">&darr;</div>
+            <div class="right-arrow">&rarr;</div>
+            <img src="./../../assets/images/snack-app/after-usability-study-1.png" alt="iPhone showing a high-fidelity mockup of the homescreen of the Snack App" class="mockups">
+          </div>
+          <h3>Mockups version #1</h3>
+          <p>Early designs prominently featured a “Featured Snack” and “Menu” sections.  During the usability study, however, most users were confused as to where to start to place an order or change the language.  I revised the home screen design after the study to more clearly layout the ordering and change language options.</p>
+        </div>
+        
+        <!-- ----- High-fidelity prototype #1 ----- -->
+        <div class="project-subsection hifi-prototype-1">
+          <div class="image-container">
+            <img src="./../../assets/images/snack-app/hifi-prototype-1.png" alt="Screenshot of 11 high-fidelity mockup screens connected to each other by light blue arrows">
+          </div>
+          <h3>High-fidelity prototype version #1</h3>
+          <p>After conducting the first usability study I refined the designs and created a high-fidelity mockup and prototype, implementing what I learned from the first usability study.</p>
+
+          <!-- Button -->
+          <a href="https://www.figma.com/proto/3HnuZDVwh0X5uzk0867uh2/Project-%231---Snack-App?type=design&node-id=701-229&t=cPKXyZizZzF35KjR-1&scaling=scale-down&page-id=701%3A228&starting-point-node-id=701%3A229&mode=design" target="_blank" rel="noopener noreferrer" class="btn-primary prototype-button">View hi-fi prototype</a>
+        </div>
+        
+        <!-- ----- 2nd usability study ----- -->
+        <div class="project-subsection usability-study usability-study-2">
+          <!-- *For potential future designs* -->
+          <!-- <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+          </div> -->
+          <h3>Usability study #2</h3>
+          <p>The second study used a high-fidelity prototype and helped to determine which aspects of the mockup needed refinement.</p>
+          
+          <!-- Findings -->
+          <h4>Findings</h4>
+          <ul>
+            <li>More accessible colors and font sizes need to be used</li>
+            <li>Use better cues or clearer language to reduce any confusion in ordering</li>
+            <li>Provide important information that will help out the user</li>
+          </ul>
+        </div>
+
+        <!-- ----- 2nd Mockups ----- -->
+        <div class="project-subsection refined-mockups-2">
+          <div class="image-container">
+            <img src="./../../assets/images/snack-app/before-usability-study-2.png" alt="iPhone showing a high-fidelity homescreen of the Snack App" class="mockups-2">
+            <div class="down-arrow">&darr;</div>
+            <div class="right-arrow">&rarr;</div>
+            <img src="./../../assets/images/snack-app/after-usability-study-2.png" alt="iPhone showing a new high-fidelity homescreen now with illustrations, of the Snack App" class="mockups-2">
+          </div>
+          <h3>Mockups version #2</h3>
+          <p>The second usability study revealed some accessibility issues.  The colors and font sizes made it difficult to read important information.  In order to increase readability, I decided to increase the font size of important information and removed some background colors to increase contrast.</p>
+        </div>
+
+        <!-- ----- High-fidelity prototype #2 ----- -->
+        <div class="project-subsection hifi-prototype-2">
+          <div class="image-container">
+            <img src="./../../assets/images/snack-app/hifi-prototype-2.png" alt="Screenshot of 11 high-fidelity mockup screens connected to each other with light blue arrows">
+          </div>
+          <h3>High-fidelity prototype version #2 (final prototype)</h3>
+          <p>After implementing the changes, I connected the newly designed screens to create another prototype, as seen in the image above.</p>
+        </div>
+
+        <!-- ----- Final mockups and final prototype ----- -->
+        <div class="project-subsection final-mockups">
+          <div class="image-container">
+            <img src="./../../assets/images/snack-app/final-mockups-1.png" alt="iPhone with a high fidelity screen of the homescreen" class="final-mockups">
+            <img src="./../../assets/images/snack-app/final-mockups-2.png" alt="iPhone with a high fidelity screen of the menu screen" class="final-mockups">
+            <img src="./../../assets/images/snack-app/final-mockups-3.png" alt="iPhone with a high fidelity screen of the 'Select a language' screen" class="final-mockups">
+            <img src="./../../assets/images/snack-app/final-mockups-4.png" alt="iPhone with a high fidelity screen of the 'Checkout' screen" class="final-mockups">
+          </div>
+          <h3>Final mockups and final prototype</h3>
+          <p>The final high-fidelity prototype met user needs for changing the language and adding items to an order and placing an order.</p>
+          
+          <!-- Button -->
+          <a href="https://www.figma.com/proto/3HnuZDVwh0X5uzk0867uh2/Project-%231---Snack-App?type=design&node-id=844-256&t=eY33D6nt9yDLfbRm-1&scaling=scale-down&page-id=844%3A255&starting-point-node-id=844%3A256&mode=design" target="_blank" rel="noopener noreferrer" class="btn-primary prototype-button">View final prototype</a>
+        </div>
+
+        <!-- ----- Accessibility ----- -->
+        <div class="project-subsection accessibility">
+          <!-- *For potential future designs* -->
+          <!-- <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+          </div> -->
+
+          <div class="text-container">
+            <h3>Accessibility</h3>
+
+            <div>
+              <h4>Color combinations</h4>
+              <p>Some background colors were either removed or lightened to increase the contrast with text.</p>
+            </div>
+            
+            <div>
+              <h4>Readability of text</h4>
+              <p>Font sizes, especially of those related to important information, were increased to be more readable on smaller screens.</p>
+            </div>
+            
+            <div>
+              <h4>Use of icons</h4>
+              <p>Icons that could have a potentially universal meaning were used in order to help non-native English speakers navigate more easily.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- Going forward ---------- -->
+      <section class="section-container going-forward-section">
+        <div id="going-forward" class="anchor"></div>
+        <!-- *For potential future designs* -->
+        <!-- <div class="image-container">
+          <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+        </div> -->
+        <h2>Going forward</h2>
+        <hr>
+
+        <!-- ----- Takeaways ----- -->
+        <div class="project-subsection takeaways">
+          <!-- *For potential future designs* -->
+          <!-- <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+          </div> -->
+          <h3>Takeaways</h3>
+
+          <div class="text-container">
+            <div class="impact">
+              <h4>Impact</h4>
+              <p>The app makes users feel like they can confidently order and get snacks delivered to them in an amusement park.</p>
+              <p>One quote from a study participant:  “Overall, I thought the app was easy to use…it would be very convenient to have food delivered to me in a theme park.”</p>
+            </div>
+            
+            <div class="learned">
+              <h4>What I learned:</h4>
+              <p>Throughout the project, I learned the importance of conducting usability studies and including participants of diverse backgrounds.  Through different perspectives, I was able to gain important insights and consider ideas that I initially didn’t think of, which influenced the app’s next design.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----- Next steps ----- -->
+        <div class="project-subsection next-steps">
+          <!-- *For potential future designs* -->
+          <!-- <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+          </div> -->
+
+          <div class="text-container">
+            <h3>Next steps</h3>
+            <ul>
+              <li>Conduct another usability study on the user flows I explored in previous studies to determine if some of the pain points have been either reduced or eliminated.</li>
+              <li>Add in some features study participants recommended to determine if they improve the user experience.</li>
+              <li>Introduce new user flows, such as seeing past orders, and conducting usability studies on these new user flows.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- Thank you ---------- -->
+      <section class="section-container thank-you-section">
+        <!-- *For potential future designs* -->
+        <!-- <div class="image-container">
+          <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3581&q=80" alt="">
+        </div> -->
+        <h2>Thank you for reading my case study!</h2>
+        <hr>
+        <p>If you would like to learn more, feel free to reach out and <a href="https://www.linkedin.com/in/guillermo-martin-10441046/" target="_blank" rel="noopener noreferrer">connect with me!</a></p>
+      </section>
+
+      <!-- Things to add to the case study -->
+      <!-- https://careerfoundry.com/en/blog/ux-design/ux-case-study/ -->
+    </main>
+    
+    <!-- ---------- Footer ---------- -->
+    <footer class="footer">
+      <p>&copy; Copyright 2024 Guillermo Martin.</p>
+      <ul class="footer-social-nav">
+        <!-- ----- LinkedIn ----- -->
+        <li>
+          <a href="https://www.linkedin.com/in/guillermo-martin-10441046/" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+            </svg>
+          </a>
+        </li>
+
+        <!-- ----- GiHub ----- -->
+        <li>
+          <a href="https://github.com/Guillermo-Martin" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+            </svg>
+          </a>
+        </li>
+
+        <!-- ----- Email ----- -->
+        <li>
+          <a href="mailto:gscalica@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <!-- ---------- Optional JavaScript ---------- -->
+    <script type="text/javascript" src="./../../assets/js/index.js"></script>
+    <script type="text/javascript" src="./../../assets/js/case-study.js"></script>
+  </body>
+</html>
