@@ -1000,7 +1000,46 @@ img.mobile-wireframes:first-child {
   }
 
   /* ----- Digital wireframes ----- */
-  
+  .digital-wireframes .image-container {
+    /* border: 3px solid blue; */
+    max-width: unset;
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .digital-wireframes img:nth-child(3), .digital-wireframes img:nth-child(4) {
+    display: block;
+  }
+
+  .digital-wireframes img:first-child {
+    /* border: 3px solid red; */
+    /* width: 35%; */
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .digital-wireframes img:nth-child(2) {
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .digital-wireframes img:nth-child(3) {
+    max-width: unset;
+    grid-row-start: 2;
+    width: 100%;
+    grid-column-start: 1;
+  }
+
+  .digital-wireframes img:nth-child(4) {
+    width: 12%;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 
   /* ---------- Refining the design ---------- */
   .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
