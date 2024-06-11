@@ -467,7 +467,7 @@ img.mobile-wireframes:first-child {
   }
 
   .digital-wireframes img:first-child {
-    max-width: unset;
+    max-width: 575px;
   }
 
   .digital-wireframes img:nth-child(2) {
@@ -619,7 +619,6 @@ img.mobile-wireframes:first-child {
 
   /* Paper and digital wireframes */
   .paper-wireframes .image-container, .digital-wireframes .image-container {
-    /* align-items: unset; */
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
@@ -627,6 +626,15 @@ img.mobile-wireframes:first-child {
 
   img.mobile-wireframes:first-child {
     margin-bottom: 0;
+  }
+
+  /* ----- Digital wireframes ----- */
+  .digital-wireframes img:first-child {
+    width: 60%;
+  }
+
+  .digital-wireframes img:nth-child(2) {
+    width: 30%;
   }
 
   /* ---------- Refining the design ---------- */
