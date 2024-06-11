@@ -1003,9 +1003,13 @@ img.mobile-wireframes:first-child {
   .digital-wireframes .image-container {
     align-content: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: end;
     max-width: unset;
+    grid-gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 32px;
   }
 
   .digital-wireframes img:nth-child(3), .digital-wireframes img:nth-child(4) {
@@ -1013,9 +1017,9 @@ img.mobile-wireframes:first-child {
   }
 
   .digital-wireframes img:first-child {
-    grid-column-end: 2;
+    grid-column-end: 3;
     grid-column-start: 1;
-    width: 100%;
+    width: 90%;
   }
 
   .digital-wireframes img:nth-child(2) {
@@ -1023,14 +1027,15 @@ img.mobile-wireframes:first-child {
     grid-row-start: 1;
     left: 5px;
     position: relative;
-    width: 100%;
+    width: 102%;
   }
 
   .digital-wireframes img:nth-child(3) {
     grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 2;
     max-width: unset;
-    width: 100%;
+    width: 90%;
   }
 
   .digital-wireframes img:nth-child(4) {
@@ -1038,7 +1043,7 @@ img.mobile-wireframes:first-child {
     grid-column-start: 3;
     grid-row-end: 3;
     grid-row-start: 1;
-    width: 75%;
+    width: 100%;
   }
 
   /* ---------- Refining the design ---------- */
