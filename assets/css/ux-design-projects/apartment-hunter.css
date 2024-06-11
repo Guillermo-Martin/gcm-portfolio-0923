@@ -258,6 +258,15 @@ img.mobile-wireframes:first-child {
   display: none;
 }
 
+/* ----- Digital wireframes ----- */
+.digital-wireframes img {
+  border: 1px solid #c4cede;
+}
+
+.digital-wireframes img:nth-child(3), .digital-wireframes img:nth-child(4) {
+  display: none;
+}
+
 /* ----- Low-fidelity prototype ----- */
 .low-fidelity-prototype p:nth-child(3) {
   margin-bottom: 20px;
@@ -955,11 +964,11 @@ img.mobile-wireframes:first-child {
   }
 
   /* ---------- Starting the design ---------- */
+  /* ----- Paper wireframes ----- */
   .paper-wireframes .image-container {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-columns: 1fr 1fr; */
     justify-items: center;
     max-width: unset;
   }
@@ -972,6 +981,9 @@ img.mobile-wireframes:first-child {
   .paper-wireframes img:nth-child(2), .paper-wireframes img:nth-child(3) {
     display: block;
   }
+
+  /* ----- Digital wireframes ----- */
+  
 
   /* ---------- Refining the design ---------- */
   .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
