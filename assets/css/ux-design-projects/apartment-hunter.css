@@ -466,6 +466,15 @@ img.mobile-wireframes:first-child {
     margin-bottom: 20px;
   }
 
+  .digital-wireframes img:first-child {
+    max-width: unset;
+  }
+
+  .digital-wireframes img:nth-child(2) {
+    max-width: 275px;
+    width: 50%;
+  }
+
   /* ----- Usability study ----- */
   .usability-study h4 {
     margin-bottom: 20px;
@@ -610,7 +619,7 @@ img.mobile-wireframes:first-child {
 
   /* Paper and digital wireframes */
   .paper-wireframes .image-container, .digital-wireframes .image-container {
-    align-items: unset;
+    /* align-items: unset; */
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
