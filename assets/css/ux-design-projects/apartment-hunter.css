@@ -959,8 +959,14 @@ img.mobile-wireframes:first-child {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     justify-items: center;
     max-width: unset;
+  }
+
+  .paper-wireframes img {
+    max-width: unset;
+    width: 95%;
   }
 
   .paper-wireframes img:nth-child(2), .paper-wireframes img:nth-child(3) {
