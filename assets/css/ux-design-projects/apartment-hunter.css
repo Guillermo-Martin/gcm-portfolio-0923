@@ -307,6 +307,7 @@ img.mobile-wireframes:first-child {
 
 /* ----- Mockups ----- */
 .refined-mockups-1 .mockups {
+  border: 1px solid #c4cede;
   max-width: 575px;
   width: 90%;
 }
@@ -653,7 +654,7 @@ img.mobile-wireframes:first-child {
   /* img.mockups { */
   .refined-mockups-1 img.mockups {
     margin-bottom: 0;
-    border: 1px solid #c4cede;
+    /* border: 1px solid #c4cede; */
     width: 40%;
   }
 
@@ -1066,6 +1067,11 @@ img.mobile-wireframes:first-child {
   }
 
   /* ---------- Refining the design ---------- */
+  .refined-mockups-1 img.mockups {
+    width: 45%;
+    /* border: 3px solid red; */
+  }
+
   .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
     width: 100%;
   }
