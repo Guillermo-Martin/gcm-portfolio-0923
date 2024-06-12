@@ -381,9 +381,14 @@ img.mobile-wireframes:first-child {
 }
 
 /* ----- Accessibility ----- */
-.accessibility .text-container > div {
+/* .accessibility .text-container > div {
   margin-bottom: 32px;
+} */
+
+.accessibility-point-1 {
+  /* margin-bottom: 32px; */
 }
+
 
 /* ---------- Going forward section ---------- */
 /* ----- Takeaways ----- */
@@ -711,6 +716,14 @@ img.mobile-wireframes:first-child {
   .final-mockups img {
     margin-bottom: 0;
     width: 100%;
+  }
+
+  /* ----- Accessibility ----- */
+  .accessibility .text-container-inner {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 32px;
   }
 }
 
