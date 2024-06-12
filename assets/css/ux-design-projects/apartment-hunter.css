@@ -1,6 +1,5 @@
 .section-container {
   margin-bottom: var(--block-lg);
-  /* border: 5px solid red; */
 }
 
 /* Offsetting an anchor:  https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
@@ -110,10 +109,6 @@ hr {
   margin-bottom: 32px;
   max-width: 700px;
 }
-
-
-/* ---------- Understanding the user ---------- */
-
 
 /* ----- User research ----- */
 .user-research {
@@ -380,16 +375,6 @@ img.mobile-wireframes:first-child {
   justify-content: center;
 }
 
-/* ----- Accessibility ----- */
-/* .accessibility .text-container > div {
-  margin-bottom: 32px;
-} */
-
-.accessibility-point-1 {
-  /* margin-bottom: 32px; */
-}
-
-
 /* ---------- Going forward section ---------- */
 /* ----- Takeaways ----- */
 .takeaways .impact {
@@ -517,7 +502,6 @@ img.mobile-wireframes:first-child {
   }
 
   .final-mockups img {
-    /* border: 3px solid red; */
     max-width: 575px;
   }
 
@@ -666,32 +650,19 @@ img.mobile-wireframes:first-child {
   }
 
   /* ---------- Refining the design ---------- */
-  /* Refined mockups */
+  /* ----- Refined mockups ----- */
   .refined-mockups-1 .image-container, .refined-mockups-2 .image-container {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
   }
 
-  /* img.mockups:first-child {
-    margin-bottom: 0;
-    border: 3px solid red;
-  } */
-
-  /* img.mockups { */
   .refined-mockups-1 img.mockups {
     margin-bottom: 0;
-    /* border: 1px solid #c4cede; */
     width: 40%;
   }
 
-  /* .refined-mockups-2 img:first-child {
-    margin-bottom: 0;
-    border: 3px solid red;
-  } */
-
   .down-arrow {
-    /* display: block; */
     display: none;
   }
 
@@ -703,12 +674,10 @@ img.mobile-wireframes:first-child {
   /* ----- Final Mockups ----- */
   .final-mockups .image-container {
     display: grid;
-    /* grid-row-gap: 32px; */
     grid-gap: 32px;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     margin-bottom: 32px;
-    /* max-width: 704px; */
     max-width: unset;
     width: 100%;
   }
@@ -720,20 +689,18 @@ img.mobile-wireframes:first-child {
 
   /* ----- Accessibility ----- */
   .accessibility .text-container-inner {
-    display: flex;
     align-items: start;
-    justify-content: center;
+    display: flex;
     gap: 32px;
+    justify-content: center;
   }
 
   .accessibility-point-1, .accessibility-point-2 {
-    /* border: 3px solid red; */
     max-width: 350px;
     width: 50%;
   }
 
   .accessibility-point-1 p, .accessibility-point-2 p {
-    /* border: 3px solid red; */
     text-align: left;
   }
 }
@@ -887,7 +854,6 @@ img.mobile-wireframes:first-child {
     text-align: center;
   }
 
-
   /* ---------- Starting the design ---------- */
   /* ----- Paper and digital wireframes ----- */
   .paper-wireframes .image-container, .digital-wireframes .image-container {
@@ -916,17 +882,12 @@ img.mobile-wireframes:first-child {
 
   /* ---------- Refining the design ---------- */
   /* ----- Mockups ----- */
-  .refined-mockups-1 .image-container, .refined-mockups-2 .image-container {
-    /* max-width: 872px; */
-  }
-
   .refined-mockups-1 p {
     text-align: left;
   }
 
   .refined-mockups-1 img.mockups {
     width: 44%;
-    /* border: 3px solid red; */
   }
 
   .right-arrow {
@@ -962,12 +923,6 @@ img.mobile-wireframes:first-child {
   }
 
   /* ----- Accessibility ----- */
-  /* .accessibility .text-container {
-    display: grid;
-    grid-column-gap: 32px;
-    grid-template-columns: 1fr 1fr 1fr;
-  } */
-
   .accessibility h3 {
     grid-column-end: 4;
     grid-column-start: 1;
@@ -1035,7 +990,6 @@ img.mobile-wireframes:first-child {
     width: auto;
   }
 
-
   /* ---------- User journey maps ---------- */
   .user-journey-cta {
     display: none;
@@ -1100,8 +1054,8 @@ img.mobile-wireframes:first-child {
   }
 
   .digital-wireframes img:nth-child(3) {
-    grid-column-start: 1;
     grid-column-end: 3;
+    grid-column-start: 1;
     grid-row-start: 2;
     max-width: unset;
     width: 90%;
@@ -1118,15 +1072,9 @@ img.mobile-wireframes:first-child {
   /* ---------- Refining the design ---------- */
   .refined-mockups-1 img.mockups {
     width: 45%;
-    /* border: 3px solid red; */
   }
 
   .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
     width: 100%;
-  }
-
-  .final-mockups .image-container {
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    /* max-width: unset; */
   }
 }
