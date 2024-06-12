@@ -135,10 +135,10 @@
 }
 
 @media only screen and (min-width: 992px) {
-  main {
+  /* main {
     padding-left: 0;
     padding-right: 0;
-  }
+  } */
 
   .projects-cards-container {
     margin: 0 auto;
