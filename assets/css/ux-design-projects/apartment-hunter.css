@@ -728,6 +728,7 @@ img.mobile-wireframes:first-child {
 
   .accessibility-point-1, .accessibility-point-2 {
     /* border: 3px solid red; */
+    max-width: 350px;
     width: 50%;
   }
 
@@ -961,11 +962,11 @@ img.mobile-wireframes:first-child {
   }
 
   /* ----- Accessibility ----- */
-  .accessibility .text-container {
+  /* .accessibility .text-container {
     display: grid;
     grid-column-gap: 32px;
     grid-template-columns: 1fr 1fr 1fr;
-  }
+  } */
 
   .accessibility h3 {
     grid-column-end: 4;
