@@ -516,6 +516,14 @@ img.mobile-wireframes:first-child {
     max-width: 575px;
   }
 
+  .final-mockups .button-container {
+    flex-direction: row;
+  }
+
+  .final-mockups .prototype-button {
+    margin: 0;
+  }
+
   /* ----- Accessibility ----- */
   .accessibility .text-container p {
     margin-bottom: 20px;
