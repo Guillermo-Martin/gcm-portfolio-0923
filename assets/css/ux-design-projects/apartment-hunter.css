@@ -867,11 +867,20 @@ img.mobile-wireframes:first-child {
   /* ---------- Refining the design ---------- */
   /* ----- Mockups ----- */
   .refined-mockups-1 .image-container, .refined-mockups-2 .image-container {
-    max-width: 872px;
+    /* max-width: 872px; */
   }
 
   .refined-mockups-1 p {
     text-align: left;
+  }
+
+  .refined-mockups-1 img.mockups {
+    width: 44%;
+    /* border: 3px solid red; */
+  }
+
+  .right-arrow {
+    font-size: 75px;
   }
 
   /* ----- High fidelity prototype ----- */
