@@ -372,6 +372,14 @@ img.mobile-wireframes:first-child {
   width: 90%;
 }
 
+.final-mockups .button-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
 /* ----- Accessibility ----- */
 .accessibility .text-container > div {
   margin-bottom: 32px;
