@@ -305,7 +305,9 @@ li {
 
   /* Section container */
   .section-container {
-		padding: 0 32px;
+		/* padding: 0 32px; */
+		/* border: 3px solid red; */
+		padding: 0 28px;
 	}
 }
 
