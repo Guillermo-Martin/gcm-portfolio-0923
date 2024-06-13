@@ -433,7 +433,6 @@ img.mobile-wireframes:first-child {
   /* ---------- Hero section ---------- */
   .hero-section .image-container {
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .hero-section .hero-app {
