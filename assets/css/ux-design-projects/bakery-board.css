@@ -106,9 +106,23 @@ hr {
 }
 
 .hero-section .image-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
   margin: 0 auto;
   margin-bottom: 32px;
   max-width: 700px;
+}
+
+.hero-section .hero-app {
+  max-width: 216px;
+  width: 100%;
+}
+
+.hero-section .hero-website {
+  border: 1px solid #c4cede;
 }
 
 /* ----- User research ----- */
