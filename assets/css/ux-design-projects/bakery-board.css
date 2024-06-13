@@ -123,6 +123,7 @@ hr {
 
 .hero-section .hero-website {
   border: 1px solid #c4cede;
+  max-width: 436px;
 }
 
 /* ----- User research ----- */
