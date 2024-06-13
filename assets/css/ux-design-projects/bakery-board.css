@@ -308,6 +308,12 @@ img.mobile-wireframes:first-child {
   width: 90%;
 }
 
+/* App mockups */
+.refined-mockups-1 .mockups-app {
+  border: none;
+  max-width: 300px;
+}
+
 /* Down arrow */
 .down-arrow {
   font-size: 100px;
