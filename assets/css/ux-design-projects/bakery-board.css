@@ -750,6 +750,16 @@ img.mobile-wireframes:first-child {
     justify-content: space-evenly;
   }
 
+  /* ---------- Hero section ---------- */
+  .hero-section .hero-app {
+    max-width: 240px;
+  }
+
+  .hero-section .hero-website {
+    max-width: unset;
+    width: 64%;
+  }
+
   /* ---------- Project overview section ---------- */
   h3 {
     font-size: var(--fs-h3);
@@ -977,6 +987,20 @@ img.mobile-wireframes:first-child {
 }
 
 @media only screen and (min-width: 1200px) {
+  /* ---------- Hero section ---------- */
+  .hero-section .image-container {
+    max-width: unset;
+  }
+
+  .hero-section .hero-app {
+    width: 28%;
+  }
+
+  .hero-section .hero-website {
+    max-width: 693px;
+    width: 64%;
+  }
+
   /* ---------- Project overview section ---------- */
   .project-overview-container {
     grid-template-columns: 1fr 1fr 1fr;
