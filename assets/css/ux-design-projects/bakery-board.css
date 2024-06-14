@@ -463,6 +463,11 @@ img.mobile-wireframes:first-child {
     margin-bottom: 20px;
   }
 
+  /* ----- Pain points ----- */
+  .pain-points-container div:first-child {
+    margin-bottom: 20px;
+  }
+
   /* ----- Goals and frustrations ----- */
   .goals, .frustrations {
     text-align: center;
@@ -816,9 +821,7 @@ img.mobile-wireframes:first-child {
 
   /* ----- Pain points ----- */
   .pain-points {
-    display: grid;
-    grid-column-gap:  32px;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: block;
   }
 
   .pain-points h3 {
@@ -832,6 +835,18 @@ img.mobile-wireframes:first-child {
 
   .pain-points p {
     text-align: left;
+  }
+
+  .pain-points-container {
+    align-items: start;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  .pain-points-container div {
+    max-width: 350px;
+    width: 50%;
   }
 
   /* ----- personas ----- */
