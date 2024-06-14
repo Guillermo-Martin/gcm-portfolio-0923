@@ -505,14 +505,18 @@ img.mobile-wireframes:first-child {
     margin-bottom: 20px;
   }
 
-  .digital-wireframes img:first-child {
+  /* .digital-wireframes img:first-child {
     max-width: 575px;
   }
 
   .digital-wireframes img:nth-child(2) {
     max-width: 275px;
     width: 50%;
-  }
+  } */
+
+  /* .digital-wireframes .mobile-wireframes {
+    border: 3px solid red;
+  } */
 
   /* ----- Usability study ----- */
   .usability-study h4 {
@@ -680,13 +684,13 @@ img.mobile-wireframes:first-child {
   }
 
   /* ----- Digital wireframes ----- */
-  .digital-wireframes img:first-child {
+  /* .digital-wireframes img:first-child {
     width: 60%;
   }
 
   .digital-wireframes img:nth-child(2) {
     width: 30%;
-  }
+  } */
 
   /* ---------- Refining the design ---------- */
   /* ----- Refined mockups ----- */
@@ -1097,15 +1101,15 @@ img.mobile-wireframes:first-child {
 
   /* ----- Digital wireframes ----- */
   .digital-wireframes .image-container {
-    align-content: center;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: end;
-    margin: 0 auto;
-    margin-bottom: 32px;
-    max-width: unset;
-    width: 80%;
+    /* align-content: center; */
+    /* display: grid; */
+    /* grid-gap: 30px; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* justify-items: end; */
+    /* margin: 0 auto; */
+    /* margin-bottom: 32px; */
+    /* max-width: unset; */
+    /* width: 80%; */
   }
 
   .digital-wireframes img:nth-child(3), .digital-wireframes img:nth-child(4) {
