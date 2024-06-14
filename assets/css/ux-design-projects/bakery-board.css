@@ -975,6 +975,13 @@ img.mobile-wireframes:first-child {
     font-size: 75px;
   }
 
+  /* Mockups #1 */
+  .refined-mockups-1 .refined-mockups-1-image-container-2 {
+    /* border: 3px solid red; */
+    /* gap: 32px; */
+    justify-content: space-evenly;
+  }
+
   /* ----- High fidelity prototype ----- */
   .hifi-prototype-1 .image-container {
     width: 100%;
@@ -1165,6 +1172,7 @@ img.mobile-wireframes:first-child {
   }
 
   /* ---------- Refining the design ---------- */
+  /* ----- Mockups #1 ----- */
   .refined-mockups-1 img.mockups {
     width: 45%;
   }
@@ -1172,6 +1180,12 @@ img.mobile-wireframes:first-child {
   .refined-mockups-1 .refined-mockups-1-image-container {
     /* border: 3px solid red; */
     justify-content: space-evenly;
+  }
+
+  .refined-mockups-1 .refined-mockups-1-image-container-2 {
+    /* border: 3px solid red; */
+    gap: 32px;
+    justify-content: center;
   }
 
   .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
