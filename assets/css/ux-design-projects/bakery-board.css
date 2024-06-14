@@ -701,7 +701,8 @@ img.mobile-wireframes:first-child {
   /* ----- Refined mockups ----- */
   .refined-mockups-1 .image-container, .refined-mockups-2 .image-container {
     flex-direction: row;
-    justify-content: space-between;
+    gap: 32px;
+    justify-content: center;
     width: 100%;
   }
 
@@ -965,6 +966,17 @@ img.mobile-wireframes:first-child {
     width: 44%;
   }
 
+  /* Mockups #2 */
+  .refined-mockups-1 .mockups-2 {
+    /* border: 3px solid red; */
+    max-width: 400px;
+  }
+
+  /* .refined-mockups-1 .refined-mockups-1-image-container-2 {
+    justify-content: center;
+    gap: 28px;
+  } */
+
   .right-arrow {
     font-size: 75px;
   }
@@ -1165,7 +1177,7 @@ img.mobile-wireframes:first-child {
 
   .refined-mockups-1 .refined-mockups-1-image-container {
     /* border: 3px solid red; */
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
   }
 
   .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
