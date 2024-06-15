@@ -732,6 +732,12 @@ img.mobile-wireframes:first-child {
     bottom: 14px;
   }
 
+  .refined-mockups-1 .refined-mockups-app-container {
+    /* border: 3px solid red; */
+    justify-content: space-evenly;
+    max-width: 872px;
+  }
+
   /* ----- Final Mockups ----- */
   .final-mockups .image-container {
     display: grid;
