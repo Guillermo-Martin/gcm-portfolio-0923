@@ -357,6 +357,7 @@ img.mobile-wireframes:first-child {
   margin-bottom: 20px;
 }
 
+/* Buttons */
 .hifi-prototype-1 .button-container {
   align-items: center;
   display: flex;
@@ -563,6 +564,17 @@ img.mobile-wireframes:first-child {
   .refined-mockups-1 .mockups-1 {
     /* border: 3px solid red; */
     max-width: 464px;
+  }
+
+
+  /* ----- Hifi prototype #1 ----- */
+  /* Buttons */
+  .hifi-prototype-1 .button-container {
+    flex-direction: row; 
+  }
+
+  .hifi-prototype-1 .prototype-button {
+    margin: 0;
   }
 
   .final-mockups p {
