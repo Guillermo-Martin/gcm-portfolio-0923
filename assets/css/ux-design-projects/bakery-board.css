@@ -357,6 +357,14 @@ img.mobile-wireframes:first-child {
   margin-bottom: 20px;
 }
 
+.hifi-prototype-1 .button-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
 /* ----- Usability study 2 ----- */
 .usability-study-2 h4 {
   margin-bottom: 20px;
