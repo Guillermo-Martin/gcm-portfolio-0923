@@ -1004,6 +1004,19 @@ img.mobile-wireframes:first-child {
     justify-content: space-evenly;
   }
 
+  /* Mockups #3 */
+  .refined-mockups-1 .refined-mockups-desktop-container {
+    justify-content: space-evenly;
+  }
+
+  .refined-mockups-1 img.app-mockup {
+    width: 28%;
+  }
+
+  .refined-mockups-1 img.desktop-mockup {
+    width: 54%;
+  }
+
   /* ----- High fidelity prototype ----- */
   .hifi-prototype-1 .image-container {
     width: 100%;
@@ -1208,6 +1221,15 @@ img.mobile-wireframes:first-child {
     /* border: 3px solid red; */
     gap: 32px;
     justify-content: center;
+  }
+
+  /* ----- Mockups #3 ----- */
+  .refined-mockups-1 img.app-mockup {
+    width: 28%;
+  }
+
+  .refined-mockups-1 img.desktop-mockup {
+    width: 54%;
   }
 
   .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
