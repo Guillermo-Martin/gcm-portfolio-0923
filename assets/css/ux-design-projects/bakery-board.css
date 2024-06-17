@@ -1,6 +1,5 @@
 .section-container {
   margin-bottom: var(--block-lg);
-  /* border: 3px solid red; */
 }
 
 /* Offsetting an anchor:  https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
@@ -331,7 +330,6 @@ img.mobile-wireframes:first-child {
 
 /* Mockups #2 */
 .refined-mockups-1-image-container-2 .mockups {
-  /* border: 3px solid red; */
   max-width: 400px;
 }
 
@@ -389,30 +387,18 @@ img.mobile-wireframes:first-child {
   justify-content: center;
 }
 
-/* .refined-mockups-2 .mockups-2 { */
 .refined-mockups-2 .app-mockup {
   max-width: 300px;
   width: 90%;
-  /* border: 3px solid red; */
 }
-
-.refined-mockups-2 .image-container {
-  /* border: 3px solid blue; */
-}
-
-/* .refined-mockups-2 .image-container-inner .app-mockup {
-  width: 100%;
-} */
 
 /* Mockups 2 */
 .refined-mockups-2 .two-app-container {
-  /* border: 3px solid red; */
   gap: 24px;
   margin-bottom: 0;
 }
 
 .refined-mockups-2 .two-app-container p {
-  /* border: 3px solid red; */
   margin-bottom: 0;
   text-align: center;
 }
@@ -434,7 +420,6 @@ img.mobile-wireframes:first-child {
 }
 
 .final-mockups img {
-  /* border: 1px solid #c4cede; */
   margin-bottom: 32px;
   max-width: 300px;
   width: 90%;
@@ -567,19 +552,6 @@ img.mobile-wireframes:first-child {
     margin-bottom: 20px;
   }
 
-  /* .digital-wireframes img:first-child {
-    max-width: 575px;
-  }
-
-  .digital-wireframes img:nth-child(2) {
-    max-width: 275px;
-    width: 50%;
-  } */
-
-  /* .digital-wireframes .mobile-wireframes {
-    border: 3px solid red;
-  } */
-
   /* ----- Usability study ----- */
   .usability-study h4 {
     margin-bottom: 20px;
@@ -603,7 +575,6 @@ img.mobile-wireframes:first-child {
 
   /* ---------- Refining the design ---------- */
   .refined-mockups-1 .mockups-1 {
-    /* border: 3px solid red; */
     max-width: 464px;
   }
 
@@ -622,21 +593,11 @@ img.mobile-wireframes:first-child {
     margin-bottom: 20px;
   }
 
-  .final-mockups img {
-    /* max-width: 575px; */
-  }
-
   /* Final app */
   .final-mockups .final-app {
-    /* border: 3px solid red; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-  }
-
-  .final-mockups .final-app img {
-    /* border: 3px solid red; */
-    /* margin-bottom: 0; */
   }
 
   .final-mockups .button-container {
@@ -774,15 +735,6 @@ img.mobile-wireframes:first-child {
     margin-bottom: 0;
   }
 
-  /* ----- Digital wireframes ----- */
-  /* .digital-wireframes img:first-child {
-    width: 60%;
-  }
-
-  .digital-wireframes img:nth-child(2) {
-    width: 30%;
-  } */
-
   /* ---------- Refining the design ---------- */
   /* ----- Refined mockups ----- */
   .refined-mockups-1 .image-container, .refined-mockups-2 .image-container {
@@ -807,24 +759,20 @@ img.mobile-wireframes:first-child {
 
   /* ----- Mockups #1 ----- */
   .refined-mockups-1-image-container .right-arrow {
-    /* border: 3px solid red; */
-    position: relative;
     bottom: 14px;
+    position: relative;
   }
 
   .refined-mockups-1 .refined-mockups-app-container {
-    /* border: 3px solid red; */
     justify-content: space-evenly;
     max-width: 872px;
   }
 
   .refined-mockups-desktop-container img.app-mockup {
-    /* border: 3px solid red; */
     width: 28%;
   }
 
   .refined-mockups-desktop-container img.desktop-mockup {
-    /* border: 3px solid red; */
     width: 54%;
   }
 
@@ -840,14 +788,10 @@ img.mobile-wireframes:first-child {
   }
 
   .refined-mockups-2 .two-app-container img {
-    /* border: 3px solid red; */
     width: 60%;
-    /* gap: 24px;
-    margin-bottom: 0; */
   }
 
   .refined-mockups-2 .two-app-container p {
-    /* border: 3px solid red; */
     max-width: 250px;
   }
 
@@ -857,9 +801,8 @@ img.mobile-wireframes:first-child {
   }
 
   .refined-mockups-2 .mockup-3 .right-arrow {
-    /* border: 3px solid red; */
-    position: relative;
     bottom: 15px;
+    position: relative;
   }
 
   /* ----- Final Mockups ----- */
@@ -880,39 +823,14 @@ img.mobile-wireframes:first-child {
 
   /* Final app */
   .final-mockups .final-app {
-    /* border: 3px solid red; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center; */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   /* Final website */
   .final-mockups .final-website {
-    /* border: 3px solid red; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center; */
-    grid-template-columns: 1fr 1fr;
     grid-gap: 24px;
-  }
-
-  /* ----- Accessibility ----- */
-  .accessibility .text-container-inner {
-    /* align-items: start;
-    display: flex;
-    gap: 32px;
-    justify-content: center; */
-  }
-
-  .accessibility-point-1, .accessibility-point-2, .accessibility-point-3 {
-    /* max-width: 350px;
-    width: 50%; */
-  }
-
-  .accessibility-point-1 p, .accessibility-point-2 p {
-    /* text-align: left; */
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1127,8 +1045,6 @@ img.mobile-wireframes:first-child {
 
   /* Mockups #1 */
   .refined-mockups-1 .refined-mockups-1-image-container-2 {
-    /* border: 3px solid red; */
-    /* gap: 32px; */
     justify-content: space-evenly;
   }
 
@@ -1148,7 +1064,6 @@ img.mobile-wireframes:first-child {
   /* ----- Mockups #2 ----- */
   /* Mockups 2 */
   .refined-mockups-2 .image-container.mockup-2 {
-    /* border: 3px solid red; */
     max-width: unset;
   }
 
@@ -1156,19 +1071,14 @@ img.mobile-wireframes:first-child {
     flex-direction: row;
     gap: 12px;
     width: 42%;
-    /* border: 3px solid red; */
-    /* max-width: unset; */
   }
 
   .refined-mockups-2 .two-app-container img {
-    /* border: 3px solid red; */
     width: 34%;
   }
 
   /* Mockups 3 */
   .refined-mockups-2 .mockup-3 .right-arrow {
-    /* border: 3px solid red; */
-    /* position: relative; */
     bottom: 10px;
   }
 
@@ -1320,18 +1230,6 @@ img.mobile-wireframes:first-child {
   }
 
   /* ----- Digital wireframes ----- */
-  .digital-wireframes .image-container {
-    /* align-content: center; */
-    /* display: grid; */
-    /* grid-gap: 30px; */
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-    /* justify-items: end; */
-    /* margin: 0 auto; */
-    /* margin-bottom: 32px; */
-    /* max-width: unset; */
-    /* width: 80%; */
-  }
-
   .digital-wireframes img:nth-child(3), .digital-wireframes img:nth-child(4) {
     display: block;
   }
@@ -1373,12 +1271,10 @@ img.mobile-wireframes:first-child {
   }
 
   .refined-mockups-1 .refined-mockups-1-image-container {
-    /* border: 3px solid red; */
     justify-content: space-evenly;
   }
 
   .refined-mockups-1 .refined-mockups-1-image-container-2 {
-    /* border: 3px solid red; */
     gap: 32px;
     justify-content: center;
   }
@@ -1399,13 +1295,10 @@ img.mobile-wireframes:first-child {
   /* ----- Mockups #2 ----- */
   /* Mockups 2 */
   .refined-mockups-2 .two-app-container {
-    /* flex-direction: row;
-    gap: 12px; */
     width: 45%;
   }
 
   .refined-mockups-2 .two-app-container img {
-    /* border: 3px solid red; */
     width: 36%
   }
 }
