@@ -906,13 +906,13 @@ img.mobile-wireframes:first-child {
     justify-content: center;
   }
 
-  .accessibility-point-1, .accessibility-point-2 {
-    max-width: 350px;
-    width: 50%;
+  .accessibility-point-1, .accessibility-point-2, .accessibility-point-3 {
+    /* max-width: 350px;
+    width: 50%; */
   }
 
   .accessibility-point-1 p, .accessibility-point-2 p {
-    text-align: left;
+    /* text-align: left; */
   }
 }
 
