@@ -1044,7 +1044,7 @@ img.mobile-wireframes:first-child {
   }
 
   /* ---------- Refining the design ---------- */
-  /* ----- Mockups ----- */
+  /* ----- Mockups #1 ----- */
   .refined-mockups-1 p {
     text-align: left;
   }
@@ -1075,6 +1075,19 @@ img.mobile-wireframes:first-child {
 
   .refined-mockups-1 img.desktop-mockup {
     width: 54%;
+  }
+
+  /* ----- Mockups #2 ----- */
+  /* Mockups 2 */
+  .refined-mockups-2 .two-app-container {
+    flex-direction: row;
+    gap: 12px;
+    width: 42%;
+  }
+
+  .refined-mockups-2 .two-app-container img {
+    /* border: 3px solid red; */
+    width: 34%;
   }
 
   /* ----- High fidelity prototype ----- */
