@@ -1296,7 +1296,7 @@ img.mobile-wireframes:first-child {
     justify-content: center;
   }
 
-  /* ----- Mockups #3 ----- */
+  /* Mockups #3 */
   .refined-mockups-1 img.app-mockup {
     width: 28%;
   }
@@ -1307,5 +1307,18 @@ img.mobile-wireframes:first-child {
 
   .hifi-prototype-1 .image-container, .hifi-prototype-2 .image-container {
     width: 100%;
+  }
+
+  /* ----- Mockups #2 ----- */
+  /* Mockups 2 */
+  .refined-mockups-2 .two-app-container {
+    /* flex-direction: row;
+    gap: 12px; */
+    width: 45%;
+  }
+
+  .refined-mockups-2 .two-app-container img {
+    /* border: 3px solid red; */
+    width: 36%
   }
 }
