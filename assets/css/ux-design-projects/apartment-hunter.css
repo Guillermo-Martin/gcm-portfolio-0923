@@ -667,8 +667,10 @@ img.mobile-wireframes:first-child {
   }
 
   .right-arrow {
+    bottom: 12px;
     display: block;
     font-size: 100px;
+    position: relative;
   }
 
   /* ----- Final Mockups ----- */
