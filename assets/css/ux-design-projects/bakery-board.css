@@ -832,6 +832,12 @@ img.mobile-wireframes:first-child {
     width: 40%;
   }
 
+  .refined-mockups-2 .mockup-3 .right-arrow {
+    /* border: 3px solid red; */
+    position: relative;
+    bottom: 15px;
+  }
+
   /* ----- Final Mockups ----- */
   .final-mockups .image-container {
     display: grid;
@@ -1113,6 +1119,13 @@ img.mobile-wireframes:first-child {
   .refined-mockups-2 .two-app-container img {
     /* border: 3px solid red; */
     width: 34%;
+  }
+
+  /* Mockups 3 */
+  .refined-mockups-2 .mockup-3 .right-arrow {
+    /* border: 3px solid red; */
+    /* position: relative; */
+    bottom: 10px;
   }
 
   /* ----- High fidelity prototype ----- */
