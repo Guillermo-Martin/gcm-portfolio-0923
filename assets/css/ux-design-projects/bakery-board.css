@@ -796,6 +796,24 @@ img.mobile-wireframes:first-child {
     width: 54%;
   }
 
+  /* ----- Mockups #2 ----- */
+  /* Mockups 2 */
+  .refined-mockups-2 .two-app-container {
+    flex-direction: column;
+  }
+
+  .refined-mockups-2 .two-app-container img {
+    /* border: 3px solid red; */
+    width: 60%;
+    /* gap: 24px;
+    margin-bottom: 0; */
+  }
+
+  .refined-mockups-2 .two-app-container p {
+    /* border: 3px solid red; */
+    max-width: 250px;
+  }
+
   /* ----- Final Mockups ----- */
   .final-mockups .image-container {
     display: grid;
