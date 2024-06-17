@@ -404,6 +404,11 @@ img.mobile-wireframes:first-child {
   width: 100%;
 } */
 
+.refined-mockups-2 .two-app-container p {
+  border: 3px solid red;
+  margin-bottom: 0;
+}
+
 /* ----- Final mockups and final prototype ----- */
 .final-mockups .image-container {
   align-items: center;
