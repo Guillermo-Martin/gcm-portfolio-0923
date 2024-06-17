@@ -1084,10 +1084,17 @@ img.mobile-wireframes:first-child {
 
   /* ----- Mockups #2 ----- */
   /* Mockups 2 */
+  .refined-mockups-2 .image-container.mockup-2 {
+    /* border: 3px solid red; */
+    max-width: unset;
+  }
+
   .refined-mockups-2 .two-app-container {
     flex-direction: row;
     gap: 12px;
     width: 42%;
+    /* border: 3px solid red; */
+    /* max-width: unset; */
   }
 
   .refined-mockups-2 .two-app-container img {
