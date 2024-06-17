@@ -797,6 +797,11 @@ img.mobile-wireframes:first-child {
   }
 
   /* ----- Mockups #2 ----- */
+  .refined-mockups-2 .image-container {
+    justify-content: space-evenly;
+    max-width: 872px;
+  }
+  
   /* Mockups 2 */
   .refined-mockups-2 .two-app-container {
     flex-direction: column;
