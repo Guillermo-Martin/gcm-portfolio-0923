@@ -404,8 +404,14 @@ img.mobile-wireframes:first-child {
   width: 100%;
 } */
 
+.refined-mockups-2 .two-app-container {
+  /* border: 3px solid red; */
+  gap: 24px;
+  margin-bottom: 0;
+}
+
 .refined-mockups-2 .two-app-container p {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   margin-bottom: 0;
   text-align: center;
 }
