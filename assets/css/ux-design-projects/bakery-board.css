@@ -454,6 +454,11 @@ img.mobile-wireframes:first-child {
   justify-content: center;
 }
 
+/* ----- Accessibility ----- */
+.accessibility .text-container > div {
+  margin-bottom: var(--block-sm);
+}
+
 /* ---------- Going forward section ---------- */
 /* ----- Takeaways ----- */
 .takeaways .impact {
