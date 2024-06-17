@@ -434,10 +434,16 @@ img.mobile-wireframes:first-child {
 }
 
 .final-mockups img {
-  border: 1px solid #c4cede;
+  /* border: 1px solid #c4cede; */
   margin-bottom: 32px;
   max-width: 300px;
   width: 90%;
+}
+
+/* Website final mockups */
+.final-mockups .final-website img {
+  border: 1px solid #c4cede;
+  max-width: 575px;
 }
 
 .final-mockups .button-container {
