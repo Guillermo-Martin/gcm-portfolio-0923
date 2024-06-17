@@ -405,9 +405,8 @@ img.mobile-wireframes:first-child {
 } */
 
 .refined-mockups-2 .two-app-container p {
-  /* border: 3px solid red; */
+  border: 3px solid red;
   margin-bottom: 0;
-  text-align: center;
 }
 
 /* ----- Final mockups and final prototype ----- */
