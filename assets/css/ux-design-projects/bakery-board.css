@@ -303,6 +303,10 @@ img.mobile-wireframes:first-child {
   padding-left: 28px;
 }
 
+.findings-point {
+  font-weight: 600;
+}
+
 /* ---------- Refining the design section ---------- */
 .refined-mockups-1, .usability-study-2, .refined-mockups-2, .hifi-prototype-2, .final-mockups {
   margin-bottom: 80px;
