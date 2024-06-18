@@ -450,6 +450,10 @@ img.mobile-wireframes:first-child {
   margin-bottom: 32px;
 }
 
+.impact-quote {
+  font-style: italic;
+}
+
 /* ----- Next steps ----- */
 .next-steps ul {
   list-style: disc;
