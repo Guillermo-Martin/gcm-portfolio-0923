@@ -52,6 +52,7 @@
 
   .project-links {
     justify-content: center;
+    flex-direction: row;
   }
 }
 
