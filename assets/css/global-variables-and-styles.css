@@ -152,6 +152,7 @@ a:hover {
 /* Nav links */
 .mobile-nav-links li {
 	margin-bottom: 30px;
+	width: fit-content;
 }
 
 /* Desktop nav menu (hide at mobile sizes) */
