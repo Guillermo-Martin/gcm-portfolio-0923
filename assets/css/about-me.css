@@ -1,5 +1,5 @@
 .section-container {
-  margin-bottom: calc(var(--block-lg) * 2);
+  margin-bottom: var(--block-lg);
 }
 
 h2 {
@@ -146,6 +146,11 @@ h2 {
 }
 
 @media only screen and (min-width: 992px) {
+  /* ----- section container ----- */
+  .section-container {
+    margin-bottom: calc(var(--block-lg) * 2);
+  }
+
   /* ----- button links ----- */
   .button-link {
     margin: unset;
