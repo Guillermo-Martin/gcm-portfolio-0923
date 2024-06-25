@@ -522,10 +522,6 @@ img.mobile-wireframes:first-child {
     margin-bottom: 20px;
   }
 
-  .accessibility .text-container p:last-child {
-    margin-bottom: 0;
-  }
-
   /* ---------- Going forward ---------- */
   /* ----- Takeaways ----- */
   .takeaways h4 {
