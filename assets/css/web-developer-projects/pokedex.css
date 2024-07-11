@@ -1,0 +1,679 @@
+.learn-more-page {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: red;
+}
+
+.section-container {
+  margin-bottom: var(--block-lg);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* Offsetting an anchor:  https://stackoverflow.com/questions/10732690/offsetting-an-html-anchor-to-adjust-for-fixed-header */
+.section-container .anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+/* Table of contents */
+.table-of-contents-btn {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 40px;
+  padding: 0;
+  position: fixed;
+  right: 5%;
+  top: 90px;
+  width: 40px;
+  z-index: 1;
+}
+
+.table-of-contents-btn svg {
+  height: 24px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -42%);
+  width: 24px;
+}
+
+#down-arrow {
+  display: block;
+}
+
+#down-arrow.hide {
+  display: none;
+}
+
+#up-arrow {
+  display: none;
+  transform: translate(-50%, -48%);
+}
+
+#up-arrow.show {
+  display: block;
+}
+
+/* hide the table of contents */
+#mobile-table-of-contents {
+  background-color: #fff;
+  border-bottom: 1px solid black;
+  display: none;
+  height: 40vh;
+  left: 0;
+  padding: 40px;
+  padding-top: 80px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
+
+/* show table of contents */
+#mobile-table-of-contents.show {
+  display: block;
+}
+
+/* table of contents container */
+.mobile-table-of-contents-links li {
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+/* project subsections */
+.project-subsection {
+  margin-bottom: var(--block-md);
+}
+
+h2 {
+  margin-bottom: 20px; 
+}
+
+hr {
+  margin-bottom: var(--block-sm);
+}
+
+/* ---------- Hero section ---------- */
+.hero-section {
+  margin-top: var(--block-lg);
+}
+
+/* ----- Image container ----- */
+.image-container {
+  margin-bottom: var(--block-sm);
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/* ---------- Project overview section ---------- */
+/* ----- Improvement opportunities ----- */
+.improvement-opportunities {
+  margin-bottom: var(--block-sm);
+}
+
+.improvement-opportunities p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
+/* ----- Pain points ----- */
+.pain-points hr {
+  margin-bottom: var(--block-lg);
+  margin-top: var(--block-lg);
+}
+
+.pain-point-container .text-container {
+  margin-bottom: 16px;
+}
+
+.pain-points .image-container {
+  border: 1px solid lightgray;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.pain-points img {
+  width: 100%;
+}
+
+/* ---------- Tackling the problems section ---------- */
+.tackling-the-problem {
+  margin-bottom: var(--block-lg);
+}
+
+.tackling-the-problem .text-container {
+  margin-bottom: var(--block-sm);
+}
+
+/* paper wireframes */
+#overall-design .image-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.paper-wireframes {
+  max-width: 300px;
+}
+
+.wireframe-a {
+  margin-bottom: 16px;
+}
+
+.wireframe-b, .wireframe-c {
+  display: none;
+}
+
+#sequential-questions .image-container, #blank-password .image-container, #copy-feature .image-container {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+
+/* ---------- Challenges section ---------- */
+.challenges-section .subheader {
+  margin-bottom: 32px;
+}
+
+.challenge ol {
+  list-style-type: decimal;
+  margin-bottom: 16px;
+  padding-left: 32px;
+}
+
+.challenge p {
+  margin-bottom: 16px;
+}
+
+.challenge .image-container {
+  margin-bottom: 16px;
+}
+
+.challenge .image-container:last-child {
+  margin-bottom: 0;
+}
+
+.project-subsection.challenge-1 p {
+  text-align: left;
+}
+
+/* challenge 2 */
+.challenge .image-container:last-child {
+  margin-bottom: 16px;
+}
+
+
+/* ---------- Learnings and future section ---------- */
+/* ----- Learnings ----- */
+.learnings, .learnings-subsection {
+  margin-bottom: var(--block-sm);
+}
+
+/* ----- Future ----- */
+.future p {
+  margin-bottom: 12px;
+}
+
+.future ul {
+  list-style: disc;
+  padding-left: 28px;
+}
+
+.future li {
+  margin-bottom: 8px;
+}
+
+/* ---------- Media queries ---------- */
+@media only screen and (min-width: 576px) {
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+
+  .table-of-contents-container h2 {
+    text-align: left;
+  }
+
+  .section-container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  /* ----- Project subsections for all sections ----- */
+  .project-subsection p {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  /* ---------- Hero section ---------- */
+  .hero-section p {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .hero-section .image-container {
+    margin: 0 auto;
+    margin-bottom: var(--block-sm);
+    max-width: 620px;
+  }
+
+  
+  /* ---------- Challenges section ---------- */
+  .challenges-section .subheader {
+    text-align: center;
+  }
+
+  /* challenge 1 */
+  .project-subsection.challenge-1 p {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .challenges-section .solution-list {
+    margin-bottom: 16px;
+  }
+
+  .challenge-1-image-1 {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  .challenges-section ol {
+    margin-bottom: 16px;
+  }
+
+  .challenge-1-image-2 {
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  /* challenge 2 */
+  .challenge-2 .challenge-2-p {
+    margin-bottom: 16px;
+  }
+
+  
+  /* ---------- Going forward ---------- */
+  /* ----- Learnings ----- */
+  .learnings-subsection {
+    margin: 0 auto;
+    margin-bottom: var(--block-sm);
+    max-width: 600px;
+  }
+
+  /* ----- Next steps ----- */
+  .future p {
+    margin-bottom: 12px;
+  }
+
+  .future ul {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+
+  /* ----- Thank you section ----- */
+  .thank-you-section p {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .learn-more-page {
+    padding-top: 138px;
+  }
+
+  .section-container .anchor {
+    top: -200px;
+  }
+
+  /* mobile table of contents */
+  #mobile-table-of-contents {
+    border-top: 1px solid black;
+    display: block;
+    height: auto;
+    padding: 0;
+  }
+
+  .mobile-table-of-contents-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table-of-contents-container {
+    border-bottom: none;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px 32px;
+  }
+
+  #table-of-contents-btn, .table-of-contents-container h2 {
+    display: none;
+  }
+
+  .mobile-table-of-contents-links li {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: var(--block-sm);
+  }
+
+  .section-container {
+    margin-bottom: 128px;
+  }
+
+  .section-container hr {
+    margin-bottom: 48px;
+  }
+
+  /* ----- Image container for all sections ----- */
+  .image-container {
+    margin: 0 auto;
+    margin-bottom: var(--block-sm);
+    width: 75%;
+  }
+
+  /* hero section */
+  .hero-section {
+    margin-top: var(--block-md);
+  }
+
+  /* ---------- Project Overview ---------- */
+  .project-overview-container {
+    display: grid;
+    grid-column-gap: 60px;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 60px;
+  }
+
+  .project-overview-section .project-subsection {
+    margin-bottom: 0;
+  } 
+
+  /* ---------- Tackling the problems section ---------- */
+  /* wireframes */
+  .tackling-the-problem .image-container {
+    align-items: normal;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  #overall-design .image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #overall-design img {
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .wireframe-a {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 848px) {
+  /* hero section */
+  .hero-section .image-container {
+    max-width: 588px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* table of contents */
+  .table-of-contents-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .mobile-table-of-contents-links {
+    justify-content: space-evenly;
+  }
+
+  .section-container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  /* ---------- Project overview section ---------- */
+  h3 {
+    font-size: var(--fs-h3);
+  }
+
+  .project-overview-container {
+    gap: 64px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .project-subsection p {
+    max-width: unset;
+  }
+
+  /* project overview subsections */
+  .project-overview-subsection p, .goal-subsection p {
+    max-width: unset;
+    text-align: left;
+  }
+
+  /* Goal subsection */
+  .goal-subsection {
+    margin-bottom: var(--block-sm);
+  }
+
+
+  /* ---------- First steps ---------- */
+  /* ----- Improvement opportunities ----- */
+  .improvement-opportunities {
+    margin-bottom: var(--block-lg);
+  }
+
+  /* ----- Pain points ----- */
+  .pain-points {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap:  32px;
+  }
+
+  .pain-point-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pain-point-container .text-container {
+    margin-bottom: 0;
+    width: 40%;
+  }
+
+  .pain-point-container .image-container {
+    margin: 0;
+    max-width: unset;
+    width: 55%;
+  }
+
+  .pain-points h4 {
+    margin-bottom: 24px;
+    text-align: left;
+  }
+
+  .pain-points p {
+    text-align: left;
+  }
+
+  .pain-points hr {
+    width: 100%;
+  }
+
+  
+  /* ---------- Tackling the problems section ---------- */
+  .tackling-the-problem .text-container {
+    margin-bottom: var(--block-sm);
+  }
+
+  /* paper wireframes */
+  #overall-design .image-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .wireframe-b, .wireframe-c {
+    display: block;
+  }
+
+  #overall-design img {
+    height: 100%;
+    width: 90%;
+  }
+  
+  /* non-paperwireframes sections */
+  #sequential-questions, #blank-password, #copy-feature {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #sequential-questions h3,  #blank-password h3, #copy-feature h3,
+  #sequential-questions p,  #blank-password p, #copy-feature p {
+    text-align: left;
+  }
+
+  #sequential-questions .text-container, #blank-password .text-container, #copy-feature .text-container {
+    margin-bottom: 0;
+    width: 40%;
+  }
+
+  #sequential-questions .image-container, #blank-password .image-container, #copy-feature .image-container {
+    margin: 0;
+    width: 53%;
+  }
+  
+  /* ---------- Challenges ---------- */
+
+  /* ----- Challenge #1 ----- */
+  .challenge {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .challenge-1 .project-subsection-section, .challenge-1 h3, .challenge-1-image-1, .solution-list {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+
+  .project-subsection.challenge-1 p {
+    text-align: center;
+  }
+
+  .challenge-1 ol {
+    margin: 0 auto;
+    margin-bottom: 16px;
+    max-width: 500px;
+  }
+
+  .challenge-1-image-2 {
+    width: 100%;
+  }
+
+  /* ----- Challenge #2 ----- */
+  .challenge-2 .project-subsection-section, .challenge-2 h3, .challenge-2-p, .challenge-2-image-1, .challenge-2-image-2, .challenge-2-image-3  {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
+  
+  .challenge-2-image-1 {
+    max-width: 736px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* hero section  */
+  .hero-section .image-container {
+    margin-bottom: 16px;
+  }
+
+  /* ---------- Project overview section ---------- */
+  .project-overview-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 36px;
+  }
+
+  /* ----- Product subsection ----- */
+  .project-overview-subsection {
+    grid-column-end: 2;
+    grid-column-start: 1;
+  }
+
+  /* ---------- Challenges section ---------- */
+  /* ----- Challenge #1 ----- */
+  .challenge-1 {
+    row-gap: 32px;
+  }
+
+  .challenge-1 h3, .challenge-1 .challenge-1-image-1, .project-subsection.challenge-1 p {
+    margin-bottom: 0;
+  }
+
+  .challenge-1 .project-subsection-section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .challenge-1 ol {
+    padding-right: 0;
+    width: 40%;
+  }
+
+  .challenge-1-image-2 {
+    margin: 0;
+    max-width: 600px;
+    width: 53%;
+  }
+
+  .challenge-1 .solution-gif p {
+    width: 50%;
+  }
+
+  /* ----- Challenge #2 ----- */
+  .challenge-2.project-subsection {
+    row-gap: 36px;
+  }
+
+  .project-subsection-section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .challenge-2-p, .challenge-2-image-1, .challenge-2-image-2, .challenge-2-image-3 {
+    grid-column-end: unset;
+    grid-column-start: unset;
+    margin: 0;
+    max-width: unset;
+  }
+
+  .challenge-2 .challenge-2-p {
+    margin: 0;
+    text-align: left;
+    width: 40%;
+  }
+
+  .challenge-2-image-1, .challenge-2-image-2, .challenge-2-image-3 {
+    max-width: 600px;
+    width: 53%;
+  }
+}
