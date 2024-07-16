@@ -128,7 +128,7 @@
         </div> -->
 
         <!-- Header -->
-        <h2>First steps</h2>
+        <h2>Steps to creating the Pokédex app</h2>
         <hr>
 
         <div>
@@ -139,69 +139,70 @@
 
             <div class="text-container">
               <!-- ----- Improvement opportunities ----- -->
-              <div class="improvement-opportunities">
+              <!-- <div class="improvement-opportunities">
                 <h3>Identifying opportunites for improvement</h3>
                 <p>
                   One of the first things I did, was go through the password generator and identify some opportunities for improvement.  To see what the original application looked like, click <a href="https://guillermo-martin.github.io/passwordGenerator/" target="_blank" rel="noopener noreferrer">here</a>. 
                   In going through the application, I found a few things that could be improved:
                 </p>
-              </div>
+              </div> -->
               
-              <!-- ----- Pain points ----- -->
+              <!-- ----- Steps ----- -->
               <div class="pain-points">
-                <!-- Pain point #1 -->
+                <!-- Step #1 -->
                 <div class="pain-point-container">
                   <!-- Text -->
                   <div class="text-container">
-                    <h4>Blank password</h4>
-                    <p>With the exception of the prompt asking for password length, if a user doesn't select any password options (they select "Cancel" in all the prompts), a blank password is provided to the user.</p>
+                    <h4>Determine what type of data I obtain from the PokéAPI and decide the type of data I’d like to display.</h4>
+                    <p>I used the “.fetch()” JavaScript method and “console.log()” to determine the data I would get and how I would access certain data.</p>
                   </div>
 
                   <!-- Image -->
                   <div class="image-container">
-                    <img src="/assets/images/password-generator/generate-password-prompt.gif" alt="Animated GIF showing various prompts asking what a user would like in their password, and a blank password">
+                    <img src="/assets/images/pokedex/pokeapi-response.png" alt="Screenshot of the data obtained from the PokeAPI response">
                   </div>
                 </div>
 
                 <hr>
                 
-                <!-- Pain point #2 -->
+                <!-- Step #2 -->
                 <div class="pain-point-container">
                   <!-- Text -->
                   <div class="text-container">
-                    <h4>An inability to go back if a user changes their mind</h4>
-                    <p>The questions asking what a user wants in their password are asked sequentially.  If a user changes their mind, they're unable to go back to the option they passed on.  The only way they could go back, is to finish creating a password and then create another one, or refresh the page and start over.</p>
+                    <h4>Get the basic functionality working.</h4>
+                    <p>A user enters a Pokémon name in the input and submits the form.  Once data is retrieved, the Pokémon's sprite and basic information is displayed on the screen.</p>
                   </div>
 
                    <!-- Image -->
                    <div class="image-container">
-                    <img src="/assets/images/password-generator/sequential-prompts.gif" alt="Animated GIF showing various prompts asking what a user would like in their password">
+                    <img src="/assets/images/pokedex/basic-functionality.gif" alt="Animated GIF showing the basic functionality of the app">
                   </div>
                 </div>
 
                 <hr>
 
-                <!-- Pain point #3 -->
+                <!-- Step #3 -->
                 <div class="pain-point-container">
                   <!-- Text -->
                   <div class="text-container">
-                    <h4>The overall design</h4>
-                    <p>The design of the application was already made, as the assignment mainly focused on creating the functionality.  The application also uses JavaScript prompts to ask what the user wants in their password.</p>
+                    <h4>Design the app and determine how the information should be displayed.</h4>
+                    <p>I created wireframes and created high-fidelity mockups in Figma.</p>
                   </div>
 
                   <!-- Image -->
                   <div class="image-container">
-                    <img src="/assets/images/password-generator/password-prompt.png" alt="Password generator showing a prompt and a text box that says 'Your Secure Password' followed by a red 'Generate Password' button">
+                    <!-- <img src="/assets/images/password-generator/password-prompt.png" alt="Password generator showing a prompt and a text box that says 'Your Secure Password' followed by a red 'Generate Password' button"> -->
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2Flr2b6QCWSRtdD0vG1f3jEN%2FPokedex-project%3Fnode-id%3D0-1%26t%3DxRVKE1DGIVPamhBs-1" allowfullscreen></iframe>
                   </div>
                 </div>
 
                 <hr>
                 
-                <!-- Pain point #4 -->
+                <!-- Step #4 -->
                 <div class="pain-point-container">
                   <!-- Text -->
                   <div class="text-container">
-                    <h4>Lack of a copy feature</h4>
+                    <h4>Start building!</h4>
                     <p>The generator lacks a copy feature so a user would have to manually copy their password.</p>
                   </div>
 
