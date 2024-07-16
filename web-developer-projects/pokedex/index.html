@@ -227,31 +227,41 @@
         </div> -->
 
         <h2>Challenges</h2>
-        <p class="subheader">When redesigning this application, I faced a few challenges:  determining which options were selected after switching to checkboxes and creating a password that wasn't the length the user asked for.</p>
+        <!-- <p class="subheader">When redesigning this application, I faced a few challenges:  determining which options were selected after switching to checkboxes and creating a password that wasn't the length the user asked for.</p> -->
         <hr>
 
         <!-- ----- Challenge #1 ----- -->
         <div class="project-subsection challenge challenge-1">
           <!-- Challenge header -->
-          <h3>Challenge #1 - Determining which of the checkboxes were selected</h3>
+          <h3>Challenge #1 - Getting the animation to play correctly</h3>
           
           <!-- Screenshot of the checkboxes -->
           <div class="image-container challenge-1-image-1">
-            <img src="/assets/images/password-generator/checked-boxes.png" alt="Screenshot of the password generator with the 'Lowercase letters' and 'Numbers' checkboxes checked">
+            <img src="/assets/images/pokedex/pokemon-type-animation.gif" alt="GIF showing the colors animating in">
           </div>
 
           <!-- My solution -->
-          <p class="solution-list">Now that the generator uses checkboxes, I had to see which options were selected.  My solution involved the following steps:</p>
+          <!-- <p class="solution-list">Lorem ipsum</p> -->
 
           <div class="project-subsection-section">
-            <ol>
+            <div>
+              <p>In order to get the color animation to play correctly, I found that breaking the animation down into steps was the easiest way to accomplish this:</p>
+              <ol>
+                <li>Create rectangles using "div" elements, position them on the page, and set their background color to more easily see the animation.</li>
+                <li>Set the transform-origin for the colored rectangles in CSS.  By setting this in CSS, it made the entrance effect easier to accomplish using Greensock's ".to()" method.</li>
+                <li>Set "scaleX" to 0 for the rectangles using Greensock.  By doing this, the width of the rectangles is 0, allowing for expansion of the rectangles later on.</li>
+                <li>Increasing the rectangles to full width using Greensock's ".to()" method.  The rectangles go to full width by setting "scaleX" to 1.</li>
+                <li>After getting the animation to work correctly, I then rotated and positioned the rectangles on the corners of the page according to the high-fidelity mockups I created earlier.</li>
+              </ol>
+            </div>
+            <!-- <ol>
               <li>Create an object to hold the password options, and create a variable to hold the number of options that weren't selected (a counter).</li>
               <li>Check to see which boxes were selected using the ".checked" property.</li>
               <li>Loop through all of the checkboxes and get the status of each, and adding the information to the "password options" object.</li>
               <li>After adding the information to the password options, loop through the object using a "for...in" loop to see which options are "false".</li>
               <li>If an option is "false", add 1 to the variable that keeps track of the "false" options.</li>
               <li>If the counter equals 4, no options were selected so warn the user that they need to select at least one option.</li>
-            </ol>
+            </ol> -->
 
             <!-- Image of my code solution -->
             <div class="image-container challenge-1-image-2">
@@ -273,7 +283,37 @@
         
         <!-- ----- Challenge #2 ----- -->
         <div class="project-subsection challenge challenge-2">
-          <h3>Challenge #2 - Incorrect password length</h3>
+          <h3>Challenge #2 - Getting the audio to play</h3>
+
+          <div class="project-subsection-section">
+            <p class="challenge-2-p">After switching to checkboxes and creating a password, the final password length was actually multiplied by however many options were selected.  In the GIF provided, the password length is noted in the right dark gray area at the end of the password (the number).  In this example, if the password length is 128 characters in length and 4 options are selected, the final password is 512 characters in length; if the password length is 128 and 2 options are selected, the final password is 256 characters in length.</p>
+            <div class="image-container challenge-2-image-1">
+              <img src="/assets/images/password-generator/multiplied-password.gif" alt="Animated GIF showing an older version of the password generator and a password being generated followed by the password's length">
+            </div>
+          </div>
+         
+          <!-- If statement (before) -->
+          <div class="project-subsection-section">
+            <p class="challenge-2-p">The problem was in the JavaScript code that checks the password length (the “if” statement).  The condition the code was checking for was very strict in that as the password was being generated, if the user’s password length didn’t exactly match the length of the generated password during one of the length checks, then the code would continue to add characters to the password.</p>
+            <div class="image-container challenge-2-image-2">
+              <img src="/assets/images/password-generator/challenge-2-before.png" alt="Screenshot of JavaScript code with several conditional statements circled in red with red arrows pointing at them">
+            </div>
+          </div>
+          
+          <!-- If statement (after) -->
+          <div class="project-subsection-section">
+            <p class="challenge-2-p">To fix this, the condition was revised so that if the generated password was greater than the user's requested password length, the generator stops adding characters.</p>
+            <div class="image-container challenge-2-image-3">
+              <img src="/assets/images/password-generator/challenge-2-after.png" alt="Screenshot of JavaScript code with green arrows pointing at a 'less than' symbol in the conditional statements">
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- ----- Challenge #3 ----- -->
+        <div class="project-subsection challenge challenge-2">
+          <h3>Challenge #3 - An edge case: Pokémon with punctuation in the name</h3>
 
           <div class="project-subsection-section">
             <p class="challenge-2-p">After switching to checkboxes and creating a password, the final password length was actually multiplied by however many options were selected.  In the GIF provided, the password length is noted in the right dark gray area at the end of the password (the number).  In this example, if the password length is 128 characters in length and 4 options are selected, the final password is 512 characters in length; if the password length is 128 and 2 options are selected, the final password is 256 characters in length.</p>
