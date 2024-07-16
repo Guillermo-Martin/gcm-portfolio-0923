@@ -149,24 +149,24 @@ hr {
 }
 
 /* ---------- Tackling the problems section ---------- */
-.tackling-the-problem {
+/* .tackling-the-problem {
   margin-bottom: var(--block-lg);
-}
+} */
 
-.tackling-the-problem .text-container {
+/* .tackling-the-problem .text-container {
   margin-bottom: var(--block-sm);
-}
+} */
 
 /* paper wireframes */
-#overall-design .image-container {
+/* #overall-design .image-container {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 0;
-}
+} */
 
-.paper-wireframes {
+/* .paper-wireframes {
   max-width: 300px;
 }
 
@@ -182,7 +182,7 @@ hr {
   margin: 0 auto;
   margin-bottom: 32px;
   max-width: 600px;
-}
+} */
 
 
 /* ---------- Challenges section ---------- */
