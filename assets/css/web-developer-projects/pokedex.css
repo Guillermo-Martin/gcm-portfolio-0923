@@ -102,6 +102,10 @@ hr {
   margin-top: var(--block-lg);
 }
 
+.hero-section img {
+  border: 1px solid lightgray;
+}
+
 /* ----- Image container ----- */
 .image-container {
   margin-bottom: var(--block-sm);
@@ -394,6 +398,12 @@ hr {
     margin-top: var(--block-md);
   }
 
+  .hero-section .image-container {
+    /* border: 3px solid red; */
+    max-width: unset;
+    width: 90%;
+  }
+
   /* ---------- Project Overview ---------- */
   .project-overview-container {
     display: grid;
@@ -431,12 +441,12 @@ hr {
   }
 }
 
-@media only screen and (min-width: 848px) {
-  /* hero section */
+/* @media only screen and (min-width: 848px) {
+  hero section
   .hero-section .image-container {
     max-width: 588px;
   }
-}
+} */
 
 @media only screen and (min-width: 992px) {
   /* table of contents */
