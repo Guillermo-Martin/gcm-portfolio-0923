@@ -269,14 +269,14 @@
             </div>
           </div>
 
-          <div class="project-subsection-section solution-gif">
+          <!-- <div class="project-subsection-section solution-gif">
             <p>Here it is in action:</p>
 
-            <!-- Image of my code solution -->
+            Image of my code solution
             <div class="image-container challenge-1-image-2">
               <img src="/assets/images/password-generator/checkbox-check.gif" alt="Animated GIF showing the 'You must select at least one option!' and 'Please pick a number between 8 and 128!' red warning messages popping up">
             </div>
-          </div>
+          </div> -->
         </div>
 
         <hr>
@@ -286,7 +286,9 @@
           <h3>Challenge #2 - Getting the audio to play</h3>
 
           <div class="project-subsection-section">
-            <p class="challenge-2-p">After switching to checkboxes and creating a password, the final password length was actually multiplied by however many options were selected.  In the GIF provided, the password length is noted in the right dark gray area at the end of the password (the number).  In this example, if the password length is 128 characters in length and 4 options are selected, the final password is 512 characters in length; if the password length is 128 and 2 options are selected, the final password is 256 characters in length.</p>
+            <p class="challenge-2-p">
+              I wanted to add an option to listen to a Pokemon’s cry. I learned about the Audio constructor in Javascript. To get this to work, I decided to add a click listener on the sprites. When a user clicks on one of the sprites, a new Audio element is created and the sound file is passed as an argument (which was obtained from the Pokemon data obtained from the API call).  The “.play()” method is then used to play the cry.
+            </p>
             <div class="image-container challenge-2-image-1">
               <img src="/assets/images/password-generator/multiplied-password.gif" alt="Animated GIF showing an older version of the password generator and a password being generated followed by the password's length">
             </div>
@@ -294,7 +296,7 @@
          
           <!-- If statement (before) -->
           <div class="project-subsection-section">
-            <p class="challenge-2-p">The problem was in the JavaScript code that checks the password length (the “if” statement).  The condition the code was checking for was very strict in that as the password was being generated, if the user’s password length didn’t exactly match the length of the generated password during one of the length checks, then the code would continue to add characters to the password.</p>
+            <p class="challenge-2-p">An issue I ran into while trying to get this functionality to work, was that even though the sound played correctly, I got the following error: “Uncaught (in promise) DOMException: The ".play()" request was interrupted by a new load request. https://goo.gl/LdLk22”.  This error would only show after searching for subsequent Pokemon and playing their cry.</p>
             <div class="image-container challenge-2-image-2">
               <img src="/assets/images/password-generator/challenge-2-before.png" alt="Screenshot of JavaScript code with several conditional statements circled in red with red arrows pointing at them">
             </div>
@@ -302,7 +304,9 @@
           
           <!-- If statement (after) -->
           <div class="project-subsection-section">
-            <p class="challenge-2-p">To fix this, the condition was revised so that if the generated password was greater than the user's requested password length, the generator stops adding characters.</p>
+            <p class="challenge-2-p">I learned that the “.play()” method is asynchronous and returns a promise.
+              The code I wrote wasn’t handling the promise, so I was getting that error.
+              The link provided in the error showed a solution, which I implemented in my own code.</p>
             <div class="image-container challenge-2-image-3">
               <img src="/assets/images/password-generator/challenge-2-after.png" alt="Screenshot of JavaScript code with green arrows pointing at a 'less than' symbol in the conditional statements">
             </div>
