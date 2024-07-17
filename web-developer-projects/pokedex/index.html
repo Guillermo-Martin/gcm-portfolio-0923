@@ -287,7 +287,7 @@
 
           <div class="project-subsection-section">
             <p class="challenge-2-p">
-              I wanted to add an option to listen to a Pokemon’s cry. I learned about the Audio constructor in Javascript. To get this to work, I decided to add a click listener on the sprites. When a user clicks on one of the sprites, a new Audio element is created and the sound file is passed as an argument (which was obtained from the Pokemon data obtained from the API call).  The “.play()” method is then used to play the cry.
+              I wanted to add a feature that would allow a user to listen to a Pokémon’s cry. I learned about the "Audio" constructor in JavaScript. To get this to work, I added an event listener to the sprites. When a user clicks on one of the sprites, a new Audio element is created and the sound file is passed as an argument (which was obtained from the Pokémon data obtained from the API call).  The “.play()” method is then used to play the cry.
             </p>
             <div class="image-container challenge-2-image-1">
               <img src="/assets/images/pokedex/audio-code-1.png" alt="Screenshot of VSCode showing how the 'Audio' constructor is implemented">
@@ -296,7 +296,7 @@
          
           <!-- If statement (before) -->
           <div class="project-subsection-section">
-            <p class="challenge-2-p">An issue I ran into while trying to get this functionality to work, was that even though the sound played correctly, I got the following error: “Uncaught (in promise) DOMException: The ".play()" request was interrupted by a new load request. https://goo.gl/LdLk22”.  This error would only show after searching for subsequent Pokemon and playing their cry.</p>
+            <p class="challenge-2-p">An issue I ran into while trying to get this functionality to work, was that even though the sound played correctly, I got the following error: “Uncaught (in promise) DOMException: The ".play()" request was interrupted by a new load request. https://goo.gl/LdLk22”.  This error would only show after searching for subsequent Pokémon and playing their cry.</p>
             <div class="image-container challenge-2-image-2">
               <img src="/assets/images/pokedex/audio-error.png" alt="'console.log()' error">
             </div>
@@ -320,14 +320,14 @@
           <h3>Challenge #3 - An edge case: Pokémon with punctuation in the name</h3>
 
           <div class="project-subsection-section">
-            <p class="challenge-2-p">I discovered this issue purely by accident.  As I was searching for Pokemon, I decided to mix up my search and search for “Mr. Mime.”  When I did, no results came up, which was unusual, given that was the name of that Pokemon.</p>
+            <p class="challenge-2-p">I discovered this issue purely by accident.  As I was searching for Pokémon, I decided to mix up my search and search for “Mr. Mime.”  When I did, no results came up, which was unusual, given that was the name of that Pokémon.</p>
             <div class="image-container challenge-2-image-1">
               <img src="/assets/images/pokedex/mr-mime-1.gif" alt="Animated GIF showing no results when a 'Mr. Mime' was searched for">
             </div>
           </div>
 
           <div class="project-subsection-section">
-            <p class="challenge-2-p">I did some research and found that the name used when making an API call used a hyphen instead of a period.  So, in order get that particular result, “Mr. Mime” would have to be “mr-mime.”  While trying to resolve this edge case, I found that, in general, Pokemon with some sort of punctuation in their name didn’t produce any results when searched for.</p>
+            <p class="challenge-2-p">I did some research and found that the name used when making an API call used a hyphen instead of a period.  So, in order get that particular result, “Mr. Mime” would have to be “mr-mime.”  While trying to resolve this edge case, I found that, in general, Pokémon with some sort of punctuation in their name didn’t produce any results when searched for.</p>
             <div class="image-container challenge-2-image-1">
               <img src="/assets/images/pokedex/mr-mime-2.gif" alt="Animated GIF showing 'mr-mime' results">
             </div>
@@ -335,7 +335,7 @@
          
           <!-- If statement (before) -->
           <div class="project-subsection-section">
-            <p class="challenge-2-p">In order to resolve this, I searched for Pokemon names with some sort of punctuation in their name.  I created a switch statement in order to evaluate different variations of a Pokemon name users may search for.  If any of those variations came up, the input used to make an API request would change to an input that would return a result.  In this case, any variations of “Mr. Mime” would be changed to “mr-mime.”</p>
+            <p class="challenge-2-p">To resolve this, I searched for Pokémon names with some sort of punctuation in their name.  I created a switch statement in order to evaluate different variations of a Pokémon name users may search for.  If any of those variations came up, the input used to make an API request would change to an input that would return a result.  In this case, any variations of “Mr. Mime” would be changed to “mr-mime.”</p>
             <div class="image-container challenge-2-image-2">
               <img src="/assets/images/pokedex/switch-statement.png" alt="JavaScript code showing a switch statement">
             </div>
