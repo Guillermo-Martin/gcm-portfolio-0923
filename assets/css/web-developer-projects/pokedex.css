@@ -118,13 +118,13 @@ hr {
 
 /* ---------- Project overview section ---------- */
 /* ----- Improvement opportunities ----- */
-.improvement-opportunities {
+/* .improvement-opportunities {
   margin-bottom: var(--block-sm);
 }
 
 .improvement-opportunities p:nth-child(2) {
   margin-bottom: 20px;
-}
+} */
 
 /* ----- Pain points ----- */
 .pain-points hr {
@@ -150,6 +150,11 @@ hr {
   height: 100%;
   min-height: 500px;
   width: 100%;
+}
+
+/* ---------- First steps section ---------- */
+.first-steps .desktop-arrow {
+  display: none;
 }
 
 /* ---------- Tackling the problems section ---------- */
@@ -493,9 +498,18 @@ hr {
 
   /* ---------- First steps ---------- */
   /* ----- Improvement opportunities ----- */
-  .improvement-opportunities {
+  /* .improvement-opportunities {
     margin-bottom: var(--block-lg);
-  }
+  } */
+
+  /* ---------- First steps section ---------- */
+.first-steps .desktop-arrow {
+  display: inline-block;
+}
+
+.first-steps .mobile-arrow {
+  display: none;
+}
 
   /* ----- Pain points ----- */
   .pain-points {
@@ -577,7 +591,6 @@ hr {
   }
   
   /* ---------- Challenges ---------- */
-
   /* ----- Challenge #1 ----- */
   .challenge {
     align-items: center;
