@@ -668,7 +668,7 @@ hr {
     row-gap: 32px;
   }
 
-  .challenge-1 h3, .challenge-1 .challenge-1-image-1, .project-subsection.challenge-1 p {
+  .challenge-1 .challenge-1-image-1, .project-subsection.challenge-1 p {
     margin-bottom: 0;
   }
 
