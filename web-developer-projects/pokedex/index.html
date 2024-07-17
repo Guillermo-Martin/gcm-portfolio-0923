@@ -320,7 +320,7 @@
           <h3>Challenge #3 - An edge case: Pokémon with punctuation in the name</h3>
 
           <div class="project-subsection-section">
-            <p class="challenge-2-p">After switching to checkboxes and creating a password, the final password length was actually multiplied by however many options were selected.  In the GIF provided, the password length is noted in the right dark gray area at the end of the password (the number).  In this example, if the password length is 128 characters in length and 4 options are selected, the final password is 512 characters in length; if the password length is 128 and 2 options are selected, the final password is 256 characters in length.</p>
+            <p class="challenge-2-p">I discovered this issue purely by accident.  As I was searching for Pokemon, I decided to mix up my search and search for “Mr. Mime.”  When I did, no results came up, which was unusual, given that was the name of that Pokemon.  I did some research and found that the name used when making an API call used a hyphen instead of a period.  So, in order get that particular result, “Mr. Mime” would have to be “mr-mime.”  While trying to resolve this edge case, I found that, in general, Pokemon with some sort of punctuation in their name didn’t produce any results when searched for.</p>
             <div class="image-container challenge-2-image-1">
               <img src="/assets/images/password-generator/multiplied-password.gif" alt="Animated GIF showing an older version of the password generator and a password being generated followed by the password's length">
             </div>
@@ -328,7 +328,7 @@
          
           <!-- If statement (before) -->
           <div class="project-subsection-section">
-            <p class="challenge-2-p">The problem was in the JavaScript code that checks the password length (the “if” statement).  The condition the code was checking for was very strict in that as the password was being generated, if the user’s password length didn’t exactly match the length of the generated password during one of the length checks, then the code would continue to add characters to the password.</p>
+            <p class="challenge-2-p">In order to resolve this, I searched for Pokemon names with some sort of punctuation in their name.  I created a switch statement in order to evaluate different variations of a Pokemon name users may search for.  If any of those variations came up, the input used to make an API request would change to an input that would return a result.  In this case, any various of “Mr. Mime” would be changed to “mr-mime.”</p>
             <div class="image-container challenge-2-image-2">
               <img src="/assets/images/password-generator/challenge-2-before.png" alt="Screenshot of JavaScript code with several conditional statements circled in red with red arrows pointing at them">
             </div>
