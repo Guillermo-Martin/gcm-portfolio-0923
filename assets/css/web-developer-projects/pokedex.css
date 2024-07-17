@@ -307,6 +307,7 @@ hr {
   .project-subsection.challenge-1 p {
     margin: 0;
     margin-bottom: 16px;
+    max-width: unset;
   }
 
   .challenges-section .solution-list {
@@ -518,15 +519,15 @@ hr {
   } */
 
   /* ---------- First steps section ---------- */
-.first-steps .desktop-arrow {
-  display: inline-block;
-}
+  .first-steps .desktop-arrow {
+    display: inline-block;
+  }
 
-.first-steps .mobile-arrow {
-  display: none;
-}
+  .first-steps .mobile-arrow {
+    display: none;
+  }
 
-  /* ----- Pain points ----- */
+  /* ----- Steps ----- */
   .pain-points {
     display: grid;
     grid-template-columns: 1fr;
@@ -565,7 +566,7 @@ hr {
 
   
   /* ---------- Tackling the problems section ---------- */
-  .tackling-the-problem .text-container {
+  /* .tackling-the-problem .text-container {
     margin-bottom: var(--block-sm);
   }
 
@@ -581,10 +582,10 @@ hr {
   #overall-design img {
     height: 100%;
     width: 90%;
-  }
+  } */
   
   /* non-paperwireframes sections */
-  #sequential-questions, #blank-password, #copy-feature {
+  /* #sequential-questions, #blank-password, #copy-feature {
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -604,7 +605,7 @@ hr {
     margin: 0;
     width: 53%;
   }
-  
+   */
   /* ---------- Challenges ---------- */
   /* ----- Challenge #1 ----- */
   .challenge {
@@ -619,14 +620,14 @@ hr {
   }
 
   .project-subsection.challenge-1 p {
-    text-align: center;
+    text-align: left;
   }
 
-  .challenge-1 ol {
+  /* .challenge-1 ol {
     margin: 0 auto;
     margin-bottom: 16px;
     max-width: 500px;
-  }
+  } */
 
   .challenge-1-image-2 {
     width: 100%;
@@ -677,19 +678,39 @@ hr {
     justify-content: space-between;
   }
 
-  .challenge-1 ol {
+  .challenge-1 .project-subsection-section p, .challenge-1 .project-subsection-section .image-container {
+    /* border: 3px solid red; */
+    width: 50%;
+  }
+
+  /* .challenge-1 ol {
     padding-right: 0;
     width: 40%;
-  }
+  } */
 
   .challenge-1-image-2 {
     margin: 0;
-    max-width: 600px;
-    width: 53%;
+    /* max-width: 600px; */
+    max-width: unset;
+    /* width: 50%; */
   }
 
-  .challenge-1 .solution-gif p {
+  .challenge-1-image-3 {
+    max-width: unset;
+    /* width: 50%; */
+  }
+
+  .challenge-1 p {
+    /* width: 50%; */
+  }
+
+  .challenge-1 .text-container {
     width: 50%;
+  }
+
+  .challenge-1 .text-container p {
+    /* border: 3px solid red; */
+    width: 100%;
   }
 
   /* ----- Challenge #2 ----- */
