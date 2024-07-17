@@ -232,6 +232,10 @@ hr {
   width: 90%;
 }
 
+.challenge-1-image-5 img {
+  border: 1px solid lightgrey;
+}
+
 /* challenge 2 */
 .challenge .image-container:last-child {
   margin-bottom: 16px;
