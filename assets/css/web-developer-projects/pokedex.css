@@ -660,6 +660,12 @@ hr {
   .challenge-2-image-1 {
     max-width: 736px;
   }
+
+  /* ----- Challenge #3 ----- */
+  .challenge-3 .project-subsection-section, .challenge-3 h3, .challenge-3-p, .challenge-3-image-1, .challenge-3-image-2, .challenge-3-image-3 {
+    grid-column-end: 3;
+    grid-column-start: 1;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
