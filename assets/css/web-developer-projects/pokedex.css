@@ -771,4 +771,35 @@ hr {
     max-width: 600px;
     width: 53%;
   }
+
+  /* ----- Challenge #3 ----- */
+  .challenge-3.project-subsection {
+    row-gap: 36px;
+  }
+
+  /* .project-subsection-section {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  } */
+
+  .challenge-3-p, .challenge-3-image-1, .challenge-3-image-3, .challenge-3-image-3 {
+    grid-column-end: unset;
+    grid-column-start: unset;
+    margin: 0;
+    max-width: unset;
+  }
+
+  .challenge-3 .challenge-3-p {
+    margin: 0;
+    text-align: left;
+    width: 40%;
+  }
+
+  .challenge-3 .image-container {
+    margin: 0;
+    max-width: 600px;
+    width: 53%;
+  }
 }
+
