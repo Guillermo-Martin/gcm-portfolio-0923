@@ -681,6 +681,11 @@ hr {
     width: 100%;
   }
 
+  .challenge-1 .text-container p:first-child {
+    /* border: 3px solid red; */
+    margin-bottom: 16px;
+  }
+
   .challenges-section .project-subsection-section {
     margin-bottom: 0;
   }
