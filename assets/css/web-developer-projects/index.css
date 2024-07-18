@@ -17,6 +17,11 @@
 	width: 100%;
 }
 
+/* Pokedex image */
+.pokedex-img {
+  border: 1px solid lightgrey;
+}
+
 /* Text container */
 .project-description {
   margin-bottom: 24px;
@@ -24,6 +29,10 @@
 
 .technology {
   margin-bottom: 32px;
+}
+
+.technology span {
+  font-weight: 600;
 }
 
 .project-links {
