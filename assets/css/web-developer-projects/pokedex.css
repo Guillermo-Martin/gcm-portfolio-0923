@@ -1,7 +1,6 @@
 .learn-more-page {
   padding-left: 0;
   padding-right: 0;
-  /* background-color: red; */
 }
 
 .section-container {
@@ -116,17 +115,7 @@ hr {
   width: 100%;
 }
 
-/* ---------- Project overview section ---------- */
-/* ----- Improvement opportunities ----- */
-/* .improvement-opportunities {
-  margin-bottom: var(--block-sm);
-}
-
-.improvement-opportunities p:nth-child(2) {
-  margin-bottom: 20px;
-} */
-
-/* ----- Pain points ----- */
+/* ---------- First steps ---------- */
 .pain-points hr {
   margin-bottom: var(--block-lg);
   margin-top: var(--block-lg);
@@ -146,64 +135,22 @@ hr {
   width: 100%;
 }
 
+/* ----- Figma iFrame ----- */
 .figma-container iframe {
   height: 100%;
   min-height: 500px;
   width: 100%;
 }
 
-/* ---------- First steps section ---------- */
 .first-steps .desktop-arrow {
   display: none;
 }
-
-/* ---------- Tackling the problems section ---------- */
-/* .tackling-the-problem {
-  margin-bottom: var(--block-lg);
-} */
-
-/* .tackling-the-problem .text-container {
-  margin-bottom: var(--block-sm);
-} */
-
-/* paper wireframes */
-/* #overall-design .image-container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-bottom: 0;
-} */
-
-/* .paper-wireframes {
-  max-width: 300px;
-}
-
-.wireframe-a {
-  margin-bottom: 16px;
-}
-
-.wireframe-b, .wireframe-c {
-  display: none;
-}
-
-#sequential-questions .image-container, #blank-password .image-container, #copy-feature .image-container {
-  margin: 0 auto;
-  margin-bottom: 32px;
-  max-width: 600px;
-} */
 
 
 /* ---------- Challenges section ---------- */
 .challenges-section .subheader {
   margin-bottom: 32px;
 }
-/* 
-.challenge ol {
-  list-style-type: decimal;
-  margin-bottom: 16px;
-  padding-left: 32px;
-} */
 
 .challenges-section .project-subsection-section {
   margin-bottom: 40px;
@@ -221,7 +168,7 @@ hr {
   margin-bottom: 0;
 }
 
-/* ----- challenge 1 ----- */
+/* ----- Challenge 1 ----- */
 .challenge-1 .image-container.challenge-1-image-1 img {
   border: 1px solid lightgrey;
 }
@@ -240,9 +187,8 @@ hr {
   border: 1px solid lightgrey;
 }
 
-/* challenge 2 */
+/* ----- Challenge 2 ----- */
 .console-error {
-  /* border: 3px solid red; */
   font-style: italic;
   font-weight: 500;
 }
@@ -321,7 +267,7 @@ hr {
     text-align: center;
   }
 
-  /* challenge 1 */
+  /* ----- Challenge 1 ----- */
   .project-subsection.challenge-1 p {
     margin: 0;
     margin-bottom: 16px;
@@ -337,16 +283,12 @@ hr {
     max-width: 600px;
   }
 
-  .challenges-section ol {
-    margin-bottom: 16px;
-  }
-
   .challenge-1-image-2 {
     margin: 0 auto;
     max-width: 700px;
   }
 
-  /* challenge 2 */
+  /* ----- Challenge 2 ----- */
   .challenge-2 .challenge-2-p {
     margin-bottom: 16px;
   }
@@ -442,7 +384,6 @@ hr {
   }
 
   .hero-section .image-container {
-    /* border: 3px solid red; */
     max-width: unset;
     width: 90%;
   }
@@ -458,38 +399,9 @@ hr {
 
   .project-overview-section .project-subsection {
     margin-bottom: 0;
-  } 
-
-  /* ---------- Tackling the problems section ---------- */
-  /* wireframes */
-  .tackling-the-problem .image-container {
-    align-items: normal;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-
-  #overall-design .image-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  #overall-design img {
-    height: 100%;
-    margin: 0 auto;
-  }
-
-  .wireframe-a {
-    margin-bottom: 0;
   }
 }
 
-/* @media only screen and (min-width: 848px) {
-  hero section
-  .hero-section .image-container {
-    max-width: 588px;
-  }
-} */
 
 @media only screen and (min-width: 992px) {
   /* table of contents */
@@ -533,12 +445,6 @@ hr {
     margin-bottom: var(--block-sm);
   }
 
-
-  /* ---------- First steps ---------- */
-  /* ----- Improvement opportunities ----- */
-  /* .improvement-opportunities {
-    margin-bottom: var(--block-lg);
-  } */
 
   /* ---------- First steps section ---------- */
   .first-steps .desktop-arrow {
@@ -586,48 +492,6 @@ hr {
     width: 100%;
   }
 
-  
-  /* ---------- Tackling the problems section ---------- */
-  /* .tackling-the-problem .text-container {
-    margin-bottom: var(--block-sm);
-  }
-
-  /* paper wireframes */
-  #overall-design .image-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  
-  .wireframe-b, .wireframe-c {
-    display: block;
-  }
-
-  #overall-design img {
-    height: 100%;
-    width: 90%;
-  }
-  
-  /* non-paperwireframes sections */
-  /* #sequential-questions, #blank-password, #copy-feature {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #sequential-questions h3,  #blank-password h3, #copy-feature h3,
-  #sequential-questions p,  #blank-password p, #copy-feature p {
-    text-align: left;
-  }
-
-  #sequential-questions .text-container, #blank-password .text-container, #copy-feature .text-container {
-    margin-bottom: 0;
-    width: 40%;
-  }
-
-  #sequential-questions .image-container, #blank-password .image-container, #copy-feature .image-container {
-    margin: 0;
-    width: 53%;
-  }
-   */
   /* ---------- Challenges ---------- */
   /* ----- Challenge #1 ----- */
   .challenge {
@@ -645,14 +509,7 @@ hr {
     text-align: left;
   }
 
-  /* .challenge-1 ol {
-    margin: 0 auto;
-    margin-bottom: 16px;
-    max-width: 500px;
-  } */
-
   .challenge-1 .image-container {
-    /* border: 3px solid red; */
     max-width: 700px;
     width: 100%;
   }
@@ -707,14 +564,12 @@ hr {
   }
 
   .challenge-1 .image-container.challenge-1-image-1 {
-    /* border: 3px solid red; */
     margin: 0 auto;
     max-width: 880px;
     width: 80%;
   }
 
   .challenge-1 .project-subsection-section p, .challenge-1 .text-container {
-    /* border: 3px solid red; */
     width: 40%;
   }
 
@@ -723,7 +578,6 @@ hr {
   }
 
   .challenge-1 .text-container p:first-child {
-    /* border: 3px solid red; */
     margin-bottom: 16px;
   }
 
@@ -731,20 +585,8 @@ hr {
     margin-bottom: 0;
   }
 
-  /* .challenge-1 .project-subsection-section {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  } */
-
   .challenge-1 .image-container {
-    /* border: 3px solid red; */
     margin: 0;
-  }
-  
-  
-
-  .challenge-1 .image-container {
     max-width: 600px;
     width: 53%;
   }
@@ -783,12 +625,6 @@ hr {
     row-gap: 36px;
   }
 
-  /* .project-subsection-section {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  } */
-
   .challenge-3-p, .challenge-3-image-1, .challenge-3-image-3, .challenge-3-image-3 {
     grid-column-end: unset;
     grid-column-start: unset;
@@ -808,4 +644,3 @@ hr {
     width: 53%;
   }
 }
-
