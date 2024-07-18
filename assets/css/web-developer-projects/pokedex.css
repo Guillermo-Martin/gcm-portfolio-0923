@@ -247,6 +247,14 @@ hr {
   margin-bottom: 16px;
 }
 
+/* ----- Challenge #3 ----- */
+.challenge-3 img {
+  border: 1px solid lightgrey;
+}
+
+.challenge-3-image-3 img {
+  border: none;
+}
 
 /* ---------- Learnings and future section ---------- */
 /* ----- Learnings ----- */

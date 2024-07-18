@@ -339,27 +339,27 @@
         <hr>
 
         <!-- ----- Challenge #3 ----- -->
-        <div class="project-subsection challenge challenge-2">
+        <div class="project-subsection challenge challenge-3">
           <h3>Challenge #3 - An edge case: Pokémon with punctuation in the name</h3>
 
           <div class="project-subsection-section">
-            <p class="challenge-2-p">I discovered this issue purely by accident.  As I was searching for Pokémon, I decided to mix up my search and search for “Mr. Mime.”  When I did, no results came up, which was unusual, given that was the name of that Pokémon.</p>
-            <div class="image-container challenge-2-image-1">
+            <p class="challenge-3-p">I discovered this issue purely by accident.  As I was searching for Pokémon, I decided to mix up my search and search for “Mr. Mime.”  When I did, no results came up, which was unusual, given that was the name of that Pokémon.</p>
+            <div class="image-container">
               <img src="/assets/images/pokedex/mr-mime-1.gif" alt="Animated GIF showing no results when a 'Mr. Mime' was searched for">
             </div>
           </div>
 
           <div class="project-subsection-section">
-            <p class="challenge-2-p">I did some research and found that the name used when making an API call used a hyphen instead of a period.  So, in order get that particular result, “Mr. Mime” would have to be “mr-mime.”  While trying to resolve this edge case, I found that, in general, Pokémon with some sort of punctuation in their name didn’t produce any results when searched for.</p>
-            <div class="image-container challenge-2-image-1">
+            <p class="challenge-3-p">I did some research and found that the name used when making an API call used a hyphen instead of a period.  So, in order get that particular result, “Mr. Mime” would have to be “mr-mime.”  While trying to resolve this edge case, I found that, in general, Pokémon with some sort of punctuation in their name didn’t produce any results when searched for.</p>
+            <div class="image-container">
               <img src="/assets/images/pokedex/mr-mime-2.gif" alt="Animated GIF showing 'mr-mime' results">
             </div>
           </div>
          
           <!-- If statement (before) -->
           <div class="project-subsection-section">
-            <p class="challenge-2-p">To resolve this, I searched for Pokémon names with some sort of punctuation in their name.  I created a switch statement in order to evaluate different variations of a Pokémon name users may search for.  If any of those variations came up, the input used to make an API request would change to an input that would return a result.  In this case, any variations of “Mr. Mime” would be changed to “mr-mime.”</p>
-            <div class="image-container challenge-2-image-2">
+            <p class="challenge-3-p">To resolve this, I searched for Pokémon names with some sort of punctuation in their name.  I created a switch statement in order to evaluate different variations of a Pokémon name users may search for.  If any of those variations came up, the input used to make an API request would change to an input that would return a result.  In this case, any variations of “Mr. Mime” would be changed to “mr-mime.”</p>
+            <div class="image-container challenge-3-image-3">
               <img src="/assets/images/pokedex/switch-statement.png" alt="JavaScript code showing a switch statement">
             </div>
           </div>
