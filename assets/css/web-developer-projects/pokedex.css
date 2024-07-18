@@ -651,6 +651,12 @@ hr {
     max-width: 500px;
   } */
 
+  .challenge-1 .image-container {
+    /* border: 3px solid red; */
+    max-width: 700px;
+    width: 100%;
+  }
+
   .challenge-1-image-2 {
     width: 100%;
   }
