@@ -221,7 +221,11 @@ hr {
   margin-bottom: 0;
 }
 
-/* challenge 1 */
+/* ----- challenge 1 ----- */
+.challenge-1 .image-container.challenge-1-image-1 img {
+  border: 1px solid lightgrey;
+}
+
 .project-subsection.challenge-1 p {
   text-align: left;
 }
@@ -701,10 +705,6 @@ hr {
     margin: 0 auto;
     max-width: 880px;
     width: 80%;
-  }
-
-  .challenge-1 .image-container.challenge-1-image-1 img {
-    border: 1px solid lightgrey;
   }
 
   .challenge-1 .project-subsection-section p, .challenge-1 .text-container {
