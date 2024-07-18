@@ -142,12 +142,12 @@ hr {
 }
 
 .pain-points .image-container {
-  border: 1px solid lightgray;
   margin-bottom: 0;
   width: 100%;
 }
 
 .pain-points img {
+  border: 1px solid lightgray;
   width: 100%;
 }
 
