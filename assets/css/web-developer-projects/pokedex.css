@@ -237,6 +237,12 @@ hr {
 }
 
 /* challenge 2 */
+.console-error {
+  /* border: 3px solid red; */
+  font-style: italic;
+  font-weight: 500;
+}
+
 .challenge .image-container:last-child {
   margin-bottom: 16px;
 }
