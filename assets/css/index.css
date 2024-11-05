@@ -8,5 +8,16 @@ body {
 }
 
 .social-links {
-	
+	/* border: 3px solid red; */
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 36px;
+	/* width: ; */
+}
+
+.social-links svg {
+	/* border: 3px solid blue; */
+	width: 40px;
+	height: 40px;
 }
