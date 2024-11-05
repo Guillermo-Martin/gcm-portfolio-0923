@@ -316,25 +316,33 @@ li {
 
 @media only screen and (min-width: 1200px) {
   :root {
-    --fs-h1: 80px;
+    /* --fs-h1: 80px; */
+    --fs-h1: 96px;
     --fs-h2: 68px;
 		--fs-h3: 44px;
 		--fs-h4: 36px;
+		--fs-subheader: 48px;
   }
 
-	h3 {
+	.subheader {
 		/* border: 3px solid red; */
+		font-size: var(--fs-subheader);
+		font-weight: 300;
+	}
+
+	/* h3 {
+		border: 3px solid red;
 		margin-bottom: 24px;
-	}
+	} */
 
-	h4 {
+	/* h4 {
 		margin-bottom: 20px;
-	}
+	} */
 
-  .section-container {
+  /* .section-container {
 		max-width: 1200px;
 		margin: 0 auto;
-	}
+	} */
 }
 
 
