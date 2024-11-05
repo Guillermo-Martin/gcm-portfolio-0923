@@ -7,6 +7,8 @@ body {
 	max-width: 1220px;
 }
 
+
+/* ---------- Social links ---------- */
 .social-links {
 	/* border: 3px solid red; */
 	display: flex;
@@ -20,4 +22,20 @@ body {
 	/* border: 3px solid blue; */
 	width: 40px;
 	height: 40px;
+}
+
+/* ---------- Portfolio links ---------- */
+.portfolio-links {
+	/* border: 3px solid red; */
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.portfolio-links a {
+	font-size: 32px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #000;
 }
