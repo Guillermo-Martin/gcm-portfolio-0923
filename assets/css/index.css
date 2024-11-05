@@ -1,10 +1,19 @@
 body {
-	background-color: pink;
+	background-color: #fff5eb;
+	position: relative;
 }
 
 .homepage-main-content {
-	background-color: green;
+	/* background-color: green; */
 	max-width: 1220px;
+	left: 50%;
+	margin-bottom: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, 50%);
+	width: 100%;
+
 }
 
 /* ---------- Header and subheader ---------- */
