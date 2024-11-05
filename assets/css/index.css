@@ -60,3 +60,8 @@ h1 {
 	text-decoration: none;
 	color: #000;
 }
+
+.portfolio-link-info {
+	font-style: italic;
+	font-size: 20px;
+}
