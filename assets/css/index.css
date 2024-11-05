@@ -7,6 +7,18 @@ body {
 	max-width: 1220px;
 }
 
+/* ---------- Header and subheader ---------- */
+h1 {
+	margin-bottom: 0;
+}
+
+.subheader {
+	margin-bottom: 20px;
+}
+
+.homepage-hero-text {
+	margin-bottom: 80px;
+}
 
 /* ---------- Social links ---------- */
 .social-links {
