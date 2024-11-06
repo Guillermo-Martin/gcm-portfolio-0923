@@ -1,0 +1,100 @@
+body {
+	align-items: center;
+	display: flex;
+	justify-content: start;
+	margin: 0;
+  background-color: skyblue;
+}
+
+.homepage-main-content {
+	margin: 0 auto;
+	max-width: 1220px;
+}
+
+/* ---------- Header and subheader ---------- */
+h1 {
+	margin-bottom: 0;
+}
+
+.subheader {
+	margin-bottom: 20px;
+}
+
+.homepage-hero-text {
+	margin-bottom: 80px;
+}
+
+/* ---------- Social links ---------- */
+.social-links {
+	align-items: center;
+	display: flex;
+	gap: 36px;
+	justify-content: start;
+}
+
+.social-links svg {
+	height: 40px;
+	width: 40px;
+}
+
+/* ---------- Portfolio links ---------- */
+.portfolio-links {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: fit-content;
+}
+
+.portfolio-links a {
+	color: #000;
+	font-size: 32px;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.portfolio-links a:hover {
+	color: #314788;
+}
+
+.portfolio-link-info {
+	display: inline-block;
+	font-size: 20px;
+	font-style: italic;
+	margin-left: 48px;
+	opacity: 0;
+}
+
+/* media queries */
+@media screen and (max-width: 992px) {
+	.portfolio-links a {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.portfolio-links a {
+		font-size: 20px;
+	}
+
+	.social-links svg {
+		height: 32px;
+		width: 32px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.portfolio-link-info {
+		display: none;
+	}
+
+	.social-links svg {
+		height: 28px;
+		width: 28px;
+	}
+}
+
+@media screen and (max-width: 418px) {
+	h1 {
+		margin-bottom: 8px;
+	}
+}
