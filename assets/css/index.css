@@ -11,7 +11,6 @@ body {
 .homepage-main-content {
 	margin: 0 auto;
 	max-width: 1220px;
-	padding: 0 30px;
 }
 
 /* ---------- Header and subheader ---------- */
@@ -65,4 +64,77 @@ h1 {
 	font-style: italic;
 	margin-left: 48px;
 	opacity: 0;
+}
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 0 8%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    padding: 0 4%;
+  }
+
+	h1 {
+		font-size: 80px;
+	}
+
+	.subheader {
+		font-size: 36px;
+	}
+
+	.portfolio-links a {
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	h1 {
+		font-size: 60px;
+	}
+
+	.subheader {
+		font-size: 28px;
+	}
+
+	.portfolio-links a {
+		font-size: 20px;
+	}
+
+	.social-links svg {
+		height: 32px;
+		width: 32px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	body {
+    padding: 0 24px;
+  }
+
+	h1 {
+		font-size: 48px;
+	}
+
+	.subheader {
+		font-size: 24px;
+	}
+
+	.portfolio-link-info {
+		display: none;
+	}
+
+	.social-links svg {
+		height: 28px;
+		width: 28px;
+	}
+}
+
+@media screen and (max-width: 418px) {
+	h1 {
+		margin-bottom: 8px;
+	}
 }
