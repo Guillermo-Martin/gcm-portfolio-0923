@@ -1,26 +1,18 @@
 body {
+	align-items: center;
 	background-color: #fff5eb;
-	/* position: relative; */
 	display: flex;
 	justify-content: start;
-	align-items: center;
-	min-height: 100vh;
 	margin: 0;
+	min-height: 100vh;
 	padding: 0 16%;
 }
 
-/* .homepage-main-content { */
-	/* background-color: green; */
-	/* max-width: 1220px;
-	left: 50%;
-	margin-bottom: 0;
-	padding: 0;
-	position: absolute;
-	top: 50%;
-	transform: translate(-50%, 50%);
-	width: 100%;
-	border: 3px solid red; */
-/* } */
+.homepage-main-content {
+	margin: 0 auto;
+	max-width: 1220px;
+	padding: 0 30px;
+}
 
 /* ---------- Header and subheader ---------- */
 h1 {
@@ -37,34 +29,30 @@ h1 {
 
 /* ---------- Social links ---------- */
 .social-links {
-	/* border: 3px solid red; */
-	display: flex;
 	align-items: center;
-	justify-content: start;
+	display: flex;
 	gap: 36px;
-	/* width: ; */
+	justify-content: start;
 }
 
 .social-links svg {
-	/* border: 3px solid blue; */
-	width: 40px;
 	height: 40px;
+	width: 40px;
 }
 
 /* ---------- Portfolio links ---------- */
 .portfolio-links {
-	/* border: 3px solid red; */
-	width: fit-content;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	width: fit-content;
 }
 
 .portfolio-links a {
+	color: #000;
 	font-size: 32px;
 	font-weight: 400;
 	text-decoration: none;
-	color: #000;
 }
 
 .portfolio-links a:hover {
@@ -72,22 +60,9 @@ h1 {
 }
 
 .portfolio-link-info {
-	font-style: italic;
+	display: inline-block;
 	font-size: 20px;
+	font-style: italic;
 	margin-left: 48px;
 	opacity: 0;
-	display: inline-block;
-}
-
-/* ------------ */
-.test-main {
-	
-}
-
-.test-section {
-	/* border: 3px solid red; */
-	max-width: 1220px;
-	padding: 0 30px;
-	margin: 0 auto;
-	background-color: red;
 }
