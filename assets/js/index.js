@@ -34,55 +34,27 @@
 // });
 
 
-// ---------- GSAP ----------
-// gsap animation timeline:
-// when you click on a link, everything fades out except the link you clicked on
-// gsap.to(".links-container", { rotation: 27, x: 100, duration: 5 });
-// loop through and add an event listener to each
-// console.log(projectLinksArr);
-
-// for(let i = 0; i < projectLinksArr.length; i++) {
-//   console.log(projectLinksArr[i]);
-
-//   projectLinksArr[i].addEventListener("click", () => {
-//     alert('you clicked on a link!');
-//   })
-// }
-
-// console.log(projectLinks);
-
-// projectLinks.addEventListener("click", (event) => {
-//   console.log(event.target.dataset.project);
-  
-//   switch (event.target.dataset.project) {
-//     case "web-developer": 
-//       // alert("hello web developer!");
-//       gsap.to(".main-section", {opacity: 0, duration: 1});
-//       gsap.to(".contact-links", {opacity: 0, duration: 1});
-//       gsap.to(".footer", {opacity: 0, duration: 1});
-//       gsap.to(".ux-design", {opacity: 0, duration: 1});
-//       gsap.to(".link-3", {opacity: 0, duration: 1});
-//       gsap.to(".project-links h2", {opacity: 0, duration: 1});
-//       window.location.href = "/web-developer-projects.html"
-//       break;
-//   }
-// })
-
 console.log("connected!");
 
+// ---------- Portfolio links animation ----------
 // get all portfolio links
 const portfolioLinks = document.getElementsByClassName("portfolio-link");
 
-console.log(portfolioLinks);
-
 // loop over them and add an event listener to each
 for(let i = 0; i < portfolioLinks.length; i++) {
-  portfolioLinks[i].addEventListener("mouseover", function(){
-    console.log("you mousedover!");
+  // show additional info on mouseenter
+  portfolioLinks[i].addEventListener("mouseenter", function(){
+    // get the element's id
+    const elementId = portfolioLinks[i].id;
+
+    gsap.to(`.portfolio-link-info.${elementId}`, {x: 8, opacity: 1, duration: 0.2})
   });
 
-  portfolioLinks[i].addEventListener("mouseout", function(){
-    console.log("you mousedOut!");
+  // hide additional info on mouseleave
+  portfolioLinks[i].addEventListener("mouseleave", function(){
+    // get the element's id
+    const elementId = portfolioLinks[i].id;
+
+    gsap.to(`.portfolio-link-info.${elementId}`, {x: 0, opacity: 0, duration: 0.2})
   });
 };
-
