@@ -1,11 +1,17 @@
 body {
 	background-color: #fff5eb;
-	position: relative;
+	/* position: relative; */
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0 16%;
 }
 
-.homepage-main-content {
+/* .homepage-main-content { */
 	/* background-color: green; */
-	max-width: 1220px;
+	/* max-width: 1220px;
 	left: 50%;
 	margin-bottom: 0;
 	padding: 0;
@@ -13,8 +19,8 @@ body {
 	top: 50%;
 	transform: translate(-50%, 50%);
 	width: 100%;
-
-}
+	border: 3px solid red; */
+/* } */
 
 /* ---------- Header and subheader ---------- */
 h1 {
@@ -71,4 +77,17 @@ h1 {
 	margin-left: 48px;
 	opacity: 0;
 	display: inline-block;
+}
+
+/* ------------ */
+.test-main {
+	
+}
+
+.test-section {
+	/* border: 3px solid red; */
+	max-width: 1220px;
+	padding: 0 30px;
+	margin: 0 auto;
+	background-color: red;
 }
