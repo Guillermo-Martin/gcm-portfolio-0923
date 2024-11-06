@@ -1,14 +1,27 @@
 body {
-	align-items: center;
+	/* align-items: center;
 	display: flex;
-	justify-content: start;
+	justify-content: start; */
 	margin: 0;
+  /* background-color: skyblue; */
+  /* padding-right: 0; */
+  display: grid;
+  padding-right: 0;
+  padding-left: 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* .homepage-main-content {
+	margin: 0 auto;
+	max-width: 1220px;
+} */
+
+.sidenav {
   background-color: skyblue;
 }
 
-.homepage-main-content {
-	margin: 0 auto;
-	max-width: 1220px;
+.main-content {
+  background-color: orange;
 }
 
 /* ---------- Header and subheader ---------- */
