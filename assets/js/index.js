@@ -1,37 +1,37 @@
-// targeted elements
-let body = document.querySelector("body");
-let mobileNavMenu = document.getElementById("mobile-nav-menu");
-let hamburgerIcon = document.getElementById("hamburger-icon");
-let closeIcon = document.getElementById("close-icon");
+// // targeted elements
+// let body = document.querySelector("body");
+// let mobileNavMenu = document.getElementById("mobile-nav-menu");
+// let hamburgerIcon = document.getElementById("hamburger-icon");
+// let closeIcon = document.getElementById("close-icon");
 
-// elements for GSAP
-// let projectLinksArr = document.querySelectorAll(".project-link");
-let projectLinks = document.querySelector(".links-container-links.project-links ul");
+// // elements for GSAP
+// // let projectLinksArr = document.querySelectorAll(".project-link");
+// let projectLinks = document.querySelector(".links-container-links.project-links ul");
 
-// ---------- Mobile hamburger menu functionality ----------
-hamburgerIcon.addEventListener("click", () => {
-  // show menu
-  mobileNavMenu.classList.add("show");
+// // ---------- Mobile hamburger menu functionality ----------
+// hamburgerIcon.addEventListener("click", () => {
+//   // show menu
+//   mobileNavMenu.classList.add("show");
 
-  // hide hamburger icon, show close icon
-  hamburgerIcon.classList.add("hide");
-  closeIcon.classList.add("show");
+//   // hide hamburger icon, show close icon
+//   hamburgerIcon.classList.add("hide");
+//   closeIcon.classList.add("show");
 
-  // prevent user from scrolling when the menu is up
-  body.style.overflow = "hidden";
-});
+//   // prevent user from scrolling when the menu is up
+//   body.style.overflow = "hidden";
+// });
 
-closeIcon.addEventListener("click", () => {
-  // hide menu
-  mobileNavMenu.classList.remove("show");
+// closeIcon.addEventListener("click", () => {
+//   // hide menu
+//   mobileNavMenu.classList.remove("show");
 
-  // hide close icon, show hamburger icon
-  closeIcon.classList.remove("show");
-  hamburgerIcon.classList.remove("hide");
+//   // hide close icon, show hamburger icon
+//   closeIcon.classList.remove("show");
+//   hamburgerIcon.classList.remove("hide");
 
-  // resume scrolling when menu is hidden
-  body.style.overflow = "scroll";
-});
+//   // resume scrolling when menu is hidden
+//   body.style.overflow = "scroll";
+// });
 
 
 // ---------- GSAP ----------
@@ -67,3 +67,22 @@ closeIcon.addEventListener("click", () => {
 //       break;
 //   }
 // })
+
+console.log("connected!");
+
+// get all portfolio links
+const portfolioLinks = document.getElementsByClassName("portfolio-link");
+
+console.log(portfolioLinks);
+
+// loop over them and add an event listener to each
+for(let i = 0; i < portfolioLinks.length; i++) {
+  portfolioLinks[i].addEventListener("mouseover", function(){
+    console.log("you mousedover!");
+  });
+
+  portfolioLinks[i].addEventListener("mouseout", function(){
+    console.log("you mousedOut!");
+  });
+};
+

@@ -54,6 +54,12 @@ h1 {
 	gap: 20px;
 }
 
+.portfolio-link-arrow {
+	margin-right: 12px;
+	display: none;
+	/* opacity: 0; */
+}
+
 .portfolio-links a {
 	font-size: 32px;
 	font-weight: 400;
@@ -61,7 +67,22 @@ h1 {
 	color: #000;
 }
 
+.portfolio-links a:hover .portfolio-link-arrow {
+	/* display: inline-block; */
+	/* width: 100%; */
+	/* opacity: 1; */
+}
+
+
+
 .portfolio-link-info {
 	font-style: italic;
 	font-size: 20px;
+	margin-left: 48px;
+}
+
+li:hover .portfolio-link-info {
+	opacity: 1;
+	/* width: 100%; */
+	/* font-size: 90px; */
 }
