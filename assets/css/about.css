@@ -16,11 +16,7 @@ body {
   grid-template-rows: 1fr 2fr;
 }
 
-.main-content {
-  background-color: orange;
-  width: 100%;
-  margin-left: 100%;
-}
+
 
 /* ---------- Navbar ---------- */
 .navbar {
@@ -71,6 +67,28 @@ h1 {
 
 
 /* ---------- Main content ---------- */
+.main-content {
+  background-color: orange;
+  width: 100%;
+  margin-left: 100%;
+}
+
+.main-content-section {
+  padding: 108px;
+}
+
+.image-container {
+  margin-bottom: 28px;
+}
+
+.section-image {
+  width: 100%;
+}
+
+
+
+
+
 
 /* media queries */
 @media screen and (max-width: 992px) {
