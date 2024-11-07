@@ -33,12 +33,12 @@ h1 {
 	margin-bottom: 20px;
 }
 
-.homepage-hero-text {
+/* .homepage-hero-text {
 	margin-bottom: 80px;
-}
+} */
 
 /* ---------- Social links ---------- */
-.social-links {
+/* .social-links {
 	align-items: center;
 	display: flex;
 	gap: 36px;
@@ -48,24 +48,24 @@ h1 {
 .social-links svg {
 	height: 40px;
 	width: 40px;
-}
+} */
 
 /* ---------- Portfolio links ---------- */
-.portfolio-links {
+.table-of-contents {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 	width: fit-content;
 }
 
-.portfolio-links a {
+.table-of-contents a {
 	color: #000;
 	font-size: 32px;
 	font-weight: 400;
 	text-decoration: none;
 }
 
-.portfolio-links a:hover {
+.table-of-contents a:hover {
 	color: #314788;
 }
 
@@ -79,13 +79,13 @@ h1 {
 
 /* media queries */
 @media screen and (max-width: 992px) {
-	.portfolio-links a {
+	.table-of-contents a {
 		font-size: 28px;
 	}
 }
 
 @media screen and (max-width: 767px) {
-	.portfolio-links a {
+	.table-of-contents a {
 		font-size: 20px;
 	}
 
