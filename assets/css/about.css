@@ -23,7 +23,8 @@ body {
   justify-content: space-between;
   position: fixed;
   height: 100%;
-  width: 50%;
+  width: 34%;
+  padding-left: 16%;
 }
 
 .main-content {
