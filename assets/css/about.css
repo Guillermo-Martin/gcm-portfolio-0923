@@ -18,11 +18,21 @@ body {
 
 .sidenav {
   background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  height: 100%;
+  width: 50%;
 }
 
 .main-content {
   background-color: orange;
+  width: 100%;
+  margin-left: 100%;
 }
+
+/* ---------- Navbar ---------- */
 
 /* ---------- Header and subheader ---------- */
 h1 {
@@ -50,7 +60,7 @@ h1 {
 	width: 40px;
 } */
 
-/* ---------- Portfolio links ---------- */
+/* ---------- Table of contents ---------- */
 .table-of-contents {
 	display: flex;
 	flex-direction: column;
@@ -69,13 +79,13 @@ h1 {
 	color: #314788;
 }
 
-.portfolio-link-info {
+/* .portfolio-link-info {
 	display: inline-block;
 	font-size: 20px;
 	font-style: italic;
 	margin-left: 48px;
 	opacity: 0;
-}
+} */
 
 /* media queries */
 @media screen and (max-width: 992px) {
