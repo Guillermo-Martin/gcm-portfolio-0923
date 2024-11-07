@@ -75,7 +75,12 @@ h1 {
 
 .main-content-section {
   padding: 108px;
+  padding-bottom: 0;
 }
+
+.main-content-section:last-child {
+  padding-bottom: 108px;
+} 
 
 .image-container {
   margin-bottom: 28px;
