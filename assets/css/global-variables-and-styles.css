@@ -1,9 +1,11 @@
 :root {
 	--fs-h1: 96px;
-	--fs-h2: 68px;
+	/* --fs-h2: 68px; */
+	--fs-h2: 48px;
 	--fs-h3: 44px;
 	--fs-h4: 36px;
 	--fs-subheader: 48px;
+	--fs-body: 20px;
 }
 
 body {
@@ -26,7 +28,7 @@ h1 {
 
 h2 {
 	font-size: var(--fs-h2);
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.2;
 	margin-bottom: 32px;
 }
@@ -47,7 +49,7 @@ h4 {
 
 p {
   font-size: var(--fs-body);
-	line-height: 1.5;
+	line-height: 1.4;
 	margin-bottom: 20px;
 }
 
