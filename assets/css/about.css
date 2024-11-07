@@ -1,26 +1,14 @@
 body {
-	/* align-items: center;
-	display: flex;
-	justify-content: start; */
 	margin: 0;
-  /* background-color: skyblue; */
-  /* padding-right: 0; */
   display: grid;
   padding-right: 0;
   padding-left: 0;
   grid-template-columns: 1fr 1fr;
 }
 
-/* .homepage-main-content {
-	margin: 0 auto;
-	max-width: 1220px;
-} */
-
 .sidenav {
   background-color: skyblue;
   display: grid;
-  /* flex-direction: column;
-  justify-content: space-between; */
   position: fixed;
   height: 100%;
   width: 34%;
@@ -44,7 +32,6 @@ body {
   align-items: center;
   justify-content: start;
   gap: 32px;
-  /* padding-top: 20px; */
 }
 
 .navbar a {
@@ -62,27 +49,6 @@ h1 {
 	margin-bottom: 20px;
 
 }
-
-/* .subheader {
-	margin-bottom: 20px;
-} */
-
-/* .homepage-hero-text {
-	margin-bottom: 80px;
-} */
-
-/* ---------- Social links ---------- */
-/* .social-links {
-	align-items: center;
-	display: flex;
-	gap: 36px;
-	justify-content: start;
-}
-
-.social-links svg {
-	height: 40px;
-	width: 40px;
-} */
 
 /* ---------- Table of contents ---------- */
 .table-of-contents {
@@ -103,13 +69,8 @@ h1 {
 	color: #314788;
 }
 
-/* .portfolio-link-info {
-	display: inline-block;
-	font-size: 20px;
-	font-style: italic;
-	margin-left: 48px;
-	opacity: 0;
-} */
+
+/* ---------- Main content ---------- */
 
 /* media queries */
 @media screen and (max-width: 992px) {
