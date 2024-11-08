@@ -18,14 +18,17 @@ for(let i = 0; i < tocLinkArr.length; i++) {
     // when user clicks on the link, scroll to that section
     gsap.to(window, { duration: 1, scrollTo: `#${sectionId}` });
   });
+
+  // add the scrollTrigger animation
 };
 
 // scrolltrigger animations
-gsap.to(".sidenav", {
+gsap.to(".table-of-contents-link[data-section='experience']", {
   scrollTrigger: {
     trigger: "#experience",
     start: "top 35%",
-    markers: true
-  },
-  backgroundColor: "red",
+    end: "bottom 50%",
+    markers: true,
+    toggleClass: {targets: ".table-of-contents-link[data-section='experience']", className: "active"}
+  }
 })

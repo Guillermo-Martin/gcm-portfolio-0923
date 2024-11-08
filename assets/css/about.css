@@ -66,6 +66,10 @@ h1 {
   transition: all 0.2s;
 }
 
+.table-of-contents-link.active {
+  color: #314788;
+}
+
 .table-of-contents-link:hover {
   color: #314788;
 }
