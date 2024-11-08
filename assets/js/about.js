@@ -1,7 +1,7 @@
 console.log("connected!!!");
 
 // register scrollToPlugin
-gsap.registerPlugin(ScrollToPlugin);
+gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 // gsap.to(window, { duration: 2, scrollTo: 400 });
 
@@ -19,3 +19,13 @@ for(let i = 0; i < tocLinkArr.length; i++) {
     gsap.to(window, { duration: 1, scrollTo: `#${sectionId}` });
   });
 };
+
+// scrolltrigger animations
+gsap.to(".sidenav", {
+  scrollTrigger: {
+    trigger: "#experience",
+    start: "top 35%",
+    markers: true
+  },
+  backgroundColor: "red",
+})
