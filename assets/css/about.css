@@ -129,12 +129,26 @@ h1 {
 
   body {
     grid-template-columns: 1fr;
+    position: relative;
   }
 
   .sidenav {
     display: block;
     height: auto;
-    position: static;
+    /* position: static; */
+    width: 100%;
+  }
+
+  .sidenav-content {
+    margin-top: 64px;
+  }
+
+  .navbar {
+    position: absolute;
+  }
+
+  .table-of-contents {
+    flex-direction: row;
   }
 
   .main-content {
