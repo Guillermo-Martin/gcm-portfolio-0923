@@ -133,6 +133,7 @@ h1 {
   }
 
   .sidenav {
+    background-color: #fff5eb;
     display: block;
     height: auto;
     /* position: static; */
@@ -140,7 +141,8 @@ h1 {
   }
 
   .sidenav-content {
-    margin-top: 28px;
+    padding-bottom: 48px;
+    padding-top: 28px;
   }
 
   .navbar {
@@ -162,6 +164,7 @@ h1 {
 
   .main-content {
     margin-left: 0;
+    padding-top: 200px;
   }
 }
 
