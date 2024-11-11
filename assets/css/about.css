@@ -129,7 +129,7 @@ h1 {
 
   body {
     grid-template-columns: 1fr;
-    position: relative;
+    /* position: relative; */
   }
 
   .sidenav {
@@ -145,6 +145,11 @@ h1 {
 
   .navbar {
     position: absolute;
+    right: 12.2%;
+  }
+
+  .hamburger-icon {
+    width: 40px;
   }
 
   .table-of-contents {
