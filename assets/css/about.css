@@ -140,12 +140,16 @@ h1 {
   }
 
   .sidenav-content {
-    margin-top: 64px;
+    margin-top: 28px;
   }
 
   .navbar {
     position: absolute;
-    right: 12.2%;
+    right: 12.1%;
+  }
+
+  .navbar ul {
+    display: none;
   }
 
   .hamburger-icon {
