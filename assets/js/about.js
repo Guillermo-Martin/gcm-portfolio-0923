@@ -30,6 +30,7 @@ for(let i = 0; i < tocLinkArr.length; i++) {
 };
 
 // ---------- Hamburger menu functionality ----------
+let body = document.querySelector("body");
 let hamburgerIcon = document.querySelector(".hamburger-icon");
 let closeIcon = document.querySelector(".close-icon");
 let mobileNavMenu = document.getElementById("mobile-nav-menu");
@@ -44,6 +45,9 @@ hamburgerIcon.addEventListener("click", function() {
 
   // show mobile nav
   mobileNavMenu.classList.remove("hide");
+
+  // prevent user from scrolling when the menu is up
+  body.style.overflow = "hidden";
 });
 
 // close icon
@@ -56,4 +60,7 @@ closeIcon.addEventListener("click", function() {
 
   // hide mobile nav
   mobileNavMenu.classList.add("hide");
+
+  // resume scrolling when menu is hidden
+  body.style.overflow = "scroll";
 });
