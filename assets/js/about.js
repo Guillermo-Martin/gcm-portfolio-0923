@@ -28,3 +28,10 @@ for(let i = 0; i < tocLinkArr.length; i++) {
     }
   });
 };
+
+// ---------- Hamburger menu functionality ----------
+let hamburgerIcon = document.querySelector(".hamburger-icon");
+
+hamburgerIcon.addEventListener("click", function() {
+  console.log("you clicked me!");
+});

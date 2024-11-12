@@ -155,10 +155,13 @@ h1 {
   }
 
   /* ---------- Show hamburger menu icon ----------- */
-  .hamburger-icon {
+  .mobile-nav-icon {
     cursor: pointer;
-    display: block;
     width: 40px;
+  }
+
+  .hamburger-icon {
+    display: block;
   }
 
   .sidenav-text-container {
