@@ -134,7 +134,7 @@ h1 {
     background-color: #fff5eb;
     display: block;
     height: auto;
-    padding: 48px 0;
+    padding: 32px 0;
     width: 100%;
   }
 
@@ -156,6 +156,7 @@ h1 {
 
   /* ---------- Show hamburger menu icon ----------- */
   .hamburger-icon {
+    cursor: pointer;
     display: block;
     width: 40px;
   }
