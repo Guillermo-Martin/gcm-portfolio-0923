@@ -41,6 +41,11 @@ body {
   color: #314788;
 }
 
+/* ----- Mobile menu ----- */
+.hamburger-icon {
+  display: none;
+}
+
 /* ---------- Header and subheader ---------- */
 h1 {
 	margin-bottom: 20px;
@@ -160,7 +165,14 @@ h1 {
   }
 
   .hamburger-icon {
+    display: block;
+    /* padding-top: 12px; */
     width: 40px;
+  }
+
+  .sidenav-text-container {
+    position: relative;
+    bottom: 12px;
   }
 
   .table-of-contents {
