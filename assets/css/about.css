@@ -160,20 +160,29 @@ h1 {
     width: 40px;
   }
 
+  /* show hamburger icon */
   .hamburger-icon {
     display: block;
   }
 
+  /* hide hamburger icon */
   .hamburger-icon.hide {
     display: none;
   }
 
+  /* show close icon */
   .close-icon {
     display: block;
   }
 
+  /* hide close icon */
   .close-icon.hide {
     display: none;
+  }
+
+  /* ----- mobile nav ----- */
+  .mobile-nav-menu {
+    background-color: red;
   }
 
 
