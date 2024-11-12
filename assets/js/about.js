@@ -31,7 +31,22 @@ for(let i = 0; i < tocLinkArr.length; i++) {
 
 // ---------- Hamburger menu functionality ----------
 let hamburgerIcon = document.querySelector(".hamburger-icon");
+let closeIcon = document.querySelector(".close-icon");
 
+// hamburger icon
 hamburgerIcon.addEventListener("click", function() {
   console.log("you clicked me!");
+
+  // hide hamburger icon, show close icon
+  hamburgerIcon.classList.add("hide");
+  closeIcon.classList.remove("hide");
+});
+
+// close icon
+closeIcon.addEventListener("click", function() {
+  // alert("you clicked close!");
+
+  // show hamburger icon, hide close icon
+  closeIcon.classList.add("hide");
+  hamburgerIcon.classList.remove("hide");
 });

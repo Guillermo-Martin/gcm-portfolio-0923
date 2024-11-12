@@ -154,7 +154,7 @@ h1 {
     display: none;
   }
 
-  /* ---------- Show hamburger menu icon ----------- */
+  /* ---------- Hamburger menu and close menu icons ----------- */
   .mobile-nav-icon {
     cursor: pointer;
     width: 40px;
@@ -163,6 +163,21 @@ h1 {
   .hamburger-icon {
     display: block;
   }
+
+  .hamburger-icon.hide {
+    display: none;
+  }
+
+  .close-icon {
+    display: block;
+  }
+
+  .close-icon.hide {
+    display: none;
+  }
+
+
+
 
   .sidenav-text-container {
     bottom: 12px;
