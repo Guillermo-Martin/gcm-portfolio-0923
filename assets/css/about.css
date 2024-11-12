@@ -1,47 +1,46 @@
 body {
-	margin: 0;
   display: grid;
-  padding-right: 0;
-  padding-left: 0;
   grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
+/* ---------- Sidenav (large screens only) ---------- */
 .sidenav {
   background-color: skyblue;
   display: grid;
-  position: fixed;
-  height: 100%;
-  width: 34%;
-  padding-left: 16%;
   grid-template-rows: 1fr 2fr;
+  height: 100%;
+  padding-left: 16%;
+  position: fixed;
+  width: 34%;
 }
 
-
-
-/* ---------- Navbar ---------- */
+/* ---------- Top Navbar (large screens only) ---------- */
 .navbar {
   padding-top: 40px;
 }
 
 .navbar ul {
-  display: flex;
   align-items: center;
-  justify-content: start;
+  display: flex;
   gap: 32px;
+  justify-content: start;
 }
 
 .navbar a {
+  color: #000;
   font-size: 24px;
   font-weight: 400;
   text-decoration: none;
-  color: #000;
 }
 
 .navbar a:hover {
   color: #314788;
 }
 
-/* ----- Mobile menu ----- */
+/* ----- Mobile menu (hidden on larger screens) ----- */
 .hamburger-icon {
   display: none;
 }
@@ -49,7 +48,6 @@ body {
 /* ---------- Header and subheader ---------- */
 h1 {
 	margin-bottom: 20px;
-
 }
 
 /* ---------- Table of contents ---------- */
@@ -62,12 +60,12 @@ h1 {
 
 .table-of-contents-link {
   color: #000;
+  cursor: pointer;
   font-size: 32px;
   font-weight: 400;
-  text-decoration: none;
   margin-bottom: 0;
   line-height: 32px;
-  cursor: pointer;
+  text-decoration: none;
   transition: all 0.2s;
 }
 
@@ -83,8 +81,8 @@ h1 {
 /* ---------- Main content ---------- */
 .main-content {
   background-color: orange;
-  width: 100%;
   margin-left: 100%;
+  width: 100%;
 }
 
 .main-content-section {
@@ -109,7 +107,7 @@ h1 {
 
 
 
-/* media queries */
+/* ---------- media queries ---------- */
 @media screen and (max-width: 1200px) {
   .sidenav {
     padding-left: 8%;
@@ -127,52 +125,44 @@ h1 {
 }
 
 @media screen and (max-width: 992px) {
-	/* .table-of-contents a {
-		font-size: 28px;
-    border: 3px solid red;
-	} */
-
   body {
     grid-template-columns: 1fr;
-    /* position: relative; */
   }
 
+  /* ---------- Sidenav (now on top for mobile) ---------- */
   .sidenav {
     background-color: #fff5eb;
     display: block;
     height: auto;
-    /* position: static; */
-    width: 100%;
     padding: 48px 0;
+    width: 100%;
   }
 
   .sidenav-content {
-    padding-bottom: 48px;
-    padding-top: 28px;
-    padding: 0 54px;
+    align-items: start;
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    padding: 0 54px;
   }
 
+  /* ---------- Hide top nav ---------- */
   .navbar {
-    position: absolute;
-    right: 12.1%;
+    display: none;
   }
 
   .navbar ul {
     display: none;
   }
 
+  /* ---------- Show hamburger menu icon ----------- */
   .hamburger-icon {
     display: block;
-    /* padding-top: 12px; */
     width: 40px;
   }
 
   .sidenav-text-container {
-    position: relative;
     bottom: 12px;
+    position: relative;
   }
 
   .table-of-contents {
