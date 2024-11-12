@@ -32,6 +32,7 @@ for(let i = 0; i < tocLinkArr.length; i++) {
 // ---------- Hamburger menu functionality ----------
 let hamburgerIcon = document.querySelector(".hamburger-icon");
 let closeIcon = document.querySelector(".close-icon");
+let mobileNavMenu = document.getElementById("mobile-nav-menu");
 
 // hamburger icon
 hamburgerIcon.addEventListener("click", function() {
@@ -40,6 +41,9 @@ hamburgerIcon.addEventListener("click", function() {
   // hide hamburger icon, show close icon
   hamburgerIcon.classList.add("hide");
   closeIcon.classList.remove("hide");
+
+  // show mobile nav
+  mobileNavMenu.classList.remove("hide");
 });
 
 // close icon
@@ -49,4 +53,7 @@ closeIcon.addEventListener("click", function() {
   // show hamburger icon, hide close icon
   closeIcon.classList.add("hide");
   hamburgerIcon.classList.remove("hide");
+
+  // hide mobile nav
+  mobileNavMenu.classList.add("hide");
 });

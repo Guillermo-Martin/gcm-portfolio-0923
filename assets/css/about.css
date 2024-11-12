@@ -183,6 +183,11 @@ h1 {
   /* ----- mobile nav ----- */
   .mobile-nav-menu {
     background-color: red;
+    display: block;
+  }
+
+  .mobile-nav-menu.hide {
+    display: none;
   }
 
 
