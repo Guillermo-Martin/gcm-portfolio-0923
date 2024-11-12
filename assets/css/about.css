@@ -138,11 +138,16 @@ h1 {
     height: auto;
     /* position: static; */
     width: 100%;
+    padding: 48px 0;
   }
 
   .sidenav-content {
     padding-bottom: 48px;
     padding-top: 28px;
+    padding: 0 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
   }
 
   .navbar {
