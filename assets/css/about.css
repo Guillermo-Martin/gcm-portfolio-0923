@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding-left: 0;
   padding-right: 0;
+  position: relative;
 }
 
 /* ---------- Sidenav (large screens only) ---------- */
@@ -182,12 +183,34 @@ h1 {
 
   /* ----- mobile nav ----- */
   .mobile-nav-menu {
+    align-items: start;
     background-color: red;
-    display: block;
+    display: flex;
+    height: 100vh;
+    justify-content: start;
+    left: 0;
+    position: absolute;
+    padding-left: 54px;
+    padding-top: 54px;
+    top: 56%;
+    width: 100%;
+    z-index: 1;
   }
 
   .mobile-nav-menu.hide {
     display: none;
+  }
+
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .mobile-nav-links a {
+    color: #000;
+    font-size: 28px;
+    text-decoration: none;
   }
 
 
