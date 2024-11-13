@@ -281,7 +281,7 @@ h1 {
     flex-wrap: wrap;
   }
 
-  .table-of-contents p {
+  .table-of-contents p, .main-content-section p {
 		font-size: 16px;
 	}
 }
