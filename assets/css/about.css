@@ -249,6 +249,11 @@ h1 {
 }
 
 @media screen and (max-width: 576px) {
+  .sidenav-content, .main-content-section {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
 	.portfolio-link-info {
 		display: none;
 	}
