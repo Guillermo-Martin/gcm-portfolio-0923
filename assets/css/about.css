@@ -224,6 +224,7 @@ h1 {
 
   .table-of-contents {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   /* ---------- main content ---------- */
