@@ -210,12 +210,13 @@ h1 {
   .mobile-nav-links a {
     color: #000;
     font-size: 28px;
+    font-weight: 400;
     text-decoration: none;
   }
 
 
 
-
+  /* ----- sidenav text container and table of contents ----- */
   .sidenav-text-container {
     bottom: 12px;
     position: relative;
@@ -225,6 +226,7 @@ h1 {
     flex-direction: row;
   }
 
+  /* ---------- main content ---------- */
   .main-content {
     margin-left: 0;
     padding-top: 200px;
@@ -232,14 +234,18 @@ h1 {
 }
 
 @media screen and (max-width: 767px) {
-	.table-of-contents a {
-		font-size: 20px;
+	.table-of-contents p {
+		font-size: 24px;
 	}
 
-	.social-links svg {
+	/* .social-links svg {
 		height: 32px;
 		width: 32px;
-	}
+	} */
+
+  .mobile-nav-icon {
+    width: 32px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -247,14 +253,26 @@ h1 {
 		display: none;
 	}
 
-	.social-links svg {
+  h2 {
+    font-size: 36px;
+  }
+
+	/* .social-links svg {
 		height: 28px;
 		width: 28px;
+	} */
+
+  .table-of-contents {
+    flex-wrap: wrap;
+  }
+
+  .table-of-contents p {
+		font-size: 16px;
 	}
 }
 
-@media screen and (max-width: 418px) {
-	h1 {
-		margin-bottom: 8px;
-	}
+@media screen and (max-width: 405px) {
+  .mobile-nav-menu {
+    top: 44%;
+  }
 }
