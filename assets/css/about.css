@@ -114,6 +114,12 @@ h1 {
 
 
 /* ---------- media queries ---------- */
+@media screen and (max-width: 1400px) {
+  .main-content-section {
+    padding-right: 60px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .sidenav {
     padding-left: 8%;
@@ -122,6 +128,7 @@ h1 {
 
 	.main-content-section {
     padding: 54px;
+    padding-left: 0;
     padding-top: 64px;
   }
 
@@ -138,11 +145,16 @@ h1 {
   /* ---------- Sidenav (now on top for mobile) ---------- */
   .sidenav {
     background-color: #fff5eb;
+    border-bottom: 1px solid #dbdbdb;
     display: block;
     height: auto;
     padding: 32px 0;
     width: 100%;
   }
+
+  /* .sidenav {
+    border-bottom: 1px solid gray;
+  } */
 
   .sidenav-content {
     align-items: start;
@@ -253,11 +265,21 @@ h1 {
   /* ---------- main content ---------- */
   .main-content {
     margin-left: 0;
-    padding-top: 200px;
+    /* padding-left: 54px; */
+    padding-top: 228px;
+  }
+
+  .main-content-section {
+    padding-left: 54px;
   }
 }
 
 @media screen and (max-width: 767px) {
+  /* ---------- Top nav and table of contents ---------- */
+  .sidenav {
+    padding-bottom: 20px;
+  }
+
 	.table-of-contents p {
 		font-size: 24px;
 	}
@@ -275,6 +297,11 @@ h1 {
 		height: 28px;
 		width: 28px;
 	}
+
+  /* ---------- Main content ---------- */
+  .main-content-section {
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -307,6 +334,14 @@ h1 {
   .table-of-contents p, .main-content-section p {
 		font-size: 16px;
 	}
+
+  /* ---------- Main content ---------- */
+  /* .main-content {
+    padding-top: 174px;
+  } */
+  .main-content-section {
+    padding-top: 0;
+  }
 }
 
 @media screen and (max-width: 405px) {
