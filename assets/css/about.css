@@ -187,6 +187,7 @@ h1 {
     align-items: start;
     background-color: red;
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: start;
     left: 0;
@@ -206,12 +207,29 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 40px;
   }
 
   .mobile-nav-links a {
     color: #000;
     font-size: 28px;
     font-weight: 400;
+    text-decoration: none;
+  }
+
+  /* ----- Social links ----- */
+  .social-links {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+  }
+
+  .social-links svg {
+		height: 32px;
+		width: 32px;
+	}
+
+  .social-links a {
     text-decoration: none;
   }
 
@@ -240,11 +258,6 @@ h1 {
 		font-size: 24px;
 	}
 
-	/* .social-links svg {
-		height: 32px;
-		width: 32px;
-	} */
-
   .mobile-nav-icon {
     width: 32px;
   }
@@ -252,6 +265,12 @@ h1 {
   .mobile-nav-links a {
     font-size: 24px;
   }
+
+  /* ----- Social links ----- */
+  .social-links svg {
+		height: 28px;
+		width: 28px;
+	}
 }
 
 @media screen and (max-width: 576px) {
