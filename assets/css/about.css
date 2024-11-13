@@ -246,6 +246,10 @@ h1 {
   .mobile-nav-icon {
     width: 32px;
   }
+
+  .mobile-nav-links a {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -266,6 +270,10 @@ h1 {
 		height: 28px;
 		width: 28px;
 	} */
+
+  .mobile-nav-menu {
+    padding-left: 32px;
+  }
 
   .table-of-contents {
     flex-wrap: wrap;
