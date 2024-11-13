@@ -9,11 +9,12 @@ body {
 
 /* ---------- Sidenav (large screens only) ---------- */
 .sidenav {
-  background-color: skyblue;
+  /* background-color: skyblue; */
   display: grid;
   grid-template-rows: 1fr 2fr;
   height: 100%;
-  padding-left: 16%;
+  /* padding-left: 16%; */
+  padding-left: 12%;
   position: fixed;
   width: 34%;
 }
@@ -82,14 +83,17 @@ h1 {
 
 /* ---------- Main content ---------- */
 .main-content {
-  background-color: orange;
-  margin-left: 100%;
+  /* opacity: 0.3;
+  background-color: orange; */
+  margin-left: 92%;
   width: 100%;
 }
 
 .main-content-section {
   padding: 108px;
   padding-bottom: 0;
+  padding-left: 0;
+  /* padding-right: 0; */
 }
 
 .main-content-section:last-child {
