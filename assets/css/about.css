@@ -42,9 +42,10 @@ body {
 }
 
 /* ----- Mobile menu (hidden on larger screens) ----- */
-.hamburger-icon {
+.hamburger-icon, .close-icon, .mobile-nav-menu {
   display: none;
 }
+
 
 /* ---------- Header and subheader ---------- */
 h1 {
