@@ -10,12 +10,10 @@ body {
 
 /* ---------- Sidenav (large screens only) ---------- */
 .sidenav {
-  /* background-color: skyblue; */
   display: grid;
   grid-template-rows: 1fr 2fr;
   height: 100%;
   padding-left: 16%;
-  /* padding-left: 12%; */
   position: fixed;
   width: 34%;
 }
@@ -47,7 +45,6 @@ body {
 .hamburger-icon, .close-icon, .mobile-nav-menu {
   display: none;
 }
-
 
 /* ---------- Header and subheader ---------- */
 h1 {
@@ -93,8 +90,6 @@ h1 {
   color: #fff;
   padding: 108px;
   padding-bottom: 0;
-  /* padding-left: 0; */
-  /* padding-right: 0; */
 }
 
 .main-content-section:last-child {
@@ -110,17 +105,7 @@ h1 {
 }
 
 
-
-
-
-
 /* ---------- media queries ---------- */
-/* @media screen and (max-width: 1400px) {
-  .main-content-section {
-    padding-right: 60px;
-  }
-} */
-
 @media screen and (max-width: 1200px) {
   .sidenav {
     padding-left: 8%;
@@ -129,7 +114,6 @@ h1 {
 
 	.main-content-section {
     padding: 54px;
-    /* padding-left: 0; */
     padding-top: 64px;
   }
 
@@ -152,10 +136,6 @@ h1 {
     padding: 32px 0;
     width: 100%;
   }
-
-  /* .sidenav {
-    border-bottom: 1px solid gray;
-  } */
 
   .sidenav-content {
     align-items: start;
@@ -205,7 +185,6 @@ h1 {
   .mobile-nav-menu {
     align-items: start;
     background-color: #fff5eb;
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -278,7 +257,6 @@ h1 {
   /* ---------- main content ---------- */
   .main-content {
     margin-left: 0;
-    /* padding-left: 54px; */
     padding-top: 256px;
   }
 
@@ -327,31 +305,17 @@ h1 {
 		display: none;
 	}
 
-  /* h2 {
-    font-size: 36px;
-  } */
-
-	/* .social-links svg {
-		height: 28px;
-		width: 28px;
-	} */
-
+  /* ---------- Mobile nav menu ---------- */
   .mobile-nav-menu {
     padding-left: 32px;
   }
 
+  /* ---------- Table of contents ---------- */
   .table-of-contents {
     flex-wrap: wrap;
   }
 
-  /* .table-of-contents p, .main-content-section p {
-		font-size: 16px;
-	} */
-
   /* ---------- Main content ---------- */
-  /* .main-content {
-    padding-top: 174px;
-  } */
   .main-content-section {
     padding-top: 0;
   }
