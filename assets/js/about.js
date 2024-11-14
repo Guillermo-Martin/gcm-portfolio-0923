@@ -66,7 +66,7 @@ mm.add("(max-width: 992px", () => {
   let hamburgerIcon = document.querySelector(".hamburger-icon");
   let closeIcon = document.querySelector(".close-icon");
 
-  // ----- gsap timeline -----
+  // // ----- gsap timeline -----
   let tl = gsap.timeline({ paused: true, duration: 0.1 });
   tl
     .to(".sidenav-text-container", {opacity: 0, duration: 0.2})
@@ -74,6 +74,7 @@ mm.add("(max-width: 992px", () => {
     .set(".hamburger-icon", {display: "none"})
     .set(".close-icon", {display: "block"})
     .from(".close-icon", {opacity: 0, scale: 0, duration: 0.2}, "<")
+    .set(".mobile-nav-menu", {display: "flex"}, "<")
     .from(".mobile-nav-menu", {height: 0, opacity: 0, duration: 0.2}, "<")
     .from(".mobile-nav-links li", {opacity: 0, y: -8, stagger: 0.05, duration: 0.9}, "<")
     .from(".social-links", {opacity: 0, y: -8, duration: 1}, "<0.2")
