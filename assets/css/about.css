@@ -2,6 +2,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0;
+  overscroll-behavior: none;
   padding-left: 0;
   padding-right: 0;
   position: relative;
@@ -13,8 +14,8 @@ body {
   display: grid;
   grid-template-rows: 1fr 2fr;
   height: 100%;
-  /* padding-left: 16%; */
-  padding-left: 12%;
+  padding-left: 16%;
+  /* padding-left: 12%; */
   position: fixed;
   width: 34%;
 }
@@ -83,16 +84,15 @@ h1 {
 
 /* ---------- Main content ---------- */
 .main-content {
-  /* opacity: 0.3;
-  background-color: orange; */
-  margin-left: 92%;
+  background-color: #314788;
+  margin-left: 100%;
   width: 100%;
 }
 
 .main-content-section {
   padding: 108px;
   padding-bottom: 0;
-  padding-left: 0;
+  /* padding-left: 0; */
   /* padding-right: 0; */
 }
 
