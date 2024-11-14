@@ -190,7 +190,9 @@ h1 {
 
   /* show close icon */
   .close-icon {
+    bottom: 4px;
     display: block;
+    position: relative;
   }
 
   /* hide close icon */
@@ -201,7 +203,7 @@ h1 {
   /* ----- mobile nav ----- */
   .mobile-nav-menu {
     align-items: start;
-    background-color: red;
+    background-color: #fff5eb;
     display: flex;
     flex-direction: column;
     height: 100vh;
