@@ -1,4 +1,4 @@
-console.log("connected to about!!!");
+console.log("connected to projects!!!");
 
 // register scrollToPlugin, scrollTrigger plugins and create matchMedia for different screens
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);

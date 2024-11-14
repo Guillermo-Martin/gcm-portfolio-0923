@@ -34,7 +34,7 @@
 // });
 
 
-console.log("connected!");
+console.log("connected! to home");
 
 // ---------- Portfolio links animation ----------
 // get all portfolio links
