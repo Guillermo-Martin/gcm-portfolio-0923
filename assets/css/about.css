@@ -204,6 +204,7 @@ h1 {
   .mobile-nav-menu {
     align-items: start;
     background-color: #fff5eb;
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -221,9 +222,9 @@ h1 {
     color: #314788;
   }
 
-  .mobile-nav-menu.hide {
+  /* .mobile-nav-menu.hide {
     display: none;
-  }
+  } */
 
   .mobile-nav-links {
     display: flex;

@@ -35,6 +35,7 @@ for(let i = 0; i < tocLinkArr.length; i++) {
 
 // ----- scrollTo animation:  992px and below -----
 mm.add("(max-width: 992px", () => {
+  // ---------- Scroll to animation ----------
   // get all of the table of contents link
   const tocLinkArr = document.querySelectorAll(".table-of-contents-link");
 
@@ -60,6 +61,66 @@ mm.add("(max-width: 992px", () => {
       }
     });
   };
+
+  // ---------- Mobile menu animation ----------
+  // ---------- Hamburger menu functionality ----------
+  let body = document.querySelector("body");
+  let hamburgerIcon = document.querySelector(".hamburger-icon");
+  let closeIcon = document.querySelector(".close-icon");
+  let mobileNavMenu = document.getElementById("mobile-nav-menu");
+
+  // gsap timeline
+  let tl = gsap.timeline({ paused: true });
+  tl
+    .to(".sidenav-text-container", {opacity: 0, duration: 0.2})
+    .from(".mobile-nav-menu", {height: 0, opacity: 0, duration: 0.2}, "<")
+    .from(".mobile-nav-links li", {opacity: 0, y: -12, stagger: 0.05, duration: 0.9})
+    .from(".social-links", {opacity: 0, y: -12, duration: 1}, "<0.2")
+
+  // hamburger icon
+  hamburgerIcon.addEventListener("click", function() {
+    console.log("you clicked me!");
+
+    // hide hamburger icon, show close icon
+    hamburgerIcon.classList.add("hide");
+    closeIcon.classList.remove("hide");
+
+    // show mobile nav
+    mobileNavMenu.classList.remove("hide");
+
+    // prevent user from scrolling when the menu is up
+    body.style.overflow = "hidden";
+    
+    tl.play();
+
+    // mobile nav menu animation
+    // gsap.timeline()
+    //   .to(".sidenav-text-container", {opacity: 0, duration: 0.2})
+    //   .from(".mobile-nav-menu", {height: 0, opacity: 0, duration: 0.2}, "<")
+    //   .from(".mobile-nav-links li", {opacity: 0, y: -12, stagger: 0.05, duration: 0.9})
+    //   .from(".social-links", {opacity: 0, y: -12, duration: 1}, "<0.2")
+
+   
+
+    
+  });
+
+  // close icon
+  closeIcon.addEventListener("click", function() {
+    // alert("you clicked close!");
+
+    // show hamburger icon, hide close icon
+    closeIcon.classList.add("hide");
+    hamburgerIcon.classList.remove("hide");
+
+    // hide mobile nav
+    mobileNavMenu.classList.add("hide");
+
+    // resume scrolling when menu is hidden
+    body.style.overflow = "scroll";
+
+    tl.reverse();
+  });
 });
 
 
@@ -67,38 +128,3 @@ mm.add("(max-width: 992px", () => {
 
 
 
-// ---------- Hamburger menu functionality ----------
-let body = document.querySelector("body");
-let hamburgerIcon = document.querySelector(".hamburger-icon");
-let closeIcon = document.querySelector(".close-icon");
-let mobileNavMenu = document.getElementById("mobile-nav-menu");
-
-// hamburger icon
-hamburgerIcon.addEventListener("click", function() {
-  console.log("you clicked me!");
-
-  // hide hamburger icon, show close icon
-  hamburgerIcon.classList.add("hide");
-  closeIcon.classList.remove("hide");
-
-  // show mobile nav
-  mobileNavMenu.classList.remove("hide");
-
-  // prevent user from scrolling when the menu is up
-  body.style.overflow = "hidden";
-});
-
-// close icon
-closeIcon.addEventListener("click", function() {
-  // alert("you clicked close!");
-
-  // show hamburger icon, hide close icon
-  closeIcon.classList.add("hide");
-  hamburgerIcon.classList.remove("hide");
-
-  // hide mobile nav
-  mobileNavMenu.classList.add("hide");
-
-  // resume scrolling when menu is hidden
-  body.style.overflow = "scroll";
-});
