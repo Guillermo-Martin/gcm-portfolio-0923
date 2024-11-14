@@ -2,7 +2,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0;
-  overscroll-behavior: none;
   padding-left: 0;
   padding-right: 0;
   position: relative;
@@ -114,11 +113,11 @@ h1 {
 
 
 /* ---------- media queries ---------- */
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
   .main-content-section {
     padding-right: 60px;
   }
-}
+} */
 
 @media screen and (max-width: 1200px) {
   .sidenav {
@@ -128,7 +127,7 @@ h1 {
 
 	.main-content-section {
     padding: 54px;
-    padding-left: 0;
+    /* padding-left: 0; */
     padding-top: 64px;
   }
 
@@ -266,7 +265,7 @@ h1 {
   .main-content {
     margin-left: 0;
     /* padding-left: 54px; */
-    padding-top: 228px;
+    padding-top: 256px;
   }
 
   .main-content-section {
