@@ -326,9 +326,9 @@ h1 {
 		display: none;
 	}
 
-  h2 {
+  /* h2 {
     font-size: 36px;
-  }
+  } */
 
 	/* .social-links svg {
 		height: 28px;
@@ -343,9 +343,9 @@ h1 {
     flex-wrap: wrap;
   }
 
-  .table-of-contents p, .main-content-section p {
+  /* .table-of-contents p, .main-content-section p {
 		font-size: 16px;
-	}
+	} */
 
   /* ---------- Main content ---------- */
   /* .main-content {

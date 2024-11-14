@@ -101,6 +101,8 @@ a:hover {
 @media screen and (max-width: 576px) {
 	:root {
 		--fs-h1: 48px;
+		--fs-h2: 36px;
+		--fs-body: 16px;
 		--fs-subheader: 24px;
 	}
 
