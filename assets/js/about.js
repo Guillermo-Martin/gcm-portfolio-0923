@@ -1,8 +1,7 @@
 console.log("connected!!!");
 
-// register scrollToPlugin
+// register scrollToPlugin, scrollTrigger plugins and create matchMedia for different screens
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
-// create match media (for different animations on different screensizes)
 let mm = gsap.matchMedia();
 
 // ---------- Table of contents and scrollTo animation ----------
@@ -33,9 +32,9 @@ for(let i = 0; i < tocLinkArr.length; i++) {
 };
 
 
-// ----- scrollTo animation:  992px and below -----
+// ---------- scrollTo animation:  992px and below ----------
 mm.add("(max-width: 992px", () => {
-  // ---------- Scroll to animation ----------
+  // ----- Scroll to animation -----
   // get all of the table of contents link
   const tocLinkArr = document.querySelectorAll(".table-of-contents-link");
 
@@ -63,13 +62,11 @@ mm.add("(max-width: 992px", () => {
   };
 
   // ---------- Mobile menu animation ----------
-  // ---------- Hamburger menu functionality ----------
   let body = document.querySelector("body");
   let hamburgerIcon = document.querySelector(".hamburger-icon");
   let closeIcon = document.querySelector(".close-icon");
-  let mobileNavMenu = document.getElementById("mobile-nav-menu");
 
-  // gsap timeline
+  // ----- gsap timeline -----
   let tl = gsap.timeline({ paused: true, duration: 0.1 });
   tl
     .to(".sidenav-text-container", {opacity: 0, duration: 0.2})
@@ -81,54 +78,21 @@ mm.add("(max-width: 992px", () => {
     .from(".mobile-nav-links li", {opacity: 0, y: -8, stagger: 0.05, duration: 0.9}, "<")
     .from(".social-links", {opacity: 0, y: -8, duration: 1}, "<0.2")
 
-  // hamburger icon
+  // ----- hamburger icon -----
   hamburgerIcon.addEventListener("click", function() {
-    console.log("you clicked me!");
-
-    // hide hamburger icon, show close icon
-    // hamburgerIcon.classList.add("hide");
-    // closeIcon.classList.remove("hide");
-
-    // show mobile nav
-    // mobileNavMenu.classList.remove("hide");
+    // play the mobile menu animation
+    tl.play();
 
     // prevent user from scrolling when the menu is up
     body.style.overflow = "hidden";
-    
-    tl.play();
-
-    // mobile nav menu animation
-    // gsap.timeline()
-    //   .to(".sidenav-text-container", {opacity: 0, duration: 0.2})
-    //   .from(".mobile-nav-menu", {height: 0, opacity: 0, duration: 0.2}, "<")
-    //   .from(".mobile-nav-links li", {opacity: 0, y: -12, stagger: 0.05, duration: 0.9})
-    //   .from(".social-links", {opacity: 0, y: -12, duration: 1}, "<0.2")
-
-   
-
-    
   });
 
-  // close icon
+  // ----- close icon -----
   closeIcon.addEventListener("click", function() {
-    // alert("you clicked close!");
-
-    // show hamburger icon, hide close icon
-    // closeIcon.classList.add("hide");
-    // hamburgerIcon.classList.remove("hide");
-
-    // hide mobile nav
-    // mobileNavMenu.classList.add("hide");
+    // reverse the mobile menu animation
+    tl.reverse(0.7);
 
     // resume scrolling when menu is hidden
     body.style.overflow = "scroll";
-
-    tl.reverse(0.7);
   });
 });
-
-
-
-
-
-
