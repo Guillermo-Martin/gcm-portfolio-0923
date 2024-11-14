@@ -2,7 +2,10 @@ console.log("connected!!!");
 
 // register scrollToPlugin
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
+// create match media (for different animations on different screensizes)
+let mm = gsap.matchMedia();
 
+// ---------- Table of contents and scrollTo animation ----------
 // get all of the table of contents link
 const tocLinkArr = document.querySelectorAll(".table-of-contents-link");
 
@@ -28,6 +31,41 @@ for(let i = 0; i < tocLinkArr.length; i++) {
     }
   });
 };
+
+
+// ----- scrollTo animation:  992px and below -----
+mm.add("(max-width: 992px", () => {
+  // get all of the table of contents link
+  const tocLinkArr = document.querySelectorAll(".table-of-contents-link");
+
+  // loop through the table of contents links and add an eventlistener
+  for(let i = 0; i < tocLinkArr.length; i++) {
+    // get the section id to scroll to and define the scrollTrigger target
+    let sectionId = tocLinkArr[i].dataset.section;
+    let scrollTriggerTarget = `.table-of-contents-link[data-section='${sectionId}']`;
+
+    // add event listener
+    tocLinkArr[i].addEventListener("click", () => {
+      // when user clicks on the link, scroll to that section
+      gsap.to(window, { duration: 1, scrollTo: {y: `#${sectionId}`, offsetY: 240} });
+    });
+
+    // add the scrollTrigger "active" link animation
+    gsap.to(scrollTriggerTarget, {
+      scrollTrigger: {
+        trigger: `#${sectionId}`,
+        start: "top 35%",
+        end: "bottom 50%",
+        toggleClass: {targets: scrollTriggerTarget, className: "active"}
+      }
+    });
+  };
+});
+
+
+
+
+
 
 // ---------- Hamburger menu functionality ----------
 let body = document.querySelector("body");
