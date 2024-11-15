@@ -113,7 +113,7 @@ h1 {
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 200;
 }
 
@@ -451,6 +451,10 @@ h3 {
   /* ---------- Main content ---------- */
   .main-content-section {
     padding-top: 0;
+  }
+
+  h3 {
+    font-size: 32px;
   }
 
   /* ---------- Project card ---------- */
