@@ -17,6 +17,19 @@ h4 {
   font-weight: 200;
 }
 
+/* ---------- Jobs ---------- */
+.job ul {
+  /* border: 3px solid red; */
+  list-style-type: disc;
+  padding-left: 32px;
+}
+
+.job li {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
 /* ---------- media queries ---------- */
 @media screen and (max-width: 405px) {
   .mobile-nav-menu {
