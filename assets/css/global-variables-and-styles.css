@@ -2,7 +2,8 @@
 	--fs-h1: 96px;
 	/* --fs-h2: 68px; */
 	--fs-h2: 48px;
-	--fs-h3: 44px;
+	/* --fs-h3: 44px; */
+	--fs-h3: 40px;
 	--fs-h4: 36px;
 	--fs-subheader: 48px;
 	--fs-body: 20px;
@@ -35,7 +36,7 @@ h2 {
 
 h3 {
 	font-size: var(--fs-h3);
-	font-weight: 500;
+	font-weight: 200;
 	line-height: 1.2;
 	margin-bottom: 16px;
 }
@@ -102,6 +103,7 @@ a:hover {
 	:root {
 		--fs-h1: 48px;
 		--fs-h2: 36px;
+		--fs-h3: 32px;
 		--fs-body: 16px;
 		--fs-subheader: 24px;
 	}
