@@ -1,16 +1,7 @@
 /* ---------- Main content ---------- */
 .main-content-section {
-  /* background-color: red; */
   color: #000;
 }
-
-/* .image-container {
-  margin-bottom: 28px;
-}
-
-.section-image {
-  width: 100%;
-} */
 
 h4 {
   font-size: 28px;
@@ -24,7 +15,6 @@ h4 {
 }
 
 .job:last-child {
-  /* border: 3px solid red; */
   margin-bottom: 0;
 }
 
@@ -37,7 +27,6 @@ h4 {
 }
 
 .job ul, .education-list {
-  /* border: 3px solid red; */
   list-style-type: disc;
   padding-left: 32px;
 }
@@ -57,10 +46,6 @@ h4 {
   h4 {
     font-size: 24px;
   }
-
-  /* .job li, .education-list li {
-    font-size: var(--fs-body);
-  } */
 }
 
 @media screen and (max-width: 405px) {
