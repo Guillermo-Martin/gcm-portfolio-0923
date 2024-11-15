@@ -464,6 +464,20 @@ h3 {
 
   .project-link-button {
     max-width: unset;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .project-tags li {
+    padding-right: 4%;
+  }
+  
+  .project-tags li:nth-child(2), .project-tags li:last-child {
+    padding-left: 4%;
+  }
+
+  .project-link-button {
     width: 80%;
   }
 }
@@ -471,5 +485,21 @@ h3 {
 @media screen and (max-width: 405px) {
   .mobile-nav-menu {
     top: 44%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .project-tags {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .project-tags li {
+    border-right: none;
+    padding-right: 0;
+  }
+  
+  .project-tags li:nth-child(2), .project-tags li:last-child {
+    padding-left: 0;
   }
 }
