@@ -1,99 +1,7 @@
-/* body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0;
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-} */
-
-/* ---------- Sidenav (large screens only) ---------- */
-/* .sidenav {
-  display: grid;
-  grid-template-rows: 1fr 2fr;
-  height: 100%;
-  padding-left: 16%;
-  position: fixed;
-  width: 34%;
-} */
-
-/* ---------- Top Navbar (large screens only) ---------- */
-/* .navbar {
-  padding-top: 40px;
-}
-
-.navbar ul {
-  align-items: center;
-  display: flex;
-  gap: 32px;
-  justify-content: start;
-}
-
-.navbar a {
-  color: #000;
-  font-size: 24px;
-  font-weight: 400;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  color: #314788;
-} */
-
-/* ----- Mobile menu (hidden on larger screens) ----- */
-/* .hamburger-icon, .close-icon, .mobile-nav-menu {
-  display: none;
-} */
-
-/* ---------- Header and subheader ---------- */
-/* h1 {
-	margin-bottom: 20px;
-} */
-
-/* ---------- Table of contents ---------- */
-/* .table-of-contents {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	width: fit-content;
-}
-
-.table-of-contents-link {
-  color: #000;
-  cursor: pointer;
-  font-size: 32px;
-  font-weight: 400;
-  margin-bottom: 0;
-  line-height: 32px;
-  text-decoration: none;
-  transition: all 0.2s;
-}
-
-.table-of-contents-link.active {
-  color: #314788;
-}
-
-.table-of-contents-link:hover {
-  color: #314788;
-} */
-
-
 /* ---------- Main content ---------- */
 .main-content {
   background-color: #318840;
-  /* margin-left: 100%;
-  width: 100%; */
 }
-
-/* .main-content-section {
-  color: #fff;
-  padding: 108px;
-  padding-bottom: 0;
-}
-
-.main-content-section:last-child {
-  padding-bottom: 108px;
-} */
 
 /* ----- Project card ----- */
 .project-card {
@@ -195,7 +103,6 @@ h3 {
   width: 24px;
 }
 
-
 /* ---------- media queries ---------- */
 @media screen and (max-width: 1354px) {
   /* ---------- Project buttons ---------- */
@@ -211,20 +118,6 @@ h3 {
 }
 
 @media screen and (max-width: 1200px) {
-  /* .sidenav {
-    padding-left: 8%;
-    width: 42%;
-  }
-
-	.main-content-section {
-    padding: 54px;
-    padding-top: 64px;
-  }
-
-  .main-content-section:last-child {
-    padding-bottom: 54px;
-  } */
-
   /* ---------- Project buttons ---------- */
   .button-container {
     flex-direction: row;
@@ -238,145 +131,6 @@ h3 {
 }
 
 @media screen and (max-width: 992px) {
-  /* body {
-    grid-template-columns: 1fr;
-  } */
-
-  /* ---------- Sidenav (now on top for mobile) ---------- */
-  /* .sidenav {
-    background-color: #fff5eb;
-    border-bottom: 1px solid #dbdbdb;
-    display: block;
-    height: auto;
-    padding: 32px 0;
-    width: 100%;
-  }
-
-  .sidenav-content {
-    align-items: start;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 54px;
-  } */
-
-  /* ---------- Hide top nav ---------- */
-  /* .navbar {
-    display: none;
-  }
-
-  .navbar ul {
-    display: none;
-  } */
-
-  /* ---------- Hamburger menu and close menu icons ----------- */
-  /* .mobile-nav-icon {
-    cursor: pointer;
-    width: 40px;
-  } */
-
-  /* show hamburger icon */
-  /* .hamburger-icon {
-    display: block;
-  } */
-
-  /* hide hamburger icon */
-  /* .hamburger-icon.hide {
-    display: none;
-  } */
-
-  /* show close icon */
-  /* .close-icon {
-    bottom: 4px;
-    display: block;
-    position: relative;
-  } */
-
-  /* hide close icon */
-  /* .close-icon.hide {
-    display: none;
-  } */
-
-  /* ----- mobile nav ----- */
-  /* .mobile-nav-menu {
-    align-items: start;
-    background-color: #fff5eb;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: start;
-    left: 0;
-    position: absolute;
-    padding-left: 54px;
-    padding-top: 54px;
-    top: 56%;
-    width: 100%;
-    z-index: 1;
-  } */
-
-  /* .mobile-nav-menu a:hover {
-    color: #314788;
-  }
-
-  .mobile-nav-menu.hide {
-    display: none;
-  }
-
-  .mobile-nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-bottom: 40px;
-  }
-
-  .mobile-nav-links a {
-    color: #000;
-    font-size: 28px;
-    font-weight: 400;
-    text-decoration: none;
-  } */
-
-  /* ----- Social links ----- */
-  /* .social-links {
-    display: flex;
-    gap: 32px;
-    justify-content: space-between;
-  }
-
-  .social-links svg {
-		height: 32px;
-		width: 32px;
-    transition: fill 0.2s;
-	}
-
-  .social-links svg:hover {
-    fill: #314788;
-  }
-
-  .social-links a {
-    text-decoration: none;
-  } */
-
-  /* ----- sidenav text container and table of contents ----- */
-  /* .sidenav-text-container {
-    bottom: 12px;
-    position: relative;
-  }
-
-  .table-of-contents {
-    flex-direction: row;
-    flex-wrap: wrap;
-  } */
-
-  /* ---------- main content ---------- */
-  /* .main-content {
-    margin-left: 0;
-    padding-top: 256px;
-  }
-
-  .main-content-section {
-    padding-left: 54px;
-  } */
-
   /* ---------- Project cards ---------- */
   .button-container {
     flex-direction: row;
@@ -385,36 +139,6 @@ h3 {
   .project-link-button {
     width: 32%;
   }
-}
-
-@media screen and (max-width: 767px) {
-  /* ---------- Top nav and table of contents ---------- */
-  /* .sidenav {
-    padding-bottom: 20px;
-  }
-
-	.table-of-contents p {
-		font-size: 24px;
-	}
-
-  .mobile-nav-icon {
-    width: 32px;
-  }
-
-  .mobile-nav-links a {
-    font-size: 24px;
-  } */
-
-  /* ----- Social links ----- */
-  /* .social-links svg {
-		height: 28px;
-		width: 28px;
-	} */
-
-  /* ---------- Main content ---------- */
-  /* .main-content-section {
-    padding-top: 20px;
-  } */
 }
 
 @media screen and (max-width: 608px) {
@@ -429,30 +153,6 @@ h3 {
 }
 
 @media screen and (max-width: 576px) {
-  /* .sidenav-content, .main-content-section {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-	.portfolio-link-info {
-		display: none;
-	} */
-
-  /* ---------- Mobile nav menu ---------- */
-  /* .mobile-nav-menu {
-    padding-left: 32px;
-  } */
-
-  /* ---------- Table of contents ---------- */
-  /* .table-of-contents {
-    flex-wrap: wrap;
-  } */
-
-  /* ---------- Main content ---------- */
-  /* .main-content-section {
-    padding-top: 0;
-  } */
-
   h3 {
     font-size: 32px;
   }
