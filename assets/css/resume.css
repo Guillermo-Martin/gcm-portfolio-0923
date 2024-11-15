@@ -1,0 +1,20 @@
+/* ---------- Main content ---------- */
+.main-content-section {
+  /* background-color: red; */
+  color: #000;
+}
+
+/* .image-container {
+  margin-bottom: 28px;
+}
+
+.section-image {
+  width: 100%;
+} */
+
+/* ---------- media queries ---------- */
+@media screen and (max-width: 405px) {
+  .mobile-nav-menu {
+    top: 44%;
+  }
+}
