@@ -96,6 +96,14 @@ h1 {
 }
 
 /* ----- Project card ----- */
+.project-card {
+  margin-bottom: 80px;
+}
+
+.project-card:last-child {
+  margin-bottom: 0;
+}
+
 .image-container {
   margin-bottom: 28px;
 }
