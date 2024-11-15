@@ -17,14 +17,14 @@ h4 {
   font-weight: 200;
 }
 
-/* ---------- Jobs ---------- */
-.job ul {
+/* ---------- Jobs and education ---------- */
+.job ul, .education-list {
   /* border: 3px solid red; */
   list-style-type: disc;
   padding-left: 32px;
 }
 
-.job li {
+.job li, .education-list li {
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 20px;
