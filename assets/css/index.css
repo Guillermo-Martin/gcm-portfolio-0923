@@ -108,6 +108,14 @@ h1 {
 		height: 28px;
 		width: 28px;
 	}
+
+	.footer {
+		justify-content: left;
+		left: 0;
+		padding: 0 24px;
+		transform: unset;
+		width: 88%;
+	}
 }
 
 @media screen and (max-width: 418px) {
