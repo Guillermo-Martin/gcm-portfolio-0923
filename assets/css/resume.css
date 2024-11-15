@@ -15,9 +15,27 @@
 h4 {
   font-size: 28px;
   font-weight: 200;
+  margin-bottom: 0;
 }
 
 /* ---------- Jobs and education ---------- */
+.job {
+  margin-bottom: 32px;
+}
+
+.job:last-child {
+  /* border: 3px solid red; */
+  margin-bottom: 0;
+}
+
+.job h3 {
+  margin-bottom: 4px;
+}
+
+.job-header {
+  margin-bottom: 16px;
+}
+
 .job ul, .education-list {
   /* border: 3px solid red; */
   list-style-type: disc;
