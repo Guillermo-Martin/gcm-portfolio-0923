@@ -168,9 +168,9 @@ h3 {
   font-weight: 400;
   justify-content: center;
   max-width: 224px;
-  padding: 12px 40px;
+  padding: 12px 28px;
   text-decoration: none;
-  width: 32%;
+  width: 36%;
 }
 
 .project-link-button:hover {
@@ -197,6 +197,19 @@ h3 {
 
 
 /* ---------- media queries ---------- */
+@media screen and (max-width: 1354px) {
+  /* ---------- Project buttons ---------- */
+  .button-container {
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .project-link-button {
+    width: 48%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .sidenav {
     padding-left: 8%;
@@ -210,7 +223,18 @@ h3 {
 
   .main-content-section:last-child {
     padding-bottom: 54px;
-  } 
+  }
+
+  /* ---------- Project buttons ---------- */
+  .button-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1114px) {
+  .button-container {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -332,8 +356,6 @@ h3 {
     text-decoration: none;
   }
 
-
-
   /* ----- sidenav text container and table of contents ----- */
   .sidenav-text-container {
     bottom: 12px;
@@ -353,6 +375,15 @@ h3 {
 
   .main-content-section {
     padding-left: 54px;
+  }
+
+  /* ---------- Project cards ---------- */
+  .button-container {
+    flex-direction: row;
+  }
+
+  .project-link-button {
+    width: 32%;
   }
 }
 
@@ -386,6 +417,17 @@ h3 {
   }
 }
 
+@media screen and (max-width: 608px) {
+  /* ---------- Project buttons ---------- */
+  .button-container {
+    flex-direction: column;
+  }
+
+  .project-link-button {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .sidenav-content, .main-content-section {
     padding-left: 32px;
@@ -409,6 +451,20 @@ h3 {
   /* ---------- Main content ---------- */
   .main-content-section {
     padding-top: 0;
+  }
+
+  /* ---------- Project card ---------- */
+  .button-container {
+    align-items: center;
+  }
+
+  .project-tags {
+    justify-content: center;
+  }
+
+  .project-link-button {
+    max-width: unset;
+    width: 80%;
   }
 }
 
