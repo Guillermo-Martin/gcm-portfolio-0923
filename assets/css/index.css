@@ -3,6 +3,7 @@ body {
 	display: flex;
 	justify-content: start;
 	margin: 0;
+	position: relative;
 }
 
 .homepage-main-content {
@@ -63,7 +64,24 @@ h1 {
 	opacity: 0;
 }
 
-/* media queries */
+/* ---------- Footer ---------- */
+.footer {
+	align-items: center;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.footer p {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+/* ---------- media queries ---------- */
 @media screen and (max-width: 992px) {
 	.portfolio-links a {
 		font-size: 28px;
