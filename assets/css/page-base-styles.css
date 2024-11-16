@@ -107,6 +107,11 @@ h1 {
   padding-right: 32px;
 }
 
+/* ----- Mobile footer ----- */
+.mobile-footer {
+  display: none;
+}
+
 /* ---------- Media queries ---------- */
 @media screen and (max-width: 1200px) {
   .sidenav {
@@ -261,6 +266,17 @@ h1 {
 
   .main-content-section {
     padding-left: 54px;
+  }
+
+  /* ---------- Footer ---------- */
+  .footer {
+    display: none;
+  }
+
+  .mobile-footer {
+    color: #fff;
+    display: flex;
+    justify-content: center;
   }
 }
 
