@@ -86,9 +86,10 @@ h1 {
 .main-content-section {
   color: #fff;
   padding: 108px;
+  padding-bottom: 0;
 }
 
-.main-content-section:last-child {
+.main-content-section:nth-last-of-type(1) {
   padding-bottom: 108px;
 }
 
