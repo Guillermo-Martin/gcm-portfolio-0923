@@ -273,6 +273,10 @@ h1 {
     display: none;
   }
 
+  .footer p {
+    padding-left: 32px;
+  }
+
   .mobile-footer {
     color: #fff;
     display: flex;
@@ -334,5 +338,11 @@ h1 {
   /* ---------- Main content ---------- */
   .main-content-section {
     padding-top: 0;
+  }
+
+  /* ---------- Footer ---------- */
+  .footer p {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }

@@ -37,6 +37,11 @@ h4 {
   margin-bottom: 20px;
 }
 
+/* ---------- Footer ---------- */
+.footer {
+  color: #000;
+}
+
 /* ---------- media queries ---------- */
 @media screen and (max-width: 576px) {
   .mobile-nav-menu {
