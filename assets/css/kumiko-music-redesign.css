@@ -152,6 +152,10 @@ h1 {
 }
 
 @media screen and (max-width: 992px) {
+  h1 {
+    font-size: 56px;
+  }
+
   /* ---------- Sidenav ---------- */
   .sidenav {
     background-color: #000;
@@ -160,12 +164,6 @@ h1 {
   .mobile-nav-icon {
     fill: #fff;
   }
-
-  /* .sidenav-content {
-    display: grid;
-    grid-template-columns: 2fr 0.1fr;
-    grid-template-rows: 1fr 1fr;
-  } */
 
   .sidenav-text-container {
     margin-bottom: 0;
@@ -182,8 +180,8 @@ h1 {
   
 
   .additional-info {
-    grid-row-start: 2;
     grid-row-end: 3;
+    grid-row-start: 2;
   }
 
   /* ---------- Project cards ---------- */
@@ -193,6 +191,18 @@ h1 {
 
   .project-link-button {
     width: 32%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  h1 {
+    font-size: 40px;
   }
 }
 
