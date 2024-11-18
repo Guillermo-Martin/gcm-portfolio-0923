@@ -19,6 +19,11 @@ h1 {
   margin-bottom: 60px;
 }
 
+/* ----- TL;DR (for mobile) ----- */
+.tldr {
+  display: none;
+}
+
 /* ---------- Main content ---------- */
 .main-content {
   background-color: #000;
@@ -147,6 +152,40 @@ h1 {
 }
 
 @media screen and (max-width: 992px) {
+  /* ---------- Sidenav ---------- */
+  .sidenav {
+    background-color: #000;
+  }
+
+  .mobile-nav-icon {
+    fill: #fff;
+  }
+
+  /* .sidenav-content {
+    display: grid;
+    grid-template-columns: 2fr 0.1fr;
+    grid-template-rows: 1fr 1fr;
+  } */
+
+  .sidenav-text-container {
+    margin-bottom: 0;
+  }
+
+  .additional-info {
+    display: none;
+  }
+
+  .tldr {
+    display: block;
+  }
+
+  
+
+  .additional-info {
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
   /* ---------- Project cards ---------- */
   .button-container {
     flex-direction: row;
