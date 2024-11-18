@@ -1,0 +1,200 @@
+/* ---------- Main content ---------- */
+.main-content {
+  background-color: red;
+}
+
+/* ----- Project card ----- */
+.project-card {
+  margin-bottom: 80px;
+}
+
+.project-card:last-child {
+  margin-bottom: 0;
+}
+
+.image-container {
+  margin-bottom: 28px;
+}
+
+.section-image {
+  width: 100%;
+}
+
+/* Project description */
+.project-description {
+  margin-bottom: 28px;
+}
+
+/* Tags */
+.project-tags {
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 32px;
+}
+
+.project-tags li {
+  border-right: 2px solid #fff;
+  padding-right: 30px;
+}
+
+.project-tags li:nth-child(2) {
+  padding-left: 30px;
+}
+
+.project-tags li:last-child {
+  border-right: none;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.project-tags p {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+/* Buttons */
+.button-container {
+  align-items: center;
+  display: flex;
+  gap: 28px;
+  justify-content: start;
+}
+
+.project-link-button {
+  align-items: center;
+  background-color: #314788;
+  border-radius: 50px;
+  color: #fff;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  max-width: 224px;
+  padding: 12px 28px;
+  text-decoration: none;
+  width: 36%;
+}
+
+.project-link-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.project-link-button .button-icon {
+  fill: #fff;
+  height: 20px;
+  margin-left: 12px;
+  transition: fill 0.2s;
+  width: 20px;
+}
+
+.project-link-button:hover .button-icon {
+  fill: #000;
+}
+
+.project-link-button .github-icon {
+  height: 24px;
+  width: 24px;
+}
+
+/* ---------- media queries ---------- */
+@media screen and (max-width: 1354px) {
+  /* ---------- Project buttons ---------- */
+  .button-container {
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .project-link-button {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* ---------- Project buttons ---------- */
+  .button-container {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1114px) {
+  .button-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* ---------- Project cards ---------- */
+  .button-container {
+    flex-direction: row;
+  }
+
+  .project-link-button {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 608px) {
+  /* ---------- Project buttons ---------- */
+  .button-container {
+    flex-direction: column;
+  }
+
+  .project-link-button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* ---------- Project card ---------- */
+  .button-container {
+    align-items: center;
+  }
+
+  .project-tags {
+    justify-content: center;
+  }
+
+  .project-link-button {
+    max-width: unset;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .project-tags li {
+    padding-right: 4%;
+  }
+  
+  .project-tags li:nth-child(2), .project-tags li:last-child {
+    padding-left: 4%;
+  }
+
+  .project-link-button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .mobile-nav-menu {
+    top: 44%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .project-tags {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .project-tags li {
+    border-right: none;
+    padding-right: 0;
+  }
+  
+  .project-tags li:nth-child(2), .project-tags li:last-child {
+    padding-left: 0;
+  }
+}
