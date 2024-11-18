@@ -1,6 +1,15 @@
+body {
+  background-color: #000;
+}
+
+/* ---------- Sidenav and table of contents ---------- */
+.sidenav, .navbar a, .table-of-contents p {
+  color: #fff;
+}
+
 /* ---------- Main content ---------- */
 .main-content {
-  background-color: skyblue;
+  background-color: #000;
 }
 
 /* ----- Project card ----- */
