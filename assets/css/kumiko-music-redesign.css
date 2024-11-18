@@ -7,6 +7,18 @@ body {
   color: #fff;
 }
 
+h1 {
+  font-size: 64px;
+}
+
+.sidenav {
+  grid-template-rows: 0.3fr 2fr;
+}
+
+.sidenav-text-container {
+  margin-bottom: 60px;
+}
+
 /* ---------- Main content ---------- */
 .main-content {
   background-color: #000;
