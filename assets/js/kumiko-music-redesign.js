@@ -1,23 +1,64 @@
 console.log("connected to kumiko music redesign!");
 
-// get all sections
 const allSections = document.querySelectorAll(".main-content-section");
 
-// function to run when section is observed
-const observerFunction = (entries) => {
-  // for each section, check to see if it is intersecting the viewport
-  entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      // Do something when the section enters the viewport
-      console.log('Section entered:', entry.target);
-    };
-  });
-};
-
-// create an intersection observer
-const observer = new IntersectionObserver(observerFunction);
-
-// for each section, observe when it enters the viewport
 allSections.forEach(section => {
-  observer.observe(section);
-});
+  // get the section's h2
+  const sectionHeader = document.querySelector(`#${section.id} h2`).textContent;
+  const sectionId = section.id;
+
+  // console.log(sectionHeader);
+  // console.log(sectionId);
+
+  // create a scrollTrigger for each of the sections
+  ScrollTrigger.create({
+    trigger: `#${sectionId}`,
+    markers: true,
+    start: "top 26.4%",
+    end: "bottom 26.4%", // <-- refine this
+    onEnter: () => {
+      console.log(`${sectionHeader}`);
+      // get current section
+      const currentSectionTitle = document.querySelector(".current-section");
+
+      // change it's textcontent
+      currentSectionTitle.textContent = sectionHeader;
+    },
+    onEnterBack: () => {
+      console.log(`${sectionHeader}`);
+      // get current section
+      const currentSectionTitle = document.querySelector(".current-section");
+
+      // change it's textcontent
+      currentSectionTitle.textContent = sectionHeader;
+    },
+  })
+})
+
+// for(let i = 0; i < allSections.lengt)
+
+// ScrollTrigger.create({
+//   trigger: ".main-content-section",
+//   markers: true,
+//   start: "top 26.4%"
+// })
+
+// scrollTrigger function
+// const changeSectionTitle = () => {
+//   // get the current section title
+//   // const currentSection = document.querySelector(".current-section");
+
+
+//   // console.log(currentSection);
+// }
+
+// gsap.to(".current-section", {
+//   scrollTrigger: {
+//     trigger: ".main-content-section",
+//     markers: true,
+//     start: "top 16.4%",
+//     onEnter: () => console.log(section)
+//   },
+//   color: "red",
+//   duration: 1
+// })
