@@ -19,10 +19,17 @@ h1 {
   margin-bottom: 60px;
 }
 
+/* ----- Current section (for mobile) ----- */
+.current-section {
+  display: none;
+}
+
 /* ----- TL;DR (for mobile) ----- */
 .tldr {
   display: none;
 }
+
+
 
 /* ---------- Main content ---------- */
 .main-content {
