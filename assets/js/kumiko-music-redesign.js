@@ -15,7 +15,7 @@ allSections.forEach(section => {
     trigger: `#${sectionId}`,
     markers: true,
     start: "top 26.4%",
-    end: "bottom 26.4%", // <-- refine this
+    end: "bottom 75%",
     onEnter: () => {
       console.log(`${sectionHeader}`);
       // get current section
