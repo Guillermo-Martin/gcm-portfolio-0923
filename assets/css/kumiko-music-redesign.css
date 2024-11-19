@@ -200,11 +200,11 @@ h1 {
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 48px;
+    padding-right: 20px;
   }
   
   /* ---------- Hamburger menu ---------- */
   .mobile-nav-icon {
-    /* fill: #fff; */
     min-width: 32px;
   }
 
