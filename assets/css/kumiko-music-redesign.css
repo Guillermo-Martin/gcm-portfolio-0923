@@ -177,11 +177,9 @@ h1 {
     display: block;
   }
 
-  
-
-  .additional-info {
-    grid-row-end: 3;
-    grid-row-start: 2;
+  /* ----- Table of contents ----- */
+  .table-of-contents p {
+    font-size: 24px;
   }
 
   /* ---------- Project cards ---------- */
@@ -197,6 +195,11 @@ h1 {
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 48px;
+  }
+
+  /* ---------- Table of contents ---------- */
+  .table-of-contents {
+    display: none;
   }
 }
 
