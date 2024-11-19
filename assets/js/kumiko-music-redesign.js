@@ -12,7 +12,6 @@ mm.add("(max-width: 767px", () => {
 
     // fade in animation function
     const fadeInLeft = () => {
-      console.log(sectionHeader, "line 17")
       // get current section
       const currentSectionTitle = document.querySelector(".current-section");
 
@@ -36,32 +35,3 @@ mm.add("(max-width: 767px", () => {
     });
   });
 }); 
-
-
-// for(let i = 0; i < allSections.lengt)
-
-// ScrollTrigger.create({
-//   trigger: ".main-content-section",
-//   markers: true,
-//   start: "top 26.4%"
-// })
-
-// scrollTrigger function
-// const changeSectionTitle = () => {
-//   // get the current section title
-//   // const currentSection = document.querySelector(".current-section");
-
-
-//   // console.log(currentSection);
-// }
-
-// gsap.to(".current-section", {
-//   scrollTrigger: {
-//     trigger: ".main-content-section",
-//     markers: true,
-//     start: "top 16.4%",
-//     onEnter: () => console.log(section)
-//   },
-//   color: "red",
-//   duration: 1
-// })
