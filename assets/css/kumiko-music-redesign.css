@@ -163,6 +163,7 @@ h1 {
 
   .mobile-nav-icon {
     fill: #fff;
+    min-width: 40px;
   }
 
   .sidenav-text-container {
@@ -199,6 +200,12 @@ h1 {
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 48px;
+  }
+  
+  /* ---------- Hamburger menu ---------- */
+  .mobile-nav-icon {
+    /* fill: #fff; */
+    min-width: 32px;
   }
 
   /* ---------- Table of contents ---------- */
@@ -275,6 +282,10 @@ h1 {
 
   .current-section {
     font-size: 24px;
+  }
+
+  .mobile-nav-icon {
+    min-width: unset;
   }
 }
 
