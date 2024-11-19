@@ -168,11 +168,6 @@ h1 {
     background-color: #000;
   }
 
-  .mobile-nav-icon {
-    fill: #fff;
-    min-width: 40px;
-  }
-
   .sidenav-text-container {
     margin-bottom: 0;
   }
@@ -181,6 +176,25 @@ h1 {
     display: none;
   }
 
+  /* ----- Mobile nav menu ----- */
+  .mobile-nav-icon {
+    fill: #fff;
+    min-width: 40px;
+  }
+
+  .mobile-nav-menu {
+    background-color: #000;
+  }
+
+  .mobile-nav-links a {
+    color: #fff;
+  }
+
+  .social-links svg {
+    fill: #fff;
+  }
+
+  /* ----- show tldr section ----- */
   .tldr {
     display: block;
   }
