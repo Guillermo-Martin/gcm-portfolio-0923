@@ -25,7 +25,9 @@ allSections.forEach(section => {
       currentSectionTitle.textContent = sectionHeader;
 
       // fade in animation
-      gsap.from(".current-section", {opacity: 0, x: -10, duration: 0.8});
+      gsap.timeline()
+        .set(".current-section", {opacity: 0, x: -10})
+        .to(".current-section", {opacity: 1, x: 0, duration: 0.8})
     },
     onEnterBack: () => {
       console.log(`${sectionHeader}`);
@@ -36,8 +38,11 @@ allSections.forEach(section => {
       currentSectionTitle.textContent = sectionHeader;
 
       // fade in animation
-      gsap.from(".current-section", {opacity: 0, x: -10, duration: 0.8});
+      gsap.timeline()
+        .set(".current-section", {opacity: 0, x: -10})
+        .to(".current-section", {opacity: 1, x: 0, duration: 0.8})
     },
+    fastScrollEnd: 3000,
   })
 })
 
