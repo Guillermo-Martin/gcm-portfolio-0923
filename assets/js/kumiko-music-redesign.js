@@ -23,6 +23,9 @@ allSections.forEach(section => {
 
       // change it's textcontent
       currentSectionTitle.textContent = sectionHeader;
+
+      // fade in animation
+      gsap.from(".current-section", {opacity: 0, x: -10, duration: 0.8});
     },
     onEnterBack: () => {
       console.log(`${sectionHeader}`);
@@ -31,6 +34,9 @@ allSections.forEach(section => {
 
       // change it's textcontent
       currentSectionTitle.textContent = sectionHeader;
+
+      // fade in animation
+      gsap.from(".current-section", {opacity: 0, x: -10, duration: 0.8});
     },
   })
 })
