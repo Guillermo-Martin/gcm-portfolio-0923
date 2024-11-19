@@ -31,7 +31,7 @@ for(let i = 0; i < tocLinkArr.length; i++) {
 
 
 // ---------- scrollTo animation:  992px and below ----------
-mm.add("(max-width: 992px", () => {
+mm.add("(max-width: 992px)", () => {
   // ----- Scroll to animation -----
   // get all of the table of contents link
   const tocLinkArr = document.querySelectorAll(".table-of-contents-link");
