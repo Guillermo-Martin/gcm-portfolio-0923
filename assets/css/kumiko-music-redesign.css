@@ -268,6 +268,14 @@ h1 {
   .mobile-nav-menu {
     top: 44%;
   }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .current-section {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 350px) {
