@@ -12,10 +12,21 @@ for(let i = 0; i < tocLinkArr.length; i++) {
   let sectionId = tocLinkArr[i].dataset.section;
   let scrollTriggerTarget = `.table-of-contents-link[data-section='${sectionId}']`;
 
-  // add event listener
+  // add event listener for scrollTo functionality
   tocLinkArr[i].addEventListener("click", () => {
-    // when user clicks on the link, scroll to that section
-    gsap.to(window, { duration: 1, scrollTo: `#${sectionId}` });
+    // when user clicks on the link, get the screenwidth
+    const screenWidth = window.innerWidth;
+    let offset = 0;
+
+    // if screenWidth is less than or equal to 992, use an offset
+    if(screenWidth <= 992) {
+      offset = 220;
+    } else {
+      offset = 0;
+    }
+    
+    // scroll to section
+    gsap.to(window, { duration: 1, scrollTo: { y: `#${sectionId}`, offsetY: `${offset}` } });
   });
 
   // add the scrollTrigger "active" link animation
