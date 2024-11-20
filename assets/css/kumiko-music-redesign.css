@@ -208,6 +208,10 @@ h1 {
     display: none;
   }
 
+  .mobile-table-of-contents-link {
+    display: none;
+  }
+
   /* ---------- Project cards ---------- */
   .button-container {
     flex-direction: row;
@@ -253,16 +257,14 @@ h1 {
     display: none;
   }
 
-  
-
   .table-of-contents-link {
     color: #fff;
     font-size: 24px;
   }
 
-  /* .table-of-contents-link {
-    font-size: 24px;
-  } */
+  .mobile-table-of-contents-link {
+    display: block;
+  }
 
   .current-section {
     display: block;
