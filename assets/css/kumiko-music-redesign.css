@@ -195,6 +195,14 @@ h1 {
   /* ----- show tldr section ----- */
   .tldr {
     display: block;
+    margin-bottom: 28px;
+  }
+
+  .tldr p:first-child {
+    font-size: var(--fs-h2);
+    font-weight: 700;
+    line-height: 1.2;
+    /* margin-bottom: 32px; */
   }
 
   /* ----- Table of contents ----- */
