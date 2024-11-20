@@ -30,9 +30,12 @@ for(let i = 0; i < tocLinkArr.length; i++) {
 };
 
 
+// ---------- Mobile menu close animation elements ----------
+let body = document.querySelector("body");
+let hamburgerIcon = document.querySelector(".hamburger-icon");
+let closeIcon = document.querySelector(".close-icon");
 
-
-// mobile menu close animation
+// ----- Mobile menu close animation -----
 let tl = gsap.timeline({ paused: true, duration: 0.1 });
   tl
     .to(".sidenav-text-container", {opacity: 0, duration: 0.2})
@@ -46,45 +49,8 @@ let tl = gsap.timeline({ paused: true, duration: 0.1 });
     .from(".social-links", {opacity: 0, y: -8, duration: 1}, "<0.2")
 
 
-
-
-// ---------- scrollTo animation:  992px and below ----------
+// ---------- Mobile menu animation:  992px and below ----------
 mm.add("(max-width: 992px)", () => {
-  // ----- Scroll to animation -----
-  // get all of the table of contents link
-  const tocLinkArr = document.querySelectorAll(".table-of-contents-link");
-
-  // loop through the table of contents links and add an eventlistener
-  for(let i = 0; i < tocLinkArr.length; i++) {
-    // get the section id to scroll to and define the scrollTrigger target
-    let sectionId = tocLinkArr[i].dataset.section;
-    let scrollTriggerTarget = `.table-of-contents-link[data-section='${sectionId}']`;
-
-    // add event listener
-    tocLinkArr[i].addEventListener("click", () => {
-      // when user clicks on the link, scroll to that section
-      tl.reverse();
-
-      // resume scrolling when menu is hidden
-      body.style.overflow = "scroll";
-    });
-
-    // add the scrollTrigger "active" link animation
-    gsap.to(scrollTriggerTarget, {
-      scrollTrigger: {
-        trigger: `#${sectionId}`,
-        start: "top 60%",
-        end: "bottom 60%",
-        toggleClass: {targets: scrollTriggerTarget, className: "active"}
-      }
-    });
-  };
-
-  // ---------- Mobile menu animation ----------
-  let body = document.querySelector("body");
-  let hamburgerIcon = document.querySelector(".hamburger-icon");
-  let closeIcon = document.querySelector(".close-icon");
-
   // ----- hamburger icon -----
   hamburgerIcon.addEventListener("click", function() {
     // play the mobile menu animation
@@ -102,4 +68,23 @@ mm.add("(max-width: 992px)", () => {
     // resume scrolling when menu is hidden
     body.style.overflow = "scroll";
   });
+});
+
+
+// ---------- Mobile table of content closing animation:  767px and below ----------
+mm.add("(max-width: 767px)", () => {
+  // get all of the mobile table of contents link
+  const mobileTocLinkArr = document.querySelectorAll(".mobile-nav-links .table-of-contents-link");
+
+  // loop through the mobile table of contents links and add an eventlistener
+  for(let i = 0; i < mobileTocLinkArr.length; i++) {
+    // add event listener to close menu and resume scrolling
+    mobileTocLinkArr[i].addEventListener("click", () => {
+      // when user clicks on the link, scroll to that section
+      tl.reverse();
+
+      // resume scrolling when menu is hidden
+      body.style.overflow = "scroll";
+    });
+  };
 });
