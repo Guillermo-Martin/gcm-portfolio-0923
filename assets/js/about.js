@@ -10,6 +10,7 @@ const init = () => {
     .from(".main-content", {height: 0, duration: 2})
     .from(".main-content-section", {opacity: 0, duration: 1}, "<")
     .from(".navbar", {opacity: 0, duration: 1}, "<0.5")
+    .from(".mobile-nav-icon", {opacity: 0, pointerEvents: "none", duration: 0.7}, "<")
     .from(".footer", {opacity: 0, duration: 1}, "<")
     .set("body", {overflow: "scroll"}, "<")
 }
