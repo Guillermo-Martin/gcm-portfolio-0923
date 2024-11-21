@@ -57,4 +57,34 @@ for(let i = 0; i < portfolioLinks.length; i++) {
 
     gsap.to(`.portfolio-link-info.${elementId}`, {x: 0, opacity: 0, duration: 0.2})
   });
+
+  // ---------- links ----------
+  portfolioLinks[i].addEventListener("click", (event) => {
+    let target = event.target.href;
+
+    console.log(target);
+    // prevent default link behavior
+    event.preventDefault();
+
+    // animation timeline
+    gsap.timeline()
+      .to(".homepage-hero-text", {opacity: 0, duration: 0.7})
+      .to("#transition-projects", {opacity: 0, duration: 0.7}, "<")
+      .to("#transition-resume", {opacity: 0, duration: 0.7}, "<")
+      .to(".portfolio-link-info", {opacity: 0, duration: 0.7}, "<")
+      .to(".footer", {opacity: 0, duration: 0.7}, "<")
+      .call(() => {
+        // get all links
+        let allLinks = document.querySelectorAll("a");
+
+        // loop through the links and add a class for no pointer events
+        for(let j = 0; j < allLinks.length; j++) {
+          allLinks[j].style.pointerEvents = "none";
+        }
+      })
+      .to("#transition-about", {opacity: 0, y: -5, duration: 0.5, delay: 0.8})
+      .call(() => {
+        window.location.href = target;
+      })
+  });
 };
