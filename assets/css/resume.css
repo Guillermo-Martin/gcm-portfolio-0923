@@ -1,3 +1,9 @@
+/* used to remove flash of unstyled content for page load animation */
+/* https://gsap.com/resources/fouc/ */
+body {
+  visibility: hidden;
+}
+
 /* ---------- Main content ---------- */
 .main-content-section {
   color: #000;
