@@ -1,5 +1,8 @@
+/* used to remove flash of unstyled content for page load animation */
+/* https://gsap.com/resources/fouc/ */
 body {
-  background-color: #000;
+  /* background-color: #000; */
+  visibility: hidden;
 }
 
 /* ---------- Sidenav and table of contents ---------- */
@@ -31,7 +34,7 @@ h1 {
 
 /* ---------- Main content ---------- */
 .main-content {
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 /* ----- Project card ----- */
