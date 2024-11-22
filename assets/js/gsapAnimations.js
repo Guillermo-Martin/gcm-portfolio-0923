@@ -19,7 +19,10 @@ for(let i = 0; i < tocLinkArr.length; i++) {
     let offset = 0;
 
     // if screenWidth is less than or equal to 992, use an offset
-    if(screenWidth <= 992) {
+    if(screenWidth <= 792) {
+      console.log(screenWidth);
+      offset = 250;
+    } else if(screenWidth <= 992) {
       offset = 220;
     } else {
       offset = 0;
