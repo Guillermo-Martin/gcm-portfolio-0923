@@ -116,6 +116,8 @@ mm.add("(max-width: 992px)", () => {
         closeIcon.style.pointerEvents = "none";
       })
       .to(`#transition-${targetId}`, {opacity: 0, y: -5, duration: 0.5, delay: 0.8})
+      .to(".sidenav", {backgroundColor: "#fff5eb", duration: 1})
+      .to("body", {visibility: "hidden", backgroundColor: "#fff5eb", duration: 1}, "<")
       .call(() => {
         window.location.href = target;
       });
