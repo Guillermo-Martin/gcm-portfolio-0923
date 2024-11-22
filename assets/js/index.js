@@ -2,7 +2,6 @@ console.log("connected! to home");
 
 let mm = gsap.matchMedia();
 
-
 // ---------- Subheader typing effect ----------
 const textToType = "Web Developer & UX Designer.";
 const subheader = document.querySelector(".subheader");
@@ -26,32 +25,18 @@ const typingEffect = (str) => {
   };
 };
 
-typingEffect(textToType);
-
-
-
-
 // ---------- Page load animation function ----------
 const init = () => {
   gsap.timeline()
     .from("body", {autoAlpha: 0})
     .from("h1", {opacity: 0, duration: 0.7})
-    // .from(".subheader", {opacity: 0, duration: 0.7})
-    .from(".social-links", {opacity: 0, duration: 0.7})
-    .from(".portfolio-links", {opacity: 0, duration: 0.7})
+    .from(".subheader", {opacity: 0, duration: 0.7}, "<1")
+    .call(() => typingEffect(textToType), null, "<")
+    .from(".social-links svg", {opacity: 0, stagger: 0.05, duration: 0.7}, "<1")
+    .from(".portfolio-links li", {opacity: 0, stagger: 0.05, duration: 0.7}, "<")
+    .from("a", {pointerEvents: "none"}, "<")
     .from(".footer", {opacity: 0, duration: 0.7})
-
-    // .to("body", {backgroundColor: "#000", duration: 1})
-    // .set("body", {overflow: "hidden"})
-    
-    // .from(".table-of-contents li", {pointerEvents: "none", opacity: 0, x: -10, stagger: 0.1, duration: 1}, "<1")
-    // .from(".additional-info", {opacity: 0, y: 10, duration: 0.7}, "<1")
-    // .from(".main-content-section", {opacity: 0, stagger: 0.1, duration: 1})
-    // .from(".navbar", {opacity: 0, duration: 1}, "<0.5")
-    // .from(".mobile-nav-icon", {opacity: 0, pointerEvents: "none", duration: 0.7}, "<")
-    // .from(".footer", {opacity: 0, duration: 1}, "<")
-    // .set("body", {overflow: "scroll"}, "<")
-}
+};
 
 // ----- Do animation when page elements load -----
 mm.add("(min-width: 993px)", () => {
@@ -59,11 +44,6 @@ mm.add("(min-width: 993px)", () => {
     init();
   });
 });
-
-
-
-
-
 
 
 // ---------- Portfolio links more info animation ----------
