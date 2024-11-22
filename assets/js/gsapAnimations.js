@@ -91,6 +91,7 @@ mm.add("(max-width: 992px)", () => {
   * @param {object} event - the "event" object when a user clicks on a link
   * @param {string} elem1 - the first portfolio link you want to fade away
   * @param {string} elem2 - the second portfolio link you want to fade away
+  * @param {string} elem3 - the third portfolio link you want to fade away
   */
   const transitionTimeline = (event, elem1, elem2, elem3) => {
     const targetId = event.target.id;
@@ -101,7 +102,6 @@ mm.add("(max-width: 992px)", () => {
       .to(".mobile-nav-links h2", animationOptions)
       .to(".social-links", animationOptions, "<")
       .to(".mobile-nav-icon", animationOptions, "<")
-      // .to(".footer", animationOptions, "<")
       .to(`#${elem1}`, animationOptions, "<")
       .to(`#${elem2}`, animationOptions, "<")
       .to(`#${elem3}`, animationOptions, "<")
