@@ -18,6 +18,16 @@ body {
 }
 
 /* ---------- media queries ---------- */
+@media screen and (max-width: 767px) {
+  .main-content {
+    padding-top: 176px;
+  }
+
+  .main-content .main-content-section:first-child {
+    padding-top: 44px;
+  }
+}
+
 @media screen and (max-width: 405px) {
   .mobile-nav-menu {
     top: 44%;
