@@ -21,7 +21,6 @@ window.addEventListener("load", () => {
 });
 
 
-// ---------------------------------------------
 // ---------- Navbar links page transition animations ----------
 // get navbar links
 const navbarContainer = document.querySelector(".navbar ul");
