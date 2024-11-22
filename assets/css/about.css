@@ -28,6 +28,16 @@ body {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .main-content {
+    padding-top: 213px;
+  }
+
+  .main-content .main-content-section {
+    padding-top: 44px;
+  }
+}
+
 @media screen and (max-width: 405px) {
   .mobile-nav-menu {
     top: 44%;
