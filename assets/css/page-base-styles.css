@@ -340,6 +340,10 @@ h1 {
     padding-top: 0;
   }
 
+  .main-content-section:nth-last-of-type(1) {
+    padding-bottom: 30px;
+  }
+
   /* ---------- Footer ---------- */
   .footer p {
     padding-left: 24px;
