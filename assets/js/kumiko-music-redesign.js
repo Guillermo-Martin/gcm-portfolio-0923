@@ -10,7 +10,7 @@ const init = () => {
     .from(".table-of-contents li", {pointerEvents: "none", opacity: 0, x: -10, stagger: 0.1, duration: 1}, "<1")
     .from(".additional-info", {opacity: 0, y: 10, duration: 0.7}, "<1")
     .from(".main-content-section", {opacity: 0, stagger: 0.1, duration: 1})
-    .from(".navbar", {opacity: 0, duration: 1}, "<0.5")
+    .from(".navbar", {pointerEvents: "none", opacity: 0, duration: 1}, "<0.5")
     .from(".mobile-nav-icon", {opacity: 0, pointerEvents: "none", duration: 0.7}, "<")
     .from(".footer", {opacity: 0, duration: 1}, "<")
     .set("body", {overflow: "scroll"}, "<")
