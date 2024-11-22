@@ -79,6 +79,72 @@ mm.add("(max-width: 992px)", () => {
     // resume scrolling when menu is hidden
     body.style.overflow = "scroll";
   });
+
+  // -------------- mobile page transition implementation ---------------
+  const mobileNavLinksContainer = document.querySelector(".mobile-nav-links");
+
+  /**
+  * This is the Greensock page transition animation timeline.
+  * @param {object} event - the "event" object when a user clicks on a link
+  * @param {string} elem1 - the first portfolio link you want to fade away
+  * @param {string} elem2 - the second portfolio link you want to fade away
+  */
+  const transitionTimeline = (event, elem1, elem2, elem3) => {
+    const targetId = event.target.id;
+    const target = event.target.href;
+    const animationOptions = {opacity: 0, duration: 0.7};
+
+    gsap.timeline()
+      .to(".mobile-nav-links h2", animationOptions)
+      .to(".social-links", animationOptions, "<")
+      .to(".mobile-nav-icon", animationOptions, "<")
+      // .to(".footer", animationOptions, "<")
+      .to(`#${elem1}`, animationOptions, "<")
+      .to(`#${elem2}`, animationOptions, "<")
+      .to(`#${elem3}`, animationOptions, "<")
+      .call(() => {
+        // get all links and mobile nav icon
+        let allLinks = document.querySelectorAll("a");
+        let closeIcon = document.querySelector(".close-icon");
+
+        // loop through the links and add a class for no pointer events
+        for(let j = 0; j < allLinks.length; j++) {
+          allLinks[j].style.pointerEvents = "none";
+        }
+
+        // add no pointer events to the mobile nav icon
+        closeIcon.style.pointerEvents = "none";
+      })
+      .to(`#transition-${targetId}`, {opacity: 0, y: -5, duration: 0.5, delay: 0.8})
+      .call(() => {
+        window.location.href = target;
+      });
+  }
+
+  mobileNavLinksContainer.addEventListener("click", (event) => {
+    // prevent default link behavior
+    event.preventDefault();
+
+    // home
+    if(event.target.id === "home") {
+      transitionTimeline(event, "about", "projects", "resume");
+    };
+
+    // about
+    if(event.target.id === "about") {
+      transitionTimeline(event, "home", "projects", "resume");
+    };
+  
+    // projects
+    if(event.target.id === "projects") {
+      transitionTimeline(event, "home", "about", "resume");
+    };
+  
+    // resume
+    if(event.target.id === "resume") {
+      transitionTimeline(event, "home", "about", "projects");
+    };
+  });
 });
 
 
