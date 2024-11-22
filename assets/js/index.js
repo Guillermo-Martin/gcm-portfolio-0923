@@ -39,11 +39,7 @@ const init = () => {
 };
 
 // ----- Do animation when page elements load -----
-mm.add("(min-width: 993px)", () => {
-  window.addEventListener("load", () => {
-    init();
-  });
-});
+init();
 
 
 // ---------- Portfolio links more info animation ----------
