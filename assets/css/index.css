@@ -4,6 +4,9 @@ body {
 	justify-content: start;
 	margin: 0;
 	position: relative;
+	/* used to remove flash of unstyled content for page load animation */
+	/* https://gsap.com/resources/fouc/ */
+	visibility: hidden;
 }
 
 .homepage-main-content {
