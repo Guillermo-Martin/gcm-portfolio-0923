@@ -90,13 +90,6 @@ navbarContainer.addEventListener("click", (event) => {
 });
 
 
-
-
-
-
-
-
-
 // ---------- page load animation at 992px and below ----------
 mm.add("(max-width: 992px)", () => {
   window.addEventListener("load", () => {
@@ -115,8 +108,6 @@ mm.add("(max-width: 992px)", () => {
     .set("body", {overflow: "scroll"}, "<")
   });
 });
-
-
 
 
 // ---------- Fade in section animation (767px and below) ----------
@@ -140,7 +131,7 @@ mm.add("(max-width: 767px)", () => {
       // fade in animation
       gsap.timeline()
         .set(".current-section", {opacity: 0, x: -10})
-        .to(".current-section", {opacity: 1, x: 0, duration: 0.8})
+        .to(".current-section", {opacity: 1, x: 0, duration: 0.8, delay: 2.7})
     };
 
     // create a scrollTrigger for each of the sections
