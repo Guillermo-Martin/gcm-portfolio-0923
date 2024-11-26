@@ -44,6 +44,12 @@ h1 {
 /* ----- main content subsection ---- */
 .main-content-section .subsection {
   border: 3px solid orange;
+  margin-bottom: 32px;
+}
+
+.main-content-section .subsection:last-child {
+  border: 3px solid green;
+  margin-bottom: 0;
 }
 
 .main-content-section .subsection p {
