@@ -221,6 +221,12 @@ ol {
   margin-bottom: 0;
 }
 
+/* ---------- Going forward ---------- */
+#moving-forward h4 {
+  border: 3px solid red;
+  margin-bottom: 12px;
+}
+
 /* ---------- media queries ---------- */
 @media screen and (max-width: 1354px) {
   /* ---------- Project buttons ---------- */
