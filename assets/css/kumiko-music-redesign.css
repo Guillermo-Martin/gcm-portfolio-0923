@@ -37,8 +37,18 @@ h1 {
   /* background-color: #000; */
 }
 
+.main-content-section {
+  border: 3px solid blue;
+}
+
+/* ----- main content subsection ---- */
+.main-content-section .subsection {
+  border: 3px solid orange;
+}
+
 /* ----- Project card ----- */
 .project-card {
+  border: 3px solid red;
   margin-bottom: 80px;
 }
 
