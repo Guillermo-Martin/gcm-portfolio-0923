@@ -205,6 +205,22 @@ ol {
   margin-bottom: 12px;
 }
 
+/* ---------- Usability studies ---------- */
+#usability-studies h4 {
+  border: 3px solid red;
+  margin-bottom: 12px;
+}
+
+#usability-studies ol {
+  border: 3px solid brown;
+  margin-bottom: 28px;
+}
+
+#usability-studies ol:last-child {
+  /* border: 3px solid pink; */
+  margin-bottom: 0;
+}
+
 /* ---------- media queries ---------- */
 @media screen and (max-width: 1354px) {
   /* ---------- Project buttons ---------- */
