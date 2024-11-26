@@ -33,49 +33,42 @@ h1 {
 }
 
 /* ---------- Main content ---------- */
-.main-content {
-  /* background-color: #000; */
-}
-
-.main-content-section {
-  /* border: 3px solid blue; */
-}
 
 /* ----- main content subsection ---- */
 .main-content-section .subsection {
-  border: 3px solid orange;
   margin-bottom: 32px;
 }
 
 .main-content-section .subsection:last-child {
-  /* border: 3px solid green; */
   margin-bottom: 0;
 }
 
+/* ----- subsection elements ----- */
 .subsection p {
-  /* border: 3px solid red; */
   margin-bottom: 0;
 }
 
 .subsection .subsection-intro {
-  border: 3px solid purple;
   margin-bottom: 24px;
 }
 
-/* ----- subsection list elements ----- */
+/* subsection list elements */
 .subsection li {
-  /* border: 3px solid pink; */
   margin-bottom: 24px;
 }
 
 .subsection li:last-child {
-  /* border: 3px solid red; */
   margin-bottom: 0;
+}
+
+/* Numbered lists */
+ol {
+  list-style: decimal;
+  padding-left: 48px;
 }
 
 /* ----- Project card ----- */
 .project-card {
-  /* border: 3px solid red; */
   margin-bottom: 80px;
 }
 
@@ -112,21 +105,6 @@ h1 {
   font-weight: 600;
 }
 
-/* Numbered lists */
-ol {
-  list-style: decimal;
-  padding-left: 48px;
-}
-
-/* Pain points */
-.pain-points p {
-  padding-left: 24px;
-}
-
-.pain-points span {
-  font-weight: 600;
-}
-
 /* Buttons */
 .button-container {
   align-items: center;
@@ -145,11 +123,9 @@ ol {
   font-size: 16px;
   font-weight: 400;
   justify-content: center;
-  /* max-width: 224px; */
   padding: 12px 28px;
   transition: all 0.2s;
   text-decoration: none;
-  /* width: 36%; */
   width: fit-content;
 }
 
@@ -175,6 +151,15 @@ ol {
   width: 24px;
 }
 
+/* ---------- Pain points ----------- */
+.pain-points p {
+  padding-left: 24px;
+}
+
+.pain-points span {
+  font-weight: 600;
+}
+
 /* ---------- Personas ---------- */
 .persona {
   margin-bottom: 60px;
@@ -184,13 +169,7 @@ ol {
   margin-bottom: 0;
 }
 
-.personas .personas-intro {
-  /* border: 3px solid red; */
-  /* margin-bottom: 24px; */
-}
-
 .persona h4 {
-  /* border: 3px solid red; */
   margin-bottom: 24px;
 }
 
@@ -201,29 +180,24 @@ ol {
 
 /* ---------- High-fidelity mockups ---------- */
 .hifi-mockups-prototype h4 {
-  /* border: 3px solid grey; */
   margin-bottom: 12px;
 }
 
 /* ---------- Usability studies ---------- */
 #usability-studies h4 {
-  border: 3px solid red;
   margin-bottom: 12px;
 }
 
 #usability-studies ol {
-  border: 3px solid brown;
   margin-bottom: 28px;
 }
 
 #usability-studies ol:last-child {
-  /* border: 3px solid pink; */
   margin-bottom: 0;
 }
 
 /* ---------- Going forward ---------- */
 #moving-forward h4 {
-  border: 3px solid red;
   margin-bottom: 12px;
 }
 
