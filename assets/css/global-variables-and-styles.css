@@ -4,7 +4,8 @@
 	--fs-h2: 48px;
 	/* --fs-h3: 44px; */
 	--fs-h3: 40px;
-	--fs-h4: 36px;
+	/* --fs-h4: 36px; */
+	--fs-h4: 28px;
 	--fs-subheader: 48px;
 	--fs-body: 20px;
 }
@@ -43,9 +44,9 @@ h3 {
 
 h4 {
 	font-size: var(--fs-h4);
-	font-weight: 500;
-	line-height: 1.2;
-	margin-bottom: 8px;
+	font-weight: 200;
+	/* line-height: 1.2; */
+	margin-bottom: 0px;
 }
 
 p {
@@ -104,6 +105,7 @@ a:hover {
 		--fs-h1: 48px;
 		--fs-h2: 36px;
 		--fs-h3: 32px;
+		--fs-h4: 24px;
 		--fs-body: 16px;
 		--fs-subheader: 24px;
 	}

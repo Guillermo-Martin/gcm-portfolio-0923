@@ -52,7 +52,7 @@ h1 {
   margin-bottom: 0;
 }
 
-.main-content-section .subsection p {
+.subsection p {
   /* border: 3px solid red; */
   margin-bottom: 0;
 }
@@ -135,14 +135,17 @@ ol {
   background-color: #314788;
   border-radius: 50px;
   color: #fff;
+  cursor: pointer;
   display: flex;
   font-size: 16px;
   font-weight: 400;
   justify-content: center;
-  max-width: 224px;
+  /* max-width: 224px; */
   padding: 12px 28px;
+  transition: all 0.2s;
   text-decoration: none;
-  width: 36%;
+  /* width: 36%; */
+  width: fit-content;
 }
 
 .project-link-button:hover {
@@ -154,7 +157,7 @@ ol {
   fill: #fff;
   height: 20px;
   margin-left: 12px;
-  transition: fill 0.2s;
+  transition: fill 0.1s;
   width: 20px;
 }
 
@@ -165,6 +168,30 @@ ol {
 .project-link-button .github-icon {
   height: 24px;
   width: 24px;
+}
+
+/* ---------- Personas ---------- */
+.persona {
+  margin-bottom: 60px;
+}
+
+.persona:last-child {
+  margin-bottom: 0;
+}
+
+.personas .personas-intro {
+  /* border: 3px solid red; */
+  margin-bottom: 24px;
+}
+
+.persona h4 {
+  /* border: 3px solid red; */
+  margin-bottom: 24px;
+}
+
+.persona .persona-quote {
+  font-style: italic;
+  margin-bottom: 24px;
 }
 
 /* ---------- media queries ---------- */
