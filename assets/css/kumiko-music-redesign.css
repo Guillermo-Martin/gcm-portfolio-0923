@@ -53,7 +53,18 @@ h1 {
 }
 
 .main-content-section .subsection p {
-  border: 3px solid red;
+  /* border: 3px solid red; */
+  margin-bottom: 0;
+}
+
+/* ----- subsection list elements ----- */
+.subsection li {
+  /* border: 3px solid pink; */
+  margin-bottom: 24px;
+}
+
+.subsection li:last-child {
+  /* border: 3px solid red; */
   margin-bottom: 0;
 }
 
