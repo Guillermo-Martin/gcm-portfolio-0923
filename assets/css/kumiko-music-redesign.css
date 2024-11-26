@@ -75,6 +75,21 @@ h1 {
   font-weight: 600;
 }
 
+/* Numbered lists */
+ol {
+  list-style: decimal;
+  padding-left: 48px;
+}
+
+/* Pain points */
+.pain-points p {
+  padding-left: 24px;
+}
+
+.pain-points span {
+  font-weight: 600;
+}
+
 /* Buttons */
 .button-container {
   align-items: center;
