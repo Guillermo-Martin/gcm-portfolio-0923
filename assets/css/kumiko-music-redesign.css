@@ -199,6 +199,12 @@ ol {
   margin-bottom: 24px;
 }
 
+/* ---------- High-fidelity mockups ---------- */
+.hifi-mockups-prototype h4 {
+  /* border: 3px solid grey; */
+  margin-bottom: 12px;
+}
+
 /* ---------- media queries ---------- */
 @media screen and (max-width: 1354px) {
   /* ---------- Project buttons ---------- */
