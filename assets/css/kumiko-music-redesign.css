@@ -48,7 +48,7 @@ h1 {
 }
 
 .main-content-section .subsection:last-child {
-  border: 3px solid green;
+  /* border: 3px solid green; */
   margin-bottom: 0;
 }
 
