@@ -38,7 +38,7 @@ h1 {
 }
 
 .main-content-section {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
 }
 
 /* ----- main content subsection ---- */
@@ -46,9 +46,14 @@ h1 {
   border: 3px solid orange;
 }
 
+.main-content-section .subsection p {
+  border: 3px solid red;
+  margin-bottom: 0;
+}
+
 /* ----- Project card ----- */
 .project-card {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   margin-bottom: 80px;
 }
 
