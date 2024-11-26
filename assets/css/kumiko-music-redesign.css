@@ -33,7 +33,6 @@ h1 {
 }
 
 /* ---------- Main content ---------- */
-
 /* ----- main content subsection ---- */
 .main-content-section .subsection {
   margin-bottom: 32px;
@@ -84,29 +83,9 @@ ol {
   width: 100%;
 }
 
-/* Project description */
-.project-description {
-  margin-bottom: 28px;
-}
-
-/* Project basic info */
-.project-basic-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 32px;
-}
-
-.project-basic-info li:nth-child(3) {
-  grid-column-end: 3;
-  grid-column-start: 1;
-}
-
-.project-basic-info span {
-  font-weight: 600;
-}
-
-/* Buttons */
+/* ----- Buttons ----- */
 .button-container {
+  /* background-color: red; */
   align-items: center;
   display: flex;
   gap: 28px;
@@ -149,6 +128,28 @@ ol {
 .project-link-button .github-icon {
   height: 24px;
   width: 24px;
+}
+
+/* ---------- Project overview ---------- */
+/* .project-description {
+  background-color: red;
+  margin-bottom: 28px;
+} */
+
+/* Project basic info */
+.project-basic-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 32px;
+}
+
+.project-basic-info li:nth-child(3) {
+  grid-column-end: 3;
+  grid-column-start: 1;
+}
+
+.project-basic-info span {
+  font-weight: 600;
 }
 
 /* ---------- Pain points ----------- */
@@ -234,10 +235,6 @@ ol {
   }
 
   /* ---------- Sidenav ---------- */
-  .sidenav {
-    /* background-color: #000; */
-  }
-
   .sidenav-text-container {
     margin-bottom: 0;
   }
@@ -274,7 +271,6 @@ ol {
     font-size: var(--fs-h2);
     font-weight: 700;
     line-height: 1.2;
-    /* margin-bottom: 32px; */
   }
 
   /* ----- Table of contents ----- */
