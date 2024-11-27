@@ -63,11 +63,9 @@ body {
   margin-bottom: 0;
 }
 
-/* .persona-text {
-  align-items: center;
-  display: grid;
-  border: 3px solid red;
-} */
+.persona-text {
+  align-items: start;
+}
 
 /* ----- Goals and frustrations ----- */
 .goals-and-frustrations {
@@ -89,6 +87,20 @@ body {
   margin-bottom: 0;
 }
 
+/* ----- Problem statement ---- */
+.problem-statement {
+  margin-bottom: 40px;
+}
+
+/* ----- attribution ----- */
+.attribution, .attribution a {
+  font-size: 16px;
+}
+
+.attribution a {
+  color: #fff;
+}
+
 /* ----- persona close button ---- */
 .persona-close-button {
   display: flex;
@@ -101,6 +113,8 @@ body {
   height: 40px;
   width: 40px;
 }
+
+
 
 /* ---------- Sidenav and table of contents ---------- */
 .sidenav, .navbar a, .table-of-contents p {
