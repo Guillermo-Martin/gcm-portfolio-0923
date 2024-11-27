@@ -109,7 +109,6 @@ mm.add("(max-width: 992px)", () => {
   });
 });
 
-
 // ---------- Fade in section animation (767px and below) ----------
 mm.add("(max-width: 767px)", () => {
   // scrollTrigger fadeIn animation (for mobile)
@@ -140,3 +139,15 @@ mm.add("(max-width: 767px)", () => {
     });
   });
 }); 
+
+
+// ---------- Persona modal animation ----------
+const personaButtons = document.querySelectorAll(".persona-button");
+
+// console.log(personaButtons)
+// loop over the persona buttons and add an event listener
+for(let button of personaButtons) {
+  button.addEventListener("click", () => {
+    console.log("you clicked on me!");
+  });
+}
