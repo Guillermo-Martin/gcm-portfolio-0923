@@ -3,6 +3,25 @@
 body {
   /* background-color: #000; */
   visibility: hidden;
+  position: relative;
+}
+
+/* ---------- Personal modal ---------- */
+.persona-modal.active {
+  background-color: red;
+  /* color: white; */
+  width: 500px;
+  height: 500px;
+  position: fixed;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.persona-modal {
+  display: none;
 }
 
 /* ---------- Sidenav and table of contents ---------- */

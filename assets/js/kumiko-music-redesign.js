@@ -143,11 +143,21 @@ mm.add("(max-width: 767px)", () => {
 
 // ---------- Persona modal animation ----------
 const personaButtons = document.querySelectorAll(".persona-button");
+const personaModal = document.querySelector(".persona-modal");
+const personaCloseButton = document.querySelector(".persona-close-button");
 
-// console.log(personaButtons)
 // loop over the persona buttons and add an event listener
 for(let button of personaButtons) {
   button.addEventListener("click", () => {
     console.log("you clicked on me!");
+
+    // on click, show modal
+    personaModal.classList.add("active");
   });
-}
+};
+
+
+// persona modal close
+personaCloseButton.addEventListener("click", () => {
+  personaModal.classList.remove("active");
+});
