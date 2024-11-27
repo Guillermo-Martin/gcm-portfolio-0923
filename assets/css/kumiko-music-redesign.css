@@ -10,6 +10,7 @@ body {
 .persona-modal.active {
   /* modal background blur */
   /* https://stackoverflow.com/questions/61353311/adding-background-blur-via-css-behind-pop-up-modal */
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
   color: white;
@@ -29,10 +30,11 @@ body {
 
 .persona-modal-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-columns: 1fr 1.5fr 0.1fr;
   margin: 0 auto;
-  padding-bottom: 60px;
-  padding-top: 60px;
+  max-width: 80%;
+  /* padding-bottom: 60px;
+  padding-top: 60px; */
   width: 90%;
 }
 
@@ -44,8 +46,12 @@ body {
   justify-content: center;
 }
 
+.persona-images {
+  gap: 8px;
+}
+
 .persona-images img {
-  width: 70%;
+  width: 80%;
 }
 
 /* ----- persona close button ---- */
