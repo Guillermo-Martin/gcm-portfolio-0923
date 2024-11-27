@@ -146,6 +146,47 @@ const personaButtons = document.querySelectorAll(".persona-button");
 const personaModal = document.querySelector(".persona-modal");
 const personaCloseButton = document.querySelector(".persona-close-icon");
 
+
+// ----- Typing effect -----
+const personaName = document.querySelector(".persona-intro h2");
+const personaIntro = document.querySelector(".persona-intro p");
+let currentStr = "";
+let index = 0;
+
+// console.log(personaIntro)
+
+const personaShawn = {
+  name: "Hi, I'm Shawn!",
+  // nameElement: personaName,
+  intro: "I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  // introElement: personaIntro
+}
+
+
+const typingEffect = (str, element) => {
+  // check to see if current string is empty
+  // console.log(currentStr)
+  
+  // base case:  if the index is less that the string's length keeping calling the function
+  if(index < str.length) {
+    // add a letter from the string (at the current index) to the current string
+    currentStr += str[index];
+
+    // set the subheader's text content to be what the current string is
+    element.textContent = currentStr;
+
+    // increase the index by 1
+    index++;
+
+    // use setTimeout to call the function after a delay
+    setTimeout(() => typingEffect(str, element), 20);
+  };
+
+  
+  
+};
+
+
 // loop over the persona buttons and add an event listener
 for(let button of personaButtons) {
   button.addEventListener("click", () => {
@@ -160,8 +201,30 @@ for(let button of personaButtons) {
       .from(".persona-image-1", {rotateX: 90, duration: 0.5})
       .from(".persona-image-2", {rotateY: 90, duration: 0.5})
       .from(".persona-image-3", {rotateX: 90, duration: 0.5})
-      .from(".persona-intro h2", {opacity: 0, duration: 0.5})
-      .from(".persona-intro p", {opacity: 0, duration: 0.5})
+      .call(() => {
+        // check to see if currentStr isn't empty
+        if(currentStr !== "") {
+          currentStr = "";
+          index = 0;
+          typingEffect(personaShawn.name, personaName);
+        } else {
+          typingEffect(personaShawn.name, personaName);
+        }
+      })
+      .call(() => {
+        
+
+        currentStr = "";
+        index = 0;
+        typingEffect(personaShawn.intro, personaIntro)
+      }, null, "<1")
+      
+      
+      
+      // .call(() => typingEffect(textToType), "<2")
+      // .from(".persona-intro h2", {opacity: 0, duration: 0.5})
+      // .from(".persona-intro p", {opacity: 0, duration: 0.5})
+      // .call(() => typingEffect(personaShawn.intro, personaIntro))
       .from(".persona-goals h3", {opacity: 0, duration: 0.5})
       .from(".persona-goals li", {opacity: 0, duration: 0.5})
       .from(".persona-frustrations h3", {opacity: 0, duration: 0.5})
