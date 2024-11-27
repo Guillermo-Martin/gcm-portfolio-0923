@@ -153,6 +153,22 @@ for(let button of personaButtons) {
 
     // on click, show modal
     personaModal.classList.add("active");
+
+    // animation
+    gsap.timeline()
+      .from(".persona-modal", {opacity: 0, duration: 1})
+      .from(".persona-image-1", {rotateX: 90, duration: 0.5})
+      .from(".persona-image-2", {rotateY: 90, duration: 0.5})
+      .from(".persona-image-3", {rotateX: 90, duration: 0.5})
+      .from(".persona-intro h2", {opacity: 0, duration: 0.5})
+      .from(".persona-intro p", {opacity: 0, duration: 0.5})
+      .from(".persona-goals h3", {opacity: 0, duration: 0.5})
+      .from(".persona-goals li", {opacity: 0, duration: 0.5})
+      .from(".persona-frustrations h3", {opacity: 0, duration: 0.5})
+      .from(".persona-frustrations li", {opacity: 0, duration: 0.5})
+      .from(".problem-statement h3", {opacity: 0, duration: 0.5})
+      .from(".problem-statement p", {opacity: 0, duration: 0.5})
+      .from(".attribution", {opacity: 0, duration: 0.5})
   });
 };
 
