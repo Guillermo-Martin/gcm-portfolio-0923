@@ -144,7 +144,7 @@ mm.add("(max-width: 767px)", () => {
 // ---------- Persona modal animation ----------
 const personaButtons = document.querySelectorAll(".persona-button");
 const personaModal = document.querySelector(".persona-modal");
-const personaCloseButton = document.querySelector(".persona-close-button");
+const personaCloseButton = document.querySelector(".persona-close-icon");
 
 // loop over the persona buttons and add an event listener
 for(let button of personaButtons) {
