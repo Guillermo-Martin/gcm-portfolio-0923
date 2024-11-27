@@ -38,8 +38,12 @@ body {
   width: 90%;
 }
 
+.persona-intro, .goals-and-frustrations {
+  /* margin-bottom: 40px; */
+}
+
 /* ----- persona images and text ----- */
-.persona-images, .persona-text {
+.persona-images {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -52,6 +56,17 @@ body {
 
 .persona-images img {
   width: 80%;
+}
+
+.persona-modal p {
+  /* border: 3px solid red; */
+  margin-bottom: 0;
+}
+
+.persona-text {
+  align-items: center;
+  display: grid;
+  /* border: 3px solid red; */
 }
 
 /* ----- Goals and frustrations ----- */
