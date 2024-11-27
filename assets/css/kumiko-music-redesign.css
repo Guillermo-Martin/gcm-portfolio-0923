@@ -101,6 +101,10 @@ body {
   color: #fff;
 }
 
+.attribution a:hover {
+  color: #314788;
+}
+
 /* ----- persona close button ---- */
 .persona-close-button {
   display: flex;
@@ -111,7 +115,12 @@ body {
   cursor: pointer;
   fill: #fff;
   height: 40px;
+  transition: all 0.2s;
   width: 40px;
+}
+
+.persona-close-icon:hover {
+  fill: #314788;
 }
 
 
