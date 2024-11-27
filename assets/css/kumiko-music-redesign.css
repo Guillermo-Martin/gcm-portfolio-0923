@@ -36,6 +36,13 @@ body {
   width: 70%;
 }
 
+.persona-close-icon {
+  cursor: pointer;
+  fill: #fff;
+  height: 40px;
+  width: 40px;
+}
+
 /* ---------- Sidenav and table of contents ---------- */
 .sidenav, .navbar a, .table-of-contents p {
   color: #fff;
