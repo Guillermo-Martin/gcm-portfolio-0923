@@ -39,11 +39,11 @@ body {
 }
 
 .persona-intro, .goals-and-frustrations {
-  /* margin-bottom: 40px; */
+  margin-bottom: 40px;
 }
 
 /* ----- persona images and text ----- */
-.persona-images {
+.persona-images, .persona-text {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -63,11 +63,11 @@ body {
   margin-bottom: 0;
 }
 
-.persona-text {
+/* .persona-text {
   align-items: center;
   display: grid;
-  /* border: 3px solid red; */
-}
+  border: 3px solid red;
+} */
 
 /* ----- Goals and frustrations ----- */
 .goals-and-frustrations {
