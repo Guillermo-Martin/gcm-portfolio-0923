@@ -8,15 +8,18 @@ body {
 
 /* ---------- Personal modal ---------- */
 .persona-modal.active {
-  background-color: red;
-  /* color: white; */
-  width: 500px;
-  height: 500px;
-  position: fixed;
+  /* modal background blur */
+  /* https://stackoverflow.com/questions/61353311/adding-background-blur-via-css-behind-pop-up-modal */
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  color: white;
   display: block;
-  top: 50%;
+  height: 100%;
   left: 50%;
+  position: fixed;
+  top: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   z-index: 1;
 }
 
