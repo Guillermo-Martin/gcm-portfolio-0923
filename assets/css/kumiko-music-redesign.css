@@ -54,6 +54,26 @@ body {
   width: 80%;
 }
 
+/* ----- Goals and frustrations ----- */
+.goals-and-frustrations {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.goals-and-frustrations ul {
+  padding-left: 30px;
+  list-style-type: disc;
+}
+
+.goals-and-frustrations li {
+  margin-bottom: 12px;
+}
+
+.goals-and-frustrations li:last-child {
+  margin-bottom: 0;
+}
+
 /* ----- persona close button ---- */
 .persona-close-button {
   display: flex;
