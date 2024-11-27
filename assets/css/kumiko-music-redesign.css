@@ -30,10 +30,28 @@ body {
 .persona-modal-container {
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  width: 90%;
+}
+
+/* ----- persona images and text ----- */
+.persona-images, .persona-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .persona-images img {
   width: 70%;
+}
+
+/* ----- persona close button ---- */
+.persona-close-button {
+  display: flex;
+  justify-content: end;
 }
 
 .persona-close-icon {
