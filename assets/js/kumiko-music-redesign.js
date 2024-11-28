@@ -257,6 +257,89 @@ const createTimeline = (strName, strIntro) => {
     return personaTimeline;
 }
 
+
+// -----------------------------------------------------------
+// persona creation function
+const personaCreation = (personaObj) => {
+  // destructure object variables
+
+  const { problem, images, attributionLink, attributionName, goals, frustrations, name, intro } = personaObj;
+  // set the persona information
+  personaProblem.textContent = problem;
+
+  // set the persona images
+  for(let i = 0; i < images.length; i++) {
+    // create an img tag
+    let personaImage = document.createElement("img");
+    // set the src
+    personaImage.src = images[i].filepath;
+    personaImage.alt = images[i].alt;
+    personaImage.classList.add(`persona-image-${i + 1}`);
+    // append the image to the persona images div
+    personaImagesDiv.appendChild(personaImage);
+  };
+
+  // set the attribution
+  attributionLink.href = attributionLink;
+  attributionLink.textContent = attributionName;
+
+  // set the persona goals
+  for(let goal of goals){
+    // create list elements
+    let goalLi = document.createElement("li");
+    let goalP = document.createElement("p");
+    // set goal text, then append to li
+    goalP.textContent = goal;
+    goalLi.appendChild(goalP);
+    
+    // append li to ul
+    personaGoalsList.appendChild(goalLi);
+  };
+
+  // set the persona frustrations
+  for(let frustration of frustrations) {
+    // create list elements
+    let frustrationLi = document.createElement("li");
+    let frustrationP = document.createElement("p");
+    // set frustration text, then append to li
+    frustrationP.textContent = frustration;
+    frustrationLi.appendChild(frustrationP);
+    
+    // append li to ul
+    personaFrustrationsList.appendChild(frustrationLi);
+  };
+
+  // create and play the persona animation timeline
+  let personaTimeline = createTimeline(name, intro);
+  personaTimeline.restart();
+
+  // add modal close functionality
+  // add an event listener to the close button; immediately stop animation if user clicks close
+  // while animation is playing
+  personaCloseButton.addEventListener("click", () => {
+    // reset the persona's info
+    personaImagesDiv.innerHTML = "";
+    attributionLink.href = "";
+    attributionLink.textContent = "";
+    personaName.textContent = "";
+    personaIntro.textContent = "";
+    personaGoalsList.innerHTML = "";
+    personaFrustrationsList.innerHTML = "";
+    personaProblem.textContent = "";
+
+    // set isTyping to false
+    isTyping = false;
+
+    // hide modal
+    personaModal.classList.remove("active");
+
+    // stop the animation
+    personaTimeline.kill();
+  });
+}
+// -----------------------------------------------------------
+
+
 // loop over the persona buttons and add an event listener
 for(let button of personaButtons) {
   button.addEventListener("click", (event) => {
@@ -265,161 +348,12 @@ for(let button of personaButtons) {
 
     // if persona 1 is clicked on
     if(event.target.id === "persona-1") {
-      // set the persona information
-      personaProblem.textContent = personaShawn.problem;
-
-      // set the persona images
-      for(let i = 0; i < personaShawn.images.length; i++) {
-        // create an img tag
-        let personaImage = document.createElement("img");
-        // set the src
-        personaImage.src = personaShawn.images[i].filepath;
-        personaImage.alt = personaShawn.images[i].alt;
-        personaImage.classList.add(`persona-image-${i + 1}`);
-        // append the image to the persona images div
-        personaImagesDiv.appendChild(personaImage);
-      }
-
-      // set the attribution
-      attributionLink.href = personaShawn.attributionLink;
-      attributionLink.textContent = personaShawn.attributionName;
-
-
-
-      // persona goals
-      for(let goal of personaShawn.goals){
-        // create list elements
-        let goalLi = document.createElement("li");
-        let goalP = document.createElement("p");
-        // set goal text, then append to li
-        goalP.textContent = goal;
-        goalLi.appendChild(goalP);
-        
-        // append li to ul
-        personaGoalsList.appendChild(goalLi);
-      };
-
-      // persona frustrations
-      for(let frustration of personaShawn.frustrations) {
-        // create list elements
-        let frustrationLi = document.createElement("li");
-        let frustrationP = document.createElement("p");
-        // set frustration text, then append to li
-        frustrationP.textContent = frustration;
-        frustrationLi.appendChild(frustrationP);
-        
-        // append li to ul
-        personaFrustrationsList.appendChild(frustrationLi);
-      };
-
-      // create and play timeline
-      let shawnTimeline = createTimeline(personaShawn.name, personaShawn.intro);
-      shawnTimeline.restart();
-
-      // persona modal close
-      // add an event listener to the close button; immediately stop animation if user clicks close
-      // while animation is playing
-      personaCloseButton.addEventListener("click", () => {
-        // reset the persona's info
-        personaImagesDiv.innerHTML = "";
-        attributionLink.href = "";
-        attributionLink.textContent = "";
-        personaName.textContent = "";
-        personaIntro.textContent = "";
-        personaGoalsList.innerHTML = "";
-        personaFrustrationsList.innerHTML = "";
-        personaProblem.textContent = "";
-
-        // set isTyping to false
-        isTyping = false;
-
-        // hide modal
-        personaModal.classList.remove("active");
-
-        // stop the animation
-        shawnTimeline.kill();
-        // shawnTimeline.progress(0);
-      });
+      personaCreation(personaShawn);
     };
 
     // if persona 2 is clicked on
     if(event.target.id === "persona-2") {
-      // set the persona information
-      personaProblem.textContent = personaLouella.problem;
-
-
-      // set the persona images
-      for(let i = 0; i < personaLouella.images.length; i++) {
-        // create an img tag
-        let personaImage = document.createElement("img");
-        // set the src
-        personaImage.src = personaLouella.images[i].filepath;
-        personaImage.alt = personaLouella.images[i].alt;
-        personaImage.classList.add(`persona-image-${i + 1}`);
-        // append the image to the persona images div
-        personaImagesDiv.appendChild(personaImage);
-      }
-
-      // set the attribution
-      attributionLink.href = personaLouella.attributionLink;
-      attributionLink.textContent = personaLouella.attributionName;
-
-
-      // persona goals
-      for(let goal of personaLouella.goals){
-        // create list elements
-        let goalLi = document.createElement("li");
-        let goalP = document.createElement("p");
-        // set goal text, then append to li
-        goalP.textContent = goal;
-        goalLi.appendChild(goalP);
-        
-        // append li to ul
-        personaGoalsList.appendChild(goalLi);
-      };
-
-      // persona frustrations
-      for(let frustration of personaLouella.frustrations) {
-        // create list elements
-        let frustrationLi = document.createElement("li");
-        let frustrationP = document.createElement("p");
-        // set frustration text, then append to li
-        frustrationP.textContent = frustration;
-        frustrationLi.appendChild(frustrationP);
-        
-        // append li to ul
-        personaFrustrationsList.appendChild(frustrationLi);
-      };
-
-      // create and play timeline
-      let louellaTimeline = createTimeline(personaLouella.name, personaLouella.intro);
-      louellaTimeline.play();
-
-      // persona modal close
-        // add an event listener to the close button; immediately stop animation if user clicks close
-        // while animation is playing
-      personaCloseButton.addEventListener("click", () => {
-        // set isTyping to false
-        isTyping = false;
-
-        // hide modal
-        personaModal.classList.remove("active");
-
-        // reset the persona's info
-        personaImagesDiv.innerHTML = "";
-        attributionLink.href = "";
-        attributionLink.textContent = "";
-        personaName.textContent = "";
-        personaIntro.textContent = "";
-        personaGoalsList.innerHTML = "";
-        personaFrustrationsList.innerHTML = "";
-        personaProblem.textContent = "";
-
-
-        // stop the animation
-        louellaTimeline.kill();
-        // louellaTimeline.progress(0);
-      });
+      personaCreation(personaLouella);
     };
   
     // on click, show modal
