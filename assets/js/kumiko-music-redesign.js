@@ -141,20 +141,20 @@ mm.add("(max-width: 767px)", () => {
 }); 
 
 
-// ---------- Persona modal animation ----------
+// ------------------------------------------------------------------
+//                    Persona modal animation 
+// ------------------------------------------------------------------
+// ---------- Persona elements ----------
 const personaButtons = document.querySelectorAll(".persona-button");
 const personaModal = document.querySelector(".persona-modal");
 const personaCloseButton = document.querySelector(".persona-close-icon");
-
-// ----- Persona elements -----
 const personaImagesDiv = document.querySelector(".persona-images");
 const personaProblem = document.querySelector(".problem-statement p");
 const personaGoalsList = document.querySelector(".persona-goals ul");
 const personaFrustrationsList = document.querySelector(".persona-frustrations ul");
 const attributionLink = document.querySelector(".attribution a");
-// console.log(personaGoals);
 
-// ----- personas -----
+// ---------- Personas information ----------
 const personaShawn = {
   name: "Hi, I'm Shawn!",
   intro: "I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -185,14 +185,14 @@ const personaLouella = {
   attributionLink: "https://www.freepik.com/author/freepik"
 };
 
-// ----- Typing effect elements -----
+// ---------- Typing effect elements ----------
 const personaName = document.querySelector(".persona-intro h2");
 const personaIntro = document.querySelector(".persona-intro p");
 let currentStr = "";
 let index = 0;
 let isTyping = true;
 
-// ----- Typing effect -----
+// ---------- Typing effect (for persona animation timeline) ----------
 const typingEffect = (str, element) => {
   // base case:  if the index is less that the string's length keeping calling the function
   // and isTyping is false
@@ -211,7 +211,7 @@ const typingEffect = (str, element) => {
   };
 };
 
-// ----- Persona animation -----
+// ---------- Persona animation (for createPersona function) ----------
 const createTimeline = (strName, strIntro) => {
   let personaTimeline = gsap.timeline({paused: true})
     .set(".persona-goals h3", {opacity: 0})
@@ -255,15 +255,13 @@ const createTimeline = (strName, strIntro) => {
   
     // return timeline to be used elsewhere
     return personaTimeline;
-}
+};
 
-
-// -----------------------------------------------------------
-// persona creation function
+// ---------- Persona creation function ----------
 const personaCreation = (personaObj) => {
   // destructure object variables
-
   const { problem, images, attributionLink, attributionName, goals, frustrations, name, intro } = personaObj;
+
   // set the persona information
   personaProblem.textContent = problem;
 
@@ -336,11 +334,9 @@ const personaCreation = (personaObj) => {
     // stop the animation
     personaTimeline.kill();
   });
-}
-// -----------------------------------------------------------
+};
 
-
-// loop over the persona buttons and add an event listener
+// ---------- Adding persona creation function to "learn more" persona buttons ----------
 for(let button of personaButtons) {
   button.addEventListener("click", (event) => {
     // set isTyping to true
