@@ -154,7 +154,7 @@ const personaShawn = {
 
 const personaLouella = {
   name: "Hi, I'm Louella!",
-  intro: "Louella intro"
+  intro: "Louella intro I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 };
 
 // ----- Typing effect elements -----
@@ -163,7 +163,6 @@ const personaIntro = document.querySelector(".persona-intro p");
 let currentStr = "";
 let index = 0;
 let isTyping = true;
-
 
 // ----- Typing effect -----
 const typingEffect = (str, element) => {
@@ -187,10 +186,20 @@ const typingEffect = (str, element) => {
 // ----- Persona animation -----
 const createTimeline = (strName, strIntro) => {
   let personaTimeline = gsap.timeline({paused: true})
+    .set(".persona-goals h3", {opacity: 0})
+    .set(".persona-goals li", {opacity: 0})
+    .set(".persona-frustrations h3", {opacity: 0})
+    .set(".persona-frustrations li", {opacity: 0})
+    .set(".problem-statement h3", {opacity: 0})
+    .set(".problem-statement p", {opacity: 0})
+    .set(".attribution", {opacity: 0})
+    .set(".persona-image-1", {rotateX: 90})
+    .set(".persona-image-2", {rotateY: 90})
+    .set(".persona-image-3", {rotateX: 90, duration: 0.5})
     .from(".persona-modal", {opacity: 0, duration: 1})
-    .from(".persona-image-1", {rotateX: 90, duration: 0.5})
-    .from(".persona-image-2", {rotateY: 90, duration: 0.5})
-    .from(".persona-image-3", {rotateX: 90, duration: 0.5})
+    .to(".persona-image-1", {rotateX: 0, duration: 0.5})
+    .to(".persona-image-2", {rotateY: 0, duration: 0.5})
+    .to(".persona-image-3", {rotateX: 0, duration: 0.5})
     .call(() => {
       // check to see if currentStr isn't empty. If it's not, set currentStr to empty, and index to 0.
       // otherwise, call the typing effect.
@@ -208,13 +217,13 @@ const createTimeline = (strName, strIntro) => {
       index = 0;
       typingEffect(strIntro, personaIntro)
     }, null, "<1")
-    .from(".persona-goals h3", {opacity: 0, duration: 0.5}, "<7.5")
-    .from(".persona-goals li", {opacity: 0, duration: 0.5})
-    .from(".persona-frustrations h3", {opacity: 0, duration: 0.5})
-    .from(".persona-frustrations li", {opacity: 0, duration: 0.5})
-    .from(".problem-statement h3", {opacity: 0, duration: 0.5})
-    .from(".problem-statement p", {opacity: 0, duration: 0.5})
-    .from(".attribution", {opacity: 0, duration: 0.5});
+    .to(".persona-goals h3", {opacity: 1, duration: 0.5}, "<7.5")
+    .to(".persona-goals li", {opacity: 1, duration: 0.5})
+    .to(".persona-frustrations h3", {opacity: 1, duration: 0.5})
+    .to(".persona-frustrations li", {opacity: 1, duration: 0.5})
+    .to(".problem-statement h3", {opacity: 1, duration: 0.5})
+    .to(".problem-statement p", {opacity: 1, duration: 0.5})
+    .to(".attribution", {opacity: 1, duration: 0.5});
   
     // return timeline to be used elsewhere
     return personaTimeline;
@@ -236,18 +245,19 @@ for(let button of personaButtons) {
       // add an event listener to the close button; immediately stop animation if user clicks close
       // while animation is playing
       personaCloseButton.addEventListener("click", () => {
-        // set isTyping to false
-        isTyping = false;
-
-        // stop the animation
-        shawnTimeline.kill();
-
         // reset the persona's info
         personaName.textContent = "";
         personaIntro.textContent = "";
 
+        // set isTyping to false
+        isTyping = false;
+
         // hide modal
         personaModal.classList.remove("active");
+
+        // stop the animation
+        shawnTimeline.kill();
+        shawnTimeline.timeline(0);
       });
     };
 
@@ -255,7 +265,7 @@ for(let button of personaButtons) {
     if(event.target.id === "persona-2") {
       // create and play timeline
       var louellaTimeline = createTimeline(personaLouella.name, personaLouella.intro);
-      louellaTimeline.restart();
+      louellaTimeline.play();
 
       // persona modal close
         // add an event listener to the close button; immediately stop animation if user clicks close
@@ -264,15 +274,16 @@ for(let button of personaButtons) {
         // set isTyping to false
         isTyping = false;
 
-        // stop the animation
-        louellaTimeline.kill();
+        // hide modal
+        personaModal.classList.remove("active");
 
         // reset the persona's info
         personaName.textContent = "";
         personaIntro.textContent = "";
-        
-        // hide modal
-        personaModal.classList.remove("active");
+
+        // stop the animation
+        louellaTimeline.kill();
+        louellaTimeline.timeline(0);
       });
     };
   
