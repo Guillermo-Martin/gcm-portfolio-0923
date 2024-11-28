@@ -230,7 +230,7 @@ for(let button of personaButtons) {
     if(event.target.id === "persona-1") {
       // create and play timeline
       var shawnTimeline = createTimeline(personaShawn.name, personaShawn.intro);
-      shawnTimeline.play();
+      shawnTimeline.restart();
 
       // persona modal close
       // add an event listener to the close button; immediately stop animation if user clicks close
@@ -255,7 +255,7 @@ for(let button of personaButtons) {
     if(event.target.id === "persona-2") {
       // create and play timeline
       var louellaTimeline = createTimeline(personaLouella.name, personaLouella.intro);
-      louellaTimeline.play();
+      louellaTimeline.restart();
 
       // persona modal close
         // add an event listener to the close button; immediately stop animation if user clicks close
