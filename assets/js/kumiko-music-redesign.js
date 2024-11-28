@@ -157,7 +157,12 @@ let index = 0;
 const personaShawn = {
   name: "Hi, I'm Shawn!",
   intro: "I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-}
+};
+
+const personaLouella = {
+  name: "Hi, I'm Louella!",
+  intro: "Louella intro"
+};
 
 
 const typingEffect = (str, element) => {
@@ -180,8 +185,18 @@ const typingEffect = (str, element) => {
 
 // loop over the persona buttons and add an event listener
 for(let button of personaButtons) {
-  button.addEventListener("click", () => {
-    console.log("you clicked on me!");
+  button.addEventListener("click", (event) => {
+    // define persona object to use
+    let personaObj;
+
+    // determien which persona to use depending on the button clicked on
+    if(event.target.id === "persona-1") {
+      personaObj = personaShawn;
+    };
+  
+    if(event.target.id === "persona-2") {
+      personaObj = personaLouella;
+    };
 
     // on click, show modal
     personaModal.classList.add("active");
@@ -198,16 +213,16 @@ for(let button of personaButtons) {
         if(currentStr !== "") {
           currentStr = "";
           index = 0;
-          typingEffect(personaShawn.name, personaName);
+          typingEffect(personaObj.name, personaName);
         } else {
-          typingEffect(personaShawn.name, personaName);
+          typingEffect(personaObj.name, personaName);
         }
       })
       .call(() => {
         // set currentStr to empty and index to 0, then call the typing effect
         currentStr = "";
         index = 0;
-        typingEffect(personaShawn.intro, personaIntro)
+        typingEffect(personaObj.intro, personaIntro)
       }, null, "<1")
       .from(".persona-goals h3", {opacity: 0, duration: 0.5}, "<7.5")
       .from(".persona-goals li", {opacity: 0, duration: 0.5})
