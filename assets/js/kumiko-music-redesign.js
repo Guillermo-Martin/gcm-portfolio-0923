@@ -153,20 +153,14 @@ const personaIntro = document.querySelector(".persona-intro p");
 let currentStr = "";
 let index = 0;
 
-// console.log(personaIntro)
-
+// personas
 const personaShawn = {
   name: "Hi, I'm Shawn!",
-  // nameElement: personaName,
   intro: "I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  // introElement: personaIntro
 }
 
 
 const typingEffect = (str, element) => {
-  // check to see if current string is empty
-  // console.log(currentStr)
-  
   // base case:  if the index is less that the string's length keeping calling the function
   if(index < str.length) {
     // add a letter from the string (at the current index) to the current string
@@ -181,9 +175,6 @@ const typingEffect = (str, element) => {
     // use setTimeout to call the function after a delay
     setTimeout(() => typingEffect(str, element), 20);
   };
-
-  
-  
 };
 
 
@@ -202,7 +193,8 @@ for(let button of personaButtons) {
       .from(".persona-image-2", {rotateY: 90, duration: 0.5})
       .from(".persona-image-3", {rotateX: 90, duration: 0.5})
       .call(() => {
-        // check to see if currentStr isn't empty
+        // check to see if currentStr isn't empty. If it's not, set currentStr to empty, and index to 0.
+        // otherwise, call the typing effect.
         if(currentStr !== "") {
           currentStr = "";
           index = 0;
@@ -212,20 +204,12 @@ for(let button of personaButtons) {
         }
       })
       .call(() => {
-        
-
+        // set currentStr to empty and index to 0, then call the typing effect
         currentStr = "";
         index = 0;
         typingEffect(personaShawn.intro, personaIntro)
       }, null, "<1")
-      
-      
-      
-      // .call(() => typingEffect(textToType), "<2")
-      // .from(".persona-intro h2", {opacity: 0, duration: 0.5})
-      // .from(".persona-intro p", {opacity: 0, duration: 0.5})
-      // .call(() => typingEffect(personaShawn.intro, personaIntro))
-      .from(".persona-goals h3", {opacity: 0, duration: 0.5})
+      .from(".persona-goals h3", {opacity: 0, duration: 0.5}, "<7.5")
       .from(".persona-goals li", {opacity: 0, duration: 0.5})
       .from(".persona-frustrations h3", {opacity: 0, duration: 0.5})
       .from(".persona-frustrations li", {opacity: 0, duration: 0.5})
@@ -238,5 +222,10 @@ for(let button of personaButtons) {
 
 // persona modal close
 personaCloseButton.addEventListener("click", () => {
+  // hide modal
   personaModal.classList.remove("active");
+
+  // reset the persona's name an intro
+  personaName.textContent = "";
+  personaIntro.textContent = "";
 });
