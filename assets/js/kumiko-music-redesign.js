@@ -169,7 +169,7 @@ let isTyping = true;
 const typingEffect = (str, element) => {
   // base case:  if the index is less that the string's length keeping calling the function
   // and isTyping is false
-  if(index < str.length && isTyping === true) {
+  if(index < str.length && isTyping) {
     // add a letter from the string (at the current index) to the current string
     currentStr += str[index];
 
@@ -197,7 +197,6 @@ const createTimeline = (strName, strIntro) => {
       if(currentStr !== "") {
         currentStr = "";
         index = 0;
-        // typingEffect(personaShawn.name, personaName);
         typingEffect(strName, personaName);
       } else {
         typingEffect(strName, personaName);
