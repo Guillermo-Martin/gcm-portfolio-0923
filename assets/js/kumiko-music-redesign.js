@@ -149,6 +149,7 @@ const personaCloseButton = document.querySelector(".persona-close-icon");
 // ----- Persona elements -----
 const personaProblem = document.querySelector(".problem-statement p");
 const personaGoalsList = document.querySelector(".persona-goals ul");
+const personaFrustrationsList = document.querySelector(".persona-frustrations ul");
 // console.log(personaGoals);
 
 // ----- personas -----
@@ -156,14 +157,16 @@ const personaShawn = {
   name: "Hi, I'm Shawn!",
   intro: "I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   problem: "Shawn Watts is a photographer who needs to visit an easy to navigate website because he wants to learn more about a new musician.",
-  goals: ["Wants to learn more about a new musician"]
+  goals: ["Wants to learn more about a new musician"],
+  frustrations: ["Navigating the musician's website is challenging", "Can't tell who a musician is by their website"]
 };
 
 const personaLouella = {
   name: "Hi, I'm Louella!",
   intro: "Louella intro I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   problem: "Louella Washington is a social worker who needs to listen to samples of music because she wants to know what kind of music a particular musician plays.",
-  goals: ["Listen to music by a new musician", "Watch the musician perform"]
+  goals: ["Listen to music by a new musician", "Watch the musician perform"],
+  frustrations: ["Unsure where to listen and play samples of music", "Links take her off the musician's site to another site"]
 };
 
 // ----- Typing effect elements -----
@@ -260,10 +263,23 @@ for(let button of personaButtons) {
         
         // append li to ul
         personaGoalsList.appendChild(goalLi);
-      }
+      };
+
+      // persona frustrations
+      for(let frustration of personaShawn.frustrations) {
+        // create list elements
+        let frustrationLi = document.createElement("li");
+        let frustrationP = document.createElement("p");
+        // set frustration text, then append to li
+        frustrationP.textContent = frustration;
+        frustrationLi.appendChild(frustrationP);
+        
+        // append li to ul
+        personaFrustrationsList.appendChild(frustrationLi);
+      };
 
       // create and play timeline
-      var shawnTimeline = createTimeline(personaShawn.name, personaShawn.intro);
+      let shawnTimeline = createTimeline(personaShawn.name, personaShawn.intro);
       shawnTimeline.restart();
 
       // persona modal close
@@ -274,6 +290,7 @@ for(let button of personaButtons) {
         personaName.textContent = "";
         personaIntro.textContent = "";
         personaGoalsList.innerHTML = "";
+        personaFrustrationsList.innerHTML = "";
         personaProblem.textContent = "";
 
         // set isTyping to false
@@ -304,10 +321,23 @@ for(let button of personaButtons) {
         
         // append li to ul
         personaGoalsList.appendChild(goalLi);
-      }
+      };
+
+      // persona frustrations
+      for(let frustration of personaLouella.frustrations) {
+        // create list elements
+        let frustrationLi = document.createElement("li");
+        let frustrationP = document.createElement("p");
+        // set frustration text, then append to li
+        frustrationP.textContent = frustration;
+        frustrationLi.appendChild(frustrationP);
+        
+        // append li to ul
+        personaFrustrationsList.appendChild(frustrationLi);
+      };
 
       // create and play timeline
-      var louellaTimeline = createTimeline(personaLouella.name, personaLouella.intro);
+      let louellaTimeline = createTimeline(personaLouella.name, personaLouella.intro);
       louellaTimeline.play();
 
       // persona modal close
@@ -324,6 +354,7 @@ for(let button of personaButtons) {
         personaName.textContent = "";
         personaIntro.textContent = "";
         personaGoalsList.innerHTML = "";
+        personaFrustrationsList.innerHTML = "";
         personaProblem.textContent = "";
 
 
