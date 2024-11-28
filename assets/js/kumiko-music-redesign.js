@@ -147,9 +147,11 @@ const personaModal = document.querySelector(".persona-modal");
 const personaCloseButton = document.querySelector(".persona-close-icon");
 
 // ----- Persona elements -----
+const personaImagesDiv = document.querySelector(".persona-images");
 const personaProblem = document.querySelector(".problem-statement p");
 const personaGoalsList = document.querySelector(".persona-goals ul");
 const personaFrustrationsList = document.querySelector(".persona-frustrations ul");
+
 // console.log(personaGoals);
 
 // ----- personas -----
@@ -158,7 +160,12 @@ const personaShawn = {
   intro: "I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   problem: "Shawn Watts is a photographer who needs to visit an easy to navigate website because he wants to learn more about a new musician.",
   goals: ["Wants to learn more about a new musician"],
-  frustrations: ["Navigating the musician's website is challenging", "Can't tell who a musician is by their website"]
+  frustrations: ["Navigating the musician's website is challenging", "Can't tell who a musician is by their website"],
+  images: [
+    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg", alt: "Picture of Shawn"},
+    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-2.jpg", alt: "Picture of Shawn"},
+    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-3.jpg", alt: "Picture of Shawn"}
+  ]
 };
 
 const personaLouella = {
@@ -166,7 +173,12 @@ const personaLouella = {
   intro: "Louella intro I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   problem: "Louella Washington is a social worker who needs to listen to samples of music because she wants to know what kind of music a particular musician plays.",
   goals: ["Listen to music by a new musician", "Watch the musician perform"],
-  frustrations: ["Unsure where to listen and play samples of music", "Links take her off the musician's site to another site"]
+  frustrations: ["Unsure where to listen and play samples of music", "Links take her off the musician's site to another site"],
+  images: [
+    {filepath: "../assets/images/kumiko-music-redesign/louella-washington-1.jpg", alt: "Picture of Louella"},
+    {filepath: "../assets/images/kumiko-music-redesign/louella-washington-2.jpg", alt: "Picture of Louella"},
+    {filepath: "../assets/images/kumiko-music-redesign/louella-washington-3.jpg", alt: "Picture of Louella"}
+  ]
 };
 
 // ----- Typing effect elements -----
@@ -252,6 +264,22 @@ for(let button of personaButtons) {
       // set the persona information
       personaProblem.textContent = personaShawn.problem;
 
+      // set the persona images
+      for(let i = 0; i < personaShawn.images.length; i++) {
+        // create an img tag
+        let personaImage = document.createElement("img");
+        // set the src
+        personaImage.src = personaShawn.images[i].filepath;
+        personaImage.alt = personaShawn.images[i].alt;
+        personaImage.classList.add(`persona-image-${i + 1}`);
+        // append the image to the persona images div
+        personaImagesDiv.appendChild(personaImage);
+      }
+
+
+
+
+
       // persona goals
       for(let goal of personaShawn.goals){
         // create list elements
@@ -287,6 +315,7 @@ for(let button of personaButtons) {
       // while animation is playing
       personaCloseButton.addEventListener("click", () => {
         // reset the persona's info
+        personaImage.innerHTML = "";
         personaName.textContent = "";
         personaIntro.textContent = "";
         personaGoalsList.innerHTML = "";
@@ -309,6 +338,22 @@ for(let button of personaButtons) {
     if(event.target.id === "persona-2") {
       // set the persona information
       personaProblem.textContent = personaLouella.problem;
+
+
+      // set the persona images
+      for(let i = 0; i < personaLouella.images.length; i++) {
+        // create an img tag
+        let personaImage = document.createElement("img");
+        // set the src
+        personaImage.src = personaLouella.images[i].filepath;
+        personaImage.alt = personaLouella.images[i].alt;
+        personaImage.classList.add(`persona-image-${i + 1}`);
+        // append the image to the persona images div
+        personaImagesDiv.appendChild(personaImage);
+      }
+
+
+
 
       // persona goals
       for(let goal of personaLouella.goals){
@@ -351,6 +396,7 @@ for(let button of personaButtons) {
         personaModal.classList.remove("active");
 
         // reset the persona's info
+        personaImagesDiv.innerHTML = "";
         personaName.textContent = "";
         personaIntro.textContent = "";
         personaGoalsList.innerHTML = "";
