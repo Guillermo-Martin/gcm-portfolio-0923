@@ -151,7 +151,7 @@ const personaImagesDiv = document.querySelector(".persona-images");
 const personaProblem = document.querySelector(".problem-statement p");
 const personaGoalsList = document.querySelector(".persona-goals ul");
 const personaFrustrationsList = document.querySelector(".persona-frustrations ul");
-
+const attributionLink = document.querySelector(".attribution a");
 // console.log(personaGoals);
 
 // ----- personas -----
@@ -165,7 +165,9 @@ const personaShawn = {
     {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg", alt: "Picture of Shawn"},
     {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-2.jpg", alt: "Picture of Shawn"},
     {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-3.jpg", alt: "Picture of Shawn"}
-  ]
+  ],
+  attributionName: "@svetlanasokolova",
+  attributionLink: "https://www.freepik.com/author/svetlanasokolova"
 };
 
 const personaLouella = {
@@ -178,7 +180,9 @@ const personaLouella = {
     {filepath: "../assets/images/kumiko-music-redesign/louella-washington-1.jpg", alt: "Picture of Louella"},
     {filepath: "../assets/images/kumiko-music-redesign/louella-washington-2.jpg", alt: "Picture of Louella"},
     {filepath: "../assets/images/kumiko-music-redesign/louella-washington-3.jpg", alt: "Picture of Louella"}
-  ]
+  ],
+  attributionName: "@freepik",
+  attributionLink: "https://www.freepik.com/author/freepik"
 };
 
 // ----- Typing effect elements -----
@@ -276,7 +280,9 @@ for(let button of personaButtons) {
         personaImagesDiv.appendChild(personaImage);
       }
 
-
+      // set the attribution
+      attributionLink.href = personaShawn.attributionLink;
+      attributionLink.textContent = personaShawn.attributionName;
 
 
 
@@ -315,7 +321,9 @@ for(let button of personaButtons) {
       // while animation is playing
       personaCloseButton.addEventListener("click", () => {
         // reset the persona's info
-        personaImage.innerHTML = "";
+        personaImagesDiv.innerHTML = "";
+        attributionLink.href = "";
+        attributionLink.textContent = "";
         personaName.textContent = "";
         personaIntro.textContent = "";
         personaGoalsList.innerHTML = "";
@@ -352,7 +360,9 @@ for(let button of personaButtons) {
         personaImagesDiv.appendChild(personaImage);
       }
 
-
+      // set the attribution
+      attributionLink.href = personaLouella.attributionLink;
+      attributionLink.textContent = personaLouella.attributionName;
 
 
       // persona goals
@@ -397,6 +407,8 @@ for(let button of personaButtons) {
 
         // reset the persona's info
         personaImagesDiv.innerHTML = "";
+        attributionLink.href = "";
+        attributionLink.textContent = "";
         personaName.textContent = "";
         personaIntro.textContent = "";
         personaGoalsList.innerHTML = "";
