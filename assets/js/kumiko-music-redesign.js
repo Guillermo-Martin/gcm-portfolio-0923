@@ -148,19 +148,22 @@ const personaCloseButton = document.querySelector(".persona-close-icon");
 
 // ----- Persona elements -----
 const personaProblem = document.querySelector(".problem-statement p");
-// console.log(personaProblem);
+const personaGoalsList = document.querySelector(".persona-goals ul");
+// console.log(personaGoals);
 
 // ----- personas -----
 const personaShawn = {
   name: "Hi, I'm Shawn!",
   intro: "I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  problem: "Shawn Watts is a photographer who needs to visit an easy to navigate website because he wants to learn more about a new musician."
+  problem: "Shawn Watts is a photographer who needs to visit an easy to navigate website because he wants to learn more about a new musician.",
+  goals: ["Wants to learn more about a new musician"]
 };
 
 const personaLouella = {
   name: "Hi, I'm Louella!",
   intro: "Louella intro I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-  problem: "Louella Washington is a social worker who needs to listen to samples of music because she wants to know what kind of music a particular musician plays."
+  problem: "Louella Washington is a social worker who needs to listen to samples of music because she wants to know what kind of music a particular musician plays.",
+  goals: ["Listen to music by a new musician", "Watch the musician perform"]
 };
 
 // ----- Typing effect elements -----
@@ -246,6 +249,19 @@ for(let button of personaButtons) {
       // set the persona information
       personaProblem.textContent = personaShawn.problem;
 
+      // persona goals
+      for(let goal of personaShawn.goals){
+        // create list elements
+        let goalLi = document.createElement("li");
+        let goalP = document.createElement("p");
+        // set goal text, then append to li
+        goalP.textContent = goal;
+        goalLi.appendChild(goalP);
+        
+        // append li to ul
+        personaGoalsList.appendChild(goalLi);
+      }
+
       // create and play timeline
       var shawnTimeline = createTimeline(personaShawn.name, personaShawn.intro);
       shawnTimeline.restart();
@@ -257,6 +273,7 @@ for(let button of personaButtons) {
         // reset the persona's info
         personaName.textContent = "";
         personaIntro.textContent = "";
+        personaGoalsList.innerHTML = "";
         personaProblem.textContent = "";
 
         // set isTyping to false
@@ -276,6 +293,19 @@ for(let button of personaButtons) {
       // set the persona information
       personaProblem.textContent = personaLouella.problem;
 
+      // persona goals
+      for(let goal of personaLouella.goals){
+        // create list elements
+        let goalLi = document.createElement("li");
+        let goalP = document.createElement("p");
+        // set goal text, then append to li
+        goalP.textContent = goal;
+        goalLi.appendChild(goalP);
+        
+        // append li to ul
+        personaGoalsList.appendChild(goalLi);
+      }
+
       // create and play timeline
       var louellaTimeline = createTimeline(personaLouella.name, personaLouella.intro);
       louellaTimeline.play();
@@ -293,6 +323,7 @@ for(let button of personaButtons) {
         // reset the persona's info
         personaName.textContent = "";
         personaIntro.textContent = "";
+        personaGoalsList.innerHTML = "";
         personaProblem.textContent = "";
 
 
