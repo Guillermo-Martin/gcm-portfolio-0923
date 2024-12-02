@@ -28,7 +28,7 @@ body {
   display: none;
 }
 
-.persona-modal-container {
+.persona-modal-container, .gallery-modal-container {
   display: grid;
   grid-template-columns: 1fr 1.5fr 0.1fr;
   margin: 0 auto;
@@ -105,13 +105,13 @@ body {
   color: #314788;
 }
 
-/* ----- persona close button ---- */
-.persona-close-button {
+/* ----- persona close button, gallery close button ---- */
+.persona-close-button, .gallery-close-button {
   display: flex;
   justify-content: end;
 }
 
-.persona-close-icon {
+.persona-close-icon, .gallery-close-icon {
   cursor: pointer;
   fill: #fff;
   height: 40px;
@@ -119,10 +119,24 @@ body {
   width: 40px;
 }
 
-.persona-close-icon:hover {
+.persona-close-icon:hover, .gallery-close-icon:hover {
   fill: #314788;
 }
 
+/* ----- Gallery image modal styles ----- */
+.gallery-modal-container {
+  display: grid;
+  grid-template-columns: 2fr 0.1fr;
+}
+
+.gallery-modal-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-modal img {
+  width: 100%;
+}
 
 
 /* ---------- Sidenav and table of contents ---------- */
