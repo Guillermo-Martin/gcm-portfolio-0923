@@ -315,21 +315,33 @@ const personaCreation = (personaObj) => {
   // add an event listener to the close button; immediately stop animation if user clicks close
   // while animation is playing
   personaCloseButton.addEventListener("click", () => {
-    // reset the persona's info
-    personaImagesDiv.innerHTML = "";
-    attributionLink.href = "";
-    attributionLink.textContent = "";
-    personaName.textContent = "";
-    personaIntro.textContent = "";
-    personaGoalsList.innerHTML = "";
-    personaFrustrationsList.innerHTML = "";
-    personaProblem.textContent = "";
+    gsap.timeline()
+      .to(".persona-images", {opacity: 0})
+      .to(".persona-text", {opacity: 0}, "<")
+      .to(".persona-close-button", {opacity: 0}, "<")
+      // .to(".persona-container", {opacity: 0})
+      .to(".persona-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
+      .call(() => {
+        // hide modal
+        personaModal.classList.remove("active");
+
+        // reset the persona's info
+        personaImagesDiv.innerHTML = "";
+        attributionLink.href = "";
+        attributionLink.textContent = "";
+        personaName.textContent = "";
+        personaIntro.textContent = "";
+        personaGoalsList.innerHTML = "";
+        personaFrustrationsList.innerHTML = "";
+        personaProblem.textContent = "";
+      })
+      .set(".persona-images", {opacity: 1})
+      .set(".persona-text", {opacity: 1}, "<")
+      .set(".persona-close-button", {opacity: 1}, "<")
+      .set(".persona-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
 
     // set isTyping to false
     isTyping = false;
-
-    // hide modal
-    personaModal.classList.remove("active");
 
     // stop the animation
     personaTimeline.kill();
