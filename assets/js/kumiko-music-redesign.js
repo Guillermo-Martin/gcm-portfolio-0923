@@ -153,6 +153,7 @@ const personaProblem = document.querySelector(".problem-statement p");
 const personaGoalsList = document.querySelector(".persona-goals ul");
 const personaFrustrationsList = document.querySelector(".persona-frustrations ul");
 const attributionLink = document.querySelector(".attribution a");
+const attributionHandle = document.querySelector(".attribution-handle");
 
 // ---------- Personas information ----------
 const personaShawn = {
@@ -277,9 +278,11 @@ const personaCreation = (personaObj) => {
     personaImagesDiv.appendChild(personaImage);
   };
 
+  // console.log(attributionHandle.textContent);
+
   // set the attribution
   attributionLink.href = attributionLink;
-  attributionLink.textContent = attributionName;
+  attributionHandle.textContent = attributionName;
 
   // set the persona goals
   for(let goal of goals){
@@ -328,7 +331,7 @@ const personaCreation = (personaObj) => {
         // reset the persona's info
         personaImagesDiv.innerHTML = "";
         attributionLink.href = "";
-        attributionLink.textContent = "";
+        attributionHandle.textContent = "";
         personaName.textContent = "";
         personaIntro.textContent = "";
         personaGoalsList.innerHTML = "";
