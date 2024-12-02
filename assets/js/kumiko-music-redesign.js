@@ -371,3 +371,18 @@ for(let button of personaButtons) {
     personaModal.classList.add("active");
   });
 };
+
+
+// ------------------------------------------------------------------
+//                    Gallery modal animation 
+// ------------------------------------------------------------------
+// ---------- Gallery elements ----------
+const paperWireframesButton = document.querySelector(".paper-wireframes .project-link-button")
+const galleryModal = document.querySelector(".gallery-modal");
+
+// add eventListener to button
+paperWireframesButton.addEventListener("click", () => {
+  console.log("you clicked paper wireframes");
+  // show modal
+  galleryModal.classList.add("active");
+});

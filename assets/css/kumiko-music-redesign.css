@@ -6,8 +6,8 @@ body {
   position: relative;
 }
 
-/* ---------- Personal modal ---------- */
-.persona-modal.active {
+/* ---------- Personal modal, gallery modal ---------- */
+.persona-modal.active, .gallery-modal.active {
   /* modal background blur */
   /* https://stackoverflow.com/questions/61353311/adding-background-blur-via-css-behind-pop-up-modal */
   align-items: center;
@@ -24,7 +24,7 @@ body {
   z-index: 1;
 }
 
-.persona-modal {
+.persona-modal, .gallery-modal {
   display: none;
 }
 
