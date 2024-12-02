@@ -377,16 +377,26 @@ for(let button of personaButtons) {
 //                    Gallery modal animation 
 // ------------------------------------------------------------------
 // ---------- Gallery elements ----------
-const paperWireframesButton = document.querySelector(".paper-wireframes .project-link-button")
+const galleryButtons = document.querySelectorAll(".gallery-link-button")
 const galleryModal = document.querySelector(".gallery-modal");
 const galleryCloseButton = document.querySelector(".gallery-close-icon");
 
-// add eventListener to button
-paperWireframesButton.addEventListener("click", () => {
-  console.log("you clicked paper wireframes");
-  // show modal
-  galleryModal.classList.add("active");
-});
+// add eventListener to gallery buttons
+// galleryButtons.addEventListener("click", () => {
+//   console.log("you clicked paper wireframes");
+//   // show modal
+//   galleryModal.classList.add("active");
+// });
+for(let galleryButton of galleryButtons) {
+  galleryButton.addEventListener("click", () => {
+    // show modal
+    galleryModal.classList.add("active");
+  });
+}
+
+
+
+
 
 galleryCloseButton.addEventListener("click", () => {
   // console.log("you clicked close!");
