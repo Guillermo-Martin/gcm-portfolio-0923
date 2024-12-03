@@ -125,7 +125,7 @@ body {
 
 /* ----- Gallery image modal styles ----- */
 .gallery-modal-container {
-  display: grid;
+  /* display: grid; */
   grid-template-columns: 2fr 0.1fr;
 }
 

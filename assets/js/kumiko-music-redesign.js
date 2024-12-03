@@ -473,10 +473,51 @@ for(let galleryButton of galleryButtons) {
 // ---------- Gallery elements ----------
 const beforeAndAfterButtons = document.querySelectorAll(".before-and-after");
 
-console.log(beforeAndAfterButtons);
+// console.log(beforeAndAfterButtons);
+const beforeAndAfterModalTimeline = gsap.timeline({paused: true})
+  .from(".gallery-modal", {opacity: 0, duration: 1})
 
+// buttons
 for(let button of beforeAndAfterButtons) {
-  button.addEventListener("click", () => {
-    alert("you clicked on me!");
+  button.addEventListener("click", (event) => {
+    if(event.target.id === "navigation") {
+      // console.log("navigation");
+
+      beforeAndAfterModalTimeline.restart();
+    };
+
+    if(event.target.id === "design-and-layout") {
+      // alert("design and layout");
+      beforeAndAfterModalTimeline.restart();
+    };
+
+    if(event.target.id === "ethnomusicology") {
+      // alert("ethnomusicology");
+      beforeAndAfterModalTimeline.restart();
+    };
+
+    // show the gallery modal
+    galleryModal.classList.add("active");
   });
 };
+
+// add the modal close button functionality
+galleryCloseButton.addEventListener("click", () => {
+  gsap.timeline()
+    .to(".gallery-modal-images", {opacity: 0})
+    .to(".gallery-close-button", {opacity: 0}, "<")
+    .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
+    .call(() => {
+      // hide modal
+      galleryModal.classList.remove("active");
+
+      // remove images in gallery
+      galleryModalImagesContainer.innerHTML = "";
+    })
+    .set(".gallery-modal-images", {opacity: 1})
+    .set(".gallery-close-button", {opacity: 1}, "<")
+    .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
+
+  // stop the animation (if a user closes the modal while the animation is still playing)
+  beforeAndAfterModalTimeline.kill();
+});
