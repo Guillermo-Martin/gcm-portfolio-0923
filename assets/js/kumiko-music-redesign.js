@@ -377,29 +377,46 @@ for(let button of personaButtons) {
 //                    Gallery modal animation 
 // ------------------------------------------------------------------
 // ---------- Gallery elements ----------
-const galleryButtons = document.querySelectorAll(".gallery-link-button")
+const galleryButtons = document.querySelectorAll(".gallery-link-button");
 const galleryModal = document.querySelector(".gallery-modal");
 const galleryCloseButton = document.querySelector(".gallery-close-icon");
 
+
+
+// ---------- Gallery intro timeline ----------
+const galleryTimeline = gsap.timeline({paused: true})
+  .from(".gallery-modal", {opacity: 0, duration: 1})
+  .from(".gallery-modal img", {opacity: 0, stagger: 0.5, duration: 0.5})
+
+
 // add eventListener to gallery buttons
-// galleryButtons.addEventListener("click", () => {
-//   console.log("you clicked paper wireframes");
-//   // show modal
-//   galleryModal.classList.add("active");
-// });
 for(let galleryButton of galleryButtons) {
   galleryButton.addEventListener("click", () => {
     // show modal
     galleryModal.classList.add("active");
+
+    // play gallery animation timeline
+    galleryTimeline.restart();
   });
-}
+};
 
 
 
 
-
+// modal close buton
 galleryCloseButton.addEventListener("click", () => {
-  // console.log("you clicked close!");
- 
-  galleryModal.classList.remove("active");
+  gsap.timeline()
+    .to(".gallery-modal-images", {opacity: 0})
+    .to(".gallery-close-button", {opacity: 0}, "<")
+    .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
+    .call(() => {
+      // hide modal
+      galleryModal.classList.remove("active");
+    })
+    .set(".gallery-modal-images", {opacity: 1})
+    .set(".gallery-close-button", {opacity: 1}, "<")
+    .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
+
+  // stop the animation
+  galleryTimeline.kill();
 });
