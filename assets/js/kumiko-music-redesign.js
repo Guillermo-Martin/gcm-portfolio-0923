@@ -480,17 +480,52 @@ const beforeAndAfterModalTimeline = gsap.timeline({paused: true})
 // buttons
 for(let button of beforeAndAfterButtons) {
   button.addEventListener("click", (event) => {
+    // ---------- navigation ----------
     if(event.target.id === "navigation") {
-      // console.log("navigation");
+      // ----- add all elements ------
+      // create a div containing an image and text
+      const beforeFigure = document.createElement("figure");
+      const afterFigure = document.createElement("figure");
 
+      // images
+      const beforeImage = document.createElement("img");
+      const afterImage = document.createElement("img");
+
+      // append the images to the figures
+      beforeFigure.appendChild(beforeImage);
+      afterFigure.appendChild(afterImage);
+
+      // add src and alt to images
+      beforeImage.src = "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg";
+      afterImage.src = "../assets/images/kumiko-music-redesign/louella-washington-1.jpg";
+
+      // create figcaptions to append to the images
+      const beforeCaption = document.createElement("figcaption");
+      const afterCaption = document.createElement("figcaption");
+
+      // set the text of the captions
+      beforeCaption.textContent = "before";
+      afterCaption.textContent = "after";
+
+      // append the captions to the figures
+      beforeFigure.appendChild(beforeCaption);
+      afterFigure.appendChild(afterCaption);
+
+      // append the figures to the gallery-modal-images container
+      galleryModalImagesContainer.appendChild(beforeFigure);
+      galleryModalImagesContainer.appendChild(afterFigure);
+
+      // play animation
       beforeAndAfterModalTimeline.restart();
     };
 
+    // ---------- Design and layout -----------
     if(event.target.id === "design-and-layout") {
       // alert("design and layout");
       beforeAndAfterModalTimeline.restart();
     };
 
+    // ---------- Ethnomusicology
     if(event.target.id === "ethnomusicology") {
       // alert("ethnomusicology");
       beforeAndAfterModalTimeline.restart();
