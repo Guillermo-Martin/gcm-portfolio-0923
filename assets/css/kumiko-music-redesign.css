@@ -349,6 +349,20 @@ ol {
   margin-bottom: 12px;
 }
 
+/* ----- Takeaways ----- */
+.takeaways .text-container {
+  /* border: 3px solid red; */
+}
+
+.takeaways .user-quote {
+  margin-bottom: 32px;
+}
+
+.takeaways span {
+  font-style: italic;
+  font-weight: 200;
+}
+
 /* ---------- media queries ---------- */
 @media screen and (max-width: 1354px) {
   /* ---------- Project buttons ---------- */
