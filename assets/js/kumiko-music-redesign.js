@@ -382,16 +382,16 @@ const galleryCloseButton = document.querySelector(".gallery-close-icon");
 // ---------- Gallery images and information ----------
 const paperWireframes = {
   images: [
-    {filepath: "../assets/images/kumiko-music-redesign/about-1.png", alt: ""},
-    {filepath: "../assets/images/kumiko-music-redesign/about-2.png", alt: ""},
-    {filepath: "../assets/images/kumiko-music-redesign/composer-1.png", alt: ""},
-    {filepath: "../assets/images/kumiko-music-redesign/composer-2.png", alt: ""},
-    {filepath: "../assets/images/kumiko-music-redesign/contact-1.png", alt: ""},
-    {filepath: "../assets/images/kumiko-music-redesign/contact-2.png", alt: ""},
-    {filepath: "../assets/images/kumiko-music-redesign/homepage-1.png", alt: ""},
-    {filepath: "../assets/images/kumiko-music-redesign/homepage-2.png", alt: ""},
-    {filepath: "../assets/images/kumiko-music-redesign/pianist-1.png", alt: ""},
-    {filepath: "../assets/images/kumiko-music-redesign/pianist-2.png", alt: ""}
+    {filepath: "../assets/images/kumiko-music-redesign/about-1.png", alt: "About page"},
+    {filepath: "../assets/images/kumiko-music-redesign/about-2.png", alt: "About page"},
+    {filepath: "../assets/images/kumiko-music-redesign/composer-1.png", alt: "Compositions page"},
+    {filepath: "../assets/images/kumiko-music-redesign/composer-2.png", alt: "Compositions page"},
+    {filepath: "../assets/images/kumiko-music-redesign/contact-1.png", alt: "Contact page"},
+    {filepath: "../assets/images/kumiko-music-redesign/contact-2.png", alt: "Contact page"},
+    {filepath: "../assets/images/kumiko-music-redesign/homepage-1.png", alt: "Homepage"},
+    {filepath: "../assets/images/kumiko-music-redesign/homepage-2.png", alt: "Homepage"},
+    {filepath: "../assets/images/kumiko-music-redesign/pianist-1.png", alt: "Pianist page"},
+    {filepath: "../assets/images/kumiko-music-redesign/pianist-2.png", alt: "Pianist page"}
   ]
 };
 
@@ -419,15 +419,24 @@ const createGalleryTimeline = () => {
 const galleryCreation = (galleryObj) => {
   // for every image in the "images" array, create an image element, set its src and alt
   for(let image of galleryObj.images){
+    // create a figure element and its caption
+    let galleryFigure = document.createElement("figure");
+    let galleryFigureCaption = document.createElement("figcaption");
+
     // create an image element
     let galleryImage = document.createElement("img");
 
-    // set its src an alt
+    // set its src an alt, set the figcaption
     galleryImage.src = image.filepath;
     galleryImage.alt = image.alt;
+    galleryFigureCaption.textContent = image.alt;
 
-    // append the images to the container
-    galleryModalImagesContainer.appendChild(galleryImage);
+    // append the image and figcaption to the figure
+    galleryFigure.appendChild(galleryImage);
+    galleryFigure.appendChild(galleryFigureCaption);
+
+    // append the figures to the container
+    galleryModalImagesContainer.appendChild(galleryFigure);
   };
   
   // aftering creating the gallery, create the gallery timeline, then play it
@@ -443,6 +452,7 @@ const galleryCreation = (galleryObj) => {
       .call(() => {
         // hide modal
         galleryModal.classList.remove("active");
+        galleryModalImagesContainer.classList.remove("wireframes");
 
         // remove images in gallery
         galleryModalImagesContainer.innerHTML = "";
@@ -462,6 +472,7 @@ for(let galleryButton of galleryButtons) {
   galleryButton.addEventListener("click", (event) => {
     // see which button was pressed, call galleryCreation function with the appropriate object
     if(event.target.id === "paper-wireframes") {
+      galleryModalImagesContainer.classList.add("wireframes");
       galleryCreation(paperWireframes);
     };
 

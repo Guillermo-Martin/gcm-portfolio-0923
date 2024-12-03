@@ -32,7 +32,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1.5fr 0.1fr;
   margin: 0 auto;
-  max-width: 80%;
+  /* max-width: 80%; */
   /* padding-bottom: 60px;
   padding-top: 60px; */
   width: 90%;
@@ -314,7 +314,21 @@ ol {
   margin-bottom: 28px;
 }
 
-/* ---------- High-fidelity mockups ---------- */
+/* ---------- Starting the design ---------- */
+/* ----- Gallery modal ---- */
+.gallery-modal-container {
+  /* border: 3px solid red; */
+  height: 90%;
+}
+
+.gallery-modal-images.wireframes {
+  align-items: center;
+  grid-gap: 8px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+/* ----- High-fidelity mockups ----- */
 .hifi-mockups-prototype h4 {
   margin-bottom: 12px;
 }
