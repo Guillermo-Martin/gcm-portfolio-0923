@@ -338,8 +338,8 @@ ol {
   grid-template-columns: 1fr 1fr;
 }
 
-/* ----- Findings ----- */
-.findings li span {
+/* ----- Findings and accessibility considerations ----- */
+.findings li span, .accessibility li span {
   font-weight: 700;
   text-decoration: underline;
 }
