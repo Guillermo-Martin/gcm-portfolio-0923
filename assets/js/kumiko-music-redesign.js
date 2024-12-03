@@ -382,9 +382,16 @@ const galleryCloseButton = document.querySelector(".gallery-close-icon");
 // ---------- Gallery images and information ----------
 const paperWireframes = {
   images: [
-    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg", alt: "Picture of Shawn"},
-    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-2.jpg", alt: "Picture of Shawn"},
-    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-3.jpg", alt: "Picture of Shawn"}
+    {filepath: "../assets/images/kumiko-music-redesign/about-1.png", alt: ""},
+    {filepath: "../assets/images/kumiko-music-redesign/about-2.png", alt: ""},
+    {filepath: "../assets/images/kumiko-music-redesign/composer-1.png", alt: ""},
+    {filepath: "../assets/images/kumiko-music-redesign/composer-2.png", alt: ""},
+    {filepath: "../assets/images/kumiko-music-redesign/contact-1.png", alt: ""},
+    {filepath: "../assets/images/kumiko-music-redesign/contact-2.png", alt: ""},
+    {filepath: "../assets/images/kumiko-music-redesign/homepage-1.png", alt: ""},
+    {filepath: "../assets/images/kumiko-music-redesign/homepage-2.png", alt: ""},
+    {filepath: "../assets/images/kumiko-music-redesign/pianist-1.png", alt: ""},
+    {filepath: "../assets/images/kumiko-music-redesign/pianist-2.png", alt: ""}
   ]
 };
 
