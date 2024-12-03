@@ -390,19 +390,23 @@ const paperWireframes = {
   ]
 }
 
+const digitalWireframes = {
+  images: [
+    {filepath: "../assets/images/kumiko-music-redesign/louella-washington-1.jpg", alt: "Picture of Louella"},
+    {filepath: "../assets/images/kumiko-music-redesign/louella-washington-2.jpg", alt: "Picture of Louella"},
+    {filepath: "../assets/images/kumiko-music-redesign/louella-washington-3.jpg", alt: "Picture of Louella"}
+  ]
+}
+
 
 // Gallery intro timeline ----------
-// const galleryTimeline = gsap.timeline({paused: true})
-//   .from(".gallery-modal", {opacity: 0, duration: 1})
-//   .from(".gallery-modal img", {opacity: 0, stagger: 0.5, duration: 0.5})
-
 const createGalleryTimeline = () => {
   let galleryTimeline = gsap.timeline({paused: true})
     .from(".gallery-modal", {opacity: 0, duration: 1})
     .from(".gallery-modal img", {opacity: 0, stagger: 0.5, duration: 0.5})
 
   return galleryTimeline;
-}
+};
 
 
 // gallery creation function
@@ -420,44 +424,46 @@ const galleryCreation = (galleryObj) => {
     galleryModalImagesContainer.appendChild(galleryImage);
   };
   
-  // create the gallery timeline, then play it
+  // aftering creating the gallery, create the gallery timeline, then play it
   let galleryTimeline = createGalleryTimeline();
   galleryTimeline.restart();
-};
 
+  // add the modal close button functionality
+  galleryCloseButton.addEventListener("click", () => {
+    gsap.timeline()
+      .to(".gallery-modal-images", {opacity: 0})
+      .to(".gallery-close-button", {opacity: 0}, "<")
+      .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
+      .call(() => {
+        // hide modal
+        galleryModal.classList.remove("active");
 
+        // remove images in gallery
+        galleryModalImagesContainer.innerHTML = "";
+      })
+      .set(".gallery-modal-images", {opacity: 1})
+      .set(".gallery-close-button", {opacity: 1}, "<")
+      .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
 
-
-
-// add eventListener to gallery buttons
-for(let galleryButton of galleryButtons) {
-  galleryButton.addEventListener("click", () => {
-    galleryCreation(paperWireframes);
-
-    galleryModal.classList.add("active");
-
-    // play gallery animation timeline
-    // galleryTimeline.restart();
+    // stop the animation (if a user closes the modal while the animation is still playing)
+    galleryTimeline.kill();
   });
 };
 
 
+// ---------- add eventListener to gallery buttons ----------
+for(let galleryButton of galleryButtons) {
+  galleryButton.addEventListener("click", (event) => {
+    // see which button was pressed, call galleryCreation function with the appropriate object
+    if(event.target.id === "paper-wireframes") {
+      galleryCreation(paperWireframes);
+    };
 
-
-// modal close buton
-galleryCloseButton.addEventListener("click", () => {
-  gsap.timeline()
-    .to(".gallery-modal-images", {opacity: 0})
-    .to(".gallery-close-button", {opacity: 0}, "<")
-    .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
-    .call(() => {
-      // hide modal
-      galleryModal.classList.remove("active");
-    })
-    .set(".gallery-modal-images", {opacity: 1})
-    .set(".gallery-close-button", {opacity: 1}, "<")
-    .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
-
-  // stop the animation
-  galleryTimeline.kill();
-});
+    if(event.target.id === "digital-wireframes") {
+      galleryCreation(digitalWireframes);
+    };
+    
+    // show the gallery modal
+    galleryModal.classList.add("active");
+  });
+};
