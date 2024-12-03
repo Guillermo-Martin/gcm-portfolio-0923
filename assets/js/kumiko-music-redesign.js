@@ -379,24 +379,65 @@ for(let button of personaButtons) {
 // ---------- Gallery elements ----------
 const galleryButtons = document.querySelectorAll(".gallery-link-button");
 const galleryModal = document.querySelector(".gallery-modal");
+const galleryModalImagesContainer = document.querySelector(".gallery-modal-images");
 const galleryCloseButton = document.querySelector(".gallery-close-icon");
 
+const paperWireframes = {
+  images: [
+    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg", alt: "Picture of Shawn"},
+    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-2.jpg", alt: "Picture of Shawn"},
+    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-3.jpg", alt: "Picture of Shawn"}
+  ]
+}
 
 
-// ---------- Gallery intro timeline ----------
-const galleryTimeline = gsap.timeline({paused: true})
-  .from(".gallery-modal", {opacity: 0, duration: 1})
-  .from(".gallery-modal img", {opacity: 0, stagger: 0.5, duration: 0.5})
+// Gallery intro timeline ----------
+// const galleryTimeline = gsap.timeline({paused: true})
+//   .from(".gallery-modal", {opacity: 0, duration: 1})
+//   .from(".gallery-modal img", {opacity: 0, stagger: 0.5, duration: 0.5})
+
+const createGalleryTimeline = () => {
+  let galleryTimeline = gsap.timeline({paused: true})
+    .from(".gallery-modal", {opacity: 0, duration: 1})
+    .from(".gallery-modal img", {opacity: 0, stagger: 0.5, duration: 0.5})
+
+  return galleryTimeline;
+}
+
+
+// gallery creation function
+const galleryCreation = (galleryObj) => {
+  // for every image in the "images" array, create an image element, set its src and alt
+  for(let image of galleryObj.images){
+    // create an image element
+    let galleryImage = document.createElement("img");
+
+    // set its src an alt
+    galleryImage.src = image.filepath;
+    galleryImage.alt = image.alt;
+
+    // append the images to the container
+    galleryModalImagesContainer.appendChild(galleryImage);
+  };
+  
+  // create the gallery timeline, then play it
+  let galleryTimeline = createGalleryTimeline();
+  galleryTimeline.restart();
+};
+
+
+
 
 
 // add eventListener to gallery buttons
 for(let galleryButton of galleryButtons) {
   galleryButton.addEventListener("click", () => {
-    // show modal
+    galleryCreation(paperWireframes);
+
     galleryModal.classList.add("active");
 
     // play gallery animation timeline
-    galleryTimeline.restart();
+    // galleryTimeline.restart();
   });
 };
 
