@@ -331,6 +331,14 @@ ol {
   margin-bottom: 0;
 }
 
+/* ---- Parameters ---- */
+.parameters-grid {
+  border: 3px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 28px;
+}
+
 /* ---------- Going forward ---------- */
 #moving-forward h4 {
   margin-bottom: 12px;
