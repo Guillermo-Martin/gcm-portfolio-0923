@@ -333,10 +333,15 @@ ol {
 
 /* ---- Parameters ---- */
 .parameters-grid {
-  border: 3px solid red;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 28px;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ----- Findings ----- */
+.findings li span {
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 /* ---------- Going forward ---------- */
