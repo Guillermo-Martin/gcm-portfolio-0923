@@ -278,8 +278,6 @@ const personaCreation = (personaObj) => {
     personaImagesDiv.appendChild(personaImage);
   };
 
-  // console.log(attributionHandle.textContent);
-
   // set the attribution
   attributionLink.href = attributionLink;
   attributionHandle.textContent = attributionName;
@@ -322,7 +320,6 @@ const personaCreation = (personaObj) => {
       .to(".persona-images", {opacity: 0})
       .to(".persona-text", {opacity: 0}, "<")
       .to(".persona-close-button", {opacity: 0}, "<")
-      // .to(".persona-container", {opacity: 0})
       .to(".persona-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
       .call(() => {
         // hide modal
@@ -382,13 +379,14 @@ const galleryModal = document.querySelector(".gallery-modal");
 const galleryModalImagesContainer = document.querySelector(".gallery-modal-images");
 const galleryCloseButton = document.querySelector(".gallery-close-icon");
 
+// ---------- Gallery images and information ----------
 const paperWireframes = {
   images: [
     {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg", alt: "Picture of Shawn"},
     {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-2.jpg", alt: "Picture of Shawn"},
     {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-3.jpg", alt: "Picture of Shawn"}
   ]
-}
+};
 
 const digitalWireframes = {
   images: [
@@ -396,10 +394,10 @@ const digitalWireframes = {
     {filepath: "../assets/images/kumiko-music-redesign/louella-washington-2.jpg", alt: "Picture of Louella"},
     {filepath: "../assets/images/kumiko-music-redesign/louella-washington-3.jpg", alt: "Picture of Louella"}
   ]
-}
+};
 
 
-// Gallery intro timeline ----------
+// ---------- Gallery intro timeline ----------
 const createGalleryTimeline = () => {
   let galleryTimeline = gsap.timeline({paused: true})
     .from(".gallery-modal", {opacity: 0, duration: 1})
@@ -409,7 +407,7 @@ const createGalleryTimeline = () => {
 };
 
 
-// gallery creation function
+// ---------- Gallery creation function ----------
 const galleryCreation = (galleryObj) => {
   // for every image in the "images" array, create an image element, set its src and alt
   for(let image of galleryObj.images){
@@ -451,7 +449,7 @@ const galleryCreation = (galleryObj) => {
 };
 
 
-// ---------- add eventListener to gallery buttons ----------
+// ---------- Add eventListener to gallery buttons ----------
 for(let galleryButton of galleryButtons) {
   galleryButton.addEventListener("click", (event) => {
     // see which button was pressed, call galleryCreation function with the appropriate object
