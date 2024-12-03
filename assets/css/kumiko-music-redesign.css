@@ -325,7 +325,11 @@ ol {
   align-items: center;
   grid-gap: 8px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  overflow: scroll;
 }
+
+/* ----- Digital wireframes ----- */
+/* .gallery- */
 
 
 /* ----- High-fidelity mockups ----- */
