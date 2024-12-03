@@ -293,6 +293,7 @@ ol {
 
 .pain-points span {
   font-weight: 600;
+  text-decoration: underline;
 }
 
 /* ---------- Personas ---------- */
