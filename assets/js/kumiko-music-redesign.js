@@ -465,3 +465,18 @@ for(let galleryButton of galleryButtons) {
     galleryModal.classList.add("active");
   });
 };
+
+
+// ------------------------------------------------------------------
+//                    Before and after modal animation 
+// ------------------------------------------------------------------
+// ---------- Gallery elements ----------
+const beforeAndAfterButtons = document.querySelectorAll(".before-and-after");
+
+console.log(beforeAndAfterButtons);
+
+for(let button of beforeAndAfterButtons) {
+  button.addEventListener("click", () => {
+    alert("you clicked on me!");
+  });
+};
