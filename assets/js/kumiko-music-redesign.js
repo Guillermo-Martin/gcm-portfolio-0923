@@ -398,6 +398,7 @@ const digitalWireframes = {
 
 
 // ---------- Gallery intro timeline ----------
+// define timeline creation
 const createGalleryTimeline = () => {
   let galleryTimeline = gsap.timeline({paused: true})
     .from(".gallery-modal", {opacity: 0, duration: 1})
@@ -474,8 +475,9 @@ for(let galleryButton of galleryButtons) {
 const beforeAndAfterButtons = document.querySelectorAll(".before-and-after");
 
 // console.log(beforeAndAfterButtons);
-const beforeAndAfterModalTimeline = gsap.timeline({paused: true})
-  .from(".gallery-modal", {opacity: 0, duration: 1})
+// create a function that creates a timeline, then return it to be used elsewhere
+// const beforeAndAfterModalTimeline = gsap.timeline({paused: true})
+  // .from(".gallery-modal", {opacity: 0, duration: 1})
 
 // buttons
 for(let button of beforeAndAfterButtons) {
@@ -522,13 +524,13 @@ for(let button of beforeAndAfterButtons) {
     // ---------- Design and layout -----------
     if(event.target.id === "design-and-layout") {
       // alert("design and layout");
-      beforeAndAfterModalTimeline.restart();
+      // beforeAndAfterModalTimeline.restart();
     };
 
     // ---------- Ethnomusicology
     if(event.target.id === "ethnomusicology") {
       // alert("ethnomusicology");
-      beforeAndAfterModalTimeline.restart();
+      // beforeAndAfterModalTimeline.restart();
     };
 
     // show the gallery modal
@@ -554,5 +556,5 @@ galleryCloseButton.addEventListener("click", () => {
     .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
 
   // stop the animation (if a user closes the modal while the animation is still playing)
-  beforeAndAfterModalTimeline.kill();
+  // beforeAndAfterModalTimeline.kill();
 });
