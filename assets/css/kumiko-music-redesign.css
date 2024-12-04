@@ -327,6 +327,12 @@ ol {
   overflow: scroll;
 }
 
+/* ----- Wireframes ----- */
+.wireframes figcaption {
+  /* border: 3px solid red; */
+  margin-bottom: 12px;
+}
+
 /* ----- High-fidelity mockups ----- */
 .hifi-mockups-prototype h4 {
   margin-bottom: 12px;
@@ -376,7 +382,7 @@ ol {
 }
 
 .participants p {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   width: 100%;
 }
 
