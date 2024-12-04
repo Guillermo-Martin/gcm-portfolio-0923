@@ -657,3 +657,13 @@ galleryCloseButton.addEventListener("click", () => {
   // stop the animation (if a user closes the modal while the animation is still playing)
   beforeAndAfterTimeline.kill();
 });
+
+
+// ------------------------------------------------------------------
+//               Findings - Participants button modal 
+// ------------------------------------------------------------------
+const participantsButton = document.querySelector(".participants");
+
+participantsButton.addEventListener("click", () => {
+  alert("you clicked me!");
+});
