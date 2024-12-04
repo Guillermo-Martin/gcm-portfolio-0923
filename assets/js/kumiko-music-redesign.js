@@ -370,16 +370,16 @@ for(let button of personaButtons) {
 };
 
 
-// ------------------------------------------------------------------
-//                    Gallery modal animation 
-// ------------------------------------------------------------------
+// -----------------------------------------------------------------------------
+// Gallery modal animation (for wireframes, hifi mockups, and before and afters) 
+// -----------------------------------------------------------------------------
 // ---------- Gallery elements ----------
 const galleryButtons = document.querySelectorAll(".gallery-link-button");
 const galleryModal = document.querySelector(".gallery-modal");
 const galleryModalImagesContainer = document.querySelector(".gallery-modal-images");
 const galleryCloseButton = document.querySelector(".gallery-close-icon");
 
-// ---------- Gallery images and information ----------
+// ---------- Wireframe gallery images and information ----------
 const paperWireframes = {
   images: [
     {filepath: "../assets/images/kumiko-music-redesign/about-1.png", alt: "About page"},
@@ -392,7 +392,6 @@ const paperWireframes = {
     {filepath: "../assets/images/kumiko-music-redesign/contact-2.png", alt: "Contact page"},
     {filepath: "../assets/images/kumiko-music-redesign/homepage-1.png", alt: "Homepage"},
     {filepath: "../assets/images/kumiko-music-redesign/homepage-2.png", alt: "Homepage"},
-    
   ]
 };
 
@@ -405,7 +404,6 @@ const digitalWireframes = {
     {filepath: "../assets/images/kumiko-music-redesign/about-me-page-digital-1.png", alt: "About page"},
     {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
     {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
-    
     // {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
   ]
 };
@@ -474,7 +472,7 @@ const galleryCreation = (galleryObj) => {
 };
 
 
-// ---------- Add eventListener to gallery buttons ----------
+// ---------- Add eventListener to gallery buttons (for wireframes) ----------
 for(let galleryButton of galleryButtons) {
   galleryButton.addEventListener("click", (event) => {
     // see which button was pressed, call galleryCreation function with the appropriate object
@@ -495,7 +493,7 @@ for(let galleryButton of galleryButtons) {
 
 
 // ------------------------------------------------------------------
-//                    Before and after modal animation 
+//                  Before and after modal animation 
 // ------------------------------------------------------------------
 // ---------- Gallery elements ----------
 const beforeAndAfterButtons = document.querySelectorAll(".before-and-after");
@@ -508,7 +506,7 @@ const createBeforeAndAfterTl = () => {
   return beforeAndAfterTl;
 };
 
-// images to use for the before and afters
+// ---------- Images to use for the before and afters ----------
 const navigationImages = [
   {
     before: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg",
@@ -550,10 +548,9 @@ const ethnoImages = [
   }
 ];
 
-// create before and after figures
+// ---------- Create before and after figures ----------
 const createBeforeAndAfterFigures = (arr) => {
   for(let i = 0; i < arr.length; i++) {
-
     // create the before, after, and arrow elements
     const beforeFigure = document.createElement("figure");
     const afterFigure = document.createElement("figure");
@@ -594,7 +591,7 @@ const createBeforeAndAfterFigures = (arr) => {
 // create a timeline to be used in the buttons
 let beforeAndAfterTimeline = createBeforeAndAfterTl();
 
-// buttons
+// ----- Before and after buttons -----
 for(let button of beforeAndAfterButtons) {
   button.addEventListener("click", (event) => {
     // ---------- navigation ----------
@@ -637,7 +634,7 @@ for(let button of beforeAndAfterButtons) {
   });
 };
 
-// add the modal close button functionality
+// add the modal close button functionality to before and after modal
 galleryCloseButton.addEventListener("click", () => {
   gsap.timeline()
     .to(".gallery-modal-images", {opacity: 0})
