@@ -518,14 +518,16 @@ let beforeAndAfterTimeline = createBeforeAndAfterTl();
 // buttons
 for(let button of beforeAndAfterButtons) {
   button.addEventListener("click", (event) => {
-    
-    
     // ---------- navigation ----------
     if(event.target.id === "navigation") {
+      // add class for styling
+      galleryModalImagesContainer.classList.add("before-and-after");
+
       // ----- add all elements ------
       // create a div containing an image and text
       const beforeFigure = document.createElement("figure");
       const afterFigure = document.createElement("figure");
+      const rightArrow = document.createElement("div");
 
       // images
       const beforeImage = document.createElement("img");
@@ -545,6 +547,7 @@ for(let button of beforeAndAfterButtons) {
 
       // set the text of the captions
       beforeCaption.textContent = "before";
+      rightArrow.innerHTML = "&rarr;";
       afterCaption.textContent = "after";
 
       // append the captions to the figures
@@ -553,6 +556,7 @@ for(let button of beforeAndAfterButtons) {
 
       // append the figures to the gallery-modal-images container
       galleryModalImagesContainer.appendChild(beforeFigure);
+      galleryModalImagesContainer.appendChild(rightArrow);
       galleryModalImagesContainer.appendChild(afterFigure);
 
       // play animation
@@ -585,6 +589,9 @@ galleryCloseButton.addEventListener("click", () => {
     .call(() => {
       // hide modal
       galleryModal.classList.remove("active");
+
+      // remove navigation class for styling
+      galleryModalImagesContainer.classList.remove("before-and-after");
 
       // remove images in gallery
       galleryModalImagesContainer.innerHTML = "";

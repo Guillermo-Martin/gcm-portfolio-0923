@@ -324,17 +324,23 @@ ol {
 .gallery-modal-images.wireframes {
   align-items: start;
   grid-gap: 32px;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
   overflow: scroll;
 }
-
-/* ----- Digital wireframes ----- */
-/* .gallery- */
-
 
 /* ----- High-fidelity mockups ----- */
 .hifi-mockups-prototype h4 {
   margin-bottom: 12px;
+}
+
+.gallery-modal-images.before-and-after {
+  align-items: center;
+  grid-template-columns: 1fr 0.1fr 1fr;
+  justify-items: center;
+}
+
+/* right arrow */
+.before-and-after div {
+  font-size: 80px;
 }
 
 /* ---------- Usability studies ---------- */
