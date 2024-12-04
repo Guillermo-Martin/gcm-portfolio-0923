@@ -539,6 +539,16 @@ const designAndLayoutImages = [
   },
 ];
 
+const ethnoImages = [
+  {
+    before: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg",
+    beforeAlt: "before alt",
+    beforeText: "before text",
+    after: "../assets/images/kumiko-music-redesign/louella-washington-1.jpg",
+    afterAlt: "after alt",
+    afterText: "after text",
+  }
+];
 
 // create before and after figures
 const createBeforeAndAfterFigures = (arr) => {
@@ -611,9 +621,14 @@ for(let button of beforeAndAfterButtons) {
       beforeAndAfterTimeline.restart();
     };
 
-    // ---------- Ethnomusicology
+    // ---------- Ethnomusicology ----------
     if(event.target.id === "ethnomusicology") {
-      // alert("ethnomusicology");
+      // add class for styling
+      galleryModalImagesContainer.classList.add("before-and-after");
+
+      // create elements for section
+      createBeforeAndAfterFigures(ethnoImages);
+
       beforeAndAfterTimeline.restart();
     };
 
