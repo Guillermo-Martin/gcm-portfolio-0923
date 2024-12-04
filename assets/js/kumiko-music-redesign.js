@@ -507,7 +507,7 @@ const beforeAndAfterButtons = document.querySelectorAll(".before-and-after");
 
 const createBeforeAndAfterTl = () => {
   let beforeAndAfterTl = gsap.timeline({paused: true})
-    .from(".gallery-modal", {opacity: 0, duration: 1})
+    .from(".gallery-modal", {opacity: 0, duration: 1})  // <-- causing animation issues
 
   return beforeAndAfterTl;
 };
@@ -517,9 +517,41 @@ let beforeAndAfterTimeline = createBeforeAndAfterTl();
 
 
 
+const navigationImages = [
+  {
+    before: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg",
+    beforeAlt: "before alt",
+    beforeText: "before text",
+    after: "../assets/images/kumiko-music-redesign/louella-washington-1.jpg",
+    afterAlt: "after alt",
+    afterText: "after text",
+  }
+];
 
-const createBeforeAndAfterFigures = (num) => {
-  for(let i = 1; i <= num; i++) {
+const designAndLayoutImages = [
+  {
+    before: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg",
+    beforeAlt: "before alt",
+    beforeText: "before text",
+    after: "../assets/images/kumiko-music-redesign/louella-washington-1.jpg",
+    afterAlt: "after alt",
+    afterText: "after text",
+  },
+  {
+    before: "../assets/images/kumiko-music-redesign/shawn-watts-2.jpg",
+    beforeAlt: "before alt 2",
+    beforeText: "before text 2",
+    after: "../assets/images/kumiko-music-redesign/louella-washington-2.jpg",
+    afterAlt: "after alt 2",
+    afterText: "after text 2",
+  },
+];
+
+
+
+const createBeforeAndAfterFigures = (arr) => {
+  for(let i = 0; i < arr.length; i++) {
+
     // create the before, after, and arrow elements
     const beforeFigure = document.createElement("figure");
     const afterFigure = document.createElement("figure");
@@ -534,17 +566,17 @@ const createBeforeAndAfterFigures = (num) => {
     afterFigure.appendChild(afterImage);
 
     // add src and alt to images
-    beforeImage.src = "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg";
-    afterImage.src = "../assets/images/kumiko-music-redesign/louella-washington-1.jpg";
+    beforeImage.src = arr[i].before;
+    afterImage.src = arr[i].after;
 
     // create figcaptions to append to the images
     const beforeCaption = document.createElement("figcaption");
     const afterCaption = document.createElement("figcaption");
 
     // set the text of the captions
-    beforeCaption.textContent = "before";
+    beforeCaption.textContent = arr[i].beforeText;
     rightArrow.innerHTML = "&rarr;";
-    afterCaption.textContent = "after";
+    afterCaption.textContent = arr[i].afterText;
 
     // append the captions to the figures
     beforeFigure.appendChild(beforeCaption);
@@ -604,7 +636,7 @@ for(let button of beforeAndAfterButtons) {
       // galleryModalImagesContainer.appendChild(rightArrow);
       // galleryModalImagesContainer.appendChild(afterFigure);
 
-      createBeforeAndAfterFigures(1);
+      createBeforeAndAfterFigures(navigationImages);
 
       // play animation
       beforeAndAfterTimeline.restart();
@@ -670,7 +702,7 @@ for(let button of beforeAndAfterButtons) {
       // galleryModalImagesContainer.appendChild(rightArrow2);
       // galleryModalImagesContainer.appendChild(afterFigure2);
 
-      createBeforeAndAfterFigures(2);
+      createBeforeAndAfterFigures(designAndLayoutImages);
 
       // play animation
       beforeAndAfterTimeline.restart();
