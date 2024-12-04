@@ -500,23 +500,15 @@ for(let galleryButton of galleryButtons) {
 // ---------- Gallery elements ----------
 const beforeAndAfterButtons = document.querySelectorAll(".before-and-after");
 
-// console.log(beforeAndAfterButtons);
 // create a function that creates a timeline, then return it to be used elsewhere
-// const beforeAndAfterModalTimeline = gsap.timeline({paused: true})
-  // .from(".gallery-modal", {opacity: 0, duration: 1})
-
 const createBeforeAndAfterTl = () => {
-  let beforeAndAfterTl = gsap.timeline({paused: true})
+  let beforeAndAfterTl = gsap.timeline()
     .from(".gallery-modal", {opacity: 0, duration: 1})  // <-- causing animation issues
 
   return beforeAndAfterTl;
 };
 
-// create the before and after timeline
-let beforeAndAfterTimeline = createBeforeAndAfterTl();
-
-
-
+// images to use for the before and afters
 const navigationImages = [
   {
     before: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg",
@@ -548,7 +540,7 @@ const designAndLayoutImages = [
 ];
 
 
-
+// create before and after figures
 const createBeforeAndAfterFigures = (arr) => {
   for(let i = 0; i < arr.length; i++) {
 
@@ -589,8 +581,8 @@ const createBeforeAndAfterFigures = (arr) => {
   };
 }
 
-
-
+// create a timeline to be used in the buttons
+let beforeAndAfterTimeline = createBeforeAndAfterTl();
 
 // buttons
 for(let button of beforeAndAfterButtons) {
@@ -600,42 +592,7 @@ for(let button of beforeAndAfterButtons) {
       // add class for styling
       galleryModalImagesContainer.classList.add("before-and-after");
 
-      // ----- add all elements ------
-      // create a div containing an image and text
-      // const beforeFigure = document.createElement("figure");
-      // const afterFigure = document.createElement("figure");
-      // const rightArrow = document.createElement("div");
-
-      // images
-      // const beforeImage = document.createElement("img");
-      // const afterImage = document.createElement("img");
-
-      // append the images to the figures
-      // beforeFigure.appendChild(beforeImage);
-      // afterFigure.appendChild(afterImage);
-
-      // add src and alt to images
-      // beforeImage.src = "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg";
-      // afterImage.src = "../assets/images/kumiko-music-redesign/louella-washington-1.jpg";
-
-      // create figcaptions to append to the images
-      // const beforeCaption = document.createElement("figcaption");
-      // const afterCaption = document.createElement("figcaption");
-
-      // set the text of the captions
-      // beforeCaption.textContent = "before";
-      // rightArrow.innerHTML = "&rarr;";
-      // afterCaption.textContent = "after";
-
-      // append the captions to the figures
-      // beforeFigure.appendChild(beforeCaption);
-      // afterFigure.appendChild(afterCaption);
-
-      // append the figures to the gallery-modal-images container
-      // galleryModalImagesContainer.appendChild(beforeFigure);
-      // galleryModalImagesContainer.appendChild(rightArrow);
-      // galleryModalImagesContainer.appendChild(afterFigure);
-
+      // create elements for section
       createBeforeAndAfterFigures(navigationImages);
 
       // play animation
@@ -647,61 +604,7 @@ for(let button of beforeAndAfterButtons) {
       // add class for styling
       galleryModalImagesContainer.classList.add("before-and-after");
 
-      // ----- add all elements ------
-      // create a div containing an image and text
-      // const beforeFigure = document.createElement("figure");
-      // const afterFigure = document.createElement("figure");
-      // const rightArrow = document.createElement("div");
-      // const beforeFigure2 = document.createElement("figure");
-      // const afterFigure2 = document.createElement("figure");
-      // const rightArrow2 = document.createElement("div");
-
-      // images
-      // const beforeImage = document.createElement("img");
-      // const afterImage = document.createElement("img");
-      // const beforeImage2 = document.createElement("img");
-      // const afterImage2 = document.createElement("img");
-
-      // append the images to the figures
-      // beforeFigure.appendChild(beforeImage);
-      // afterFigure.appendChild(afterImage);
-      // beforeFigure2.appendChild(beforeImage2);
-      // afterFigure2.appendChild(afterImage2);
-
-      // add src and alt to images
-      // beforeImage.src = "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg";
-      // afterImage.src = "../assets/images/kumiko-music-redesign/louella-washington-1.jpg";
-      // beforeImage2.src = "../assets/images/kumiko-music-redesign/shawn-watts-2.jpg";
-      // afterImage2.src = "../assets/images/kumiko-music-redesign/louella-washington-2.jpg";
-
-      // create figcaptions to append to the images
-      // const beforeCaption = document.createElement("figcaption");
-      // const afterCaption = document.createElement("figcaption");
-      // const beforeCaption2 = document.createElement("figcaption");
-      // const afterCaption2 = document.createElement("figcaption");
-
-      // set the text of the captions
-      // beforeCaption.textContent = "before";
-      // rightArrow.innerHTML = "&rarr;";
-      // afterCaption.textContent = "after";
-      // beforeCaption2.textContent = "before2";
-      // rightArrow2.innerHTML = "&rarr;";
-      // afterCaption2.textContent = "after2";
-
-      // append the captions to the figures
-      // beforeFigure.appendChild(beforeCaption);
-      // afterFigure.appendChild(afterCaption);
-      // beforeFigure2.appendChild(beforeCaption2);
-      // afterFigure2.appendChild(afterCaption2);
-
-      // append the figures to the gallery-modal-images container
-      // galleryModalImagesContainer.appendChild(beforeFigure);
-      // galleryModalImagesContainer.appendChild(rightArrow);
-      // galleryModalImagesContainer.appendChild(afterFigure);
-      // galleryModalImagesContainer.appendChild(beforeFigure2);
-      // galleryModalImagesContainer.appendChild(rightArrow2);
-      // galleryModalImagesContainer.appendChild(afterFigure2);
-
+      // create elements for section
       createBeforeAndAfterFigures(designAndLayoutImages);
 
       // play animation
