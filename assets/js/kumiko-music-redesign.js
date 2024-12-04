@@ -450,6 +450,7 @@ const galleryCreation = (galleryObj) => {
 
   // add the modal close button functionality
   galleryCloseButton.addEventListener("click", () => {
+    // alert('yes');
     gsap.timeline()
       .to(".gallery-modal-images", {opacity: 0})
       .to(".gallery-close-button", {opacity: 0}, "<")
@@ -586,6 +587,31 @@ const createBeforeAndAfterFigures = (arr) => {
     galleryModalImagesContainer.appendChild(rightArrow);
     galleryModalImagesContainer.appendChild(afterFigure);
   };
+
+  // add the modal close button functionality to before and after modal
+  galleryCloseButton.addEventListener("click", () => {
+    // alert('yes')
+    gsap.timeline()
+      .to(".gallery-modal-images", {opacity: 0})
+      .to(".gallery-close-button", {opacity: 0}, "<")
+      .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
+      .call(() => {
+        // hide modal
+        galleryModal.classList.remove("active");
+
+        // remove navigation class for styling
+        galleryModalImagesContainer.classList.remove("before-and-after");
+
+        // remove images in gallery
+        galleryModalImagesContainer.innerHTML = "";
+      })
+      .set(".gallery-modal-images", {opacity: 1})
+      .set(".gallery-close-button", {opacity: 1}, "<")
+      .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
+
+    // stop the animation (if a user closes the modal while the animation is still playing)
+    beforeAndAfterTimeline.kill();
+  });
 }
 
 // create a timeline to be used in the buttons
@@ -635,28 +661,28 @@ for(let button of beforeAndAfterButtons) {
 };
 
 // add the modal close button functionality to before and after modal
-galleryCloseButton.addEventListener("click", () => {
-  gsap.timeline()
-    .to(".gallery-modal-images", {opacity: 0})
-    .to(".gallery-close-button", {opacity: 0}, "<")
-    .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
-    .call(() => {
-      // hide modal
-      galleryModal.classList.remove("active");
+// galleryCloseButton.addEventListener("click", () => {
+//   gsap.timeline()
+//     .to(".gallery-modal-images", {opacity: 0})
+//     .to(".gallery-close-button", {opacity: 0}, "<")
+//     .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
+//     .call(() => {
+//       // hide modal
+//       galleryModal.classList.remove("active");
 
-      // remove navigation class for styling
-      galleryModalImagesContainer.classList.remove("before-and-after");
+//       // remove navigation class for styling
+//       galleryModalImagesContainer.classList.remove("before-and-after");
 
-      // remove images in gallery
-      galleryModalImagesContainer.innerHTML = "";
-    })
-    .set(".gallery-modal-images", {opacity: 1})
-    .set(".gallery-close-button", {opacity: 1}, "<")
-    .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
+//       // remove images in gallery
+//       galleryModalImagesContainer.innerHTML = "";
+//     })
+//     .set(".gallery-modal-images", {opacity: 1})
+//     .set(".gallery-close-button", {opacity: 1}, "<")
+//     .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
 
-  // stop the animation (if a user closes the modal while the animation is still playing)
-  beforeAndAfterTimeline.kill();
-});
+//   // stop the animation (if a user closes the modal while the animation is still playing)
+//   beforeAndAfterTimeline.kill();
+// });
 
 
 // ------------------------------------------------------------------
@@ -665,5 +691,8 @@ galleryCloseButton.addEventListener("click", () => {
 const participantsButton = document.querySelector(".participants");
 
 participantsButton.addEventListener("click", () => {
-  alert("you clicked me!");
+  // create the participants modal
+
+  // show the gallery modal
+  galleryModal.classList.add("active");
 });
