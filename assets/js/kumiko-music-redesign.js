@@ -688,7 +688,16 @@ for(let button of beforeAndAfterButtons) {
 // ------------------------------------------------------------------
 //               Findings - Participants button modal 
 // ------------------------------------------------------------------
+// participant elements
 const participantsButton = document.querySelector(".participants");
+
+// create a function that creates a timeline, then return it to be used elsewhere
+const createParticipantTl = () => {
+  let participantTl = gsap.timeline()
+    .from(".gallery-modal", {opacity: 0, duration: 1})
+
+  return participantTl;
+};
 
 participantsButton.addEventListener("click", () => {
   // ----- create the participants modal -----
@@ -709,10 +718,13 @@ participantsButton.addEventListener("click", () => {
     galleryModalImagesContainer.appendChild(participantImage);
     galleryModalImagesContainer.appendChild(participantQuote);
   };
-  
 
   // show the gallery modal
   galleryModal.classList.add("active");
+
+  // play the timeline
+  let participantTl = createParticipantTl();
+  participantTl.restart();
 
 
   // ----- Close button -----
@@ -723,5 +735,13 @@ participantsButton.addEventListener("click", () => {
 
      // remove images in gallery
      galleryModalImagesContainer.innerHTML = "";
+
+     // ------------------- add close animation here --------------------
+
+
+     // -----------------------------------------------------------------
+
+     // stop animation if user clicks on close button
+     participantTl.kill();
   });
 });
