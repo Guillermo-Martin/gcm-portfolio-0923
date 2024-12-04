@@ -454,7 +454,7 @@ const wireframeCreation = (wireframeObj) => {
     gsap.timeline()
       .to(".gallery-modal-images", {opacity: 0})
       .to(".gallery-close-button", {opacity: 0}, "<")
-      .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
+      .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<0.2")
       .call(() => {
         // reset the scroll position
         galleryModalImagesContainer.scrollTop = 0;
