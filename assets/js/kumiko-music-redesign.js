@@ -414,7 +414,7 @@ const digitalWireframes = {
 const createWireframeTimeline = () => {
   let wireframeTimeline = gsap.timeline({paused: true})
     .from(".gallery-modal", {opacity: 0, duration: 1})
-    .from(".gallery-modal img", {opacity: 0, stagger: 0.5, duration: 0.5})
+    .from(".gallery-modal figure", {opacity: 0, stagger: 0.05, duration: 0.5})
 
   return wireframeTimeline;
 };
@@ -439,7 +439,6 @@ const wireframeCreation = (wireframeObj) => {
     // append the image and figcaption to the figure
     wireframeFigure.appendChild(wireframeFigureCaption);
     wireframeFigure.appendChild(wireframeImage);
-    
 
     // append the figures to the container
     galleryModalImagesContainer.appendChild(wireframeFigure);
@@ -457,6 +456,9 @@ const wireframeCreation = (wireframeObj) => {
       .to(".gallery-close-button", {opacity: 0}, "<")
       .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
       .call(() => {
+        // reset the scroll position
+        galleryModalImagesContainer.scrollTop = 0;
+
         // hide modal
         galleryModal.classList.remove("active");
         galleryModalImagesContainer.classList.remove("wireframes");
@@ -467,7 +469,6 @@ const wireframeCreation = (wireframeObj) => {
       .set(".gallery-modal-images", {opacity: 1})
       .set(".gallery-close-button", {opacity: 1}, "<")
       .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
-
     // stop the animation (if a user closes the modal while the animation is still playing)
     wireframeTimeline.kill();
   });
