@@ -364,6 +364,22 @@ ol {
 }
 
 /* ----- Findings and accessibility considerations ----- */
+.gallery-modal-images.participants {
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.participants img {
+  /* border: 3px solid red; */
+  width: 60%;
+}
+
+.participants p {
+  border: 3px solid blue;
+  width: 100%;
+}
+
 .findings li span, .accessibility li span {
   font-weight: 700;
   text-decoration: underline;

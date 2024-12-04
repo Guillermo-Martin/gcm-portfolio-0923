@@ -692,17 +692,24 @@ const participantsButton = document.querySelector(".participants");
 
 participantsButton.addEventListener("click", () => {
   // ----- create the participants modal -----
-  // create the participant image and quote
-  const participantImage = document.createElement("img");
-  const participantQuote = document.createElement("p");
+  // add class for styling
+  galleryModalImagesContainer.classList.add("participants");
 
-  // add the src of the image and set the participant quote
-  participantImage.src = "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg";
-  participantQuote.textContent = "participant quote goes here";
+  // create the participant elements
+  for(let i = 0; i < 3; i++) {
+    // create the participant image and quote
+    const participantImage = document.createElement("img");
+    const participantQuote = document.createElement("p");
 
-  // append the image and quote to the gallery modal images container
-  galleryModalImagesContainer.appendChild(participantImage);
-  galleryModalImagesContainer.appendChild(participantQuote);
+    // add the src of the image and set the participant quote
+    participantImage.src = "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg";
+    participantQuote.innerHTML = "participant quote goes here - <span>Participant A</span>";
+
+    // append the image and quote to the gallery modal images container
+    galleryModalImagesContainer.appendChild(participantImage);
+    galleryModalImagesContainer.appendChild(participantQuote);
+  };
+  
 
   // show the gallery modal
   galleryModal.classList.add("active");
@@ -710,8 +717,9 @@ participantsButton.addEventListener("click", () => {
 
   // ----- Close button -----
   galleryCloseButton.addEventListener("click", () => {
-    // alert("close!");
+    // remove classes
     galleryModal.classList.remove("active");
+    galleryModalImagesContainer.classList.remove("participants");
 
      // remove images in gallery
      galleryModalImagesContainer.innerHTML = "";
