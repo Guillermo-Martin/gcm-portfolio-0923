@@ -406,13 +406,7 @@ const digitalWireframes = {
     {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
     {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
     
-    
-    
     // {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
-    
-    
-    
-    
   ]
 };
 
@@ -511,9 +505,21 @@ const beforeAndAfterButtons = document.querySelectorAll(".before-and-after");
 // const beforeAndAfterModalTimeline = gsap.timeline({paused: true})
   // .from(".gallery-modal", {opacity: 0, duration: 1})
 
+const createBeforeAndAfterTl = () => {
+  let beforeAndAfterTl = gsap.timeline({paused: true})
+    .from(".gallery-modal", {opacity: 0, duration: 1})
+
+  return beforeAndAfterTl;
+};
+
+// create the before and after timeline
+let beforeAndAfterTimeline = createBeforeAndAfterTl();
+
 // buttons
 for(let button of beforeAndAfterButtons) {
   button.addEventListener("click", (event) => {
+    
+    
     // ---------- navigation ----------
     if(event.target.id === "navigation") {
       // ----- add all elements ------
@@ -550,19 +556,19 @@ for(let button of beforeAndAfterButtons) {
       galleryModalImagesContainer.appendChild(afterFigure);
 
       // play animation
-      beforeAndAfterModalTimeline.restart();
+      beforeAndAfterTimeline.restart();
     };
 
     // ---------- Design and layout -----------
     if(event.target.id === "design-and-layout") {
       // alert("design and layout");
-      // beforeAndAfterModalTimeline.restart();
+      beforeAndAfterTimeline.restart();
     };
 
     // ---------- Ethnomusicology
     if(event.target.id === "ethnomusicology") {
       // alert("ethnomusicology");
-      // beforeAndAfterModalTimeline.restart();
+      beforeAndAfterTimeline.restart();
     };
 
     // show the gallery modal
@@ -588,5 +594,5 @@ galleryCloseButton.addEventListener("click", () => {
     .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
 
   // stop the animation (if a user closes the modal while the animation is still playing)
-  // beforeAndAfterModalTimeline.kill();
+  beforeAndAfterTimeline.kill();
 });
