@@ -409,45 +409,45 @@ const digitalWireframes = {
 };
 
 
-// ---------- Gallery intro timeline ----------
+// ---------- Wireframe intro timeline ----------
 // define timeline creation
-const createGalleryTimeline = () => {
-  let galleryTimeline = gsap.timeline({paused: true})
+const createWireframeTimeline = () => {
+  let wireframeTimeline = gsap.timeline({paused: true})
     .from(".gallery-modal", {opacity: 0, duration: 1})
     .from(".gallery-modal img", {opacity: 0, stagger: 0.5, duration: 0.5})
 
-  return galleryTimeline;
+  return wireframeTimeline;
 };
 
 
 // ---------- Gallery creation function (for wireframes) ----------
-const galleryCreation = (galleryObj) => {
+const wireframeCreation = (wireframeObj) => {
   // for every image in the "images" array, create an image element, set its src and alt
-  for(let image of galleryObj.images){
+  for(let image of wireframeObj.images){
     // create a figure element and its caption
-    let galleryFigure = document.createElement("figure");
-    let galleryFigureCaption = document.createElement("figcaption");
+    let wireframeFigure = document.createElement("figure");
+    let wireframeFigureCaption = document.createElement("figcaption");
 
     // create an image element
-    let galleryImage = document.createElement("img");
+    let wireframeImage = document.createElement("img");
 
     // set its src an alt, set the figcaption
-    galleryImage.src = image.filepath;
-    galleryImage.alt = image.alt;
-    galleryFigureCaption.textContent = image.alt;
+    wireframeImage.src = image.filepath;
+    wireframeImage.alt = image.alt;
+    wireframeFigureCaption.textContent = image.alt;
 
     // append the image and figcaption to the figure
-    galleryFigure.appendChild(galleryFigureCaption);
-    galleryFigure.appendChild(galleryImage);
+    wireframeFigure.appendChild(wireframeFigureCaption);
+    wireframeFigure.appendChild(wireframeImage);
     
 
     // append the figures to the container
-    galleryModalImagesContainer.appendChild(galleryFigure);
+    galleryModalImagesContainer.appendChild(wireframeFigure);
   };
   
-  // aftering creating the gallery, create the gallery timeline, then play it
-  let galleryTimeline = createGalleryTimeline();
-  galleryTimeline.restart();
+  // aftering creating the wireframe, create the wireframe timeline, then play it
+  let wireframeTimeline = createWireframeTimeline();
+  wireframeTimeline.restart();
 
   // add the modal close button functionality
   galleryCloseButton.addEventListener("click", () => {
@@ -469,26 +469,26 @@ const galleryCreation = (galleryObj) => {
       .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
 
     // stop the animation (if a user closes the modal while the animation is still playing)
-    galleryTimeline.kill();
+    wireframeTimeline.kill();
   });
 };
 
 
 // ---------- Add eventListener to gallery buttons (for wireframes) ----------
-for(let galleryButton of galleryButtons) {
-  galleryButton.addEventListener("click", (event) => {
-    // see which button was pressed, call galleryCreation function with the appropriate object
+for(let wireframeButton of galleryButtons) {
+  wireframeButton.addEventListener("click", (event) => {
+    // see which button was pressed, call wireframeCreation function with the appropriate object
     if(event.target.id === "paper-wireframes") {
       galleryModalImagesContainer.classList.add("wireframes");
-      galleryCreation(paperWireframes);
+      wireframeCreation(paperWireframes);
     };
 
     if(event.target.id === "digital-wireframes") {
       galleryModalImagesContainer.classList.add("wireframes");
-      galleryCreation(digitalWireframes);
+      wireframeCreation(digitalWireframes);
     };
     
-    // show the gallery modal
+    // show the wireframe modal
     galleryModal.classList.add("active");
   });
 };
