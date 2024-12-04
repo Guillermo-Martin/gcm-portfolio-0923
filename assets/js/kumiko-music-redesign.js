@@ -386,24 +386,33 @@ const paperWireframes = {
     {filepath: "../assets/images/kumiko-music-redesign/about-2.png", alt: "About page"},
     {filepath: "../assets/images/kumiko-music-redesign/composer-1.png", alt: "Compositions page"},
     {filepath: "../assets/images/kumiko-music-redesign/composer-2.png", alt: "Compositions page"},
+    {filepath: "../assets/images/kumiko-music-redesign/pianist-1.png", alt: "Pianist page"},
+    {filepath: "../assets/images/kumiko-music-redesign/pianist-2.png", alt: "Pianist page"},
     {filepath: "../assets/images/kumiko-music-redesign/contact-1.png", alt: "Contact page"},
     {filepath: "../assets/images/kumiko-music-redesign/contact-2.png", alt: "Contact page"},
     {filepath: "../assets/images/kumiko-music-redesign/homepage-1.png", alt: "Homepage"},
     {filepath: "../assets/images/kumiko-music-redesign/homepage-2.png", alt: "Homepage"},
-    {filepath: "../assets/images/kumiko-music-redesign/pianist-1.png", alt: "Pianist page"},
-    {filepath: "../assets/images/kumiko-music-redesign/pianist-2.png", alt: "Pianist page"}
+    
   ]
 };
 
 const digitalWireframes = {
   images: [
-    {filepath: "../assets/images/kumiko-music-redesign/about-me-page-digital-1.png", alt: "About page"},
-    {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
-    {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
+    
     {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-1.png", alt: "Homepage"},
     {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-2.png", alt: "Homepage"},
     {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-3.png", alt: "Homepage"},
-    {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
+    {filepath: "../assets/images/kumiko-music-redesign/about-me-page-digital-1.png", alt: "About page"},
+    {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
+    {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
+    
+    
+    
+    // {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
+    
+    
+    
+    
   ]
 };
 

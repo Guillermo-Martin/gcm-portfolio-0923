@@ -322,9 +322,9 @@ ol {
 }
 
 .gallery-modal-images.wireframes {
-  align-items: center;
-  grid-gap: 8px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: start;
+  grid-gap: 32px;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
   overflow: scroll;
 }
 
