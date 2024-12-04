@@ -420,7 +420,7 @@ const createGalleryTimeline = () => {
 };
 
 
-// ---------- Gallery creation function ----------
+// ---------- Gallery creation function (for wireframes) ----------
 const galleryCreation = (galleryObj) => {
   // for every image in the "images" array, create an image element, set its src and alt
   for(let image of galleryObj.images){
@@ -437,8 +437,9 @@ const galleryCreation = (galleryObj) => {
     galleryFigureCaption.textContent = image.alt;
 
     // append the image and figcaption to the figure
-    galleryFigure.appendChild(galleryImage);
     galleryFigure.appendChild(galleryFigureCaption);
+    galleryFigure.appendChild(galleryImage);
+    
 
     // append the figures to the container
     galleryModalImagesContainer.appendChild(galleryFigure);
