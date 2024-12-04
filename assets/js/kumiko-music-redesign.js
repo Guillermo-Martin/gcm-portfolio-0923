@@ -691,8 +691,29 @@ for(let button of beforeAndAfterButtons) {
 const participantsButton = document.querySelector(".participants");
 
 participantsButton.addEventListener("click", () => {
-  // create the participants modal
+  // ----- create the participants modal -----
+  // create the participant image and quote
+  const participantImage = document.createElement("img");
+  const participantQuote = document.createElement("p");
+
+  // add the src of the image and set the participant quote
+  participantImage.src = "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg";
+  participantQuote.textContent = "participant quote goes here";
+
+  // append the image and quote to the gallery modal images container
+  galleryModalImagesContainer.appendChild(participantImage);
+  galleryModalImagesContainer.appendChild(participantQuote);
 
   // show the gallery modal
   galleryModal.classList.add("active");
+
+
+  // ----- Close button -----
+  galleryCloseButton.addEventListener("click", () => {
+    // alert("close!");
+    galleryModal.classList.remove("active");
+
+     // remove images in gallery
+     galleryModalImagesContainer.innerHTML = "";
+  });
 });
