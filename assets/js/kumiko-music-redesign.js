@@ -3,6 +3,7 @@ console.log("connected to kumiko music redesign!");
 // ---------- Page load animation function ----------
 const init = () => {
   gsap.timeline()
+    .set(".sidenav", {backgroundColor: "transparent"})
     .from("body", {autoAlpha: 0})
     .to("body", {backgroundColor: "#000", duration: 1})
     .set("body", {overflow: "hidden"})
