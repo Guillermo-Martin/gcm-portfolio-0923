@@ -479,8 +479,12 @@ const wireframeCreation = (wireframeObj) => {
       .set(".gallery-modal-images", {opacity: 1})
       .set(".gallery-close-button", {opacity: 1}, "<")
       .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
-    // stop the animation (if a user closes the modal while the animation is still playing)
+    
+      // stop the animation (if a user closes the modal while the animation is still playing)
     wireframeTimeline.kill();
+
+    // allow user to scroll again
+    body.style.overflow = "visible";
   });
 };
 
@@ -501,6 +505,9 @@ for(let wireframeButton of galleryButtons) {
     
     // show the wireframe modal
     galleryModal.classList.add("active");
+
+    // prevent user from scrolling the body when the modal is open
+    body.style.overflow = "hidden";
   });
 };
 
@@ -636,6 +643,9 @@ const beforeAfterCreation = (arr) => {
 
     // stop the animation (if a user closes the modal while the animation is still playing)
     beforeAndAfterTl.kill();
+
+    // allow user to scroll again
+    body.style.overflow = "visible";
   });
 };
 
@@ -672,6 +682,9 @@ for(let button of beforeAndAfterButtons) {
 
     // show the gallery modal
     galleryModal.classList.add("active");
+
+    // prevent user from scrolling the body when the modal is open
+    body.style.overflow = "hidden";
   });
 };
 
@@ -715,6 +728,9 @@ participantsButton.addEventListener("click", () => {
   // show the gallery modal
   galleryModal.classList.add("active");
 
+  // prevent user from scrolling the body when the modal is open
+  body.style.overflow = "hidden";
+
   // play the timeline
   let participantTl = createParticipantTl();
   participantTl.restart();
@@ -739,7 +755,10 @@ participantsButton.addEventListener("click", () => {
       .set(".gallery-close-button", {opacity: 1}, "<")
       .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
 
-     // stop animation if user clicks on close button
-     participantTl.kill();
+    // stop animation if user clicks on close button
+    participantTl.kill();
+
+    // allow user to scroll again
+    body.style.overflow = "visible";
   });
 });
