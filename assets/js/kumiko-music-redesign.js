@@ -676,7 +676,8 @@ const participantsButton = document.querySelector(".participants");
 const createParticipantTl = () => {
   let participantTl = gsap.timeline()
     .from(".gallery-modal", {opacity: 0, duration: 1})
-    .from(".participants img", {opacity: 0, duration: 1})
+    .from(".participants img", {opacity: 0, stagger: 0.8, duration: 1})
+    .from(".participants p", {opacity: 0, x: -8, stagger: 0.8, duration: 1}, "<0.5")
 
   return participantTl;
 };
@@ -707,7 +708,6 @@ participantsButton.addEventListener("click", () => {
   // play the timeline
   let participantTl = createParticipantTl();
   participantTl.restart();
-
 
   // ----- Close button -----
   galleryCloseButton.addEventListener("click", () => {
