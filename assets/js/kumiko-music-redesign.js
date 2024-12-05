@@ -501,11 +501,15 @@ for(let wireframeButton of galleryButtons) {
 // ---------- Gallery elements ----------
 const beforeAndAfterButtons = document.querySelectorAll(".before-and-after");
 
+// timeline
 const createBeforeAfterTl = () => {
   let beforeAfterTl = gsap.timeline()
     .from(".gallery-modal", {opacity: 0, duration: 1})
-    .from(".before-and-after figure", {opacity: 0, duration: 1})
+    .from(".before-figure", {opacity: 0, duration: 0.4})
+    .from(".arrow", {opacity: 0, duration: 0.4}, "<0.5")
+    .from(".after-figure", {opacity: 0, duration: 0.4}, "<0.5")
 
+  // return the timeline to be used elsewhere
   return beforeAfterTl;
 };
 
@@ -560,6 +564,11 @@ const beforeAfterCreation = (arr) => {
     const afterFigure = document.createElement("figure");
     const rightArrow = document.createElement("div");
 
+    // add classes to the before and after figures and the arrow
+    beforeFigure.classList.add("before-figure");
+    afterFigure.classList.add("after-figure");
+    rightArrow.classList.add("arrow");
+
     // images
     const beforeImage = document.createElement("img");
     const afterImage = document.createElement("img");
@@ -600,7 +609,7 @@ const beforeAfterCreation = (arr) => {
     gsap.timeline()
       .to(".gallery-modal-images", {opacity: 0})
       .to(".gallery-close-button", {opacity: 0}, "<")
-      .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
+      .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<0.2")
       .call(() => {
         // hide modal
         galleryModal.classList.remove("active");
