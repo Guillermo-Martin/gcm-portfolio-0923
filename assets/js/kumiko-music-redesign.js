@@ -270,10 +270,12 @@ const personaCreation = (personaObj) => {
   for(let i = 0; i < images.length; i++) {
     // create an img tag
     let personaImage = document.createElement("img");
-    // set the src
+
+    // set the image src, alt, and add a class
     personaImage.src = images[i].filepath;
     personaImage.alt = images[i].alt;
     personaImage.classList.add(`persona-image-${i + 1}`);
+
     // append the image to the persona images div
     personaImagesDiv.appendChild(personaImage);
   };
@@ -287,10 +289,11 @@ const personaCreation = (personaObj) => {
     // create list elements
     let goalLi = document.createElement("li");
     let goalP = document.createElement("p");
+
     // set goal text, then append to li
     goalP.textContent = goal;
     goalLi.appendChild(goalP);
-    
+
     // append li to ul
     personaGoalsList.appendChild(goalLi);
   };
@@ -300,10 +303,11 @@ const personaCreation = (personaObj) => {
     // create list elements
     let frustrationLi = document.createElement("li");
     let frustrationP = document.createElement("p");
+
     // set frustration text, then append to li
     frustrationP.textContent = frustration;
     frustrationLi.appendChild(frustrationP);
-    
+
     // append li to ul
     personaFrustrationsList.appendChild(frustrationLi);
   };
