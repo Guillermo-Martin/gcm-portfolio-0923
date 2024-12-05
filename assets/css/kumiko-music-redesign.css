@@ -523,6 +523,14 @@ ol {
     grid-template-rows: auto;
   }
 
+  .persona-modal h2, .persona-images {
+    margin-bottom: 16px;
+  }
+
+  .persona-intro, .goals-and-frustrations, .problem-statement {
+    margin-bottom: 20px;
+  }
+
   .persona-images img {
     width: 50%;
   }
