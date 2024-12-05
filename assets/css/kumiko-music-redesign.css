@@ -536,12 +536,15 @@ ol {
     width: 50%;
   }
 
-  .persona-image-1, .persona-image-2 {
+  .persona-image-1, .persona-image-2, .persona-close-button {
     display: none;
   }
 
-  .persona-close-button {
-    grid-row-start: 1;
+  .mobile-persona-close-button {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 5%;
   }
 }
 
