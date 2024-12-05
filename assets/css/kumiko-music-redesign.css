@@ -123,6 +123,11 @@ body {
   fill: #314788;
 }
 
+/* mobile persona button */
+.mobile-persona-close-button {
+  display: none;
+}
+
 /* ----- Gallery image modal styles ----- */
 .gallery-modal-container {
   /* display: grid; */
