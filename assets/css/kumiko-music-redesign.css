@@ -411,6 +411,14 @@ ol {
 }
 
 /* ---------- media queries ---------- */
+@media screen and (max-width: 1400px) {
+  /* ---------- Persona modal --------- */
+  .persona-modal-container {
+    max-width: unset;
+    width: 95%;
+  }
+}
+
 @media screen and (max-width: 1354px) {
   /* ---------- Project buttons ---------- */
   .button-container {
@@ -501,6 +509,30 @@ ol {
 
   .project-link-button {
     width: 32%;
+  }
+
+  /* ---------- Persona modal ---------- */
+  .persona-modal.active {
+    overflow: scroll;
+    z-index: 2;
+    /* border: 3px solid red; */
+  }
+
+  .persona-modal-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .persona-images img {
+    width: 50%;
+  }
+
+  .persona-image-1, .persona-image-2 {
+    display: none;
+  }
+
+  .persona-close-button {
+    grid-row-start: 1;
   }
 }
 
