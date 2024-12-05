@@ -349,12 +349,18 @@ const personaCreation = (personaObj) => {
 
     // stop the animation
     personaTimeline.kill();
+
+    // allow user to scroll again
+    body.style.overflow = "visible";
   });
 };
 
 // ---------- Adding persona creation function to "learn more" persona buttons ----------
 for(let button of personaButtons) {
   button.addEventListener("click", (event) => {
+    // prevent user from scrolling the body when the modal is open
+    body.style.overflow = "hidden";
+
     // set isTyping to true
     isTyping = true;
 
