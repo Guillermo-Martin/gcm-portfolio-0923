@@ -711,17 +711,23 @@ participantsButton.addEventListener("click", () => {
 
   // ----- Close button -----
   galleryCloseButton.addEventListener("click", () => {
-    // remove classes
-    galleryModal.classList.remove("active");
-    galleryModalImagesContainer.classList.remove("participants");
+    gsap.timeline()
+      .to(".gallery-modal-images", {opacity: 0})
+      .to(".gallery-close-button", {opacity: 0}, "<")
+      .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<0.2")
+      .call(() => {
+        // hide modal
+        galleryModal.classList.remove("active");
 
-     // remove images in gallery
-     galleryModalImagesContainer.innerHTML = "";
+        // remove navigation class for styling
+        galleryModalImagesContainer.classList.remove("participants");
 
-     // ------------------- add close animation here --------------------
-
-
-     // -----------------------------------------------------------------
+        // remove images in gallery
+        galleryModalImagesContainer.innerHTML = "";
+      })
+      .set(".gallery-modal-images", {opacity: 1})
+      .set(".gallery-close-button", {opacity: 1}, "<")
+      .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
 
      // stop animation if user clicks on close button
      participantTl.kill();
