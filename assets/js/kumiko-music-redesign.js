@@ -501,14 +501,6 @@ for(let wireframeButton of galleryButtons) {
 // ---------- Gallery elements ----------
 const beforeAndAfterButtons = document.querySelectorAll(".before-and-after");
 
-// create a function that creates a timeline, then return it to be used elsewhere
-// const createBeforeAndAfterTl = () => {
-//   let beforeAndAfterTl = gsap.timeline()
-//     .from(".gallery-modal", {opacity: 0, duration: 1})  // <-- causing animation issues
-
-//   return beforeAndAfterTl;
-// };
-
 const createBeforeAfterTl = () => {
   let beforeAfterTl = gsap.timeline()
     .from(".gallery-modal", {opacity: 0, duration: 1})
@@ -516,7 +508,6 @@ const createBeforeAfterTl = () => {
 
   return beforeAfterTl;
 };
-
 
 // ---------- Images to use for the before and afters ----------
 const navigationImages = [
@@ -560,8 +551,9 @@ const ethnoImages = [
   }
 ];
 
-// ---------- Create before and after figures ----------
-const createBeforeAndAfterFigures = (arr) => {
+// ---------- Create before and after modal ----------
+// beforeAfterCreation
+const beforeAfterCreation = (arr) => {
   for(let i = 0; i < arr.length; i++) {
     // create the before, after, and arrow elements
     const beforeFigure = document.createElement("figure");
@@ -599,33 +591,35 @@ const createBeforeAndAfterFigures = (arr) => {
     galleryModalImagesContainer.appendChild(afterFigure);
   };
 
-  // // add the modal close button functionality to before and after modal
-  // galleryCloseButton.addEventListener("click", () => {
-  //   gsap.timeline()
-  //     .to(".gallery-modal-images", {opacity: 0})
-  //     .to(".gallery-close-button", {opacity: 0}, "<")
-  //     .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
-  //     .call(() => {
-  //       // hide modal
-  //       galleryModal.classList.remove("active");
+  // create the timeline
+  let beforeAndAfterTl = createBeforeAfterTl();
+  beforeAndAfterTl.restart();
 
-  //       // remove navigation class for styling
-  //       galleryModalImagesContainer.classList.remove("before-and-after");
+  // add the modal close button functionality
+  galleryCloseButton.addEventListener("click", () => {
+    gsap.timeline()
+      .to(".gallery-modal-images", {opacity: 0})
+      .to(".gallery-close-button", {opacity: 0}, "<")
+      .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
+      .call(() => {
+        // hide modal
+        galleryModal.classList.remove("active");
 
-  //       // remove images in gallery
-  //       galleryModalImagesContainer.innerHTML = "";
-  //     })
-  //     .set(".gallery-modal-images", {opacity: 1})
-  //     .set(".gallery-close-button", {opacity: 1}, "<")
-  //     .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
+        // remove navigation class for styling
+        galleryModalImagesContainer.classList.remove("before-and-after");
 
-  //   // stop the animation (if a user closes the modal while the animation is still playing)
-  //   beforeAndAfterTimeline.kill();
-  // });
-}
+        // remove images in gallery
+        galleryModalImagesContainer.innerHTML = "";
+      })
+      .set(".gallery-modal-images", {opacity: 1})
+      .set(".gallery-close-button", {opacity: 1}, "<")
+      .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
 
-// create a timeline to be used in the buttons
-// let beforeAndAfterTimeline = createBeforeAndAfterTl();
+    // stop the animation (if a user closes the modal while the animation is still playing)
+    beforeAndAfterTl.kill();
+  });
+};
+
 
 // ----- Before and after buttons -----
 for(let button of beforeAndAfterButtons) {
@@ -636,35 +630,7 @@ for(let button of beforeAndAfterButtons) {
       galleryModalImagesContainer.classList.add("before-and-after");
 
       // create elements for section
-      createBeforeAndAfterFigures(navigationImages);
-
-      // create the timeline and play it
-      let beforeAndAfterTl = createBeforeAfterTl();
-      beforeAndAfterTl.restart();
-
-      // add the modal close button functionality to before and after modal
-      galleryCloseButton.addEventListener("click", () => {
-        gsap.timeline()
-          .to(".gallery-modal-images", {opacity: 0})
-          .to(".gallery-close-button", {opacity: 0}, "<")
-          .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
-          .call(() => {
-            // hide modal
-            galleryModal.classList.remove("active");
-
-            // remove navigation class for styling
-            galleryModalImagesContainer.classList.remove("before-and-after");
-
-            // remove images in gallery
-            galleryModalImagesContainer.innerHTML = "";
-          })
-          .set(".gallery-modal-images", {opacity: 1})
-          .set(".gallery-close-button", {opacity: 1}, "<")
-          .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
-
-        // stop the animation (if a user closes the modal while the animation is still playing)
-        beforeAndAfterTl.kill();
-      });
+      beforeAfterCreation(navigationImages);
     };
 
     // ---------- Design and layout -----------
@@ -673,35 +639,7 @@ for(let button of beforeAndAfterButtons) {
       galleryModalImagesContainer.classList.add("before-and-after");
 
       // create elements for section
-      createBeforeAndAfterFigures(designAndLayoutImages);
-
-      // create the timeline and play it
-      let beforeAndAfterTl = createBeforeAfterTl();
-      beforeAndAfterTl.restart();
-
-      // add the modal close button functionality to before and after modal
-      galleryCloseButton.addEventListener("click", () => {
-        gsap.timeline()
-          .to(".gallery-modal-images", {opacity: 0})
-          .to(".gallery-close-button", {opacity: 0}, "<")
-          .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
-          .call(() => {
-            // hide modal
-            galleryModal.classList.remove("active");
-
-            // remove navigation class for styling
-            galleryModalImagesContainer.classList.remove("before-and-after");
-
-            // remove images in gallery
-            galleryModalImagesContainer.innerHTML = "";
-          })
-          .set(".gallery-modal-images", {opacity: 1})
-          .set(".gallery-close-button", {opacity: 1}, "<")
-          .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
-
-        // stop the animation (if a user closes the modal while the animation is still playing)
-        beforeAndAfterTl.kill();
-      });
+      beforeAfterCreation(designAndLayoutImages);
     };
 
     // ---------- Ethnomusicology ----------
@@ -710,35 +648,7 @@ for(let button of beforeAndAfterButtons) {
       galleryModalImagesContainer.classList.add("before-and-after");
 
       // create elements for section
-      createBeforeAndAfterFigures(ethnoImages);
-
-      // create the timeline and play it
-      let beforeAndAfterTl = createBeforeAfterTl();
-      beforeAndAfterTl.restart();
-
-      // add the modal close button functionality to before and after modal
-      galleryCloseButton.addEventListener("click", () => {
-        gsap.timeline()
-          .to(".gallery-modal-images", {opacity: 0})
-          .to(".gallery-close-button", {opacity: 0}, "<")
-          .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<")
-          .call(() => {
-            // hide modal
-            galleryModal.classList.remove("active");
-
-            // remove navigation class for styling
-            galleryModalImagesContainer.classList.remove("before-and-after");
-
-            // remove images in gallery
-            galleryModalImagesContainer.innerHTML = "";
-          })
-          .set(".gallery-modal-images", {opacity: 1})
-          .set(".gallery-close-button", {opacity: 1}, "<")
-          .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
-
-        // stop the animation (if a user closes the modal while the animation is still playing)
-        beforeAndAfterTl.kill();
-      });
+      beforeAfterCreation(ethnoImages);
     };
 
     // show the gallery modal
