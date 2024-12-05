@@ -521,6 +521,7 @@ ol {
   .persona-modal-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    padding: 32px;
   }
 
   .persona-modal h2, .persona-images {
