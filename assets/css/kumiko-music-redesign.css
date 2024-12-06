@@ -539,6 +539,9 @@ ol {
   .persona-modal-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 100%;
     /* padding: 32px; */
   }
 
@@ -550,12 +553,23 @@ ol {
     margin-bottom: 20px;
   }
 
-  .persona-images img {
-    width: 50%;
+  .persona-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
+    /* justify-content: unset; */
   }
 
-  .persona-image-1, .persona-image-2, .persona-close-button {
-    /* display: none; */
+  .persona-images img {
+    width: 100%;
+  }
+
+  .persona-image-1, .persona-close-button {
+    display: none;
+  }
+
+  .persona-text {
+    justify-content: start;
   }
 
   .mobile-persona-close-button {
@@ -563,6 +577,7 @@ ol {
     position: absolute;
     right: 5%;
     top: 5%;
+    z-index: 1;
   }
 }
 
