@@ -582,9 +582,10 @@ ol {
 
   /* ---------- Gallery modal ---------- */
   .gallery-modal-container {
+    grid-template-columns: 1fr;
     height: auto;
     padding: 32px;
-    padding-right: 0;
+    /* padding-right: 0; */
   }
 
   .gallery-modal-images.wireframes {
