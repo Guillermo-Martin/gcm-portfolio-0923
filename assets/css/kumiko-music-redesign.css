@@ -683,6 +683,11 @@ ol {
   .persona-image-2 {
     display: none;
   }
+
+  /* ---------- Gallery modal ---------- */
+  .gallery-modal-images {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -730,6 +735,11 @@ ol {
     gap: 20px;
     grid-template-columns: 1fr;
     width: 100%;
+  }
+
+  /* ---------- Gallery modal ---------- */
+  .gallery-modal-images {
+    grid-template-columns: 1fr;
   }
 }
 
