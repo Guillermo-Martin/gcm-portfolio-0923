@@ -529,7 +529,7 @@ ol {
     padding: 1rem;
   } */
 
-  .persona-modal.active {
+  .persona-modal.active, .gallery-modal.active {
     align-items: unset;
     overflow: scroll;
     z-index: 2;
@@ -573,6 +573,29 @@ ol {
   }
 
   .mobile-persona-close-button {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 1;
+  }
+
+  /* ---------- Gallery modal ---------- */
+  .gallery-modal-container {
+    height: auto;
+    padding: 32px;
+    padding-right: 0;
+  }
+
+  .gallery-modal-images.wireframes {
+    grid-gap: 20px;
+  }
+
+  .gallery-close-button {
+    display: none;
+  }
+
+  .mobile-gallery-close-button {
     display: block;
     position: absolute;
     right: 5%;
