@@ -662,7 +662,12 @@ ol {
 
   /* ---------- Before and after modal ---------- */
   .gallery-modal-images.before-and-after {
+    gap: 20px;
     grid-template-columns: 1fr;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
   }
 }
 
@@ -716,6 +721,13 @@ ol {
   /* ---------- Gallery modal ---------- */
   .gallery-modal-images {
     grid-template-columns: 1fr;
+  }
+
+  /* ---------- Before and after modal ---------- */
+  .gallery-modal-images.before-and-after {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
