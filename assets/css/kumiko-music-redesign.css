@@ -338,8 +338,14 @@ ol {
 
 .gallery-modal-images.before-and-after {
   align-items: center;
+  gap: 20px;
   grid-template-columns: 1fr 0.1fr 1fr;
   justify-items: center;
+}
+
+.before-and-after figcaption {
+  /* border: 3px solid red; */
+  margin-top: 20px;
 }
 
 /* right arrow */
