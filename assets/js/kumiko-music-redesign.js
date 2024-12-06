@@ -391,7 +391,8 @@ for(let button of personaButtons) {
 const galleryButtons = document.querySelectorAll(".gallery-link-button");
 const galleryModal = document.querySelector(".gallery-modal");
 const galleryModalImagesContainer = document.querySelector(".gallery-modal-images");
-const galleryCloseButton = document.querySelector(".gallery-close-icon");
+// const galleryCloseButton = document.querySelector(".gallery-close-icon");
+const galleryCloseButtons = document.querySelectorAll(".gallery-close-icon");
 
 // ---------- Wireframe gallery images and information ----------
 const paperWireframes = {
@@ -463,33 +464,35 @@ const wireframeCreation = (wireframeObj) => {
   wireframeTimeline.restart();
 
   // add the modal close button functionality
-  galleryCloseButton.addEventListener("click", () => {
-    // alert('yes');
-    gsap.timeline()
-      .to(".gallery-modal-images", {opacity: 0})
-      .to(".gallery-close-button", {opacity: 0}, "<")
-      .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<0.2")
-      .call(() => {
-        // reset the scroll position
-        galleryModalImagesContainer.scrollTop = 0;
-
-        // hide modal
-        galleryModal.classList.remove("active");
-        galleryModalImagesContainer.classList.remove("wireframes");
-
-        // remove images in gallery
-        galleryModalImagesContainer.innerHTML = "";
-      })
-      .set(".gallery-modal-images", {opacity: 1})
-      .set(".gallery-close-button", {opacity: 1}, "<")
-      .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
-    
+  for(let galleryCloseButton of galleryCloseButtons) {
+    galleryCloseButton.addEventListener("click", () => {
+      // alert('yes');
+      gsap.timeline()
+        .to(".gallery-modal-images", {opacity: 0})
+        .to(".gallery-close-button", {opacity: 0}, "<")
+        .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<0.2")
+        .call(() => {
+          // reset the scroll position
+          galleryModalImagesContainer.scrollTop = 0;
+  
+          // hide modal
+          galleryModal.classList.remove("active");
+          galleryModalImagesContainer.classList.remove("wireframes");
+  
+          // remove images in gallery
+          galleryModalImagesContainer.innerHTML = "";
+        })
+        .set(".gallery-modal-images", {opacity: 1})
+        .set(".gallery-close-button", {opacity: 1}, "<")
+        .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
+      
       // stop the animation (if a user closes the modal while the animation is still playing)
-    wireframeTimeline.kill();
-
-    // allow user to scroll again
-    body.style.overflow = "visible";
-  });
+      wireframeTimeline.kill();
+  
+      // allow user to scroll again
+      body.style.overflow = "visible";
+    });
+  };
 };
 
 

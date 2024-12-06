@@ -125,8 +125,8 @@ body {
   fill: #314788;
 }
 
-/* mobile persona button */
-.mobile-persona-close-button {
+/* mobile persona modal and mobile gallery modal close button */
+.mobile-persona-close-button, .mobile-gallery-close-button {
   display: none;
 }
 
