@@ -698,6 +698,10 @@ ol {
   }
 
   /* ---------- Persona modal ---------- */
+  .persona-images {
+    width: 100%;
+  }
+
   .goals-and-frustrations {
     gap: 20px;
     grid-template-columns: 1fr;
