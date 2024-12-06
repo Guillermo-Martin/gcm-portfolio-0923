@@ -651,6 +651,9 @@ ol {
 
   .persona-images {
     grid-template-columns: 1fr;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 80%;
   }
 
   .persona-image-2 {
