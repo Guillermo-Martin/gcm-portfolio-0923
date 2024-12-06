@@ -16,10 +16,12 @@ body {
   color: white;
   display: flex;
   height: 100%;
-  left: 50%;
+  /* left: 50%; */
+  left: 0;
   position: fixed;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  /* top: 50%; */
+  top: 0;
+  /* transform: translate(-50%, -50%); */
   width: 100%;
   z-index: 1;
 }
@@ -517,7 +519,18 @@ ol {
   }
 
   /* ---------- Persona modal ---------- */
+  /* .persona-modal * {
+    max-width: 100%;
+    box-sizing: border-box;
+  } */
+
+  /* .persona-modal {
+    box-sizing: border-box;
+    padding: 1rem;
+  } */
+
   .persona-modal.active {
+    align-items: unset;
     overflow: scroll;
     z-index: 2;
     /* border: 3px solid red; */
@@ -526,7 +539,7 @@ ol {
   .persona-modal-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding: 32px;
+    /* padding: 32px; */
   }
 
   .persona-modal h2, .persona-images {
@@ -542,7 +555,7 @@ ol {
   }
 
   .persona-image-1, .persona-image-2, .persona-close-button {
-    display: none;
+    /* display: none; */
   }
 
   .mobile-persona-close-button {
