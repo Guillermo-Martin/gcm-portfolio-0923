@@ -419,8 +419,8 @@ ol {
 
 /* ---------- media queries ---------- */
 @media screen and (max-width: 1400px) {
-  /* ---------- Persona modal --------- */
-  .persona-modal-container {
+  /* ---------- Persona modal, gallery modal --------- */
+  .persona-modal-container, .gallery-modal-container {
     max-width: unset;
     width: 95%;
   }
