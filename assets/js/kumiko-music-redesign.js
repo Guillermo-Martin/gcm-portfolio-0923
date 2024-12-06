@@ -629,31 +629,33 @@ const beforeAfterCreation = (arr) => {
   beforeAndAfterTl.restart();
 
   // add the modal close button functionality
-  galleryCloseButton.addEventListener("click", () => {
-    gsap.timeline()
-      .to(".gallery-modal-images", {opacity: 0})
-      .to(".gallery-close-button", {opacity: 0}, "<")
-      .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<0.2")
-      .call(() => {
-        // hide modal
-        galleryModal.classList.remove("active");
-
-        // remove navigation class for styling
-        galleryModalImagesContainer.classList.remove("before-and-after");
-
-        // remove images in gallery
-        galleryModalImagesContainer.innerHTML = "";
-      })
-      .set(".gallery-modal-images", {opacity: 1})
-      .set(".gallery-close-button", {opacity: 1}, "<")
-      .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
-
-    // stop the animation (if a user closes the modal while the animation is still playing)
-    beforeAndAfterTl.kill();
-
-    // allow user to scroll again
-    body.style.overflow = "visible";
-  });
+  for(let galleryCloseButton of galleryCloseButtons) {
+    galleryCloseButton.addEventListener("click", () => {
+      gsap.timeline()
+        .to(".gallery-modal-images", {opacity: 0})
+        .to(".gallery-close-button", {opacity: 0}, "<")
+        .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<0.2")
+        .call(() => {
+          // hide modal
+          galleryModal.classList.remove("active");
+  
+          // remove navigation class for styling
+          galleryModalImagesContainer.classList.remove("before-and-after");
+  
+          // remove images in gallery
+          galleryModalImagesContainer.innerHTML = "";
+        })
+        .set(".gallery-modal-images", {opacity: 1})
+        .set(".gallery-close-button", {opacity: 1}, "<")
+        .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
+  
+      // stop the animation (if a user closes the modal while the animation is still playing)
+      beforeAndAfterTl.kill();
+  
+      // allow user to scroll again
+      body.style.overflow = "visible";
+    });
+  }
 };
 
 
