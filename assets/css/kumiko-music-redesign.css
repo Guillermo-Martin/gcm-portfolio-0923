@@ -630,6 +630,32 @@ ol {
     font-size: 36px;
     margin-bottom: 0;
   }
+
+  /* ---------- Personal modal ---------- */
+  .persona-modal.active {
+    box-sizing: border-box;
+    display: block;
+    overflow: auto;
+    padding: 32px;
+  }
+
+  .mobile-persona-close-button {
+    position: sticky;
+    text-align: right;
+    top: 0;
+  }
+
+  .persona-modal-container {
+    padding: 0;
+  }
+
+  .persona-images {
+    grid-template-columns: 1fr;
+  }
+
+  .persona-image-2 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 660px) {
