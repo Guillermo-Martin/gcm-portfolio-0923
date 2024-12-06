@@ -113,6 +113,12 @@ body {
   justify-content: end;
 }
 
+.gallery-close-button {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
 .persona-close-icon, .gallery-close-icon {
   cursor: pointer;
   fill: #fff;
@@ -133,7 +139,7 @@ body {
 /* ----- Gallery image modal styles ----- */
 .gallery-modal-container {
   /* display: grid; */
-  grid-template-columns: 2fr 0.1fr;
+  grid-template-columns: 1fr;
 }
 
 .gallery-modal-images {
