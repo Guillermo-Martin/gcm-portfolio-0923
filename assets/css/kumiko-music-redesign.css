@@ -696,6 +696,13 @@ ol {
     max-width: unset;
     width: 60%;
   }
+
+  /* ---------- Persona modal ---------- */
+  .goals-and-frustrations {
+    gap: 20px;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 420px) {
