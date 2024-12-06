@@ -16,12 +16,9 @@ body {
   color: white;
   display: flex;
   height: 100%;
-  /* left: 50%; */
   left: 0;
   position: fixed;
-  /* top: 50%; */
   top: 0;
-  /* transform: translate(-50%, -50%); */
   width: 100%;
   z-index: 1;
 }
@@ -35,8 +32,6 @@ body {
   grid-template-columns: 1fr 1.5fr 0.1fr;
   margin: 0 auto;
   max-width: 80%;
-  /* padding-bottom: 60px;
-  padding-top: 60px; */
   width: 90%;
 }
 
@@ -61,7 +56,6 @@ body {
 }
 
 .persona-modal p {
-  /* border: 3px solid red; */
   margin-bottom: 0;
 }
 
@@ -138,7 +132,6 @@ body {
 
 /* ----- Gallery image modal styles ----- */
 .gallery-modal-container {
-  /* display: grid; */
   grid-template-columns: 1fr;
 }
 
@@ -232,7 +225,6 @@ ol {
 
 /* ----- Buttons ----- */
 .button-container {
-  /* background-color: red; */
   align-items: center;
   display: flex;
   gap: 28px;
@@ -278,11 +270,6 @@ ol {
 }
 
 /* ---------- Project overview ---------- */
-/* .project-description {
-  background-color: red;
-  margin-bottom: 28px;
-} */
-
 /* Project basic info */
 .project-basic-info {
   display: grid;
@@ -330,7 +317,6 @@ ol {
 /* ---------- Starting the design ---------- */
 /* ----- Gallery modal ---- */
 .gallery-modal-container {
-  /* border: 3px solid red; */
   height: 90%;
   overflow: scroll;
 }
@@ -338,12 +324,10 @@ ol {
 .gallery-modal-images.wireframes {
   align-items: start;
   grid-gap: 32px;
-  /* overflow: scroll; */
 }
 
 /* ----- Wireframes ----- */
 .wireframes figcaption {
-  /* border: 3px solid red; */
   margin-bottom: 12px;
 }
 
@@ -391,12 +375,10 @@ ol {
 }
 
 .participants img {
-  /* border: 3px solid red; */
   width: 60%;
 }
 
 .participants p {
-  /* border: 3px solid blue; */
   width: 100%;
 }
 
@@ -411,10 +393,6 @@ ol {
 }
 
 /* ----- Takeaways ----- */
-.takeaways .text-container {
-  /* border: 3px solid red; */
-}
-
 .takeaways .user-quote {
   margin-bottom: 32px;
 }
@@ -526,21 +504,10 @@ ol {
   }
 
   /* ---------- Persona modal ---------- */
-  /* .persona-modal * {
-    max-width: 100%;
-    box-sizing: border-box;
-  } */
-
-  /* .persona-modal {
-    box-sizing: border-box;
-    padding: 1rem;
-  } */
-
   .persona-modal.active, .gallery-modal.active {
     align-items: unset;
     overflow: scroll;
     z-index: 2;
-    /* border: 3px solid red; */
   }
 
   .persona-modal-container {
@@ -549,7 +516,6 @@ ol {
     padding-left: 32px;
     padding-right: 32px;
     width: 100%;
-    /* padding: 32px; */
   }
 
   .persona-modal h2, .persona-images {
@@ -564,7 +530,6 @@ ol {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 0;
-    /* justify-content: unset; */
   }
 
   .persona-images img {
@@ -592,7 +557,6 @@ ol {
     grid-template-columns: 1fr;
     height: auto;
     padding: 32px;
-    /* padding-right: 0; */
   }
 
   .gallery-modal-images.wireframes {
@@ -699,7 +663,6 @@ ol {
   /* ---------- Before and after modal ---------- */
   .gallery-modal-images.before-and-after {
     grid-template-columns: 1fr;
-    /* overflow: scroll; */
   }
 }
 
