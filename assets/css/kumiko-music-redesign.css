@@ -326,12 +326,13 @@ ol {
 .gallery-modal-container {
   /* border: 3px solid red; */
   height: 90%;
+  overflow: scroll;
 }
 
 .gallery-modal-images.wireframes {
   align-items: start;
   grid-gap: 32px;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 /* ----- Wireframes ----- */
@@ -687,6 +688,12 @@ ol {
   /* ---------- Gallery modal ---------- */
   .gallery-modal-images {
     grid-template-columns: 1fr 1fr;
+  }
+
+  /* ---------- Before and after modal ---------- */
+  .gallery-modal-images.before-and-after {
+    grid-template-columns: 1fr;
+    /* overflow: scroll; */
   }
 }
 
