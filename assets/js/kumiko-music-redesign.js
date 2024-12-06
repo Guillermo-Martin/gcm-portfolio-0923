@@ -391,6 +391,7 @@ for(let button of personaButtons) {
 const galleryButtons = document.querySelectorAll(".gallery-link-button");
 const galleryModal = document.querySelector(".gallery-modal");
 const galleryModalImagesContainer = document.querySelector(".gallery-modal-images");
+const galleryModalContainer = document.querySelector(".gallery-modal-container");
 // const galleryCloseButton = document.querySelector(".gallery-close-icon");
 const galleryCloseButtons = document.querySelectorAll(".gallery-close-icon");
 
@@ -473,7 +474,7 @@ const wireframeCreation = (wireframeObj) => {
         .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<0.2")
         .call(() => {
           // reset the scroll position
-          galleryModalImagesContainer.scrollTop = 0;
+          galleryModalContainer.scrollTop = 0;
   
           // hide modal
           galleryModal.classList.remove("active");
