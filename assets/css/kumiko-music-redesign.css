@@ -1,9 +1,8 @@
 /* used to remove flash of unstyled content for page load animation */
 /* https://gsap.com/resources/fouc/ */
 body {
-  /* background-color: #000; */
-  visibility: hidden;
   position: relative;
+  visibility: hidden;
 }
 
 /* ---------- Personal modal, gallery modal ---------- */
@@ -440,6 +439,7 @@ ol {
   .participants img {
     width: 80%;
   }
+}
 
 @media screen and (max-width: 1114px) {
   .button-container {
@@ -698,7 +698,6 @@ ol {
   }
 
   .participants p:last-child {
-    /* border: 3px solid red; */
     margin-bottom: 0;
   }
 }
