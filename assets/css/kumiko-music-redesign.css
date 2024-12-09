@@ -428,10 +428,6 @@ ol {
     flex-direction: column;
     gap: 16px;
   }
-
-  .project-link-button {
-    width: 48%;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -511,10 +507,6 @@ ol {
   /* ---------- Project cards ---------- */
   .button-container {
     flex-direction: row;
-  }
-
-  .project-link-button {
-    width: 32%;
   }
 
   /* ---------- Persona modal ---------- */
@@ -691,7 +683,6 @@ ol {
 
   /* ----- Findings and accessibility considerations ----- */
   .gallery-modal-images.participants {
-    /* width: 80%; */
     gap: 0;
     grid-template-columns: 1fr;
   }
@@ -726,10 +717,6 @@ ol {
   /* ---------- Project buttons ---------- */
   .button-container {
     flex-direction: column;
-  }
-
-  .project-link-button {
-    width: 100%;
   }
 }
 
