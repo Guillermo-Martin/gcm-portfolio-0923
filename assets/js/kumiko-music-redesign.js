@@ -731,7 +731,7 @@ participantsButton.addEventListener("click", () => {
 
     // add the src of the image and set the participant quote
     participantImage.src = "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg";
-    participantQuote.innerHTML = "participant quote goes here - <span>Participant A</span>";
+    participantQuote.innerHTML = "<span class='quote'>participant quote goes here</span> - Participant A";
 
     // append the image and quote to the gallery modal images container
     galleryModalImagesContainer.appendChild(participantImage);

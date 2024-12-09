@@ -375,7 +375,8 @@ ol {
 /* ----- Findings and accessibility considerations ----- */
 .gallery-modal-images.participants {
   align-items: center;
-  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-template-columns: 1fr 0.8fr;
   justify-items: center;
 }
 
@@ -385,6 +386,10 @@ ol {
 
 .participants p {
   width: 100%;
+}
+
+.participants .quote {
+  font-style: italic;
 }
 
 .findings li span, .accessibility li span {
