@@ -439,7 +439,11 @@ ol {
   .button-container {
     flex-direction: row;
   }
-}
+
+  /* ----- Findings and accessibility considerations ----- */
+  .participants img {
+    width: 80%;
+  }
 
 @media screen and (max-width: 1114px) {
   .button-container {
@@ -584,6 +588,11 @@ ol {
     top: 5%;
     z-index: 1;
   }
+
+  /* ----- Findings and accessibility considerations ----- */
+  .participants img {
+    width: 88%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -679,6 +688,28 @@ ol {
   .arrow {
     transform: rotate(90deg);
   }
+
+  /* ----- Findings and accessibility considerations ----- */
+  .gallery-modal-images.participants {
+    /* width: 80%; */
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .participants img {
+    margin-bottom: 16px;
+    width: 60%;
+  }
+
+  .participants p {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .participants p:last-child {
+    /* border: 3px solid red; */
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -738,6 +769,11 @@ ol {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  /* ----- Findings and accessibility considerations ----- */
+  .participants img {
+    width: 100%;
   }
 }
 
