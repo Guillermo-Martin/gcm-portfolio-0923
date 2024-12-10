@@ -541,12 +541,12 @@ const createBeforeAfterTl = () => {
 // ---------- Images to use for the before and afters ----------
 const navigationImages = [
   {
-    before: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg",
-    beforeAlt: "before alt",
-    beforeText: "before text",
-    after: "../assets/images/kumiko-music-redesign/louella-washington-1.jpg",
-    afterAlt: "after alt",
-    afterText: "after text",
+    before: "../assets/images/kumiko-music-redesign/main-landing-page.png",
+    beforeAlt: "The previous navigation page for Kumiko Music",
+    beforeText: "The previous design had a single page that served as the main point for navigation.  Other pages didn't have a way to navigate around.",
+    after: "../assets/images/kumiko-music-redesign/pianist-page.png",
+    afterAlt: "Screenshot of the 'Pianist' page",
+    afterText: "The new designs incorporate a navbar at the top of every page allowing users to easily navigate the site.",
   }
 ];
 
