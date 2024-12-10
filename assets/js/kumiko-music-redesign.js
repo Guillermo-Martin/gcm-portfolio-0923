@@ -552,20 +552,20 @@ const navigationImages = [
 
 const designAndLayoutImages = [
   {
-    before: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg",
-    beforeAlt: "before alt",
-    beforeText: "before text",
-    after: "../assets/images/kumiko-music-redesign/louella-washington-1.jpg",
-    afterAlt: "after alt",
-    afterText: "after text",
+    before: "../assets/images/kumiko-music-redesign/about-page-old.png",
+    beforeAlt: "About page, previous design",
+    beforeText: "About page (before)",
+    after: "../assets/images/kumiko-music-redesign/about-page-new.png",
+    afterAlt: "About page, new design",
+    afterText: "About page (after)",
   },
   {
-    before: "../assets/images/kumiko-music-redesign/shawn-watts-2.jpg",
-    beforeAlt: "before alt 2",
-    beforeText: "before text 2",
-    after: "../assets/images/kumiko-music-redesign/louella-washington-2.jpg",
-    afterAlt: "after alt 2",
-    afterText: "after text 2",
+    before: "../assets/images/kumiko-music-redesign/contact-page-old.png",
+    beforeAlt: "Contact page, previous design",
+    beforeText: "Contact page (before)",
+    after: "../assets/images/kumiko-music-redesign/contact-page-new.png",
+    afterAlt: "Contact page, new design",
+    afterText: "Contact page (after)",
   },
 ];
 
