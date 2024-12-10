@@ -571,12 +571,12 @@ const designAndLayoutImages = [
 
 const ethnoImages = [
   {
-    before: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg",
-    beforeAlt: "before alt",
-    beforeText: "before text",
-    after: "../assets/images/kumiko-music-redesign/louella-washington-1.jpg",
-    afterAlt: "after alt",
-    afterText: "after text",
+    before: "../assets/images/kumiko-music-redesign/conference-papers-old.png",
+    beforeAlt: "Conference papers, previous design",
+    beforeText: "Conference papers (before)",
+    after: "../assets/images/kumiko-music-redesign/conference-papers-new.png",
+    afterAlt: "Conference papers, new design",
+    afterText: "Conference papers (after)",
   }
 ];
 
