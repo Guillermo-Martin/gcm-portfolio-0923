@@ -481,7 +481,7 @@ const galleryCreation = (galleryArr) => {
   
           // hide modal
           galleryModal.classList.remove("active");
-          galleryModalImagesContainer.classList.remove("wireframes");
+          galleryModalImagesContainer.classList.remove("gallery");
   
           // remove images in gallery
           galleryModalImagesContainer.innerHTML = "";
@@ -505,17 +505,17 @@ for(let galleryButton of galleryButtons) {
   galleryButton.addEventListener("click", (event) => {
     // see which button was pressed, call galleryCreation function with the appropriate image array
     if(event.target.id === "paper-wireframes") {
-      galleryModalImagesContainer.classList.add("wireframes");
+      galleryModalImagesContainer.classList.add("gallery");
       galleryCreation(paperWireframes);
     };
 
     if(event.target.id === "digital-wireframes") {
-      galleryModalImagesContainer.classList.add("wireframes");
+      galleryModalImagesContainer.classList.add("gallery");
       galleryCreation(digitalWireframes);
     };
 
     if(event.target.id === "final-designs") {
-      galleryModalImagesContainer.classList.add("wireframes");
+      galleryModalImagesContainer.classList.add("gallery");
       galleryCreation(finalDesigns);
     };
     

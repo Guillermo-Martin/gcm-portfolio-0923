@@ -320,13 +320,13 @@ ol {
   overflow: scroll;
 }
 
-.gallery-modal-images.wireframes {
+.gallery-modal-images.gallery {
   align-items: start;
   grid-gap: 32px;
 }
 
-/* ----- Wireframes ----- */
-.wireframes figcaption {
+/* ----- Gallery image figcaption ----- */
+.gallery figcaption {
   margin-bottom: 12px;
 }
 
@@ -565,7 +565,7 @@ ol {
     padding: 32px;
   }
 
-  .gallery-modal-images.wireframes {
+  .gallery-modal-images.gallery {
     grid-gap: 20px;
   }
 
