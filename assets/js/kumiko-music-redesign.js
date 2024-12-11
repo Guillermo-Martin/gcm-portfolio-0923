@@ -708,6 +708,28 @@ for(let button of beforeAndAfterButtons) {
 // participant elements
 const participantsButton = document.querySelector(".participants");
 
+// participant images 
+const participantImages = [
+  {
+    participantImage: "../assets/images/kumiko-music-redesign/participant-1.jpg",
+    participantAlt: "Silhouette of a woman",
+    quote: "<span class='quote'>participant quote goes here</span> - Participant A",
+    attribution: "Photo by <a href='https://unsplash.com/@mollyblackbird?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Molly Blackbird</a> on <a href='https://unsplash.com/photos/a-black-silhouette-of-a-woman-a-xEUwYSPLw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>", 
+  },
+  {
+    participantImage: "../assets/images/kumiko-music-redesign/participant-2.jpg",
+    participantAlt: "Silhouette of a man",
+    quote: "<span class='quote'>participant quote goes here</span> - Participant B",
+    attribution: "Photo by <a href='https://unsplash.com/@benjaminsweet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Ben Sweet</a> on <a href='https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+  },
+  {
+    participantImage: "../assets/images/kumiko-music-redesign/participant-3.jpg",
+    quote: "<span class='quote'>participant quote goes here</span> - Participant C",
+    participantAlt: "Silhouette of a man",
+    attribution: "Photo by <a href='https://unsplash.com/@mattbass?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Mateo Avila Chinchilla</a> on <a href='https://unsplash.com/photos/persons-silhouette-during-golden-hour-x_8oJhYU31k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+  },
+];
+
 // create a function that creates a timeline, then return it to be used elsewhere
 const createParticipantTl = () => {
   let participantTl = gsap.timeline()
@@ -724,17 +746,26 @@ participantsButton.addEventListener("click", () => {
   galleryModalImagesContainer.classList.add("participants");
 
   // create the participant elements
-  for(let i = 0; i < 3; i++) {
+  for(let participant of participantImages) {
     // create the participant image and quote
+    const participantFigure = document.createElement("figure");
     const participantImage = document.createElement("img");
+    const attribution = document.createElement("figcaption");
     const participantQuote = document.createElement("p");
 
-    // add the src of the image and set the participant quote
-    participantImage.src = "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg";
-    participantQuote.innerHTML = "<span class='quote'>participant quote goes here</span> - Participant A";
+    // add the src of the image, add the attribution, set the participant quote
+    participantImage.src = participant.participantImage;
+    participantImage.alt = participant.participantAlt;
+    participantQuote.innerHTML = participant.quote;
+    attribution.innerHTML = participant.attribution;
+
+    // append the image and attribution to the figure
+    participantFigure.appendChild(participantImage);
+    participantFigure.appendChild(attribution);
+   
 
     // append the image and quote to the gallery modal images container
-    galleryModalImagesContainer.appendChild(participantImage);
+    galleryModalImagesContainer.appendChild(participantFigure);
     galleryModalImagesContainer.appendChild(participantQuote);
   };
 
