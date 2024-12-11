@@ -392,7 +392,6 @@ const galleryButtons = document.querySelectorAll(".gallery-link-button");
 const galleryModal = document.querySelector(".gallery-modal");
 const galleryModalImagesContainer = document.querySelector(".gallery-modal-images");
 const galleryModalContainer = document.querySelector(".gallery-modal-container");
-// const galleryCloseButton = document.querySelector(".gallery-close-icon");
 const galleryCloseButtons = document.querySelectorAll(".gallery-close-icon");
 
 // ---------- Wireframe gallery images and information ----------
@@ -441,7 +440,7 @@ const createGalleryTimeline = () => {
 };
 
 
-// ---------- Gallery creation function (for wireframes) ----------
+// ---------- Gallery creation function (for wireframes and final designs) ----------
 const galleryCreation = (galleryArr) => {
   // for every image in the "images" array, create an image element, set its src and alt
   for(let image of galleryArr){
@@ -472,7 +471,6 @@ const galleryCreation = (galleryArr) => {
   // add the modal close button functionality
   for(let galleryCloseButton of galleryCloseButtons) {
     galleryCloseButton.addEventListener("click", () => {
-      // alert('yes');
       gsap.timeline()
         .to(".gallery-modal-images", {opacity: 0})
         .to(".gallery-close-button", {opacity: 0}, "<")
@@ -502,10 +500,10 @@ const galleryCreation = (galleryArr) => {
 };
 
 
-// ---------- Add eventListener to gallery buttons (for wireframes) ----------
+// ---------- Add eventListener to gallery buttons (for wireframes and final designs) ----------
 for(let galleryButton of galleryButtons) {
   galleryButton.addEventListener("click", (event) => {
-    // see which button was pressed, call galleryCreation function with the appropriate object
+    // see which button was pressed, call galleryCreation function with the appropriate image array
     if(event.target.id === "paper-wireframes") {
       galleryModalImagesContainer.classList.add("wireframes");
       galleryCreation(paperWireframes);
@@ -821,7 +819,3 @@ participantsButton.addEventListener("click", () => {
     });
   }
 });
-
-// ------------------------------------------------------------------
-//               Final designs button modal 
-// ------------------------------------------------------------------
