@@ -424,6 +424,19 @@ const digitalWireframes = {
   ]
 };
 
+const finalDesigns = {
+  images: [
+    
+    {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-1.png", alt: "Homepage"},
+    {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-2.png", alt: "Homepage"},
+    {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-3.png", alt: "Homepage"},
+    {filepath: "../assets/images/kumiko-music-redesign/about-me-page-digital-1.png", alt: "About page"},
+    {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
+    {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
+    // {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
+  ]
+};
+
 
 // ---------- Wireframe intro timeline ----------
 // define timeline creation
@@ -509,6 +522,11 @@ for(let wireframeButton of galleryButtons) {
     if(event.target.id === "digital-wireframes") {
       galleryModalImagesContainer.classList.add("wireframes");
       wireframeCreation(digitalWireframes);
+    };
+
+    if(event.target.id === "final-designs") {
+      galleryModalImagesContainer.classList.add("wireframes");
+      wireframeCreation(finalDesigns);
     };
     
     // show the wireframe modal
@@ -811,3 +829,7 @@ participantsButton.addEventListener("click", () => {
     });
   }
 });
+
+// ------------------------------------------------------------------
+//               Final designs button modal 
+// ------------------------------------------------------------------
