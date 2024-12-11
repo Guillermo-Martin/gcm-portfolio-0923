@@ -384,9 +384,9 @@ for(let button of personaButtons) {
 };
 
 
-// -----------------------------------------------------------------------------
-// Gallery modal animation (for wireframes, hifi mockups, and before and afters) 
-// -----------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------------
+// Gallery modal animation (for wireframes, hifi mockups, and before and afters, and final designs) 
+// ------------------------------------------------------------------------------------------------
 // ---------- Gallery elements ----------
 const galleryButtons = document.querySelectorAll(".gallery-link-button");
 const galleryModal = document.querySelector(".gallery-modal");
@@ -426,7 +426,6 @@ const digitalWireframes = {
 
 const finalDesigns = {
   images: [
-    
     {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-1.png", alt: "Homepage"},
     {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-2.png", alt: "Homepage"},
     {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-3.png", alt: "Homepage"},
@@ -440,42 +439,42 @@ const finalDesigns = {
 
 // ---------- Wireframe intro timeline ----------
 // define timeline creation
-const createWireframeTimeline = () => {
-  let wireframeTimeline = gsap.timeline({paused: true})
+const createGalleryTimeline = () => {
+  let galleryTimeline = gsap.timeline({paused: true})
     .from(".gallery-modal", {opacity: 0, duration: 1})
     .from(".gallery-modal figure", {opacity: 0, stagger: 0.05, duration: 0.5})
 
-  return wireframeTimeline;
+  return galleryTimeline;
 };
 
 
 // ---------- Gallery creation function (for wireframes) ----------
-const wireframeCreation = (wireframeObj) => {
+const galleryCreation = (galleryArr) => {
   // for every image in the "images" array, create an image element, set its src and alt
-  for(let image of wireframeObj.images){
+  for(let image of galleryArr.images){
     // create a figure element and its caption
-    let wireframeFigure = document.createElement("figure");
-    let wireframeFigureCaption = document.createElement("figcaption");
+    let galleryFigure = document.createElement("figure");
+    let galleryFigureCaption = document.createElement("figcaption");
 
     // create an image element
-    let wireframeImage = document.createElement("img");
+    let galleryImage = document.createElement("img");
 
     // set its src an alt, set the figcaption
-    wireframeImage.src = image.filepath;
-    wireframeImage.alt = image.alt;
-    wireframeFigureCaption.textContent = image.alt;
+    galleryImage.src = image.filepath;
+    galleryImage.alt = image.alt;
+    galleryFigureCaption.textContent = image.alt;
 
     // append the image and figcaption to the figure
-    wireframeFigure.appendChild(wireframeFigureCaption);
-    wireframeFigure.appendChild(wireframeImage);
+    galleryFigure.appendChild(galleryFigureCaption);
+    galleryFigure.appendChild(galleryImage);
 
     // append the figures to the container
-    galleryModalImagesContainer.appendChild(wireframeFigure);
+    galleryModalImagesContainer.appendChild(galleryFigure);
   };
   
   // aftering creating the wireframe, create the wireframe timeline, then play it
-  let wireframeTimeline = createWireframeTimeline();
-  wireframeTimeline.restart();
+  let galleryTimeline = createGalleryTimeline();
+  galleryTimeline.restart();
 
   // add the modal close button functionality
   for(let galleryCloseButton of galleryCloseButtons) {
@@ -501,7 +500,7 @@ const wireframeCreation = (wireframeObj) => {
         .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
       
       // stop the animation (if a user closes the modal while the animation is still playing)
-      wireframeTimeline.kill();
+      galleryTimeline.kill();
   
       // allow user to scroll again
       body.style.overflow = "visible";
@@ -511,22 +510,22 @@ const wireframeCreation = (wireframeObj) => {
 
 
 // ---------- Add eventListener to gallery buttons (for wireframes) ----------
-for(let wireframeButton of galleryButtons) {
-  wireframeButton.addEventListener("click", (event) => {
-    // see which button was pressed, call wireframeCreation function with the appropriate object
+for(let galleryButton of galleryButtons) {
+  galleryButton.addEventListener("click", (event) => {
+    // see which button was pressed, call galleryCreation function with the appropriate object
     if(event.target.id === "paper-wireframes") {
       galleryModalImagesContainer.classList.add("wireframes");
-      wireframeCreation(paperWireframes);
+      galleryCreation(paperWireframes);
     };
 
     if(event.target.id === "digital-wireframes") {
       galleryModalImagesContainer.classList.add("wireframes");
-      wireframeCreation(digitalWireframes);
+      galleryCreation(digitalWireframes);
     };
 
     if(event.target.id === "final-designs") {
       galleryModalImagesContainer.classList.add("wireframes");
-      wireframeCreation(finalDesigns);
+      galleryCreation(finalDesigns);
     };
     
     // show the wireframe modal
