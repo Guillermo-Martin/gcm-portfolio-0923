@@ -396,45 +396,38 @@ const galleryModalContainer = document.querySelector(".gallery-modal-container")
 const galleryCloseButtons = document.querySelectorAll(".gallery-close-icon");
 
 // ---------- Wireframe gallery images and information ----------
-const paperWireframes = {
-  images: [
-    {filepath: "../assets/images/kumiko-music-redesign/about-1.png", alt: "About page"},
-    {filepath: "../assets/images/kumiko-music-redesign/about-2.png", alt: "About page"},
-    {filepath: "../assets/images/kumiko-music-redesign/composer-1.png", alt: "Compositions page"},
-    {filepath: "../assets/images/kumiko-music-redesign/composer-2.png", alt: "Compositions page"},
-    {filepath: "../assets/images/kumiko-music-redesign/pianist-1.png", alt: "Pianist page"},
-    {filepath: "../assets/images/kumiko-music-redesign/pianist-2.png", alt: "Pianist page"},
-    {filepath: "../assets/images/kumiko-music-redesign/contact-1.png", alt: "Contact page"},
-    {filepath: "../assets/images/kumiko-music-redesign/contact-2.png", alt: "Contact page"},
-    {filepath: "../assets/images/kumiko-music-redesign/homepage-1.png", alt: "Homepage"},
-    {filepath: "../assets/images/kumiko-music-redesign/homepage-2.png", alt: "Homepage"},
-  ]
-};
+const paperWireframes = [
+  {filepath: "../assets/images/kumiko-music-redesign/about-1.png", alt: "About page"},
+  {filepath: "../assets/images/kumiko-music-redesign/about-2.png", alt: "About page"},
+  {filepath: "../assets/images/kumiko-music-redesign/composer-1.png", alt: "Compositions page"},
+  {filepath: "../assets/images/kumiko-music-redesign/composer-2.png", alt: "Compositions page"},
+  {filepath: "../assets/images/kumiko-music-redesign/pianist-1.png", alt: "Pianist page"},
+  {filepath: "../assets/images/kumiko-music-redesign/pianist-2.png", alt: "Pianist page"},
+  {filepath: "../assets/images/kumiko-music-redesign/contact-1.png", alt: "Contact page"},
+  {filepath: "../assets/images/kumiko-music-redesign/contact-2.png", alt: "Contact page"},
+  {filepath: "../assets/images/kumiko-music-redesign/homepage-1.png", alt: "Homepage"},
+  {filepath: "../assets/images/kumiko-music-redesign/homepage-2.png", alt: "Homepage"},
+];
 
-const digitalWireframes = {
-  images: [
-    
-    {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-1.png", alt: "Homepage"},
-    {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-2.png", alt: "Homepage"},
-    {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-3.png", alt: "Homepage"},
-    {filepath: "../assets/images/kumiko-music-redesign/about-me-page-digital-1.png", alt: "About page"},
-    {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
-    {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
-    // {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
-  ]
-};
+const digitalWireframes = [
+  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-1.png", alt: "Homepage"},
+  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-2.png", alt: "Homepage"},
+  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-3.png", alt: "Homepage"},
+  {filepath: "../assets/images/kumiko-music-redesign/about-me-page-digital-1.png", alt: "About page"},
+  {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
+  {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
+  // {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
+];
 
-const finalDesigns = {
-  images: [
-    {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-1.png", alt: "Homepage"},
-    {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-2.png", alt: "Homepage"},
-    {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-3.png", alt: "Homepage"},
-    {filepath: "../assets/images/kumiko-music-redesign/about-me-page-digital-1.png", alt: "About page"},
-    {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
-    {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
-    // {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
-  ]
-};
+const finalDesigns = [
+  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-1.png", alt: "Homepage"},
+  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-2.png", alt: "Homepage"},
+  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-3.png", alt: "Homepage"},
+  {filepath: "../assets/images/kumiko-music-redesign/about-me-page-digital-1.png", alt: "About page"},
+  {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
+  {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
+  // {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
+];
 
 
 // ---------- Wireframe intro timeline ----------
@@ -451,7 +444,7 @@ const createGalleryTimeline = () => {
 // ---------- Gallery creation function (for wireframes) ----------
 const galleryCreation = (galleryArr) => {
   // for every image in the "images" array, create an image element, set its src and alt
-  for(let image of galleryArr.images){
+  for(let image of galleryArr){
     // create a figure element and its caption
     let galleryFigure = document.createElement("figure");
     let galleryFigureCaption = document.createElement("figcaption");
