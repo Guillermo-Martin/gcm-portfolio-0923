@@ -154,7 +154,7 @@ const personaImagesDiv = document.querySelector(".persona-images");
 const personaProblem = document.querySelector(".problem-statement p");
 const personaGoalsList = document.querySelector(".persona-goals ul");
 const personaFrustrationsList = document.querySelector(".persona-frustrations ul");
-const attributionLink = document.querySelector(".attribution a");
+const attributionElement = document.querySelector(".attribution a");
 const attributionHandle = document.querySelector(".attribution-handle");
 
 // ---------- Personas information ----------
@@ -283,7 +283,7 @@ const personaCreation = (personaObj) => {
   };
 
   // set the attribution
-  attributionLink.href = attributionLink;
+  attributionElement.href = attributionLink;
   attributionHandle.textContent = attributionName;
 
   // set the persona goals
@@ -739,19 +739,19 @@ const participantImages = [
     participantImage: "../assets/images/kumiko-music-redesign/participant-1-flip.jpg",
     participantAlt: "Silhouette of a woman",
     quote: "<span class='quote'>\"I like how her biography is split into different parts.\"</span>&nbsp;- Participant&nbsp;A",
-    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mollyblackbird?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Molly Blackbird</a> on <a href='https://unsplash.com/photos/a-black-silhouette-of-a-woman-a-xEUwYSPLw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a></p>", 
+    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mollyblackbird?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Molly Blackbird</a> on <a href='https://unsplash.com/photos/a-black-silhouette-of-a-woman-a-xEUwYSPLw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>", 
   },
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-2.jpg",
     participantAlt: "Silhouette of a man",
     quote: "<span class='quote'>\"It was a little confusing to have links to her work (abstracts, conference paper, etc.) on the 'About page' - this felt like it should be an entirely separate page.\"</span>&nbsp;- Participant&nbsp;B",
-    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@benjaminsweet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Ben Sweet</a> on <a href='https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a></p>",
+    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@benjaminsweet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Ben Sweet</a> on <a href='https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>",
   },
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-3.jpg",
     quote: "<span class='quote'>\"It’s much more uniform, there’s a running a theme.\"</span>&nbsp;- Participant&nbsp;C",
     participantAlt: "Silhouette of a man",
-    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mattbass?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Mateo Avila Chinchilla</a> on <a href='https://unsplash.com/photos/persons-silhouette-during-golden-hour-x_8oJhYU31k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a></p>",
+    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mattbass?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Mateo Avila Chinchilla</a> on <a href='https://unsplash.com/photos/persons-silhouette-during-golden-hour-x_8oJhYU31k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>",
   },
 ];
 
