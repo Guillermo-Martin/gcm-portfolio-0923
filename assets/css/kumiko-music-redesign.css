@@ -271,6 +271,10 @@ ol {
 }
 
 /* ---------- Project overview ---------- */
+#project-overview img {
+  border: 1px solid #4a4a49;
+}
+
 /* Project basic info */
 .project-basic-info {
   display: grid;
@@ -335,6 +339,10 @@ ol {
 /* ----- High-fidelity mockups ----- */
 .hifi-mockups-prototype h4 {
   margin-bottom: 12px;
+}
+
+.hifi-mockups-prototype img {
+  border: 1px solid #4a4a49;
 }
 
 .gallery-modal-images.before-and-after {
