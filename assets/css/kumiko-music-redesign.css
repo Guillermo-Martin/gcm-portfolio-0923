@@ -707,14 +707,26 @@ ol {
     grid-template-columns: 1fr;
   }
 
-  .participants img {
+  .participants figure {
     margin-bottom: 16px;
+  }
+
+  .participants img {
+    margin-bottom: 8px;
     width: 60%;
   }
 
   .participants p {
     margin-bottom: 60px;
     text-align: center;
+  }
+
+  .participants figcaption {
+    margin-top: 0;
+  }
+
+  .participants figcaption p {
+    text-align: left;
   }
 
   .participants p:last-child {
