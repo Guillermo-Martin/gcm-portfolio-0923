@@ -140,7 +140,8 @@ body {
 }
 
 .gallery-modal img {
-  width: 100%;
+  border: 1px solid #4a4a49;
+  width: 99.6%;
 }
 
 
