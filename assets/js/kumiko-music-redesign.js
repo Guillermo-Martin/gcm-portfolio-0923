@@ -419,12 +419,13 @@ const digitalWireframes = [
 ];
 
 const finalDesigns = [
-  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-1.png", alt: "Homepage"},
-  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-2.png", alt: "Homepage"},
-  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-3.png", alt: "Homepage"},
-  {filepath: "../assets/images/kumiko-music-redesign/about-me-page-digital-1.png", alt: "About page"},
-  {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
-  {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
+  {filepath: "../assets/images/kumiko-music-redesign/final-landing-page.png", alt: "Homepage"},
+  {filepath: "../assets/images/kumiko-music-redesign/pianist-hero-final.png", alt: "Pianist page (Hero)"},
+  {filepath: "../assets/images/kumiko-music-redesign/pianist-audio.png", alt: "Pianist page (Audio)"},
+  {filepath: "../assets/images/kumiko-music-redesign/pianist-cds.png", alt: "Pianist page (CDs)"},
+  {filepath: "../assets/images/kumiko-music-redesign/pianist-performances.png", alt: "Pianist page (Performances)"},
+  {filepath: "../assets/images/kumiko-music-redesign/pianist-gallery.png", alt: "Pianist page (Gallery)"},
+  
   // {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
 ];
 
