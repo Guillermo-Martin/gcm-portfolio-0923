@@ -431,6 +431,25 @@ ol {
   font-weight: 200;
 }
 
+/* ----- Thank you ----- */
+.thank-you ul {
+  padding-left: 48px;
+}
+
+.thank-you li {
+  list-style-type: disc;
+}
+
+.thank-you a {
+  color: #fff;
+}
+
+.thank-you a:hover {
+  color: #375293;
+}
+
+
+
 /* ---------- media queries ---------- */
 @media screen and (max-width: 1400px) {
   /* ---------- Persona modal, gallery modal --------- */
