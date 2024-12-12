@@ -160,7 +160,7 @@ const attributionHandle = document.querySelector(".attribution-handle");
 // ---------- Personas information ----------
 const personaShawn = {
   name: "Hi, I'm Shawn!",
-  intro: "I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  intro: "I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  During one of my gigs, I learned about this new musician.  I went to their website to learn more, but I had a hard time navigating the site.  The site’s design also didn’t seem consistent.  It made it hard for me to find information and learn more about who this musician is.  I’d love for the new site to be easy to navigate while also showing off the musician’s personality.",
   problem: "Shawn Watts is a photographer who needs to visit an easy to navigate website because he wants to learn more about a new musician.",
   goals: ["Wants to learn more about a new musician"],
   frustrations: ["Navigating the musician's website is challenging", "Can't tell who a musician is by their website"],
@@ -175,7 +175,7 @@ const personaShawn = {
 
 const personaLouella = {
   name: "Hi, I'm Louella!",
-  intro: "Louella intro I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  intro: "I’m 58 and work as a social worker in Wilmington.  When I come home from work, I like to relax and listen to new music.  I recently came across this new musician and wanted to listen to more of their music and see them perform.  I went to their website, but got lost; I didn’t know where listen to their music.  I found a few videos, but when I clicked on them, it took me to YouTube, which I thought was a bit annoying.  I would love to easily find music samples and see this musician’s performances on their site.",
   problem: "Louella Washington is a social worker who needs to listen to samples of music because she wants to know what kind of music a particular musician plays.",
   goals: ["Listen to music by a new musician", "Watch the musician perform"],
   frustrations: ["Unsure where to listen and play samples of music", "Links take her off the musician's site to another site"],
