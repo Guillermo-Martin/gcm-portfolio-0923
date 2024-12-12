@@ -131,6 +131,7 @@ body {
 
 /* ----- Gallery image modal styles ----- */
 .gallery-modal-container {
+  align-items: center;
   grid-template-columns: 1fr;
 }
 
@@ -337,7 +338,7 @@ ol {
 }
 
 .gallery-modal-images.before-and-after {
-  align-items: center;
+  align-items: end;
   gap: 20px;
   grid-template-columns: 1fr 0.1fr 1fr;
   justify-items: center;
@@ -348,6 +349,12 @@ ol {
 }
 
 /* right arrow */
+.arrow-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
 .before-and-after div {
   font-size: 80px;
 }

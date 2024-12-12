@@ -606,24 +606,18 @@ const beforeAfterCreation = (arr) => {
     // create the before, after, and arrow elements
     const beforeFigure = document.createElement("figure");
     const afterFigure = document.createElement("figure");
+    const arrowContainer = document.createElement("div");
     const rightArrow = document.createElement("div");
 
     // add classes to the before and after figures and the arrow
     beforeFigure.classList.add("before-figure");
     afterFigure.classList.add("after-figure");
+    arrowContainer.classList.add("arrow-container");
     rightArrow.classList.add("arrow");
 
     // images
     const beforeImage = document.createElement("img");
     const afterImage = document.createElement("img");
-
-    // append the images to the figures
-    beforeFigure.appendChild(beforeImage);
-    afterFigure.appendChild(afterImage);
-
-    // add src and alt to images
-    beforeImage.src = arr[i].before;
-    afterImage.src = arr[i].after;
 
     // create figcaptions to append to the images
     const beforeCaption = document.createElement("figcaption");
@@ -634,13 +628,25 @@ const beforeAfterCreation = (arr) => {
     rightArrow.innerHTML = "&rarr;";
     afterCaption.textContent = arr[i].afterText;
 
+    // append the images to the figures
+    beforeFigure.appendChild(beforeImage);
+    afterFigure.appendChild(afterImage);
+
+    // append the arrow to the arrow container
+    arrowContainer.appendChild(rightArrow);
+
+    // add src and alt to images
+    beforeImage.src = arr[i].before;
+    afterImage.src = arr[i].after;
+
     // append the captions to the figures
     beforeFigure.appendChild(beforeCaption);
     afterFigure.appendChild(afterCaption);
 
     // append the figures to the gallery-modal-images container
     galleryModalImagesContainer.appendChild(beforeFigure);
-    galleryModalImagesContainer.appendChild(rightArrow);
+    // galleryModalImagesContainer.appendChild(rightArrow);
+    galleryModalImagesContainer.appendChild(arrowContainer);
     galleryModalImagesContainer.appendChild(afterFigure);
   };
 
