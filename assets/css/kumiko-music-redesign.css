@@ -388,8 +388,19 @@ ol {
   justify-items: center;
 }
 
-.participants img {
+.participants figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.participants img, .participants figcaption {
   width: 60%;
+}
+
+.participants figcaption {
+  margin-top: 12px;
 }
 
 .participants p {
