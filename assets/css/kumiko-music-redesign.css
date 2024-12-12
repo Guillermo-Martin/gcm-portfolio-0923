@@ -765,6 +765,12 @@ ol {
     justify-content: center;
   }
 
+  /* ----- arrow ----- */
+  .arrow-container {
+    justify-content: center;
+    width: 100%;
+  }
+
   /* ----- Findings and accessibility considerations ----- */
   .participants img {
     width: 100%;
