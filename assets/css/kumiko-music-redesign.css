@@ -799,6 +799,14 @@ ol {
   .participants img {
     width: 100%;
   }
+
+  .participants figcaption {
+    width: 100%;
+  }
+
+  .participants p {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 420px) {
