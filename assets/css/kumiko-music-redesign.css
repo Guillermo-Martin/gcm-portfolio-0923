@@ -763,7 +763,7 @@ ol {
 
   .project-link-button {
     max-width: unset;
-    width: 60%;
+    width: fit-content;
   }
 
   /* ---------- Persona modal ---------- */
