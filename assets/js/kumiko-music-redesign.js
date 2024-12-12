@@ -733,19 +733,19 @@ const participantImages = [
     participantImage: "../assets/images/kumiko-music-redesign/participant-1.jpg",
     participantAlt: "Silhouette of a woman",
     quote: "<span class='quote'>I like how her biography is split into different parts.</span> - Participant A",
-    attribution: "Photo by <a href='https://unsplash.com/@mollyblackbird?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Molly Blackbird</a> on <a href='https://unsplash.com/photos/a-black-silhouette-of-a-woman-a-xEUwYSPLw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>", 
+    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mollyblackbird?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Molly Blackbird</a> on <a href='https://unsplash.com/photos/a-black-silhouette-of-a-woman-a-xEUwYSPLw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a></p>", 
   },
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-2.jpg",
     participantAlt: "Silhouette of a man",
     quote: "<span class='quote'>It was a little confusing to have links to her work (abstracts, conference paper, etc.) on the 'About page' - this felt like it should be an entirely separate page.</span> - Participant B",
-    attribution: "Photo by <a href='https://unsplash.com/@benjaminsweet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Ben Sweet</a> on <a href='https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@benjaminsweet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Ben Sweet</a> on <a href='https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a></p>",
   },
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-3.jpg",
     quote: "<span class='quote'>It’s much more uniform, there’s a running a theme.</span> - Participant C",
     participantAlt: "Silhouette of a man",
-    attribution: "Photo by <a href='https://unsplash.com/@mattbass?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Mateo Avila Chinchilla</a> on <a href='https://unsplash.com/photos/persons-silhouette-during-golden-hour-x_8oJhYU31k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a>",
+    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mattbass?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Mateo Avila Chinchilla</a> on <a href='https://unsplash.com/photos/persons-silhouette-during-golden-hour-x_8oJhYU31k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a></p>",
   },
 ];
 
