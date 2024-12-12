@@ -736,7 +736,7 @@ const participantsButton = document.querySelector(".participants");
 // participant images 
 const participantImages = [
   {
-    participantImage: "../assets/images/kumiko-music-redesign/participant-1.jpg",
+    participantImage: "../assets/images/kumiko-music-redesign/participant-1-flip.jpg",
     participantAlt: "Silhouette of a woman",
     quote: "<span class='quote'>\"I like how her biography is split into different parts.\"</span> - Participant A",
     attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mollyblackbird?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Molly Blackbird</a> on <a href='https://unsplash.com/photos/a-black-silhouette-of-a-woman-a-xEUwYSPLw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash'>Unsplash</a></p>", 
