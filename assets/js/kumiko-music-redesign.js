@@ -432,8 +432,11 @@ const finalDesigns = [
   {filepath: "../assets/images/kumiko-music-redesign/ethno-conference.png", alt: "Ethnomusicology (Conferences)"},
   {filepath: "../assets/images/kumiko-music-redesign/ethno-courses.png", alt: "Ethnomusicology (Courses taught)"},
   {filepath: "../assets/images/kumiko-music-redesign/ethno-publications.png", alt: "Ethnomusicology (Publications)"},
-  
-  // {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
+  {filepath: "../assets/images/kumiko-music-redesign/about-hero.png", alt: "About page (Hero)"},
+  {filepath: "../assets/images/kumiko-music-redesign/about-quote.png", alt: "About page (Quote)"},
+  {filepath: "../assets/images/kumiko-music-redesign/about-sections.png", alt: "About page (Sections)"},
+  {filepath: "../assets/images/kumiko-music-redesign/about-works.png", alt: "About page (Works)"},
+  {filepath: "../assets/images/kumiko-music-redesign/contact-form.png", alt: "Contact form"},
 ];
 
 
