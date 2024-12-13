@@ -368,16 +368,22 @@ ol {
   font-size: 80px;
 }
 
-/* ---------- Usability studies ---------- */
-#usability-studies h4 {
+/* ---------- Refining the design ---------- */
+/* #usability-studies h4 { */
+#refining-the-design h4 {
+  /* border: 3px solid red; */
   margin-bottom: 12px;
 }
 
-#usability-studies ol {
+/* #usability-studies ol { */
+#refining-the-design ol {
+  /* border: 3px solid blue; */
   margin-bottom: 28px;
 }
 
-#usability-studies ol:last-child {
+/* #usability-studies ol:last-child { */
+#refining-the-design ol:last-child {
+  /* border: 3px solid black; */
   margin-bottom: 0;
 }
 
