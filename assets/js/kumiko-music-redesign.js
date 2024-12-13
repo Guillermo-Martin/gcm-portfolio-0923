@@ -147,7 +147,6 @@ mm.add("(max-width: 767px)", () => {
 // ---------- Persona elements ----------
 const personaButtons = document.querySelectorAll(".persona-button");
 const personaModal = document.querySelector(".persona-modal");
-// const personaCloseButton = document.querySelector(".persona-close-icon");
 const personaCloseButtons = document.querySelectorAll(".persona-close-icon");
 const personaImagesDiv = document.querySelector(".persona-images");
 const personaProblem = document.querySelector(".problem-statement p");
@@ -417,7 +416,6 @@ const digitalWireframes = [
   {filepath: "../assets/images/kumiko-music-redesign/about-me-page-digital-1.png", alt: "About page"},
   {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
   {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
-  // {filepath: "../assets/images/kumiko-music-redesign/pianist-page-digital-1.png", alt: "Homepage"},
 ];
 
 const finalDesigns = [
