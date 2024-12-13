@@ -156,12 +156,12 @@ const attributionElement = document.querySelector(".attribution a");
 const attributionHandle = document.querySelector(".attribution-handle");
 
 // ---------- Personas information ----------
-const personaShawn = {
-  name: "Hi, I'm Shawn!",
-  intro: "I’m 36 and live in Vancouver, British Columbia and I’m a photographer.  During one of my gigs, I learned about this new musician.  I went to their website to learn more, but I had a hard time navigating the site.  The site’s design also didn’t seem consistent.  It made it hard for me to find information and learn more about who this musician is.  I’d love for the new site to be easy to navigate while also showing off the musician’s personality.",
-  problem: "Shawn Watts is a photographer who needs to visit an easy to navigate website because he wants to learn more about a new musician.",
-  goals: ["Wants to learn more about a new musician"],
-  frustrations: ["Navigating the musician's website is challenging", "Can't tell who a musician is by their website"],
+const persona1 = {
+  name: "Hi, I'm Kibum!",
+  intro: "Kibum intro",
+  problem: "Kibum Lee is a professional baker who needs a way to sell unsold baked goods because he wants to reduce food waste and recoup the cost of ingredients.",
+  goals: ["Reduce food waste", "Would like to sell as many of their baked goods as possible"],
+  frustrations: ["Doesn’t know what to do with unsold baked goods at the end of the day", "Loses money when he doesn’t sell everything"],
   images: [
     {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg", alt: "Picture of Shawn"},
     {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-2.jpg", alt: "Picture of Shawn"},
@@ -171,16 +171,16 @@ const personaShawn = {
   attributionLink: "https://www.freepik.com/author/svetlanasokolova"
 };
 
-const personaLouella = {
-  name: "Hi, I'm Louella!",
-  intro: "I’m 58 and work as a social worker in Wilmington.  When I come home from work, I like to relax and listen to new music.  I recently came across this new musician and wanted to listen to more of their music and see them perform.  I went to their website, but got lost; I didn’t know where listen to their music.  I found a few videos, but when I clicked on them, it took me to YouTube, which I thought was a bit annoying.  I would love to easily find music samples and see this musician’s performances on their site.",
-  problem: "Louella Washington is a social worker who needs to listen to samples of music because she wants to know what kind of music a particular musician plays.",
-  goals: ["Listen to music by a new musician", "Watch the musician perform"],
-  frustrations: ["Unsure where to listen and play samples of music", "Links take her off the musician's site to another site"],
+const persona2 = {
+  name: "Hi, I'm Isabella!",
+  intro: "Isabella intro",
+  problem: "Isabella Carrillo is a pastry chef who needs to easily sell her food online because she wants to spend more time creating and experimenting with new recipes.",
+  goals: ["Spend more time creating and experimenting with recipes", "Easily sell things online"],
+  frustrations: ["Selling something online is cumbersome because of all the little things you have to do", "Buyers have been unreliable in the past"],
   images: [
-    {filepath: "../assets/images/kumiko-music-redesign/louella-washington-1.jpg", alt: "Picture of Louella"},
-    {filepath: "../assets/images/kumiko-music-redesign/louella-washington-2.jpg", alt: "Picture of Louella"},
-    {filepath: "../assets/images/kumiko-music-redesign/louella-washington-3.jpg", alt: "Picture of Louella"}
+    {filepath: "../assets/images/bakery-board/isabella-carrillo-1.jpg", alt: "Picture of Isabella"},
+    {filepath: "../assets/images/bakery-board/isabella-carrillo-2.jpg", alt: "Picture of Isabella"},
+    {filepath: "../assets/images/bakery-board/isabella-carrillo-3.jpg", alt: "Picture of Isabella"}
   ],
   attributionName: "@freepik",
   attributionLink: "https://www.freepik.com/author/freepik"
@@ -371,12 +371,12 @@ for(let button of personaButtons) {
 
     // if persona 1 is clicked on
     if(event.target.id === "persona-1") {
-      personaCreation(personaShawn);
+      personaCreation(persona1);
     };
 
     // if persona 2 is clicked on
     if(event.target.id === "persona-2") {
-      personaCreation(personaLouella);
+      personaCreation(persona2);
     };
   
     // on click, show modal
