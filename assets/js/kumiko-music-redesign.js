@@ -762,8 +762,8 @@ const participantImages = [
 const createParticipantTl = () => {
   let participantTl = gsap.timeline()
     .from(".gallery-modal", {opacity: 0, duration: 1})
-    .from(".participants img", {opacity: 0, stagger: 0.8, duration: 1})
-    .from(".participants p", {opacity: 0, x: -8, stagger: 0.8, duration: 1}, "<0.5")
+    .from(".participants figure", {opacity: 0, duration: 1})
+    .from(".participant-quote", {opacity: 0, duration: 1}, "<0.5")
 
   return participantTl;
 };
@@ -780,6 +780,9 @@ participantsButton.addEventListener("click", () => {
     const participantImage = document.createElement("img");
     const attribution = document.createElement("figcaption");
     const participantQuote = document.createElement("p");
+
+    // add a class to the participant quote p tag
+    participantQuote.classList.add("participant-quote");
 
     // add the src of the image, add the attribution, set the participant quote
     participantImage.src = participant.participantImage;
