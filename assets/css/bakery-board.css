@@ -1,0 +1,886 @@
+/* used to remove flash of unstyled content for page load animation */
+/* https://gsap.com/resources/fouc/ */
+body {
+  position: relative;
+  visibility: hidden;
+  background-color: red;
+}
+
+/* ---------- Personal modal, gallery modal ---------- */
+.persona-modal.active, .gallery-modal.active {
+  /* modal background blur */
+  /* https://stackoverflow.com/questions/61353311/adding-background-blur-via-css-behind-pop-up-modal */
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  color: white;
+  display: flex;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.persona-modal, .gallery-modal {
+  display: none;
+}
+
+.persona-modal-container, .gallery-modal-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 0.1fr;
+  margin: 0 auto;
+  max-width: 80%;
+  width: 90%;
+}
+
+.persona-intro, .goals-and-frustrations {
+  margin-bottom: 40px;
+}
+
+/* ----- persona images and text ----- */
+.persona-images, .persona-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.persona-images {
+  gap: 8px;
+}
+
+.persona-images img {
+  width: 80%;
+}
+
+.persona-modal p {
+  margin-bottom: 0;
+}
+
+.persona-text {
+  align-items: start;
+}
+
+/* ----- Goals and frustrations ----- */
+.goals-and-frustrations {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.goals-and-frustrations ul {
+  padding-left: 30px;
+  list-style-type: disc;
+}
+
+.goals-and-frustrations li {
+  margin-bottom: 12px;
+}
+
+.goals-and-frustrations li:last-child {
+  margin-bottom: 0;
+}
+
+/* ----- Problem statement ---- */
+.problem-statement {
+  margin-bottom: 40px;
+}
+
+/* ----- attribution ----- */
+.attribution, .attribution a {
+  font-size: 12px;
+}
+
+.attribution a {
+  color: #fff;
+}
+
+.attribution a:hover {
+  color: #314788;
+}
+
+/* ----- persona close button, gallery close button ---- */
+.persona-close-button, .gallery-close-button {
+  display: flex;
+  justify-content: end;
+}
+
+.gallery-close-button {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.persona-close-icon, .gallery-close-icon {
+  cursor: pointer;
+  fill: #fff;
+  height: 40px;
+  transition: all 0.2s;
+  width: 40px;
+}
+
+.persona-close-icon:hover, .gallery-close-icon:hover {
+  fill: #314788;
+}
+
+/* mobile persona modal and mobile gallery modal close button */
+.mobile-persona-close-button, .mobile-gallery-close-button {
+  display: none;
+}
+
+/* ----- Gallery image modal styles ----- */
+.gallery-modal-container {
+  align-items: center;
+  grid-template-columns: 1fr;
+}
+
+.gallery-modal-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-modal img {
+  border: 1px solid #4a4a49;
+  width: 99.6%;
+}
+
+
+/* ---------- Sidenav and table of contents ---------- */
+.sidenav, .navbar a, .table-of-contents p {
+  color: #fff;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+.sidenav {
+  grid-template-rows: 0.3fr 2fr;
+}
+
+.sidenav-text-container {
+  margin-bottom: 60px;
+}
+
+/* ----- Current section (for mobile) ----- */
+.current-section {
+  display: none;
+}
+
+/* ----- TL;DR (for mobile) ----- */
+.tldr {
+  display: none;
+}
+
+/* ---------- Main content ---------- */
+/* ----- main content subsection ---- */
+.main-content-section .subsection {
+  margin-bottom: 32px;
+}
+
+.main-content-section .subsection:last-child {
+  margin-bottom: 0;
+}
+
+/* ----- subsection elements ----- */
+.subsection p {
+  margin-bottom: 0;
+}
+
+.subsection .subsection-intro {
+  margin-bottom: 24px;
+}
+
+/* subsection list elements */
+.subsection li {
+  margin-bottom: 24px;
+}
+
+.subsection li:last-child {
+  margin-bottom: 0;
+}
+
+/* Numbered lists */
+ol {
+  list-style: decimal;
+  padding-left: 48px;
+}
+
+/* ----- Project card ----- */
+.project-card {
+  margin-bottom: 80px;
+}
+
+.project-card:last-child {
+  margin-bottom: 0;
+}
+
+.image-container {
+  margin-bottom: 28px;
+}
+
+.section-image {
+  width: 100%;
+}
+
+/* ----- Buttons ----- */
+.button-container {
+  align-items: center;
+  display: flex;
+  gap: 28px;
+  justify-content: start;
+}
+
+.project-link-button {
+  align-items: center;
+  background-color: #314788;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  padding: 15.25px 28px;
+  transition: all 0.2s;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.project-link-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.project-link-button .button-icon {
+  fill: #fff;
+  height: 20px;
+  margin-left: 12px;
+  transition: fill 0.1s;
+  width: 20px;
+}
+
+.project-link-button:hover .button-icon {
+  fill: #000;
+}
+
+.project-link-button .github-icon {
+  height: 24px;
+  width: 24px;
+}
+
+/* ---------- Project overview ---------- */
+#project-overview img {
+  border: 1px solid #4a4a49;
+}
+
+/* Project basic info */
+.project-basic-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 32px;
+}
+
+.project-basic-info li:nth-child(3) {
+  grid-column-end: 3;
+  grid-column-start: 1;
+}
+
+.project-basic-info span {
+  font-weight: 600;
+}
+
+/* ---------- Pain points ----------- */
+.pain-points p {
+  padding-left: 24px;
+}
+
+.pain-points span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ---------- Personas ---------- */
+.persona {
+  margin-bottom: 60px;
+}
+
+.persona:last-child {
+  margin-bottom: 0;
+}
+
+.persona h4 {
+  margin-bottom: 24px;
+}
+
+.persona .persona-quote {
+  font-style: italic;
+  margin-bottom: 28px;
+}
+
+/* ---------- Starting the design ---------- */
+/* ----- Gallery modal ---- */
+.gallery-modal-container {
+  height: 90%;
+  overflow: scroll;
+}
+
+.gallery-modal-images.gallery {
+  align-items: start;
+  grid-gap: 32px;
+}
+
+/* ----- Gallery image figcaption ----- */
+.gallery figcaption {
+  margin-bottom: 12px;
+}
+
+/* ----- High-fidelity mockups ----- */
+.hifi-mockups-prototype h4 {
+  margin-bottom: 12px;
+}
+
+.hifi-mockups-prototype img {
+  border: 1px solid #4a4a49;
+}
+
+.gallery-modal-images.before-and-after {
+  align-items: end;
+  gap: 20px;
+  grid-template-columns: 1fr 0.1fr 1fr;
+  justify-items: center;
+}
+
+.before-and-after figcaption {
+  line-height: 1.2;
+  margin-top: 12px;
+}
+
+/* right arrow */
+.arrow-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.before-and-after div {
+  font-size: 80px;
+}
+
+/* ---------- Usability studies ---------- */
+#usability-studies h4 {
+  margin-bottom: 12px;
+}
+
+#usability-studies ol {
+  margin-bottom: 28px;
+}
+
+#usability-studies ol:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- Parameters ---- */
+.parameters-grid {
+  display: grid;
+  grid-gap: 28px;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ----- Findings and accessibility considerations ----- */
+.gallery-modal-images.participants {
+  align-items: center;
+  gap: 20px;
+  grid-template-columns: 1fr 0.8fr;
+  justify-items: center;
+}
+
+.participants figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.participants img, .participants figcaption {
+  width: 60%;
+}
+
+.participants figcaption {
+  margin-top: 12px;
+}
+
+.participants p {
+  width: 100%;
+}
+
+.participants .quote {
+  font-style: italic;
+}
+
+.findings li span, .accessibility li span {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* ---------- Going forward ---------- */
+#moving-forward h4 {
+  margin-bottom: 12px;
+}
+
+/* ----- Takeaways ----- */
+.takeaways .user-quote {
+  margin-bottom: 32px;
+}
+
+.takeaways span {
+  font-style: italic;
+  font-weight: 200;
+}
+
+/* ----- Thank you ----- */
+.thank-you ul {
+  padding-left: 48px;
+}
+
+.thank-you li {
+  list-style-type: disc;
+}
+
+.thank-you a {
+  color: #fff;
+}
+
+.thank-you a:hover {
+  color: #375293;
+}
+
+
+
+/* ---------- media queries ---------- */
+@media screen and (max-width: 1400px) {
+  /* ---------- Persona modal, gallery modal --------- */
+  .persona-modal-container, .gallery-modal-container {
+    max-width: unset;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1354px) {
+  /* ---------- Project buttons ---------- */
+  .button-container {
+    align-items: start;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* ---------- Project buttons ---------- */
+  .button-container {
+    flex-direction: row;
+  }
+
+  /* ----- Findings and accessibility considerations ----- */
+  .participants img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1114px) {
+  .button-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 56px;
+  }
+
+  /* ---------- Sidenav ---------- */
+  .sidenav-text-container {
+    margin-bottom: 0;
+  }
+
+  .additional-info {
+    display: none;
+  }
+
+  /* ----- Mobile nav menu ----- */
+  .mobile-nav-icon {
+    fill: #fff;
+    min-width: 40px;
+  }
+
+  .mobile-nav-menu {
+    background-color: #000;
+  }
+
+  .mobile-nav-links a {
+    color: #fff;
+  }
+
+  .social-links svg {
+    fill: #fff;
+  }
+
+  /* ----- show tldr section ----- */
+  .tldr {
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  .tldr p:first-child {
+    font-size: var(--fs-h2);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  /* ----- Table of contents ----- */
+  .table-of-contents p {
+    font-size: 24px;
+  }
+
+  .current-section {
+    display: none;
+  }
+
+  .mobile-table-of-contents-link {
+    display: none;
+  }
+
+  /* ---------- Project cards ---------- */
+  .button-container {
+    flex-direction: row;
+  }
+
+  /* ---------- Persona modal ---------- */
+  .persona-modal.active, .gallery-modal.active {
+    align-items: unset;
+    overflow: scroll;
+    z-index: 2;
+  }
+
+  .persona-modal-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 100%;
+  }
+
+  .persona-modal h2, .persona-images {
+    margin-bottom: 16px;
+  }
+
+  .persona-intro, .goals-and-frustrations, .problem-statement {
+    margin-bottom: 20px;
+  }
+
+  .persona-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
+  }
+
+  .persona-images img {
+    width: 100%;
+  }
+
+  .persona-image-1, .persona-close-button {
+    display: none;
+  }
+
+  .persona-text {
+    justify-content: start;
+  }
+
+  .mobile-persona-close-button {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 1;
+  }
+
+  /* ---------- Gallery modal ---------- */
+  .gallery-modal-container {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 32px;
+  }
+
+  .gallery-modal-images.gallery {
+    grid-gap: 20px;
+  }
+
+  .gallery-close-button {
+    display: none;
+  }
+
+  .mobile-gallery-close-button {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 1;
+  }
+
+  /* ----- Findings and accessibility considerations ----- */
+  .participants img {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 48px;
+    padding-right: 20px;
+  }
+
+  /* ---------- Hamburger menu ---------- */
+  .mobile-nav-icon {
+    min-width: 32px;
+  }
+
+  /* ---------- Mobile nav menu ---------- */
+  .mobile-nav-menu {
+    padding-top: 0;
+  }
+
+  .mobile-nav-links {
+    gap: 24px;
+  }
+
+  .mobile-nav-links h2, .mobile-nav-links h3 {
+    margin-bottom: 0;
+  }
+
+  .mobile-nav-links h3 {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0;
+    padding-bottom: 4px;
+  }
+
+  /* ---------- Table of contents ---------- */
+  .table-of-contents {
+    display: none;
+  }
+
+  .table-of-contents-link {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .mobile-table-of-contents-link {
+    display: block;
+  }
+
+  .current-section {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+
+  /* ---------- Personal modal ---------- */
+  .persona-modal.active {
+    box-sizing: border-box;
+    display: block;
+    overflow: auto;
+    padding: 32px;
+  }
+
+  .mobile-persona-close-button {
+    position: sticky;
+    text-align: right;
+    top: 0;
+  }
+
+  .persona-modal-container {
+    padding: 0;
+  }
+
+  .persona-images {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 80%;
+  }
+
+  .persona-image-2 {
+    display: none;
+  }
+
+  /* ---------- Gallery modal ---------- */
+  .gallery-modal-images {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ---------- Before and after modal ---------- */
+  .gallery-modal-images.before-and-after {
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+  }
+
+  /* ----- Findings and accessibility considerations ----- */
+  .gallery-modal-images.participants {
+    gap: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .participants figure {
+    margin-bottom: 16px;
+  }
+
+  .participants img {
+    margin-bottom: 8px;
+    width: 60%;
+  }
+
+  .participants p {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .participants figcaption {
+    margin-top: 0;
+  }
+
+  .participants figcaption p {
+    text-align: left;
+  }
+
+  .participants p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .current-section {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 608px) {
+  /* ---------- Project buttons ---------- */
+  .button-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* ---------- Project card ---------- */
+  .button-container {
+    align-items: center;
+  }
+
+  .project-basic-info {
+    justify-content: center;
+  }
+
+  .project-link-button {
+    max-width: unset;
+    width: fit-content;
+  }
+
+  /* ---------- Persona modal ---------- */
+  .persona-images {
+    width: 100%;
+  }
+
+  .goals-and-frustrations {
+    gap: 20px;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  /* ---------- Gallery modal ---------- */
+  .gallery-modal-images {
+    grid-template-columns: 1fr;
+  }
+
+  /* ---------- Before and after modal ---------- */
+  .gallery-modal-images.before-and-after {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* ----- arrow ----- */
+  .arrow-container {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* ----- Findings and accessibility considerations ----- */
+  .participants img {
+    width: 100%;
+  }
+
+  .participants figcaption {
+    width: 100%;
+  }
+
+  .participants p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .project-basic-info li {
+    padding-right: 4%;
+  }
+  
+  .project-basic-info li:nth-child(2), .project-basic-info li:last-child {
+    padding-left: 4%;
+  }
+
+  .project-link-button {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .mobile-nav-menu {
+    top: 44%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .current-section {
+    font-size: 24px;
+  }
+
+  .mobile-nav-icon {
+    min-width: unset;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .project-basic-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .project-basic-info li {
+    border-right: none;
+    padding-right: 0;
+  }
+  
+  .project-basic-info li:nth-child(2), .project-basic-info li:last-child {
+    padding-left: 0;
+  }
+}

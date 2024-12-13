@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+  <!-- ---------- Head ---------- -->
+  <head>
+    <!--  Required meta tags  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- ----- Styles ----- -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/global-variables-and-styles.css">
+    <link rel="stylesheet" href="/assets/css/page-base-styles.css">
+    <link rel="stylesheet" href="/assets/css/bakery-board.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <title>Guillermo Martin's Portfolio</title>
+  </head>
+  
+  <!-- ---------- Body ---------- -->
+  <!-- Icons - Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+  <body>
+    <!-- ---------- Persona modal ---------- -->
+    <div class="persona-modal">
+      <!-- ----- close button ----- -->
+      <div class="mobile-persona-close-button persona-close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="persona-close-icon" viewBox="0 0 384 512">
+          <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+        </svg>
+      </div>
+
+      <div class="persona-modal-container">
+        <!-- ----- persona images ----- -->
+        <div class="persona-images"></div>
+
+        <!-- ----- persona text ----- -->
+        <div class="persona-text">
+          <!-- intro -->
+          <div class="persona-intro">
+            <h2></h2>
+            <p></p>
+          </div>
+
+          <!-- goals and frustrations -->
+          <div class="goals-and-frustrations">
+            <div class="persona-goals">
+              <h3>Goals</h3>
+              <ul></ul>
+            </div>
+            <div class="persona-frustrations">
+              <h3>Frustrations</h3>
+              <ul></ul>
+            </div>
+          </div>
+
+          <!-- problem statement -->
+          <div class="problem-statement">
+            <h3>Problem statement</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In ex nulla, velit officiis, facilis neque expedita amet dolore optio fuga odio? Nulla iure blanditiis suscipit voluptatibus similique, nobis quibusdam. Veritatis.</p>
+          </div>
+          
+          <!-- attribution -->
+          <p class="attribution">Photos by: <a href="" target="_blank" rel="noopener noreferrer"><span class="attribution-handle"></span></a></p>
+        </div>
+
+        <!-- ----- close button ----- -->
+        <div class="persona-close-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="persona-close-icon" viewBox="0 0 384 512">
+            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ---------- Gallery modal ---------- -->
+    <div class="gallery-modal">
+      <!-- ----- mobile close button ----- -->
+      <div class="mobile-gallery-close-button gallery-close-button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="gallery-close-icon" viewBox="0 0 384 512">
+          <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+        </svg>
+      </div>
+
+
+      <div class="gallery-modal-container">
+        <!-- ----- grid container for images ----- -->
+        <div class="gallery-modal-images"></div>
+
+        <!-- ----- close button ----- -->
+        <div class="gallery-close-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="gallery-close-icon" viewBox="0 0 384 512">
+            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- Sidenav ---------- -->
+    <aside class="sidenav">
+      <!-- ---------- Top navbar ---------- -->
+      <nav class="navbar">
+        <ul>
+          <li id="transition-home"><a href="/" id="home">Home</a></li>
+          <li id="transition-about"><a href="/about.html" id="about">About</a></li>
+          <li id="transition-projects"><a href="/projects.html" id="projects">Projects</a></li>
+          <li id="transition-resume"><a href="/resume.html" id="resume">Resume</a></li>
+        </ul>
+      </nav>
+
+      <!-- Side nav and table of contents -->
+      <section class="sidenav-content">
+        <div class="sidenav-text-container">
+          <h1>Bakery board</h1>
+
+          <!-- ----- table of contents ----- -->
+          <ul class="table-of-contents">
+            <li><p class="table-of-contents-link" data-section="project-overview">Project overview</p></li>
+            <li><p class="table-of-contents-link" data-section="understanding-the-user">Understanding the user</p></li>
+            <li><p class="table-of-contents-link" data-section="starting-the-design">Starting the design</p></li>
+            <li><p class="table-of-contents-link" data-section="usability-studies">Usability studies</p></li>
+            <li><p class="table-of-contents-link" data-section="moving-forward">Moving forward</p></li>
+          </ul>
+
+          <!-- ----- mobile current section indicator ----- -->
+          <h2 class="current-section"></h2>
+        </div>
+
+        <!-- ----- Additional info ----- -->
+        <div class="additional-info">
+          <h2>TL;DR</h2>
+          <p>With Kumiko Music’s previous design, users encountered navigational challenges and were confused by the layout and different designs throughout the site.  The new designs incorporated a top navbar, consistent styles and layout, and utilized typographical hierarchy and white space to make it easier for visitors to find information and learn more about Kumiko and her work.</p>
+        </div>
+        
+        <!-- ----- Hamburger icon (for mobile) ----- -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="mobile-nav-icon hamburger-icon" viewBox="0 0 448 512">
+          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+        </svg>
+
+        <!-- ----- Close icon (for mobile) ----- -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="mobile-nav-icon close-icon hide" viewBox="0 0 384 512">
+          <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+        </svg>
+
+        <!-- ----- Mobile nav ----- -->
+        <div class="mobile-nav-menu hide" id="mobile-nav-menu">
+          <ul class="mobile-nav-links">
+            <li><h2>Where to?</h2></li>
+            <li class="mobile-table-of-contents-link"><h3>Kumiko music redesign</h3></li>
+            <li class="mobile-table-of-contents-link"><p class="table-of-contents-link" data-section="project-overview">Project overview</p></li>
+            <li class="mobile-table-of-contents-link"><p class="table-of-contents-link" data-section="understanding-the-user">Understanding the user</p></li>
+            <li class="mobile-table-of-contents-link"><p class="table-of-contents-link" data-section="starting-the-design">Starting the design</p></li>
+            <li class="mobile-table-of-contents-link"><p class="table-of-contents-link" data-section="usability-studies">Usability studies</p></li>
+            <li class="mobile-table-of-contents-link"><p class="table-of-contents-link" data-section="moving-forward">Moving forward</p></li>
+            <li class="mobile-table-of-contents-link"><h3>Site</h3></li>
+            <li id="transition-home"><a href="/" id="home">Home</a></li>
+            <li id="transition-about"><a href="/about.html" id="about">About</a></li>
+            <li id="transition-projects"><a href="/projects.html" id="projects">Projects</a></li>
+            <li id="transition-resume"><a href="/resume.html" id="resume">Resume</a></li>
+          </ul>
+
+          <!-- social links -->
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/guillermo-martin-10441046/" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+              </svg>
+            </a>
+
+            <a href="https://github.com/Guillermo-Martin" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+              </svg>
+            </a>
+
+            <a href="mailto:gscalica@gmail.com">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- Footer ---------- -->
+      <footer class="footer">
+        <p>Designed & coded by Guillermo Martin. &copy; Copyright&nbsp;2024.</p>
+      </footer>
+    </aside>
+
+    <!-- ---------- Main content ---------- -->
+    <main class="main-content">
+      
+      <!-- ----- Section #1 - Project overview----- -->
+      <section class="main-content-section" id="project-overview">
+        <!-- ----- Project card ----- -->
+        <div class="project-card">
+          <!-- Image -->
+          <div class="image-container">
+            <img src="./assets/images/kumiko-music-redesign/final-landing-page.png" alt="Kumiko Music's landing page" class="section-image"/>
+          </div>
+
+          <!-- ----- TL;DR ----- -->
+          <div class="tldr">
+            <p>TL;DR</p>
+            <p>With Kumiko Music’s previous design, users encountered navigational challenges and were confused by the layout and different designs throughout the site.  The new designs incorporated a top navbar, consistent styles and layout, and utilized typographical hierarchy and white space to make it easier for visitors to find information and learn more about Kumiko and her work.</p>
+          </div>
+
+          <!-- Text container -->
+          <div class="text-container">
+            <!-- Tags -->
+            <ul class="project-basic-info">
+              <li><p><span>Client:</span>  Kumiko Uyeda</p></li>
+              <li><p><span>Role:</span>  UX Designer</p></li>
+              <li><p><span>Duration:</span>  October 2024 (4 weeks)</p></li>
+            </ul>
+
+            <!-- section header -->
+            <h2>Project overview</h2>
+  
+            <!-- Project description -->
+            <h3>Product</h3>
+            <p>
+              A redesigned website for Kumiko Uyeda, a local pianist, composer, and ethnomusicologist that would allow visitors to learn more about her.
+            </p>
+  
+            <!-- Problem and goal -->
+            <h3>Problem</h3>
+            <p>The site had navigational challenges and an inconsistent design, which made finding information difficult.</p>
+
+            <h3>Goal</h3>
+            <p>Redesign the site so it looks more professional and elegant, and to make it easier for visitors to navigate around the site.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- Section #2 - Understanding the user ----- -->
+      <section class="main-content-section" id="understanding-the-user">
+        <!-- ----- Project card ----- -->
+        <div class="project-card">
+          <!-- Image -->
+          <div class="image-container">
+            <img src="./assets/images/kumiko-music-redesign/silhouette-1.jpg" alt="Silhouette of a man" class="section-image"/>
+            <p class="attribution">Photo by <a href="https://unsplash.com/@fortyozsteak?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Joe Shields</a> on <a href="https://unsplash.com/photos/silhouette-of-man-dLij9K4ObYY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+          </div>
+
+          <!-- section header -->
+          <h2>Understanding the user</h2>
+
+          <!-- User research -->
+          <div class="user-research subsection">
+            <h3>User research</h3>
+            <p>
+              I first conducted a website audit, listing my observations, pain points, and potential improvements for each page of the site. Using the existing site, I conducted a usability study with several users to identify pain points and opportunities for improvement. After conducting the studies, I created an affinity diagram to determine user pain points. Then from these pain points, I created two user personas that I would use to inform my redesign.
+            </p>
+          </div>
+
+          <!-- Pain points-->
+          <div class="pain-points subsection">
+            <h3>Pain points</h3>
+            <ol class="pain-points">
+              <li><p><span>Navigation:</span> Users were confused by navigation.  Adding in a navbar can make it easier for user to navigate around the site and find what they’re looking for.</p></li>
+              <li><p><span>Design:</span> There weren’t any cohesiveness between pages.  Creating a consistent design across all pages will provide cohesiveness throughout the site.</p></li>
+              <li><p><span>Layouts:</span> The layout of information was inconsistent.  Laying out elements in a more organized fashion can help users find what they’re looking for.</p></li>
+            </ol>
+          </div>
+
+
+          <!-- ---------- Personas section ---------- -->
+          <div class="personas subsection">
+            <!-- ----- Intro text ----- -->
+            <div class="text-container">
+              <h3>Personas</h3>
+              <p class="subsection-intro">To help with the new design, I created some personas.  Meet Shawn Watts and Louella Washington:</p>
+            </div>
+
+            <!-- ----- Persona ----- -->
+            <div class="persona">
+              <!-- Image container -->
+              <div class="image-container">
+                <img src="./assets/images/kumiko-music-redesign/shawn-watts-1.jpg" alt="" class="section-image"/>
+              </div>
+
+              <!-- Text container -->
+              <div class="text-container">
+                <h4>Shawn Watts</h4>
+                <p class="persona-quote">“I want to learn more about this new, musician but the website made it difficult to do so.”</p>
+              </div>
+              
+              <!-- Button container -->
+              <div class="button-container">
+                <!-- Button -->
+                <div class="project-link-button persona-button" id="persona-1">
+                  Learn more about Shawn!
+                </div>
+              </div>
+            </div>
+
+            <!-- ----- Persona ----- -->
+            <div class="persona">
+              <!-- Image container -->
+              <div class="image-container">
+                <img src="./assets/images/kumiko-music-redesign/louella-washington-1.jpg" alt="" class="section-image"/>
+              </div>
+
+              <!-- Text container -->
+              <div class="text-container">
+                <h4>Louella Washington</h4>
+                <p class="persona-quote">“I’d like to listen more of this musician’s music, but I’m having a hard time finding where.”</p>
+              </div>
+              
+              <!-- Button container -->
+              <div class="button-container">
+                <!-- Button -->
+                <div class="project-link-button persona-button" id="persona-2">
+                  Learn more about Louella!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- Section #3 - Starting the design ----- -->
+      <section class="main-content-section" id="starting-the-design">
+        <!-- ----- Project card ----- -->
+        <div class="project-card">
+          <!-- Image -->
+          <div class="image-container">
+            <img src="./assets/images/kumiko-music-redesign/starting-the-design.jpeg" alt="Hand drawn wireframes" class="section-image"/>
+          </div>
+
+          <!-- ----- section header ----- -->
+          <h2>Starting the design</h2>
+
+          <!-- Paper wireframes -->
+          <div class="paper-wireframes subsection">
+            <h3>Paper wireframes</h3>
+            <p class="subsection-intro">
+              One of my goals was to layout the elements so they would be easy to find.  This included using typographical hierarchy and white space.
+            </p>
+
+            <!-- Image container -->
+            <div class="image-container">
+              <img src="./assets/images/kumiko-music-redesign/composer-page-2.jpeg" alt="Hand drawn wireframes" class="section-image"/>
+            </div>
+
+            <!-- Button container -->
+            <div class="button-container">
+              <!-- Button -->
+              <div class="project-link-button gallery-link-button" id="paper-wireframes">
+                See more paper wireframes!
+              </div>
+            </div>
+          </div>
+
+          <!-- Digital wireframes -->
+          <div class="digital-wireframes subsection">
+            <h3>Digital wireframes</h3>
+            <p class="subsection-intro">
+              Using the paper wireframes I made, I created some lofi wireframes to better visualize what each of the pages would look like and to make sure the layouts address the pain points gathered from user research.
+            </p>
+
+            <!-- Image container -->
+            <div class="image-container">
+              <img src="./assets/images/kumiko-music-redesign/digital-wireframes.png" alt="Low fidelity digital wireframe" class="section-image"/>
+            </div>
+
+            <!-- Button container -->
+            <div class="button-container">
+              <!-- Button -->
+              <div class="project-link-button gallery-link-button" id="digital-wireframes">
+                See more digital wireframes!
+              </div>
+            </div>
+          </div>
+
+          <!-- High-fidelity mockups and prototype -->
+          <div class="hifi-mockups-prototype subsection">
+            <h3>High-fidelity mockups and prototype</h3>
+            
+            <!-- ----- subsection  ----- -->
+            <div class="subsection">
+              <!-- text container -->
+              <div class="text-container">
+                <h4>Navigation</h4>
+                <p class="subsection-intro">
+                  I added a navbar at the top of each page so users can easily navigate through the site.
+                </p>
+              </div>
+
+              <!-- Image container -->
+              <div class="image-container">
+                <img src="./assets/images/kumiko-music-redesign/top-navbar.png" alt="Mockup with the navbar circled in red" class="section-image"/>
+              </div>
+
+              <!-- Button container -->
+              <div class="button-container">
+                <!-- Button -->
+                <div class="project-link-button before-and-after" id="navigation">
+                  See a before and after!
+                </div>
+              </div>
+            </div>
+            
+            <!-- ----- subsection  ----- -->
+            <div class="subsection">
+              <!-- text container -->
+              <div class="text-container">
+                <h4>Design and layout</h4>
+                <p class="subsection-intro">
+                  Each page had a different layout.  Elements weren’t laid out uniformly.  Furthermore, each page looked different; users thought that because of this, there was a lack of cohesiveness throughout the site.  I laid out elements in a similar fashion for each page and used consistent font sizes.  I used section headers followed by their main content, as well as white space to further designate sections on a page.
+                </p>
+              </div>
+
+              <!-- Image container -->
+              <div class="image-container">
+                <img src="./assets/images/kumiko-music-redesign/section-layout.png" alt="" class="section-image"/>
+              </div>
+
+              <!-- Button container -->
+              <div class="button-container">
+                <!-- Button -->
+                <div class="project-link-button before-and-after" id="design-and-layout">
+                  See some before and afters!
+                </div>
+              </div>
+            </div>
+            
+            <!-- ----- subsection  ----- -->
+            <div class="subsection">
+              <!-- text container -->
+              <div class="text-container">
+                <h4>Ethnomusicology</h4>
+                <p class="subsection-intro">
+                  Users found the Ethnomusicology content to be very text heavy and very hard to read.  I used headers and white space to make it easier to read.
+                </p>
+              </div>
+
+              <!-- Image container -->
+              <div class="image-container">
+                <img src="./assets/images/kumiko-music-redesign/ethnomusicology-layout.png" alt="Ethnomusicology layout" class="section-image"/>
+              </div>
+
+              <!-- Button container -->
+              <div class="button-container">
+                <!-- Button -->
+                <div class="project-link-button before-and-after" id="ethnomusicology">
+                  See a before and after!
+                </div>
+              </div>
+            </div>
+            
+            <!-- ----- subsection  ----- -->
+            <div class="subsection">
+              <!-- text container -->
+              <div class="text-container">
+                <h4>High-fidelity prototype</h4>
+                <p class="subsection-intro">
+                  I created high-fidelity mockups and a high-fidelity prototype which I then tested with users to get feedback.
+                </p>
+              </div>
+
+              <!-- Image container -->
+              <div class="image-container">
+                <img src="./assets/images/kumiko-music-redesign/prototype.png" alt="Screenshot showing prototype connections" class="section-image"/>
+              </div>
+
+              <!-- Button container -->
+              <div class="button-container">
+                <!-- Button -->
+                <a href="https://www.figma.com/proto/Dnx1IuKTEtxyvpuqWQyy2N/100224---Kumiko-Music-Redesign?node-id=89-33&node-type=canvas&t=cuqbcgnwOwFFPEo5-1&scaling=contain&content-scaling=fixed&page-id=25%3A11&starting-point-node-id=89%3A33" target="_blank" rel="noopener noreferrer" class="project-link-button">
+                  Try the prototype!
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- Section #4 - Usability studies ----- -->
+      <section class="main-content-section" id="usability-studies">
+        <!-- ----- Project card ----- -->
+        <div class="project-card">
+          <!-- Image -->
+          <div class="image-container">
+            <img src="./assets/images/kumiko-music-redesign/usability-studies.jpg" alt="Person " class="section-image"/>
+            <p class="attribution">Photo by <a href="https://unsplash.com/@glenncarstenspeters?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Glenn Carstens-Peters</a> on <a href="https://unsplash.com/photos/person-using-macbook-pro-npxXWgQ33ZQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+          </div>
+
+          <!-- ----- Section header ----- -->
+          <h2>Usability studies</h2>
+
+          <!-- Parameters subsection -->
+          <div class="parameters subsection">
+            <h3>Parameters</h3>
+  
+            <!-- Project description -->
+            <p class="subsection-intro">
+              Using the high-fidelity prototype, I conducted a usability study to see if the new designs tackled the pain points users faced with the site’s previous design.  Here are a few details of the study: 
+            </p>
+
+            <!-- Parameter grid -->
+            <div class="parameters-grid">
+              <div>
+                <h4>Study type</h4>
+                <p>Moderated usability study</p>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>United States, remote</p>
+              </div>
+              <div>
+                <h4>Participants</h4>
+                <p>3 participants</p>
+              </div>
+              <div>
+                <h4>Length</h4>
+                <p>30-45 minutes</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Findings subsection -->
+          <div class="findings subsection">
+            <h3>Findings</h3>
+  
+            <!-- Project description -->
+            <p class="subsection-intro">
+              Here were the main findings from this usability study:
+            </p>
+
+            <!-- Findings -->
+            <ol>
+              <li><p><span>Improved navigation:</span> Participants didn’t have any trouble navigating the site and found it straightforward.  Though, some thought the navbar links might be confusing.</p></li>
+              <li><p><span>Personal touch:</span> Participants liked the “personal touch” the site had and wanted to learn more about what inspires her.</p></li>
+              <li><p><span>Uniformity:</span> Participants liked how the information was structured and organized.  Although, the Ethnomusicology page was still text heavy.</p></li>
+            </ol>
+
+            <!-- Button container -->
+            <div class="button-container">
+              <!-- Button -->
+              <div class="project-link-button participants">
+                Read what participants said!
+              </div>
+            </div>
+          </div>
+          
+          <!-- Accessibility subsection -->
+          <div class="accessibility subsection">
+            <h3>Accessibility considerations</h3>
+  
+            <!-- Project description -->
+            <p class="subsection-intro">
+              Here are a few things I considered when creating the new design: 
+            </p>
+
+            <!-- Findings -->
+            <ol>
+              <li><p><span>Contrast:</span> The black background and white text made the site easy to read. </p></li>
+              <li><p><span>Readability:</span> Adding typographical hierarchy and utilizing whitespace also made the site easier to read.</p></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- Section #5 - Moving forward ----- -->
+      <section class="main-content-section" id="moving-forward">
+        <!-- ----- Project card ----- -->
+        <div class="project-card">
+          <!-- Image -->
+          <div class="image-container">
+            <img src="./assets/images/kumiko-music-redesign/moving-forward.jpg" alt="Man walking into a forest" class="section-image"/>
+            <p class="attribution">Photo by <a href="https://unsplash.com/@heather_wilde?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Heather Wilde</a> on <a href="https://unsplash.com/photos/a-man-walking-on-a-path-in-the-woods-VROa9zMVQEE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
+          </div>
+
+          <!-- ----- Section header ----- -->
+          <h2>Going forward</h2>
+
+          <!-- Takeaways subsection -->
+          <div class="building-in-wix subsection">
+            <h3>Building the site in Wix</h3>
+  
+            <!-- Project description -->
+            <p class="subsection-intro">
+              Kumiko's site was originally built in Wix, a low-code/no-code platform for building websites.  I created a template and used Wix’s gridlines and built-in features (which also influenced my designs) to create a template for Kumiko’s site, doing my best to match the designs I created in Figma.
+            </p>
+          </div>
+
+          <!-- Takeaways subsection -->
+          <div class="takeaways subsection">
+            <h3>Takeaways</h3>
+  
+            <!-- Impact -->
+            <div class="text-container">
+              <h4>Impact</h4>
+              <p class="subsection-intro">
+                Overall participants found the new site easy to navigate and straightforward.  Here's what a few participants said:
+              </p>
+              <p class="user-quote">
+                <span>“I like that there was a visual component, every aspect of Kumiko.”</span> - Participant B
+              </p>
+              <p class="user-quote">
+                <span>“It’s easy on the eyes, easy to read.  It’s elegant looking.”</span> - Participant C
+              </p>
+            </div>
+
+            <!-- What I learned -->
+            <div class="text-container">
+              <h4>What I learned</h4>
+              <p class="subsection-intro">
+                Throughout this project, I learned that communication is key.  I made sure to understand what Kumiko was looking for and updated her regularly.  I also tried to balance meeting user needs, while also meeting the stakeholder’s needs.  This is my first freelance project and it pays to be organized!  I utilized spreadsheets, Google Drive, and Notion to keep track of everything.  Finally, I learned how to adapt my design process, given that there were budget constraints and a platform for creating sites with little or no code.
+              </p>
+            </div>
+          </div>
+
+          <!-- Next steps subsection -->
+          <div class="next-steps subsection">
+            <h3>Next steps</h3>
+  
+            <!-- Project description -->
+            <p class="subsection-intro">
+              If I had more time, I'd do the following:
+            </p>
+
+            <ol>
+              <li><p>I would conduct a usability study on the mobile version of the site.  Because Wix creates a mobile version automatically from the desktop version, I could use that as a prototype.</p></li>
+              <li><p>Conduct a usability study with more people.  Due to budget constraints, I interviewed only 3 people, but I was still able to get some important insights.</p></li>
+            </ol>
+          </div>
+
+          <!-- Final Designs -->
+          <div class="final-designs subsection">
+            <h3>Final designs</h3>
+            <p class="subsection-intro">
+              Click the button below to see the final designs and what I worked with when building the template in Wix!
+            </p>
+
+            <!-- Button container -->
+            <div class="button-container">
+              <!-- Button -->
+              <!-- <div class="project-link-button gallery-link-button" id="paper-wireframes"> -->
+              <div class="project-link-button gallery-link-button" id="final-designs">
+                Checkout my final designs!
+              </div>
+            </div>
+          </div>
+
+          <!-- Thank you subsection -->
+          <div class="thank-you subsection">
+            <h3>Thank you!</h3>
+  
+            <!-- Project description -->
+            <p class="subsection-intro">
+              Phew!  That was a journey wasn't it?  Thank you for taking the time to go through this case study.  If you’d like to learn more or want to connect with me, my email and LinkedIn are listed below:
+            </p>
+
+            <!-- Contacts -->
+            <ul>
+              <li><p><a href="mailto:gscalica@gmail.com">gscalica@gmail.com</a></li>
+              <li><a href="https://www.linkedin.com/in/guillermo-martin-10441046/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- Mobile footer ---------- -->
+      <footer class="footer mobile-footer">
+        <p>Designed & coded by Guillermo Martin. &copy; Copyright&nbsp;2024.</p>
+      </footer>
+    </main>
+    
+    <!-- ---------- Optional JavaScript ---------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script type="text/javascript" src="/assets/js/gsapAnimations.js"></script>
+    <script type="text/javascript" src="/assets/js/bakery-board.js"></script>
+  </body>
+</html>
