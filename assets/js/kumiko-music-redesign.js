@@ -210,13 +210,14 @@ const typingEffect = (str, element) => {
     index++;
 
     // use setTimeout to call the function after a delay
-    setTimeout(() => typingEffect(str, element), 20);
+    setTimeout(() => typingEffect(str, element), 10);
   };
 };
 
 // ---------- Persona animation (for createPersona function) ----------
 const createTimeline = (strName, strIntro) => {
   let personaTimeline = gsap.timeline({paused: true})
+    // .set(".persona-intro", {opacity: 0})
     .set(".persona-goals h3", {opacity: 0})
     .set(".persona-goals li", {opacity: 0})
     .set(".persona-frustrations h3", {opacity: 0})
@@ -224,13 +225,14 @@ const createTimeline = (strName, strIntro) => {
     .set(".problem-statement h3", {opacity: 0})
     .set(".problem-statement p", {opacity: 0})
     .set(".attribution", {opacity: 0})
-    .set(".persona-image-1", {rotateX: 90})
-    .set(".persona-image-2", {rotateY: 90})
-    .set(".persona-image-3", {rotateX: 90, duration: 0.5})
+    .set(".persona-image-1", {rotateY: 90})
+    .set(".persona-image-2", {rotateX: 90})
+    .set(".persona-image-3", {rotateY: 90, duration: 0.5})
     .from(".persona-modal", {opacity: 0, duration: 1})
-    .to(".persona-image-1", {rotateX: 0, duration: 0.5})
-    .to(".persona-image-2", {rotateY: 0, duration: 0.5})
-    .to(".persona-image-3", {rotateX: 0, duration: 0.5})
+    // .to(".persona-image-1", {rotateX: 0, duration: 0.5})
+    .to(".persona-image-2", {rotateX: 0, duration: 0.5})
+    .to(".persona-image-1", {rotateY: 0, duration: 0.5}, "<")
+    .to(".persona-image-3", {rotateY: 180, duration: 0.5}, "<")
     .call(() => {
       // check to see if currentStr isn't empty. If it's not, set currentStr to empty, and index to 0.
       // otherwise, call the typing effect.
@@ -248,12 +250,13 @@ const createTimeline = (strName, strIntro) => {
       index = 0;
       typingEffect(strIntro, personaIntro)
     }, null, "<1")
-    .to(".persona-goals h3", {opacity: 1, duration: 0.5}, "<7.5")
-    .to(".persona-goals li", {opacity: 1, duration: 0.5})
-    .to(".persona-frustrations h3", {opacity: 1, duration: 0.5})
-    .to(".persona-frustrations li", {opacity: 1, duration: 0.5})
+    // .to(".persona-intro", {opacity: 1})
+    .to(".persona-goals h3", {opacity: 1, duration: 0.5}, "<6.5")
+    .to(".persona-goals li", {opacity: 1, duration: 0.5}, "<")
+    .to(".persona-frustrations h3", {opacity: 1, duration: 0.5}, "<")
+    .to(".persona-frustrations li", {opacity: 1, duration: 0.5}, "<")
     .to(".problem-statement h3", {opacity: 1, duration: 0.5})
-    .to(".problem-statement p", {opacity: 1, duration: 0.5})
+    .to(".problem-statement p", {opacity: 1, duration: 0.5}, "<")
     .to(".attribution", {opacity: 1, duration: 0.5});
   
     // return timeline to be used elsewhere
