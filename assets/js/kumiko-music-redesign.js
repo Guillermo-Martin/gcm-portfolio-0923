@@ -132,7 +132,6 @@ mm.add("(max-width: 767px)", () => {
     // create a scrollTrigger for each of the sections
     ScrollTrigger.create({
       trigger: `#${sectionId}`,
-      markers: true,
       start: "top 26.4%",
       end: "bottom 75%",
       onEnter: changeSectionTitle,
