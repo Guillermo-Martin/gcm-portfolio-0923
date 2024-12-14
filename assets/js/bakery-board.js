@@ -406,12 +406,14 @@ const paperWireframes = [
 ];
 
 const digitalWireframes = [
-  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-1.png", alt: "Homepage"},
-  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-2.png", alt: "Homepage"},
-  {filepath: "../assets/images/kumiko-music-redesign/homepage-digital-3.png", alt: "Homepage"},
-  {filepath: "../assets/images/kumiko-music-redesign/about-me-page-digital-1.png", alt: "About page"},
-  {filepath: "../assets/images/kumiko-music-redesign/compositions-page-digital-1.png", alt: "Compositions page"},
-  {filepath: "../assets/images/kumiko-music-redesign/contact-page-digital-1.png", alt: "Contact page"},
+  {filepath: "../assets/images/bakery-board/homepage-digital.png", alt: "Homepage"},
+  {filepath: "../assets/images/bakery-board/sign-in-digital.png", alt: "Sign in screen"},
+  {filepath: "../assets/images/bakery-board/quick-add-digital.png", alt: "Quick add screen"},
+  {filepath: "../assets/images/bakery-board/review-digital.png", alt: "Review screen"},
+  {filepath: "../assets/images/bakery-board/post-item-digital.png", alt: "Post item screen"},
+  {filepath: "../assets/images/bakery-board/success-digital.png", alt: "Success screen"},
+  {filepath: "../assets/images/bakery-board/user-dashboard-digital.png", alt: "User dashboard"},
+  {filepath: "../assets/images/bakery-board/add-item-modal-digital.png", alt: "Add item modal"},
 ];
 
 const finalDesigns = [
