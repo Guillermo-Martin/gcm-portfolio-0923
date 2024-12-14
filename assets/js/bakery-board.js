@@ -736,18 +736,18 @@ const participantImages = [
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-1-flip.jpg",
     participantAlt: "Silhouette of a woman",
-    quote: "<span class='quote'>\"I like how her biography is split into different parts.\"</span>&nbsp;- Participant&nbsp;A",
+    quote: "<span class='quote'>\"The dashboard is a better homepage than the list of other bakeries.\"</span>&nbsp;- Participant&nbsp;A",
     attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mollyblackbird?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Molly Blackbird</a> on <a href='https://unsplash.com/photos/a-black-silhouette-of-a-woman-a-xEUwYSPLw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>", 
   },
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-2.jpg",
     participantAlt: "Silhouette of a man",
-    quote: "<span class='quote'>\"It was a little confusing to have links to her work (abstracts, conference paper, etc.) on the 'About page' - this felt like it should be an entirely separate page.\"</span>&nbsp;- Participant&nbsp;B",
+    quote: "<span class='quote'>\"I wasn’t entirely sure that ‘Add new item’ would be how you would sell an item.\"</span>&nbsp;- Participant&nbsp;B",
     attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@benjaminsweet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Ben Sweet</a> on <a href='https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>",
   },
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-3.jpg",
-    quote: "<span class='quote'>\"It’s much more uniform, there’s a running a theme.\"</span>&nbsp;- Participant&nbsp;C",
+    quote: "<span class='quote'>\"The homepage was confusing...my confusion may be just because I don’t see enough.\"</span>&nbsp;- Participant&nbsp;C",
     participantAlt: "Silhouette of a man",
     attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mattbass?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Mateo Avila Chinchilla</a> on <a href='https://unsplash.com/photos/persons-silhouette-during-golden-hour-x_8oJhYU31k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>",
   },
