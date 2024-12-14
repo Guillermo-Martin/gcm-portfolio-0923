@@ -397,16 +397,12 @@ const galleryCloseButtons = document.querySelectorAll(".gallery-close-icon");
 
 // ---------- Wireframe gallery images and information ----------
 const paperWireframes = [
-  {filepath: "../assets/images/kumiko-music-redesign/about-1.png", alt: "About page"},
-  {filepath: "../assets/images/kumiko-music-redesign/about-2.png", alt: "About page"},
-  {filepath: "../assets/images/kumiko-music-redesign/composer-1.png", alt: "Compositions page"},
-  {filepath: "../assets/images/kumiko-music-redesign/composer-2.png", alt: "Compositions page"},
-  {filepath: "../assets/images/kumiko-music-redesign/pianist-1.png", alt: "Pianist page"},
-  {filepath: "../assets/images/kumiko-music-redesign/pianist-2.png", alt: "Pianist page"},
-  {filepath: "../assets/images/kumiko-music-redesign/contact-1.png", alt: "Contact page"},
-  {filepath: "../assets/images/kumiko-music-redesign/contact-2.png", alt: "Contact page"},
-  {filepath: "../assets/images/kumiko-music-redesign/homepage-1.png", alt: "Homepage"},
-  {filepath: "../assets/images/kumiko-music-redesign/homepage-2.png", alt: "Homepage"},
+  {filepath: "../assets/images/bakery-board/homepage-paper.png", alt: "Homepage"},
+  {filepath: "../assets/images/bakery-board/post-item-screen-paper.png", alt: "Post item screen"},
+  {filepath: "../assets/images/bakery-board/review-screen-paper.png", alt: "Review screen"},
+  {filepath: "../assets/images/bakery-board/sign-in-paper.png", alt: "Sign in screen"},
+  {filepath: "../assets/images/bakery-board/success-screen-paper.png", alt: "Success screen"},
+  {filepath: "../assets/images/bakery-board/user-dashboard-paper.png", alt: "User dashboard"},
 ];
 
 const digitalWireframes = [
