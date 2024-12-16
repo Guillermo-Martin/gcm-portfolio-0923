@@ -744,7 +744,7 @@ for(let button of beforeAndAfterButtons) {
 const participantsButtons = document.querySelectorAll(".participants");
 
 // ----- participant images -----
-const participantImages = [
+const participantImages1 = [
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-1-flip.jpg",
     participantAlt: "Silhouette of a woman",
@@ -760,6 +760,27 @@ const participantImages = [
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-3.jpg",
     quote: "<span class='quote'>\"The homepage was confusing...my confusion may be just because I don’t see enough.\"</span>&nbsp;- Participant&nbsp;C",
+    participantAlt: "Silhouette of a man",
+    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mattbass?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Mateo Avila Chinchilla</a> on <a href='https://unsplash.com/photos/persons-silhouette-during-golden-hour-x_8oJhYU31k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>",
+  },
+];
+
+const participantImages2 = [
+  {
+    participantImage: "../assets/images/kumiko-music-redesign/participant-1-flip.jpg",
+    participantAlt: "Silhouette of a woman",
+    quote: "<span class='quote'>\"I'm a participant!\"</span>&nbsp;- Participant&nbsp;A",
+    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mollyblackbird?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Molly Blackbird</a> on <a href='https://unsplash.com/photos/a-black-silhouette-of-a-woman-a-xEUwYSPLw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>", 
+  },
+  {
+    participantImage: "../assets/images/kumiko-music-redesign/participant-2.jpg",
+    participantAlt: "Silhouette of a man",
+    quote: "<span class='quote'>\"I'm a participant!\"</span>&nbsp;- Participant&nbsp;B",
+    attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@benjaminsweet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Ben Sweet</a> on <a href='https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>",
+  },
+  {
+    participantImage: "../assets/images/kumiko-music-redesign/participant-3.jpg",
+    quote: "<span class='quote'>\"I'm a participant!!\"</span>&nbsp;- Participant&nbsp;C",
     participantAlt: "Silhouette of a man",
     attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mattbass?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Mateo Avila Chinchilla</a> on <a href='https://unsplash.com/photos/persons-silhouette-during-golden-hour-x_8oJhYU31k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>",
   },
@@ -848,13 +869,21 @@ const createParticipantTl = () => {
 };
 
 for(let button of participantsButtons) {
-  // participantsButton.addEventListener("click", () => {
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (event) => {
     // ----- create the participants modal -----
-    // add class for styling
-    galleryModalImagesContainer.classList.add("participants");
+    console.log(event.target.id);
 
-    createParticipant(participantImages);
+    if(event.target.id === "study-participants-1") {
+      // add class for styling
+      galleryModalImagesContainer.classList.add("participants");
+      createParticipant(participantImages1);
+    };
+
+    if(event.target.id === "study-participants-2") {
+      // add class for styling
+      galleryModalImagesContainer.classList.add("participants");
+      createParticipant(participantImages2);
+    };
   });
 }
 
