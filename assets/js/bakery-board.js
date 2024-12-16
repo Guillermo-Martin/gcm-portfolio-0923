@@ -558,42 +558,45 @@ const createBeforeAfterTl = () => {
 // ---------- Images to use for the before and afters ----------
 const navigationImages = [
   {
-    before: "../assets/images/kumiko-music-redesign/main-landing-page.png",
-    beforeAlt: "The previous navigation page for Kumiko Music",
-    beforeText: "The previous design had a single page that served as the main point for navigation.  Other pages didn't have a way to navigate around.",
-    after: "../assets/images/kumiko-music-redesign/pianist-page.png",
-    afterAlt: "Screenshot of the 'Pianist' page",
-    afterText: "The new designs incorporate a navbar at the top of every page allowing users to easily navigate the site.",
+    before: "../assets/images/bakery-board/bottom-nav-before.png",
+    beforeAlt: "The previous navigation bar for the Bakery Board app",
+    beforeText: "The text was very small in the initial design.",
+    after: "../assets/images/bakery-board/bottom-nav-after.png",
+    afterAlt: "The new navbar with larger font size",
+    afterText: "I made the font size larger to make it easier to read.",
   }
 ];
 
-const designAndLayoutImages = [
+const addItemModalImages = [
   {
-    before: "../assets/images/kumiko-music-redesign/about-page-old.png",
-    beforeAlt: "About page, previous design",
-    beforeText: "About page (before)",
-    after: "../assets/images/kumiko-music-redesign/about-page-new.png",
-    afterAlt: "About page, new design",
-    afterText: "About page (after)",
-  },
-  {
-    before: "../assets/images/kumiko-music-redesign/contact-page-old.png",
-    beforeAlt: "Contact page, previous design",
-    beforeText: "Contact page (before)",
-    after: "../assets/images/kumiko-music-redesign/contact-page-new.png",
-    afterAlt: "Contact page, new design",
-    afterText: "Contact page (after)",
+    before: "../assets/images/bakery-board/add-item-modal-before.png",
+    beforeAlt: "\"Add item\" modal (before)",
+    beforeText: "\"Add item\" modal (before)",
+    after: "../assets/images/bakery-board/add-item-modal-after.png",
+    afterAlt: "\"Add item\" modal (after)",
+    afterText: "\"Add item\" modal (after)",
   },
 ];
 
-const ethnoImages = [
+const homepageImages = [
   {
-    before: "../assets/images/kumiko-music-redesign/conference-papers-old.png",
-    beforeAlt: "Conference papers, previous design",
-    beforeText: "Conference papers (before)",
-    after: "../assets/images/kumiko-music-redesign/conference-papers-new.png",
-    afterAlt: "Conference papers, new design",
-    afterText: "Conference papers (after)",
+    before: "../assets/images/bakery-board/homepage-app-before.png",
+    beforeAlt: "Homepage (before)",
+    beforeText: "Homepage (before)",
+    after: "../assets/images/bakery-board/homepage-app-after.png",
+    afterAlt: "Homepage (after)",
+    afterText: "Homepage (after)",
+  }
+];
+
+const appToDesktopImages = [
+  {
+    before: "../assets/images/bakery-board/item-info-mobile.png",
+    beforeAlt: "High-fidelity mockup of mobile item info screen",
+    beforeText: "\"Item info\" screen on the app",
+    after: "../assets/images/bakery-board/item-info-website.png",
+    afterAlt: "High-fidelity mockup of the desktop item info screen",
+    afterText: "\"Item info\" screen on a desktop",
   }
 ];
 
@@ -698,22 +701,31 @@ for(let button of beforeAndAfterButtons) {
       beforeAfterCreation(navigationImages);
     };
 
-    // ---------- Design and layout -----------
-    if(event.target.id === "design-and-layout") {
+    // ---------- "Add item" modal -----------
+    if(event.target.id === "add-item-modal") {
       // add class for styling
       galleryModalImagesContainer.classList.add("before-and-after");
 
       // create elements for section
-      beforeAfterCreation(designAndLayoutImages);
+      beforeAfterCreation(addItemModalImages);
     };
 
-    // ---------- Ethnomusicology ----------
-    if(event.target.id === "ethnomusicology") {
+    // ---------- Homepage ----------
+    if(event.target.id === "homepage") {
       // add class for styling
       galleryModalImagesContainer.classList.add("before-and-after");
 
       // create elements for section
-      beforeAfterCreation(ethnoImages);
+      beforeAfterCreation(homepageImages);
+    };
+
+    // ---------- App to desktop ----------
+    if(event.target.id === "app-to-desktop") {
+      // add class for styling
+      galleryModalImagesContainer.classList.add("before-and-after");
+
+      // create elements for section
+      beforeAfterCreation(appToDesktopImages);
     };
 
     // show the gallery modal
