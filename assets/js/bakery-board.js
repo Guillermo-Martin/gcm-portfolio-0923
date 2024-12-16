@@ -600,6 +600,39 @@ const appToDesktopImages = [
   }
 ];
 
+const userDashboardImages = [
+  {
+    before: "../assets/images/bakery-board/user-dashboard-before.png",
+    beforeAlt: "High-fidelity mockup of mobile user dashboard (before)",
+    beforeText: "\"User dashboard\" screen (before)",
+    after: "../assets/images/bakery-board/user-dashboard-after.png",
+    afterAlt: "High-fidelity mockup of mobile user dashboard (after)",
+    afterText: "\"User dashboard\" screen (after)",
+  }
+];
+
+const easierNavigationImages = [
+  {
+    before: "../assets/images/bakery-board/item-info-mobile.png",
+    beforeAlt: "High-fidelity mockup of 'Item info' screen",
+    beforeText: "The \"Start over\" button previously took you to the new item form.",
+    after: "../assets/images/bakery-board/user-dashboard-hifi-final.png",
+    afterAlt: "High-fidelity mockup of mobile user dashboard",
+    afterText: "Now, the button takes you to the \"User dashboard\" screen.",
+  }
+];
+
+const quickAddImages = [
+  {
+    before: "../assets/images/bakery-board/add-item-modal-after.png",
+    beforeAlt: "High-fidelity mockup of the 'Add item' modal (before)",
+    beforeText: "\"Quick add\" modal (before)",
+    after: "../assets/images/bakery-board/hifi-final-add-modal.png",
+    afterAlt: "High-fidelity mockup of the 'Add item' modal (after)",
+    afterText: "\"Quick add\" modal (before)",
+  }
+];
+
 // ---------- Create before and after modal ----------
 // beforeAfterCreation
 const beforeAfterCreation = (arr) => {
@@ -726,6 +759,33 @@ for(let button of beforeAndAfterButtons) {
 
       // create elements for section
       beforeAfterCreation(appToDesktopImages);
+    };
+
+    // ---------- User dashboard ----------
+    if(event.target.id === "user-dashboard") {
+      // add class for styling
+      galleryModalImagesContainer.classList.add("before-and-after");
+
+      // create elements for section
+      beforeAfterCreation(userDashboardImages);
+    };
+
+    // ---------- Easier navigation ----------
+    if(event.target.id === "easier-navigation") {
+      // add class for styling
+      galleryModalImagesContainer.classList.add("before-and-after");
+
+      // create elements for section
+      beforeAfterCreation(easierNavigationImages);
+    };
+
+    // ---------- Quick add ----------
+    if(event.target.id === "quick-add") {
+      // add class for styling
+      galleryModalImagesContainer.classList.add("before-and-after");
+
+      // create elements for section
+      beforeAfterCreation(quickAddImages);
     };
 
     // show the gallery modal
