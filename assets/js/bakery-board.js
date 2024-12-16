@@ -741,7 +741,11 @@ for(let button of beforeAndAfterButtons) {
 //               Findings - Participants button modal 
 // ------------------------------------------------------------------
 // participant elements
-const participantsButton = document.querySelector(".participants");
+// const participantsButton = document.querySelector(".participants");
+const participantsButtons = document.querySelectorAll(".participants");
+
+// console.log(participantsButtons);
+
 
 // participant images 
 const participantImages = [
@@ -775,77 +779,82 @@ const createParticipantTl = () => {
   return participantTl;
 };
 
-participantsButton.addEventListener("click", () => {
-  // ----- create the participants modal -----
-  // add class for styling
-  galleryModalImagesContainer.classList.add("participants");
-
-  // create the participant elements
-  for(let participant of participantImages) {
-    // create the participant image and quote
-    const participantFigure = document.createElement("figure");
-    const participantImage = document.createElement("img");
-    const attribution = document.createElement("figcaption");
-    const participantQuote = document.createElement("p");
-
-    // add a class to the participant quote p tag
-    participantQuote.classList.add("participant-quote");
-
-    // add the src of the image, add the attribution, set the participant quote
-    participantImage.src = participant.participantImage;
-    participantImage.alt = participant.participantAlt;
-    participantQuote.innerHTML = participant.quote;
-    attribution.innerHTML = participant.attribution;
-
-    // append the image and attribution to the figure
-    participantFigure.appendChild(participantImage);
-    participantFigure.appendChild(attribution);
-   
-
-    // append the image and quote to the gallery modal images container
-    galleryModalImagesContainer.appendChild(participantFigure);
-    galleryModalImagesContainer.appendChild(participantQuote);
-  };
-
-  // show the gallery modal
-  galleryModal.classList.add("active");
-
-  // prevent user from scrolling the body when the modal is open
-  body.style.overflow = "hidden";
-
-  // play the timeline
-  let participantTl = createParticipantTl();
-  participantTl.restart();
-
-  // ----- Close button -----
-  for(let galleryCloseButton of galleryCloseButtons) {
-    galleryCloseButton.addEventListener("click", () => {
-      gsap.timeline()
-        .to(".gallery-modal-images", {opacity: 0})
-        .to(".gallery-close-button", {opacity: 0}, "<")
-        .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<0.2")
-        .call(() => {
-          // reset the scroll position
-          galleryModalContainer.scrollTop = 0;
-
-          // hide modal
-          galleryModal.classList.remove("active");
+for(let button of participantsButtons) {
+  // participantsButton.addEventListener("click", () => {
+  button.addEventListener("click", () => {
+    // ----- create the participants modal -----
+    // add class for styling
+    galleryModalImagesContainer.classList.add("participants");
   
-          // remove navigation class for styling
-          galleryModalImagesContainer.classList.remove("participants");
+    // create the participant elements
+    for(let participant of participantImages) {
+      // create the participant image and quote
+      const participantFigure = document.createElement("figure");
+      const participantImage = document.createElement("img");
+      const attribution = document.createElement("figcaption");
+      const participantQuote = document.createElement("p");
   
-          // remove images in gallery
-          galleryModalImagesContainer.innerHTML = "";
-        })
-        .set(".gallery-modal-images", {opacity: 1})
-        .set(".gallery-close-button", {opacity: 1}, "<")
-        .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
+      // add a class to the participant quote p tag
+      participantQuote.classList.add("participant-quote");
   
-      // stop animation if user clicks on close button
-      participantTl.kill();
+      // add the src of the image, add the attribution, set the participant quote
+      participantImage.src = participant.participantImage;
+      participantImage.alt = participant.participantAlt;
+      participantQuote.innerHTML = participant.quote;
+      attribution.innerHTML = participant.attribution;
   
-      // allow user to scroll again
-      body.style.overflow = "visible";
-    });
-  }
-});
+      // append the image and attribution to the figure
+      participantFigure.appendChild(participantImage);
+      participantFigure.appendChild(attribution);
+     
+  
+      // append the image and quote to the gallery modal images container
+      galleryModalImagesContainer.appendChild(participantFigure);
+      galleryModalImagesContainer.appendChild(participantQuote);
+    };
+  
+    // show the gallery modal
+    galleryModal.classList.add("active");
+  
+    // prevent user from scrolling the body when the modal is open
+    body.style.overflow = "hidden";
+  
+    // play the timeline
+    let participantTl = createParticipantTl();
+    participantTl.restart();
+  
+    // ----- Close button -----
+    for(let galleryCloseButton of galleryCloseButtons) {
+      galleryCloseButton.addEventListener("click", () => {
+        gsap.timeline()
+          .to(".gallery-modal-images", {opacity: 0})
+          .to(".gallery-close-button", {opacity: 0}, "<")
+          .to(".gallery-modal", {backdropFilter: "blur(0px)", backgroundColor: "rgba(0, 0, 0, 0)"}, "<0.2")
+          .call(() => {
+            // reset the scroll position
+            galleryModalContainer.scrollTop = 0;
+  
+            // hide modal
+            galleryModal.classList.remove("active");
+    
+            // remove navigation class for styling
+            galleryModalImagesContainer.classList.remove("participants");
+    
+            // remove images in gallery
+            galleryModalImagesContainer.innerHTML = "";
+          })
+          .set(".gallery-modal-images", {opacity: 1})
+          .set(".gallery-close-button", {opacity: 1}, "<")
+          .set(".gallery-modal", {backdropFilter: "blur(8px)", backgroundColor: "rgba(0, 0, 0, 0.4)"}, "<")
+    
+        // stop animation if user clicks on close button
+        participantTl.kill();
+    
+        // allow user to scroll again
+        body.style.overflow = "visible";
+      });
+    }
+  });
+}
+
+
