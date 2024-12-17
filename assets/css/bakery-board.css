@@ -393,22 +393,30 @@ ol {
   font-size: 80px;
 }
 
-/* ----- Usability study #1 ----- */
+/* ----- Usability studies ----- */
+/* Parameters */
+.parameters-grid {
+  display: grid;
+  grid-gap: 28px;
+  grid-template-columns: 1fr 1fr;
+}
 
+.parameters h4 {
+  margin-bottom: 12px;
+}
+
+/* Findings */
+.findings ol {
+  margin-bottom: 28px;
+}
 
 /* ---------- Refining the design ---------- */
 /* #usability-studies h4 { */
 /* #refining-the-design h4 { */
-.parameters h4 {
-  /* border: 3px solid red; */
-  margin-bottom: 12px;
-}
+
 
 /* #usability-studies ol { */
-#refining-the-design ol {
-  /* border: 3px solid blue; */
-  margin-bottom: 28px;
-}
+/* #refining-the-design ol { */
 
 /* #usability-studies ol:last-child { */
 #refining-the-design ol:last-child {
@@ -416,12 +424,7 @@ ol {
   margin-bottom: 0;
 }
 
-/* ---- Parameters ---- */
-.parameters-grid {
-  display: grid;
-  grid-gap: 28px;
-  grid-template-columns: 1fr 1fr;
-}
+
 
 /* ----- Findings and accessibility considerations ----- */
 .gallery-modal-images.participants {
