@@ -163,9 +163,9 @@ const persona1 = {
   goals: ["Reduce food waste", "Would like to sell as many of their baked goods as possible"],
   frustrations: ["Doesn’t know what to do with unsold baked goods at the end of the day", "Loses money when he doesn’t sell everything"],
   images: [
-    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-1.jpg", alt: "Picture of Shawn"},
-    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-2.jpg", alt: "Picture of Shawn"},
-    {filepath: "../assets/images/kumiko-music-redesign/shawn-watts-3.jpg", alt: "Picture of Shawn"}
+    {filepath: "../assets/images/bakery-board/kibum-lee-1.jpg", alt: "Picture of Kibum"},
+    {filepath: "../assets/images/bakery-board/kibum-lee-2.jpg", alt: "Picture of Kibum"},
+    {filepath: "../assets/images/bakery-board/kibum-lee-3.jpg", alt: "Picture of Kibum"}
   ],
   attributionName: "@svetlanasokolova",
   attributionLink: "https://www.freepik.com/author/svetlanasokolova"
