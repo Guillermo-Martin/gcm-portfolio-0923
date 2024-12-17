@@ -859,18 +859,18 @@ const participantImages2 = [
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-1-flip.jpg",
     participantAlt: "Silhouette of a woman",
-    quote: "<span class='quote'>\"I'm a participant!\"</span>&nbsp;- Participant&nbsp;A",
+    quote: "<span class='quote'>\"Also, like, the design of the app and the user experience is pretty familiar to other apps in terms of having the menu on the bottom and having not too many options, pretty straightforward in that sense.\"</span>&nbsp;- Participant&nbsp;A",
     attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mollyblackbird?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Molly Blackbird</a> on <a href='https://unsplash.com/photos/a-black-silhouette-of-a-woman-a-xEUwYSPLw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>", 
   },
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-2.jpg",
     participantAlt: "Silhouette of a man",
-    quote: "<span class='quote'>\"I'm a participant!\"</span>&nbsp;- Participant&nbsp;B",
+    quote: "<span class='quote'>\"I got a little confused on ‘Quick add’ and ‘Sell a new item’ once I clicked on both, I understood the difference…I figured it out quickly.\"</span>&nbsp;- Participant&nbsp;B",
     attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@benjaminsweet?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Ben Sweet</a> on <a href='https://unsplash.com/photos/silhouette-of-man-illustration-2LowviVHZ-E?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>",
   },
   {
     participantImage: "../assets/images/kumiko-music-redesign/participant-3.jpg",
-    quote: "<span class='quote'>\"I'm a participant!!\"</span>&nbsp;- Participant&nbsp;C",
+    quote: "<span class='quote'>\"I like the look and feel, but I especially like the croissant in the ‘Sell item’ button because the whole time it looks like a smile to me.\"</span>&nbsp;- Participant&nbsp;C",
     participantAlt: "Silhouette of a man",
     attribution: "<p class='attribution'>Photo by <a href='https://unsplash.com/@mattbass?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Mateo Avila Chinchilla</a> on <a href='https://unsplash.com/photos/persons-silhouette-during-golden-hour-x_8oJhYU31k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash' target='_blank' rel='noopener noreferrer'>Unsplash</a></p>",
   },
