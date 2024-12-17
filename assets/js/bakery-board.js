@@ -416,25 +416,18 @@ const digitalWireframes = [
   {filepath: "../assets/images/bakery-board/add-item-modal-digital.png", alt: "Add item modal"},
 ];
 
-const finalDesigns = [
-  {filepath: "../assets/images/kumiko-music-redesign/final-landing-page.png", alt: "Homepage"},
-  {filepath: "../assets/images/kumiko-music-redesign/pianist-hero-final.png", alt: "Pianist page (Hero)"},
-  {filepath: "../assets/images/kumiko-music-redesign/pianist-audio.png", alt: "Pianist page (Audio)"},
-  {filepath: "../assets/images/kumiko-music-redesign/pianist-cds.png", alt: "Pianist page (CDs)"},
-  {filepath: "../assets/images/kumiko-music-redesign/pianist-performances.png", alt: "Pianist page (Performances)"},
-  {filepath: "../assets/images/kumiko-music-redesign/pianist-gallery.png", alt: "Pianist page (Gallery)"},
-  {filepath: "../assets/images/kumiko-music-redesign/compositions-hero.png", alt: "Compositions page (Hero)"},
-  {filepath: "../assets/images/kumiko-music-redesign/compositions-works.png", alt: "Compositions page (Works)"},
-  {filepath: "../assets/images/kumiko-music-redesign/ethno-hero.png", alt: "Ethnomusicology (Hero)"},
-  {filepath: "../assets/images/kumiko-music-redesign/ethno-abstracts.png", alt: "Ethnomusicology (Abstracts)"},
-  {filepath: "../assets/images/kumiko-music-redesign/ethno-conference.png", alt: "Ethnomusicology (Conferences)"},
-  {filepath: "../assets/images/kumiko-music-redesign/ethno-courses.png", alt: "Ethnomusicology (Courses taught)"},
-  {filepath: "../assets/images/kumiko-music-redesign/ethno-publications.png", alt: "Ethnomusicology (Publications)"},
-  {filepath: "../assets/images/kumiko-music-redesign/about-hero.png", alt: "About page (Hero)"},
-  {filepath: "../assets/images/kumiko-music-redesign/about-quote.png", alt: "About page (Quote)"},
-  {filepath: "../assets/images/kumiko-music-redesign/about-sections.png", alt: "About page (Sections)"},
-  {filepath: "../assets/images/kumiko-music-redesign/about-works.png", alt: "About page (Works)"},
-  {filepath: "../assets/images/kumiko-music-redesign/contact-form.png", alt: "Contact form"},
+const finalAppDesigns = [
+  {filepath: "../assets/images/bakery-board/camera-app-final.png", alt: "Camera app"},
+  {filepath: "../assets/images/bakery-board/homescreen-app-final.png", alt: "Homescreen"},
+  {filepath: "../assets/images/bakery-board/new-item-form-app-final-1.png", alt: "New item form screen 1"},
+  {filepath: "../assets/images/bakery-board/new-item-form-app-final-2.png", alt: "New item form screen 2"},
+  {filepath: "../assets/images/bakery-board/new-item-form-app-final-3.png", alt: "New item form screen 3"},
+  {filepath: "../assets/images/bakery-board/picture-gallery-app-final.png", alt: "Picture gallery"},
+  {filepath: "../assets/images/bakery-board/quick-add-app-final.png", alt: "Quick add"},
+  {filepath: "../assets/images/bakery-board/review-pic-app-final.png", alt: "Review picture"},
+  {filepath: "../assets/images/bakery-board/review-screen-app-final.png", alt: "Review screen"},
+  {filepath: "../assets/images/bakery-board/success-screen-app-final.png", alt: "Success screen"},
+  {filepath: "../assets/images/bakery-board/user-dashboard-app-final.png", alt: "User dashboard"},
 ];
 
 
@@ -523,9 +516,9 @@ for(let galleryButton of galleryButtons) {
       galleryCreation(digitalWireframes);
     };
 
-    if(event.target.id === "final-designs") {
+    if(event.target.id === "final-app-designs") {
       galleryModalImagesContainer.classList.add("gallery");
-      galleryCreation(finalDesigns);
+      galleryCreation(finalAppDesigns);
     };
     
     // show the wireframe modal
