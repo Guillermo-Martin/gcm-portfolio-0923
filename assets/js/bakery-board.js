@@ -167,8 +167,8 @@ const persona1 = {
     {filepath: "../assets/images/bakery-board/kibum-lee-2.jpg", alt: "Picture of Kibum"},
     {filepath: "../assets/images/bakery-board/kibum-lee-3.jpg", alt: "Picture of Kibum"}
   ],
-  attributionName: "@svetlanasokolova",
-  attributionLink: "https://www.freepik.com/author/svetlanasokolova"
+  attributionName: "@benzoix",
+  attributionLink: "https://www.freepik.com/author/benzoix"
 };
 
 const persona2 = {
