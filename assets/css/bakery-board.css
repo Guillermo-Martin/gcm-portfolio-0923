@@ -271,6 +271,12 @@ ol {
 }
 
 /* ---------- Project overview ---------- */
+#project-overview .image-container {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
 #project-overview img {
   border: 1px solid #4a4a49;
 }
@@ -339,6 +345,16 @@ ol {
 /* ----- High-fidelity mockups ----- */
 .hifi-mockups-prototype h4 {
   margin-bottom: 12px;
+}
+
+.hifi-mockups-prototype [alt="App homepage"], .hifi-mockups-prototype [alt="Bakery board user dashboard"], .hifi-mockups-prototype [alt="Bakery board item information form"] {
+  width: 50%;
+}
+
+.hifi-mockups-prototype .image-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .hifi-mockups-prototype img {
