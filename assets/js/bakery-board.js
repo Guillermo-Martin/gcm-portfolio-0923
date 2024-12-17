@@ -158,7 +158,7 @@ const attributionHandle = document.querySelector(".attribution-handle");
 // ---------- Personas information ----------
 const persona1 = {
   name: "Hi, I'm Kibum!",
-  intro: "Kibum intro",
+  intro: "I’m 47 and I have my own bakery in San Francisco.  At my bakery, I like to make a lot of food so that I don’t sell out like other bakeries.  The downside is that I often have unsold food like bread and other pastries at the end of the day.  I wish I could find a way to sell these; I would hate for them to go to waste!  It might also help recoup the cost of some of the ingredients.",
   problem: "Kibum Lee is a professional baker who needs a way to sell unsold baked goods because he wants to reduce food waste and recoup the cost of ingredients.",
   goals: ["Reduce food waste", "Would like to sell as many of their baked goods as possible"],
   frustrations: ["Doesn’t know what to do with unsold baked goods at the end of the day", "Loses money when he doesn’t sell everything"],
@@ -173,7 +173,7 @@ const persona1 = {
 
 const persona2 = {
   name: "Hi, I'm Isabella!",
-  intro: "Isabella intro",
+  intro: "I’m 35 and recently quit my job to start my own bakery in San Diego, where I sell artisanal breads and pastries.  I want to start advertising and getting my name out there, but I often spend a lot of time filling out information about my items.  I’d rather spend time experimenting with new recipes instead of spending time filling out information!  I’d love for an easy way to sell my food online, as well!.",
   problem: "Isabella Carrillo is a pastry chef who needs to easily sell her food online because she wants to spend more time creating and experimenting with new recipes.",
   goals: ["Spend more time creating and experimenting with recipes", "Easily sell things online"],
   frustrations: ["Selling something online is cumbersome because of all the little things you have to do", "Buyers have been unreliable in the past"],
