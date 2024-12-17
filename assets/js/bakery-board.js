@@ -384,26 +384,6 @@ for(let button of personaButtons) {
   });
 };
 
-
-// ------------------------------------------------------------------------------------------------
-//                   User journeys
-// ------------------------------------------------------------------------------------------------
-const userJourneyButtons = document.querySelectorAll(".user-journey-button");
-
-
-// ---------- User journey creation function ----------
-
-
-// ---------- Add event listeners to buttons ----------
-for(let button of userJourneyButtons) {
-  button.addEventListener("click", () => {
-    alert("you clicked on me!");
-  });
-}
-
-
-
-
 // ------------------------------------------------------------------------------------------------
 // Gallery modal animation (for wireframes, hifi mockups, and before and afters, and final designs) 
 // ------------------------------------------------------------------------------------------------
@@ -415,6 +395,14 @@ const galleryModalContainer = document.querySelector(".gallery-modal-container")
 const galleryCloseButtons = document.querySelectorAll(".gallery-close-icon");
 
 // ---------- Wireframe gallery images and information ----------
+const persona1UserJourney = [
+  {filepath: "../assets/images/bakery-board/homepage-paper.png", alt: "Homepage"},
+];
+
+const persona2UserJourney = [
+  {filepath: "../assets/images/bakery-board/post-item-screen-paper.png", alt: "Post item screen"},
+];
+
 const paperWireframes = [
   {filepath: "../assets/images/bakery-board/homepage-paper.png", alt: "Homepage"},
   {filepath: "../assets/images/bakery-board/post-item-screen-paper.png", alt: "Post item screen"},
@@ -514,7 +502,7 @@ const galleryCreation = (galleryArr) => {
   
           // hide modal
           galleryModal.classList.remove("active");
-          galleryModalImagesContainer.classList.remove("gallery");
+          galleryModalImagesContainer.classList.remove("gallery", "persona-user-journey");
   
           // remove images in gallery
           galleryModalImagesContainer.innerHTML = "";
@@ -555,6 +543,18 @@ for(let galleryButton of galleryButtons) {
     if(event.target.id === "final-website-designs") {
       galleryModalImagesContainer.classList.add("gallery");
       galleryCreation(finalWebDesigns);
+    };
+    
+
+    if(event.target.id === "persona-1-journey") {
+      galleryModalImagesContainer.classList.add("gallery", "persona-user-journey");
+      galleryCreation(persona1UserJourney);
+    };
+    
+
+    if(event.target.id === "persona-2-journey") {
+      galleryModalImagesContainer.classList.add("gallery", "persona-user-journey");
+      galleryCreation(persona2UserJourney);
     };
     
     // show the wireframe modal

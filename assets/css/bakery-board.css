@@ -330,6 +330,10 @@ ol {
   margin-bottom: 12px;
 }
 
+.gallery.persona-user-journey {
+  grid-template-columns: 1fr;
+}
+
 /* ---------- Starting the design ---------- */
 /* ----- Gallery modal ---- */
 .gallery-modal-container {
