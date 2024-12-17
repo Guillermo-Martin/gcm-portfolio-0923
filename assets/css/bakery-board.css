@@ -393,9 +393,13 @@ ol {
   font-size: 80px;
 }
 
+/* ----- Usability study #1 ----- */
+
+
 /* ---------- Refining the design ---------- */
 /* #usability-studies h4 { */
-#refining-the-design h4 {
+/* #refining-the-design h4 { */
+.parameters h4 {
   /* border: 3px solid red; */
   margin-bottom: 12px;
 }
