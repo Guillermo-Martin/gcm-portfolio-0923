@@ -430,6 +430,18 @@ const finalAppDesigns = [
   {filepath: "../assets/images/bakery-board/user-dashboard-app-final.png", alt: "User dashboard"},
 ];
 
+const finalWebDesigns = [
+  {filepath: "../assets/images/bakery-board/add-picture-screen-web-final.png", alt: "\"Add picture\""},
+  {filepath: "../assets/images/bakery-board/homescreen-web-final.png", alt: "Homescreen"},
+  {filepath: "../assets/images/bakery-board/new-item-form-web-final-1.png", alt: "\"New item\" form 1"},
+  {filepath: "../assets/images/bakery-board/new-item-form-web-final-2.png", alt: "\"New item\" form 2"},
+  {filepath: "../assets/images/bakery-board/quick-add-web-final.png", alt: "Quick add"},
+  {filepath: "../assets/images/bakery-board/review-pic-web-final.png", alt: "Review picture"},
+  {filepath: "../assets/images/bakery-board/review-screen-web-final.png", alt: "Review screen"},
+  {filepath: "../assets/images/bakery-board/success-screen-web-final.png", alt: "Success screen"},
+  {filepath: "../assets/images/bakery-board/user-dashboard-web-final.png", alt: "User dashboard"},
+];
+
 
 // ---------- Wireframe intro timeline ----------
 // define timeline creation
@@ -519,6 +531,11 @@ for(let galleryButton of galleryButtons) {
     if(event.target.id === "final-app-designs") {
       galleryModalImagesContainer.classList.add("gallery");
       galleryCreation(finalAppDesigns);
+    };
+
+    if(event.target.id === "final-website-designs") {
+      galleryModalImagesContainer.classList.add("gallery");
+      galleryCreation(finalWebDesigns);
     };
     
     // show the wireframe modal
