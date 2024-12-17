@@ -325,6 +325,11 @@ ol {
   margin-bottom: 28px;
 }
 
+/* ----- User journeys ----- */
+.user-journey h4 {
+  margin-bottom: 12px;
+}
+
 /* ---------- Starting the design ---------- */
 /* ----- Gallery modal ---- */
 .gallery-modal-container {
