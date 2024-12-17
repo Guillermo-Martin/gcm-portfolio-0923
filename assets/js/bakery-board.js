@@ -386,6 +386,25 @@ for(let button of personaButtons) {
 
 
 // ------------------------------------------------------------------------------------------------
+//                   User journeys
+// ------------------------------------------------------------------------------------------------
+const userJourneyButtons = document.querySelectorAll(".user-journey-button");
+
+
+// ---------- User journey creation function ----------
+
+
+// ---------- Add event listeners to buttons ----------
+for(let button of userJourneyButtons) {
+  button.addEventListener("click", () => {
+    alert("you clicked on me!");
+  });
+}
+
+
+
+
+// ------------------------------------------------------------------------------------------------
 // Gallery modal animation (for wireframes, hifi mockups, and before and afters, and final designs) 
 // ------------------------------------------------------------------------------------------------
 // ---------- Gallery elements ----------
