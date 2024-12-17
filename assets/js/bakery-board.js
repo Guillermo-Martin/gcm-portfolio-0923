@@ -384,9 +384,9 @@ for(let button of personaButtons) {
   });
 };
 
-// ------------------------------------------------------------------------------------------------
-// Gallery modal animation (for wireframes, hifi mockups, and before and afters, and final designs) 
-// ------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------
+// Gallery modal animation (for user journeys, wireframes, hifi mockups, and before and afters, and final designs) 
+// ---------------------------------------------------------------------------------------------------------------
 // ---------- Gallery elements ----------
 const galleryButtons = document.querySelectorAll(".gallery-link-button");
 const galleryModal = document.querySelector(".gallery-modal");
@@ -394,15 +394,17 @@ const galleryModalImagesContainer = document.querySelector(".gallery-modal-image
 const galleryModalContainer = document.querySelector(".gallery-modal-container");
 const galleryCloseButtons = document.querySelectorAll(".gallery-close-icon");
 
-// ---------- Wireframe gallery images and information ----------
+// ---------- Gallery images and information ----------
+// ----- Persona user journeys -----
 const persona1UserJourney = [
-  {filepath: "../assets/images/bakery-board/homepage-paper.png", alt: "Homepage"},
+  {filepath: "../assets/images/bakery-board/kibum-user-journey.png", alt: "Kibum's user journey"},
 ];
 
 const persona2UserJourney = [
-  {filepath: "../assets/images/bakery-board/post-item-screen-paper.png", alt: "Post item screen"},
+  {filepath: "../assets/images/bakery-board/isabella-user-journey.png", alt: "Isabella's user journey"},
 ];
 
+// ----- Wireframes -----
 const paperWireframes = [
   {filepath: "../assets/images/bakery-board/homepage-paper.png", alt: "Homepage"},
   {filepath: "../assets/images/bakery-board/post-item-screen-paper.png", alt: "Post item screen"},
@@ -423,6 +425,7 @@ const digitalWireframes = [
   {filepath: "../assets/images/bakery-board/add-item-modal-digital.png", alt: "Add item modal"},
 ];
 
+// ----- Final designs -----
 const finalAppDesigns = [
   {filepath: "../assets/images/bakery-board/camera-app-final.png", alt: "Camera app"},
   {filepath: "../assets/images/bakery-board/homescreen-app-final.png", alt: "Homescreen"},
@@ -521,7 +524,7 @@ const galleryCreation = (galleryArr) => {
 };
 
 
-// ---------- Add eventListener to gallery buttons (for wireframes and final designs) ----------
+// ---------- Add eventListener to gallery buttons (for user journeys, wireframes, and final designs) ----------
 for(let galleryButton of galleryButtons) {
   galleryButton.addEventListener("click", (event) => {
     // see which button was pressed, call galleryCreation function with the appropriate image array
@@ -545,19 +548,17 @@ for(let galleryButton of galleryButtons) {
       galleryCreation(finalWebDesigns);
     };
     
-
     if(event.target.id === "persona-1-journey") {
       galleryModalImagesContainer.classList.add("gallery", "persona-user-journey");
       galleryCreation(persona1UserJourney);
     };
-    
 
     if(event.target.id === "persona-2-journey") {
       galleryModalImagesContainer.classList.add("gallery", "persona-user-journey");
       galleryCreation(persona2UserJourney);
     };
     
-    // show the wireframe modal
+    // show the gallery modal
     galleryModal.classList.add("active");
 
     // prevent user from scrolling the body when the modal is open
