@@ -509,6 +509,11 @@ ol {
   font-weight: 200;
 }
 
+/* ----- Final designs ----- */
+.app-version-final {
+  width: 80%;
+}
+
 /* ----- Thank you ----- */
 .thank-you ul {
   padding-left: 48px;

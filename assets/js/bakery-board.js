@@ -541,6 +541,14 @@ for(let galleryButton of galleryButtons) {
     if(event.target.id === "final-app-designs") {
       galleryModalImagesContainer.classList.add("gallery");
       galleryCreation(finalAppDesigns);
+
+      // *for styling!
+      // target the figures, add class for styling
+      const figures = document.body.querySelectorAll(".gallery-modal figure");
+
+      for(let figure of figures) {
+        figure.classList.add("app-version-final");
+      };
     };
 
     if(event.target.id === "final-website-designs") {
