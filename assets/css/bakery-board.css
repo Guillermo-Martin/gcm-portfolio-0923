@@ -344,6 +344,7 @@ ol {
 .gallery-modal-images.gallery {
   align-items: start;
   grid-gap: 32px;
+  justify-items: center;
 }
 
 /* ----- Gallery image figcaption ----- */
