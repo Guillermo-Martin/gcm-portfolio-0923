@@ -148,7 +148,8 @@ body {
 
 /* ---------- Sidenav and table of contents ---------- */
 .sidenav, .navbar a, .table-of-contents p {
-  color: #fff;
+  /* color: #fff; */
+  color: #000;
 }
 
 h1 {
@@ -174,6 +175,14 @@ h1 {
 }
 
 /* ---------- Main content ---------- */
+.main-content {
+  background-color: #904D42;
+}
+
+.main-content-section {
+  color: #000;
+}
+
 /* ----- main content subsection ---- */
 .main-content-section .subsection {
   margin-bottom: 32px;
@@ -279,7 +288,7 @@ ol {
 }
 
 #project-overview img {
-  border: 1px solid #4a4a49;
+  /* border: 1px solid #4a4a49; */
 }
 
 /* Project basic info */
@@ -369,7 +378,7 @@ ol {
 }
 
 .hifi-mockups-prototype img {
-  border: 1px solid #4a4a49;
+  /* border: 1px solid #4a4a49; */
 }
 
 /* ----- Before and afters ----- */
