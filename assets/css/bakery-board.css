@@ -242,6 +242,7 @@ ol {
   font-size: 16px;
   font-weight: 400;
   justify-content: center;
+  line-height: 1.2;
   padding: 15.25px 28px;
   transition: all 0.2s;
   text-decoration: none;
