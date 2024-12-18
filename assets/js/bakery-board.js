@@ -701,7 +701,9 @@ const beforeAfterCreation = (arr) => {
 
     // add src and alt to images
     beforeImage.src = arr[i].before;
+    beforeImage.alt = arr[i].beforeAlt;
     afterImage.src = arr[i].after;
+    afterImage.alt = arr[i].afterAlt;
 
     // append the captions to the figures
     beforeFigure.appendChild(beforeCaption);
@@ -780,6 +782,14 @@ for(let button of beforeAndAfterButtons) {
 
       // create elements for section
       beforeAfterCreation(homepageImages);
+
+      // *for styling!
+      // target the figures, add class for styling
+      const figures = document.body.querySelectorAll(".gallery-modal figure");
+
+      for(let figure of figures) {
+        figure.classList.add("app-version");
+      };
     };
 
     // ---------- App to desktop ----------
@@ -789,6 +799,15 @@ for(let button of beforeAndAfterButtons) {
 
       // create elements for section
       beforeAfterCreation(appToDesktopImages);
+
+      // *for styling!
+      // target the grid, vertically center desktop version image
+      const galleryGrid = document.body.querySelector(".gallery-modal-images");
+      galleryGrid.classList.add("app-to-desktop");
+
+      // target the figures, add class for styling
+      const beforeFigure = document.body.querySelector(".before-figure");
+      beforeFigure.classList.add("app-version");
     };
 
     // ---------- User dashboard ----------
@@ -798,6 +817,14 @@ for(let button of beforeAndAfterButtons) {
 
       // create elements for section
       beforeAfterCreation(userDashboardImages);
+
+      // *for styling!
+      // target the figures, add class for styling
+      const figures = document.body.querySelectorAll(".gallery-modal figure");
+
+      for(let figure of figures) {
+        figure.classList.add("app-version");
+      };
     };
 
     // ---------- Easier navigation ----------
@@ -807,6 +834,14 @@ for(let button of beforeAndAfterButtons) {
 
       // create elements for section
       beforeAfterCreation(easierNavigationImages);
+
+      // *for styling!
+      // target the figures, add class for styling
+      const figures = document.body.querySelectorAll(".gallery-modal figure");
+
+      for(let figure of figures) {
+        figure.classList.add("app-version");
+      };
     };
 
     // ---------- Quick add ----------

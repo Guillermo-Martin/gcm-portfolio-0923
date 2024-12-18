@@ -370,11 +370,31 @@ ol {
   border: 1px solid #4a4a49;
 }
 
+/* ----- Before and afters ----- */
 .gallery-modal-images.before-and-after {
   align-items: end;
   gap: 20px;
   grid-template-columns: 1fr 0.1fr 1fr;
   justify-items: center;
+}
+
+/* .before-and-after figure {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+/* App designs */
+.app-version {
+  /* border: 3px solid red; */
+  width: 60%;
+}
+
+/* App to desktop designs */
+.gallery-modal-images.app-to-desktop {
+  align-items: center;
+  justify-items: end;
 }
 
 .before-and-after figcaption {
@@ -392,6 +412,18 @@ ol {
 .before-and-after div {
   font-size: 80px;
 }
+
+/* .gallery-modal [alt="Homepage (before)"], .gallery-modal [alt="Homepage (after)"],
+.gallery-modal [alt="High-fidelity mockup of mobile item info screen"] {
+  border: 3px solid red;
+  width: 60%;
+}
+
+.gallery-modal [alt="High-fidelity mockup of the desktop item info screen"] {
+  border: 3px solid blue;
+  position: relative;
+  bottom: 112px;
+} */
 
 /* ----- Usability studies ----- */
 /* Parameters */
