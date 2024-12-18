@@ -173,7 +173,7 @@ const persona1 = {
 
 const persona2 = {
   name: "Hi, I'm Isabella!",
-  intro: "I’m 35 and recently quit my job to start my own bakery in San Diego, where I sell artisanal breads and pastries.  I want to start advertising and getting my name out there, but I often spend a lot of time filling out information about my items.  I’d rather spend time experimenting with new recipes instead of spending time filling out information!  I’d love for an easy way to sell my food online, as well!.",
+  intro: "I’m 35 and recently quit my job to start my own bakery in San Diego, where I sell artisanal breads and pastries.  I want to start advertising and getting my name out there, but I often spend a lot of time filling out information about my items.  I’d rather spend time experimenting with new recipes instead of spending time filling out information!  I’d love for an easy way to sell my food online, as well.",
   problem: "Isabella Carrillo is a pastry chef who needs to easily sell her food online because she wants to spend more time creating and experimenting with new recipes.",
   goals: ["Spend more time creating and experimenting with recipes", "Easily sell things online"],
   frustrations: ["Selling something online is cumbersome because of all the little things you have to do", "Buyers have been unreliable in the past"],
