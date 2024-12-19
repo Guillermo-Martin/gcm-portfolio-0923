@@ -287,6 +287,15 @@ ol {
   /* border: 1px solid #4a4a49; */
 }
 
+#project-overview a {
+  /* border: 3px solid red; */
+  color: #fff;
+}
+
+#project-overview a:hover {
+  color: #334789;
+}
+
 /* Project basic info */
 .project-basic-info {
   display: grid;
@@ -302,6 +311,7 @@ ol {
 .project-basic-info span {
   font-weight: 600;
 }
+
 
 /* ---------- Pain points ----------- */
 .pain-points p {
@@ -499,6 +509,14 @@ ol {
 .findings li span, .accessibility li span {
   font-weight: 700;
   text-decoration: underline;
+}
+
+.accessibility a {
+  color: #fff;
+}
+
+.accessibility a:hover {
+  color: #334789;
 }
 
 /* ---------- Going forward ---------- */
