@@ -869,6 +869,11 @@ ol {
     transform: rotate(90deg);
   }
 
+  .before-and-after .add-item-modal {
+    /* border: 3px solid red; */
+    width: 80%;
+  }
+
   /* ----- Findings and accessibility considerations ----- */
   .gallery-modal-images.participants {
     gap: 0;
@@ -983,6 +988,7 @@ ol {
 
   /* ---------- Before and after modal ---------- */
   .gallery-modal-images.before-and-after {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1032,6 +1038,13 @@ ol {
     /* border: 3px solid red; */
     width: 100%;
   }
+
+  /* ---------- Before and after ---------- */
+  .before-and-after .add-item-modal {
+    /* border: 3px solid red; */
+    width: 100%;
+  }
+
 
   /* ---------- Hifi prototypes and mockups ---------- */
   .hifi-mockups-prototype [alt="Bakery board bottom navbar"],
