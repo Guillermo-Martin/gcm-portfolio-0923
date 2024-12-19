@@ -664,6 +664,24 @@ ol {
     flex-direction: row;
   }
 
+  /* ---------- Project overview ---------- */
+  #project-overview .image-container {
+    /* border: 3px solid red; */
+    width: 32%;
+  }
+
+  /* ---------- Hifi prototypes and mockups ---------- */
+  .hifi-mockups-prototype [alt="Bakery board bottom navbar"],
+  .hifi-mockups-prototype [alt="Add item modal"] {
+    /* border: 3px solid red; */
+    width: 60%;
+  }
+
+  .hifi-mockups-prototype [alt="App homepage"] {
+    /* border: 3px solid red; */
+    width: 32%;
+  }
+
   /* ---------- Persona modal ---------- */
   .persona-modal.active, .gallery-modal.active {
     align-items: unset;
