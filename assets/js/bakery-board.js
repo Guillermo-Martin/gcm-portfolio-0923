@@ -533,11 +533,27 @@ for(let galleryButton of galleryButtons) {
     if(event.target.id === "paper-wireframes") {
       galleryModalImagesContainer.classList.add("gallery");
       galleryCreation(paperWireframes);
+
+      // *for styling!
+      // target the figures, add class for styling
+      const figures = document.body.querySelectorAll(".gallery-modal figure");
+
+      for(let figure of figures) {
+        figure.classList.add("app-version-wireframe");
+      };
     };
 
     if(event.target.id === "digital-wireframes") {
       galleryModalImagesContainer.classList.add("gallery");
       galleryCreation(digitalWireframes);
+
+      // *for styling!
+      // target the figures, add class for styling
+      const figures = document.body.querySelectorAll(".gallery-modal figure");
+
+      for(let figure of figures) {
+        figure.classList.add("app-version-wireframe");
+      };
     };
 
     if(event.target.id === "final-app-designs") {

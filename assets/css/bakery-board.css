@@ -928,6 +928,12 @@ ol {
     /* border: 3px solid red; */
   }
 
+  /* ---------- Wireframes gallery ---------- */
+  .gallery .app-version-wireframe {
+    /* border: 3px solid red; */
+    width: 78%;
+  }
+
   /* ---------- Hifi prototypes and mockups ---------- */
   .hifi-mockups-prototype [alt="Bakery board bottom navbar"],
   .hifi-mockups-prototype [alt="Add item modal"],
