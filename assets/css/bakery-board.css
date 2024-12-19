@@ -764,6 +764,11 @@ ol {
     z-index: 1;
   }
 
+  /* ---------- Before and afters ---------- */
+  .app-version {
+    width: 80%;
+  }
+
   /* ---------- Participants ---------- */
   .participants figcaption {
     /* border: 3px solid red; */
@@ -877,6 +882,11 @@ ol {
 
   .app-version {
     width: 50%;
+  }
+
+  .before-and-after.app-to-desktop {
+    /* border: 3px solid red; */
+    justify-items: center;
   }
 
   /* ----- Findings and accessibility considerations ----- */
@@ -1000,7 +1010,7 @@ ol {
   }
 
   .app-version {
-    width: 72%;
+    width: 60%;
   }
 
   /* ----- arrow ----- */
@@ -1055,7 +1065,7 @@ ol {
   }
 
   .app-version {
-    width: 100%;
+    width: 70%;
   }
 
   /* ---------- Hifi prototypes and mockups ---------- */
@@ -1105,5 +1115,10 @@ ol {
   
   .project-basic-info li:nth-child(2), .project-basic-info li:last-child {
     padding-left: 0;
+  }
+
+  /* ---------- Before and afters ---------- */
+  .app-version {
+    width: 100%;
   }
 }
