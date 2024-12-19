@@ -410,8 +410,8 @@ ol {
 /* App designs */
 .app-version {
   /* border: 3px solid red; */
-  /* width: 60%; */
-  width: 50%;
+  width: 60%;
+  /* width: 50%; */
 }
 
 /* App to desktop designs */
@@ -873,6 +873,10 @@ ol {
   .before-and-after .add-item-modal {
     /* border: 3px solid red; */
     width: 80%;
+  }
+
+  .app-version {
+    width: 50%;
   }
 
   /* ----- Findings and accessibility considerations ----- */
