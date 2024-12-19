@@ -615,7 +615,7 @@ ol {
 
   /* ----- Mobile nav menu ----- */
   .mobile-nav-icon {
-    fill: #fff;
+    /* fill: #fff; */
     min-width: 40px;
   }
 
