@@ -1001,6 +1001,27 @@ ol {
   .project-link-button {
     width: 80%;
   }
+
+  /* ---------- Project overview ---------- */
+  #project-overview .image-container {
+    width: 68%;
+    /* border: 3px solid red; */
+  }
+
+  /* ---------- Hifi prototypes and mockups ---------- */
+  .hifi-mockups-prototype [alt="Bakery board bottom navbar"],
+  .hifi-mockups-prototype [alt="Add item modal"],
+  .hifi-mockups-prototype [alt="Bakery board 'Quick add' modal"] {
+    /* border: 3px solid red; */
+    width: 100%;
+  }
+
+  .hifi-mockups-prototype [alt="App homepage"],
+  .hifi-mockups-prototype [alt="Bakery board user dashboard"],
+  .hifi-mockups-prototype [alt="Bakery board item information form"] {
+    /* border: 3px solid red; */
+    width: 68%;
+  }
 }
 
 @media screen and (max-width: 405px) {
