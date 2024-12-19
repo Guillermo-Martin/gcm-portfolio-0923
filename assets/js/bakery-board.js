@@ -885,6 +885,14 @@ for(let button of beforeAndAfterButtons) {
 
       // create elements for section
       beforeAfterCreation(quickAddImages);
+
+      // *for styling!
+      // target the figures, add class for styling
+      const figures = document.body.querySelectorAll(".gallery-modal figure");
+
+      for(let figure of figures) {
+        figure.classList.add("add-item-modal");
+      };
     };
 
     // show the gallery modal
