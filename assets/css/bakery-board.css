@@ -164,6 +164,11 @@ h1 {
   margin-bottom: 60px;
 }
 
+/* ----- TL;DR (desktop) ---- */
+.additional-info p {
+  padding-right: 40px;
+}
+
 /* ----- Current section (for mobile) ----- */
 .current-section {
   display: none;
