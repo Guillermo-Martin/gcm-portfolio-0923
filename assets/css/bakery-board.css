@@ -587,6 +587,12 @@ ol {
     flex-direction: row;
   }
 
+  /* ---------- Participants ---------- */
+  .participants figcaption {
+    /* border: 3px solid red; */
+    width: 80%;
+  }
+
   /* ----- Findings and accessibility considerations ----- */
   .participants img {
     width: 80%;
@@ -757,6 +763,12 @@ ol {
     z-index: 1;
   }
 
+  /* ---------- Participants ---------- */
+  .participants figcaption {
+    /* border: 3px solid red; */
+    width: 88%;
+  }
+
   /* ----- Findings and accessibility considerations ----- */
   .participants img {
     width: 88%;
@@ -879,6 +891,7 @@ ol {
 
   .participants figcaption {
     margin-top: 0;
+    width: 60%;
   }
 
   .participants figcaption p {
