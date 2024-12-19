@@ -410,7 +410,8 @@ ol {
 /* App designs */
 .app-version {
   /* border: 3px solid red; */
-  width: 60%;
+  /* width: 60%; */
+  width: 50%;
 }
 
 /* App to desktop designs */
@@ -994,6 +995,10 @@ ol {
     justify-content: center;
   }
 
+  .app-version {
+    width: 72%;
+  }
+
   /* ----- arrow ----- */
   .arrow-container {
     justify-content: center;
@@ -1045,6 +1050,9 @@ ol {
     width: 100%;
   }
 
+  .app-version {
+    width: 100%;
+  }
 
   /* ---------- Hifi prototypes and mockups ---------- */
   .hifi-mockups-prototype [alt="Bakery board bottom navbar"],

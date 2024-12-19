@@ -761,7 +761,7 @@ const beforeAfterCreation = (arr) => {
           galleryModal.classList.remove("active");
   
           // remove navigation class for styling
-          galleryModalImagesContainer.classList.remove("before-and-after");
+          galleryModalImagesContainer.classList.remove("before-and-after", "app-to-desktop");
   
           // remove images in gallery
           galleryModalImagesContainer.innerHTML = "";
