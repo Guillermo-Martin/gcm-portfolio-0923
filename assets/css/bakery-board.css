@@ -620,15 +620,18 @@ ol {
   }
 
   .mobile-nav-menu {
-    background-color: #000;
+    /* background-color: #000; */
+    background-color: #fff5eb;
   }
 
   .mobile-nav-links a {
-    color: #fff;
+    /* color: #fff; */
+    color: #000;
   }
 
   .social-links svg {
-    fill: #fff;
+    /* fill: #fff; */
+    fill: #000;
   }
 
   /* ----- show tldr section ----- */
