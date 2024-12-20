@@ -215,7 +215,6 @@ const typingEffect = (str, element) => {
 // ---------- Persona animation (for createPersona function) ----------
 const createTimeline = (strName, strIntro) => {
   let personaTimeline = gsap.timeline({paused: true})
-    // .set(".persona-intro", {opacity: 0})
     .set(".persona-goals h3", {opacity: 0})
     .set(".persona-goals li", {opacity: 0})
     .set(".persona-frustrations h3", {opacity: 0})
@@ -227,7 +226,6 @@ const createTimeline = (strName, strIntro) => {
     .set(".persona-image-2", {rotateX: 90})
     .set(".persona-image-3", {rotateY: 90, duration: 0.5})
     .from(".persona-modal", {opacity: 0, duration: 1})
-    // .to(".persona-image-1", {rotateX: 0, duration: 0.5})
     .to(".persona-image-2", {rotateX: 0, duration: 0.5})
     .to(".persona-image-1", {rotateY: 0, duration: 0.5}, "<")
     .to(".persona-image-3", {rotateY: 180, duration: 0.5}, "<")
@@ -248,7 +246,6 @@ const createTimeline = (strName, strIntro) => {
       index = 0;
       typingEffect(strIntro, personaIntro)
     }, null, "<1")
-    // .to(".persona-intro", {opacity: 1})
     .to(".persona-goals h3", {opacity: 1, duration: 0.5}, "<6.5")
     .to(".persona-goals li", {opacity: 1, duration: 0.5}, "<")
     .to(".persona-frustrations h3", {opacity: 1, duration: 0.5}, "<")
@@ -645,7 +642,6 @@ const beforeAfterCreation = (arr) => {
 
     // append the figures to the gallery-modal-images container
     galleryModalImagesContainer.appendChild(beforeFigure);
-    // galleryModalImagesContainer.appendChild(rightArrow);
     galleryModalImagesContainer.appendChild(arrowContainer);
     galleryModalImagesContainer.appendChild(afterFigure);
   };
@@ -790,7 +786,6 @@ participantsButton.addEventListener("click", () => {
     // append the image and attribution to the figure
     participantFigure.appendChild(participantImage);
     participantFigure.appendChild(attribution);
-   
 
     // append the image and quote to the gallery modal images container
     galleryModalImagesContainer.appendChild(participantFigure);
