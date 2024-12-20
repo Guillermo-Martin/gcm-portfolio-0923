@@ -246,9 +246,11 @@ ol {
   font-size: 16px;
   font-weight: 400;
   justify-content: center;
-  padding: 15.25px 28px;
-  transition: all 0.2s;
+  /* padding: 15.25px 28px; */
+  padding: 15.25px 24px;
+  text-align: center;
   text-decoration: none;
+  transition: all 0.2s;
   width: fit-content;
 }
 

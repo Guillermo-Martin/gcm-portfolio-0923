@@ -169,7 +169,7 @@ h1 {
 }
 
 /* ----- TL;DR (desktop) ---- */
-.additional-info p {
+.additional-info p, .additional-info .button-container {
   padding-right: 40px;
 }
 
@@ -257,9 +257,11 @@ ol {
   font-weight: 400;
   justify-content: center;
   line-height: 1.2;
-  padding: 15.25px 28px;
-  transition: all 0.2s;
+  /* padding: 15.25px 28px; */
+  padding: 15.25px 24px;
+  text-align: center;
   text-decoration: none;
+  transition: all 0.2s;
   width: fit-content;
 }
 
