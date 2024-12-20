@@ -113,6 +113,9 @@ body {
 }
 
 .persona-close-icon, .gallery-close-icon {
+  border: 1px solid #000;
+  /* border-radius: 30px; */
+  background-color: #000;
   cursor: pointer;
   fill: #fff;
   height: 40px;
@@ -121,7 +124,8 @@ body {
 }
 
 .persona-close-icon:hover, .gallery-close-icon:hover {
-  fill: #314788;
+  background-color: #fff;
+  fill: #000;
 }
 
 /* mobile persona modal and mobile gallery modal close button */
