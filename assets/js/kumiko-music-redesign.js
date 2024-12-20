@@ -525,7 +525,7 @@ for(let galleryButton of galleryButtons) {
       galleryCreation(digitalWireframes);
     };
 
-    if(event.target.id === "final-designs") {
+    if(event.target.id === "final-designs" || event.target.id === "tldr-final-designs") {
       galleryModalImagesContainer.classList.add("gallery");
       galleryCreation(finalDesigns);
     };
