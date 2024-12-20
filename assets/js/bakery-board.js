@@ -5,8 +5,6 @@ const init = () => {
   gsap.timeline()
     .set(".sidenav", {backgroundColor: "transparent"})
     .from("body", {autoAlpha: 0})
-    // .to("body", {backgroundColor: "#904D42", duration: 1})
-    // .to("body", {backgroundColor: "#fff", duration: 1})
     .set("body", {overflow: "hidden"})
     .from("h1", {opacity: 0, y: 10, duration: 0.7})
     .from(".table-of-contents li", {pointerEvents: "none", opacity: 0, x: -10, stagger: 0.1, duration: 1}, "<1")
@@ -99,7 +97,6 @@ mm.add("(max-width: 992px)", () => {
     gsap.timeline()
     .from("body", {autoAlpha: 0})
     .to("body", {backgroundColor: "#000", duration: 1})
-    // .to(".sidenav", {backgroundColor: "#000", duration: 1}, "<")
     .set("body", {overflow: "hidden"})
     .from("h1", {opacity: 0, y: 10, duration: 0.7})
     .from(".table-of-contents li", {opacity: 0, x: -10, stagger: 0.1, duration: 1}, "<1")
@@ -217,7 +214,6 @@ const typingEffect = (str, element) => {
 // ---------- Persona animation (for createPersona function) ----------
 const createTimeline = (strName, strIntro) => {
   let personaTimeline = gsap.timeline({paused: true})
-    // .set(".persona-intro", {opacity: 0})
     .set(".persona-goals h3", {opacity: 0})
     .set(".persona-goals li", {opacity: 0})
     .set(".persona-frustrations h3", {opacity: 0})
@@ -229,7 +225,6 @@ const createTimeline = (strName, strIntro) => {
     .set(".persona-image-2", {rotateX: 90})
     .set(".persona-image-3", {rotateY: 90, duration: 0.5})
     .from(".persona-modal", {opacity: 0, duration: 1})
-    // .to(".persona-image-1", {rotateX: 0, duration: 0.5})
     .to(".persona-image-2", {rotateX: 0, duration: 0.5})
     .to(".persona-image-1", {rotateY: 0, duration: 0.5}, "<")
     .to(".persona-image-3", {rotateY: 180, duration: 0.5}, "<")
@@ -250,7 +245,6 @@ const createTimeline = (strName, strIntro) => {
       index = 0;
       typingEffect(strIntro, personaIntro)
     }, null, "<1")
-    // .to(".persona-intro", {opacity: 1})
     .to(".persona-goals h3", {opacity: 1, duration: 0.5}, "<6.5")
     .to(".persona-goals li", {opacity: 1, duration: 0.5}, "<")
     .to(".persona-frustrations h3", {opacity: 1, duration: 0.5}, "<")
@@ -454,8 +448,7 @@ const finalWebDesigns = [
   {filepath: "../assets/images/bakery-board/user-dashboard-web-final.png", alt: "User dashboard"},
 ];
 
-
-// ---------- Wireframe intro timeline ----------
+// ---------- Gallery intro timeline ----------
 // define timeline creation
 const createGalleryTimeline = () => {
   let galleryTimeline = gsap.timeline({paused: true})
@@ -464,7 +457,6 @@ const createGalleryTimeline = () => {
 
   return galleryTimeline;
 };
-
 
 // ---------- Gallery creation function (for wireframes and final designs) ----------
 const galleryCreation = (galleryArr) => {
@@ -524,7 +516,6 @@ const galleryCreation = (galleryArr) => {
     });
   };
 };
-
 
 // ---------- Add eventListener to gallery buttons (for user journeys, wireframes, and final designs) ----------
 for(let galleryButton of galleryButtons) {
@@ -737,7 +728,6 @@ const beforeAfterCreation = (arr) => {
 
     // append the figures to the gallery-modal-images container
     galleryModalImagesContainer.appendChild(beforeFigure);
-    // galleryModalImagesContainer.appendChild(rightArrow);
     galleryModalImagesContainer.appendChild(arrowContainer);
     galleryModalImagesContainer.appendChild(afterFigure);
   };
@@ -778,7 +768,6 @@ const beforeAfterCreation = (arr) => {
     });
   }
 };
-
 
 // ----- Before and after buttons -----
 for(let button of beforeAndAfterButtons) {
@@ -953,7 +942,6 @@ const participantImages2 = [
   },
 ];
 
-
 // ----- create the participant elements -----
 const createParticipant = (participantArr) => {
   for(let participant of participantArr) {
@@ -1024,7 +1012,6 @@ const createParticipant = (participantArr) => {
   }
 }
 
-
 // create a function that creates a timeline, then return it to be used elsewhere
 const createParticipantTl = () => {
   let participantTl = gsap.timeline()
@@ -1053,5 +1040,3 @@ for(let button of participantsButtons) {
     };
   });
 }
-
-

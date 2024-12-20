@@ -113,9 +113,8 @@ body {
 }
 
 .persona-close-icon, .gallery-close-icon {
-  border: 1px solid #000;
-  /* border-radius: 30px; */
   background-color: #000;
+  border: 1px solid #000;
   cursor: pointer;
   fill: #fff;
   height: 40px;
@@ -149,10 +148,8 @@ body {
   width: 99.6%;
 }
 
-
 /* ---------- Sidenav and table of contents ---------- */
 .sidenav, .navbar a, .table-of-contents p {
-  /* color: #fff; */
   color: #000;
 }
 
@@ -257,7 +254,6 @@ ol {
   font-weight: 400;
   justify-content: center;
   line-height: 1.2;
-  /* padding: 15.25px 28px; */
   padding: 15.25px 24px;
   text-align: center;
   text-decoration: none;
@@ -294,12 +290,7 @@ ol {
   margin-bottom: 28px;
 }
 
-#project-overview img {
-  /* border: 1px solid #4a4a49; */
-}
-
 #project-overview a {
-  /* border: 3px solid red; */
   color: #fff;
 }
 
@@ -322,7 +313,6 @@ ol {
 .project-basic-info span {
   font-weight: 600;
 }
-
 
 /* ---------- Pain points ----------- */
 .pain-points p {
@@ -394,10 +384,6 @@ ol {
   justify-content: center;
 }
 
-.hifi-mockups-prototype img {
-  /* border: 1px solid #4a4a49; */
-}
-
 /* ----- Before and afters ----- */
 .gallery-modal-images.before-and-after {
   align-items: end;
@@ -406,18 +392,9 @@ ol {
   justify-items: center;
 }
 
-/* .before-and-after figure {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 /* App designs */
 .app-version {
-  /* border: 3px solid red; */
   width: 60%;
-  /* width: 50%; */
 }
 
 /* App to desktop designs */
@@ -442,18 +419,6 @@ ol {
   font-size: 80px;
 }
 
-/* .gallery-modal [alt="Homepage (before)"], .gallery-modal [alt="Homepage (after)"],
-.gallery-modal [alt="High-fidelity mockup of mobile item info screen"] {
-  border: 3px solid red;
-  width: 60%;
-}
-
-.gallery-modal [alt="High-fidelity mockup of the desktop item info screen"] {
-  border: 3px solid blue;
-  position: relative;
-  bottom: 112px;
-} */
-
 /* ----- Usability studies ----- */
 /* Parameters */
 .parameters-grid {
@@ -472,20 +437,9 @@ ol {
 }
 
 /* ---------- Refining the design ---------- */
-/* #usability-studies h4 { */
-/* #refining-the-design h4 { */
-
-
-/* #usability-studies ol { */
-/* #refining-the-design ol { */
-
-/* #usability-studies ol:last-child { */
 #refining-the-design ol:last-child {
-  /* border: 3px solid black; */
   margin-bottom: 0;
 }
-
-
 
 /* ----- Findings and accessibility considerations ----- */
 .gallery-modal-images.participants {
@@ -496,9 +450,9 @@ ol {
 }
 
 .participants figure {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: end;
 }
 
@@ -568,8 +522,6 @@ ol {
   color: #375293;
 }
 
-
-
 /* ---------- media queries ---------- */
 @media screen and (max-width: 1400px) {
   /* ---------- Persona modal, gallery modal --------- */
@@ -596,7 +548,6 @@ ol {
 
   /* ---------- Participants ---------- */
   .participants figcaption {
-    /* border: 3px solid red; */
     width: 80%;
   }
 
@@ -637,22 +588,18 @@ ol {
 
   /* ----- Mobile nav menu ----- */
   .mobile-nav-icon {
-    /* fill: #fff; */
     min-width: 40px;
   }
 
   .mobile-nav-menu {
-    /* background-color: #000; */
     background-color: #fff5eb;
   }
 
   .mobile-nav-links a {
-    /* color: #fff; */
     color: #000;
   }
 
   .social-links svg {
-    /* fill: #fff; */
     fill: #000;
   }
 
@@ -688,7 +635,6 @@ ol {
 
   /* ---------- Project overview ---------- */
   #project-overview .image-container {
-    /* border: 3px solid red; */
     width: 32%;
   }
 
@@ -696,14 +642,12 @@ ol {
   .hifi-mockups-prototype [alt="Bakery board bottom navbar"],
   .hifi-mockups-prototype [alt="Add item modal"],
   .hifi-mockups-prototype [alt="Bakery board 'Quick add' modal"] {
-    /* border: 3px solid red; */
     width: 60%;
   }
 
   .hifi-mockups-prototype [alt="App homepage"],
   .hifi-mockups-prototype [alt="Bakery board user dashboard"],
   .hifi-mockups-prototype [alt="Bakery board item information form"] {
-    /* border: 3px solid red; */
     width: 32%;
   }
 
@@ -786,7 +730,6 @@ ol {
 
   /* ---------- Participants ---------- */
   .participants figcaption {
-    /* border: 3px solid red; */
     width: 88%;
   }
 
@@ -832,7 +775,6 @@ ol {
   }
 
   .table-of-contents-link {
-    /* color: #fff; */
     font-size: 24px;
   }
 
@@ -891,7 +833,6 @@ ol {
   }
 
   .before-and-after .add-item-modal {
-    /* border: 3px solid red; */
     width: 80%;
   }
 
@@ -900,7 +841,6 @@ ol {
   }
 
   .before-and-after.app-to-desktop {
-    /* border: 3px solid red; */
     justify-items: center;
   }
 
@@ -973,12 +913,10 @@ ol {
   /* ---------- Project overview ---------- */
   #project-overview .image-container {
     width: 48%;
-    /* border: 3px solid red; */
   }
 
   /* ---------- Wireframes gallery ---------- */
   .gallery .app-version-wireframe {
-    /* border: 3px solid red; */
     width: 78%;
   }
 
@@ -986,19 +924,14 @@ ol {
   .hifi-mockups-prototype [alt="Bakery board bottom navbar"],
   .hifi-mockups-prototype [alt="Add item modal"],
   .hifi-mockups-prototype [alt="Bakery board 'Quick add' modal"] {
-    /* border: 3px solid red; */
     width: 80%;
   }
 
   .hifi-mockups-prototype [alt="App homepage"],
   .hifi-mockups-prototype [alt="Bakery board user dashboard"],
   .hifi-mockups-prototype [alt="Bakery board item information form"] {
-    /* border: 3px solid red; */
     width: 48%;
   }
-
-
-
 
   /* ---------- Persona modal ---------- */
   .persona-images {
@@ -1064,18 +997,15 @@ ol {
   /* ---------- Project overview ---------- */
   #project-overview .image-container {
     width: 68%;
-    /* border: 3px solid red; */
   }
 
   /* ---------- Wireframes gallery ---------- */
   .gallery .app-version-wireframe {
-    /* border: 3px solid red; */
     width: 100%;
   }
 
   /* ---------- Before and after ---------- */
   .before-and-after .add-item-modal {
-    /* border: 3px solid red; */
     width: 100%;
   }
 
@@ -1087,14 +1017,12 @@ ol {
   .hifi-mockups-prototype [alt="Bakery board bottom navbar"],
   .hifi-mockups-prototype [alt="Add item modal"],
   .hifi-mockups-prototype [alt="Bakery board 'Quick add' modal"] {
-    /* border: 3px solid red; */
     width: 100%;
   }
 
   .hifi-mockups-prototype [alt="App homepage"],
   .hifi-mockups-prototype [alt="Bakery board user dashboard"],
   .hifi-mockups-prototype [alt="Bakery board item information form"] {
-    /* border: 3px solid red; */
     width: 68%;
   }
 }
