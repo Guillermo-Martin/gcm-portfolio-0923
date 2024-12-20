@@ -619,12 +619,6 @@ ol {
   .additional-info h2 {
     margin-bottom: 16px
   }
-
-  .additional-info .button-container {
-    /* border: 3px solid red; */
-    gap: 12px;
-  }
-
 }
 
 @media screen and (max-width: 992px) {
