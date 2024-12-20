@@ -556,7 +556,7 @@ for(let galleryButton of galleryButtons) {
       };
     };
 
-    if(event.target.id === "final-app-designs") {
+    if(event.target.id === "final-app-designs" || event.target.id === "tldr-final-app-designs") {
       galleryModalImagesContainer.classList.add("gallery");
       galleryCreation(finalAppDesigns);
 
@@ -569,7 +569,7 @@ for(let galleryButton of galleryButtons) {
       };
     };
 
-    if(event.target.id === "final-website-designs") {
+    if(event.target.id === "final-website-designs" || event.target.id === "tldr-final-website-designs") {
       galleryModalImagesContainer.classList.add("gallery");
       galleryCreation(finalWebDesigns);
     };
