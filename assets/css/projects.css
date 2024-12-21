@@ -151,6 +151,13 @@ body {
   .project-link-button {
     width: 32%;
   }
+
+  /* ----- Section images ----- */
+  .image-container {
+    margin: 0 auto;
+    margin-bottom: 28px;
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -160,6 +167,17 @@ body {
 
   .main-content .main-content-section:first-child {
     padding-top: 44px;
+  }
+
+  /* ---------- Project cards ---------- */
+  /* ----- Section images ----- */
+  .image-container {
+    width: 100%;
+  }
+
+  /* ----- Bakery board ----- */
+  #ux-design .project-card:nth-child(3) .image-container {
+    width: 80%;
   }
 }
 
@@ -189,8 +207,13 @@ body {
   }
 
   .project-link-button {
-    max-width: unset;
-    width: 60%;
+    /* max-width: unset; */
+    width: 50%;
+  }
+
+  /* ----- Bakery board ----- */
+  #ux-design .project-card:nth-child(3) .image-container {
+    width: 100%;
   }
 }
 
@@ -204,6 +227,7 @@ body {
   }
 
   .project-link-button {
+    /* max-width: unset; */
     width: 80%;
   }
 }
