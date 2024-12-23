@@ -48,6 +48,8 @@ for(let i = 0; i < tocLinkArr.length; i++) {
 let body = document.querySelector("body");
 let hamburgerIcon = document.querySelector(".hamburger-icon");
 let closeIcon = document.querySelector(".close-icon");
+// for mobile menu resizing bug
+let isMobileMenuOpen = false;
 
 // ----- Mobile menu close animation -----
 let tl = gsap.timeline({ paused: true, duration: 0.1 });
@@ -62,6 +64,23 @@ let tl = gsap.timeline({ paused: true, duration: 0.1 });
     .from(".mobile-nav-links li", {opacity: 0, y: -8, stagger: 0.05, duration: 0.9}, "<")
     .from(".social-links", {opacity: 0, y: -8, duration: 1}, "<0.6")
 
+// close menu if resize is happening
+window.addEventListener('resize', () => {
+  if(window.innerWidth >= 993 && isMobileMenuOpen) {
+    // console.log(`Current browser width: ${window.innerWidth}px`);
+    console.log("i'm going to close the menu");
+
+    gsap.timeline()
+      .to(".close-icon", {opacity: 0, duration: 0.2})
+      .set(".close-icon", {display: "none"}, "<")
+      .to(".mobile-nav-menu", {opacity: 0, duration: 0.2}, "<")
+      .set(".mobile-nav-menu", {display: "none"}, "<")
+      .to(".sidenav-text-container", {opacity: 1, duration: 0.2}, "<")
+
+    isMobileMenuOpen = false;
+  };
+});
+    
 
 // ---------- Mobile menu animation:  992px and below ----------
 mm.add("(max-width: 992px)", () => {
@@ -72,6 +91,10 @@ mm.add("(max-width: 992px)", () => {
 
     // prevent user from scrolling when the menu is up
     body.style.overflow = "hidden";
+
+    // for mobile menu resizing bug
+    isMobileMenuOpen = true;
+    console.log(isMobileMenuOpen);
   });
 
   // ----- close icon -----
@@ -81,6 +104,10 @@ mm.add("(max-width: 992px)", () => {
 
     // resume scrolling when menu is hidden
     body.style.overflow = "scroll";
+
+    // for mobile menu resizing bug
+    isMobileMenuOpen = false;
+    console.log(isMobileMenuOpen);
   });
 
   // -------------- mobile page transition implementation ---------------

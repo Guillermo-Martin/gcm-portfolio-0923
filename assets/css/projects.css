@@ -207,7 +207,6 @@ body {
   }
 
   .project-link-button {
-    /* max-width: unset; */
     width: 50%;
   }
 
@@ -227,7 +226,6 @@ body {
   }
 
   .project-link-button {
-    /* max-width: unset; */
     width: 80%;
   }
 }
