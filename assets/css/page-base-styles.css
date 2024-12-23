@@ -77,6 +77,54 @@ h1 {
   color: #314788;
 }
 
+/* ---------- Buttons ---------- */
+.button-container {
+  align-items: center;
+  display: flex;
+  gap: 28px;
+  justify-content: start;
+}
+
+.project-link-button {
+  align-items: center;
+  background-color: #314788;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  max-width: 224px;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s;
+  width: 36%;
+}
+
+.project-link-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.project-link-button:active {
+  transform: scale(0.96);
+}
+
+.project-link-button .button-icon {
+  fill: #fff;
+  height: 20px;
+  margin-left: 12px;
+  transition: fill 0.2s;
+  width: 20px;
+}
+
+.project-link-button:hover .button-icon {
+  fill: #000;
+}
+
+
 /* ---------- Main content ---------- */
 .main-content {
   margin-left: 100%;
