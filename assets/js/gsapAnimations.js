@@ -43,7 +43,6 @@ for(let i = 0; i < tocLinkArr.length; i++) {
   });
 };
 
-
 // ---------- Mobile menu close animation elements ----------
 let body = document.querySelector("body");
 let hamburgerIcon = document.querySelector(".hamburger-icon");
@@ -67,31 +66,39 @@ let tl = gsap.timeline({ paused: true, duration: 0.1 });
     .from(".social-links", {opacity: 0, y: -8, duration: 1}, "<0.6")
 
 // ---------------------------------------------------------------
-
-// close menu if resize is happening
+//                      Mobile menu resizing 
+// ---------------------------------------------------------------
 window.addEventListener('resize', () => {
+  // if a user resizes the the browser to a larger size  without opening the mobile 
+  // menu on smaller screens, hide the hamburger menu
+  if(window.innerWidth >= 993 && isMobileMenuOpen === false) {
+    gsap.set(".hamburger-icon", {display: "none"})
+  };
+
+  // if the mobile menu is open and a user is resizing the browser, close the mobile
+  // menu at 993px and greater, hide mobile nav elements, and show the desktop sidenav
   if(window.innerWidth >= 993 && isMobileMenuOpen) {
     gsap.timeline()
-      // .set(".close-icon", {opacity: 0, duration: 1})
       .set(".mobile-nav-icon", {display: "none"})
       .set(".mobile-nav-menu", {display: "none", opacity: 0, height: 0})
       .set(".sidenav-text-container", {opacity: 1})
 
+    // set isMobileMenuOpen to false
     isMobileMenuOpen = false;
   };
 
+  // if a user is resizing the browser to a smaller size, show the mobile nav icons,
+  // restart the mobile menu timeline, and immediately pause it
   if(window.innerWidth <=992 && isMobileMenuOpen === false) {
-    console.log(isMobileMenuOpen);
-
     gsap.timeline()
       .set(".hamburger-icon", {opacity: 1, display: "block", scale: 1})
     
+    // reset the mobile menu opening timeline animation
     tl.restart();
     tl.pause();
-  }
+  };
 });
     
-
 // ---------- Mobile menu animation:  992px and below ----------
 mm.add("(max-width: 992px)", () => {
   // ----- hamburger icon -----
@@ -107,10 +114,7 @@ mm.add("(max-width: 992px)", () => {
 
     // for mobile menu resizing bug
     isMobileMenuOpen = true;
-    console.log(isMobileMenuOpen, "line");
   });
-
-  
 
   // ----- close icon -----
   closeIcon.addEventListener("click", function() {
@@ -122,7 +126,6 @@ mm.add("(max-width: 992px)", () => {
 
     // for mobile menu resizing bug
     isMobileMenuOpen = false;
-    console.log(isMobileMenuOpen);
   });
 
   // -------------- mobile page transition implementation ---------------
