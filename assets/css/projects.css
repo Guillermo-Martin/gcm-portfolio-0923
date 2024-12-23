@@ -87,6 +87,10 @@ body {
   color: #000;
 }
 
+.project-link-button:active {
+  transform: scale(0.96);
+}
+
 .project-link-button .button-icon {
   fill: #fff;
   height: 20px;
