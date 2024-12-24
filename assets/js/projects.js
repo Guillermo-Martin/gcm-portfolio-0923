@@ -77,3 +77,22 @@ navbarContainer.addEventListener("click", (event) => {
     transitionTimeline(event, "home", "about");
   };
 });
+
+
+// ----- Case study page transition animation -----
+const uxButtons = document.querySelectorAll('.ux-button');
+
+for(let button of uxButtons) {
+  button.addEventListener("click", (event) => {
+    // prevent default link behavior
+    event.preventDefault();
+
+    // fade out main content, then go to page
+    gsap.timeline()
+      .to(".sidenav", {opacity: 0, duration: 0.7})
+      .to(".main-content", {opacity: 0, duration: 0.7}, "<")
+      .call(() => {
+        window.location.href = event.target.href;
+      })
+  });
+};
