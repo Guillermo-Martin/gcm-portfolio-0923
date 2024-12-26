@@ -9,6 +9,11 @@ body {
   margin-bottom: 60px;
 }
 
+/* ----- For mobile ----- */
+.current-section {
+  display: none;
+}
+
 
 /* ----- Download my resume button ----- */
 .additional-info-mobile {
