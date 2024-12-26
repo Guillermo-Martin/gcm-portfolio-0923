@@ -148,6 +148,7 @@ mm.add("(max-width: 992px)", () => {
 
     gsap.timeline()
       .to(".mobile-nav-links h2", animationOptions)
+      .to(".mobile-table-of-contents-link", animationOptions, "<")
       .to(".social-links", animationOptions, "<")
       .to(".mobile-nav-icon", animationOptions, "<")
       .to(`#${elem1}`, animationOptions, "<")
