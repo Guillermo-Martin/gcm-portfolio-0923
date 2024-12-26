@@ -15,6 +15,14 @@ body {
   margin-bottom: 0;
 } */
 
+#summary {
+  padding-bottom: 30px;
+}
+
+#summary p {
+  margin-bottom: 0;
+}
+
 /* ---------- Jobs and education ---------- */
 .job {
   margin-bottom: 32px;

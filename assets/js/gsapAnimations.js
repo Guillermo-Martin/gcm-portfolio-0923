@@ -36,8 +36,8 @@ for(let i = 0; i < tocLinkArr.length; i++) {
   gsap.to(scrollTriggerTarget, {
     scrollTrigger: {
       trigger: `#${sectionId}`,
-      start: "top 40%",
-      end: "bottom 40%",
+      start: "top 40.5%",
+      end: "bottom 40.5%",
       toggleClass: {targets: scrollTriggerTarget, className: "active"}
     }
   });
