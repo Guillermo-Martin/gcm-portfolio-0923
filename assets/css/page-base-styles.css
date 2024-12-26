@@ -259,6 +259,7 @@ h1 {
 
   .mobile-nav-menu.hide {
     display: none;
+    pointer-events: none;
   }
 
   .mobile-nav-links {

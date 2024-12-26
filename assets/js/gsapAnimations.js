@@ -118,6 +118,9 @@ mm.add("(max-width: 992px)", () => {
 
   // ----- close icon -----
   closeIcon.addEventListener("click", function() {
+    // add the "hide" class
+    mobileNavMenu.classList.add("hide");
+
     // reverse the mobile menu animation
     tl.reverse(0.7);
 
