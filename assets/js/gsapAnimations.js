@@ -147,26 +147,29 @@ mm.add("(max-width: 992px)", () => {
     const animationOptions = {opacity: 0, duration: 0.7};
 
     gsap.timeline()
-      .to(".mobile-nav-links h2", animationOptions)
-      .to(".mobile-table-of-contents-link", animationOptions, "<")
-      .to(".social-links", animationOptions, "<")
-      .to(".mobile-nav-icon", animationOptions, "<")
-      .to(`#${elem1}`, animationOptions, "<")
-      .to(`#${elem2}`, animationOptions, "<")
-      .to(`#${elem3}`, animationOptions, "<")
       .call(() => {
         // get all links and mobile nav icon
         let allLinks = document.querySelectorAll("a");
         let closeIcon = document.querySelector(".close-icon");
+        let mainContent = document.querySelector(".main-content");
 
         // loop through the links and add a class for no pointer events
         for(let j = 0; j < allLinks.length; j++) {
           allLinks[j].style.pointerEvents = "none";
         }
 
-        // add no pointer events to the mobile nav icon
+        // add no pointer events to the mobile nav icon and clickables in main content
         closeIcon.style.pointerEvents = "none";
+        mainContent.style.pointerEvents = "none";
       })
+      .to(".mobile-nav-links h2", animationOptions)
+      .to(".mobile-table-of-contents-link", animationOptions, "<")
+      .to(".social-links", animationOptions, "<")
+      .to(".mobile-nav-icon", animationOptions, "<")
+      .to(".main-content", animationOptions, "<")
+      .to(`#${elem1}`, animationOptions, "<")
+      .to(`#${elem2}`, animationOptions, "<")
+      .to(`#${elem3}`, animationOptions, "<")
       .to(`#transition-${targetId}`, {opacity: 0, y: -5, duration: 0.5, delay: 0.8})
       .to(".sidenav", {backgroundColor: "#fff5eb", duration: 1})
       .to("body", {visibility: "hidden", backgroundColor: "#fff5eb", duration: 1}, "<")
