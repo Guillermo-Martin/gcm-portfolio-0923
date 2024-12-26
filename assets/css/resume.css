@@ -93,6 +93,18 @@ h4 {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .table-of-contents {
+    display: none;
+  }
+
+  .current-section {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .mobile-nav-menu {
     top: 44%;

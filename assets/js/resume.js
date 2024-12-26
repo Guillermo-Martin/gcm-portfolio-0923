@@ -78,3 +78,33 @@ navbarContainer.addEventListener("click", (event) => {
     transitionTimeline(event, "home", "about");
   };
 });
+
+// ---------- Fade in section animation (767px and below) ----------
+mm.add("(max-width: 767px)", () => {
+  // scrollTrigger fadeIn animation (for mobile)
+  const allSections = document.querySelectorAll(".main-content-section");
+
+  allSections.forEach(section => {
+    // get the section's h2 and section id
+    const sectionHeader = document.querySelector(`#${section.id} h2`).textContent;
+    const sectionId = section.id;
+
+    // fade in animation function
+    const changeSectionTitle = () => {
+      // get current section
+      const currentSectionTitle = document.querySelector(".current-section");
+
+      // change it's textcontent
+      currentSectionTitle.textContent = sectionHeader;
+    };
+
+    // create a scrollTrigger for each of the sections
+    ScrollTrigger.create({
+      trigger: `#${sectionId}`,
+      start: "top 26.4%",
+      end: "bottom 75%",
+      onEnter: changeSectionTitle,
+      onEnterBack: changeSectionTitle
+    });
+  });
+});
