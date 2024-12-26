@@ -96,6 +96,11 @@ h4 {
     display: block;
     margin-top: 60px;
   }
+
+  /* ----- Table of contents ----- */
+  .mobile-table-of-contents-link {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
