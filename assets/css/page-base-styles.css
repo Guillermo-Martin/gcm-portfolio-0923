@@ -67,6 +67,7 @@ h1 {
   line-height: 32px;
   text-decoration: none;
   transition: all 0.2s;
+  width: fit-content;
 }
 
 .table-of-contents-link.active {
