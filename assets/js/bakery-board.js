@@ -96,7 +96,6 @@ mm.add("(max-width: 992px)", () => {
   window.addEventListener("load", () => {
     gsap.timeline()
     .from("body", {autoAlpha: 0})
-    .to("body", {backgroundColor: "#000", duration: 1})
     .set("body", {overflow: "hidden"})
     .from("h1", {opacity: 0, y: 10, duration: 0.7})
     .from(".table-of-contents li", {opacity: 0, x: -10, stagger: 0.1, duration: 1}, "<1")

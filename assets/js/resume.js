@@ -17,8 +17,10 @@ const init = () => {
 }
 
 // ----- Do animation when page elements load -----
-window.addEventListener("load", () => {
-  init();
+mm.add("(min-width: 993px)", () => {
+  window.addEventListener("load", () => {
+    init();
+  });
 });
 
 
@@ -77,6 +79,23 @@ navbarContainer.addEventListener("click", (event) => {
   if(event.target.id === "projects") {
     transitionTimeline(event, "home", "about");
   };
+});
+
+// ---------- page load animation at 992px and below ----------
+mm.add("(max-width: 992px)", () => {
+  window.addEventListener("load", () => {
+    gsap.timeline()
+    .from("body", {autoAlpha: 0})
+    .set("body", {overflow: "hidden"})
+    .from("h1", {opacity: 0, y: 10, duration: 0.7})
+    .from(".table-of-contents li", {opacity: 0, x: -10, stagger: 0.1, duration: 1}, "<1")
+    .from(".current-section", {opacity: 0, y: 10, duration: 0.7})
+    .from(".main-content-section", {opacity: 0, stagger: 0.1, duration: 1})
+    .from(".mobile-nav-icon", {opacity: 0, pointerEvents: "none", duration: 0.7}, "<")
+    .from(".footer", {opacity: 0, duration: 1}, "<")
+    .from(".table-of-contents li", {pointerEvents: "none"}, "<")
+    .set("body", {overflow: "scroll"}, "<")
+  });
 });
 
 // ---------- Fade in section animation (767px and below) ----------
