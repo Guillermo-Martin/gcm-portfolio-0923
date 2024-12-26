@@ -4,6 +4,16 @@ body {
   visibility: hidden;
 }
 
+/* ---------- Sidenav ---------- */
+.sidenav-text-container {
+  margin-bottom: 60px;
+}
+
+.project-link-button {
+  padding: 15.25px 24px;
+  width: fit-content;
+}
+
 /* ---------- Main content ---------- */
 .main-content-section {
   color: #000;
