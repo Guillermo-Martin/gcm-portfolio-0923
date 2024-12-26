@@ -73,6 +73,18 @@ h4 {
   #summary {
     padding-bottom: 74px;
   }
+
+  /* ----- Download resume button ----- */
+  /* Desktop */
+  .additional-info {
+    display: none;
+  }
+
+  /* Mobile */
+  .additional-info-mobile {
+    display: block;
+    margin-top: 60px;
+  }
 }
 
 @media screen and (max-width: 576px) {
