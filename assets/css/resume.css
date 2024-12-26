@@ -9,11 +9,9 @@ body {
   color: #000;
 }
 
-/* h4 {
-  font-size: 28px;
-  font-weight: 200;
-  margin-bottom: 0;
-} */
+h4 {
+  line-height: 1.2;
+}
 
 #summary {
   padding-bottom: 30px;
