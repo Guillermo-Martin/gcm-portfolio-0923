@@ -152,6 +152,11 @@ body {
     bottom: 6px;
     min-width: 32px;
   } */
+  
+  /* ---------- Mobile nav menu ---------- */
+  .mobile-nav-menu {
+    padding-top: 0;
+  }
 
   .main-content {
     padding-top: 176px;
@@ -239,7 +244,7 @@ body {
   } */
 
   .mobile-nav-menu {
-    top: 44%;
+    top: 36%;
   }
 
   h1 {
