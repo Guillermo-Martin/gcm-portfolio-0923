@@ -104,6 +104,10 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  h1 {
+    font-size: 56px;
+  }
+
   /* ---------- Project cards ---------- */
   .button-container {
     flex-direction: row;
@@ -119,9 +123,19 @@ body {
     margin-bottom: 28px;
     width: 80%;
   }
+
+  /* ----- Table of contents ----- */
+  .table-of-contents p {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  h1 {
+    font-size: 48px;
+    padding-right: 20px;
+  }
+
   .main-content {
     padding-top: 176px;
   }
@@ -139,6 +153,12 @@ body {
   /* ----- Bakery board ----- */
   #ux-design .project-card:nth-child(3) .image-container {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  h1 {
+    font-size: 40px;
   }
 }
 
@@ -194,6 +214,19 @@ body {
 @media screen and (max-width: 405px) {
   .mobile-nav-menu {
     top: 44%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .mobile-nav-icon {
+    min-width: unset;
+  }
+
+  .table-of-contents {
+    flex-direction: column;
+    gap: 12px;
   }
 }
 
