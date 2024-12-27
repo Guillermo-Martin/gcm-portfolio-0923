@@ -110,9 +110,9 @@ body {
 
   /* ----- Mobile nav menu ----- */
   .mobile-nav-icon {
-    bottom: 4px;
-    min-width: 40px;
-    position: relative;
+    /* bottom: 4px; */
+    /* min-width: 40px; */
+    /* position: relative; */
   }
 
   /* ---------- Project cards ---------- */
@@ -132,9 +132,9 @@ body {
   }
 
   /* ----- Table of contents ----- */
-  .table-of-contents p {
+  /* .table-of-contents p {
     font-size: 24px;
-  }
+  } */
 }
 
 @media screen and (max-width: 767px) {
@@ -144,10 +144,10 @@ body {
   }
 
   /* ---------- Hamburger menu ---------- */
-  .mobile-nav-icon {
+  /* .mobile-nav-icon {
     bottom: 6px;
     min-width: 32px;
-  }
+  } */
 
   .main-content {
     padding-top: 176px;

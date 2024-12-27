@@ -171,9 +171,9 @@ h1 {
 }
 
 /* ----- Current section (for mobile) ----- */
-.current-section {
+/* .current-section {
   display: none;
-}
+} */
 
 /* ----- TL;DR (for mobile) ----- */
 .tldr {
@@ -485,10 +485,10 @@ ol {
 
   /* ----- Mobile nav menu ----- */
   .mobile-nav-icon {
-    bottom: 4px;
+    /* bottom: 4px; */
     fill: #fff;
-    min-width: 40px;
-    position: relative;
+    /* min-width: 40px; */
+    /* position: relative; */
   }
 
   .mobile-nav-menu {
@@ -516,9 +516,9 @@ ol {
   }
 
   /* ----- Table of contents ----- */
-  .table-of-contents p {
+  /* .table-of-contents p {
     font-size: 24px;
-  }
+  } */
 
   .current-section {
     display: none;
@@ -623,38 +623,38 @@ ol {
   }
 
   /* ---------- Hamburger menu ---------- */
-  .mobile-nav-icon {
+  /* .mobile-nav-icon {
     bottom: 6px;
     min-width: 32px;
-  }
+  } */
 
   /* ---------- Mobile nav menu ---------- */
   .mobile-nav-menu {
     padding-top: 0;
   }
 
-  .mobile-nav-links {
+  /* .mobile-nav-links {
     gap: 24px;
-  }
+  } */
 
-  .mobile-nav-links h2, .mobile-nav-links h3 {
+  /* .mobile-nav-links h2, .mobile-nav-links h3 {
     margin-bottom: 0;
-  }
+  } */
 
   .mobile-nav-links h3 {
     border-bottom: 1px solid #fff;
-    margin-bottom: 0;
-    padding-bottom: 4px;
+    /* margin-bottom: 0; */
+    /* padding-bottom: 4px; */
   }
 
   /* ---------- Table of contents ---------- */
-  .table-of-contents {
+  /* .table-of-contents {
     display: none;
-  }
+  } */
 
   .table-of-contents-link {
     color: #fff;
-    font-size: 24px;
+    /* font-size: 24px; */
   }
 
   .mobile-table-of-contents-link {

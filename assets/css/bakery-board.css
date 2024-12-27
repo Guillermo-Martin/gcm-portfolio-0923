@@ -171,9 +171,9 @@ h1 {
 }
 
 /* ----- Current section (for mobile) ----- */
-.current-section {
+/* .current-section {
   display: none;
-}
+} */
 
 /* ----- TL;DR (for mobile) ----- */
 .tldr {
@@ -551,14 +551,15 @@ ol {
   }
 
   /* ----- Mobile nav menu ----- */
-  .mobile-nav-icon {
+  /* .mobile-nav-icon {
     bottom: 4px;
     min-width: 40px;
     position: relative;
-  }
+  } */
 
   .mobile-nav-menu {
-    background-color: #fff5eb;
+    /* background-color: #fff5eb; */
+    /* background-color: red; */
   }
 
   .mobile-nav-links a {
@@ -582,13 +583,13 @@ ol {
   }
 
   /* ----- Table of contents ----- */
-  .table-of-contents p {
+  /* .table-of-contents p {
     font-size: 24px;
-  }
-
-  /* .current-section {
-    display: none;
   } */
+
+  .current-section {
+    display: none;
+  }
 
   .mobile-table-of-contents-link {
     display: none;
@@ -712,38 +713,38 @@ ol {
   }
 
   /* ---------- Hamburger menu ---------- */
-  .mobile-nav-icon {
+  /* .mobile-nav-icon {
     bottom: 6px;
     min-width: 32px;
-  }
+  } */
 
   /* ---------- Mobile nav menu ---------- */
   .mobile-nav-menu {
     padding-top: 0;
   }
 
-  .mobile-nav-links {
+  /* .mobile-nav-links {
     gap: 24px;
-  }
+  } */
 
-  .mobile-nav-links h2, .mobile-nav-links h3 {
+  /* .mobile-nav-links h2, .mobile-nav-links h3 {
     margin-bottom: 0;
-  }
+  } */
 
-  .mobile-nav-links h3 {
+  /* .mobile-nav-links h3 {
     border-bottom: 1px solid #000;
     margin-bottom: 0;
     padding-bottom: 4px;
-  }
+  } */
 
   /* ---------- Table of contents ---------- */
-  .table-of-contents {
+  /* .table-of-contents {
     display: none;
-  }
+  } */
 
-  .table-of-contents-link {
+  /* .table-of-contents-link {
     font-size: 24px;
-  }
+  } */
 
   .mobile-table-of-contents-link {
     display: block;
