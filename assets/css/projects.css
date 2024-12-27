@@ -108,13 +108,6 @@ body {
     font-size: 56px;
   }
 
-  /* ----- Mobile nav menu ----- */
-  .mobile-nav-icon {
-    /* bottom: 4px; */
-    /* min-width: 40px; */
-    /* position: relative; */
-  }
-
   /* ---------- Project cards ---------- */
   .button-container {
     flex-direction: row;
@@ -130,11 +123,6 @@ body {
     margin-bottom: 28px;
     width: 80%;
   }
-
-  /* ----- Table of contents ----- */
-  /* .table-of-contents p {
-    font-size: 24px;
-  } */
 }
 
 @media screen and (max-width: 767px) {
@@ -142,16 +130,6 @@ body {
     font-size: 48px;
     padding-right: 20px;
   }
-
-  /* .table-of-contents {
-    display: block;
-  } */
-
-  /* ---------- Hamburger menu ---------- */
-  /* .mobile-nav-icon {
-    bottom: 6px;
-    min-width: 32px;
-  } */
   
   /* ---------- Mobile nav menu ---------- */
   .mobile-nav-menu {
@@ -177,16 +155,6 @@ body {
     width: 80%;
   }
 }
-
-/* @media screen and (max-width: 660px) {
-  .mobile-nav-icon {
-    bottom: 8px;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-} */
 
 @media screen and (max-width: 608px) {
   /* ---------- Project buttons ---------- */
@@ -238,11 +206,6 @@ body {
 }
 
 @media screen and (max-width: 405px) {
-  /* .mobile-nav-icon {
-    bottom: 10px;
-    min-width: unset; 
-  } */
-
   .mobile-nav-menu {
     top: 36%;
   }

@@ -551,17 +551,6 @@ ol {
   }
 
   /* ----- Mobile nav menu ----- */
-  /* .mobile-nav-icon {
-    bottom: 4px;
-    min-width: 40px;
-    position: relative;
-  } */
-
-  .mobile-nav-menu {
-    /* background-color: #fff5eb; */
-    /* background-color: red; */
-  }
-
   .mobile-nav-links a {
     color: #000;
   }
@@ -583,14 +572,6 @@ ol {
   }
 
   /* ----- Table of contents ----- */
-  /* .table-of-contents p {
-    font-size: 24px;
-  } */
-
-  /* .current-section {
-    display: none;
-  } */
-
   .mobile-table-of-contents-link {
     display: none;
   }
@@ -712,39 +693,15 @@ ol {
     padding-right: 20px;
   }
 
-  /* ---------- Hamburger menu ---------- */
-  /* .mobile-nav-icon {
-    bottom: 6px;
-    min-width: 32px;
-  } */
-
   /* ---------- Mobile nav menu ---------- */
   .mobile-nav-menu {
     padding-top: 0;
   }
 
-  /* .mobile-nav-links {
-    gap: 24px;
-  } */
-
-  /* .mobile-nav-links h2, .mobile-nav-links h3 {
-    margin-bottom: 0;
-  } */
-
-  /* .mobile-nav-links h3 {
-    border-bottom: 1px solid #000;
-    margin-bottom: 0;
-    padding-bottom: 4px;
-  } */
-
   /* ---------- Table of contents ---------- */
   .table-of-contents {
     display: none;
   }
-
-  /* .table-of-contents-link {
-    font-size: 24px;
-  } */
 
   .mobile-table-of-contents-link {
     display: block;
@@ -847,14 +804,6 @@ ol {
 }
 
 @media screen and (max-width: 660px) {
-  /* .mobile-nav-icon {
-    bottom: 8px;
-  }
-
-  h1 {
-    font-size: 40px;
-  } */
-
   .current-section {
     font-size: 32px;
   }
@@ -1000,11 +949,6 @@ ol {
 }
 
 @media screen and (max-width: 405px) {
-  /* .mobile-nav-icon {
-    bottom: 10px;
-    min-width: unset;
-  } */
-
   .mobile-nav-menu {
     top: 48%;
   }
