@@ -449,4 +449,8 @@ h1 {
     bottom: 10px;
     min-width: unset;
   }
+
+  .mobile-nav-menu li {
+    width: 90%;
+  }
 }
