@@ -552,7 +552,9 @@ ol {
 
   /* ----- Mobile nav menu ----- */
   .mobile-nav-icon {
+    bottom: 4px;
     min-width: 40px;
+    position: relative;
   }
 
   .mobile-nav-menu {
@@ -711,6 +713,7 @@ ol {
 
   /* ---------- Hamburger menu ---------- */
   .mobile-nav-icon {
+    bottom: 6px;
     min-width: 32px;
   }
 
@@ -843,6 +846,10 @@ ol {
 }
 
 @media screen and (max-width: 660px) {
+  .mobile-nav-icon {
+    bottom: 8px;
+  }
+
   h1 {
     font-size: 40px;
   }
@@ -992,6 +999,11 @@ ol {
 }
 
 @media screen and (max-width: 405px) {
+  .mobile-nav-icon {
+    bottom: 10px;
+    min-width: unset;
+  }
+
   .mobile-nav-menu {
     top: 48%;
   }
@@ -1002,10 +1014,6 @@ ol {
 
   .current-section {
     font-size: 24px;
-  }
-
-  .mobile-nav-icon {
-    min-width: unset;
   }
 }
 
