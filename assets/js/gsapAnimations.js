@@ -76,12 +76,16 @@ window.addEventListener('resize', () => {
   };
 
   // if the mobile menu is open and a user is resizing the browser, close the mobile
-  // menu at 993px and greater, hide mobile nav elements, and show the desktop sidenav
+  // menu at 993px and greater, hide mobile nav elements, and show the desktop sidenav,
+  // and remove "overflow: hidden"
   if(window.innerWidth >= 993 && isMobileMenuOpen) {
     gsap.timeline()
       .set(".mobile-nav-icon", {display: "none"})
       .set(".mobile-nav-menu", {display: "none", opacity: 0, height: 0})
       .set(".sidenav-text-container", {opacity: 1})
+      .call(() => {
+        body.style.overflow = "scroll";
+      })
 
     // set isMobileMenuOpen to false
     isMobileMenuOpen = false;
