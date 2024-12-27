@@ -738,9 +738,9 @@ ol {
   } */
 
   /* ---------- Table of contents ---------- */
-  /* .table-of-contents {
+  .table-of-contents {
     display: none;
-  } */
+  }
 
   /* .table-of-contents-link {
     font-size: 24px;
@@ -847,13 +847,13 @@ ol {
 }
 
 @media screen and (max-width: 660px) {
-  .mobile-nav-icon {
+  /* .mobile-nav-icon {
     bottom: 8px;
   }
 
   h1 {
     font-size: 40px;
-  }
+  } */
 
   .current-section {
     font-size: 32px;
@@ -1000,10 +1000,10 @@ ol {
 }
 
 @media screen and (max-width: 405px) {
-  .mobile-nav-icon {
+  /* .mobile-nav-icon {
     bottom: 10px;
     min-width: unset;
-  }
+  } */
 
   .mobile-nav-menu {
     top: 48%;

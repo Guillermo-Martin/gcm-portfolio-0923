@@ -350,9 +350,9 @@ h1 {
   }
 
   /* ---------- Table of contents ---------- */
-  .table-of-contents {
+  /* .table-of-contents {
     display: none;
-  }
+  } */
 
 	.table-of-contents p {
 		font-size: 24px;
@@ -398,6 +398,16 @@ h1 {
   }
 }
 
+@media screen and (max-width: 660px) {
+  .mobile-nav-icon {
+    bottom: 8px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .sidenav-content, .main-content-section {
     padding-left: 24px;
@@ -431,5 +441,12 @@ h1 {
   .footer p {
     padding-left: 24px;
     padding-right: 24px;
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .mobile-nav-icon {
+    bottom: 10px;
+    min-width: unset;
   }
 }

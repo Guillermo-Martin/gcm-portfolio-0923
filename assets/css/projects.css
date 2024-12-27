@@ -143,6 +143,10 @@ body {
     padding-right: 20px;
   }
 
+  /* .table-of-contents {
+    display: block;
+  } */
+
   /* ---------- Hamburger menu ---------- */
   /* .mobile-nav-icon {
     bottom: 6px;
@@ -169,7 +173,7 @@ body {
   }
 }
 
-@media screen and (max-width: 660px) {
+/* @media screen and (max-width: 660px) {
   .mobile-nav-icon {
     bottom: 8px;
   }
@@ -177,7 +181,7 @@ body {
   h1 {
     font-size: 40px;
   }
-}
+} */
 
 @media screen and (max-width: 608px) {
   /* ---------- Project buttons ---------- */
@@ -229,10 +233,10 @@ body {
 }
 
 @media screen and (max-width: 405px) {
-  .mobile-nav-icon {
+  /* .mobile-nav-icon {
     bottom: 10px;
     min-width: unset; 
-  }
+  } */
 
   .mobile-nav-menu {
     top: 44%;
