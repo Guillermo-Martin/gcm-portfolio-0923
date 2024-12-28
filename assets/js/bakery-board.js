@@ -422,17 +422,17 @@ const digitalWireframes = [
 
 // ----- Final designs -----
 const finalAppDesigns = [
-  {filepath: "../assets/images/bakery-board/camera-app-final.png", alt: "Camera app"},
-  {filepath: "../assets/images/bakery-board/homescreen-app-final.png", alt: "Homescreen"},
+  {filepath: "../assets/images/bakery-board/new-camera-app-final.png", alt: "Camera app"},
+  {filepath: "../assets/images/bakery-board/new-homescreen-app-final.png", alt: "Homescreen"},
   {filepath: "../assets/images/bakery-board/new-item-form-app-final-1.png", alt: "New item form screen 1"},
   {filepath: "../assets/images/bakery-board/new-item-form-app-final-2.png", alt: "New item form screen 2"},
   {filepath: "../assets/images/bakery-board/new-item-form-app-final-3.png", alt: "New item form screen 3"},
-  {filepath: "../assets/images/bakery-board/picture-gallery-app-final.png", alt: "Picture gallery"},
-  {filepath: "../assets/images/bakery-board/quick-add-app-final.png", alt: "Quick add"},
-  {filepath: "../assets/images/bakery-board/review-pic-app-final.png", alt: "Review picture"},
-  {filepath: "../assets/images/bakery-board/review-screen-app-final.png", alt: "Review screen"},
-  {filepath: "../assets/images/bakery-board/success-screen-app-final.png", alt: "Success screen"},
-  {filepath: "../assets/images/bakery-board/user-dashboard-app-final.png", alt: "User dashboard"},
+  {filepath: "../assets/images/bakery-board/new-picture-gallery-app-final.png", alt: "Picture gallery"},
+  {filepath: "../assets/images/bakery-board/new-quick-add-app-final.png", alt: "Quick add"},
+  {filepath: "../assets/images/bakery-board/new-review-pic-app-final.png", alt: "Review picture"},
+  {filepath: "../assets/images/bakery-board/new-review-screen-app-final.png", alt: "Review screen"},
+  {filepath: "../assets/images/bakery-board/new-success-screen-app-final.png", alt: "Success screen"},
+  {filepath: "../assets/images/bakery-board/new-user-dashboard-app-final.png", alt: "User dashboard"},
 ];
 
 const finalWebDesigns = [
@@ -626,10 +626,10 @@ const addItemModalImages = [
 
 const homepageImages = [
   {
-    before: "../assets/images/bakery-board/homepage-app-before.png",
+    before: "../assets/images/bakery-board/new-homepage-app-before.png",
     beforeAlt: "Homepage (before)",
     beforeText: "Homepage (before)",
-    after: "../assets/images/bakery-board/homepage-app-after.png",
+    after: "../assets/images/bakery-board/new-homepage-app-after.png",
     afterAlt: "Homepage (after)",
     afterText: "Homepage (after)",
   }
@@ -637,7 +637,7 @@ const homepageImages = [
 
 const appToDesktopImages = [
   {
-    before: "../assets/images/bakery-board/item-info-mobile.png",
+    before: "../assets/images/bakery-board/new-item-info-mobile.png",
     beforeAlt: "High-fidelity mockup of mobile item info screen",
     beforeText: "\"Item info\" screen on the app",
     after: "../assets/images/bakery-board/item-info-website.png",
@@ -648,10 +648,10 @@ const appToDesktopImages = [
 
 const userDashboardImages = [
   {
-    before: "../assets/images/bakery-board/user-dashboard-before.png",
+    before: "../assets/images/bakery-board/new-user-dashboard-before.png",
     beforeAlt: "High-fidelity mockup of mobile user dashboard (before)",
     beforeText: "\"User dashboard\" screen (before)",
-    after: "../assets/images/bakery-board/user-dashboard-after.png",
+    after: "../assets/images/bakery-board/new-user-dashboard-after.png",
     afterAlt: "High-fidelity mockup of mobile user dashboard (after)",
     afterText: "\"User dashboard\" screen (after)",
   }
@@ -659,10 +659,10 @@ const userDashboardImages = [
 
 const easierNavigationImages = [
   {
-    before: "../assets/images/bakery-board/item-info-mobile.png",
+    before: "../assets/images/bakery-board/new-item-info-mobile.png",
     beforeAlt: "High-fidelity mockup of 'Item info' screen",
     beforeText: "The \"Start over\" button previously took you to the new item form.",
-    after: "../assets/images/bakery-board/user-dashboard-hifi-final.png",
+    after: "../assets/images/bakery-board/new-user-dashboard-hifi-final.png",
     afterAlt: "High-fidelity mockup of mobile user dashboard",
     afterText: "Now, the button takes you to the \"User dashboard\" screen.",
   }
