@@ -17,6 +17,14 @@ body {
   width: 100%;
 }
 
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #000;
+}
+
 /* ---------- media queries ---------- */
 @media screen and (max-width: 792px) {
   .main-content .main-content-section:first-child {
