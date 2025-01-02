@@ -1,10 +1,7 @@
 :root {
 	--fs-h1: 96px;
-	/* --fs-h2: 68px; */
 	--fs-h2: 48px;
-	/* --fs-h3: 44px; */
 	--fs-h3: 40px;
-	/* --fs-h4: 36px; */
 	--fs-h4: 28px;
 	--fs-subheader: 48px;
 	--fs-body: 20px;
@@ -45,7 +42,6 @@ h3 {
 h4 {
 	font-size: var(--fs-h4);
 	font-weight: 200;
-	/* line-height: 1.2; */
 	margin-bottom: 0px;
 }
 
@@ -56,18 +52,11 @@ p {
 }
 
 a {
-  /* border: 3px solid red; */
-  /* color: #375293; */
+  color: #334789;
+	font-size: var(--fs-body);
 	font-weight: 500;
   text-decoration: underline;
-	color: #334789;
 	transition: all 0.2s;
-	font-size: var(--fs-body);
-}
-
-a:hover {
-	/* secondary color */
-	/* color: #d43900; */
 }
 
 .subheader {
