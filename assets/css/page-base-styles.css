@@ -370,16 +370,17 @@ h1 {
 
   .mobile-nav-links h3 {
     border-bottom: 1px solid #000;
+    font-size: 28px;
     margin-bottom: 0;
     padding-bottom: 4px;
   }
 
   .mobile-nav-links {
-    gap: 24px;
+    gap: 12px;
   }
 
-  .mobile-nav-links a {
-    font-size: 24px;
+  .mobile-table-of-contents-link p, .mobile-nav-links a {
+    font-size: 20px;
   }
 
   /* ----- Social links ----- */
