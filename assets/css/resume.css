@@ -127,7 +127,6 @@ h4 {
   .mobile-nav-menu {
     overflow: scroll;
     padding-top: 0;
-    /* top: 39.3%; */
   }
 
   /* ---------- Table of contents ---------- */
@@ -153,20 +152,12 @@ h4 {
 }
 
 @media screen and (max-width: 576px) {
-  /* .mobile-nav-menu {
-    top: 38%;
-  } */
-
   .current-section {
     font-size: 28px;
   }
 }
 
 @media screen and (max-width: 405px) {
-  /* .mobile-nav-menu {
-    top: 48%;
-  } */
-
   .main-content {
     padding-top: 160px;
   }
