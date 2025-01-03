@@ -108,6 +108,10 @@ a:hover {
     padding-top: 44px;
   }
 
+  .current-section {
+    font-size: 28px;
+  }
+
   /* ----- Mobile nav menu ----- */
   .mobile-nav-menu {
     top: 42.4%;
@@ -117,6 +121,10 @@ a:hover {
 @media screen and (max-width: 405px) {
   h1 {
     font-size: 32px;
+  }
+
+  .current-section {
+    font-size: 20px;
   }
 
   /* ----- Mobile nav menu ----- */
