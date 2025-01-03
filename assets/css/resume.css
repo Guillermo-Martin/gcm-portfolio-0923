@@ -125,6 +125,7 @@ h4 {
 
   /* ---------- Mobile nav menu ---------- */
   .mobile-nav-menu {
+    overflow: scroll;
     padding-top: 0;
     top: 39.3%;
   }

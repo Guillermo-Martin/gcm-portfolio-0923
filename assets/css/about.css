@@ -84,6 +84,7 @@ a:hover {
   }
 
   .mobile-nav-menu {
+    overflow: scroll;
     padding-top: 0;
   }
 }

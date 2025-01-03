@@ -133,6 +133,7 @@ body {
   
   /* ---------- Mobile nav menu ---------- */
   .mobile-nav-menu {
+    overflow: scroll;
     padding-top: 0;
   }
 
