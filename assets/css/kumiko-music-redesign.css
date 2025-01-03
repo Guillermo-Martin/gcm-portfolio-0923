@@ -736,6 +736,10 @@ ol {
     font-size: 28px;
   }
 
+  .main-content {
+    padding-top: 240px;
+  }
+
   /* ---------- Project card ---------- */
   .button-container {
     align-items: center;
@@ -808,6 +812,14 @@ ol {
 }
 
 @media screen and (max-width: 405px) {
+  .mobile-nav-icon {
+    min-width: 32px;
+  }
+
+  .main-content {
+    padding-top: 212px;
+  }
+
   h1 {
     font-size: 32px;
   }
