@@ -25,6 +25,11 @@ a:hover {
   color: #000;
 }
 
+/* ----- Current section (for mobile) ----- */
+.current-section {
+  display: none;
+}
+
 /* ---------- media queries ---------- */
 @media screen and (max-width: 992px) {
   h1 {
@@ -58,11 +63,6 @@ a:hover {
     font-size: 36px;
     margin-bottom: 0;
   }
-
-
-  /* -------------------------------------------- */
-
-
 
   .main-content {
     padding-top: 176px;
