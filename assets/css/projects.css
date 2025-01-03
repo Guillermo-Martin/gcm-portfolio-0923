@@ -207,9 +207,9 @@ body {
 }
 
 @media screen and (max-width: 405px) {
-  .mobile-nav-menu {
+  /* .mobile-nav-menu {
     top: 36%;
-  }
+  } */
 
   h1 {
     font-size: 32px;

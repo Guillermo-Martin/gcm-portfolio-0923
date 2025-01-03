@@ -216,6 +216,7 @@ h1 {
     min-width: 40px;
     position: relative;
     width: 40px;
+    z-index: 2;
   }
 
   /* show hamburger icon */
@@ -249,10 +250,12 @@ h1 {
     height: 100vh;
     justify-content: start;
     left: 0;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     padding-left: 54px;
     padding-top: 54px;
-    top: 56%;
+    /* top: 56%; */
+    top: 0;
     width: 100%;
     z-index: 1;
   }

@@ -808,9 +808,9 @@ ol {
 }
 
 @media screen and (max-width: 405px) {
-  .mobile-nav-menu {
+  /* .mobile-nav-menu {
     top: 39%;
-  }
+  } */
 
   h1 {
     font-size: 32px;

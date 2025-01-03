@@ -113,9 +113,9 @@ a:hover {
   }
 
   /* ----- Mobile nav menu ----- */
-  .mobile-nav-menu {
+  /* .mobile-nav-menu {
     top: 42.4%;
-  }
+  } */
 }
 
 @media screen and (max-width: 405px) {
@@ -128,9 +128,9 @@ a:hover {
   }
 
   /* ----- Mobile nav menu ----- */
-  .mobile-nav-menu {
+  /* .mobile-nav-menu {
     top: 34.3%;
-  }
+  } */
 }
 
 @media screen and (max-width: 366px) {
