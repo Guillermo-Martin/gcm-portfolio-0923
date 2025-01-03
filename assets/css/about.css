@@ -26,6 +26,12 @@ a:hover {
 }
 
 /* ---------- media queries ---------- */
+@media screen and (max-width: 992px) {
+  .mobile-nav-menu {
+    top: 48%;
+  }
+}
+
 @media screen and (max-width: 792px) {
   .main-content .main-content-section:first-child {
     padding-top: 96px;
@@ -39,6 +45,12 @@ a:hover {
 
   .main-content .main-content-section:first-child {
     padding-top: 44px;
+  }
+
+  /* ----- Mobile nav menu ----- */
+  .mobile-nav-menu {
+    padding-top: 0;
+    top: 51.8%;
   }
 }
 
