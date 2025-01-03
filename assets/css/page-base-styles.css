@@ -450,4 +450,9 @@ h1 {
   .mobile-nav-menu li {
     width: 90%;
   }
+
+  .mobile-table-of-contents-link p, .mobile-nav-links a {
+    font-size: 16px;
+    /* color: red; */
+  }
 }
