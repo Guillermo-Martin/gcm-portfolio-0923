@@ -38,14 +38,18 @@ const init = () => {
 
 // ----- Do animation when page elements load -----
 // initial page load
-init();
+// init();
+window.addEventListener("pageshow", (event) => {
+  // console.log("pageshow, now i'll animate", event.persisted)
+  init();
+});
 
 // for if browser back/forward navigation is used with cached pages
-window.addEventListener("pageshow", (event) => {
-  if (event.persisted) { // <-- Ensures the page is coming from cache
-    init();
-  };
-});
+// window.addEventListener("pageshow", (event) => {
+//   if (event.persisted) { // <-- Ensures the page is coming from cache
+//     init();
+//   };
+// });
 
 
 // ---------- Portfolio links more info animation ----------
