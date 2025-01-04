@@ -1,5 +1,3 @@
-console.log("connected! to home");
-
 let mm = gsap.matchMedia();
 
 // ---------- Subheader typing effect ----------

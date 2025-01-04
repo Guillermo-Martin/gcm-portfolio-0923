@@ -1,5 +1,3 @@
-console.log("connected to kumiko music redesign!");
-
 // ---------- Page load animation function ----------
 const init = () => {
   gsap.timeline()

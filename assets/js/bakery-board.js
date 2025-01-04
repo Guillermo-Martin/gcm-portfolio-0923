@@ -1,5 +1,3 @@
-console.log("connected to bakery board");
-
 // ---------- Page load animation function ----------
 const init = () => {
   gsap.timeline()
@@ -1024,8 +1022,6 @@ const createParticipantTl = () => {
 for(let button of participantsButtons) {
   button.addEventListener("click", (event) => {
     // ----- create the participants modal -----
-    console.log(event.target.id);
-
     if(event.target.id === "study-participants-1") {
       // add class for styling
       galleryModalImagesContainer.classList.add("participants");

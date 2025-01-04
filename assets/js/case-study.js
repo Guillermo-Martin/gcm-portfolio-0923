@@ -8,8 +8,6 @@ let upArrow = document.getElementById("up-arrow");
 
 // ---------- Table of contents mobile functionality ----------
 tableOfContentsBtn.addEventListener("click", () => {
-  // alert("you clicked on the button!");
-
   // on click, show the menu
   tableOfContents.classList.toggle("show");
 
@@ -19,8 +17,6 @@ tableOfContentsBtn.addEventListener("click", () => {
 });
 
 // ---------- Table of contents link functionality ----------
-console.log(tableOfContentsLinks);
-
 // loop through the table of contents links and add an eventlistener
 for(let i = 0; i < tableOfContentsLinks.length; i++) {
   tableOfContentsLinks[i].addEventListener("click", () => {

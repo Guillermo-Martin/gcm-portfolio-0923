@@ -1,5 +1,3 @@
-console.log("connected to projects!!!");
-
 // ---------- Page load animation function ----------
 const init = () => {
   gsap.timeline()

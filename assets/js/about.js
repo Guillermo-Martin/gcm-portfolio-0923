@@ -1,5 +1,3 @@
-console.log("connected to about!!!");
-
 // ---------- Page load animation function ----------
 const init = () => {
   gsap.timeline()
