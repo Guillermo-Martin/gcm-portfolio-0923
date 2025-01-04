@@ -26,6 +26,7 @@ const typingEffect = (str) => {
 // ---------- Page load animation function ----------
 const init = () => {
   gsap.timeline()
+    .set(".homepage-hero-text", {clearProps: "all"})
     .from("body", {autoAlpha: 0})
     .from("h1", {opacity: 0, duration: 0.7})
     .from(".subheader", {opacity: 0, duration: 0.7}, "<1")
