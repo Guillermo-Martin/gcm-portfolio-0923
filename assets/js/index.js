@@ -27,6 +27,8 @@ const typingEffect = (str) => {
 const init = () => {
   gsap.timeline()
     .set(".homepage-hero-text", {clearProps: "all"})
+    .set(".portfolio-link-info", {clearProps: "all"}, "<")
+    .set(".footer", {clearProps: "all"}, "<")
     .from("body", {autoAlpha: 0})
     .from("h1", {opacity: 0, duration: 0.7})
     .from(".subheader", {opacity: 0, duration: 0.7}, "<1")
