@@ -53,6 +53,7 @@ window.addEventListener("pageshow", (event) => {
     // alert("pageshow event fired! Page loaded from cache.");
 
     // play the entrance animation
+    init();
   } else {
     console.log("pageshow triggered: Page loaded normally.");
     // alert("pageshow event fired! Page loaded normally.");
