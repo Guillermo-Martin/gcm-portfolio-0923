@@ -38,19 +38,20 @@ const init = () => {
 
 // ----- Do animation when page elements load -----
 // initial page load
-// init();
-window.addEventListener("pageshow", (event) => {
-  // console.log("pageshow, now i'll animate", event.persisted)
+init();
+
+// for handling navigation using the back/forward browser buttons
+window.addEventListener("popstate", (event) => {
+  // reset all elements that occurred from the page transition animation
+  gsap.set(".homepage-hero-text", { clearProps: "all" });
+  gsap.set(".portfolio-link-info", { clearProps: "all" });
+  gsap.set(".footer", { clearProps: "all" });
+  gsap.set(".portfolio-links li", { clearProps: "all" });
+  gsap.set(".portfolio-links a", { clearProps: "all" });
+
+  // play the entrance animation
   init();
 });
-
-// for if browser back/forward navigation is used with cached pages
-// window.addEventListener("pageshow", (event) => {
-//   if (event.persisted) { // <-- Ensures the page is coming from cache
-//     init();
-//   };
-// });
-
 
 // ---------- Portfolio links more info animation ----------
 // get portfolio lnks container and all portfolio links
@@ -105,6 +106,8 @@ const transitionTimeline = (event, elem1, elem2) => {
     })
     .to(`#transition-${targetId}`, {opacity: 0, y: -5, duration: 0.5, delay: 0.8})
     .call(() => {
+      // history.pushState({page: `${target}`}, "", `${target}`)
+
       window.location.href = target;
     });
 }
