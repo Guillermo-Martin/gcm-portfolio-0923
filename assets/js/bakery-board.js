@@ -23,15 +23,6 @@ mm.add("(min-width: 993px)", () => {
     // console.log("pageshow, now i'll animate", event.persisted)
     init();
   });
-
-  // for if browser back/forward navigation is used with cached pages
-  // window.addEventListener("pageshow", (event) => {
-  //   console.log(event.persisted);
-  //   if (event.persisted) { // <-- Ensures the page is coming from cache
-  //     alert("hello");
-  //     init();
-  //   };
-  // });
 });
 
 

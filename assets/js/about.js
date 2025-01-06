@@ -21,13 +21,6 @@ mm.add("(min-width: 993px)", () => {
     // console.log("pageshow, now i'll animate", event.persisted)
     init();
   });
-
-  // for if browser back/forward navigation is used with cached pages
-  // window.addEventListener("pageshow", (event) => {
-  //   if (event.persisted) { // <-- Ensures the page is coming from cache
-  //     init();
-  //   };
-  // });
 });
 
 // ---------- Navbar links page transition animations ----------

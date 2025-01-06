@@ -53,7 +53,6 @@ let isMobileMenuOpen = false;
 // ----- Mobile menu close animation -----
 let tl = gsap.timeline({ paused: true, duration: 0.1 });
   tl
-    // .call(() => {alert("working")})
     .to(".sidenav-text-container", {opacity: 0, duration: 0.2})
     .to(".hamburger-icon", {opacity: 0, scale: 0, duration: 0.2}, "<")
     .set(".hamburger-icon", {display: "none"})

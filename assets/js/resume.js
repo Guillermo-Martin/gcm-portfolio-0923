@@ -22,13 +22,6 @@ mm.add("(min-width: 993px)", () => {
     // initial page load
     init();
   });
-
-  // for if browser back/forward navigation is used with cached pages
-  // window.addEventListener("pageshow", (event) => {
-  //   if (event.persisted) { // <-- Ensures the page is coming from cache
-  //     init();
-  //   };
-  // });
 });
 
 
