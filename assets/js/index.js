@@ -38,20 +38,26 @@ const init = () => {
 
 // ----- Do animation when page elements load -----
 // initial page load
-init();
+// init();
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) {
+    console.log("pageshow triggered: Page loaded from cache.");
+    alert("pageshow event fired! Page loaded from cache.");
+  } else {
+    console.log("pageshow triggered: Page loaded normally.");
+    alert("pageshow event fired! Page loaded normally.");
+  }
 
-// for handling navigation using the back/forward browser buttons
-window.addEventListener("popstate", (event) => {
-  // reset all elements that occurred from the page transition animation
-  gsap.set(".homepage-hero-text", { clearProps: "all" });
-  gsap.set(".portfolio-link-info", { clearProps: "all" });
-  gsap.set(".footer", { clearProps: "all" });
-  gsap.set(".portfolio-links li", { clearProps: "all" });
-  gsap.set(".portfolio-links a", { clearProps: "all" });
-
-  // play the entrance animation
+  // console.log("pageshow, now i'll animate", event.persisted)
   init();
 });
+
+// for if browser back/forward navigation is used with cached pages
+// window.addEventListener("pageshow", (event) => {
+//   if (event.persisted) { // <-- Ensures the page is coming from cache
+//     init();
+//   };
+// });
 
 // ---------- Portfolio links more info animation ----------
 // get portfolio lnks container and all portfolio links
