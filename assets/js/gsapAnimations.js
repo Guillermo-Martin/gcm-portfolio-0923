@@ -110,7 +110,8 @@ mm.add("(max-width: 992px)", () => {
     mobileNavMenu.classList.remove("hide");
 
     // play the mobile menu animation
-    tl.play();
+    // tl.play();
+    tl.restart();
 
     console.log("after the play animation");
 
