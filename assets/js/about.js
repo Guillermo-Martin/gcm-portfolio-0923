@@ -121,6 +121,7 @@ mm.add("(max-width: 992px)", () => {
       mobileNavMenu.classList.add("hide");
       gsap.set(".mobile-nav-links h2", { clearProps: "all" });
       gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
+      gsap.set(".mobile-nav-menu li", { clearProps: "all" });
       gsap.set(".social-links", { clearProps: "all" });
       gsap.set(".mobile-nav-icon", { clearProps: "all" });
       gsap.set(".main-content", { clearProps: "all" });
@@ -129,6 +130,7 @@ mm.add("(max-width: 992px)", () => {
       gsap.set(".sidenav-text-container", { clearProps: "all" });
       gsap.set(".mobile-nav-menu", { clearProps: "all" });
       gsap.set("body", { clearProps: "all" });
+      gsap.set("a", { clearProps: "all" });
 
       // play the entrance animation
       mobileInit();

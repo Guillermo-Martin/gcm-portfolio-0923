@@ -105,11 +105,14 @@ window.addEventListener('resize', () => {
 mm.add("(max-width: 992px)", () => {
   // ----- hamburger icon -----
   hamburgerIcon.addEventListener("click", function() {
+    console.log("in the mobile menu animation function")
     // remove the "hide" class
     mobileNavMenu.classList.remove("hide");
 
     // play the mobile menu animation
     tl.play();
+
+    console.log("after the play animation");
 
     // prevent user from scrolling when the menu is up
     body.style.overflow = "hidden";
