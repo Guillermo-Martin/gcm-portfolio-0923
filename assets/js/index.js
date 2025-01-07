@@ -37,12 +37,10 @@ const init = () => {
 };
 
 // ----- Do animation when page elements load -----
-// initial page load
-// init();
+// See if page is being loaded from cache.  If so, reset all elements from the page transition animation
+// then play the entrance animation.
 window.addEventListener("pageshow", (event) => {
   if (event.persisted) {
-    console.log("pageshow triggered: Page loaded from cache.");
-
     // reset all elements to initial state
     gsap.set(".homepage-hero-text", { clearProps: "all" });
     gsap.set(".portfolio-link-info", { clearProps: "all" });
@@ -50,28 +48,13 @@ window.addEventListener("pageshow", (event) => {
     gsap.set(".portfolio-links li", { clearProps: "all" });
     gsap.set(".portfolio-links a", { clearProps: "all" });
 
-    // alert("pageshow event fired! Page loaded from cache.");
-
     // play the entrance animation
     init();
   } else {
-    console.log("pageshow triggered: Page loaded normally.");
-    // alert("pageshow event fired! Page loaded normally.");
-
-    // play the entrance animation
+    // Otherwise, play the page entrance animation.
     init();
-  }
-
-  // console.log("pageshow, now i'll animate", event.persisted)
-  
+  };
 });
-
-// for if browser back/forward navigation is used with cached pages
-// window.addEventListener("pageshow", (event) => {
-//   if (event.persisted) { // <-- Ensures the page is coming from cache
-//     init();
-//   };
-// });
 
 // ---------- Portfolio links more info animation ----------
 // get portfolio lnks container and all portfolio links

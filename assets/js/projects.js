@@ -14,30 +14,23 @@ const init = () => {
 }
 
 // ----- Do animation when page elements load -----
-// window.addEventListener("load", () => {
-  window.addEventListener("pageshow", (event) => {
-    if(event.persisted) {
-      console.log("pageshow triggered: Page loaded from cache.");
+// See if page is being loaded from cache.  If so, reset all elements from the page transition animation
+// then play the entrance animation.
+window.addEventListener("pageshow", (event) => {
+  if(event.persisted) {
+    // reset all elements to initial state
+    gsap.set(".sidenav-content", { clearProps: "all" });
+    gsap.set(".main-content", { clearProps: "all" });
+    gsap.set(".footer", { clearProps: "all" });
+    gsap.set(".navbar li", { clearProps: "all" });
+    gsap.set(".navbar a", { clearProps: "all" });
 
-      // reset all elements to initial state
-      gsap.set(".sidenav-content", { clearProps: "all" });
-      gsap.set(".main-content", { clearProps: "all" });
-      gsap.set(".footer", { clearProps: "all" });
-      gsap.set(".navbar li", { clearProps: "all" });
-      gsap.set(".navbar a", { clearProps: "all" });
-
-      // play the entrance animation
-      init();
-    } else {
-      console.log("pageshow triggered: Page loaded normally.");
-
-      // play the entrance animation
-      init();
-    }
-  
-  // console.log("pageshow, now i'll animate", event.persisted)
-  // initial page load
-  // init();
+    // play the entrance animation
+    init();
+  } else {
+    // Otherwise, play the page entrance animation.
+    init();
+  };
 });
 
 
