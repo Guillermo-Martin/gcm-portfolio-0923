@@ -119,6 +119,17 @@ mm.add("(max-width: 992px)", () => {
       console.log("pageshow triggered: Page loaded from cache.");
 
       // reset all elements to initial state
+      mobileNavMenu.classList.add("hide");
+      gsap.set(".mobile-nav-links h2", { clearProps: "all" });
+      gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
+      gsap.set(".social-links", { clearProps: "all" });
+      gsap.set(".mobile-nav-icon", { clearProps: "all" });
+      gsap.set(".main-content", { clearProps: "all" });
+      gsap.set(".mobile-nav-links a", { clearProps: "all" });
+      gsap.set(".sidenav", { clearProps: "all" });
+      gsap.set(".sidenav-text-container", { clearProps: "all" });
+      gsap.set(".mobile-nav-menu", { clearProps: "all" });
+      gsap.set("body", { clearProps: "all" });
 
       // play the entrance animation
       mobileInit();
