@@ -24,6 +24,7 @@ window.addEventListener("pageshow", (event) => {
     gsap.set(".footer", { clearProps: "all" });
     gsap.set(".navbar li", { clearProps: "all" });
     gsap.set(".navbar a", { clearProps: "all" });
+    gsap.set(".button-container a", { clearProps: "all" });
 
     // play the entrance animation
     init();
