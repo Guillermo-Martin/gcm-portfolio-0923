@@ -126,7 +126,9 @@ mm.add("(max-width: 992px)", () => {
       gsap.set(".main-content", { clearProps: "all" });
       gsap.set(".mobile-nav-links a", { clearProps: "all" });
       gsap.set(".sidenav", { clearProps: "all" });
-      gsap.set(".body", { clearProps: "all" });
+      gsap.set(".sidenav-text-container", { clearProps: "all" });
+      gsap.set(".mobile-nav-menu", { clearProps: "all" });
+      gsap.set("body", { clearProps: "all" });
 
       // play the entrance animation
       mobileInit();
