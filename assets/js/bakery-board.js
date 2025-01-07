@@ -20,8 +20,27 @@ mm.add("(min-width: 993px)", () => {
   // initial page load
   // window.addEventListener("load", () => {
   window.addEventListener("pageshow", (event) => {
+    if(event.persisted) {
+      console.log("pageshow triggered: Page loaded from cache.");
+
+      // reset all elements to initial state
+      gsap.set(".sidenav-content", { clearProps: "all" });
+      gsap.set(".main-content", { clearProps: "all" });
+      gsap.set(".footer", { clearProps: "all" });
+      gsap.set(".navbar li", { clearProps: "all" });
+      gsap.set(".navbar a", { clearProps: "all" });
+
+      // play the entrance animation
+      init();
+    } else {
+      console.log("pageshow triggered: Page loaded normally.");
+
+      // play the entrance animation
+      init();
+    }
+  
     // console.log("pageshow, now i'll animate", event.persisted)
-    init();
+    // init();
   });
 });
 
