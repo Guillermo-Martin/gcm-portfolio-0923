@@ -96,7 +96,16 @@ navbarContainer.addEventListener("click", (event) => {
 
 // ---------- page load animation at 992px and below ----------
 mm.add("(max-width: 992px)", () => {
-  window.addEventListener("load", () => {
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+      console.log("pageshow triggered: Page loaded from cache.");
+      alert("pageshow event fired! Page loaded from cache.");
+    } else {
+      console.log("pageshow triggered: Page loaded normally.");
+      alert("pageshow event fired! Page loaded normally.");
+    }
+
+    // timeline
     gsap.timeline()
     .from("body", {autoAlpha: 0})
     .set("body", {overflow: "hidden"})
