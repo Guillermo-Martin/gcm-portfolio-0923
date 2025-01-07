@@ -116,13 +116,31 @@ for(let button of uxButtons) {
 // ---------- page load animation at 992px and below ----------
 // ----- Mobile page load animation function -----
 mm.add("(max-width: 992px", () => {
+  // See if page is being loaded from cache.  If so, reset all elements from the page transition animation
+  // then play the entrance animation.
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
       console.log("pageshow triggered: Page loaded from cache.");
-      alert("pageshow event fired! Page loaded from cache.");
+      // alert("pageshow event fired! Page loaded from cache.");
+
+      // reset all elements to initial state
+      gsap.set(".mobile-nav-links h2", { clearProps: "all" });
+      gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
+      gsap.set(".social-links", { clearProps: "all" });
+      gsap.set(".mobile-nav-icon", { clearProps: "all" });
+      gsap.set(".main-content", { clearProps: "all" });
+      gsap.set(".mobile-nav-links a", { clearProps: "all" });
+      gsap.set(".sidenav", { clearProps: "all" });
+      gsap.set(".body", { clearProps: "all" });
+
+      // play the entrance animation
+      init();
     } else {
       console.log("pageshow triggered: Page loaded normally.");
-      alert("pageshow event fired! Page loaded normally.");
+      // alert("pageshow event fired! Page loaded normally.");
+
+       // Otherwise, play the entrance animation
+       init();
     }
   });
 });
