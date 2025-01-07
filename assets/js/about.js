@@ -119,6 +119,14 @@ mm.add("(max-width: 992px)", () => {
       // alert("pageshow event fired! Page loaded from cache.");
 
       // reset all elements to initial state
+      gsap.set(".mobile-nav-links h2", { clearProps: "all" });
+      gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
+      gsap.set(".social-links", { clearProps: "all" });
+      gsap.set(".mobile-nav-icon", { clearProps: "all" });
+      gsap.set(".main-content", { clearProps: "all" });
+      gsap.set(".mobile-nav-links a", { clearProps: "all" });
+      gsap.set(".sidenav", { clearProps: "all" });
+      gsap.set(".body", { clearProps: "all" });
 
       // play the entrance animation
       mobileInit();
