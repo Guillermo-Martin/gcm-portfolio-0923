@@ -25,6 +25,7 @@ mm.add("(min-width: 993px)", () => {
       gsap.set(".footer", { clearProps: "all" });
       gsap.set(".navbar li", { clearProps: "all" });
       gsap.set(".navbar a", { clearProps: "all" });
+      gsap.set("a", { clearProps: "all" });
 
       // play the entrance animation
       init();
