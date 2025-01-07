@@ -16,22 +16,24 @@ const init = () => {
 // ----- Do animation when page elements load -----
 // See if page is being loaded from cache.  If so, reset all elements from the page transition animation
 // then play the entrance animation.
-window.addEventListener("pageshow", (event) => {
-  if(event.persisted) {
-    // reset all elements to initial state
-    gsap.set(".sidenav-content", { clearProps: "all" });
-    gsap.set(".main-content", { clearProps: "all" });
-    gsap.set(".footer", { clearProps: "all" });
-    gsap.set(".navbar li", { clearProps: "all" });
-    gsap.set(".navbar a", { clearProps: "all" });
-    gsap.set("a", { clearProps: "all" });
-
-    // play the entrance animation
-    init();
-  } else {
-    // Otherwise, play the page entrance animation.
-    init();
-  };
+mm.add("(min-width: 993px", () => {
+  window.addEventListener("pageshow", (event) => {
+    if(event.persisted) {
+      // reset all elements to initial state
+      gsap.set(".sidenav-content", { clearProps: "all" });
+      gsap.set(".main-content", { clearProps: "all" });
+      gsap.set(".footer", { clearProps: "all" });
+      gsap.set(".navbar li", { clearProps: "all" });
+      gsap.set(".navbar a", { clearProps: "all" });
+      gsap.set("a", { clearProps: "all" });
+  
+      // play the entrance animation
+      init();
+    } else {
+      // Otherwise, play the page entrance animation.
+      init();
+    };
+  });
 });
 
 
@@ -110,3 +112,17 @@ for(let button of uxButtons) {
       })
   });
 };
+
+// ---------- page load animation at 992px and below ----------
+// ----- Mobile page load animation function -----
+mm.add("(max-width: 992px", () => {
+  window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+      console.log("pageshow triggered: Page loaded from cache.");
+      alert("pageshow event fired! Page loaded from cache.");
+    } else {
+      console.log("pageshow triggered: Page loaded normally.");
+      alert("pageshow event fired! Page loaded normally.");
+    }
+  });
+});
