@@ -121,7 +121,6 @@ mm.add("(max-width: 992px", () => {
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
       console.log("pageshow triggered: Page loaded from cache.");
-      // alert("pageshow event fired! Page loaded from cache.");
 
       // reset all elements to initial state
       gsap.set(".mobile-nav-links h2", { clearProps: "all" });
@@ -137,10 +136,9 @@ mm.add("(max-width: 992px", () => {
       init();
     } else {
       console.log("pageshow triggered: Page loaded normally.");
-      // alert("pageshow event fired! Page loaded normally.");
 
        // Otherwise, play the entrance animation
        init();
-    }
+    };
   });
 });

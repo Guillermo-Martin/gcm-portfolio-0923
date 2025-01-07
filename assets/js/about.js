@@ -116,7 +116,6 @@ mm.add("(max-width: 992px)", () => {
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
       console.log("pageshow triggered: Page loaded from cache.");
-      // alert("pageshow event fired! Page loaded from cache.");
 
       // reset all elements to initial state
       mobileNavMenu.classList.add("hide");
@@ -135,24 +134,10 @@ mm.add("(max-width: 992px)", () => {
       mobileInit();
     } else {
       console.log("pageshow triggered: Page loaded normally.");
-      // alert("pageshow event fired! Page loaded normally.");
 
       // Otherwise, play the entrance animation
       mobileInit();
-    }
-
-    // timeline
-    // gsap.timeline()
-    // .from("body", {autoAlpha: 0})
-    // .set("body", {overflow: "hidden"})
-    // .from("h1", {opacity: 0, y: 10, duration: 0.7})
-    // .from(".table-of-contents li", {opacity: 0, x: -10, stagger: 0.1, duration: 1}, "<1")
-    // .from(".current-section", {opacity: 0, y: 10, duration: 0.7})
-    // .from(".main-content-section", {opacity: 0, stagger: 0.1, duration: 1})
-    // .from(".mobile-nav-icon", {opacity: 0, pointerEvents: "none", duration: 0.7}, "<")
-    // .from(".footer", {opacity: 0, duration: 1}, "<")
-    // .from(".table-of-contents li", {pointerEvents: "none"}, "<")
-    // .set("body", {overflow: "scroll"}, "<")
+    };
   });
 });
 

@@ -114,11 +114,9 @@ const mobileInit = () => {
 mm.add("(max-width: 992px)", () => {
   // See if page is being loaded from cache.  If so, reset all elements from the page transition animation
   // then play the entrance animation.
-  // window.addEventListener("load", () => {
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
       console.log("pageshow triggered: Page loaded from cache.");
-      // alert("pageshow event fired! Page loaded from cache.");
 
       // reset all elements to initial state
 
@@ -126,11 +124,10 @@ mm.add("(max-width: 992px)", () => {
       mobileInit();
     } else {
       console.log("pageshow triggered: Page loaded normally.");
-      // alert("pageshow event fired! Page loaded normally.");
 
       // Otherwise, play the entrance animation
       mobileInit();
-    }
+    };
   });
 });
 
