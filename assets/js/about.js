@@ -119,6 +119,7 @@ mm.add("(max-width: 992px)", () => {
       // alert("pageshow event fired! Page loaded from cache.");
 
       // reset all elements to initial state
+      mobileNavMenu.classList.add("hide");
       gsap.set(".mobile-nav-links h2", { clearProps: "all" });
       gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
       gsap.set(".social-links", { clearProps: "all" });
