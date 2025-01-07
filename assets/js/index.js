@@ -47,6 +47,7 @@ window.addEventListener("pageshow", (event) => {
     gsap.set(".footer", { clearProps: "all" });
     gsap.set(".portfolio-links li", { clearProps: "all" });
     gsap.set(".portfolio-links a", { clearProps: "all" });
+    gsap.set("a", { clearProps: "all" });
 
     // play the entrance animation
     init();
@@ -55,6 +56,7 @@ window.addEventListener("pageshow", (event) => {
     init();
   };
 });
+
 
 // ---------- Portfolio links more info animation ----------
 // get portfolio lnks container and all portfolio links

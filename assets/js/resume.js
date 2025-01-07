@@ -12,7 +12,7 @@ const init = () => {
     .from(".mobile-nav-icon", {opacity: 0, pointerEvents: "none", duration: 0.7}, "<")
     .from(".footer", {opacity: 0, duration: 1}, "<")
     .set("body", {overflow: "scroll"}, "<")
-}
+};
 
 // ----- Do animation when page elements load -----
 mm.add("(min-width: 993px)", () => {
