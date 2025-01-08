@@ -110,7 +110,8 @@ mm.add("(max-width: 992px)", () => {
     if (event.persisted) {
       console.log("pageshow triggered: Page loaded from cache.");
       // alert("pageshow event fired! Page loaded from cache.");
-      tl.reverse(0.7);
+      // tl.reverse(0.7);
+      tl.reverse(tl.duration());
     } else {
       console.log("pageshow triggered: Page loaded normally.");
       // alert("pageshow event fired! Page loaded normally.");
