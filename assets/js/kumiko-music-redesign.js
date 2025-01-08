@@ -107,7 +107,8 @@ navbarContainer.addEventListener("click", (event) => {
 
 // ---------- page load animation at 992px and below ----------
 // ----- Mobile page load animation function -----
-gsap.timeline()
+const mobileInit = () => {
+  gsap.timeline()
   .from("body", {autoAlpha: 0})
   .to("body", {backgroundColor: "#000", duration: 1})
   .to(".sidenav", {backgroundColor: "#000", duration: 1}, "<")
@@ -120,6 +121,8 @@ gsap.timeline()
   .from(".footer", {opacity: 0, duration: 1}, "<")
   .from(".table-of-contents li", {pointerEvents: "none"}, "<")
   .set("body", {overflow: "scroll"}, "<")
+};
+
 
 mm.add("(max-width: 992px)", () => {
   // See if page is being loaded from cache.  If so, reset all elements from the page transition animation
