@@ -105,19 +105,17 @@ window.addEventListener('resize', () => {
     
 // ---------- Mobile menu animation:  992px and below ----------
 mm.add("(max-width: 992px)", () => {
+  // See if page is being loaded from cache.  If so, reset all elements from the mobile menu animation.
   window.addEventListener("pageshow", (event) => {
-    // TESTING ---------------------------------------------------------
-    // if page loaded from cache, reverse the mobile menu animation so it closes
+    // if page loaded from cache, reset mobile nav elements
     if (event.persisted) {
       console.log("pageshow triggered: Page loaded from cache.");
-
-      // tl.reverse(0.7);
-      // tl.reverse(tl.duration());
 
       // reset all mobile nav elements to initial state
       gsap.set(".mobile-nav-links li", {opacity: 0, y: -8})
       gsap.set(".social-links", {opacity: 0, y: -8})
     } else {
+      // Otherwise, load the elements normally
       console.log("pageshow triggered: Page loaded normally.");
 
       // ----- hamburger icon -----
