@@ -104,6 +104,21 @@ window.addEventListener('resize', () => {
     
 // ---------- Mobile menu animation:  992px and below ----------
 mm.add("(max-width: 992px)", () => {
+  window.addEventListener("pageshow", (event) => {
+    // TESTING ---------------------------------------------------------
+    // if page loaded from cache, reverse the mobile menu animation so it closes
+    if (event.persisted) {
+      console.log("pageshow triggered: Page loaded from cache.");
+      // alert("pageshow event fired! Page loaded from cache.");
+      tl.reverse(0.7);
+    } else {
+      console.log("pageshow triggered: Page loaded normally.");
+      // alert("pageshow event fired! Page loaded normally.");
+    };
+  });
+
+  // ---------------------------------------------------------
+
   // ----- hamburger icon -----
   hamburgerIcon.addEventListener("click", function() {
     // remove the "hide" class
