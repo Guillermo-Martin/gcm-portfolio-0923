@@ -109,7 +109,7 @@ mm.add("(max-width: 992px)", () => {
     // if page loaded from cache, reverse the mobile menu animation so it closes
     if (event.persisted) {
       console.log("pageshow triggered: Page loaded from cache.");
-      // alert("pageshow event fired! Page loaded from cache.");
+
       // tl.reverse(0.7);
       tl.reverse(tl.duration());
     } else {
@@ -150,35 +150,6 @@ mm.add("(max-width: 992px)", () => {
 
   // ---------------------------------------------------------
 
-  // // ----- hamburger icon -----
-  // hamburgerIcon.addEventListener("click", function() {
-  //   // remove the "hide" class
-  //   // mobileNavMenu.classList.remove("hide");
-
-  //   // play the mobile menu animation
-  //   tl.restart();
-
-  //   // prevent user from scrolling when the menu is up
-  //   body.style.overflow = "hidden";
-
-  //   // for mobile menu resizing bug
-  //   isMobileMenuOpen = true;
-  // });
-
-  // // ----- close icon -----
-  // closeIcon.addEventListener("click", function() {
-  //   // add the "hide" class
-  //   // mobileNavMenu.classList.add("hide");
-
-  //   // reverse the mobile menu animation
-  //   tl.reverse(0.7);
-
-  //   // resume scrolling when menu is hidden
-  //   body.style.overflow = "scroll";
-
-  //   // for mobile menu resizing bug
-  //   isMobileMenuOpen = false;
-  // });
 
   // -------------- mobile page transition implementation ---------------
   const mobileNavLinksContainer = document.querySelector(".mobile-nav-links");
