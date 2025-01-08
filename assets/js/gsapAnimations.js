@@ -60,6 +60,7 @@ let tl = gsap.timeline({ paused: true, duration: 0.1 });
     .from(".close-icon", {opacity: 0, scale: 0, duration: 0.2}, "<")
     .set(".mobile-nav-menu", {display: "flex"}, "<")
     .from(".mobile-nav-menu", {height: 0, opacity: 0, duration: 0.2}, "<")
+    // maybe add a "call function" to remove the hide class here
     .from(".mobile-nav-links li", {opacity: 0, y: -8, stagger: 0.05, duration: 0.9}, "<")
     .from(".social-links", {opacity: 0, y: -8, duration: 1}, "<0.6")
 
@@ -106,7 +107,7 @@ mm.add("(max-width: 992px)", () => {
   // ----- hamburger icon -----
   hamburgerIcon.addEventListener("click", function() {
     // remove the "hide" class
-    mobileNavMenu.classList.remove("hide");
+    // mobileNavMenu.classList.remove("hide");
 
     // play the mobile menu animation
     tl.restart();
@@ -121,7 +122,7 @@ mm.add("(max-width: 992px)", () => {
   // ----- close icon -----
   closeIcon.addEventListener("click", function() {
     // add the "hide" class
-    mobileNavMenu.classList.add("hide");
+    // mobileNavMenu.classList.add("hide");
 
     // reverse the mobile menu animation
     tl.reverse(0.7);
