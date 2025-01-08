@@ -112,6 +112,10 @@ mm.add("(max-width: 992px)", () => {
 
       // tl.reverse(0.7);
       // tl.reverse(tl.duration());
+
+      // reset all mobile nav elements to initial state
+      gsap.set(".mobile-nav-links li", {opacity: 0, y: -8})
+      gsap.set(".social-links", {opacity: 0, y: -8})
     } else {
       console.log("pageshow triggered: Page loaded normally.");
 
