@@ -114,7 +114,6 @@ mm.add("(max-width: 992px)", () => {
       // tl.reverse(tl.duration());
     } else {
       console.log("pageshow triggered: Page loaded normally.");
-      // alert("pageshow event fired! Page loaded normally.");
 
       // ----- hamburger icon -----
       hamburgerIcon.addEventListener("click", function() {
