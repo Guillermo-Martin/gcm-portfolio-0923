@@ -117,8 +117,6 @@ mm.add("(max-width: 992px)", () => {
   // then play the entrance animation.
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
-      console.log("pageshow triggered: Page loaded from cache.");
-
       // reset all elements to initial state
       mobileNavMenu.classList.add("hide");
       gsap.set(".mobile-nav-links h2", { clearProps: "all" });
@@ -137,8 +135,6 @@ mm.add("(max-width: 992px)", () => {
       // play the entrance animation
       mobileInit();
     } else {
-      console.log("pageshow triggered: Page loaded normally.");
-
       // Otherwise, play the entrance animation
       mobileInit();
     };
