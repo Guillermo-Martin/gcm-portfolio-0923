@@ -26,6 +26,7 @@ mm.add("(min-width: 993px)", () => {
   // then play the entrance animation.
   window.addEventListener("pageshow", (event) => {
     if(event.persisted) {
+      console.log("desktop page loaded from cache");
       // TEST - if animation is still going, complete it
       if(desktopTimeline && desktopTimeline.isActive()) {
         console.log("The desktop timeline is active!");
@@ -70,9 +71,10 @@ mm.add("(min-width: 993px)", () => {
       // play the entrance animation
       // init();
     } else {
+      console.log("desktop page loaded normally.")
       // Otherwise, play the page entrance animation.
       // init();
-      desktopTimeline.play();
+      desktopTimeline.restart();
     };
   });
 });
