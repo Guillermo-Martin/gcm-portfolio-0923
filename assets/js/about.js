@@ -26,18 +26,18 @@ mm.add("(min-width: 993px)", () => {
   // then play the entrance animation.
   window.addEventListener("pageshow", (event) => {
     if(event.persisted) {
-      console.log("desktop page loaded from cache");
+      // console.log("desktop page loaded from cache");
 
       // ---------------- TEST -----------------------
       // TEST - Check to see if the animation is active or not.  If the desktop animation is active, complete it
       if(desktopTimeline && desktopTimeline.isActive()) {
-        console.log("The desktop timeline is active!");
+        // console.log("The desktop timeline is active!");
 
         // complete animation
         desktopTimeline.progress(1);
       };
 
-      console.log("The desktop timeline is not active!  I'll reset the elements and restart the animation.");
+      // console.log("The desktop timeline is not active!  I'll reset the elements and restart the animation.");
       // ---------------------------------------------
 
       // reset all elements to initial state
@@ -118,9 +118,13 @@ navbarContainer.addEventListener("click", (event) => {
 
 // ---------- page load animation at 992px and below ----------
 // ----- Mobile page load animation function -----
+let mobileTimeline; // TEST
+
 const mobileInit = () => {
-  console.log("in mobile init")
-  gsap.timeline()
+  console.log("in mobile init");  // TEST
+
+  // gsap.timeline()
+  mobileTimeline = gsap.timeline() // TEST
     .from("body", {autoAlpha: 0})
     .set("body", {overflow: "hidden"})
     .from("h1", {opacity: 0, y: 10, duration: 0.7})
@@ -132,34 +136,46 @@ const mobileInit = () => {
     .from(".footer", {opacity: 0, duration: 1}, "<")
     .from(".table-of-contents li", {pointerEvents: "none"}, "<")
     .set("body", {overflow: "scroll"}, "<")
+
+  return mobileTimeline; // TEST
 };
 
-
+// ----- Do animation when page elements load -----
 mm.add("(max-width: 992px)", () => {
   // See if page is being loaded from cache.  If so, reset all elements from the page transition animation
   // then play the entrance animation.
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
-     
-        // reset all the elements
-        mobileNavMenu.classList.add("hide");
-        gsap.set(".mobile-nav-links h2", { clearProps: "all" });
-        gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
-        gsap.set(".mobile-nav-menu li", { clearProps: "all" });
-        gsap.set(".social-links", { clearProps: "all" });
-        gsap.set(".mobile-nav-icon", { clearProps: "all" });
-        gsap.set(".main-content", { clearProps: "all" });
-        gsap.set(".mobile-nav-links a", { clearProps: "all" });
-        gsap.set(".sidenav", { clearProps: "all" });
-        gsap.set(".sidenav-text-container", { clearProps: "all" });
-        gsap.set(".mobile-nav-menu", { clearProps: "all" });
-        gsap.set("body", { clearProps: "all" });
-        gsap.set("a", { clearProps: "all" });
+      // ------------- TEST ------------------
+      // TEST - Check to see if the animation is active or not.  If the mobile animation is active, complete it
+      if(mobileTimeline && mobileTimeline.isActive()) {
+        console.log("The mobile timeline is active!");
 
-        
-        mobileInit();
-      } 
-     else {
+        // complete animation
+        mobileTimeline.progress(1)
+      };
+
+      console.log("The mobile timeline is not active!  I'll reset the elements and restart the animation.");
+      // -------------------------------------
+
+      // reset all the elements
+      mobileNavMenu.classList.add("hide");
+      gsap.set(".mobile-nav-links h2", { clearProps: "all" });
+      gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
+      gsap.set(".mobile-nav-menu li", { clearProps: "all" });
+      gsap.set(".social-links", { clearProps: "all" });
+      gsap.set(".mobile-nav-icon", { clearProps: "all" });
+      gsap.set(".main-content", { clearProps: "all" });
+      gsap.set(".mobile-nav-links a", { clearProps: "all" });
+      gsap.set(".sidenav", { clearProps: "all" });
+      gsap.set(".sidenav-text-container", { clearProps: "all" });
+      gsap.set(".mobile-nav-menu", { clearProps: "all" });
+      gsap.set("body", { clearProps: "all" });
+      gsap.set("a", { clearProps: "all" });
+
+      // play the entrance animation  
+      mobileInit();
+    } else {
       // Otherwise, play the entrance animation
       mobileInit();
     };
