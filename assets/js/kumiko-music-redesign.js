@@ -128,29 +128,49 @@ navbarContainer.addEventListener("click", (event) => {
 
 // ---------- page load animation at 992px and below ----------
 // ----- Mobile page load animation function -----
+let mobileTimeline; // TEST
+
 const mobileInit = () => {
-  gsap.timeline()
-  .from("body", {autoAlpha: 0})
-  .to("body", {backgroundColor: "#000", duration: 1})
-  .to(".sidenav", {backgroundColor: "#000", duration: 1}, "<")
-  .set("body", {overflow: "hidden"})
-  .from("h1", {opacity: 0, y: 10, duration: 0.7})
-  .from(".table-of-contents li", {opacity: 0, x: -10, stagger: 0.1, duration: 1}, "<1")
-  .from(".current-section", {opacity: 0, y: 10, duration: 0.7})
-  .from(".main-content", {opacity: 0, duration: 0.7}, "<")
-  .from(".main-content-section", {opacity: 0, stagger: 0.1, duration: 1})
-  .from(".mobile-nav-icon", {opacity: 0, pointerEvents: "none", duration: 0.7}, "<")
-  .from(".footer", {opacity: 0, duration: 1}, "<")
-  .from(".table-of-contents li", {pointerEvents: "none"}, "<")
-  .set("body", {overflow: "scroll"}, "<")
+  console.log("in mobile init");  // TEST
+
+  // gsap.timeline()
+  mobileTimeline = gsap.timeline() // TEST
+    .from("body", {autoAlpha: 0})
+    .to("body", {backgroundColor: "#000", duration: 1})
+    .to(".sidenav", {backgroundColor: "#000", duration: 1}, "<")
+    .set("body", {overflow: "hidden"})
+    .from("h1", {opacity: 0, y: 10, duration: 0.7})
+    .from(".table-of-contents li", {opacity: 0, x: -10, stagger: 0.1, duration: 1}, "<1")
+    .from(".current-section", {opacity: 0, y: 10, duration: 0.7})
+    .from(".main-content", {opacity: 0, duration: 0.7}, "<")
+    .from(".main-content-section", {opacity: 0, stagger: 0.1, duration: 1})
+    .from(".mobile-nav-icon", {opacity: 0, pointerEvents: "none", duration: 0.7}, "<")
+    .from(".footer", {opacity: 0, duration: 1}, "<")
+    .from(".table-of-contents li", {pointerEvents: "none"}, "<")
+    .set("body", {overflow: "scroll"}, "<")
+  
+  return mobileTimeline; // TEST
 };
 
-
+// ----- Do animation when page elements load -----
 mm.add("(max-width: 992px)", () => {
   // See if page is being loaded from cache.  If so, reset all elements from the page transition animation
   // then play the entrance animation.
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
+      // ------------- TEST ------------------
+      // TEST - Check to see if the animation is active or not.  If the mobile animation is active, complete it
+      if(mobileTimeline && mobileTimeline.isActive()) {
+        console.log("The mobile timeline is active!");
+
+        // complete animation
+        mobileTimeline.progress(1)
+      };
+
+      console.log("The mobile timeline is not active!  I'll reset the elements and restart the animation.");
+      // -------------------------------------
+
+
       // reset all elements to initial state
       mobileNavMenu.classList.add("hide");
       gsap.set(".mobile-nav-links h2", { clearProps: "all" });
