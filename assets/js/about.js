@@ -116,6 +116,11 @@ mm.add("(max-width: 992px)", () => {
   // then play the entrance animation.
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
+      // TEST - if animation is still going, complete it
+      if(mobileInit.isActive()) {
+        mobileInit.progress(1);
+      };
+
       // reset all elements to initial state
       mobileNavMenu.classList.add("hide");
       gsap.set(".mobile-nav-links h2", { clearProps: "all" });
