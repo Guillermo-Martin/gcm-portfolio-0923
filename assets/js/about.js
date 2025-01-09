@@ -96,8 +96,10 @@ navbarContainer.addEventListener("click", (event) => {
 
 // ---------- page load animation at 992px and below ----------
 // ----- Mobile page load animation function -----
+let mobileActiveTimeline = null;
+
 const mobileInit = () => {
-  gsap.timeline()
+  const mobileNavTimeline = gsap.timeline()
     .from("body", {autoAlpha: 0})
     .set("body", {overflow: "hidden"})
     .from("h1", {opacity: 0, y: 10, duration: 0.7})
@@ -109,6 +111,10 @@ const mobileInit = () => {
     .from(".footer", {opacity: 0, duration: 1}, "<")
     .from(".table-of-contents li", {pointerEvents: "none"}, "<")
     .set("body", {overflow: "scroll"}, "<")
+  
+  mobileActiveTimeline = mobileNavTimeline;
+
+  return mobileNavTimeline;
 };
 
 mm.add("(max-width: 992px)", () => {
@@ -117,8 +123,8 @@ mm.add("(max-width: 992px)", () => {
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
       // TEST - if animation is still going, complete it
-      if(mobileInit.isActive()) {
-        mobileInit.progress(1);
+      if(mobileActiveTimeline && mobileActiveTimeline.isActive()) {
+        mobileActiveTimeline.progress(1);
       };
 
       // reset all elements to initial state
@@ -137,10 +143,11 @@ mm.add("(max-width: 992px)", () => {
       gsap.set("a", { clearProps: "all" });
 
       // play the entrance animation
-      mobileInit();
+      // mobileInit();
+      mobileActiveTimeline();
     } else {
       // Otherwise, play the entrance animation
-      mobileInit();
+      mobileActiveTimeline();
     };
   });
 });
