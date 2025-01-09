@@ -95,11 +95,11 @@ navbarContainer.addEventListener("click", (event) => {
 });
 
 // ---------- page load animation at 992px and below ----------
-// ----- Mobile page load animation function -----
-let mobileActiveTimeline = null;
+let mobileTimeline; // TEST
 
+// ----- Mobile page load animation function -----
 const mobileInit = () => {
-  const mobileNavTimeline = gsap.timeline()
+  mobileTimeline = gsap.timeline() // TEST
     .from("body", {autoAlpha: 0})
     .set("body", {overflow: "hidden"})
     .from("h1", {opacity: 0, y: 10, duration: 0.7})
@@ -111,11 +111,11 @@ const mobileInit = () => {
     .from(".footer", {opacity: 0, duration: 1}, "<")
     .from(".table-of-contents li", {pointerEvents: "none"}, "<")
     .set("body", {overflow: "scroll"}, "<")
-  
-  mobileActiveTimeline = mobileNavTimeline;
 
-  return mobileNavTimeline;
+  return mobileTimeline;  // TEST
 };
+
+mobileInit();  // TEST
 
 mm.add("(max-width: 992px)", () => {
   // See if page is being loaded from cache.  If so, reset all elements from the page transition animation
@@ -123,8 +123,10 @@ mm.add("(max-width: 992px)", () => {
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
       // TEST - if animation is still going, complete it
-      if(mobileActiveTimeline && mobileActiveTimeline.isActive()) {
-        mobileActiveTimeline.progress(1);
+      if (mobileTimeline && mobileTimeline.isActive()) {
+        console.log("The mobile timeline is active!");
+      } else {
+        console.log("The mobile timeline is not active.");
       };
 
       // reset all elements to initial state
@@ -144,10 +146,11 @@ mm.add("(max-width: 992px)", () => {
 
       // play the entrance animation
       // mobileInit();
-      mobileActiveTimeline();
+      mobileTimeline.play();
     } else {
       // Otherwise, play the entrance animation
-      mobileActiveTimeline();
+      // mobileInit();
+      mobileTimeline.play();
     };
   });
 });
