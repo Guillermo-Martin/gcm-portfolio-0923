@@ -33,14 +33,11 @@ mm.add("(min-width: 993px)", () => {
       if(desktopTimeline && desktopTimeline.isActive()) {
         console.log("The desktop timeline is active!");
 
-       
-      } else {
-        console.log("The desktop timeline is not active!");
+        // TEST - if the animation is active, end it
+        desktopTimeline.progress(1);
+      }
 
-        
-      };
-
-
+      console.log("The desktop timeline is not active!  I'll reset the elements and restart the animation.");
 
 
       // ---------------------------------------------
