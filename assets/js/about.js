@@ -1,6 +1,8 @@
 // ---------- Page load animation function ----------
+let desktopTimeline; // TEST
+
 const init = () => {
-  gsap.timeline()
+  desktopTimeline = gsap.timeline() // TEST
     .set("body", {overflow: "hidden"})
     .from("body", {autoAlpha: 0}, "<")
     .from("h1", {opacity: 0, y: 10, duration: 0.7})
@@ -11,7 +13,12 @@ const init = () => {
     .from(".mobile-nav-icon", {opacity: 0, pointerEvents: "none", duration: 0.7}, "<")
     .from(".footer", {opacity: 0, duration: 1}, "<")
     .set("body", {overflow: "scroll"}, "<")
+
+  return desktopTimeline; // TEST
 };
+
+// Create the desktop timeline 
+init();
 
 // ----- Do animation when page elements load -----
 mm.add("(min-width: 993px)", () => {
@@ -19,19 +26,53 @@ mm.add("(min-width: 993px)", () => {
   // then play the entrance animation.
   window.addEventListener("pageshow", (event) => {
     if(event.persisted) {
+      // TEST - if animation is still going, complete it
+      if(desktopTimeline && desktopTimeline.isActive()) {
+        console.log("The desktop timeline is active!");
+
+        // end the current animation
+        desktopTimeline.progress(1);
+
+        // reset all elements
+        gsap.set(".sidenav-content", { clearProps: "all" });
+        gsap.set(".main-content", { clearProps: "all" });
+        gsap.set(".footer", { clearProps: "all" });
+        gsap.set(".navbar li", { clearProps: "all" });
+        gsap.set(".navbar a", { clearProps: "all" });
+        gsap.set("a", { clearProps: "all" });
+
+        // restart the animation
+        desktopTimeline.restart();
+      } else {
+        console.log("The desktop timeline is not active!");
+
+        // reset all elements
+        gsap.set(".sidenav-content", { clearProps: "all" });
+        gsap.set(".main-content", { clearProps: "all" });
+        gsap.set(".footer", { clearProps: "all" });
+        gsap.set(".navbar li", { clearProps: "all" });
+        gsap.set(".navbar a", { clearProps: "all" });
+        gsap.set("a", { clearProps: "all" });
+
+        // restart the animation
+        desktopTimeline.restart();
+      };
+
+
       // reset all elements to initial state
-      gsap.set(".sidenav-content", { clearProps: "all" });
-      gsap.set(".main-content", { clearProps: "all" });
-      gsap.set(".footer", { clearProps: "all" });
-      gsap.set(".navbar li", { clearProps: "all" });
-      gsap.set(".navbar a", { clearProps: "all" });
-      gsap.set("a", { clearProps: "all" });
+      // gsap.set(".sidenav-content", { clearProps: "all" });
+      // gsap.set(".main-content", { clearProps: "all" });
+      // gsap.set(".footer", { clearProps: "all" });
+      // gsap.set(".navbar li", { clearProps: "all" });
+      // gsap.set(".navbar a", { clearProps: "all" });
+      // gsap.set("a", { clearProps: "all" });
 
       // play the entrance animation
-      init();
+      // init();
     } else {
       // Otherwise, play the page entrance animation.
-      init();
+      // init();
+      desktopTimeline.play();
     };
   });
 });
