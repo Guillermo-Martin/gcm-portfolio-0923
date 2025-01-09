@@ -24,8 +24,13 @@ const typingEffect = (str) => {
 };
 
 // ---------- Page load animation function ----------
+let homepageTimeline; // TEST
+
 const init = () => {
-  gsap.timeline()
+  console.log("in init");  // TEST
+
+  // gsap.timeline()
+  homepageTimeline = gsap.timeline() // TEST
     .from("body", {autoAlpha: 0})
     .from("h1", {opacity: 0, duration: 0.7})
     .from(".subheader", {opacity: 0, duration: 0.7}, "<1")
@@ -34,6 +39,8 @@ const init = () => {
     .from(".portfolio-links li", {opacity: 0, stagger: 0.05, duration: 0.7}, "<")
     .from("a", {pointerEvents: "none"}, "<")
     .from(".footer", {opacity: 0, duration: 0.7})
+
+  return homepageTimeline; // TEST
 };
 
 // ----- Do animation when page elements load -----
@@ -41,6 +48,19 @@ const init = () => {
 // then play the entrance animation.
 window.addEventListener("pageshow", (event) => {
   if (event.persisted) {
+
+    // ---------------- TEST -----------------------
+    // TEST - Check to see if the animation is active or not.  If so, complete it
+    if(homepageTimeline && homepageTimeline.isActive()) {
+      console.log("The desktop timeline is active!");
+
+      // complete animation
+      homepageTimeline.progress(1);
+    };
+
+    console.log("The desktop timeline is not active!  I'll reset the elements and restart the animation.");
+    // ---------------------------------------------
+
     // reset all elements to initial state
     gsap.set(".homepage-hero-text", { clearProps: "all" });
     gsap.set(".portfolio-link-info", { clearProps: "all" });
