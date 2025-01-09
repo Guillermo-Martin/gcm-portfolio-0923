@@ -74,7 +74,7 @@ mm.add("(min-width: 993px)", () => {
       console.log("desktop page loaded normally.")
       // Otherwise, play the page entrance animation.
       // init();
-      desktopTimeline.restart();
+      desktopTimeline.play();
     };
   });
 });
