@@ -156,6 +156,7 @@ const mobileInit = () => {
   return mobileTimeline;  // TEST
 };
 
+// Create the mobile timeline
 mobileInit();  // TEST
 
 mm.add("(max-width: 992px)", () => {
