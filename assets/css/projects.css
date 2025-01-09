@@ -60,9 +60,8 @@ body {
 }
 
 /* Buttons */
-.project-link-button .github-icon {
-  height: 24px;
-  width: 24px;
+.project-link-button {
+  padding: 15.25px 24px;
 }
 
 /* ---------- Bakery board ---------- */
