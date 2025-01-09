@@ -26,6 +26,7 @@ const init = () => {
 mm.add("(min-width: 993px", () => {
   window.addEventListener("pageshow", (event) => {
     if(event.persisted) {
+      console.log("desktop page loaded from cache");
 
       // ---------------- TEST -----------------------
       // TEST - Check to see if the animation is active or not.  If the desktop animation is active, complete it
@@ -37,11 +38,12 @@ mm.add("(min-width: 993px", () => {
         desktopTimeline.progress(1);
       };
 
-      console.log("The desktop timeline is not active!  I'll reset the elements and restart the animation.");
+      // console.log("The desktop timeline is not active!  I'll reset the elements and restart the animation.");
       // ---------------------------------------------
 
       // reset all elements to initial state
       gsap.set(".sidenav-content", { clearProps: "all" });
+      gsap.set(".sidenav", { clearProps: "all" });
       gsap.set(".main-content", { clearProps: "all" });
       gsap.set(".footer", { clearProps: "all" });
       gsap.set(".navbar li", { clearProps: "all" });
@@ -51,6 +53,7 @@ mm.add("(min-width: 993px", () => {
       // play the entrance animation
       init();
     } else {
+      console.log("desktop page loaded normally.")
       // Otherwise, play the page entrance animation.
       init();
     };
