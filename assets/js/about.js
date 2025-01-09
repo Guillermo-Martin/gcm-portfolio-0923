@@ -1,9 +1,11 @@
 // ---------- Page load animation function ----------
-// let desktopTimeline; // TEST
+let desktopTimeline; // TEST
 
 const init = () => {
-  // desktopTimeline = gsap.timeline() // TEST
-  gsap.timeline() // TEST
+  console.log("in init") // TEST
+  
+  // gsap.timeline()
+  desktopTimeline = gsap.timeline() // TEST
     .set("body", {overflow: "hidden"})
     .from("body", {autoAlpha: 0}, "<")
     .from("h1", {opacity: 0, y: 10, duration: 0.7})
@@ -15,11 +17,8 @@ const init = () => {
     .from(".footer", {opacity: 0, duration: 1}, "<")
     .set("body", {overflow: "scroll"}, "<")
 
-  // return desktopTimeline; // TEST
+  return desktopTimeline; // TEST
 };
-
-// Create the desktop timeline 
-// init();
 
 // ----- Do animation when page elements load -----
 mm.add("(min-width: 993px)", () => {
@@ -28,38 +27,23 @@ mm.add("(min-width: 993px)", () => {
   window.addEventListener("pageshow", (event) => {
     if(event.persisted) {
       console.log("desktop page loaded from cache");
-      // TEST - if animation is still going, complete it
-      // if(desktopTimeline && desktopTimeline.isActive()) {
-      //   console.log("The desktop timeline is active!");
 
-      //   // end the current animation
-      //   desktopTimeline.progress(1);
+      // ---------------- TEST -----------------------
+      // TEST - check to see if the animation is active or not
+      if(desktopTimeline && desktopTimeline.isActive()) {
+        console.log("The desktop timeline is active!");
 
-      //   // reset all elements
-      //   gsap.set(".sidenav-content", { clearProps: "all" });
-      //   gsap.set(".main-content", { clearProps: "all" });
-      //   gsap.set(".footer", { clearProps: "all" });
-      //   gsap.set(".navbar li", { clearProps: "all" });
-      //   gsap.set(".navbar a", { clearProps: "all" });
-      //   gsap.set("a", { clearProps: "all" });
+       
+      } else {
+        console.log("The desktop timeline is not active!");
 
-      //   // restart the animation
-      //   desktopTimeline.restart();
-      // } else {
-      //   console.log("The desktop timeline is not active!");
+        
+      };
 
-      //   // reset all elements
-      //   gsap.set(".sidenav-content", { clearProps: "all" });
-      //   gsap.set(".main-content", { clearProps: "all" });
-      //   gsap.set(".footer", { clearProps: "all" });
-      //   gsap.set(".navbar li", { clearProps: "all" });
-      //   gsap.set(".navbar a", { clearProps: "all" });
-      //   gsap.set("a", { clearProps: "all" });
 
-      //   // restart the animation
-      //   desktopTimeline.restart();
-      // };
 
+
+      // ---------------------------------------------
 
       // reset all elements to initial state
       gsap.set(".sidenav-content", { clearProps: "all" });
@@ -75,7 +59,6 @@ mm.add("(min-width: 993px)", () => {
       console.log("desktop page loaded normally.")
       // Otherwise, play the page entrance animation.
       init();
-      
     };
   });
 });
@@ -139,11 +122,9 @@ navbarContainer.addEventListener("click", (event) => {
 });
 
 // ---------- page load animation at 992px and below ----------
-// let mobileTimeline; // TEST
-
 // ----- Mobile page load animation function -----
 const mobileInit = () => {
-  // mobileTimeline = gsap.timeline() // TEST
+  console.log("in mobile init")
   gsap.timeline()
     .from("body", {autoAlpha: 0})
     .set("body", {overflow: "hidden"})
@@ -156,25 +137,15 @@ const mobileInit = () => {
     .from(".footer", {opacity: 0, duration: 1}, "<")
     .from(".table-of-contents li", {pointerEvents: "none"}, "<")
     .set("body", {overflow: "scroll"}, "<")
-
-  // return mobileTimeline;  // TEST
 };
 
-// Create the mobile timeline
-// mobileInit();  // TEST
 
 mm.add("(max-width: 992px)", () => {
   // See if page is being loaded from cache.  If so, reset all elements from the page transition animation
   // then play the entrance animation.
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
-      // TEST - if animation is still going, complete it
-      // if (mobileTimeline && mobileTimeline.isActive()) {
-      //   console.log("The mobile timeline is active!");
-
-      //   // end the current animation
-      //   mobileTimeline.progress(1);
-
+     
         // reset all the elements
         mobileNavMenu.classList.add("hide");
         gsap.set(".mobile-nav-links h2", { clearProps: "all" });
@@ -190,57 +161,12 @@ mm.add("(max-width: 992px)", () => {
         gsap.set("body", { clearProps: "all" });
         gsap.set("a", { clearProps: "all" });
 
-        // restart the animation
-        // mobileTimeline.restart();
+        
         mobileInit();
       } 
-      
-      // else {
-      //   console.log("The mobile timeline is not active.");
-
-      //   // reset all the elements
-      //   mobileNavMenu.classList.add("hide");
-      //   gsap.set(".mobile-nav-links h2", { clearProps: "all" });
-      //   gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
-      //   gsap.set(".mobile-nav-menu li", { clearProps: "all" });
-      //   gsap.set(".social-links", { clearProps: "all" });
-      //   gsap.set(".mobile-nav-icon", { clearProps: "all" });
-      //   gsap.set(".main-content", { clearProps: "all" });
-      //   gsap.set(".mobile-nav-links a", { clearProps: "all" });
-      //   gsap.set(".sidenav", { clearProps: "all" });
-      //   gsap.set(".sidenav-text-container", { clearProps: "all" });
-      //   gsap.set(".mobile-nav-menu", { clearProps: "all" });
-      //   gsap.set("body", { clearProps: "all" });
-      //   gsap.set("a", { clearProps: "all" });
-
-      //   // restart the animation
-      //   mobileTimeline.restart();
-      // };
-
-      // console.log("now resetting and playing");
-
-      // reset all elements to initial state
-      // mobileNavMenu.classList.add("hide");
-      // gsap.set(".mobile-nav-links h2", { clearProps: "all" });
-      // gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
-      // gsap.set(".mobile-nav-menu li", { clearProps: "all" });
-      // gsap.set(".social-links", { clearProps: "all" });
-      // gsap.set(".mobile-nav-icon", { clearProps: "all" });
-      // gsap.set(".main-content", { clearProps: "all" });
-      // gsap.set(".mobile-nav-links a", { clearProps: "all" });
-      // gsap.set(".sidenav", { clearProps: "all" });
-      // gsap.set(".sidenav-text-container", { clearProps: "all" });
-      // gsap.set(".mobile-nav-menu", { clearProps: "all" });
-      // gsap.set("body", { clearProps: "all" });
-      // gsap.set("a", { clearProps: "all" });
-
-      // play the entrance animation
-      // mobileInit();
-      // mobileTimeline.play();
      else {
       // Otherwise, play the entrance animation
       mobileInit();
-      // mobileTimeline.play();
     };
   });
 });
