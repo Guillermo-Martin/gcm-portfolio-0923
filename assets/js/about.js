@@ -29,17 +29,15 @@ mm.add("(min-width: 993px)", () => {
       console.log("desktop page loaded from cache");
 
       // ---------------- TEST -----------------------
-      // TEST - check to see if the animation is active or not
+      // TEST - Check to see if the animation is active or not.  If the desktop animation is active, complete it
       if(desktopTimeline && desktopTimeline.isActive()) {
         console.log("The desktop timeline is active!");
 
-        // TEST - if the animation is active, end it
+        // complete animation
         desktopTimeline.progress(1);
-      }
+      };
 
       console.log("The desktop timeline is not active!  I'll reset the elements and restart the animation.");
-
-
       // ---------------------------------------------
 
       // reset all elements to initial state
@@ -54,7 +52,7 @@ mm.add("(min-width: 993px)", () => {
       init();
     } else {
       console.log("desktop page loaded normally.")
-      // Otherwise, play the page entrance animation.
+      // If the page loads normally, play the page entrance animation.
       init();
     };
   });
