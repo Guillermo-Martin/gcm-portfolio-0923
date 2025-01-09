@@ -1,6 +1,11 @@
 // ---------- Page load animation function ----------
+let desktopTimeline; // TEST
+
 const init = () => {
-  gsap.timeline()
+  console.log("in init") // TEST
+
+  // gsap.timeline()
+  desktopTimeline = gsap.timeline() // TEST
     .set(".sidenav", {backgroundColor: "transparent"})
     .from("body", {autoAlpha: 0})
     .set("body", {overflow: "hidden"})
@@ -13,6 +18,8 @@ const init = () => {
     .from(".mobile-nav-icon", {opacity: 0, pointerEvents: "none", duration: 0.7}, "<")
     .from(".footer", {opacity: 0, duration: 1}, "<")
     .set("body", {overflow: "scroll"}, "<")
+
+  return desktopTimeline; // TEST
 };
 
 // ----- Do animation when page elements load -----
@@ -21,6 +28,20 @@ mm.add("(min-width: 993px)", () => {
   // then play the entrance animation.
   window.addEventListener("pageshow", (event) => {
     if(event.persisted) {
+
+      // ---------------- TEST -----------------------
+      // TEST - Check to see if the animation is active or not.  If the desktop animation is active, complete it
+      if(desktopTimeline && desktopTimeline.isActive()) {
+        console.log("The desktop timeline is active!");
+
+        // complete animation
+        desktopTimeline.progress(1);
+      };
+
+      console.log("The desktop timeline is not active!  I'll reset the elements and restart the animation.");
+      // ---------------------------------------------
+
+
       // reset all elements to initial state
       gsap.set(".sidenav-content", { clearProps: "all" });
       gsap.set(".main-content", { clearProps: "all" });
