@@ -107,15 +107,11 @@ mm.add("(max-width: 992px)", () => {
   window.addEventListener("pageshow", (event) => {
     // if page loaded from cache, reset mobile nav elements
     if (event.persisted) {
-      console.log("pageshow triggered: Page loaded from cache.");
-
       // reset all mobile nav elements to initial state
       gsap.set(".mobile-nav-links li", {opacity: 0, y: -8})
       gsap.set(".social-links", {opacity: 0, y: -8})
     } else {
       // Otherwise, load the elements normally
-      console.log("pageshow triggered: Page loaded normally.");
-
       // ----- hamburger icon -----
       hamburgerIcon.addEventListener("click", function() {
         // reset all mobile nav elements to initial state

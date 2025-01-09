@@ -24,13 +24,10 @@ const typingEffect = (str) => {
 };
 
 // ---------- Page load animation function ----------
-let homepageTimeline; // TEST
+let homepageTimeline;
 
 const init = () => {
-  console.log("in init");  // TEST
-
-  // gsap.timeline()
-  homepageTimeline = gsap.timeline() // TEST
+  homepageTimeline = gsap.timeline()
     .from("body", {autoAlpha: 0})
     .from("h1", {opacity: 0, duration: 0.7})
     .from(".subheader", {opacity: 0, duration: 0.7}, "<1")
@@ -40,7 +37,7 @@ const init = () => {
     .from("a", {pointerEvents: "none"}, "<")
     .from(".footer", {opacity: 0, duration: 0.7})
 
-  return homepageTimeline; // TEST
+  return homepageTimeline;
 };
 
 // ----- Do animation when page elements load -----
@@ -48,18 +45,11 @@ const init = () => {
 // then play the entrance animation.
 window.addEventListener("pageshow", (event) => {
   if (event.persisted) {
-
-    // ---------------- TEST -----------------------
-    // TEST - Check to see if the animation is active or not.  If so, complete it
+    // Check to see if the animation is active or not.  If so, complete it
     if(homepageTimeline && homepageTimeline.isActive()) {
-      console.log("The desktop timeline is active!");
-
       // complete animation
       homepageTimeline.progress(1);
     };
-
-    console.log("The desktop timeline is not active!  I'll reset the elements and restart the animation.");
-    // ---------------------------------------------
 
     // reset all elements to initial state
     gsap.set(".homepage-hero-text", { clearProps: "all" });
@@ -131,8 +121,6 @@ const transitionTimeline = (event, elem1, elem2) => {
     })
     .to(`#transition-${targetId}`, {opacity: 0, y: -5, duration: 0.5, delay: 0.8})
     .call(() => {
-      // history.pushState({page: `${target}`}, "", `${target}`)
-
       window.location.href = target;
     });
 }
