@@ -125,9 +125,13 @@ mm.add("(max-width: 992px)", () => {
       // TEST - if animation is still going, complete it
       if (mobileTimeline && mobileTimeline.isActive()) {
         console.log("The mobile timeline is active!");
-      } else {
-        console.log("The mobile timeline is not active.");
-      };
+        mobileTimeline.progress(1);
+      } 
+      // else {
+      //   console.log("The mobile timeline is not active.");
+      // };
+
+      console.log("now resetting and playing");
 
       // reset all elements to initial state
       mobileNavMenu.classList.add("hide");
