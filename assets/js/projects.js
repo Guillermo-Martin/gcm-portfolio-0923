@@ -1,11 +1,8 @@
 // ---------- Page load animation function ----------
-let desktopTimeline; // TEST
+let desktopTimeline;
 
 const init = () => {
-  console.log("in init") // TEST
-
-  // gsap.timeline()
-  desktopTimeline = gsap.timeline() // TEST
+  desktopTimeline = gsap.timeline()
     .set("body", {overflow: "hidden"})
     .from("body", {autoAlpha: 0}, "<")
     .from("h1", {opacity: 0, y: 10, duration: 0.7})
@@ -17,7 +14,7 @@ const init = () => {
     .from(".footer", {opacity: 0, duration: 1}, "<")
     .set("body", {overflow: "scroll"}, "<")
 
-  return desktopTimeline; // TEST
+  return desktopTimeline;
 };
 
 // ----- Do animation when page elements load -----
@@ -26,20 +23,11 @@ const init = () => {
 mm.add("(min-width: 993px", () => {
   window.addEventListener("pageshow", (event) => {
     if(event.persisted) {
-      console.log("desktop page loaded from cache");
-
-      // ---------------- TEST -----------------------
-      // TEST - Check to see if the animation is active or not.  If the desktop animation is active, complete it
-
+      // Check to see if the animation is active or not.  If the desktop animation is active, complete it
       if(desktopTimeline && desktopTimeline.isActive()) {
-        console.log("The desktop timeline is active!");
-
         // complete animation
         desktopTimeline.progress(1);
       };
-
-      console.log("The desktop timeline is not active!  I'll reset the elements and restart the animation.");
-      // ---------------------------------------------
 
       // reset all elements to initial state
       gsap.set(".sidenav-content", { clearProps: "all" });
@@ -53,13 +41,11 @@ mm.add("(min-width: 993px", () => {
       // play the entrance animation
       init();
     } else {
-      console.log("desktop page loaded normally.")
       // Otherwise, play the page entrance animation.
       init();
     };
   });
 });
-
 
 // ---------- Navbar links page transition animations ----------
 // get navbar links
@@ -144,19 +130,13 @@ mm.add("(max-width: 992px", () => {
   // then play the entrance animation.
   window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
-
-      // ---------------- TEST -----------------------
-      // TEST - Check to see if the animation is active or not.  If the desktop animation is active, complete it
-
+      // Check to see if the animation is active or not.  If the desktop animation is active, complete it
       if(desktopTimeline && desktopTimeline.isActive()) {
         console.log("The desktop timeline is active!");
 
         // complete animation
         desktopTimeline.progress(1);
       };
-
-      console.log("The desktop timeline is not active!  I'll reset the elements and restart the animation.");
-      // ---------------------------------------------
 
       // reset all elements to initial state
       mobileNavMenu.classList.add("hide");
