@@ -125,32 +125,69 @@ mm.add("(max-width: 992px)", () => {
       // TEST - if animation is still going, complete it
       if (mobileTimeline && mobileTimeline.isActive()) {
         console.log("The mobile timeline is active!");
-        mobileTimeline.progress(1);
-      } 
-      // else {
-      //   console.log("The mobile timeline is not active.");
-      // };
 
-      console.log("now resetting and playing");
+        // end the current animation
+        mobileTimeline.progress(1);
+
+        // reset all the elements
+        mobileNavMenu.classList.add("hide");
+        gsap.set(".mobile-nav-links h2", { clearProps: "all" });
+        gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
+        gsap.set(".mobile-nav-menu li", { clearProps: "all" });
+        gsap.set(".social-links", { clearProps: "all" });
+        gsap.set(".mobile-nav-icon", { clearProps: "all" });
+        gsap.set(".main-content", { clearProps: "all" });
+        gsap.set(".mobile-nav-links a", { clearProps: "all" });
+        gsap.set(".sidenav", { clearProps: "all" });
+        gsap.set(".sidenav-text-container", { clearProps: "all" });
+        gsap.set(".mobile-nav-menu", { clearProps: "all" });
+        gsap.set("body", { clearProps: "all" });
+        gsap.set("a", { clearProps: "all" });
+
+        // restart the animation
+        mobileTimeline.restart();
+      } else {
+        console.log("The mobile timeline is not active.");
+
+        // reset all the elements
+        mobileNavMenu.classList.add("hide");
+        gsap.set(".mobile-nav-links h2", { clearProps: "all" });
+        gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
+        gsap.set(".mobile-nav-menu li", { clearProps: "all" });
+        gsap.set(".social-links", { clearProps: "all" });
+        gsap.set(".mobile-nav-icon", { clearProps: "all" });
+        gsap.set(".main-content", { clearProps: "all" });
+        gsap.set(".mobile-nav-links a", { clearProps: "all" });
+        gsap.set(".sidenav", { clearProps: "all" });
+        gsap.set(".sidenav-text-container", { clearProps: "all" });
+        gsap.set(".mobile-nav-menu", { clearProps: "all" });
+        gsap.set("body", { clearProps: "all" });
+        gsap.set("a", { clearProps: "all" });
+
+        // restart the animation
+        mobileTimeline.restart();
+      };
+
+      // console.log("now resetting and playing");
 
       // reset all elements to initial state
-      mobileNavMenu.classList.add("hide");
-      gsap.set(".mobile-nav-links h2", { clearProps: "all" });
-      gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
-      gsap.set(".mobile-nav-menu li", { clearProps: "all" });
-      gsap.set(".social-links", { clearProps: "all" });
-      gsap.set(".mobile-nav-icon", { clearProps: "all" });
-      gsap.set(".main-content", { clearProps: "all" });
-      gsap.set(".mobile-nav-links a", { clearProps: "all" });
-      gsap.set(".sidenav", { clearProps: "all" });
-      gsap.set(".sidenav-text-container", { clearProps: "all" });
-      gsap.set(".mobile-nav-menu", { clearProps: "all" });
-      gsap.set("body", { clearProps: "all" });
-      gsap.set("a", { clearProps: "all" });
+      // mobileNavMenu.classList.add("hide");
+      // gsap.set(".mobile-nav-links h2", { clearProps: "all" });
+      // gsap.set(".mobile-table-of-contents-link", { clearProps: "all" });
+      // gsap.set(".mobile-nav-menu li", { clearProps: "all" });
+      // gsap.set(".social-links", { clearProps: "all" });
+      // gsap.set(".mobile-nav-icon", { clearProps: "all" });
+      // gsap.set(".main-content", { clearProps: "all" });
+      // gsap.set(".mobile-nav-links a", { clearProps: "all" });
+      // gsap.set(".sidenav", { clearProps: "all" });
+      // gsap.set(".sidenav-text-container", { clearProps: "all" });
+      // gsap.set(".mobile-nav-menu", { clearProps: "all" });
+      // gsap.set("body", { clearProps: "all" });
+      // gsap.set("a", { clearProps: "all" });
 
       // play the entrance animation
       // mobileInit();
-      mobileTimeline.play();
+      // mobileTimeline.play();
     } else {
       // Otherwise, play the entrance animation
       // mobileInit();
