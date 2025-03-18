@@ -5,6 +5,10 @@ body {
 }
 
 /* ---------- Sidenav ---------- */
+.sidenav-content {
+  margin-bottom: 100px;
+}
+
 .sidenav-text-container {
   margin-bottom: 60px;
 }
