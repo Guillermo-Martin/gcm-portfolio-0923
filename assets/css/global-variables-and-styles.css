@@ -16,7 +16,6 @@ body {
 	padding: 0 16%; */
 }
 
-
 /* Typography styles */
 h1 {
   font-size: var(--fs-h1);
@@ -51,6 +50,18 @@ h5 {
 	margin-bottom: 0px;
 }
 
+/* Spacing */
+.section-container {
+	margin-bottom: 100px;
+	margin-left: 120px;
+	margin-right: 120px;
+	margin-top: 100px;
+}
+
+
+
+
+/* ------------------------------------------ */
 /* p {
   font-size: var(--fs-body);
 	line-height: 1.4;
