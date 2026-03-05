@@ -1,9 +1,9 @@
 :root {
-	--fs-h1: 96px;
-	--fs-h2: 48px;
+	--fs-h1: 64px;
+	--fs-h2: 56px;
 	--fs-h3: 40px;
-	--fs-h4: 28px;
-	--fs-h5: 20px;
+	--fs-h4: 32px;
+	--fs-h5: 24px;
 	--fs-subheader: 48px;
 	--fs-body: 20px;
 }
