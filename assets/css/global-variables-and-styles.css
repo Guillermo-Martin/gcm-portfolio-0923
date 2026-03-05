@@ -59,6 +59,13 @@ h5 {
 }
 
 
+/* Text */
+.subheader {
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
 
 
 /* ------------------------------------------ */
