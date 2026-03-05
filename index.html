@@ -173,7 +173,28 @@
       <!-- - use EmailJS for now? -->
       <!-- - add github, linkedin, and email -->
       <section id="contact" class="">
-        <h2>Contact</h2>
+        <h2>Let's connect!</h2>
+
+        <!-- Text -->
+        <div class="text-container">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, et. Magnam, incidunt quae beatae illo iste veritatis iusto porro ut ad repellat autem, dicta, quaerat odit. Aperiam facere repudiandae tempore.</p>
+
+          <div class="social-links">
+            <a href="">LinkedIn</a>
+            <a href="">GitHub</a>
+            <a href="">Email</a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <form id="contact-form">
+          <input type="text" id="name" name="name" placeholder="Name" aria-label="Name" required>
+          <input type="email" id="email" name="email" placeholder="Email" aria-label="Email address" required>
+          <input type="text" id="subject" name="subject" placeholder="Subject" aria-label="Message subject" required>
+          <textarea id="form-message" name="formMessage" rows="8" cols="40" placeholder="Type your message here." aria-label="Type your message here." required></textarea>
+          <button type="submit" id="submit-button">Send message</button>
+        </form>
+        
       </section>
     </main>
 
