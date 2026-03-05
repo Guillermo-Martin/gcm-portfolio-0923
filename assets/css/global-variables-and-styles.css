@@ -1,77 +1,77 @@
-:root {
+/* :root {
 	--fs-h1: 96px;
 	--fs-h2: 48px;
 	--fs-h3: 40px;
 	--fs-h4: 28px;
 	--fs-subheader: 48px;
 	--fs-body: 20px;
-}
+} */
 
-body {
+/* body {
 	background-color: #fff5eb;
 	font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 	min-height: 100vh;
 	padding: 0 16%;
-}
+} */
 
 
 /* Typography styles */
-h1 {
+/* h1 {
   font-size: var(--fs-h1);
   font-weight: 700;
 	line-height: 1.2;
   margin-bottom: 32px;
-}
-
+} */
+/* 
 h2 {
 	font-size: var(--fs-h2);
 	font-weight: 700;
 	line-height: 1.2;
 	margin-bottom: 32px;
-}
+} */
 
-h3 {
+/* h3 {
 	font-size: var(--fs-h3);
 	font-weight: 200;
 	line-height: 1.2;
 	margin-bottom: 16px;
-}
+} */
 
-h4 {
+/* h4 {
 	font-size: var(--fs-h4);
 	font-weight: 200;
 	margin-bottom: 0px;
-}
+} */
 
-p {
+/* p {
   font-size: var(--fs-body);
 	line-height: 1.4;
 	margin-bottom: 20px;
-}
-
+} */
+/* 
 a {
   color: #334789;
 	font-size: var(--fs-body);
 	font-weight: 500;
   text-decoration: underline;
 	transition: all 0.2s;
-}
+} */
 
-.subheader {
+/* .subheader {
 	font-size: var(--fs-subheader);
 	font-weight: 300;
-}
+} */
 
 /* ---------- Media queries ---------- */
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   body {
     padding: 0 8%;
   }
-}
+} */
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
 	:root {
 		--fs-h1: 80px;
 		--fs-subheader: 36px;
@@ -80,16 +80,16 @@ a {
   body {
     padding: 0 4%;
   }
-}
+} */
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
 	:root {
 		--fs-h1: 60px;
 		--fs-subheader: 28px;
 	}
-}
+} */
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
 	:root {
 		--fs-h1: 48px;
 		--fs-h2: 36px;
@@ -102,4 +102,4 @@ a {
 	body {
     padding: 0 24px;
   }
-}
+} */

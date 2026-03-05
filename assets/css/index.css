@@ -1,34 +1,34 @@
-body {
+/* body {
 	align-items: center;
 	display: flex;
 	justify-content: start;
 	margin: 0;
 	position: relative;
-	/* used to remove flash of unstyled content for page load animation */
-	/* https://gsap.com/resources/fouc/ */
+	used to remove flash of unstyled content for page load animation
+	https://gsap.com/resources/fouc/
 	visibility: hidden;
-}
+} */
 
-.homepage-main-content {
+/* .homepage-main-content {
 	margin: 0 auto;
 	max-width: 1220px;
-}
+} */
 
 /* ---------- Header and subheader ---------- */
-h1 {
+/* h1 {
 	margin-bottom: 0;
-}
+} */
 
-.subheader {
+/* .subheader {
 	margin-bottom: 20px;
-}
+} */
 
-.homepage-hero-text {
+/* .homepage-hero-text {
 	margin-bottom: 80px;
-}
+} */
 
 /* ---------- Social links ---------- */
-.social-links {
+/* .social-links {
 	align-items: center;
 	display: flex;
 	gap: 36px;
@@ -47,10 +47,10 @@ h1 {
 
 .social-links a {
 	text-decoration: none;
-}
+} */
 
 /* ---------- Portfolio links ---------- */
-.portfolio-links {
+/* .portfolio-links {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -74,10 +74,10 @@ h1 {
 	font-style: italic;
 	margin-left: 48px;
 	opacity: 0;
-}
+} */
 
 /* ---------- Footer ---------- */
-.footer {
+/* .footer {
 	align-items: center;
 	bottom: 0;
 	display: flex;
@@ -91,10 +91,10 @@ h1 {
 .footer p {
 	font-size: 16px;
 	font-weight: 300;
-}
+} */
 
 /* ---------- media queries ---------- */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
 	.portfolio-links a {
 		font-size: 28px;
 	}
@@ -134,4 +134,4 @@ h1 {
 	h1 {
 		margin-bottom: 8px;
 	}
-}
+} */
