@@ -1,49 +1,55 @@
-/* :root {
+:root {
 	--fs-h1: 96px;
 	--fs-h2: 48px;
 	--fs-h3: 40px;
 	--fs-h4: 28px;
+	--fs-h5: 20px;
 	--fs-subheader: 48px;
 	--fs-body: 20px;
-} */
+}
 
-/* body {
-	background-color: #fff5eb;
+body {
 	font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-	min-height: 100vh;
-	padding: 0 16%;
-} */
+	/* min-height: 100vh;
+	padding: 0 16%; */
+}
 
 
 /* Typography styles */
-/* h1 {
+h1 {
   font-size: var(--fs-h1);
   font-weight: 700;
 	line-height: 1.2;
-  margin-bottom: 32px;
-} */
-/* 
+  /* margin-bottom: 32px; */
+}
+
 h2 {
 	font-size: var(--fs-h2);
 	font-weight: 700;
 	line-height: 1.2;
-	margin-bottom: 32px;
-} */
+	/* margin-bottom: 32px; */
+}
 
-/* h3 {
+h3 {
 	font-size: var(--fs-h3);
-	font-weight: 200;
+	font-weight: 700;
 	line-height: 1.2;
-	margin-bottom: 16px;
-} */
+	/* margin-bottom: 16px; */
+}
 
-/* h4 {
+h4 {
 	font-size: var(--fs-h4);
-	font-weight: 200;
-	margin-bottom: 0px;
-} */
+	font-weight: 700;
+	/* margin-bottom: 0px; */
+}
+
+h5 {
+	font-size: var(--fs-h5);
+	font-weight: 700;
+	/* margin-bottom: 0px; */
+}
 
 /* p {
   font-size: var(--fs-body);
