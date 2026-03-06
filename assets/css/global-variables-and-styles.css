@@ -162,6 +162,50 @@ h5 {
 }
 
 
+/* About me section */
+.about-me-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about-me-container .text-container {
+	width: 33%;
+}
+
+.about-me-container .image-container {
+	width: 60%;
+}
+
+.about-me-container img {
+	width: 100%;
+}
+
+.about-me-container p {
+	margin-bottom: 32px;
+}
+
+.about-me-container .subsection {
+	margin-bottom: 32px;
+}
+
+.about-me-container h5 {
+	margin-bottom: 8px;
+}
+
+.about-me-container ul {
+	padding-left: 24px;
+}
+
+.about-me-container li {
+	list-style: disc;
+	margin-bottom: 4px;
+}
+
+.about-me-container a {
+	display: inline-block;
+}
+
 
 /* ------------------------------------------ */
 /* p {
