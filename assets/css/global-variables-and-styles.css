@@ -107,6 +107,45 @@ h5 {
 	width: 40%;
 }
 
+
+/* Featured projects section */
+.project-container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 64px;
+}
+
+.project-container .text-container {
+	width: 33%;
+}
+
+.project-container h3, .project-container p {
+	margin-bottom: 32px;
+}
+
+.project-container .button-container {
+	align-items: start;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.project-container .button-container a {
+	min-width: 120px;
+	text-align: center;
+}
+
+.project-container .image-container {
+	width: 60%;
+}
+
+.project-container img {
+	width: 100%;
+}
+
+
+
 /* ------------------------------------------ */
 /* p {
   font-size: var(--fs-body);
