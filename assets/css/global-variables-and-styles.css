@@ -85,7 +85,7 @@ h5 {
 }
 
 
-/* Section headers */
+/* Section headers: MOVE TO GLOBAL STYLES */
 .section-header {
 	align-items: center;
 	display: flex;
@@ -142,6 +142,23 @@ h5 {
 
 .project-container img {
 	width: 100%;
+}
+
+
+/* Tech skills and tools section */
+#tech-skills-and-tools .section-header {
+	margin-bottom: 16px;
+}
+
+#tech-skills-and-tools .list-container {
+	align-items: center;
+	display: flex;
+	gap: 200px;
+	justify-content: start;
+}
+
+.tech-skills li {
+	margin-bottom: 12px;
 }
 
 
