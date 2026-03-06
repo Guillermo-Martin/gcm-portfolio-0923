@@ -1,6 +1,14 @@
+.subheader {
+	margin-bottom: 64px;
+	max-width: 66%;
+}
 
-
-
+.button-container {
+	align-items: center;
+	display: flex;
+	gap: 12px;
+	justify-content: start;
+}
 
 
 

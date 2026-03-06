@@ -66,6 +66,23 @@ h5 {
 	line-height: 1.2;
 }
 
+/* Buttons */
+.btn-primary {
+	background-color: #314788;
+	border-radius: 32px;
+	color: white;
+	padding-bottom: 16px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 16px;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-primary:hover {
+	background-color: #e3eaff;
+	color: black;
+}
 
 
 /* ------------------------------------------ */
