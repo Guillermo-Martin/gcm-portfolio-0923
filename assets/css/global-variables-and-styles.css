@@ -85,6 +85,28 @@ h5 {
 }
 
 
+/* Section headers */
+.section-header {
+	align-items: center;
+	display: flex;
+	justify-content: start;
+	margin-bottom: 60px;
+}
+
+.section-header h2 {
+	margin-bottom: 0;
+	margin-right: 20px;
+	width: fit-content;
+}
+
+.section-header hr {
+	border-top: 4px solid black;
+	margin: 0;
+	position: relative;
+	top: 4px;
+	width: 40%;
+}
+
 /* ------------------------------------------ */
 /* p {
   font-size: var(--fs-body);
