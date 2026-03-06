@@ -109,7 +109,66 @@
 }
 
 
+/* Let's connect section */
+.contact-container {
+	align-items: start;
+	display: flex;
+	gap: 7%;
+	justify-content: start;
+}
 
+.text-container {
+	width: 33%;
+}
+
+.form-container {
+	width: 40%;
+}
+
+.social-links {
+	align-items: center;
+	display: flex;
+	gap: 36px;
+	justify-content: start;
+}
+
+.social-links svg {
+	height: 32px;
+	transition: fill 0.2s;
+	width: 32px;
+}
+
+.social-links svg:hover {
+	fill: #e3eaff;
+}
+
+.contact-container p {
+	margin-bottom: 20px;
+}
+
+.form-container input, .form-container textarea {
+	border: 2px solid #000;
+	border-radius: 16px;
+	font-family: "Inter", sans-serif;
+	padding: 12px;
+}
+
+#contact-form {
+	display: grid;
+	grid-gap: 24px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.form-container #subject, .form-container #form-message {
+	grid-column-end: 3;
+	grid-column-start: 1; 
+}
+
+.form-container button {
+	border: none;
+	cursor: pointer;
+	width: fit-content;
+}
 
 
 
