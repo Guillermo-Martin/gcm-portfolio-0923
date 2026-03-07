@@ -2,3 +2,31 @@
 	margin-bottom: 64px;
 	max-width: 66%;
 }
+
+/* overview section */
+.intro-text ul, .intro-text p {
+  margin-bottom: 32px;
+}
+
+.intro-text p {
+  max-width: 66%;
+}
+
+.intro-text li {
+  margin-bottom: 12px;
+}
+
+.subheader span {
+  font-weight: 600;
+}
+
+.problem-and-goal {
+  align-items: center;
+  display: flex;
+  gap: 100px;
+  justify-content: start;
+}
+
+.problem-and-goal div {
+  width: 40%;
+}
