@@ -31,7 +31,7 @@
   width: 40%;
 }
 
-/* section intros */
+/* section intros and sections with text and image side-by-side */
 .intro-section {
   align-items: end;
 	display: flex;
