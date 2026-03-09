@@ -56,6 +56,7 @@ p, li {
 
 /* Spacing */
 .section-container {
+	display: inline-block;
 	margin-bottom: 100px;
 	margin-left: 120px;
 	margin-right: 120px;
