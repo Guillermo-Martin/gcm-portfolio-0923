@@ -30,3 +30,23 @@
 .problem-and-goal div {
   width: 40%;
 }
+
+/* section intros */
+.intro-section {
+  align-items: end;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 64px;
+}
+
+.intro-section .text-container {
+	width: 33%;
+}
+
+.intro-section .image-container {
+	width: 60%;
+}
+
+.intro-section img {
+	width: 100%;
+}
