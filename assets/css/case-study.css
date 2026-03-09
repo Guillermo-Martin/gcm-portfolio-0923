@@ -50,3 +50,97 @@
 .intro-section img {
 	width: 100%;
 }
+
+/* Understanding the user section */
+.understanding-the-user h3 {
+  margin-bottom: 32px;
+}
+
+.pain-points {
+  max-width: 66%;
+}
+
+.pain-points li {
+  margin-bottom: 32px;
+}
+
+.pain-points span {
+  font-weight: 600;
+}
+
+.quote-section {
+  background-color: #314788;
+}
+
+.quote-container {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.quote-icon {
+  fill: white;
+  text-align: center;
+  width: 5%;
+}
+
+.quote p {
+  color: white;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+	line-height: 1.2;
+}
+
+.quote-text {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.persona-container.intro-section {
+  align-items: start;
+}
+
+.personas-section-intro {
+  margin-bottom: 120px;
+  max-width: 66%;
+}
+
+.persona-container p {
+  margin-bottom: 32px;
+}
+
+.goals-and-frustrations h5 {
+  margin-bottom: 8px;
+}
+
+.goals-and-frustrations ul {
+  margin-bottom: 32px;
+  padding-left: 32px;
+}
+
+.goals-and-frustrations li {
+  list-style: disc;
+}
+
+.goals-and-frustrations ul:last-child {
+  margin-bottom: 0;
+}
+
+.persona-container .image-container img {
+  margin-bottom: 12px;
+}
+
+.persona-container figcaption ul {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+  justify-content: start;
+}
+
+.persona-container span {
+  font-weight: 600;
+}
+
+.understanding-the-user .persona-container:nth-child(3) {
+  flex-direction: row-reverse;
+}
