@@ -144,3 +144,30 @@
 .understanding-the-user .persona-container:nth-child(3) {
   flex-direction: row-reverse;
 }
+
+/* Starting the design section */
+
+.starting-the-design .digital-wireframes {
+  flex-direction: row-reverse;
+}
+
+.focus-points {
+  margin-bottom: 100px;
+  max-width: 66%;
+}
+
+.focus-points li {
+  margin-bottom: 32px;
+}
+
+.focus-points span {
+  font-weight: 600;
+}
+
+.prototype p {
+  margin-bottom: 32px;
+}
+
+.prototype a {
+  display: inline-block;
+}
