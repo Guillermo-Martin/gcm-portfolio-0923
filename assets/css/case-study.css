@@ -167,6 +167,10 @@
   font-weight: 600;
 }
 
+.prototype.intro-section {
+  margin-bottom: 0;
+}
+
 .prototype p {
   margin-bottom: 32px;
 }
@@ -222,6 +226,10 @@
   margin-bottom: 0;
 }
 
+.final-designs.intro-section {
+  margin-bottom: 0;
+}
+
 .final-designs h3 {
   margin-bottom: 32px;
 }
@@ -245,6 +253,8 @@
   width: 100%;
 }
 
+
+
 /* Thank you section */
 .thank-you-section {
   background-color: #314788;
@@ -267,8 +277,6 @@
 .thank-you-section a {
   color: white;
 }
-
-
 
 .thank-you-section span {
   font-weight: 600;
