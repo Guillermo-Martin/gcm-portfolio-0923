@@ -3,7 +3,7 @@
 	max-width: 66%;
 }
 
-/* overview section */
+/* overview section, parameters for usability testing */
 .intro-text ul, .intro-text p {
   margin-bottom: 32px;
 }
@@ -14,6 +14,11 @@
 
 .intro-text li {
   margin-bottom: 12px;
+}
+
+.intro-text li:last-child {
+  /* border: 3px solid red; */
+  margin-bottom: 0;
 }
 
 .subheader span {
@@ -146,7 +151,6 @@
 }
 
 /* Starting the design section */
-
 .starting-the-design .digital-wireframes {
   flex-direction: row-reverse;
 }
@@ -170,4 +174,29 @@
 
 .prototype a {
   display: inline-block;
+}
+
+/* Usability testing section */
+.parameters {
+  margin-bottom: 64px;
+}
+
+.findings {
+  max-width: 66%;
+}
+
+.findings h3 {
+  margin-bottom: 32px;
+}
+
+.findings li {
+  margin-bottom: 32px;
+}
+
+.findings span {
+  font-weight: 600;
+}
+
+.findings li:last-child {
+  margin-bottom: 0;
 }
