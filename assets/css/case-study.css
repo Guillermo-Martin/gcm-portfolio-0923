@@ -245,3 +245,33 @@
 .gallery-thumbnails img {
   width: 100%;
 }
+
+/* Thank you section */
+.thank-you-section {
+  background-color: #314788;
+  color: white;
+}
+
+.thank-you-section hr {
+  border-top: 4px solid white;
+}
+
+.thank-you-section p {
+  margin-bottom: 32px;
+  max-width: 66%;
+}
+
+.thank-you-section li:first-child {
+  margin-bottom: 8px;
+}
+
+.thank-you-section a {
+  color: white;
+}
+
+
+
+.thank-you-section span {
+  font-weight: 600;
+}
+
