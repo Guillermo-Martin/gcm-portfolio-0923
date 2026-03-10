@@ -55,12 +55,30 @@
 	width: 100%;
 }
 
+
+/* summary lists (where points are made) */
+.summary-list {
+  max-width: 60%;
+}
+
+.summary-list li {
+  margin-bottom: 32px;
+}
+
+.summary-list li:last-child {
+  margin-bottom: 0;
+}
+
+.summary-list span {
+  font-weight: 600;
+}
+
 /* Understanding the user section */
 .understanding-the-user h3 {
   margin-bottom: 32px;
 }
 
-.pain-points {
+/* .pain-points {
   max-width: 66%;
 }
 
@@ -70,7 +88,7 @@
 
 .pain-points span {
   font-weight: 600;
-}
+} */
 
 .quote-section {
   background-color: #314788;
@@ -154,18 +172,18 @@
   flex-direction: row-reverse;
 }
 
-.focus-points {
-  margin-bottom: 100px;
-  max-width: 66%;
+.focus-points.summary-list {
+  margin-bottom: 64px;
+  /* max-width: 66%; */
 }
-
+/* 
 .focus-points li {
   margin-bottom: 32px;
 }
 
 .focus-points span {
   font-weight: 600;
-}
+} */
 
 .prototype.intro-section {
   margin-bottom: 0;
@@ -184,7 +202,7 @@
   margin-bottom: 64px;
 }
 
-.findings {
+/* .findings {
   max-width: 66%;
 }
 
@@ -202,15 +220,15 @@
 
 .findings li:last-child {
   margin-bottom: 0;
-}
+} */
 
 /* Moving forward section */
-.takeaways {
-  margin-bottom: 100px;
-  max-width: 66%;
+.takeaways.summary-list {
+  margin-bottom: 64px;
+  /* max-width: 66%; */
 }
 
-.takeaways h3 {
+/* .takeaways h3 {
   margin-bottom: 32px;
 }
 
@@ -224,7 +242,7 @@
 
 .takeaways li:last-child {
   margin-bottom: 0;
-}
+} */
 
 .final-designs.intro-section {
   margin-bottom: 0;
