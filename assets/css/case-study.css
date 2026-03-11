@@ -107,6 +107,7 @@
 
 .persona-container.intro-section {
   align-items: start;
+  margin-bottom: 120px
 }
 
 .personas-section-intro {
@@ -152,6 +153,7 @@
 
 .understanding-the-user .persona-container:nth-child(3) {
   flex-direction: row-reverse;
+  margin-bottom: 0;
 }
 
 /* Starting the design section */
