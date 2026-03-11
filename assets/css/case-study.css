@@ -60,6 +60,10 @@
   max-width: 60%;
 }
 
+.summary-list h3, .summary-list h4 {
+  margin-bottom: 32px;
+}
+
 .summary-list li {
   margin-bottom: 32px;
 }
@@ -73,10 +77,6 @@
 }
 
 /* Understanding the user section */
-.understanding-the-user h3 {
-  margin-bottom: 32px;
-}
-
 .quote-section {
   background-color: #314788;
 }
