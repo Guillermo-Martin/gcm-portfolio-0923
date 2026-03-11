@@ -157,8 +157,20 @@
 }
 
 /* Starting the design section */
+.starting-the-design .intro-section {
+  margin-bottom: 120px;
+}
+
 .starting-the-design .digital-wireframes {
   flex-direction: row-reverse;
+}
+
+.high-fidelity-mockups .intro-section {
+  margin-bottom: 64px
+}
+
+.high-fidelity-text h3 {
+  margin-bottom: 0;
 }
 
 .focus-points.summary-list {
