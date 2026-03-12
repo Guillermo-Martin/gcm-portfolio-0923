@@ -112,9 +112,9 @@ p, li {
 }
 
 /* mobile nav */
-.hamburger-icon {
+/* .hamburger-icon {
 	display: none;
-}
+} */
 
 .mobile-nav-overlay, .hamburger-icon-container {
 	display: none;
@@ -202,8 +202,8 @@ footer svg {
 		display: none;
 	}
 
-	.hamburger-icon {
-		cursor: pointer;
+	.hamburger-icon-container {
+		/* cursor: pointer; */
 		display: block;
 	}
 
