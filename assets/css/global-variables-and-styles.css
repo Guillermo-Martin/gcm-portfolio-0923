@@ -107,7 +107,31 @@ p, li {
 	flex-direction: row;
 	gap: 32px;
 	justify-content: end;
-	width: 100%;
+	width: fit-content
+}
+
+/* footer */
+footer .section-container {
+	margin-bottom: 32px;
+	margin-top: 32px;
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer ul {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+	justify-content: end;
+	width: fit-content;
+}
+
+footer svg {
+	width: 20px;
+	height: 20px;
 }
 
 
