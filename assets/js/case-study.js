@@ -3,9 +3,13 @@ console.log("on case study page!")
 
 // get elements
 let hamburgerIcon = document.querySelector(".hamburger-icon");
+let mobileNavOverlay = document.querySelector(".mobile-nav-overlay");
 
 hamburgerIcon.addEventListener("click", () => {
-  alert("You clicked on the hamburger!");
+  // alert("You clicked on the hamburger!");
+
+  // toggle the "show" class on the mobile nav overlay when a user clicks on the hamburger
+  mobileNavOverlay.classList.toggle("show");
 });
 
 
