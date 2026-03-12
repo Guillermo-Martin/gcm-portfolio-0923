@@ -110,6 +110,11 @@ p, li {
 	width: fit-content
 }
 
+/* mobile nav */
+.hamburger-icon {
+	display: none;
+}
+
 /* footer */
 footer .section-container {
 	margin-bottom: 32px;
@@ -183,6 +188,23 @@ footer svg {
 	top: 4px;
 	width: 40%;
 }
+
+
+/* ----------------------- MEDIA QUERIES ----------------------- */
+@media screen and (max-width: 992px) {
+  /* ---------- Navbar ---------- */
+	.navbar .desktop-navbar {
+		display: none;
+	}
+
+	.hamburger-icon {
+		cursor: pointer;
+		display: block;
+	}
+}
+
+
+
 
 
 /* ------------------------------------------ */
