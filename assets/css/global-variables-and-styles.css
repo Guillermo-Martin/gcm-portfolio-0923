@@ -116,6 +116,10 @@ p, li {
 	display: none;
 }
 
+.mobile-nav-overlay, .hamburger-icon-container {
+	display: none;
+}
+
 /* footer */
 footer .section-container {
 	margin-bottom: 32px;
