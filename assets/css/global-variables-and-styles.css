@@ -85,6 +85,17 @@ p, li {
 	text-decoration: underline;
 }
 
+.navbar li:nth-child(4) a, .navbar li:nth-child(5) a {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar svg {
+	height: 20px;
+	width: 20px;
+}
+
 .home-link {
 	font-size: 48px;
 	font-weight: 600;
