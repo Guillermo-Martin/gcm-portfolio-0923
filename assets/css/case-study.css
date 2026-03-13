@@ -269,7 +269,7 @@
 @media screen and (max-width: 767px) {
   /* intro sections */
 	.intro-section, .understanding-the-user .persona-container:nth-child(3), .starting-the-design .digital-wireframes  {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     flex-direction: column-reverse;
     gap: 32px;
   }
@@ -283,15 +283,18 @@
   }
 
   .final-designs.intro-section {
-    /* flex-direction: column; */
     display: grid;
   }
 
-  /* understanding the user */
-  /* .understanding-the-user .persona-container:nth-child(3) {
+  /* overview section */
+  .problem-and-goal {
     flex-direction: column;
-    margin-bottom: 0;
-  } */
+    gap: 32px;
+  }
+
+  .problem-and-goal div {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 576px) {
