@@ -257,8 +257,12 @@
 /* media queries  */
 @media screen and (max-width: 1200px) {
 	/* psersonas section intro spacing */
-	.personas-section-intro, .persona-container.intro-section {
+	.personas-section-intro, .persona-container.intro-section, .starting-the-design .intro-section {
     margin-bottom: 60px;
+  }
+
+  .intro-section.prototype {
+    margin-bottom: 0;
   }
 }
 
