@@ -85,9 +85,9 @@ p, li {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-bottom: 32px;
+	margin-bottom: 16px;
 	margin-top: 0;
-	padding-top: 32px;
+	padding-top: 16px;
 }
 
 .navbar a, .mobile-nav-overlay a {
@@ -214,6 +214,10 @@ footer svg {
 	color: black;
 }
 
+/* Hero sections */
+.hero-section {
+	padding-top: 84px;
+}
 
 /* Section headers: MOVE TO GLOBAL STYLES */
 .section-header {
