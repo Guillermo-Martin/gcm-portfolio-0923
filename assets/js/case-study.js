@@ -4,12 +4,18 @@ console.log("on case study page!")
 // get elements
 let hamburgerIcon = document.querySelector(".hamburger-icon");
 let mobileNavOverlay = document.querySelector(".mobile-nav-overlay");
+let closeIcon = document.querySelector(".close-icon");
 
 hamburgerIcon.addEventListener("click", () => {
-  // alert("You clicked on the hamburger!");
+  // remove the "hide" class and add the "show" class
+  mobileNavOverlay.classList.remove("hide");
+  mobileNavOverlay.classList.add("show");
+});
 
-  // toggle the "show" class on the mobile nav overlay when a user clicks on the hamburger
-  mobileNavOverlay.classList.toggle("show");
+closeIcon.addEventListener("click", () => {
+  // remove the "show" class and add the "hide" class
+  mobileNavOverlay.classList.remove("show");
+  mobileNavOverlay.classList.add("hide");
 });
 
 

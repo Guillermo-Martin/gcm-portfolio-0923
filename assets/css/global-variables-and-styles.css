@@ -116,8 +116,24 @@ p, li {
 	display: none;
 } */
 
-.mobile-nav-overlay, .hamburger-icon-container {
+.hamburger-icon-container {
 	display: none;
+}
+
+/* base class */
+.mobile-nav-overlay {
+	position: absolute;
+	background-color: pink;
+	height: 100vh;
+	width: 100%;
+}
+
+.mobile-nav-overlay.hide {
+	display: none;
+}
+
+.mobile-nav-overlay.show {
+	display: block;
 }
 
 /* footer */
@@ -203,34 +219,10 @@ footer svg {
 	}
 
 	.hamburger-icon-container {
-		/* cursor: pointer; */
+		cursor: pointer;
 		display: block;
-	}
-
-	/* .mobile-nav {
-		border: 3px solid red;
-	}
-
-	.mobile-nav-overlay {
-		background-color: skyblue;
-		width: 100%;
-		height: 100vh;
-	} */
-
-	.mobile-nav-overlay {
-		display: none;
-	}
-
-	.mobile-nav-overlay.show {
-		display: block;
-		position: absolute;
-		background-color: blue;
-		width: 100%;
-		/* height: 100vh; */
 	}
 }
-
-
 
 
 
