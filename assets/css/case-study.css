@@ -271,6 +271,7 @@
 	.intro-section, .understanding-the-user .persona-container:nth-child(3), .starting-the-design .digital-wireframes  {
     border: 3px solid red;
     flex-direction: column-reverse;
+    gap: 32px;
   }
 
   .intro-section .image-container, .intro-section .text-container {
@@ -278,7 +279,8 @@
   }
 
   .final-designs.intro-section {
-    flex-direction: column;
+    /* flex-direction: column; */
+    display: grid;
   }
 
   /* understanding the user */
