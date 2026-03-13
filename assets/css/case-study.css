@@ -266,6 +266,28 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  /* intro sections */
+	.intro-section, .understanding-the-user .persona-container:nth-child(3), .starting-the-design .digital-wireframes  {
+    border: 3px solid red;
+    flex-direction: column-reverse;
+  }
+
+  .intro-section .image-container, .intro-section .text-container {
+    width: 100%;
+  }
+
+  .final-designs.intro-section {
+    flex-direction: column;
+  }
+
+  /* understanding the user */
+  /* .understanding-the-user .persona-container:nth-child(3) {
+    flex-direction: column;
+    margin-bottom: 0;
+  } */
+}
+
 @media screen and (max-width: 576px) {
 	/* psersonas section intro spacing */
 	.personas-section-intro, .persona-container.intro-section {
