@@ -278,6 +278,10 @@
     width: 100%;
   }
 
+  .summary-list, .personas-section-intro, .hero-text, .subheader, .intro-text p, .thank-you-section p {
+    max-width: unset;
+  }
+
   .final-designs.intro-section {
     /* flex-direction: column; */
     display: grid;
