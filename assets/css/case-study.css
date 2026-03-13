@@ -254,3 +254,17 @@
   font-weight: 600;
 }
 
+/* media queries  */
+@media screen and (max-width: 1200px) {
+	/* psersonas section intro spacing */
+	.personas-section-intro, .persona-container.intro-section {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+	/* psersonas section intro spacing */
+	.personas-section-intro, .persona-container.intro-section {
+    /* margin-bottom: 40px; */
+  }
+}
