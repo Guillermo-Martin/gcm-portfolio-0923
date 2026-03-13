@@ -66,6 +66,20 @@ p, li {
 
 
 /* Desktop and mobile navbar */
+.navbar {
+	display: inline-block;
+	width: 100%;
+	position: fixed;
+	border-bottom: 4px solid black;
+	background-color: white;
+	z-index: 1;
+	/* blur effect */
+	/* background-color: rgba(255, 255, 255, 0.9);
+	z-index: 10;
+	backdrop-filter: blur(10px); Adjust the pixel value for more or less blur
+    -webkit-backdrop-filter: blur(10px); For Safari support */
+}
+
 .navbar .section-container, .mobile-nav-overlay .section-container {
 	align-items: center;
 	display: flex;
@@ -114,6 +128,14 @@ p, li {
 /* mobile nav */
 .hamburger-icon-container {
 	display: none;
+}
+
+.hamburger-icon.hide, .close-icon.hide {
+	display: none;
+}
+
+.hamburger-icon.show, .close-icon.show {
+	display: block;
 }
 
 /* base class */
