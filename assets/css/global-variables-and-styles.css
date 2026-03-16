@@ -4,7 +4,8 @@
 	--fs-h3: 40px;
 	--fs-h4: 32px;
 	--fs-h5: 24px;
-	--fs-subheader: 48px;
+	/* --fs-subheader: 48px; */
+	--fs-subheader: 36px;
 	--fs-body: 20px;
 }
 
@@ -190,7 +191,7 @@ footer svg {
 
 /* Text */
 .subheader {
-	font-size: 36px;
+	font-size: var(--fs-subheader);
 	font-weight: 300;
 	line-height: 1.2;
 }
@@ -255,6 +256,16 @@ footer svg {
 }
 
 @media screen and (max-width: 992px) {
+	/* font sizes */
+	:root {
+		--fs-h1: 60px;
+		--fs-h2: 48px;
+		--fs-h3: 32px;
+		--fs-h4: 28px;
+		--fs-h5: 20px;
+		--fs-subheader: 32px;
+	}
+
 	/* section-container spacing */
 	.section-container {
 		/* background-color: pink; */
@@ -276,6 +287,12 @@ footer svg {
 }
 
 @media screen and (max-width: 767px) {
+	/* font sizes */
+	:root {
+		--fs-h1: 48px;
+		--fs-h2: 40px;
+	}
+
 	/* section-container spacing */
 	.section-container {
 		/* background-color: pink; */
@@ -285,6 +302,33 @@ footer svg {
 }
 
 @media screen and (max-width: 576px) {
+	/* font sizes */
+	:root {
+		--fs-h1: 40px;
+		--fs-h2: 32px;
+		--fs-h3: 24px;
+		--fs-h4: 20px;
+		--fs-h5: 16px;
+		--fs-subheader: 28px;
+	}
+
+	/* section-container spacing */
+	.section-container {
+		/* background-color: pink; */
+		/* margin-left: 16px;
+		margin-right: 16px; */
+		/* margin-bottom: 20px;
+		margin-top: 20px; */
+	}
+}
+
+@media screen and (max-width: 420px) {
+	/* font sizes */
+	:root {
+		--fs-h1: 36px;
+		--fs-subheader: 24px;
+	}
+
 	/* section-container spacing */
 	.section-container {
 		/* background-color: pink; */
