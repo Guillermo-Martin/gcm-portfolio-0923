@@ -284,6 +284,10 @@ footer svg {
 		cursor: pointer;
 		display: block;
 	}
+
+	.mobile-nav-overlay {
+		padding-top: 164px;
+	}
 }
 
 @media screen and (max-width: 767px) {
