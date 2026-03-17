@@ -268,7 +268,6 @@ footer svg {
 
 	/* section-container spacing */
 	.section-container {
-		/* background-color: pink; */
 		margin-left: 30px;
 		margin-right: 30px;
 		margin-bottom: 40px;
@@ -299,7 +298,6 @@ footer svg {
 
 	/* section-container spacing */
 	.section-container {
-		/* background-color: pink; */
 		margin-left: 16px;
 		margin-right: 16px;
 	}
@@ -319,15 +317,6 @@ footer svg {
 		--fs-h5: 16px;
 		--fs-subheader: 28px;
 	}
-
-	/* section-container spacing */
-	.section-container {
-		/* background-color: pink; */
-		/* margin-left: 16px;
-		margin-right: 16px; */
-		/* margin-bottom: 20px;
-		margin-top: 20px; */
-	}
 }
 
 @media screen and (max-width: 420px) {
@@ -339,15 +328,6 @@ footer svg {
 
 	.navbar a {
 		font-size: 28px;
-	}
-
-	/* section-container spacing */
-	.section-container {
-		/* background-color: pink; */
-		/* margin-left: 16px;
-		margin-right: 16px; */
-		/* margin-bottom: 20px;
-		margin-top: 20px; */
 	}
 }
 
