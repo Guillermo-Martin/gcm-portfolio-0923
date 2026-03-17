@@ -239,7 +239,7 @@ footer svg {
 	margin: 0;
 	position: relative;
 	top: 4px;
-	width: 40%;
+	width: 32%;
 }
 
 
@@ -252,6 +252,10 @@ footer svg {
 		margin-right: 60px;
 		margin-bottom: 80px;
 		margin-top: 80px;
+	}
+
+	.section-header hr {
+		width: 24%;
 	}
 }
 
@@ -289,6 +293,19 @@ footer svg {
 	}
 }
 
+@media screen and (max-width: 775px) {
+	.section-header {
+		/* border: 3px solid red; */
+		flex-direction: column;
+		align-items: start;
+		gap: 8px;
+	}
+
+	.section-header hr {
+		width: 88%;
+	}
+}
+
 @media screen and (max-width: 767px) {
 	/* font sizes */
 	:root {
@@ -316,6 +333,10 @@ footer svg {
 		--fs-h4: 20px;
 		--fs-h5: 16px;
 		--fs-subheader: 28px;
+	}
+
+	.section-container hr {
+		width: 100%;
 	}
 }
 
