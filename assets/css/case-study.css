@@ -267,6 +267,11 @@
 }
 
 @media screen and (max-width: 992px) {
+/* ---------- Quote ---------- */
+	.quote-container {
+		margin-bottom: 16px;
+	}
+
 	.quote p {
     font-size: 28px;
   }
@@ -301,10 +306,36 @@
   .problem-and-goal div {
     width: 100%;
   }
+
+  /* ---------- Quote ---------- */
+  .quote p {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-	.quote p {
-    font-size: 24px;
+  /* ---------- Quote ---------- */
+  .quote-icon {
+    width: 8%;
+  }
+
+  .quote-container {
+    margin-bottom: 8px;
+  }
+
+  .quote-text {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .quote p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  /* ---------- Quote ---------- */
+  .quote-text {
+    padding: 0;
   }
 }
