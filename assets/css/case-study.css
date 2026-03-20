@@ -277,8 +277,12 @@
   }
 
   /* ---------- Personas ---------- */
-  .persona-container.intro-section {
+  .persona-container.intro-section, .understanding-the-user .persona-container:nth-child(3) {
     flex-direction: column-reverse;
+  }
+
+  .persona-container.intro-section .text-container {
+    width: 100%;
   }
 
   .persona-container .image-container {
@@ -294,6 +298,7 @@
   }
 
   .persona-container .image-container img {
+    margin-bottom: 32px;
     width: 60%;
   }
 
