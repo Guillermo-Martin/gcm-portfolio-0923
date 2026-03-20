@@ -275,6 +275,33 @@
 	.quote p {
     font-size: 28px;
   }
+
+  /* ---------- Personas ---------- */
+  .persona-container.intro-section {
+    flex-direction: column-reverse;
+  }
+
+  .persona-container .image-container {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .persona-container figcaption ul {
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .persona-container .image-container img {
+    width: 60%;
+  }
+
+  .persona-container figcaption {
+    width: 40%;
+  }
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -311,6 +338,26 @@
   .quote p {
     font-size: 24px;
   }
+
+  /* ---------- Personas ---------- */
+  .persona-container .image-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .persona-container .image-container img {
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .persona-container figcaption {
+    width: 100%;
+  }
+
+  .persona-container figcaption ul {
+    flex-direction: column;
+    gap: 4px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -331,11 +378,21 @@
   .quote p {
     font-size: 20px;
   }
+
+  /* ---------- Personas ---------- */
+  .persona-container h4 {
+    margin-bottom: 16px;
+  }
 }
 
 @media screen and (max-width: 420px) {
   /* ---------- Quote ---------- */
   .quote-text {
     padding: 0;
+  }
+
+  /* ---------- Personas ---------- */
+  .goals-and-frustrations ul {
+    padding-left: 16px;
   }
 }
