@@ -183,6 +183,12 @@ footer ul {
 	width: fit-content;
 }
 
+footer ul a {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
 footer svg {
 	width: 20px;
 	height: 20px;
@@ -256,6 +262,12 @@ footer svg {
 
 	.section-header hr {
 		width: 24%;
+	}
+
+	/* footer */
+	.footer .section-container {
+		margin-bottom: 16px;
+		margin-top: 16px;
 	}
 }
 
@@ -337,6 +349,13 @@ footer svg {
 
 	.section-container hr {
 		width: 100%;
+	}
+
+	/* footer */
+	.footer .section-container {
+		align-items: start;
+		flex-direction: column;
+		gap: 8px;
 	}
 }
 
