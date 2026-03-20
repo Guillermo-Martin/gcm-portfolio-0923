@@ -214,6 +214,10 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.gallery-thumbnails.mobile-version {
+  display: none;
+}
+
 .gallery-thumbnails button {
   border: none;
   cursor: pointer;
@@ -367,6 +371,23 @@
   /* ---------- High-fidelity mockups ---------- */
   .intro-section.high-fidelity-text {
     margin-bottom: 32px;
+  }
+
+  /* ---------- Moving forward ---------- */
+  .gallery-thumbnails.desktop-version {
+    display: none;
+  }
+
+  .gallery-thumbnails.mobile-version {
+    display: grid;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 8px;
+  }
+
+  .final-designs.intro-section {
+    gap: 0;
   }
 }
 
