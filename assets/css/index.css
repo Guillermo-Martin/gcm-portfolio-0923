@@ -169,7 +169,10 @@
 	width: fit-content;
 }
 
-
+/* footer */
+footer {
+	border-top: 4px solid black;
+}
 
 /* --------------------------------------------------------------- */
 
