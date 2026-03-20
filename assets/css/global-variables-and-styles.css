@@ -252,10 +252,9 @@ footer svg {
 @media screen and (max-width: 1200px) {
 	/* ---------- section-container spacing ---------- */
 	.section-container {
-		background-color: pink;
+		margin-bottom: 80px;
 		margin-left: 60px;
 		margin-right: 60px;
-		margin-bottom: 80px;
 		margin-top: 80px;
 	}
 
@@ -283,6 +282,7 @@ footer svg {
 
 	/* ---------- section-container spacing ---------- */
 	.section-container {
+		background-color: pink;
 		margin-bottom: 40px;
 		margin-left: 30px;
 		margin-right: 30px;

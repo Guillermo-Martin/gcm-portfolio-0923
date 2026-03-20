@@ -104,6 +104,10 @@
   padding-right: 64px;
 }
 
+.quote-text.quoter {
+  text-align: right;
+}
+
 .persona-container.intro-section {
   align-items: start;
   margin-bottom: 120px
