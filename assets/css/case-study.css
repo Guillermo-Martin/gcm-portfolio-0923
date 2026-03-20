@@ -363,6 +363,11 @@
     flex-direction: column;
     gap: 4px;
   }
+
+  /* ---------- High-fidelity mockups ---------- */
+  .intro-section.high-fidelity-text {
+    margin-bottom: 32px;
+  }
 }
 
 @media screen and (max-width: 576px) {
