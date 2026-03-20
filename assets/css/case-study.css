@@ -2,7 +2,7 @@
 	max-width: 66%;
 }
 
-/* overview section, parameters for usability testing */
+/* ---------- overview section, parameters for usability testing ---------- */
 .intro-text ul, .intro-text p {
   margin-bottom: 32px;
 }
@@ -34,7 +34,7 @@
   width: 40%;
 }
 
-/* section intros and sections with text and image side-by-side */
+/* ---------- section intros and sections with text and image side-by-side ---------- */
 .intro-section {
   align-items: end;
 	display: flex;
@@ -54,8 +54,7 @@
 	width: 100%;
 }
 
-
-/* summary lists (where points are made) */
+/* ---------- summary lists (where points are made) ---------- */
 .summary-list {
   max-width: 60%;
 }
@@ -76,7 +75,7 @@
   font-weight: 600;
 }
 
-/* Understanding the user section */
+/* ---------- Understanding the user section ---------- */
 .quote-section {
   background-color: #314788;
 }
@@ -156,7 +155,7 @@
   margin-bottom: 0;
 }
 
-/* Starting the design section */
+/* ---------- Starting the design section ---------- */
 .starting-the-design .intro-section {
   margin-bottom: 120px;
 }
@@ -189,12 +188,12 @@
   display: inline-block;
 }
 
-/* Usability testing section */
+/* ---------- Usability testing section ---------- */
 .parameters {
   margin-bottom: 64px;
 }
 
-/* Moving forward section */
+/* ---------- Moving forward section ---------- */
 .takeaways.summary-list {
   margin-bottom: 64px;
 }
@@ -231,7 +230,7 @@
 }
 
 
-/* Thank you section */
+/* ---------- Thank you section ---------- */
 .thank-you-section {
   background-color: #314788;
   color: white;
@@ -258,7 +257,7 @@
   font-weight: 600;
 }
 
-/* media queries  */
+/* -------------------- media queries -------------------- */
 @media screen and (max-width: 1200px) {
 	/* psersonas section intro spacing */
 	.personas-section-intro, .persona-container.intro-section, .starting-the-design .intro-section {
@@ -309,14 +308,11 @@
   .persona-container figcaption {
     width: 40%;
   }
-
-
 }
 
 @media screen and (max-width: 767px) {
-  /* intro sections */
-	.intro-section, .understanding-the-user .persona-container:nth-child(3), .starting-the-design .digital-wireframes  {
-    /* border: 3px solid red; */
+  /* ---------- intro sections ---------- */
+	.intro-section, .understanding-the-user .persona-container:nth-child(3), .starting-the-design .digital-wireframes {
     flex-direction: column-reverse;
     gap: 32px;
   }
@@ -333,7 +329,7 @@
     display: grid;
   }
 
-  /* overview section */
+  /* ---------- overview section ---------- */
   .problem-and-goal {
     flex-direction: column;
     gap: 32px;
