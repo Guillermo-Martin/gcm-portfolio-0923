@@ -195,12 +195,25 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+	/* featured projects */
 	.project-container {
 		align-items: start;
 	}
+
+	/* tech skills and tools */
+	#tech-skills-and-tools .subheader {
+		margin-bottom: 32px;
+	}
+
+	#tech-skills-and-tools .list-container {
+		gap: 120px;
+	}
+
+
 }
 
 @media screen and (max-width: 767px) {
+	/* featured projects */
 	.project-container {
 		align-items: center;
 		flex-direction: column-reverse;
@@ -210,11 +223,35 @@ footer {
 	.project-container .image-container, .project-container .text-container {
 		width: 100%;
 	}
+
+	/* tech skills and tools */
+	#tech-skills-and-tools .list-container {
+		display: grid;
+		gap: 60px;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.tech-skills li {
+		margin-bottom: 8px;
+	}
 }
 
 @media screen and (max-width: 576px) {
+	/* featured projects */
 	.project-container h3, .project-container p {
 		margin-bottom: 16px;
+	}
+
+	#tech-skills-and-tools .list-container {
+		gap: 32px;
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	#tech-skills-and-tools .list-container {
+		gap: 16px;
+		grid-template-columns: 1fr;
 	}
 }
 
