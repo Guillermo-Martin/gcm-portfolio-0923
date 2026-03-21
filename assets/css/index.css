@@ -210,6 +210,11 @@ footer {
 	}
 
 
+	/* about me section */
+	.about-me-container {
+		/* flex-direction: column-reverse; */
+		align-items: start;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -233,6 +238,23 @@ footer {
 
 	.tech-skills li {
 		margin-bottom: 8px;
+	}
+
+	/* about me */
+	.about-me-container {
+		flex-direction: column-reverse;
+	}
+
+	.about-me-container .image-container, .about-me-container .text-container {
+		width: 100%;
+	}
+
+	.about-me-container .image-container {
+		margin-bottom: 32px;
+	}
+
+	.about-me-container .subsection:nth-child(2) {
+		margin-bottom: 16px;
 	}
 }
 
