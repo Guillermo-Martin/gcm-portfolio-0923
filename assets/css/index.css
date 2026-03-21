@@ -194,6 +194,31 @@ footer {
 	}
 }
 
+@media screen and (max-width: 992px) {
+	.project-container {
+		align-items: start;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.project-container {
+		align-items: center;
+		flex-direction: column-reverse;
+		gap: 16px;
+	}
+
+	.project-container .image-container, .project-container .text-container {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.project-container h3, .project-container p {
+		margin-bottom: 16px;
+	}
+}
+
+
 /* --------------------------------------------------------------- */
 
 /* body {
