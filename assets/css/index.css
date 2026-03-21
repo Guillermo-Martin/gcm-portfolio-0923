@@ -150,6 +150,7 @@
 	border-radius: 16px;
 	font-family: "Inter", sans-serif;
 	padding: 12px;
+	width: 100%;
 }
 
 #contact-form {
@@ -176,23 +177,12 @@ footer {
 
 
 /* media queries */
-@media screen and (max-width: 767px) {
-	.subheader {
-		margin-bottom: 32px;
-		max-width: unset;
-	}
-
-	.button-container {
-		align-items: start;
-		flex-direction: column;
-		width: fit-content;
-	}
-
-	.button-container a {
-		text-align: center;
-		width: 100%;
+@media screen and (max-width: 1200px) {
+	.form-container {
+		width: 50%;
 	}
 }
+
 
 @media screen and (max-width: 992px) {
 	/* featured projects */
@@ -215,9 +205,34 @@ footer {
 		/* flex-direction: column-reverse; */
 		align-items: start;
 	}
+
+	/* form */
+	.form-container {
+		width: 60%;
+	}
+
+	#contact-form {
+		grid-gap: 12px;
+	}
 }
 
 @media screen and (max-width: 767px) {
+	.subheader {
+		margin-bottom: 32px;
+		max-width: unset;
+	}
+
+	.button-container {
+		align-items: start;
+		flex-direction: column;
+		width: fit-content;
+	}
+
+	.button-container a {
+		text-align: center;
+		width: 100%;
+	}
+
 	/* featured projects */
 	.project-container {
 		align-items: center;
@@ -256,6 +271,25 @@ footer {
 	.about-me-container .subsection:nth-child(2) {
 		margin-bottom: 16px;
 	}
+
+	/* let's connect */
+	.contact-container {
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	#contact p {
+		margin-bottom: 32px;
+	}
+
+	#contact .text-container {
+		width: 100%;
+	}
+
+	#contact .form-container {
+		width: 80%;
+	}
+
 }
 
 @media screen and (max-width: 576px) {
@@ -268,12 +302,25 @@ footer {
 		gap: 32px;
 		grid-template-columns: 1fr 1fr;
 	}
+
+	/* form */
+	#contact .form-container {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 420px) {
 	#tech-skills-and-tools .list-container {
 		gap: 16px;
 		grid-template-columns: 1fr;
+	}
+
+	/* form */
+	#contact-form {
+		align-items: start;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 	}
 }
 
