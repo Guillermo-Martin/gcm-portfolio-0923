@@ -61,12 +61,10 @@
 	margin-bottom: 12px;
 }
 
-
-
 /* About me section */
 .about-me-container {
-	display: flex;
 	align-items: center;
+	display: flex;
 	justify-content: space-between;
 }
 
@@ -106,7 +104,6 @@
 .about-me-container a {
 	display: inline-block;
 }
-
 
 /* Let's connect section */
 .contact-container {
@@ -175,14 +172,12 @@ footer {
 	border-top: 4px solid black;
 }
 
-
 /* media queries */
 @media screen and (max-width: 1200px) {
 	.form-container {
 		width: 50%;
 	}
 }
-
 
 @media screen and (max-width: 992px) {
 	/* featured projects */
@@ -199,10 +194,8 @@ footer {
 		gap: 120px;
 	}
 
-
 	/* about me section */
 	.about-me-container {
-		/* flex-direction: column-reverse; */
 		align-items: start;
 	}
 
@@ -317,10 +310,11 @@ footer {
 
 	/* form */
 	#contact-form {
-		align-items: start;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		grid-template-columns: 1fr;
+	}
+
+	.form-container #subject, .form-container #form-message {
+		grid-column: auto;
 	}
 }
 
