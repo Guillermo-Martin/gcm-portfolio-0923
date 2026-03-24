@@ -284,6 +284,7 @@
             <!-- Form -->
             <div class="form-container">
               <form id="contact-form">
+                <input type="hidden" id="sent-time" name="time">
                 <input type="text" id="name" name="name" placeholder="Name" aria-label="Name" required>
                 <input type="email" id="email" name="email" placeholder="Email" aria-label="Email address" required>
                 <input type="text" id="subject" name="subject" placeholder="Subject" aria-label="Message subject" required>
@@ -335,5 +336,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script> -->
     <script type="text/javascript" src="/assets/js/navbar.js"></script>
+    <!-- ---------- EmailJS ---------- -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script type="text/javascript" src="./assets/js/index.js" defer></script>
   </body>
 </html>

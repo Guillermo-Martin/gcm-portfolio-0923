@@ -1,147 +1,227 @@
-let mm = gsap.matchMedia();
+// console.log("on homepage!")
 
-// ---------- Subheader typing effect ----------
-const textToType = "Web Developer & UX Designer.";
-const subheader = document.querySelector(".subheader");
-let currentStr = "";
-let index = 0;
+// elements
+const formContainer = document.querySelector(".form-container");
+const contactForm = document.getElementById("contact-form");
 
-const typingEffect = (str) => {
-  // base case:  if the index is less that the string's length keeping calling the function
-  if(index < str.length) {
-    // add a letter from the string (at the current index) to the current string
-    currentStr += str[index];
-
-    // set the subheader's text content to be what the current string is
-    subheader.textContent = currentStr;
-
-    // increase the index by 1
-    index++;
-
-    // use setTimeout to call the function after a delay
-    setTimeout(() => typingEffect(str), 20);
-  };
-};
-
-// ---------- Page load animation function ----------
-let homepageTimeline;
-
-const init = () => {
-  homepageTimeline = gsap.timeline()
-    .from("body", {autoAlpha: 0})
-    .from("h1", {opacity: 0, duration: 0.7})
-    .from(".subheader", {opacity: 0, duration: 0.7}, "<1")
-    .call(() => typingEffect(textToType), null, "<")
-    .from(".social-links svg", {opacity: 0, stagger: 0.05, duration: 0.7}, "<1")
-    .from(".portfolio-links li", {opacity: 0, stagger: 0.05, duration: 0.7}, "<")
-    .from("a", {pointerEvents: "none"}, "<")
-    .from(".footer", {opacity: 0, duration: 0.7})
-
-  return homepageTimeline;
-};
-
-// ----- Do animation when page elements load -----
-// See if page is being loaded from cache.  If so, reset all elements from the page transition animation
-// then play the entrance animation.
-window.addEventListener("pageshow", (event) => {
-  if (event.persisted) {
-    // Check to see if the animation is active or not.  If so, complete it
-    if(homepageTimeline && homepageTimeline.isActive()) {
-      // complete animation
-      homepageTimeline.progress(1);
-    };
-
-    // reset all elements to initial state
-    gsap.set(".homepage-hero-text", { clearProps: "all" });
-    gsap.set(".portfolio-link-info", { clearProps: "all" });
-    gsap.set(".footer", { clearProps: "all" });
-    gsap.set(".portfolio-links li", { clearProps: "all" });
-    gsap.set(".portfolio-links a", { clearProps: "all" });
-    gsap.set("a", { clearProps: "all" });
-
-    // play the entrance animation
-    init();
-  } else {
-    // Otherwise, play the page entrance animation.
-    init();
-  };
-});
-
-
-// ---------- Portfolio links more info animation ----------
-// get portfolio lnks container and all portfolio links
-const portfolioLinks = document.getElementsByClassName("portfolio-link");
-const portfolioLinksContainer = document.querySelector(".portfolio-links");
-
-// loop over them and add an event listener to each
-for(let i = 0; i < portfolioLinks.length; i++) {
-  // show additional info on mouseenter
-  portfolioLinks[i].addEventListener("mouseenter", function(){
-    // get the element's id
-    const elementId = portfolioLinks[i].id;
-
-    gsap.to(`.portfolio-link-info.${elementId}`, {x: 8, opacity: 1, duration: 0.2});
-  });
-
-  // hide additional info on mouseleave
-  portfolioLinks[i].addEventListener("mouseleave", function(){
-    // get the element's id
-    const elementId = portfolioLinks[i].id;
-
-    gsap.to(`.portfolio-link-info.${elementId}`, {x: 0, opacity: 0, duration: 0.2});
-  });
-};
-
-// ---------- Portfolio link page transition animations ----------
-/**
-  * This is the Greensock page transition animation timeline.
-  * @param {object} event - the "event" object when a user clicks on a link
-  * @param {string} elem1 - the first portfolio link you want to fade away
-  * @param {string} elem2 - the second portfolio link you want to fade away
-*/
-const transitionTimeline = (event, elem1, elem2) => {
-  const targetId = event.target.id;
-  const target = event.target.href;
-  const animationOptions = {opacity: 0, duration: 0.7};
-
-  gsap.timeline()
-    .to(".homepage-hero-text", animationOptions)
-    .to(".portfolio-link-info", animationOptions, "<")
-    .to(".footer", animationOptions, "<")
-    .to(`#${elem1}`, animationOptions, "<")
-    .to(`#${elem2}`, animationOptions, "<")
-    .call(() => {
-      // get all links
-      let allLinks = document.querySelectorAll("a");
-
-      // loop through the links and add a class for no pointer events
-      for(let j = 0; j < allLinks.length; j++) {
-        allLinks[j].style.pointerEvents = "none";
-      }
-    })
-    .to(`#transition-${targetId}`, {opacity: 0, y: -5, duration: 0.5, delay: 0.8})
-    .call(() => {
-      window.location.href = target;
+// ---------- EmailJS ----------
+// load the EmailJS SDK and initialize with our public key
+(function() {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init({
+      publicKey: "7Tt9BC3adNIPZZy5v",
     });
-}
+})();
 
-// ----- Page transition implementation -----
-portfolioLinksContainer.addEventListener("click", (event) => {
-  // prevent default link behavior
-  event.preventDefault();
+window.onload = function() {
+  contactForm.addEventListener("submit", function(event) {
+    // prevent default form submission behavior
+    event.preventDefault();
 
-  // about link
-  if(event.target.id === "about") {
-    transitionTimeline(event, "projects", "resume");
-  };
+    // ----- Creating the timestamp for the email -----
+    // get the current date and time, then format it
+    const sentTime = new Date();
+    const formattedTime = sentTime.toLocaleString();
 
-  // projects link
-  if(event.target.id === "projects") {
-    transitionTimeline(event, "about", "resume");
-  };
+    // set the hidden time input's time value
+    document.getElementById("sent-time").value = formattedTime;
 
-  // resume link
-  if(event.target.id === "resume") {
-    transitionTimeline(event, "about", "projects");
-  };
-});
+    // ----- EmailJS setup -----
+    // "seviceId" is found in the EmailJS dashboard under "Email Services" and under the email service you want to use.
+    // "templateId" is found in the EmailJS dashboard under "Email Templates" 
+    const serviceId = "service_7gefbvh";
+    const templateId = "template_azf2xa5";
+
+    // ----- Sending an email via EmailJS -----
+    // send the info to EmailJS, who will then forward the info via email
+    emailjs.sendForm(serviceId, templateId, this)
+      .then(() => {
+          console.log('SUCCESS!');
+
+          // relay a message to the user that their message was received
+          // 1. hide the contact form (#contact-form)
+          contactForm.classList.add("hide");
+
+          // 2. create a "p" tag, give it a class for styling
+          const submitMsg = document.createElement("p");
+          submitMsg.classList.add("submit-success-msg");
+
+          // 3. give it a message
+          submitMsg.textContent = "Thank you! Your message has been received. I'll connect with you soon!";
+
+          // 4. append it to the container
+          formContainer.appendChild(submitMsg);
+      }, (error) => {
+          console.log('FAILED...', error);
+
+          // relay a message to the user that something went wrong
+          // 1. hide the contact form (#contact-form)
+          contactForm.classList.add("hide");
+
+          // 2. create a "p" tag, give it a class for styling
+          const submitMsg = document.createElement("p");
+          submitMsg.classList.add("submit-fail-msg");
+
+          // 3. give it a message
+          submitMsg.textContent = "Something went wrong. Please try again later. If this continues, please email me at gscalica@gmail.com.";
+
+          // 4. append it to the container
+          formContainer.appendChild(submitMsg);
+      });
+  });
+};
+
+
+
+
+
+// ----------------------------------------------------------
+
+
+// let mm = gsap.matchMedia();
+
+// // ---------- Subheader typing effect ----------
+// const textToType = "Web Developer & UX Designer.";
+// const subheader = document.querySelector(".subheader");
+// let currentStr = "";
+// let index = 0;
+
+// const typingEffect = (str) => {
+//   // base case:  if the index is less that the string's length keeping calling the function
+//   if(index < str.length) {
+//     // add a letter from the string (at the current index) to the current string
+//     currentStr += str[index];
+
+//     // set the subheader's text content to be what the current string is
+//     subheader.textContent = currentStr;
+
+//     // increase the index by 1
+//     index++;
+
+//     // use setTimeout to call the function after a delay
+//     setTimeout(() => typingEffect(str), 20);
+//   };
+// };
+
+// // ---------- Page load animation function ----------
+// let homepageTimeline;
+
+// const init = () => {
+//   homepageTimeline = gsap.timeline()
+//     .from("body", {autoAlpha: 0})
+//     .from("h1", {opacity: 0, duration: 0.7})
+//     .from(".subheader", {opacity: 0, duration: 0.7}, "<1")
+//     .call(() => typingEffect(textToType), null, "<")
+//     .from(".social-links svg", {opacity: 0, stagger: 0.05, duration: 0.7}, "<1")
+//     .from(".portfolio-links li", {opacity: 0, stagger: 0.05, duration: 0.7}, "<")
+//     .from("a", {pointerEvents: "none"}, "<")
+//     .from(".footer", {opacity: 0, duration: 0.7})
+
+//   return homepageTimeline;
+// };
+
+// // ----- Do animation when page elements load -----
+// // See if page is being loaded from cache.  If so, reset all elements from the page transition animation
+// // then play the entrance animation.
+// window.addEventListener("pageshow", (event) => {
+//   if (event.persisted) {
+//     // Check to see if the animation is active or not.  If so, complete it
+//     if(homepageTimeline && homepageTimeline.isActive()) {
+//       // complete animation
+//       homepageTimeline.progress(1);
+//     };
+
+//     // reset all elements to initial state
+//     gsap.set(".homepage-hero-text", { clearProps: "all" });
+//     gsap.set(".portfolio-link-info", { clearProps: "all" });
+//     gsap.set(".footer", { clearProps: "all" });
+//     gsap.set(".portfolio-links li", { clearProps: "all" });
+//     gsap.set(".portfolio-links a", { clearProps: "all" });
+//     gsap.set("a", { clearProps: "all" });
+
+//     // play the entrance animation
+//     init();
+//   } else {
+//     // Otherwise, play the page entrance animation.
+//     init();
+//   };
+// });
+
+
+// // ---------- Portfolio links more info animation ----------
+// // get portfolio lnks container and all portfolio links
+// const portfolioLinks = document.getElementsByClassName("portfolio-link");
+// const portfolioLinksContainer = document.querySelector(".portfolio-links");
+
+// // loop over them and add an event listener to each
+// for(let i = 0; i < portfolioLinks.length; i++) {
+//   // show additional info on mouseenter
+//   portfolioLinks[i].addEventListener("mouseenter", function(){
+//     // get the element's id
+//     const elementId = portfolioLinks[i].id;
+
+//     gsap.to(`.portfolio-link-info.${elementId}`, {x: 8, opacity: 1, duration: 0.2});
+//   });
+
+//   // hide additional info on mouseleave
+//   portfolioLinks[i].addEventListener("mouseleave", function(){
+//     // get the element's id
+//     const elementId = portfolioLinks[i].id;
+
+//     gsap.to(`.portfolio-link-info.${elementId}`, {x: 0, opacity: 0, duration: 0.2});
+//   });
+// };
+
+// // ---------- Portfolio link page transition animations ----------
+// /**
+//   * This is the Greensock page transition animation timeline.
+//   * @param {object} event - the "event" object when a user clicks on a link
+//   * @param {string} elem1 - the first portfolio link you want to fade away
+//   * @param {string} elem2 - the second portfolio link you want to fade away
+// */
+// const transitionTimeline = (event, elem1, elem2) => {
+//   const targetId = event.target.id;
+//   const target = event.target.href;
+//   const animationOptions = {opacity: 0, duration: 0.7};
+
+//   gsap.timeline()
+//     .to(".homepage-hero-text", animationOptions)
+//     .to(".portfolio-link-info", animationOptions, "<")
+//     .to(".footer", animationOptions, "<")
+//     .to(`#${elem1}`, animationOptions, "<")
+//     .to(`#${elem2}`, animationOptions, "<")
+//     .call(() => {
+//       // get all links
+//       let allLinks = document.querySelectorAll("a");
+
+//       // loop through the links and add a class for no pointer events
+//       for(let j = 0; j < allLinks.length; j++) {
+//         allLinks[j].style.pointerEvents = "none";
+//       }
+//     })
+//     .to(`#transition-${targetId}`, {opacity: 0, y: -5, duration: 0.5, delay: 0.8})
+//     .call(() => {
+//       window.location.href = target;
+//     });
+// }
+
+// // ----- Page transition implementation -----
+// portfolioLinksContainer.addEventListener("click", (event) => {
+//   // prevent default link behavior
+//   event.preventDefault();
+
+//   // about link
+//   if(event.target.id === "about") {
+//     transitionTimeline(event, "projects", "resume");
+//   };
+
+//   // projects link
+//   if(event.target.id === "projects") {
+//     transitionTimeline(event, "about", "resume");
+//   };
+
+//   // resume link
+//   if(event.target.id === "resume") {
+//     transitionTimeline(event, "about", "projects");
+//   };
+// });
