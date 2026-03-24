@@ -1,7 +1,17 @@
+console.log("on the case study page!")
 
+// elements
+let finalDesignsDesktopThumbnails = document.body.querySelectorAll(".final-designs .desktop-version img")
+let finalDesignImage = document.body.querySelector(".final-design-image");
 
-
-
+// add an event listener to each thumbnail
+for(let thumbnail of finalDesignsDesktopThumbnails){
+  // when you click on a thumbnail, change the src and alt of the main image
+  thumbnail.addEventListener("click", () => {
+    finalDesignImage.src = thumbnail.src;
+    finalDesignImage.alt = thumbnail.alt;
+  });
+};
 
 // ----------------------------------------------------------------------
 // // targeted elements
