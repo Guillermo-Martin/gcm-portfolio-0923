@@ -248,6 +248,18 @@ footer svg {
 }
 
 
+/* section container image containers */
+.section-container .image-container {
+	border: 6px solid red;
+	aspect-ratio: 3 / 2;
+	overflow: hidden;
+}
+
+.section-container .image-container img {
+  object-fit: contain;
+}
+
+
 /* ----------------------- MEDIA QUERIES ----------------------- */
 @media screen and (max-width: 1200px) {
 	/* ---------- section-container spacing ---------- */
