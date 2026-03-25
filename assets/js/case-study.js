@@ -3,11 +3,22 @@ console.log("on the case study page!")
 
 
 // elements
-let finalDesignsDesktopThumbnails = document.body.querySelectorAll(".final-designs .desktop-version img")
+let finalDesignsDesktopThumbnails = document.body.querySelectorAll(".final-designs .desktop-version img");
 let finalDesignImage = document.body.querySelector(".final-design-image");
+let finalDesignsMobileThumbnails = document.body.querySelectorAll(".final-designs .mobile-version img");
 
 // add an event listener to each thumbnail
+// desktop version
 for(let thumbnail of finalDesignsDesktopThumbnails){
+  // when you click on a thumbnail, change the src and alt of the main image
+  thumbnail.addEventListener("click", () => {
+    finalDesignImage.src = thumbnail.src;
+    finalDesignImage.alt = thumbnail.alt;
+  });
+};
+
+// mobile version
+for(let thumbnail of finalDesignsMobileThumbnails){
   // when you click on a thumbnail, change the src and alt of the main image
   thumbnail.addEventListener("click", () => {
     finalDesignImage.src = thumbnail.src;

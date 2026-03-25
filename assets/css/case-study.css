@@ -405,7 +405,7 @@
     grid-column-gap: 12px;
     grid-row-gap: 12px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 8px;
+    margin-top: 16px;
   }
 
   .final-designs.intro-section {
@@ -418,6 +418,10 @@
   }
 
   .final-designs .image-container img {
+    object-fit: contain;
+  }
+
+  .final-designs .image-container .mobile-version img {
     object-fit: cover;
   }
 }
@@ -456,5 +460,10 @@
   /* ---------- Personas ---------- */
   .goals-and-frustrations ul {
     padding-left: 16px;
+  }
+
+  /* ---------- Final designs ---------- */
+  .gallery-thumbnails.mobile-version {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
