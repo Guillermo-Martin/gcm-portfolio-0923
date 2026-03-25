@@ -292,14 +292,12 @@
 
 .final-designs .image-container img {
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease-in-out;
 }
 
-.final-designs .image-container img.active {
+.final-designs .image-container img.active, .final-designs .image-container .mobile-version img  {
   opacity: 1;
 }
-
-
 
 
 /* ---------- Thank you section ---------- */
