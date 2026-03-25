@@ -1,5 +1,7 @@
 console.log("on the case study page!")
 
+
+
 // elements
 let finalDesignsDesktopThumbnails = document.body.querySelectorAll(".final-designs .desktop-version img")
 let finalDesignImage = document.body.querySelector(".final-design-image");

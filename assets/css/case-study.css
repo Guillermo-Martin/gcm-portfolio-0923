@@ -210,6 +210,28 @@
   margin-bottom: 32px;
 }
 
+.final-designs .image-container {
+  /* Aspect ratio: https://css-tricks.com/a-first-look-at-aspect-ratio/ */
+  align-items: center;
+  aspect-ratio: 3 / 2;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.final-designs .image-container img {
+  border: 3px solid blue;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.final-designs img {
+  object-fit: cover;
+}
+
+
+
 .gallery-thumbnails {
   display: grid;
   grid-column-gap: 12px;
