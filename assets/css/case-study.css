@@ -339,11 +339,32 @@
     width: 100%;
   }
 
-  .persona-container .image-container {
-    display: flex;
+
+  /* ---------------------------- */
+
+  .persona-container figure {
+    flex-direction: row;
     gap: 32px;
     width: 100%;
   }
+
+  .persona-container figure .image-container {
+    margin-bottom: 32px;
+  }
+
+  .persona-container figure .image-container img {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  /* ---------------------------- */
+
+
+  /* .persona-container .image-container {
+    display: flex;
+    gap: 32px;
+    width: 100%;
+  } */
 
   .persona-container figcaption ul {
     align-items: start;
@@ -351,10 +372,11 @@
     gap: 8px;
   }
 
-  .persona-container .image-container img {
+  /* .persona-container .image-container img {
+    border: 3px solid green;
     margin-bottom: 32px;
     width: 60%;
-  }
+  } */
 
   .persona-container figcaption {
     width: 40%;
