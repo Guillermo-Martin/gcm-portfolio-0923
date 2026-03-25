@@ -241,14 +241,17 @@
 }
 
 .gallery-thumbnails button {
-  background-color: red;
   aspect-ratio: 1 / 1;
-  border: 1px solid grey;
+  border: 1px solid #d9d9d9;
   cursor: pointer;
   display: flex;
   object-fit: cover;
   padding: 0;
   width: 100%;
+}
+
+.gallery-thumbnails img.active {
+  outline: 4px solid red;
 }
 
 .gallery-thumbnails img {

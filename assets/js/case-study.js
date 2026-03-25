@@ -14,6 +14,14 @@ for(let thumbnail of finalDesignsDesktopThumbnails){
   thumbnail.addEventListener("click", () => {
     finalDesignImage.src = thumbnail.src;
     finalDesignImage.alt = thumbnail.alt;
+
+    // remove any active states
+    for(let thumbnail of finalDesignsDesktopThumbnails){
+      thumbnail.classList.remove("active");
+    };
+
+    // add an active state to the button you clicked on
+    thumbnail.classList.add("active");
   });
 };
 
@@ -23,6 +31,14 @@ for(let thumbnail of finalDesignsMobileThumbnails){
   thumbnail.addEventListener("click", () => {
     finalDesignImage.src = thumbnail.src;
     finalDesignImage.alt = thumbnail.alt;
+
+    // remove any active states
+  for(let thumbnail of finalDesignsMobileThumbnails){
+    thumbnail.classList.remove("active");
+  };
+
+  // add an active state to the button you clicked on
+  thumbnail.classList.add("active");
   });
 };
 
