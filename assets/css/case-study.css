@@ -418,15 +418,34 @@
   }
 
   /* ---------- Personas ---------- */
-  .persona-container .image-container {
+
+
+  /* ----------------------------------- */
+
+
+  .persona-container figure {
     flex-direction: column;
     gap: 12px;
   }
 
-  .persona-container .image-container img {
+  .persona-container figure .image-container {
+    margin-bottom: 0;
+  }
+
+  /* ----------------------------------- */
+
+
+
+
+  /* .persona-container .image-container {
+    flex-direction: column;
+    gap: 12px;
+  } */
+
+  /* .persona-container .image-container img {
     margin-bottom: 0px;
     width: 100%;
-  }
+  } */
 
   .persona-container figcaption {
     width: 100%;

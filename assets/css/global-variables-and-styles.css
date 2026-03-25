@@ -250,7 +250,7 @@ footer svg {
 
 /* section container image containers */
 .section-container .image-container, .persona-container figure .image-container {
-	border: 6px solid red;
+	/* border: 6px solid red; */
 	aspect-ratio: 3 / 2;
 	overflow: hidden;
 }
