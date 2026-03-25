@@ -122,6 +122,28 @@
   margin-bottom: 32px;
 }
 
+
+
+/* ---------------------------------------- */
+
+.persona-container figure {
+  /* border: 3px solid blue; */
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.persona-container figure .image-container {
+  /* border: 3px solid pink; */
+  display: block;
+  /* aspect-ratio: 3 / 2; */
+  overflow: hidden;
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+/* ---------------------------------------- */
+
 .goals-and-frustrations h5 {
   margin-bottom: 8px;
 }
