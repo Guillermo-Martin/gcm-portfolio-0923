@@ -62,8 +62,19 @@ highFidelitySlideshow.startSlideshow();
 for(let thumbnail of finalDesignsDesktopThumbnails){
   // when you click on a thumbnail, change the src and alt of the main image
   thumbnail.addEventListener("click", () => {
-    finalDesignImage.src = thumbnail.src;
-    finalDesignImage.alt = thumbnail.alt;
+    // fadeout the previous image...
+    finalDesignImage.classList.remove("active");
+
+    // ...then swap in image and fade in
+    setTimeout(() => {
+      // swap image
+      finalDesignImage.src = thumbnail.src;
+      finalDesignImage.alt = thumbnail.alt;
+
+      // fade in
+      finalDesignImage.classList.add("active");
+    }, 200);
+    
 
     // remove any active states
     for(let thumbnail of finalDesignsDesktopThumbnails){

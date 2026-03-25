@@ -282,13 +282,24 @@
   width: 100%;
 }
 
-.gallery-thumbnails img.active {
-  outline: 4px solid red;
-}
-
 .gallery-thumbnails img {
   width: 100%;
 }
+
+.gallery-thumbnails img.active {
+  outline: 4px solid #314788;
+}
+
+.final-designs .image-container img {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.final-designs .image-container img.active {
+  opacity: 1;
+}
+
+
 
 
 /* ---------- Thank you section ---------- */
