@@ -220,7 +220,6 @@
 }
 
 .final-designs .image-container img {
-  border: 3px solid blue;
   height: 100%;
   object-fit: contain;
   width: 100%;
@@ -229,8 +228,6 @@
 .final-designs img {
   object-fit: cover;
 }
-
-
 
 .gallery-thumbnails {
   display: grid;
@@ -244,9 +241,12 @@
 }
 
 .gallery-thumbnails button {
-  border: none;
+  background-color: red;
+  aspect-ratio: 1 / 1;
+  border: 1px solid grey;
   cursor: pointer;
   display: flex;
+  object-fit: cover;
   padding: 0;
   width: 100%;
 }
@@ -404,12 +404,21 @@
     display: grid;
     grid-column-gap: 12px;
     grid-row-gap: 12px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 8px;
   }
 
   .final-designs.intro-section {
     gap: 0;
+  }
+
+  .final-designs .image-container {
+    flex-direction: column;
+    overflow: unset;
+  }
+
+  .final-designs .image-container img {
+    object-fit: cover;
   }
 }
 
