@@ -122,27 +122,18 @@
   margin-bottom: 32px;
 }
 
-
-
-/* ---------------------------------------- */
-
 .persona-container figure {
-  /* border: 3px solid blue; */
   display: flex;
   flex-direction: column;
   width: 60%;
 }
 
 .persona-container figure .image-container {
-  /* border: 3px solid pink; */
   display: block;
-  /* aspect-ratio: 3 / 2; */
   overflow: hidden;
   margin-bottom: 12px;
   width: 100%;
 }
-
-/* ---------------------------------------- */
 
 .goals-and-frustrations h5 {
   margin-bottom: 8px;
@@ -310,7 +301,7 @@
 
 /* -------------------- media queries -------------------- */
 @media screen and (max-width: 1200px) {
-	/* psersonas section intro spacing */
+	/* personas section intro spacing */
 	.personas-section-intro, .persona-container.intro-section, .starting-the-design .intro-section {
     margin-bottom: 60px;
   }
@@ -339,9 +330,6 @@
     width: 100%;
   }
 
-
-  /* ---------------------------- */
-
   .persona-container figure {
     flex-direction: row;
     gap: 32px;
@@ -357,26 +345,11 @@
     width: 100%;
   }
 
-  /* ---------------------------- */
-
-
-  /* .persona-container .image-container {
-    display: flex;
-    gap: 32px;
-    width: 100%;
-  } */
-
   .persona-container figcaption ul {
     align-items: start;
     flex-direction: column;
     gap: 8px;
   }
-
-  /* .persona-container .image-container img {
-    border: 3px solid green;
-    margin-bottom: 32px;
-    width: 60%;
-  } */
 
   .persona-container figcaption {
     width: 40%;
@@ -418,11 +391,6 @@
   }
 
   /* ---------- Personas ---------- */
-
-
-  /* ----------------------------------- */
-
-
   .persona-container figure {
     flex-direction: column;
     gap: 12px;
@@ -431,21 +399,6 @@
   .persona-container figure .image-container {
     margin-bottom: 0;
   }
-
-  /* ----------------------------------- */
-
-
-
-
-  /* .persona-container .image-container {
-    flex-direction: column;
-    gap: 12px;
-  } */
-
-  /* .persona-container .image-container img {
-    margin-bottom: 0px;
-    width: 100%;
-  } */
 
   .persona-container figcaption {
     width: 100%;
