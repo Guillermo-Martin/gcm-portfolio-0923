@@ -1,5 +1,16 @@
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1521747116042-5a810fda9664?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+}
+
 .hero-text, .subheader {
+  color: black;
 	max-width: 66%;
+}
+
+.hero-text, .hero-text .subheader {
+  color: white;
+  text-shadow: 1px 1px 2px black;
 }
 
 /* ---------- overview section, parameters for usability testing ---------- */
