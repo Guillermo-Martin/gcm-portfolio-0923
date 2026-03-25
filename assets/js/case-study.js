@@ -1,12 +1,62 @@
 console.log("on the case study page!")
 
+// ------------------- Elements -------------------
+// for the slideshows
+const wireframesSlides = document.querySelectorAll(".wireframes .slideshow img");
+const digitalWireframesSlides = document.querySelectorAll(".digital-wireframes .slideshow img");
+const highFidelitySlides = document.querySelectorAll(".high-fidelity-text .slideshow img");
 
-
-// elements
+// for the "final designs" gallery
 let finalDesignsDesktopThumbnails = document.body.querySelectorAll(".final-designs .desktop-version img");
 let finalDesignImage = document.body.querySelector(".final-design-image");
 let finalDesignsMobileThumbnails = document.body.querySelectorAll(".final-designs .mobile-version img");
 
+
+// ------------------- slideshow -------------------
+class Slideshow {
+  // ---------- constructor ----------
+  // "arr" is an array of images
+  constructor(arr) {
+    this.slideNum = 0;
+    this.slides = arr;
+  };
+
+  // ---------- methods ----------
+  cycleSlides() {
+    // Creating a slideshow: https://stackoverflow.com/questions/32222545/fade-transition-in-javascript-slide-show
+    // 1. remove the "active" class from the current slide
+    this.slides[this.slideNum].classList.remove("active");
+
+    // 2. increase the slide number by 1
+    this.slideNum++;
+
+    // 3. check: if "slideNum" === the array's length, you're at the end of the array,
+    // so start over at 0;
+    if(this.slideNum === this.slides.length) {
+      this.slideNum = 0;
+    };
+    
+    this.slides[this.slideNum].classList.add("active");
+  };
+
+  // 4. add the "active" class to the current slide
+  startSlideshow() {
+    setInterval(() => this.cycleSlides(), 4500);
+  };
+};
+
+// create instances of the slideshow for the "Starting the design" section
+const wireframesSlideshow = new Slideshow(wireframesSlides);
+const digitalSlideshow = new Slideshow(digitalWireframesSlides);
+const highFidelitySlideshow = new Slideshow(highFidelitySlides);
+
+// play the slideshow for each section
+wireframesSlideshow.startSlideshow();
+digitalSlideshow.startSlideshow();
+highFidelitySlideshow.startSlideshow();
+
+
+// ------------------- "Final Designs" gallery funtionality -------------------
 // add an event listener to each thumbnail
 // desktop version
 for(let thumbnail of finalDesignsDesktopThumbnails){
@@ -41,6 +91,12 @@ for(let thumbnail of finalDesignsMobileThumbnails){
   thumbnail.classList.add("active");
   });
 };
+
+
+
+
+
+
 
 // ----------------------------------------------------------------------
 // // targeted elements

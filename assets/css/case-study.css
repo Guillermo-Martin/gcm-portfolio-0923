@@ -177,6 +177,25 @@
   margin-bottom: 120px;
 }
 
+/* ----- styles for the slideshow ----- */
+.starting-the-design .image-container.slideshow {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.starting-the-design .image-container.slideshow > img {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.starting-the-design .image-container.slideshow > img.active {
+  opacity: 1;
+}
+/* ----- end slideshow styles ----- */
+
 .starting-the-design .digital-wireframes {
   flex-direction: row-reverse;
 }
