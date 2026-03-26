@@ -57,8 +57,13 @@
 	width: 33%;
 }
 
+/* .intro-section figure, .section-container .image-container.slideshow, .intro-section.prototype .image-container, .intro-section.final-designs .image-container { */
+.intro-section figure {
+  width: 60%;
+}
+
 .intro-section .image-container {
-	width: 60%;
+  width: 100%;
 }
 
 .intro-section img {
