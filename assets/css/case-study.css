@@ -389,7 +389,12 @@
 }
 
 @media screen and (max-width: 992px) {
-/* ---------- Quote ---------- */
+  /* ---------- Attribution ---------- */
+  .attribution {
+    transform: translateY(100px);
+  }
+
+  /* ---------- Quote ---------- */
 	.quote-container {
 		margin-bottom: 16px;
 	}
@@ -440,7 +445,7 @@
     gap: 32px;
   }
 
-  .intro-section .image-container, .intro-section .text-container {
+  .intro-section figure, .intro-section .image-container, .intro-section .text-container {
     width: 100%;
   }
 
