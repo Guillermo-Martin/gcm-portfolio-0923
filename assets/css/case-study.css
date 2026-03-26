@@ -348,6 +348,16 @@
 }
 
 /* -------------------- media queries -------------------- */
+@media screen and (max-width: 1400px) {
+  /* persona figcaption */
+  .persona-container figcaption ul {
+    align-items: start;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+
 @media screen and (max-width: 1200px) {
 	/* personas section intro spacing */
 	.personas-section-intro, .persona-container.intro-section, .starting-the-design .intro-section {
