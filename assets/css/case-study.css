@@ -57,7 +57,6 @@
 	width: 33%;
 }
 
-/* .intro-section figure, .section-container .image-container.slideshow, .intro-section.prototype .image-container, .intro-section.final-designs .image-container { */
 .intro-section figure {
   position: relative;
   width: 60%;
@@ -174,21 +173,14 @@
   width: 100%;
 }
 
-/* ------------------------------------------- */
-
 .persona-container .attribution {
-  /* border: 3px solid red; */
   bottom: 118px;
 }
 
 .section-container .persona-container:nth-child(3) .attribution {
-  /* border: 3px solid blue; */
   right: auto;
   transform: rotate(-90deg) translateY(-104px);
 }
-
-/* ------------------------------------------- */
-
 
 .goals-and-frustrations h5 {
   margin-bottom: 8px;
@@ -393,14 +385,7 @@
 
   /* persona attributions */
   .persona-container .attribution {
-    /* border: 3px solid red; */
     bottom: 198px;
-  }
-
-  .section-container .persona-container:nth-child(3) .attribution {
-    /* border: 3px solid blue;
-    right: auto;
-    transform: rotate(-90deg) translateY(-104px); */
   }
 }
 
@@ -526,13 +511,9 @@
   }
 
   .persona-container .attribution {
-    /* border: 3px solid red; */
-    /* bottom: 198px; */
-    /* transform: translateY(100px); */
-    /* right: 0; */
+    margin-top: 9px;
     position: static;
     text-align: right;
-    margin-top: 9px;
   }
 
   /* ---------- High-fidelity mockups ---------- */
