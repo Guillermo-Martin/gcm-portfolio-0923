@@ -174,6 +174,22 @@
   width: 100%;
 }
 
+/* ------------------------------------------- */
+
+.persona-container .attribution {
+  /* border: 3px solid red; */
+  bottom: 118px;
+}
+
+.section-container .persona-container:nth-child(3) .attribution {
+  /* border: 3px solid blue; */
+  right: auto;
+  transform: rotate(-90deg) translateY(-104px);
+}
+
+/* ------------------------------------------- */
+
+
 .goals-and-frustrations h5 {
   margin-bottom: 8px;
 }
@@ -374,6 +390,18 @@
     flex-direction: column;
     gap: 4px;
   }
+
+  /* persona attributions */
+  .persona-container .attribution {
+    /* border: 3px solid red; */
+    bottom: 198px;
+  }
+
+  .section-container .persona-container:nth-child(3) .attribution {
+    /* border: 3px solid blue;
+    right: auto;
+    transform: rotate(-90deg) translateY(-104px); */
+  }
 }
 
 
@@ -436,6 +464,12 @@
   .persona-container figcaption {
     width: 40%;
   }
+
+  .persona-container .attribution, .section-container .persona-container:nth-child(3) .attribution {
+    left: 0;
+    transform: translateY(-16px);
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -489,6 +523,16 @@
   .persona-container figcaption ul {
     flex-direction: column;
     gap: 4px;
+  }
+
+  .persona-container .attribution {
+    /* border: 3px solid red; */
+    /* bottom: 198px; */
+    /* transform: translateY(100px); */
+    /* right: 0; */
+    position: static;
+    text-align: right;
+    margin-top: 9px;
   }
 
   /* ---------- High-fidelity mockups ---------- */
