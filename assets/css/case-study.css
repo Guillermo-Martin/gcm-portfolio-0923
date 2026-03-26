@@ -35,7 +35,7 @@
 }
 
 .problem-and-goal {
-  align-items: center;
+  align-items: start;
   display: flex;
   gap: 100px;
   justify-content: start;
