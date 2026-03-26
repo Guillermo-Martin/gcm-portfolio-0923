@@ -133,6 +133,15 @@
   margin-bottom: 32px;
 }
 
+.persona-container h4 {
+  margin-bottom: 12px;
+}
+
+.persona-quote {
+  font-size: 18px;
+  font-style: italic;
+}
+
 .persona-container figure {
   display: flex;
   flex-direction: column;
@@ -506,6 +515,10 @@
   /* ---------- Personas ---------- */
   .persona-container h4 {
     margin-bottom: 16px;
+  }
+
+  .persona-quote {
+    font-size: 16px;
   }
 }
 
