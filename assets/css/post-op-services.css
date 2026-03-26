@@ -2,3 +2,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./../images/post-op-services/hero-image.jpg");
   background-size: cover;
 }
+
+.intro-section.persona-container {
+  margin-bottom: 0;
+}
