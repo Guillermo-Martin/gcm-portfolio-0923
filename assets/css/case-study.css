@@ -59,6 +59,7 @@
 
 /* .intro-section figure, .section-container .image-container.slideshow, .intro-section.prototype .image-container, .intro-section.final-designs .image-container { */
 .intro-section figure {
+  position: relative;
   width: 60%;
 }
 
@@ -68,6 +69,19 @@
 
 .intro-section img {
 	width: 100%;
+}
+
+/* image attribution */
+.attribution, .attribution a {
+  color: #c8cad1;
+  font-size: 10px;
+}
+
+.attribution {
+  bottom: 84px;
+  position: absolute;
+  right: 0;
+  transform: rotate(-90deg) translateY(104px);
 }
 
 /* ---------- summary lists (where points are made) ---------- */
