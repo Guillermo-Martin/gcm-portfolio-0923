@@ -2,6 +2,7 @@ console.log("on the case study page!")
 
 // ------------------- Elements -------------------
 // for the slideshows
+const inspirationSlides = document.querySelectorAll(".inspiration .slideshow img");
 const wireframesSlides = document.querySelectorAll(".wireframes .slideshow img");
 const digitalWireframesSlides = document.querySelectorAll(".digital-wireframes .slideshow img");
 const highFidelitySlides = document.querySelectorAll(".high-fidelity-text .slideshow img");
@@ -11,6 +12,7 @@ let finalDesignsDesktopThumbnails = document.body.querySelectorAll(".final-desig
 let finalDesignImage = document.body.querySelector(".final-design-image");
 let finalDesignsMobileThumbnails = document.body.querySelectorAll(".final-designs .mobile-version img");
 
+console.log(inspirationSlides)
 
 // ------------------- slideshow -------------------
 class Slideshow {
@@ -46,11 +48,14 @@ class Slideshow {
 };
 
 // create instances of the slideshow for the "Starting the design" section
+const inspirationSlidesshow = new Slideshow(inspirationSlides);
 const wireframesSlideshow = new Slideshow(wireframesSlides);
 const digitalSlideshow = new Slideshow(digitalWireframesSlides);
 const highFidelitySlideshow = new Slideshow(highFidelitySlides);
 
+
 // play the slideshow for each section
+inspirationSlidesshow.startSlideshow();
 wireframesSlideshow.startSlideshow();
 digitalSlideshow.startSlideshow();
 highFidelitySlideshow.startSlideshow();
