@@ -6,3 +6,11 @@
 .intro-section.persona-container {
   margin-bottom: 0;
 }
+
+.final-designs.intro-section {
+  margin-bottom: 64px;
+}
+
+.prototype.intro-section {
+  flex-direction: row-reverse;
+}
