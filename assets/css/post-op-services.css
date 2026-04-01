@@ -34,4 +34,12 @@
   .intro-section.prototype {
     flex-direction: column;
   }
+
+  .final-designs .image-container {
+    border: none;
+  }
+
+  .final-designs .image-container .final-design-image {
+    border: 1px solid #d9d9d9;
+  }
 }
