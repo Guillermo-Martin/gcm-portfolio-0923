@@ -257,7 +257,9 @@ footer svg {
 }
 
 .section-container .image-container img, .persona-container figure .image-container img {
-  object-fit: contain;
+	/* use on individual sections in case studies where the image is too big */
+  /* object-fit: contain;  */
+  object-fit: cover;
 }
 
 

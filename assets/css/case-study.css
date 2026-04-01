@@ -234,6 +234,7 @@
 }
 
 .starting-the-design .image-container.slideshow > img {
+  object-fit: contain;
   opacity: 0;
   position: absolute;
   transition: opacity 1.5s ease-in-out;
