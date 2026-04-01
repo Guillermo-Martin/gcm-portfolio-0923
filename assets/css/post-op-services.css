@@ -18,3 +18,9 @@
 .prototype.intro-section {
   flex-direction: row-reverse;
 }
+
+.prototype figure .image-container img {
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
