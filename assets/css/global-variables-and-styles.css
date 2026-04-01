@@ -251,7 +251,9 @@ footer svg {
 /* ---------- section container image containers ---------- */
 .section-container .image-container {
 	aspect-ratio: 3 / 2;
+	display: flex;
 	overflow: hidden;
+	/* background-color: red; */
 }
 
 .section-container .image-container img, .persona-container figure .image-container img {
