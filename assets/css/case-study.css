@@ -78,10 +78,12 @@
 }
 
 .attribution {
-  bottom: 84px;
+  bottom: 0;
   position: absolute;
-  right: 0;
-  transform: rotate(-90deg) translateY(104px);
+  right: -20px;
+  transform: rotate(180deg);
+  /* writing mode: https://www.w3schools.com/cssref/css3_pr_writing-mode.php */
+  writing-mode: vertical-rl;
 }
 
 /* ---------- summary lists (where points are made) ---------- */
@@ -175,7 +177,7 @@
 }
 
 .persona-container .attribution {
-  bottom: 120px;
+  bottom: 36px;
 }
 
 .section-container .persona-container:nth-child(3) .attribution {
@@ -406,7 +408,11 @@
 @media screen and (max-width: 992px) {
   /* ---------- Attribution ---------- */
   .attribution {
-    transform: translateY(100px);
+    /* transform: translateY(100px); */
+    bottom: -16px;
+    transform: none;
+    right: 0;
+    writing-mode: unset;
   }
 
   /* ---------- Quote ---------- */

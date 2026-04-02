@@ -30,6 +30,26 @@
 }
 
 /* ---------- Media queries ---------- */
+
+
+@media screen and (max-width: 1617px) {
+  .persona-container .attribution {
+    bottom: 56px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .persona-container .attribution {
+    bottom: 114px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .persona-container .attribution {
+    bottom: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .intro-section.prototype {
     flex-direction: column;
