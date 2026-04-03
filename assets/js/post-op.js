@@ -1,8 +1,10 @@
-// alert("on post op")
 import { Slideshow } from "./Slideshow.js";
 
-const highFidelitySlides = document.querySelectorAll(".high-fidelity-text .slideshow img");
+// get the images for the "inspiration" slideshow
+const inspirationSlides = document.querySelectorAll(".inspiration .slideshow img");
 
-const highFidelitySlideshow = new Slideshow(highFidelitySlides);
+// create a new slideshow
+const inspirationSlidesshow = new Slideshow(inspirationSlides);
 
-highFidelitySlideshow.startSlideshow();
+// run the slideshow
+inspirationSlidesshow.startSlideshow();
