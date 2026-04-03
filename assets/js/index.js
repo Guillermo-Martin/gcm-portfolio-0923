@@ -1,4 +1,4 @@
-// console.log("on homepage!")
+console.log("on homepage!")
 
 // elements
 const formContainer = document.querySelector(".form-container");
