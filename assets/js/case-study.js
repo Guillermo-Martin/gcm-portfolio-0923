@@ -1,11 +1,13 @@
 console.log("on the case study page!")
 
+import { Slideshow } from "./Slideshow.js";
+
 // ------------------- Elements -------------------
 // for the slideshows
 const inspirationSlides = document.querySelectorAll(".inspiration .slideshow img");
 const wireframesSlides = document.querySelectorAll(".wireframes .slideshow img");
 const digitalWireframesSlides = document.querySelectorAll(".digital-wireframes .slideshow img");
-const highFidelitySlides = document.querySelectorAll(".high-fidelity-text .slideshow img");
+// const highFidelitySlides = document.querySelectorAll(".high-fidelity-text .slideshow img");
 
 // for the "final designs" gallery
 let finalDesignsDesktopThumbnails = document.body.querySelectorAll(".final-designs .desktop-version img");
@@ -15,50 +17,50 @@ let finalDesignsMobileThumbnails = document.body.querySelectorAll(".final-design
 console.log(inspirationSlides)
 
 // ------------------- slideshow -------------------
-class Slideshow {
-  // ---------- constructor ----------
-  // "arr" is an array of images
-  constructor(arr) {
-    this.slideNum = 0;
-    this.slides = arr;
-  };
+// class Slideshow {
+//   // ---------- constructor ----------
+//   // "arr" is an array of images
+//   constructor(arr) {
+//     this.slideNum = 0;
+//     this.slides = arr;
+//   };
 
-  // ---------- methods ----------
-  cycleSlides() {
-    // Creating a slideshow: https://stackoverflow.com/questions/32222545/fade-transition-in-javascript-slide-show
-    // 1. remove the "active" class from the current slide
-    this.slides[this.slideNum].classList.remove("active");
+//   // ---------- methods ----------
+//   cycleSlides() {
+//     // Creating a slideshow: https://stackoverflow.com/questions/32222545/fade-transition-in-javascript-slide-show
+//     // 1. remove the "active" class from the current slide
+//     this.slides[this.slideNum].classList.remove("active");
 
-    // 2. increase the slide number by 1
-    this.slideNum++;
+//     // 2. increase the slide number by 1
+//     this.slideNum++;
 
-    // 3. check: if "slideNum" === the array's length, you're at the end of the array,
-    // so start over at 0;
-    if(this.slideNum === this.slides.length) {
-      this.slideNum = 0;
-    };
+//     // 3. check: if "slideNum" === the array's length, you're at the end of the array,
+//     // so start over at 0;
+//     if(this.slideNum === this.slides.length) {
+//       this.slideNum = 0;
+//     };
     
-    this.slides[this.slideNum].classList.add("active");
-  };
+//     this.slides[this.slideNum].classList.add("active");
+//   };
 
-  // 4. add the "active" class to the current slide
-  startSlideshow() {
-    setInterval(() => this.cycleSlides(), 4500);
-  };
-};
+//   // 4. add the "active" class to the current slide
+//   startSlideshow() {
+//     setInterval(() => this.cycleSlides(), 4500);
+//   };
+// };
 
 // create instances of the slideshow for the "Starting the design" section
 const inspirationSlidesshow = new Slideshow(inspirationSlides);
 const wireframesSlideshow = new Slideshow(wireframesSlides);
 const digitalSlideshow = new Slideshow(digitalWireframesSlides);
-const highFidelitySlideshow = new Slideshow(highFidelitySlides);
+// const highFidelitySlideshow = new Slideshow(highFidelitySlides);
 
 
 // play the slideshow for each section
 inspirationSlidesshow.startSlideshow();
 wireframesSlideshow.startSlideshow();
 digitalSlideshow.startSlideshow();
-highFidelitySlideshow.startSlideshow();
+// highFidelitySlideshow.startSlideshow();
 
 
 // ------------------- "Final Designs" gallery funtionality -------------------
