@@ -184,8 +184,7 @@
 }
 
 .section-container .persona-container:nth-child(3) .attribution {
-  right: auto;
-  transform: rotate(-90deg) translateY(-104px);
+  left: -20px;
 }
 
 .goals-and-frustrations h5 {
@@ -392,7 +391,7 @@
 
   /* persona attributions */
   .persona-container .attribution {
-    bottom: 198px;
+    bottom: 114px;
   }
 }
 
