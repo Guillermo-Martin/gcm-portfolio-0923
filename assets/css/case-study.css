@@ -110,6 +110,9 @@
 /* ---------- Understanding the user section ---------- */
 .quote-section {
   background-color: #314788;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .quote-container {
