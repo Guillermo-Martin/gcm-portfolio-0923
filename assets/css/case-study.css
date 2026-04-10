@@ -140,6 +140,8 @@
 }
 
 .quote-text.quoter {
+  font-size: 24px;
+  margin-top: 12px;
   text-align: right;
 }
 
