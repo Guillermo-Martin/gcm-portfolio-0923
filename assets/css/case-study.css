@@ -126,6 +126,14 @@
   width: 5%;
 }
 
+.full-quote {
+  margin-bottom: 40px;
+}
+
+.full-quote:last-child {
+  margin-bottom: 0;
+}
+
 .quote p {
   color: white;
   font-size: 36px;

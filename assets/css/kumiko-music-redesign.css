@@ -25,9 +25,9 @@
   flex-direction: row-reverse;
 }
 
-.full-quote {
+/* .full-quote {
   margin-bottom: 40px;
-}
+} */
 
 /* media queries */
 @media screen and (max-width: 767px) {
