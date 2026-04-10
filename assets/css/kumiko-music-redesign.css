@@ -16,3 +16,14 @@
 .hero-attribution a {
   color: #c8cad1;
 }
+
+.intro-section.navigation, .intro-section.readability {
+  flex-direction: row-reverse;
+}
+
+/* media queries */
+@media screen and (max-width: 767px) {
+	.intro-section.navigation, .intro-section.readability {
+    flex-direction: column-reverse;
+  }
+}
