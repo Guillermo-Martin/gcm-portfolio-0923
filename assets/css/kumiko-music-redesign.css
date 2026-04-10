@@ -17,6 +17,10 @@
   color: #c8cad1;
 }
 
+.starting-the-design .intro-section h4 {
+  margin-bottom: 16px;
+}
+
 .intro-section.navigation, .intro-section.readability {
   flex-direction: row-reverse;
 }
