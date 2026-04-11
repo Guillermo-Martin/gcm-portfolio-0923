@@ -63,7 +63,7 @@
 }
 
 .intro-section .image-container {
-  border: 1px solid #d9d9d9;
+  /* border: 1px solid #d9d9d9; */
   width: 100%;
 }
 
@@ -241,10 +241,12 @@
 
 /* ----- styles for the slideshow ----- */
 .starting-the-design .image-container.slideshow {
-  align-items: center;
+  /* align-items: center; */
+  align-items: end;
   display: flex;
   justify-content: center;
   position: relative;
+  /* border: 3px solid red; */
 }
 
 .starting-the-design .image-container.slideshow > img {
