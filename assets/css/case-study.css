@@ -436,6 +436,10 @@
     font-size: 28px;
   }
 
+  .quote-text.quoter {
+    font-size: 20px;
+  }
+
   /* ---------- Personas ---------- */
   .persona-container.intro-section, .understanding-the-user .persona-container:nth-child(3) {
     flex-direction: column-reverse;
@@ -507,8 +511,16 @@
   }
 
   /* ---------- Quote ---------- */
+  .full-quote {
+    margin-bottom: 28px;
+  }
+
   .quote p {
     font-size: 24px;
+  }
+
+  .quote-text.quoter {
+    font-size: 16px;
   }
 
   /* ---------- Personas ---------- */
