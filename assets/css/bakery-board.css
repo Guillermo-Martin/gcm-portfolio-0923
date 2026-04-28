@@ -6,6 +6,12 @@
 }
 
 /* lofi prototype */
+.lofi-prototype.intro-section {
+  /* border: 3px solid red; */
+  margin-bottom: 0;
+}
+
+
 .lofi-prototype p {
   margin-bottom: 32px;
 }
