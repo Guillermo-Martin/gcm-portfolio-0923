@@ -5,6 +5,17 @@
   background-size: contain;
 }
 
+/* lofi prototype */
+.lofi-prototype p {
+  margin-bottom: 32px;
+}
+
+.lofi-prototype a {
+  display: inline-block;
+}
+
+
+
 /* media queries */
 @media screen and (max-width: 1200px) {
   #bakery-board .hero-section {
