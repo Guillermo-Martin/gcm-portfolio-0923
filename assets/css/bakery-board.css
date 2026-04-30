@@ -29,6 +29,12 @@
   margin-bottom: 0;
 }
 
+.refining-the-design .clearer-language img, .refining-the-design .homepage img, .refining-the-design .responsive-design img {
+  /* border: 3px solid red; */
+  height: 100%;
+  object-fit: contain;
+}
+
 
 /* media queries */
 @media screen and (max-width: 1200px) {

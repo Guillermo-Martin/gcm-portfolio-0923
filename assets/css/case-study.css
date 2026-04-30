@@ -235,7 +235,7 @@
 }
 
 /* ---------- Starting the design section ---------- */
-.starting-the-design .intro-section {
+.starting-the-design .intro-section, .refining-the-design .intro-section.subsection {
   margin-bottom: 120px;
 }
 
