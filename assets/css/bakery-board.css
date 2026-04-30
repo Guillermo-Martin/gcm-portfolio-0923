@@ -20,19 +20,21 @@
 }
 
 /* refining the design */
-.refining-the-design .readability, .refining-the-design .homepage {
+.refining-the-design .readability, .refining-the-design .homepage, .refining-the-design .prototype {
   flex-direction: row-reverse;
 }
 
 .refining-the-design .responsive-design {
-  /* border: 3px solid blue; */
-  margin-bottom: 0;
+  margin-bottom: 120px;
 }
 
-.refining-the-design .clearer-language img, .refining-the-design .homepage img, .refining-the-design .responsive-design img {
-  /* border: 3px solid red; */
+.refining-the-design .clearer-language img, .refining-the-design .homepage img, .refining-the-design .responsive-design img, .refining-the-design .prototype img {
   height: 100%;
   object-fit: contain;
+}
+
+.refining-the-design .prototype a:last-child {
+  margin-top: 16px;
 }
 
 
