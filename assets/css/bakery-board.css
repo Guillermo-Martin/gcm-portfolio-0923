@@ -45,6 +45,12 @@
   }
 }
 
+@media screen and (max-width: 886px) {
+  .prototype a {
+    line-height: 1.2;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #bakery-board .hero-section {
     background-position: 94% 70px;
