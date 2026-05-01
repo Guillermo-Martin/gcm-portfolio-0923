@@ -10,6 +10,7 @@ const responsiveSlides = document.querySelectorAll(".responsive-design .slidesho
 const dashboardSlides = document.querySelectorAll(".user-dashboard .slideshow img");
 const easierNavSlides = document.querySelectorAll(".easier-nav .slideshow img");
 const quickAddSlides = document.querySelectorAll(".quick-add .slideshow img");
+const finalHifiPrototypeSlides = document.querySelectorAll(".final-hifi-prototype .slideshow img");
 
 // create a new slideshow
 const readabilitySlideshow = new Slideshow(readabilitySlides);
@@ -19,6 +20,7 @@ const responsiveSlideshow = new Slideshow(responsiveSlides);
 const dashboardSlideshow = new Slideshow(dashboardSlides);
 const easierNavSlideshow = new Slideshow(easierNavSlides);
 const quickAddSlideshow = new Slideshow(quickAddSlides);
+const finalHifiPrototypeSlideshow = new Slideshow(finalHifiPrototypeSlides);
 
 // run the slideshow
 readabilitySlideshow.startSlideshow();
@@ -28,3 +30,4 @@ responsiveSlideshow.startSlideshow();
 dashboardSlideshow.startSlideshow();
 easierNavSlideshow.startSlideshow();
 quickAddSlideshow.startSlideshow();
+finalHifiPrototypeSlideshow.startSlideshow();
