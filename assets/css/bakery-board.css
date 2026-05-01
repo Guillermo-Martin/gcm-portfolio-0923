@@ -7,7 +7,6 @@
 
 /* lofi prototype */
 .lofi-prototype.intro-section {
-  /* border: 3px solid red; */
   margin-bottom: 0;
 }
 
@@ -38,7 +37,7 @@
 }
 
 
-/* media queries */
+/* ---------- media queries ---------- */
 @media screen and (max-width: 1200px) {
   #bakery-board .hero-section {
     background-position: 94% 84px;
@@ -64,9 +63,9 @@
 @media screen and (max-width: 576px) {
   #bakery-board .hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./../images/bakery-board/new-bakery-board-app.png");
+    background-position: 94% 70px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 94% 70px;
   }
 }
 
