@@ -45,6 +45,10 @@
 	width: 100%;
 }
 
+#projects .bakery-board {
+	object-fit: contain;
+}
+
 /* Tech skills and tools section */
 #tech-skills-and-tools .section-header {
 	margin-bottom: 16px;
