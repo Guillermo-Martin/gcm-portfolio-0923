@@ -20,7 +20,7 @@
 }
 
 /* refining the design */
-.refining-the-design .readability, .refining-the-design .homepage, .refining-the-design .prototype {
+.refining-the-design .readability, .refining-the-design .homepage, .refining-the-design .prototype, .refining-the-design .user-dashboard {
   flex-direction: row-reverse;
 }
 
@@ -28,7 +28,7 @@
   margin-bottom: 120px;
 }
 
-.refining-the-design .clearer-language img, .refining-the-design .homepage img, .refining-the-design .responsive-design img, .refining-the-design .prototype img {
+.refining-the-design .clearer-language img, .refining-the-design .homepage img, .refining-the-design .responsive-design img, .refining-the-design .prototype img, .refining-the-design .user-dashboard img, .refining-the-design .easier-nav img, .refining-the-design .quick-add img {
   height: 100%;
   object-fit: contain;
 }
