@@ -49,6 +49,10 @@
   #bakery-board .hero-section {
     background-position: 94% 70px;
   }
+
+  #bakery-board .readability, #bakery-board .homepage, #bakery-board .prototype, #bakery-board .user-dashboard {
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width: 576px) {
