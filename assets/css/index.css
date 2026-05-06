@@ -55,7 +55,7 @@
 }
 
 #tech-skills-and-tools .list-container {
-	align-items: center;
+	align-items: start;
 	display: flex;
 	gap: 200px;
 	justify-content: start;
