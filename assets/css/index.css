@@ -49,6 +49,11 @@
 	object-fit: contain;
 }
 
+.project-container:last-child {
+	/* border: 3px solid red; */
+	margin-bottom: 0;
+}
+
 /* Tech skills and tools section */
 #tech-skills-and-tools .section-header {
 	margin-bottom: 16px;
