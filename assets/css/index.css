@@ -22,6 +22,19 @@
 	width: 33%;
 }
 
+.project-container .eyebrow {
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+
+.eyebrow span {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
 .project-container h3, .project-container p {
 	margin-bottom: 32px;
 }
