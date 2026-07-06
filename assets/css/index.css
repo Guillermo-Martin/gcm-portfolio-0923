@@ -26,6 +26,7 @@
 	font-size: 12px;
 	font-weight: 800;
 	letter-spacing: 2px;
+	line-height: 20px;
 	margin-bottom: 16px;
 	text-transform: uppercase;
 }
@@ -257,8 +258,12 @@ footer {
 	.project-container {
 		align-items: center;
 		flex-direction: column-reverse;
-		gap: 16px;
+		gap: 24px;
 	}
+
+.project-container .eyebrow {
+	margin-bottom: 8px;
+}
 
 	.project-container .image-container, .project-container .text-container {
 		width: 100%;
