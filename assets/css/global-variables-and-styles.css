@@ -202,10 +202,8 @@ footer svg {
 }
 
 /* ---------- Buttons ---------- */
-.btn-primary {
-	background-color: #314788;
+.btn-primary, .btn-secondary {
 	border-radius: 32px;
-	color: white;
 	padding-bottom: 12px;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -215,9 +213,24 @@ footer svg {
 	width: fit-content;
 }
 
+.btn-primary {
+	background-color: #314788;
+	color: white; 
+}
+
 .btn-primary:hover {
 	background-color: #e3eaff;
 	color: black;
+}
+
+.btn-secondary {
+	border: 1px solid #314788;
+	color: #314788;
+}
+
+.btn-secondary:hover {
+	background-color: #314788;
+	color: white;
 }
 
 /* ---------- Hero sections ---------- */
