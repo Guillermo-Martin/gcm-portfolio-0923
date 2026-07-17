@@ -7,6 +7,18 @@
   border: 3px solid red;
 }
 
+/* -------------------- */
+.user-onboarding .slideshow img {
+  height: 100%;
+}
+
+
+
+/* -------------------- */
+
+
+
+
 /* lofi prototype */
 .lofi-prototype.intro-section {
   margin-bottom: 0;
