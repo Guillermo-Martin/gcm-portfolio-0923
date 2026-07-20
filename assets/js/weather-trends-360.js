@@ -16,6 +16,7 @@ const finalHifiPrototypeSlides = document.querySelectorAll(".final-hifi-prototyp
 const userOnboardingSlides = document.querySelectorAll(".user-onboarding .slideshow img");
 const responsiveExperiencesSlides = document.querySelectorAll(".responsive-experiences .slideshow img");
 const watchDesignSlides = document.querySelectorAll(".watch-design .slideshow img");
+const mapsAndControlsSlides = document.querySelectorAll(".maps-and-controls .slideshow img");
 
 // console.log("useronboarding", userOnboardingSlides)
 
@@ -42,6 +43,7 @@ const finalHifiPrototypeSlideshow = new Slideshow(finalHifiPrototypeSlides);
 const userOnboardingSlideshow = new Slideshow(userOnboardingSlides);
 const responsiveExperiencesSlideshow = new Slideshow(responsiveExperiencesSlides);
 const watchDesignSlideshow = new Slideshow(watchDesignSlides);
+const mapsAndControlsSlideshow = new Slideshow(mapsAndControlsSlides);
 
 
 // ---------------------------------------------------
@@ -61,6 +63,7 @@ finalHifiPrototypeSlideshow.startSlideshow();
 userOnboardingSlideshow.startSlideshow();
 responsiveExperiencesSlideshow.startSlideshow();
 watchDesignSlideshow.startSlideshow();
+mapsAndControlsSlideshow.startSlideshow();
 
 
 // ---------------------------------------------------
