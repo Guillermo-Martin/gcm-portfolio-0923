@@ -8,7 +8,7 @@
 }
 
 /* -------------------- */
-.user-onboarding .slideshow img {
+.user-onboarding .slideshow img, .responsive-experiences .slideshow img {
   height: 100%;
 }
 
