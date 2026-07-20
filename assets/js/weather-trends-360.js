@@ -17,6 +17,9 @@ const userOnboardingSlides = document.querySelectorAll(".user-onboarding .slides
 const responsiveExperiencesSlides = document.querySelectorAll(".responsive-experiences .slideshow img");
 const watchDesignSlides = document.querySelectorAll(".watch-design .slideshow img");
 const mapsAndControlsSlides = document.querySelectorAll(".maps-and-controls .slideshow img");
+const historicalDataSlides = document.querySelectorAll(".historical-data .slideshow img");
+
+
 
 // console.log("useronboarding", userOnboardingSlides)
 
@@ -44,6 +47,7 @@ const userOnboardingSlideshow = new Slideshow(userOnboardingSlides);
 const responsiveExperiencesSlideshow = new Slideshow(responsiveExperiencesSlides);
 const watchDesignSlideshow = new Slideshow(watchDesignSlides);
 const mapsAndControlsSlideshow = new Slideshow(mapsAndControlsSlides);
+const historicalDataSlideshow = new Slideshow(historicalDataSlides);
 
 
 // ---------------------------------------------------
@@ -64,6 +68,7 @@ userOnboardingSlideshow.startSlideshow();
 responsiveExperiencesSlideshow.startSlideshow();
 watchDesignSlideshow.startSlideshow();
 mapsAndControlsSlideshow.startSlideshow();
+historicalDataSlideshow.startSlideshow();
 
 
 // ---------------------------------------------------
