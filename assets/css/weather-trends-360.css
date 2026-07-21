@@ -8,6 +8,7 @@
 }
 
 /* -------------------- */
+
 .user-onboarding .slideshow img, .responsive-experiences .slideshow img, .maps-and-controls .slideshow img, .historical-data .slideshow img {
   height: 100%;
 }
@@ -18,39 +19,6 @@
 
 /* -------------------- */
 
-
-
-
-/* lofi prototype */
-.lofi-prototype.intro-section {
-  margin-bottom: 0;
-}
-
-.lofi-prototype p {
-  margin-bottom: 32px;
-}
-
-.lofi-prototype a {
-  display: inline-block;
-}
-
-/* refining the design */
-.refining-the-design .readability, .refining-the-design .homepage, .refining-the-design .prototype, .refining-the-design .user-dashboard {
-  flex-direction: row-reverse;
-}
-
-.refining-the-design .responsive-design {
-  margin-bottom: 120px;
-}
-
-.refining-the-design .clearer-language img, .refining-the-design .homepage img, .refining-the-design .responsive-design img, .refining-the-design .prototype img, .refining-the-design .user-dashboard img, .refining-the-design .easier-nav img, .refining-the-design .quick-add img {
-  height: 100%;
-  object-fit: contain;
-}
-
-.refining-the-design .prototype a:last-child {
-  margin-top: 16px;
-}
 
 
 /* ---------- media queries ---------- */
