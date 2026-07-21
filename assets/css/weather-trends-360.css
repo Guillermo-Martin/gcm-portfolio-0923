@@ -12,7 +12,9 @@
   height: 100%;
 }
 
-
+.user-onboarding .summary-list p {
+  margin-bottom: 32px;
+}
 
 /* -------------------- */
 
