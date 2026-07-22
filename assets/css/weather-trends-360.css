@@ -4,7 +4,6 @@
   background-position: 80% 84px;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 3px solid red;
 }
 
 /* -------------------- */
@@ -15,6 +14,10 @@
 
 .user-onboarding .summary-list p {
   margin-bottom: 32px;
+}
+
+.improving-navigation .intro-section, .responsive-experiences .watch-design, .maps-and-controls .intro-section, .historical-data .intro-section, .reflections .intro-section {
+  margin-bottom: 0;
 }
 
 /* -------------------- */
