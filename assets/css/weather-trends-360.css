@@ -16,6 +16,12 @@
   margin-bottom: 32px;
 }
 
+.user-onboarding .summary-list p:last-child {
+  /* border: 3px solid red; */
+  margin-bottom: 0;
+  margin-top: 32px;
+}
+
 .improving-navigation .intro-section, .responsive-experiences .watch-design, .maps-and-controls .intro-section, .historical-data .intro-section, .reflections .intro-section {
   margin-bottom: 0;
 }
