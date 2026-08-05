@@ -1,5 +1,5 @@
 #weather-trends .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./../images/weather-trends-360/weather-trends-hero-image-01.png");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 32%, rgba(0, 0, 0, 0.3) 50%), url("./../images/weather-trends-360/weather-trends-hero-image-01.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
