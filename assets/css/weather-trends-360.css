@@ -4,8 +4,6 @@
   background-size: cover;
 }
 
-/* -------------------- */
-
 .user-onboarding .slideshow img, .responsive-experiences .slideshow img, .maps-and-controls .slideshow img, .historical-data .slideshow img {
   height: 100%;
 }
@@ -15,53 +13,10 @@
 }
 
 .user-onboarding .summary-list p:last-child {
-  /* border: 3px solid red; */
   margin-bottom: 0;
   margin-top: 32px;
 }
 
 .improving-navigation .intro-section, .responsive-experiences .watch-design, .maps-and-controls .intro-section, .historical-data .intro-section, .reflections .intro-section {
   margin-bottom: 0;
-}
-
-/* -------------------- */
-
-
-
-/* ---------- media queries ---------- */
-@media screen and (max-width: 1200px) {
-  #bakery-board .hero-section {
-    background-position: 94% 84px;
-  }
-}
-
-@media screen and (max-width: 886px) {
-  .prototype a {
-    line-height: 1.2;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #bakery-board .hero-section {
-    background-position: 94% 70px;
-  }
-
-  #bakery-board .readability, #bakery-board .homepage, #bakery-board .prototype, #bakery-board .user-dashboard {
-    flex-direction: column-reverse;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  #bakery-board .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("./../images/bakery-board/new-bakery-board-app.png");
-    background-position: 94% 70px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  #bakery-board .hero-section {
-    background-position: 94% 63px;
-  }
 }
