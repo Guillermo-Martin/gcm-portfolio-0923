@@ -10,8 +10,6 @@ const watchDesignSlides = document.querySelectorAll(".watch-design .slideshow im
 const mapsAndControlsSlides = document.querySelectorAll(".maps-and-controls .slideshow img");
 const historicalDataSlides = document.querySelectorAll(".historical-data .slideshow img");
 
-console.log(responsiveExperiencesSlides)
-
 // create a new slideshow
 const userOnboardingSlideshow = new Slideshow(userOnboardingSlides);
 const improvingNavigationSlideshow = new Slideshow(improvingNavigationSlides);
