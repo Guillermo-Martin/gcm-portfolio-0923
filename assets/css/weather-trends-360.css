@@ -20,3 +20,12 @@
 .improving-navigation .intro-section, .responsive-experiences .watch-design, .maps-and-controls .intro-section, .historical-data .intro-section, .reflections .intro-section {
   margin-bottom: 0;
 }
+
+/* media queries */
+@media screen and (max-width: 767px) {
+	#weather-trends .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./../images/weather-trends-360/weather-trends-hero-image-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
