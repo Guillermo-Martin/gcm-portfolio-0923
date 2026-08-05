@@ -59,6 +59,10 @@
 	width: 100%;
 }
 
+#projects .weather-trends-360 {
+	object-fit: contain;
+}
+
 #projects .bakery-board {
 	object-fit: contain;
 }
