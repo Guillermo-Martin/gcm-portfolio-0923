@@ -12,8 +12,6 @@ body {
 	font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-	/* min-height: 100vh;
-	padding: 0 16%; */
 }
 
 /* ---------- Typography styles ---------- */
@@ -73,11 +71,6 @@ p, li {
 	position: fixed;
 	width: 100%;
 	z-index: 1;
-	/* blur effect */
-	/* background-color: rgba(255, 255, 255, 0.9);
-	z-index: 10;
-	backdrop-filter: blur(10px); Adjust the pixel value for more or less blur
-    -webkit-backdrop-filter: blur(10px); For Safari support */
 }
 
 .navbar .section-container, .mobile-nav-overlay .section-container {
@@ -266,7 +259,6 @@ footer svg {
 	aspect-ratio: 3 / 2;
 	display: flex;
 	overflow: hidden;
-	/* background-color: red; */
 }
 
 .section-container .image-container img, .persona-container figure .image-container img {
@@ -395,64 +387,3 @@ footer svg {
 		font-size: 28px;
 	}
 }
-
-
-/* ------------------------------------------ */
-/* p {
-  font-size: var(--fs-body);
-	line-height: 1.4;
-	margin-bottom: 20px;
-} */
-/* 
-a {
-  color: #334789;
-	font-size: var(--fs-body);
-	font-weight: 500;
-  text-decoration: underline;
-	transition: all 0.2s;
-} */
-
-/* .subheader {
-	font-size: var(--fs-subheader);
-	font-weight: 300;
-} */
-
-/* ---------- Media queries ---------- */
-/* @media screen and (max-width: 1200px) {
-  body {
-    padding: 0 8%;
-  }
-} */
-
-/* @media screen and (max-width: 992px) {
-	:root {
-		--fs-h1: 80px;
-		--fs-subheader: 36px;
-	}
-
-  body {
-    padding: 0 4%;
-  }
-} */
-
-/* @media screen and (max-width: 767px) {
-	:root {
-		--fs-h1: 60px;
-		--fs-subheader: 28px;
-	}
-} */
-
-/* @media screen and (max-width: 576px) {
-	:root {
-		--fs-h1: 48px;
-		--fs-h2: 36px;
-		--fs-h3: 32px;
-		--fs-h4: 24px;
-		--fs-body: 16px;
-		--fs-subheader: 24px;
-	}
-
-	body {
-    padding: 0 24px;
-  }
-} */
