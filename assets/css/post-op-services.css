@@ -3,10 +3,6 @@
   background-size: cover;
 }
 
-/* #post-op-services .understanding-the-user .intro-section img {
-  object-fit: cover;
-} */
-
 .intro-section.persona-container {
   margin-bottom: 0;
 }
@@ -30,8 +26,6 @@
 }
 
 /* ---------- Media queries ---------- */
-
-
 @media screen and (max-width: 1617px) {
   .persona-container .attribution {
     bottom: 56px;
