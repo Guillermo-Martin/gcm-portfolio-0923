@@ -321,6 +321,11 @@ footer svg {
 	.mobile-nav-overlay {
 		padding-top: 164px;
 	}
+
+	/* used to push the projects section below the navbar when the "projects" links is clicked in mobile */
+	#projects {
+		scroll-margin-top: 75px; 
+	}
 }
 
 @media screen and (max-width: 775px) {
