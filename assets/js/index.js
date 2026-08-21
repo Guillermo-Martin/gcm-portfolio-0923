@@ -1,5 +1,3 @@
-console.log("on homepage!")
-
 // elements
 const formContainer = document.querySelector(".form-container");
 const contactForm = document.getElementById("contact-form");

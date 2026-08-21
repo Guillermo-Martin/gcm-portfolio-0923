@@ -1,5 +1,3 @@
-console.log("on kumi page")
-
 import { Slideshow } from "./Slideshow.js";
 
 // get the images for the "navigation" slideshow

@@ -1,5 +1,3 @@
-console.log("in bakery board");
-
 import { Slideshow } from "./Slideshow.js";
 
 // get the images for each slideshow

@@ -1,5 +1,3 @@
-console.log("in weathertrends");
-
 import { Slideshow } from "./Slideshow.js";
 
 // get the images for each slideshow
