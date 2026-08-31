@@ -323,7 +323,7 @@ footer svg {
 	}
 
 	/* used to push the projects section below the navbar when the "projects" links is clicked in mobile */
-	#projects {
+	#projects, #about {
 		scroll-margin-top: 75px; 
 	}
 }
