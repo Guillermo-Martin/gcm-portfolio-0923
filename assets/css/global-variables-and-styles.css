@@ -322,8 +322,8 @@ footer svg {
 		padding-top: 164px;
 	}
 
-	/* used to push the projects section below the navbar when the "projects" links is clicked in mobile */
-	#projects, #about {
+	/* used to push the "projects", "about", and "contact" sections below the navbar when their links are clicked in mobile */
+	#projects, #about, #contact {
 		scroll-margin-top: 75px; 
 	}
 }
