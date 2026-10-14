@@ -25,6 +25,10 @@
   flex-direction: row-reverse;
 }
 
+.summary-list p {
+  margin-top: 32px;
+}
+
 /* media queries */
 @media screen and (max-width: 767px) {
 	.intro-section.navigation, .intro-section.readability {
