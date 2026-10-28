@@ -144,7 +144,6 @@ p, li {
 .mobile-nav-overlay {
 	background-color: white;
 	bottom: 0;
-	height: 100vh;
 	left: 0;
 	position: fixed;
 	top: var(--mobile-navbar-height);
