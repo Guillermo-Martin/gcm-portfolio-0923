@@ -133,14 +133,6 @@ p, li {
 }
 
 /* base class */
-/* .mobile-nav-overlay {
-	background-color: white;
-	height: 100vh;
-	position: fixed;
-	width: 100%;
-	z-index: 1;
-} */
-
 .mobile-nav-overlay {
 	background-color: white;
 	bottom: 0;
