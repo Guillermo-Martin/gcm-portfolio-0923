@@ -6,6 +6,7 @@
 	--fs-h5: 24px;
 	--fs-subheader: 36px;
 	--fs-body: 20px;
+	--mobile-navbar-height: 44px;
 }
 
 body {
@@ -132,10 +133,21 @@ p, li {
 }
 
 /* base class */
-.mobile-nav-overlay {
+/* .mobile-nav-overlay {
 	background-color: white;
 	height: 100vh;
 	position: fixed;
+	width: 100%;
+	z-index: 1;
+} */
+
+.mobile-nav-overlay {
+	background-color: white;
+	bottom: 0;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: var(--mobile-navbar-height);
 	width: 100%;
 	z-index: 1;
 }
